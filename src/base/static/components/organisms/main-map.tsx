@@ -65,6 +65,7 @@ import {
   MEASUREMENT_UNITS,
 } from "../../utils/geo";
 import MapCenterpoint from "../molecules/map-centerpoint";
+import SearchControl from "../molecules/search-control";
 import MapControls from "../molecules/map-controls";
 import MapWidgetContainer from "./map-widget-container";
 import MapMeasurementOverlay from "./map-measurement-overlay";
@@ -618,7 +619,10 @@ class MainMap extends React.Component<Props, State> {
             selectedTool={measurementTool.selectedTool}
           />
           {this.props.isMapCenterpointVisible && <MapCenterpoint />}
+
+          {this.state.isMapLoaded && <SearchControl />}
           {this.state.isMapLoaded && <MapControls />}
+
           {this.state.popupContent &&
             this.state.popupLatitude &&
             this.state.popupLongitude && (

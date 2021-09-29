@@ -61,6 +61,7 @@ import { updatePlacesLoadStatus, loadPlaces } from "../state/ducks/places";
 import { loadCustomComponentsConfig } from "../state/ducks/custom-components-config";
 import { loadUser } from "../state/ducks/user";
 import { loadFlavorConfig } from "../state/ducks/flavor-config";
+import { loadFiltersConfig } from "../state/ducks/filters";
 
 import { hasGroupAbilitiesInDatasets } from "../state/ducks/user";
 import { appConfigSelector } from "../state/ducks/app-config";
@@ -112,6 +113,7 @@ const dispatchPropTypes = {
   loadDashboardConfig: PropTypes.func.isRequired,
   loadUser: PropTypes.func.isRequired,
   loadFlavorConfig: PropTypes.func.isRequired,
+  loadFiltersConfig: typeof loadFiltersConfig,
   updateLayout: PropTypes.func.isRequired,
 };
 
@@ -202,6 +204,7 @@ class App extends React.Component<Props, State> {
     const datasets = await mapseedApiClient.datasets.get(
       this.props.datasetsConfig,
     );
+    
     this.props.loadDatasets(datasets);
 
     // Load all other ducks.
@@ -220,6 +223,8 @@ class App extends React.Component<Props, State> {
     this.props.loadCustomComponentsConfig(config.custom_components);
     this.props.loadMapStyle(config.mapStyle, config.datasets);
     this.props.loadFlavorConfig(config.flavor);
+    this.props.loadFiltersConfig(config.filters);
+
     config.dashboard && this.props.loadDashboardConfig(config.dashboard);
     config.right_sidebar.is_visible_default &&
       this.props.updateUIVisibility("rightSidebar", true);
@@ -667,6 +672,7 @@ const mapDispatchToProps = {
   loadMapStyle,
   loadUser,
   loadFlavorConfig,
+  loadFiltersConfig,
 };
 
 export default withRouter(

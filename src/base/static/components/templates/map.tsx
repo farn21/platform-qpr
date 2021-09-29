@@ -9,6 +9,14 @@ import styled from "../../utils/styled";
 import { withRouter, RouteComponentProps } from "react-router-dom";
 import { withTranslation, WithTranslation } from "react-i18next";
 
+import Accordion from '@material-ui/core/Accordion';
+import AccordionDetails from '@material-ui/core/AccordionDetails';
+import AccordionSummary from '@material-ui/core/AccordionSummary';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import Chip from '@material-ui/core/Chip';
+import Autocomplete from '@material-ui/lab/Autocomplete';
+import TextField from '@material-ui/core/TextField';
+
 import emitter from "../../utils/event-emitter";
 
 const MainMap = React.lazy(() => import("../organisms/main-map"));
@@ -47,6 +55,7 @@ import { datasetsSelector, Dataset } from "../../state/ducks/datasets";
 import { hasGroupAbilitiesInDatasets } from "../../state/ducks/user";
 import { isLeftSidebarExpandedSelector } from "../../state/ducks/left-sidebar";
 import { isRightSidebarEnabledSelector } from "../../state/ducks/right-sidebar-config";
+import { filtersConfigSelector, FiltersConfig } from "../../state/ducks/filters";
 import {
   geocodeAddressBarEnabledSelector,
   mapConfigSelector,
@@ -115,6 +124,7 @@ type StateProps = {
   navBarConfig: NavBarConfig;
   placeConfig: PropTypes.InferProps<typeof placeConfigPropType.isRequired>;
   user: User;
+  filtersConfig: FiltersConfig;
 };
 
 type DispatchProps = PropTypes.InferProps<typeof dispatchPropTypes>;
@@ -139,6 +149,8 @@ interface State {
   mapContainerHeightDeclaration: string;
   mapContainerWidthDeclaration: string;
   mapSourcesLoadStatus: MapSourcesLoadStatus;
+  expanded: string;
+  setExpanded: boolean;
 }
 
 type Props = StateProps &
@@ -173,13 +185,14 @@ class MapTemplate extends React.Component<Props, State> {
       }),
       {},
     ),
+    expanded: '',
+    setExpanded: false,
   };
 
   async componentDidMount() {
     this.recalculateContainerSize();
     this.updateUIConfiguration(this.props.uiConfiguration);
     this.props.updateCurrentTemplate("map");
-
     const { zoom, lat, lng } = this.props.params;
     if (zoom && lat && lng) {
       this.props.updateMapViewport({
@@ -374,6 +387,12 @@ class MapTemplate extends React.Component<Props, State> {
     }
   }
 
+  handleExpanded = (panel) => (event, isExpanded) => {
+    this.setState({
+      expanded: this.state.expanded == panel ? '' : panel 
+    })
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -409,6 +428,58 @@ class MapTemplate extends React.Component<Props, State> {
           </React.Suspense>
           {this.props.isSpotlightMaskVisible && <SpotlightMask />}
         </div>
+        {this.props.filtersConfig.enabled && (
+          <div
+            css={css`
+              position: absolute;
+              z-indeX: 100;
+              width: 300px;
+              left: 20px;
+              top: 29%;
+            `}
+          >
+          {this.props.filtersConfig.components.length > 0 &&
+            this.props.filtersConfig.components.map(
+              (component, compIndex) => (
+                <Accordion 
+                  key={compIndex}
+                  expanded={this.state.expanded === component.title} 
+                  onChange={this.handleExpanded(component.title)}
+                >
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon />}
+                    aria-controls={component.title+"bh-content"}
+                    id={component.title+"bh-header"}
+                  >
+                    {component.title}
+                  </AccordionSummary>
+                  <AccordionDetails>
+                    <div
+                      css={css`
+                        width: 100%;
+                      `}
+                    >
+                      <Autocomplete
+                        multiple
+                        id="tags-standard"
+                        options={component.options}
+                        getOptionLabel={(option) => option.title}
+                        renderInput={(params) => (
+                          <TextField
+                            {...params}
+                            variant="standard"
+                            label=""
+                            placeholder="¿Que desea buscar?"
+                          />
+                        )}
+                      />
+                    </div>
+                  </AccordionDetails>
+                </Accordion>
+            ),
+          )}
+          </div>
+        )}
         {this.props.isContentPanelVisible && (
           <ContentPanel
             addPlaceButtonHeight={this.state.addPlaceButtonHeight}
@@ -490,6 +561,7 @@ const mapStateToProps = (state: MapseedReduxState): StateProps => ({
   navBarConfig: navBarConfigSelector(state),
   placeConfig: placeConfigSelector(state),
   user: userSelector(state),
+  filtersConfig: filtersConfigSelector(state),
 });
 
 const mapDispatchToProps = {

@@ -4,7 +4,7 @@ import { jsx } from "@emotion/core";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { ThemeProvider as EmotionThemeProvider } from "emotion-theming";
-import { MuiThemeProvider, createMuiTheme } from "@material-ui/core/styles";
+import { MuiThemeProvider, createTheme } from "@material-ui/core/styles";
 import { themePropType, themeSelector } from "../state/ducks/app-config";
 import { Global } from "@emotion/core";
 
@@ -22,7 +22,7 @@ const ThemeProvider = ({ flavorTheme, children }) => {
     text: { ...baseTheme.text, ...flavorTheme.text },
   };
 
-  const muiTheme = createMuiTheme(baseMuiTheme);
+  const muiTheme = createTheme(baseMuiTheme);
 
   return (
     <EmotionThemeProvider theme={theme}>
