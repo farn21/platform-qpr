@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import * as React from "react";
-import { jsx } from "@emotion/core";
+import { css, jsx } from "@emotion/core";
 import {
   Route,
   RouteComponentProps,
@@ -74,6 +74,8 @@ import { recordGoogleAnalyticsHit } from "../utils/analytics";
 import isValidNonConfigurableI18nKey from "../utils/i18n-utils";
 
 import Util from "../js/utils.js";
+import Modal from '@material-ui/core/Modal';
+import { makeStyles } from '@material-ui/core/styles';
 
 browserUpdate({
   required: {
@@ -153,6 +155,7 @@ interface State {
   isStartPageViewed: boolean;
   defaultLanguage: Language;
   availableLanguages?: Language[];
+  openModal: boolean;
 }
 
 class App extends React.Component<Props, State> {
@@ -167,6 +170,7 @@ class App extends React.Component<Props, State> {
     },
     availableLanguages: [],
     currentLanguageCode: "",
+    openModal: true
   };
 
   async componentDidMount() {
@@ -507,6 +511,30 @@ class App extends React.Component<Props, State> {
                   return (
                     <React.Suspense fallback={<Fallback />}>
                       <SiteHeader {...headerProps} />
+                      <Modal
+                        open={this.state.openModal}
+                        onClose={()=> this.setState({
+                          openModal: false
+                        })}
+                      >
+                        <div 
+                          css={css`
+                            position: absolute;
+                            top: 40%;
+                            left: 30%;
+                            background-color: #FFF
+                          `}> 
+                          <h2>Políticas de protección de datos</h2>
+                          <button
+                            type="button"
+                            onClick={()=>{
+                              this.setState({
+                                openModal: false
+                              })
+                            }}
+                          >Aceptar</button>
+                        </div>
+                      </Modal>
                       <MapTemplate
                         uiConfiguration="newPlace"
                         {...sharedMapTemplateProps}
