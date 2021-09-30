@@ -347,6 +347,7 @@ class MainMap extends React.Component<Props, State> {
     requestAnimationFrame(() => {
       this.resizeMap();
     });
+    
   }
 
   componentWillUnmount() {

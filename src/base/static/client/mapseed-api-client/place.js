@@ -14,7 +14,9 @@ const updatePlace = async ({
   clientSlug,
   hasAdminAbilities = false,
 }) => {
+  
   placeData = toServerGeoJSONFeature(placeData);
+  
   const placeParams = setPrivateParams(
     {
       include_tags: true,
@@ -22,11 +24,12 @@ const updatePlace = async ({
     },
     hasAdminAbilities,
   );
+  console.log("Enviando...", `${placeUrl}?${qs.stringify(placeParams)}`)
 
   const response = await fetch(`${placeUrl}?${qs.stringify(placeParams)}`, {
     headers: {
       "Content-Type": "application/json",
-      "X-Shareabouts-Silent": true, // To prevent new Actions on update.
+      //"X-Shareabouts-Silent": true, // To prevent new Actions on update.
     },
     method: "PUT",
     credentials: "include",
@@ -39,7 +42,7 @@ const updatePlace = async ({
 
     return null;
   }
-
+  console.log("Pasamos...")
   const feature = await response.json();
 
   return fromGeoJSONFeature({ feature, datasetSlug, clientSlug });
@@ -52,6 +55,9 @@ const createPlace = async ({
   clientSlug,
   includePrivate = false,
 }) => {
+  
+  placeData.visitas = 0
+
   placeData = toServerGeoJSONFeature(placeData);
 
   const placeParams = setPrivateParams(
@@ -60,7 +66,8 @@ const createPlace = async ({
       include_submissions: true,
     },
     includePrivate,
-  );
+  ); 
+
   const response = await fetch(
     `${datasetUrl}/places?${qs.stringify(placeParams)}`,
     {

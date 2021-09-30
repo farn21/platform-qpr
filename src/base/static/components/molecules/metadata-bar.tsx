@@ -21,6 +21,7 @@ type OwnProps = {
   numComments: number;
   submitterName: string;
   submitterAvatarUrl?: string;
+  visits: number;
 };
 
 type StateProps = {
@@ -60,21 +61,32 @@ const MetadataBar = (props: MetadataBarProps) => (
           {props.t("this", "this")} {props.label}
         </RegularText>
       </div>
-      <SmallText
-        css={css`
-          line-height: 0.9rem;
-        `}
-        display="block"
-        textTransform="uppercase"
-      >
-        {props.numComments}{" "}
-        {props.numComments === 1
-          ? props.t("surveyResponseName", props.commentFormConfig.response_name)
-          : props.t(
-              "surveyResponsePluralName",
-              props.commentFormConfig.response_plural_name,
-            )}
-      </SmallText>
+      <div>
+        <SmallText
+          css={css`
+            line-height: 0.9rem;
+          `}
+          display="block"
+          textTransform="uppercase"
+        >
+          {props.numComments}{" "}
+          {props.numComments === 1
+            ? props.t("surveyResponseName", props.commentFormConfig.response_name)
+            : props.t(
+                "surveyResponsePluralName",
+                props.commentFormConfig.response_plural_name,
+              )}
+        </SmallText>
+        <SmallText
+          css={css`
+            line-height: 0.9rem;
+          `}
+          display="block"
+          textTransform="uppercase"
+        >
+          {props.visits} visitas
+        </SmallText>
+      </div>
       {props.appConfig.show_timestamps && (
         <SmallText
           css={css`

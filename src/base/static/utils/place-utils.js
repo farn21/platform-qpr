@@ -26,7 +26,7 @@ const createGeoJSONFromPlaces = places => {
       },
       {},
     );
-
+    
     return {
       type: "Feature",
       properties: properties,

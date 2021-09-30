@@ -264,6 +264,7 @@ export function removeFeatureInGeoJSONSource(sourceId, featureId) {
 }
 
 export function loadMapStyle(mapStyleConfig, datasetsConfig) {
+  
   const style = {
     sources: {
       ...mapStyleConfig.mapboxSources,

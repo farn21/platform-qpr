@@ -216,10 +216,11 @@ class MapTemplate extends React.Component<Props, State> {
     }
 
     const { datasetClientSlug, placeId, responseId } = this.props.params;
-
+    
     // When this component mounts in the Place detail configuration, fetch the
     // requested Place directly from the API for a better UX.
     if (placeId) {
+
       const dataset = this.props.datasets.find(
         dataset => dataset.clientSlug === datasetClientSlug,
       );
@@ -248,6 +249,17 @@ class MapTemplate extends React.Component<Props, State> {
       });
 
       if (response) {
+        
+        /*
+          response.visitas = response.visitas + 1
+          const response_place = await mapseedApiClient.place.update({
+          placeUrl: dataset.places.url,
+          placeData: response,
+          datasetSlug: dataset.slug,
+          clientSlug: dataset.clientSlug,
+          hasAdminAbilities: false,
+        });*/
+
         // Add this Place to the places duck and update the map.
         this.props.loadPlaceAndSetIgnoreFlag(response);
         const { geometry, ...rest } = response;
@@ -262,6 +274,7 @@ class MapTemplate extends React.Component<Props, State> {
         this.props.updateEditModeToggled(false);
         this.props.updateFocusedPlaceId(parseInt(placeId));
         responseId && this.props.updateScrollToResponseId(parseInt(responseId));
+
       } else {
         // The Place doesn't exist, so route back to the map.
         this.props.history.push("/");
@@ -443,15 +456,15 @@ class MapTemplate extends React.Component<Props, State> {
               (component, compIndex) => (
                 <Accordion 
                   key={compIndex}
-                  expanded={this.state.expanded === component.title} 
-                  onChange={this.handleExpanded(component.title)}
+                  expanded={this.state.expanded === component['title']} 
+                  onChange={this.handleExpanded(component['title'])}
                 >
                   <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
-                    aria-controls={component.title+"bh-content"}
-                    id={component.title+"bh-header"}
+                    aria-controls={component['title']+"bh-content"}
+                    id={component['title']+"bh-header"}
                   >
-                    {component.title}
+                    {component['title']}
                   </AccordionSummary>
                   <AccordionDetails>
                     <div
@@ -462,8 +475,8 @@ class MapTemplate extends React.Component<Props, State> {
                       <Autocomplete
                         multiple
                         id="tags-standard"
-                        options={component.options}
-                        getOptionLabel={(option) => option.title}
+                        options={component['options']}
+                        getOptionLabel={(option) => option['title']}
                         renderInput={(params) => (
                           <TextField
                             {...params}
