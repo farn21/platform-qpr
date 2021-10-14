@@ -108,6 +108,7 @@ const GeocodingField: React.FunctionComponent<Props> = ({
   // Reverse geocode on map viewport change.
   React.useEffect(() => {
     // Only reverse geocode when the map has come to rest.
+
     if (!reverseGeocode || isMapDraggingOrZooming) {
       return;
     }

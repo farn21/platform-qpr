@@ -75,6 +75,7 @@ import isValidNonConfigurableI18nKey from "../utils/i18n-utils";
 
 import Util from "../js/utils.js";
 import Modal from '@material-ui/core/Modal';
+import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
 
 browserUpdate({
@@ -511,30 +512,41 @@ class App extends React.Component<Props, State> {
                   return (
                     <React.Suspense fallback={<Fallback />}>
                       <SiteHeader {...headerProps} />
-                      <Modal
-                        open={this.state.openModal}
-                        onClose={()=> this.setState({
-                          openModal: false
-                        })}
-                      >
-                        <div 
-                          css={css`
-                            position: absolute;
-                            top: 40%;
-                            left: 30%;
-                            background-color: #FFF
-                          `}> 
-                          <h2>Políticas de protección de datos</h2>
-                          <button
-                            type="button"
-                            onClick={()=>{
-                              this.setState({
-                                openModal: false
-                              })
-                            }}
-                          >Aceptar</button>
-                        </div>
-                      </Modal>
+                      {this.props.appConfig.privacyPolicy && (
+                        <Modal
+                          open={this.state.openModal}
+                          onClose={()=> this.setState({
+                            openModal: false
+                          })}
+                        >
+                          <div 
+                            css={css`
+                              position: absolute;
+                              top: 27%;
+                              left: 25%;
+                              background-color: #FFF;
+                              padding: 2em 4em;
+                            `}> 
+                            <h2
+                              css={css`
+                                margin-top: 0;
+                              `}
+                            >
+                              {this.props.appConfig.privacyPolicy.title}
+                            </h2>
+                            <p>{this.props.appConfig.privacyPolicy.content}</p>
+                            <Button
+                              variant="contained"
+                              color="primary"
+                              onClick={()=>{
+                                this.setState({
+                                  openModal: false
+                                })
+                              }}
+                            >Aceptar</Button>
+                          </div>
+                        </Modal>
+                      )}
                       <MapTemplate
                         uiConfiguration="newPlace"
                         {...sharedMapTemplateProps}

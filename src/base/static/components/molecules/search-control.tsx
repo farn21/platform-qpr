@@ -11,7 +11,7 @@ const SearchControl: React.FunctionComponent = props => {
           style={{
             position: "absolute",
             bottom: "8px",
-            right: "120px",
+            right: "200px",
             display: "flex",
             backgroundColor: "white"
           }}

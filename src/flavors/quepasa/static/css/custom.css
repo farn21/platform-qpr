@@ -200,3 +200,13 @@ figure img {
 html, body, #site-wrap {
   font-family: "Rubik";
 }
+
+.mapboxgl-ctrl-group > button{
+  width: 37px;
+  height: 37px;
+}
+
+.mapseed-map-controls{
+  width: 10em;
+  justify-content: space-around;
+}

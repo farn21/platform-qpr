@@ -61,7 +61,11 @@
         "addPlaceButtonHoverBackgroundColor": "#efb491"
       }
     },
-    "sharingProviders": []
+    "sharingProviders": [],
+    "privacyPolicy" : {
+      "title": "Políticas de protección de datos",
+      "content": "Lorem ipsum at inereht lorem ipsum lala ira bervan loaf un llo"
+    }
   },
   "dashboard": [
     {
@@ -118,6 +122,7 @@
     "geocodeHint": [-34.700521, -59.254934],
     "geocodeFieldLabel": "Buscar una dirección ...",
     "geolocationOnload": false,
+    "geocodingEngine": "Mapbox",
     "mapViewport": {
       "latitude": -34.9211,
       "longitude": -58.81504,
@@ -758,6 +763,14 @@
             "name": "intro",
             "type": "informational_html",
             "content": "<h4>¿Querés reportar sobre calidad de agua? Podés hacerlo acá. Vas a poder informarte sobre parámetros de calidad de agua, evaluar situaciones de tu entorno próximo y contribuir subiendo fotos, imágenes, archivos, texto, links.</h4>"
+          },
+          {
+            "name": "private-address",
+            "type": "geocoding",
+            "prompt": " ",
+            "display_prompt": "Address",
+            "placeholder": "Enter your address",
+            "optional": false
           },
           {
             "name": "subcuenca-seleccion",
@@ -2086,6 +2099,14 @@
             "content": "<h4>¿Querés reportar algo sobre este área natural o contribuir aportando información? Podés hacerlo acá. Vas a poder seleccionar y subir fotos, imágenes, archivos, texto, links.</h4>"
           },
           {
+            "name": "private-address",
+            "type": "geocoding",
+            "prompt": " ",
+            "display_prompt": "Address",
+            "placeholder": "Enter your address",
+            "optional": false
+          },
+          {
             "name": "contribucion",
             "type": "dropdown",
             "prompt": "Tu contribución la hacés como:",
@@ -3022,6 +3043,14 @@
             "name": "intro",
             "type": "informational_html",
             "content": "<h4>¿Querés reportar o comentar sobre alguna situación vinculada al proceso de relocalización de algún barrio? Podés hacerlo completando el siguiente formulario. Vas a poder subir fotos, imágenes, archivos, texto.</h4>"
+          },
+          {
+            "name": "private-address",
+            "type": "geocoding",
+            "prompt": " ",
+            "display_prompt": "Address",
+            "placeholder": "Enter your address",
+            "optional": false
           },
           {
             "name": "municipio",

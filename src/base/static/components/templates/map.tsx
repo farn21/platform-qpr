@@ -55,7 +55,7 @@ import { datasetsSelector, Dataset } from "../../state/ducks/datasets";
 import { hasGroupAbilitiesInDatasets } from "../../state/ducks/user";
 import { isLeftSidebarExpandedSelector } from "../../state/ducks/left-sidebar";
 import { isRightSidebarEnabledSelector } from "../../state/ducks/right-sidebar-config";
-import { filtersConfigSelector, FiltersConfig } from "../../state/ducks/filters";
+import { filtersConfigSelector, FiltersConfig, FilterComponentOption } from "../../state/ducks/filters";
 import {
   geocodeAddressBarEnabledSelector,
   mapConfigSelector,
@@ -67,6 +67,9 @@ import {
   createFeaturesInGeoJSONSource,
   mapSourcesSelector,
   mapSourcesPropType,
+  layerGroupsSelector,
+  LayerGroups,
+  updateLayerGroupVisibility,
 } from "../../state/ducks/map-style";
 import {
   updateFocusedPlaceId,
@@ -104,6 +107,7 @@ const dispatchPropTypes = {
   updateScrollToResponseId: PropTypes.func.isRequired,
   updateCurrentTemplate: PropTypes.func.isRequired,
   updateMapViewport: PropTypes.func.isRequired,
+  updateLayerGroupVisibility: typeof updateLayerGroupVisibility,
 };
 
 type StateProps = {
@@ -125,6 +129,8 @@ type StateProps = {
   placeConfig: PropTypes.InferProps<typeof placeConfigPropType.isRequired>;
   user: User;
   filtersConfig: FiltersConfig;
+  filtersComponentOption: FilterComponentOption[];
+  layerGroups: LayerGroups;
 };
 
 type DispatchProps = PropTypes.InferProps<typeof dispatchPropTypes>;
@@ -249,17 +255,18 @@ class MapTemplate extends React.Component<Props, State> {
       });
 
       if (response) {
-        
         /*
-          response.visitas = response.visitas + 1
-          const response_place = await mapseedApiClient.place.update({
+        console.log("Visita...")
+        response.visitas = response.visitas + 1;
+
+        const response_place = await mapseedApiClient.place.update({
           placeUrl: dataset.places.url,
           placeData: response,
           datasetSlug: dataset.slug,
           clientSlug: dataset.clientSlug,
           hasAdminAbilities: false,
-        });*/
-
+        });
+        */
         // Add this Place to the places duck and update the map.
         this.props.loadPlaceAndSetIgnoreFlag(response);
         const { geometry, ...rest } = response;
@@ -400,6 +407,41 @@ class MapTemplate extends React.Component<Props, State> {
     }
   }
 
+  onToggleLayerGroup = (layerGroups, options) => {
+    for (const key in options) {
+      let layer = this.props.layerGroups.byId[options[key].layerGroupId];
+      let lg_new = layerGroups.filter((selected)=>
+        selected.layerGroupId==layer.id
+      )
+      if(layer.isVisible && lg_new.length == 0){
+        this.props.updateLayerGroupVisibility(layer.id, false);
+      }
+    }
+    layerGroups.forEach((layerGroup) => {
+      let layerGroup_ = this.props.layerGroups.byId[layerGroup.layerGroupId];
+      if(!layerGroup_.isVisible){
+        this.props.updateLayerGroupVisibility(layerGroup_.id, true);
+      }
+    })
+  }
+
+  handleUserFilters = () => {
+    console.log(this.props.mapSources)
+    console.log(this.props.user)
+    for (const key in this.props.mapSources) {
+      const src = this.props.mapSources[key];
+      if(src.data){
+        for (const key_features in src.data.features) {
+          const feature = src.data.features[key_features];
+          let subm = feature.properties.submitter
+          if(subm && subm.username == this.props.user.username){
+            console.log(feature)
+          }
+        }
+      }
+    }
+  }
+
   handleExpanded = (panel) => (event, isExpanded) => {
     this.setState({
       expanded: this.state.expanded == panel ? '' : panel 
@@ -446,50 +488,63 @@ class MapTemplate extends React.Component<Props, State> {
             css={css`
               position: absolute;
               z-indeX: 100;
-              width: 300px;
+              width: 308px;
               left: 20px;
-              top: 29%;
+              top: 195px;
             `}
           >
           {this.props.filtersConfig.components.length > 0 &&
             this.props.filtersConfig.components.map(
-              (component, compIndex) => (
-                <Accordion 
-                  key={compIndex}
-                  expanded={this.state.expanded === component['title']} 
-                  onChange={this.handleExpanded(component['title'])}
-                >
-                  <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls={component['title']+"bh-content"}
-                    id={component['title']+"bh-header"}
+              (component, compIndex) => {
+                let options = this.props.filtersComponentOption;
+                component.options.forEach(option => {
+                  let lg = this.props.layerGroups.byId[option.layerGroupId];  
+                  if(lg.isVisible){
+                    options.push(option)
+                  }
+                });
+                return (
+                  <Accordion 
+                    key={compIndex}
+                    expanded={this.state.expanded === component['title']} 
+                    onChange={this.handleExpanded(component['title'])}
                   >
-                    {component['title']}
-                  </AccordionSummary>
-                  <AccordionDetails>
-                    <div
-                      css={css`
-                        width: 100%;
-                      `}
+                    <AccordionSummary
+                      expandIcon={<ExpandMoreIcon />}
+                      aria-controls={component['title']+"bh-content"}
+                      id={component['title']+"bh-header"}
                     >
-                      <Autocomplete
-                        multiple
-                        id="tags-standard"
-                        options={component['options']}
-                        getOptionLabel={(option) => option['title']}
-                        renderInput={(params) => (
-                          <TextField
-                            {...params}
-                            variant="standard"
-                            label=""
-                            placeholder="¿Que desea buscar?"
-                          />
-                        )}
-                      />
-                    </div>
-                  </AccordionDetails>
-                </Accordion>
-            ),
+                      {component['title']}
+                    </AccordionSummary>
+                    <AccordionDetails>
+                      <div
+                        css={css`
+                          width: 100%;
+                        `}
+                      >
+                        <Autocomplete
+                          multiple
+                          id="tags-standard"
+                          value={options}
+                          options={component['options']}
+                          getOptionLabel={(option) => option['title']}
+                          onChange={(event, value) => {
+                            this.onToggleLayerGroup(value, component['options']);
+                          }}
+                          renderInput={(params) => (
+                            <TextField
+                              {...params}
+                              variant="standard"
+                              label=""
+                              placeholder="¿Que desea buscar?"
+                            />
+                          )}
+                        />
+                      </div>
+                    </AccordionDetails>
+                  </Accordion>
+                )
+              },
           )}
           </div>
         )}
@@ -575,6 +630,8 @@ const mapStateToProps = (state: MapseedReduxState): StateProps => ({
   placeConfig: placeConfigSelector(state),
   user: userSelector(state),
   filtersConfig: filtersConfigSelector(state),
+  filtersComponentOption: [],
+  layerGroups: layerGroupsSelector(state),
 });
 
 const mapDispatchToProps = {
@@ -588,6 +645,7 @@ const mapDispatchToProps = {
   updateScrollToResponseId,
   updateCurrentTemplate,
   updateMapViewport,
+  updateLayerGroupVisibility,
 };
 
 export default connect<StateProps, DispatchProps, OwnProps>(
