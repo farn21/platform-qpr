@@ -255,18 +255,6 @@ class MapTemplate extends React.Component<Props, State> {
       });
 
       if (response) {
-        /*
-        console.log("Visita...")
-        response.visitas = response.visitas + 1;
-
-        const response_place = await mapseedApiClient.place.update({
-          placeUrl: dataset.places.url,
-          placeData: response,
-          datasetSlug: dataset.slug,
-          clientSlug: dataset.clientSlug,
-          hasAdminAbilities: false,
-        });
-        */
         // Add this Place to the places duck and update the map.
         this.props.loadPlaceAndSetIgnoreFlag(response);
         const { geometry, ...rest } = response;
