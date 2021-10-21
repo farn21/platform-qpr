@@ -732,8 +732,7 @@
             "type": "common_form_element"
           }
         ]
-      },
-      {
+      },{
         "category": "agua-calidad",
         "formId": "agua-calidad",
         "includeOnForm": true,
@@ -756,6 +755,30 @@
           }
         ],
         "visibleLayerGroupIds": ["riachuelo-subbasins"],
+        "multi_stage": [
+          {
+            "start_field_index": 1,
+            "end_field_index": 3,
+            "header": "Calidad del Agua",
+            "description": ""
+          },{
+            "start_field_index": 4,
+            "end_field_index": 10,
+            "header": "Calidad del Agua",
+            "description": ""
+          },
+          {
+            "start_field_index": 11,
+            "end_field_index": 20,
+            "header": "Calidad del Agua",
+            "description": ""
+          },{
+            "start_field_index": 21,
+            "end_field_index": 48,
+            "header": "Calidad del Agua",
+            "description": ""
+          }
+        ],
         "fields": [
           {
             "name": "lng-lat",
@@ -2067,8 +2090,7 @@
             "type": "common_form_element"
           }
         ]
-      },
-      {
+      },{
         "category": "areas-protegidas-2",
         "formId": "areas-protegidas-2",
         "includeOnForm": true,
@@ -2090,6 +2112,30 @@
             ]
           }
         ],
+        "multi_stage": [
+          {
+            "start_field_index": 1,
+            "end_field_index": 3,
+            "header": "Áreas Naturales",
+            "description": ""
+          },{
+            "start_field_index": 4,
+            "end_field_index": 10,
+            "header": "Áreas Naturales",
+            "description": ""
+          },
+          {
+            "start_field_index": 11,
+            "end_field_index": 20,
+            "header": "Áreas Naturales",
+            "description": ""
+          },{
+            "start_field_index": 21,
+            "end_field_index": 45,
+            "header": "Áreas Naturales",
+            "description": ""
+          }
+        ],
         "fields": [
           {
             "name": "lng-lat",
@@ -2098,7 +2144,7 @@
           {
             "name": "intro",
             "type": "informational_html",
-            "content": "<h4>¿Querés reportar algo sobre este área natural o contribuir aportando información? Podés hacerlo acá. Vas a poder seleccionar y subir fotos, imágenes, archivos, texto, links.</h4>"
+            "content": "<h4>Por favor seleccioná una ubicación en el mapa</h4><br><h5>Podés arrastrar el ícono en el mapa o ingresar una dirección.</h5>"
           },
           {
             "name": "private-address",
@@ -2733,7 +2779,7 @@
                   "reportes_del_estado_del_area_titulo",
                   "reportes_del_estado_del_area_datetime",
                   "reportes_del_estado_del_area_description",
-                  "reportes_del_estado_del_area_info"                
+                  "reportes_del_estado_del_area_info"
                 ]
               }
             ],
@@ -2878,7 +2924,7 @@
             "type": "informational_html",
             "hidden_default": true,
             "optional": true,
-            "content": "<p>¿Querés convocar a una actividad en el área? Agregala al calendario.</p>"          
+            "content": "<p>¿Querés convocar a una actividad en el área? Agregala al calendario.</p>"
           },
           {
             "name": "memorias_del_area",
@@ -3013,8 +3059,7 @@
             "type": "common_form_element"
           }
         ]
-      },
-      {
+      },{
         "category": "reporte-territorial",
         "formId": "reporte-territorial",
         "includeOnForm": true,
@@ -3034,6 +3079,30 @@
                 "name": "NOMBRE"
               }
             ]
+          }
+        ],
+        "multi_stage": [
+          {
+            "start_field_index": 1,
+            "end_field_index": 3,
+            "header": "Reporte Territorial",
+            "description": ""
+          },{
+            "start_field_index": 4,
+            "end_field_index": 10,
+            "header": "Reporte Territorial",
+            "description": ""
+          },
+          {
+            "start_field_index": 11,
+            "end_field_index": 20,
+            "header": "Reporte Territorial",
+            "description": ""
+          },{
+            "start_field_index": 21,
+            "end_field_index": 24,
+            "header": "Reporte Territorial",
+            "description": ""
           }
         ],
         "fields": [
