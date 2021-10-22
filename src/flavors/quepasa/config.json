@@ -787,7 +787,7 @@
           {
             "name": "intro",
             "type": "informational_html",
-            "content": "<h4>¿Querés reportar sobre calidad de agua? Podés hacerlo acá. Vas a poder informarte sobre parámetros de calidad de agua, evaluar situaciones de tu entorno próximo y contribuir subiendo fotos, imágenes, archivos, texto, links.</h4>"
+            "content": "<h4>Por favor seleccioná una ubicación en el mapa</h4><br><h5>Podés arrastrar el ícono en el mapa o ingresar una dirección.</h5>"
           },
           {
             "name": "private-address",
@@ -3113,7 +3113,7 @@
           {
             "name": "intro",
             "type": "informational_html",
-            "content": "<h4>¿Querés reportar o comentar sobre alguna situación vinculada al proceso de relocalización de algún barrio? Podés hacerlo completando el siguiente formulario. Vas a poder subir fotos, imágenes, archivos, texto.</h4>"
+            "content": "<h4>Por favor seleccioná una ubicación en el mapa</h4><br><h5>Podés arrastrar el ícono en el mapa o ingresar una dirección.</h5>"
           },
           {
             "name": "private-address",
