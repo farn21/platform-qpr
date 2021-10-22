@@ -38,11 +38,19 @@ import {
 import { isWithAnyValue, isNotEmpty } from "./validators";
 import { insertEmbeddedImages } from "../../utils/embedded-images";
 
+import Reaptcha from 'reaptcha';
+
 const getDefaultValidator = isOptional => {
   return {
     validate: isOptional ? isWithAnyValue : isNotEmpty,
     message: "missingRequired",
   };
+};
+
+const onVerify = recaptchaResponse => {
+  this.setState({
+    verified: true
+  });
 };
 
 const getMapDragValidator = () => ({
@@ -88,6 +96,18 @@ export default {
     getValidator: getDefaultValidator,
     getComponent: (fieldConfig, context) => (
       <TextField {...getSharedFieldProps(fieldConfig, context)} />
+    ),
+    getInitialValue: ({ value }) => value,
+    getResponseComponent: () => TextFieldResponse,
+  },
+  [constants.RECAPTCHA_FIELD_TYPENAME]: {
+    getValidator: getDefaultValidator,
+    getComponent: (fieldConfig, context) => (
+      <Reaptcha 
+        sitekey="6LedLOocAAAAAKyihOqx5KU9OoMj5tp1XJV3v6VT" 
+        onVerify={onVerify}
+        {...getSharedFieldProps(fieldConfig, context)}
+      />
     ),
     getInitialValue: ({ value }) => value,
     getResponseComponent: () => TextFieldResponse,

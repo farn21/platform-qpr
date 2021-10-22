@@ -798,6 +798,13 @@
             "optional": false
           },
           {
+            "name": "recaptcha",
+            "type": "recaptcha",
+            "prompt": " ",
+            "display_prompt": "",
+            "optional": false
+          },
+          {
             "name": "subcuenca-seleccion",
             "type": "dropdown",
             "includeOnListItem": true,
