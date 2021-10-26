@@ -792,7 +792,7 @@
           {
             "name": "intro",
             "type": "informational_html",
-            "content": "<h4>Por favor seleccioná una ubicación en el mapa</h4><br><h5>Podés arrastrar el ícono en el mapa o ingresar una dirección.</h5>"
+            "content": "<h4>Por favor seleccioná una ubicación en el mapa</h4><br><h5>Podés arrastrar el ícono en el mapa o ingresar una dirección.</h5><br><p>Si añade este reporte a QPR, se mostrará públicamente</p>"
           },
           {
             "name": "private-address",
@@ -2162,7 +2162,7 @@
           {
             "name": "intro",
             "type": "informational_html",
-            "content": "<h4>Por favor seleccioná una ubicación en el mapa</h4><br><h5>Podés arrastrar el ícono en el mapa o ingresar una dirección.</h5>"
+            "content": "<h4>Por favor seleccioná una ubicación en el mapa</h4><br><h5>Podés arrastrar el ícono en el mapa o ingresar una dirección.</h5><br><p>Si añade este reporte a QPR, se mostrará públicamente</p>"
           },
           {
             "name": "private-address",
@@ -3142,7 +3142,7 @@
           {
             "name": "intro",
             "type": "informational_html",
-            "content": "<h4>Por favor seleccioná una ubicación en el mapa</h4><br><h5>Podés arrastrar el ícono en el mapa o ingresar una dirección.</h5>"
+            "content": "<h4>Por favor seleccioná una ubicación en el mapa</h4><br><h5>Podés arrastrar el ícono en el mapa o ingresar una dirección.</h5><br><p>Si añade este reporte a QPR, se mostrará públicamente</p>"
           },
           {
             "name": "private-address",
