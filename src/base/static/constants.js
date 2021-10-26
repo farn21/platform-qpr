@@ -1,6 +1,5 @@
 export default {
   TEXT_FIELD_TYPENAME: "text",
-  RECAPTCHA_TYPENAME: "recaptcha",
   TEXTAREA_FIELD_TYPENAME: "textarea",
   RICH_TEXTAREA_FIELD_TYPENAME: "rich_textarea",
   BIG_CHECKBOX_FIELD_TYPENAME: "big_checkbox",
@@ -20,6 +19,7 @@ export default {
   NUMBER_FIELD_TYPENAME: "number",
   GEOLOCATE_FIELD_TYPENAME: "geolocate",
   LNG_LAT_FIELD_TYPENAME: "lng_lat",
+  RECAPTCHA_FIELD_TYPENAME: "recaptcha",
 
   AUTOFILL_DURATION_DAYS: 30,
 

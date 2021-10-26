@@ -47,12 +47,6 @@ const getDefaultValidator = isOptional => {
   };
 };
 
-const onVerify = recaptchaResponse => {
-  this.setState({
-    verified: true
-  });
-};
-
 const getMapDragValidator = () => ({
   validate: isNotEmpty,
   message: "mapNotDragged",
@@ -96,18 +90,6 @@ export default {
     getValidator: getDefaultValidator,
     getComponent: (fieldConfig, context) => (
       <TextField {...getSharedFieldProps(fieldConfig, context)} />
-    ),
-    getInitialValue: ({ value }) => value,
-    getResponseComponent: () => TextFieldResponse,
-  },
-  [constants.RECAPTCHA_FIELD_TYPENAME]: {
-    getValidator: getDefaultValidator,
-    getComponent: (fieldConfig, context) => (
-      <Reaptcha 
-        sitekey="6LedLOocAAAAAKyihOqx5KU9OoMj5tp1XJV3v6VT" 
-        onVerify={onVerify}
-        {...getSharedFieldProps(fieldConfig, context)}
-      />
     ),
     getInitialValue: ({ value }) => value,
     getResponseComponent: () => TextFieldResponse,
@@ -341,5 +323,18 @@ export default {
     ),
     getInitialValue: () => null,
     getResponseComponent: () => null,
+  },
+  [constants.RECAPTCHA_FIELD_TYPENAME]: {
+    getValidator: getDefaultValidator,
+    getComponent: (fieldConfig, context) => (
+      <Reaptcha 
+        sitekey="6LcfpPMcAAAAADlc5ygkBfzEP_UWuhhBqUpsMACH" 
+        onVerify={(rs)=>{
+          context.onChange(fieldConfig.name, rs)
+        }}
+      />
+    ),
+    getInitialValue: ({ value }) => value,
+    getResponseComponent: () => TextFieldResponse,
   },
 };

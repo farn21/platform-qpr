@@ -24,9 +24,10 @@ export default (fieldConfigs, place) => {
       if(
         place[fieldConfig.name] && 
         !place[fieldConfig.name].includes('undefined') &&
+        fieldConfig.name != 'recaptcha' &&
         place[fieldConfig.name] != 'no' // Maybe take some other value for check
       )
         return true
       return false
-    });
+    })
 };

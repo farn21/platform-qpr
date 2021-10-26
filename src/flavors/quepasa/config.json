@@ -34,8 +34,8 @@
     }
   ],
   "app": {
-    "title": "Qué Pasa, Riachuelo? 3",
-    "name": "Qué Pasa, Riachuelo? 3",
+    "title": "¿Qué Pasa, Riachuelo?",
+    "name": "¿Qué Pasa, Riachuelo?",
     "show_name_in_header": true,
     "meta_description": "Track projects on the Riachuelo River",
     "meta_author": "mapseed.org",
@@ -774,6 +774,11 @@
             "description": ""
           },{
             "start_field_index": 21,
+            "end_field_index": 45,
+            "header": "Calidad del Agua",
+            "description": ""
+          },{
+            "start_field_index": 46,
             "end_field_index": 48,
             "header": "Calidad del Agua",
             "description": ""
@@ -795,13 +800,6 @@
             "prompt": " ",
             "display_prompt": "Address",
             "placeholder": "Enter your address",
-            "optional": false
-          },
-          {
-            "name": "recaptcha",
-            "type": "recaptcha",
-            "prompt": " ",
-            "display_prompt": "",
             "optional": false
           },
           {
@@ -2093,6 +2091,14 @@
             "optional": true
           },
           {
+            "name": "recaptcha",
+            "type": "recaptcha",
+            "prompt": " ",
+            "display_prompt": "",
+            "placeholder": "",
+            "optional": false
+          },
+          {
             "name": "submit",
             "type": "common_form_element"
           }
@@ -2138,7 +2144,12 @@
             "description": ""
           },{
             "start_field_index": 21,
-            "end_field_index": 45,
+            "end_field_index": 43,
+            "header": "Áreas Naturales",
+            "description": ""
+          },{
+            "start_field_index": 44,
+            "end_field_index": 46,
             "header": "Áreas Naturales",
             "description": ""
           }
@@ -3051,8 +3062,7 @@
             "hidden_default": true,
             "placeholder": "...",
             "optional": true
-          },
-          {
+          },{
             "name": "patrimonio_arqueologico_info",
             "type": "rich_textarea",
             "prompt": "Podés subir un documento, una foto o imagen, un link a un video, nota periodística o sitio.",
@@ -3060,6 +3070,13 @@
             "placeholder": "Adjunte archivos PDF, videos y otra información",
             "hidden_default": true,
             "optional": true
+          },{
+            "name": "recaptcha",
+            "type": "recaptcha",
+            "prompt": " ",
+            "display_prompt": "",
+            "placeholder": "",
+            "optional": false
           },
           {
             "name": "submit",
@@ -3107,7 +3124,12 @@
             "description": ""
           },{
             "start_field_index": 21,
-            "end_field_index": 24,
+            "end_field_index": 23,
+            "header": "Reporte Territorial",
+            "description": ""
+          },{
+            "start_field_index": 24,
+            "end_field_index": 25,
             "header": "Reporte Territorial",
             "description": ""
           }
@@ -3982,6 +4004,13 @@
             "prompt": "Comparte un PDF",
             "label": "Agregar un PDF",
             "optional": true
+          },{
+            "name": "recaptcha",
+            "type": "recaptcha",
+            "prompt": " ",
+            "display_prompt": "",
+            "placeholder": "",
+            "optional": false
           },
           {
             "name": "submit",
@@ -4361,10 +4390,24 @@
       "url": "/page/about",
       "name": "overview",
       "start_page": true
-    },
-    {
-      "title": "Recorrido del mapa",
-      "type": "featuredPlacesMenu"
+    },{
+      "title": "Areas naturales",
+      "type": "internal_link",
+      "url": "/page/areasnaturales",
+      "name": "overview",
+      "start_page": true
+    },{
+      "title": "Relocalizaciones",
+      "type": "internal_link",
+      "url": "/page/relocalizaciones",
+      "name": "overview",
+      "start_page": true
+    },{
+      "title": "Calidad del agua",
+      "type": "internal_link",
+      "url": "/page/calidaddelagua",
+      "name": "overview",
+      "start_page": true
     }
   ],
   "pages": [
@@ -4372,7 +4415,28 @@
       "slug": "about",
       "content": [
         "<h1 style='margin-bottom:4px;color:#75beb1;'>Qué Pasa, Riachuelo?</h1>",
-        "<p>Más información por venir...</p>"
+        "<p><b>¿Qué Pasa Riachuelo?</b> (QPR) es el resultado del esfuerzo colectivo de la Fundación Ambiente y Recursos Naturales (FARN), Universidad Nacional de San Martín (UNSAM) y otros actores que desde 2020 colaboran y participan en distintas actividades en el marco del proyecto “CoAct Ciencia Ciudadana Social para la Acción Colectiva”, una iniciativa global financiada por la Unión Europea que tiene como objetivo promover la ciencia ciudadana para avanzar acciones hacia la justicia ambiental en la Cuenca Matanza-Riachuelo.</p>"
+      ]
+    },
+    {
+      "slug": "areasnaturales",
+      "content": [
+        "<h1 style='margin-bottom:4px;color:#75beb1;'>Qué Pasa, Riachuelo?</h1>",
+        "<p><b>¿Qué pasa, Riachuelo?</b> registra y brinda información sobre los procesos de protección de áreas naturales en la cuenca Matanza-Riachuelo como los humedales y espacios verdes de origen natural o no (parques, plazas, y otros), importantes para la conservación del patrimonio biológico y cultural de la cuenca. Estos espacios brindan beneficios ecosistémicos y dan lugar a la interacción social y a la recreación, contribuyendo a la calidad de vida de la población. Están amenazados por el avance de la industrialización y la urbanización y por eso es importante compartir información y promover la participación para contribuir con su conservación.</p><br><p>QPR te permite:</p><br><ul><li>identificar zonas amenazadas que requieren desplegar estrategias de protección;</li><li>visibilizar la situación de protección de las áreas naturales de la cuenca;</li><li>Reportar eventos relativos al estado actual de estas áreas y compartir información sobre las mismas con fines educativos y de concientización sobre su relevancia social y ambiental</li></ul>"
+      ]
+    },
+    {
+      "slug": "relocalizaciones",
+      "content": [
+        "<h1 style='margin-bottom:4px;color:#75beb1;'>Qué Pasa, Riachuelo?</h1>",
+        "<p>En <b>¿Qué pasa, Riachuelo?</b> podés consultar y brindar información acerca de los procesos de relocalización de los barrios, villas y asentamientos de la cuenca Matanza Riachuelo. La cuestión de la relocalización afecta directamente a más de 17 mil familias que habitan en condiciones deficitarias de vivienda y hábitat en distintas zonas de la cuenca expuestas al riesgo ambiental. En estos procesos el acceso a la información y la participación de la población es clave para encontrar soluciones habitacionales integrales que garanticen sus derechos.</p><br> QPR permite: <br><ul><li>Acceder a información sobre las mesas de trabajo barriales a lo largo de la cuenca;</li><li>Reportar cuestiones relativas a las condiciones de hábitat y vivienda, salud, económicas, educativas y acerca de la participación y acceso a la información en torno a la relocalización;</li><li>Compartir experiencias de las comunidades relacionadas con  los procesos de relocalización</li></ul>"
+      ]
+    },
+    {
+      "slug": "calidaddelagua",
+      "content": [
+        "<h1 style='margin-bottom:4px;color:#75beb1;'>Qué Pasa, Riachuelo?</h1>",
+        "<p>En <b>¿Qué pasa, Riachuelo?</b> podés visualizar y discutir indicadores de calidad de agua en la cuenca y aportar a los mismos datos sobre la presencia de residuos sólidos en los cursos y otras materias observables (hidrocarburos, algas, cianobacterias, escombros, plásticos flotantes,etc). De esta forma, puede resultar una herramienta pedagógica útil para valorizar al río como un recurso biocultural</p><br><p>QRP permite:</p><br><ul><li>Visibilizar información sobre la calidad de agua en determinados puntos y el riesgo que implica;</li><li>reportar eventos que afectan a la calidad del agua a partir de parámetros observables en los cursos superficiales y sus entornos;</li><li>compartir información para contribuir con distintas estrategias pedagógicas.</li></ul>"
       ]
     }
   ],
