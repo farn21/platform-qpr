@@ -38,6 +38,8 @@ import {
 import { isWithAnyValue, isNotEmpty } from "./validators";
 import { insertEmbeddedImages } from "../../utils/embedded-images";
 
+import Reaptcha from 'reaptcha';
+
 const getDefaultValidator = isOptional => {
   return {
     validate: isOptional ? isWithAnyValue : isNotEmpty,
@@ -321,5 +323,18 @@ export default {
     ),
     getInitialValue: () => null,
     getResponseComponent: () => null,
+  },
+  [constants.RECAPTCHA_FIELD_TYPENAME]: {
+    getValidator: getDefaultValidator,
+    getComponent: (fieldConfig, context) => (
+      <Reaptcha 
+        sitekey="6LcfpPMcAAAAADlc5ygkBfzEP_UWuhhBqUpsMACH" 
+        onVerify={(rs)=>{
+          context.onChange(fieldConfig.name, rs)
+        }}
+      />
+    ),
+    getInitialValue: ({ value }) => value,
+    getResponseComponent: () => TextFieldResponse,
   },
 };

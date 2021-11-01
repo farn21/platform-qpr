@@ -36,3 +36,5 @@ spritesheet*
 
 # static site build process output
 www/
+
+package-lock.json

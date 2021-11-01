@@ -19,6 +19,7 @@ export default {
   NUMBER_FIELD_TYPENAME: "number",
   GEOLOCATE_FIELD_TYPENAME: "geolocate",
   LNG_LAT_FIELD_TYPENAME: "lng_lat",
+  RECAPTCHA_FIELD_TYPENAME: "recaptcha",
 
   AUTOFILL_DURATION_DAYS: 30,
 

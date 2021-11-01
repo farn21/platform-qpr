@@ -431,6 +431,46 @@ class InputForm extends Component {
       return;
     }
 
+    Util.log("USER", "new-place", "successfully-add-place");
+
+    // Save attachments.
+    if (this.attachments.length) {
+      await Promise.all(
+        this.attachments.map(async attachment => {
+          const attachmentResponse = await mapseedApiClient.attachments.create({
+            placeUrl: placeResponse.url,
+            attachment,
+            includePrivate: this.props.hasGroupAbilitiesInDatasets({
+              abilities: ["can_access_protected"],
+              datasetSlugs: [this.props.datasetSlug],
+              submissionSet: "places",
+            }),
+          });
+          if (attachmentResponse) {
+            placeResponse.attachments.push(attachmentResponse);
+            Util.log("USER", "dataset", "successfully-add-attachment");
+          } else {
+            alert("Oh dear. It looks like an attachment didn't save.");
+            Util.log("USER", "place", "fail-to-add-attachment");
+          }
+        }),
+      );
+    }
+
+    // Generate a PDF for the user if configured to do so.
+    if (this.props.datasetReportSelector(this.props.datasetSlug)) {
+      mapseedPDFServiceClient.getPDF({
+        url: `${window.location.protocol}//${
+          window.location.host
+        }/print-report/${this.props.datasetClientSlugSelector(
+          this.props.datasetSlug,
+        )}/${placeResponse.id}`,
+        filename: this.props.datasetReportSelector(this.props.datasetSlug)
+          .filename,
+        jwtPublic: placeResponse.jwt_public,
+      });
+    }
+
     this.setState({
       messageSuccess: true,
     });

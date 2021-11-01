@@ -523,7 +523,7 @@ class App extends React.Component<Props, State> {
                             css={css`
                               position: absolute;
                               top: 27%;
-                              left: 25%;
+                              left: 35%;
                               background-color: #FFF;
                               padding: 2em 4em;
                             `}> 
