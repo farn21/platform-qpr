@@ -207,7 +207,7 @@
       {
         "id": "f4",
         "basemap": true,
-        "visibleDefault": false,
+        "visibleDefault": true,
         "mapboxLayers": [
           {
             "id": "f4-basemap",
@@ -222,7 +222,7 @@
       {
         "id": "satellite",
         "basemap": true,
-        "visibleDefault": true,
+        "visibleDefault": false,
         "mapboxLayers": [
           {
             "id": "satellite-basemap",
@@ -456,13 +456,13 @@
                 "match",
                 ["get", "location_type"],
                 "areas-protegidas",
-                "marker-areas.svg",
+                "marker-idea.png",
                 "areas-protegidas-2",
-                "marker-areas.svg",
+                "marker-idea.png",
                 "reporte-territorial",
-                "marker-relocalizaciones.svg",
+                "marker-observation.png",
                 "agua-calidad",
-                "marker-agua.svg",
+                "marker-question.png",
                 "__no-icon-image__"
               ]
             }
@@ -481,13 +481,13 @@
                 "match",
                 ["get", "location_type"],
                 "areas-protegidas",
-                "marker-areas.svg",
+                "marker-idea.png",
                 "areas-protegidas-2",
-                "marker-areas.svg",
+                "marker-idea.png",
                 "reporte-territorial",
-                "marker-relocalizaciones.svg",
+                "marker-observation.png",
                 "agua-calidad",
-                "marker-agua.svg",
+                "marker-question.png",
                 "__no-icon-image__"
               ]
             }
@@ -505,7 +505,7 @@
             "filter": ["==", ["get", "location_type"], "featured_place"],
             "source": "quepasa-featured",
             "layout": {
-              "icon-image": "marker-recorrido.svg",
+              "icon-image": "marker-amenaza.png",
               "icon-size": 1.1,
               "icon-anchor": "center"
             }
@@ -517,7 +517,7 @@
             "type": "symbol",
             "source": "quepasa-featured",
             "layout": {
-              "icon-image": "marker-recorrido.svg",
+              "icon-image": "marker-amenaza.png",
               "icon-size": 0.9,
               "icon-anchor": "center"
             }
