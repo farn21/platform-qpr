@@ -38,3 +38,5 @@ spritesheet*
 www/
 
 package-lock.json
+
+.vs/*
