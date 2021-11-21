@@ -18,6 +18,7 @@ const config = {
     region: process.env.DEPLOY_REGION || "us-west-2",
     uploadDir: "www",
     index: "index.html",
+    error: "index.html",
     enableCloudfront: process.env.ENABLE_CLOUDFRONT == "true" ? true : false,
     certId: process.env.ENABLE_CLOUDFRONT == "true" ? process.env.SSL_CERT_ARN : undefined,
 };
