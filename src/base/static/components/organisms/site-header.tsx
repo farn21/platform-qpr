@@ -371,7 +371,7 @@ const SiteHeader: React.FunctionComponent<Props> = props => {
           );
         })}
       </nav>
-      <div
+      {/*<div
         css={{
           alignItems: "center",
 
@@ -502,7 +502,7 @@ const SiteHeader: React.FunctionComponent<Props> = props => {
             isMobileHeaderExpanded={isMobileHeaderExpanded}
           />
         )}
-      </div>
+      </div>*/}
     </header>
   );
 };

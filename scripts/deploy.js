@@ -46,7 +46,7 @@ function promisify(func, thisContext) {
     };
 }
 const createPromise = promisify(create);
-const simpleCreatePromise = promisify(create)
+const simpleCreatePromise = promisify(create);
 const deployPromise = promisify(deploy);
 const getDistributionConfigPromise = promisify(
     cloudfront.getDistributionConfig,
