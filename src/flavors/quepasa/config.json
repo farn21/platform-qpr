@@ -119,7 +119,7 @@
   ],
   "map": {
     "geolocationEnabled": true,
-    "geocodingBarEnabled": true,
+    "geocodingBarEnabled": false,
     "geocodeHint": [-34.700521, -59.254934],
     "geocodeCountry": "ar",
     "geocodeFieldLabel": "Buscar una dirección ...",
@@ -532,7 +532,6 @@
   "leftSidebar": {
     "icon": "fa fa-bars",
     "title": "Capas",
-    "enabled": true,
     "sections": [
       {
         "title": "Mapas base:",
@@ -559,6 +558,10 @@
             "title": "Recorrido del mapa"
           }
         ]
+      },
+      {
+        "title": "Calidad de agua",
+        "options": []
       },
       {
         "title": "Áreas Naturales",
@@ -612,7 +615,6 @@
     "enabled": false
   },
   "filters": {
-    "enabled": false,
     "components": [
       {
         "title": "Mapas base:",
@@ -639,6 +641,10 @@
             "title": "Recorrido del mapa"
           }
         ]
+      },
+      {
+        "title": "Calidad de agua",
+        "options": []
       },
       {
         "title": "Áreas Naturales",
@@ -690,7 +696,7 @@
   },
   "place": {
     "adding_supported": true,
-    "add_button_label": "Enviar un reporte",
+    "add_button_label": "Compartir experiencia",
     "action_text": "creada",
     "anonymous_name": "Alguien",
     "submit_button_label": "Enviar",

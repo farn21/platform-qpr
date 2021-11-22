@@ -94,11 +94,12 @@ const MapControls: React.FunctionComponent<MapControlProps> = props => {
         showCompass={false}
         onViewportChange={setViewport} 
       />
-      {/*
       <CustomControl
         icon={props.leftSidebarConfig.icon}
         onClick={() => props.setLeftSidebarExpanded(true)}
       />
+
+      {/*
       {props.isMeasurementToolEnabled && (
         <CustomControl
           icon={"fas fa-ruler-combined"}
