@@ -1036,7 +1036,7 @@
             }]
           },
           {
-            "name": "fuente-contaminación-opcion",
+            "name": "fuentes-opcion",
             "type": "dropdown",
             "prompt": "¿Cuál?",
             "display_prompt": "Fuentes",
@@ -1078,7 +1078,7 @@
             }]
           },
           {
-            "name": "fuente-contaminación-opcion",
+            "name": "vegetacion-opcion",
             "type": "dropdown",
             "prompt": "¿Cuál?",
             "display_prompt": "Vegetacion",
@@ -1131,7 +1131,7 @@
             }]
           },
           {
-            "name": "fuente-contaminación-opcion",
+            "name": "fauna-opcion",
             "type": "big_radio",
             "prompt": "¿Hay fauna en la zona?",
             "display_prompt": "Fauna en la zona",

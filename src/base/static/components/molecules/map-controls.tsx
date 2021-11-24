@@ -47,7 +47,7 @@ class CustomControl extends React.Component<CustomControlProps> {
         <button
           className={`mapboxgl-ctrl-icon ${this.props.icon}`}
           type="button"
-          title="Custom control"
+          title="Capas de información"
           onClick={this.props.onClick}
         />
       </div>

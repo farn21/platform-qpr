@@ -20,3 +20,9 @@ npm run simple-deploy
 ```
 
 This builds not production to www and then runs the deploy to s3 only without cloudfront and certificates checkings 
+
+## Run local 
+
+```bash
+FLAVOR=quepasa npm start
+```

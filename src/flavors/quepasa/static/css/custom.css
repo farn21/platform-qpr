@@ -601,3 +601,7 @@ div[class*=-RichTextareaFieldResponseWrapper] {
 .mapboxgl-popup-content {
   padding: 10px !important;
 }
+
+.mapboxgl-ctrl-group > button {
+  display: unset !important;
+}
