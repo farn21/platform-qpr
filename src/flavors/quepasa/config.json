@@ -766,12 +766,12 @@
         "multi_stage": [
           {
             "start_field_index": 1,
-            "end_field_index": 28,
+            "end_field_index": 30,
             "header": "Calidad del Agua",
             "description": ""
           },{
-            "start_field_index": 29,
-            "end_field_index": 30,
+            "start_field_index": 31,
+            "end_field_index": 32,
             "header": "Calidad del Agua",
             "description": ""
           }
@@ -1247,16 +1247,12 @@
             "optional": true
           },
           {
-            "name": "my_image",
-            "type": "common_form_element"
-          },
-          {
-            "name": "recaptcha",
-            "type": "recaptcha",
-            "prompt": " ",
-            "display_prompt": "",
-            "placeholder": "",
-            "optional": false
+            "name": "info-finalenlace",
+            "type": "text",
+            "prompt": "Enlace",
+            "placeholder": "Enlace",
+            "display_prompt": "Enlace",
+            "hidden_default": true
           },
           {
             "name": "submit",
@@ -1288,12 +1284,12 @@
         "multi_stage": [
           {
             "start_field_index": 1,
-            "end_field_index": 26,
+            "end_field_index": 50,
             "header": "Áreas Naturales",
             "description": ""
           },{
-            "start_field_index": 27,
-            "end_field_index": 28,
+            "start_field_index": 51,
+            "end_field_index": 51,
             "header": "Áreas Naturales",
             "description": ""
           }
@@ -1302,8 +1298,8 @@
           {
             "name": "contribucion",
             "type": "dropdown",
-          "prompt": "¿Querés compartir experiencias sobre los procesos de protección de las áreas naturales de la cuenca Matanza-Riachuelo?",
-          "display_prompt": "Experiencia",
+            "prompt": "¿Querés compartir experiencias sobre los procesos de protección de las áreas naturales de la cuenca Matanza-Riachuelo?",
+            "display_prompt": "Experiencia",
             "optional": false,
             "content":
             [
@@ -1727,7 +1723,9 @@
                 "targets": [
                   "proteccion-espacio-title",
                   "proteccion-espacio-text",
-                  "proteccion-espacio-pdf"
+                  "proteccion-espacio-pdf",
+                  "proteccion-espacio-image",
+                  "proteccion-espacio-enlace"
                 ]
               }
               ],
@@ -1744,7 +1742,7 @@
             "prompt": "Titulo",
             "display_prompt": "Observación",
             "placeholder": "Titulo",
-            "display_hidden": true
+            "hidden_default": true
           },
           {
             "name": "proteccion-espacio-text",
@@ -1752,7 +1750,7 @@
             "prompt": " ",
             "placeholder": "Texto",
             "display_prompt": "Descripcion",
-            "display_hidden": true
+            "hidden_default": true
           },
           {
             "name": "proteccion-espacio-pdf",
@@ -1760,19 +1758,278 @@
             "prompt": " ",
             "label": "PDF",
             "display_prompt": "Adjunto",
-            "display_hidden": true
+            "hidden_default": true
           },
           {
-            "name": "my_image",
-            "type": "common_form_element"
+            "name": "proteccion-espacio-image",
+            "type": "file",
+            "hidden_default": true,
+            "label": "IMAGEN",
+            "prompt": " "
           },
           {
-            "name": "recaptcha",
-            "type": "recaptcha",
+            "name": "proteccion-espacio-enlace",
+            "type": "text",
+            "prompt": "Enlace",
+            "placeholder": "Enlace",
+            "display_prompt": "Enlace",
+            "hidden_default": true
+          },
+          {
+            "name": "biodiversidad_especies",
+            "type": "big_checkbox",
             "prompt": " ",
-            "display_prompt": "",
-            "placeholder": "",
-            "optional": false
+            "optional": true,
+            "display_prompt": "Biodiversidad y especies",
+            "triggers": [
+              {
+              "value": "biodiversidad_especies",
+              "targets": [
+                "biodiversidad_especies-title",
+                "biodiversidad_especies-desc",
+                "biodiversidad_especies-image",
+                "biodiversidad_especies-pdf",
+                "biodiversidad_especies-link"
+              ]
+            }
+            ],
+            "content": [
+              {
+              "label": "BIODIVERSIDAD Y ESPECIES",
+              "value": "biodiversidad_especies"
+            }
+            ]
+          },
+          {
+            "name": "biodiversidad_especies-title",
+            "type": "text",
+            "prompt": "Titulo",
+            "display_prompt": "Observación",
+            "placeholder": "Titulo",
+            "hidden_default": true
+          },
+          {
+            "name": "biodiversidad_especies-desc",
+            "type": "textarea",
+            "prompt": " ",
+            "placeholder": "Texto",
+            "display_prompt": "Descripcion",
+            "hidden_default": true
+          },
+          {
+            "name": "biodiversidad_especies-pdf",
+            "type": "pdf",
+            "prompt": " ",
+            "label": "PDF",
+            "display_prompt": "Adjunto",
+            "hidden_default": true
+          },
+          {
+            "name": "biodiversidad_especies-image",
+            "type": "file",
+            "hidden_default": true,
+            "label": "IMAGEN",
+            "prompt": " "
+          },
+          {
+            "name": "biodiversidad_especies-link",
+            "type": "text",
+            "prompt": "Enlace",
+            "placeholder": "Enlace",
+            "display_prompt": "Enlace",
+            "hidden_default": true
+          },
+          {
+            "name": "reportes_estado_area",
+            "type": "big_checkbox",
+            "prompt": " ",
+            "optional": true,
+            "display_prompt": "Reportes de estado del area",
+            "triggers": [
+              {
+              "value": "reportes_estado",
+              "targets": [
+                "reportes_estado-title",
+                "reportes_estado-text",
+                "reportes_estado-pdf",
+                "reportes_estado-image",
+                "reportes_estado-link"
+              ]
+            }
+            ],
+            "content": [
+              {
+              "label": "REPORTES DE ESTADO DEL AREA",
+              "value": "reportes_estado"
+            }
+            ]
+          },
+          {
+            "name": "reportes_estado-title",
+            "type": "text",
+            "prompt": "Titulo",
+            "display_prompt": "Observación",
+            "placeholder": "Titulo",
+            "hidden_default": true
+          },
+          {
+            "name": "reportes_estado-text",
+            "type": "textarea",
+            "prompt": " ",
+            "placeholder": "Texto",
+            "display_prompt": "Descripcion",
+            "hidden_default": true
+          },
+          {
+            "name": "reportes_estado-pdf",
+            "type": "pdf",
+            "prompt": " ",
+            "label": "PDF",
+            "display_prompt": "Adjunto",
+            "hidden_default": true
+          },
+          {
+            "name": "reportes_estado-image",
+            "type": "file",
+            "hidden_default": true,
+            "label": "IMAGEN",
+            "prompt": " "
+          },
+          {
+            "name": "reportes_estado-link",
+            "type": "text",
+            "prompt": "Enlace",
+            "placeholder": "Enlace",
+            "display_prompt": "Enlace",
+            "hidden_default": true
+          },
+          {
+            "name": "usos_memorias",
+            "type": "big_checkbox",
+            "prompt": " ",
+            "optional": true,
+            "display_prompt": "Usos y memorias en el area",
+            "triggers": [
+              {
+              "value": "usos_memorias",
+              "targets": [
+                "usos_memorias-title",
+                "usos_memorias-text",
+                "usos_memorias-pdf",
+                "usos_memorias-image",
+                "usos_memorias-link"
+              ]
+            }
+            ],
+            "content": [
+              {
+              "label": "USOS Y MEMORIAS EN EL AREA",
+              "value": "usos_memorias"
+            }
+            ]
+          },
+          {
+            "name": "usos_memorias-title",
+            "type": "text",
+            "prompt": "Titulo",
+            "display_prompt": "Observación",
+            "placeholder": "Titulo",
+            "hidden_default": true
+          },
+          {
+            "name": "usos_memorias-desc",
+            "type": "textarea",
+            "prompt": " ",
+            "placeholder": "Texto",
+            "display_prompt": "Descripcion",
+            "hidden_default": true
+          },
+          {
+            "name": "usos_memorias-pdf",
+            "type": "pdf",
+            "prompt": " ",
+            "label": "PDF",
+            "display_prompt": "Adjunto",
+            "hidden_default": true
+          },
+          {
+            "name": "usos_memorias-image",
+            "type": "file",
+            "hidden_default": true,
+            "label": "IMAGEN",
+            "prompt": " "
+          },
+          {
+            "name": "usos_memorias-link",
+            "type": "text",
+            "prompt": "Enlace",
+            "placeholder": "Enlace",
+            "display_prompt": "Enlace",
+            "hidden_default": true
+          },
+          {
+            "name": "patrimonio_arqueologico",
+            "type": "big_checkbox",
+            "prompt": " ",
+            "optional": true,
+            "display_prompt": "Patrimonio arqueológico",
+            "triggers": [
+              {
+              "value": "patrimonio_arqueologico",
+              "targets": [
+                "patrimonio_arqueologico-title",
+                "patrimonio_arqueologico-text",
+                "patrimonio_arqueologico-pdf",
+                "patrimonio_arqueologico-image",
+                "patrimonio_arqueologico-link"
+              ]
+            }
+            ],
+            "content": [
+              {
+              "label": "PATRIMONIO ARQUEOLÓGICO",
+              "value": "patrimonio_arqueologico"
+            }
+            ]
+          },
+          {
+            "name": "patrimonio_arqueologico-title",
+            "type": "text",
+            "prompt": "Titulo",
+            "display_prompt": "Observación",
+            "placeholder": "Titulo",
+            "hidden_default": true
+          },
+          {
+            "name": "patrimonio_arqueologico-text",
+            "type": "textarea",
+            "prompt": " ",
+            "placeholder": "Texto",
+            "display_prompt": "Descripcion",
+            "hidden_default": true
+          },
+          {
+            "name": "patrimonio_arqueologico-pdf",
+            "type": "pdf",
+            "prompt": " ",
+            "label": "PDF",
+            "display_prompt": "Adjunto",
+            "hidden_default": true
+          },
+          {
+            "name": "patrimonio_arqueologico-image",
+            "type": "file",
+            "hidden_default": true,
+            "label": "IMAGEN",
+            "prompt": " "
+          },
+          {
+            "name": "patrimonio_arqueologico-link",
+            "type": "text",
+            "prompt": "Enlace",
+            "placeholder": "Enlace",
+            "display_prompt": "Enlace",
+            "hidden_default": true
           },
           {
             "name": "submit",
@@ -2732,7 +2989,7 @@
       },
       "submit": {
         "type": "submit",
-        "label": "¡Añadir al mapa!"
+        "label": "Publicar en el mapa"
       },
       "barrio": {
         "type": "dropdown_autocomplete",
