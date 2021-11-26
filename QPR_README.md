@@ -11,7 +11,7 @@ DEPLOY_DOMAIN=mapaqpr.farn.org.ar
 DEPLOY_REGION=us-east-2
 AWS_ACCESS_KEY_ID=YOUR-ACCESS-KEY
 AWS_SECRET_ACCESS_KEY=YOUR-SECRET-ACCESS-KEY
-ENABLE_CLOUDFRONT=false # This is the most important because we dont use cloudfront rigth now
+ENABLE_CLOUDFRONT=true
 ```
 and then run
 
