@@ -17,7 +17,9 @@
       "clientSlug": "site",
       "anonymous_permissions": [
         {
-          "abilities": ["create"],
+          "abilities": [
+            "create"
+          ],
           "submission_set": "*"
         }
       ]
@@ -27,7 +29,9 @@
       "clientSlug": "featured",
       "anonymous_permissions": [
         {
-          "abilities": ["create"],
+          "abilities": [
+            "create"
+          ],
           "submission_set": "comments"
         }
       ]
@@ -63,9 +67,9 @@
       }
     },
     "sharingProviders": [],
-    "privacyPolicy" : {
-      "title": "Políticas de protección de datos",
-      "content": "Lorem ipsum at inereht lorem ipsum lala ira bervan loaf un llo"
+    "privacyPolicy": {
+      "title": "Política de privacidad",
+      "content": "Como regla general, QPR no recopila información personal a menos que se elija proporcionar esa información (siempre relacionada a los fines de la plataforma). La información que se brinde a  QPR contribuirá con algunas funciones del sitio web, como comentarios, reporte de experiencias, expresiones de apoyo u otras funciones que se desarrollen  en el sitio a   futuro. Una descripción del uso previsto de esta información, cómo se recopila, las medidas de seguridad que QPR toma para protegerla y cómo otorgar o revocar el consentimiento para la recopilación y el uso de la misma está detallada en nuestra política de privacidad."
     }
   },
   "dashboard": [
@@ -105,7 +109,9 @@
           "isExportable": true,
           "type": "freeBarChart",
           "groupBy": "subbasin_name_NOMBRE",
-          "groupValue": ["get-count"],
+          "groupValue": [
+            "get-count"
+          ],
           "tooltipFormat": "count",
           "xAxisLabel": "Subceunca",
           "yAxisLabel": "Numero de reportes",
@@ -120,7 +126,10 @@
   "map": {
     "geolocationEnabled": true,
     "geocodingBarEnabled": false,
-    "geocodeHint": [-34.700521, -59.254934],
+    "geocodeHint": [
+      -34.700521,
+      -59.254934
+    ],
     "geocodeCountry": "ar",
     "geocodeFieldLabel": "Buscar una dirección ...",
     "geolocationOnload": false,
@@ -138,7 +147,9 @@
     "mapboxSources": {
       "f4": {
         "type": "raster",
-        "tiles": ["https://tile3.f4map.com/tiles/f4_2d/{z}/{x}/{y}.png"],
+        "tiles": [
+          "https://tile3.f4map.com/tiles/f4_2d/{z}/{x}/{y}.png"
+        ],
         "tileSize": 256,
         "attribution": "<a href=\"/page/terms\">Terms and conditions</a> &copy; OpenStreetMap contributors, CC-BY-SA. <a href=\"//mapbox.com/about/maps\" target=\"_blank\">Mapbox</a>. Geocoding Courtesy of <a href=\"//www.mapquest.com/\" target=\"_blank\">MapQuest</a> <img src=\"//developer.mapquest.com/content/osm/mq_logo.png\">.'"
       },
@@ -294,8 +305,12 @@
               "fill-color": "#70cce4",
               "fill-opacity": [
                 "interpolate",
-                ["linear"],
-                ["zoom"],
+                [
+                  "linear"
+                ],
+                [
+                  "zoom"
+                ],
                 10,
                 0.3,
                 12,
@@ -319,7 +334,10 @@
             "source": "riachuelo-subbasins",
             "source-layer": "riachuelo-subbasins",
             "layout": {
-              "text-field": ["get", "NOMBRE"]
+              "text-field": [
+                "get",
+                "NOMBRE"
+              ]
             },
             "paint": {
               "text-color": "#000000",
@@ -413,7 +431,10 @@
             "paint": {
               "line-color": "#ffab00",
               "line-width": 2,
-              "line-dasharray": [1, 1]
+              "line-dasharray": [
+                1,
+                1
+              ]
             }
           }
         ]
@@ -454,7 +475,10 @@
               "icon-anchor": "bottom",
               "icon-image": [
                 "match",
-                ["get", "location_type"],
+                [
+                  "get",
+                  "location_type"
+                ],
                 "areas-protegidas",
                 "marker-idea.png",
                 "areas-protegidas-2",
@@ -475,11 +499,24 @@
             "type": "symbol",
             "layout": {
               "icon-allow-overlap": true,
-              "icon-size": ["step", ["zoom"], 0.5, 11, 0.75, 14, 0.9],
+              "icon-size": [
+                "step",
+                [
+                  "zoom"
+                ],
+                0.5,
+                11,
+                0.75,
+                14,
+                0.9
+              ],
               "icon-anchor": "bottom",
               "icon-image": [
                 "match",
-                ["get", "location_type"],
+                [
+                  "get",
+                  "location_type"
+                ],
                 "areas-protegidas",
                 "marker-idea.png",
                 "areas-protegidas-2",
@@ -502,7 +539,14 @@
           {
             "id": "quepasa-featured-focused",
             "type": "symbol",
-            "filter": ["==", ["get", "location_type"], "featured_place"],
+            "filter": [
+              "==",
+              [
+                "get",
+                "location_type"
+              ],
+              "featured_place"
+            ],
             "source": "quepasa-featured",
             "layout": {
               "icon-image": "marker-amenaza.png",
@@ -740,7 +784,8 @@
             "type": "common_form_element"
           }
         ]
-      },{
+      },
+      {
         "category": "agua-calidad",
         "formId": "agua-calidad",
         "includeOnForm": true,
@@ -762,14 +807,17 @@
             ]
           }
         ],
-        "visibleLayerGroupIds": ["riachuelo-subbasins"],
+        "visibleLayerGroupIds": [
+          "riachuelo-subbasins"
+        ],
         "multi_stage": [
           {
             "start_field_index": 1,
             "end_field_index": 30,
             "header": "Calidad del Agua",
             "description": ""
-          },{
+          },
+          {
             "start_field_index": 31,
             "end_field_index": 32,
             "header": "Calidad del Agua",
@@ -780,11 +828,13 @@
           {
             "name": "lng-lat",
             "type": "lng_lat"
-          },{
+          },
+          {
             "name": "intro-calidad-agua",
             "type": "informational_html",
             "content": "<h3>¿Querés compartir una situación vinculada a la calidad de agua en la cuenca Matanza-Riachuelo?</h1><br><h4>¡Completá el siguiente formulario!</h3><br><br>"
-          },{
+          },
+          {
             "name": "intro-calidad-agua-2",
             "type": "informational_html",
             "content": "<b>Ingresá la ubicación</b><br><p>Arrastrá el mapa a tu izquierda o ingresá la ubicación en el buscador</p>"
@@ -802,6 +852,7 @@
             "type": "datetime",
             "prompt": "Ingresá la fecha de la situación que estás compartiendo. Se trata de la fecha del día en la que registraste la situación vinculada a la calidad de agua",
             "display_prompt": "Fecha vinculada a la calidad del agua",
+            "placeholder": "Seleccioná una fecha",
             "optional": false
           },
           {
@@ -828,7 +879,7 @@
                 "value": "otro"
               },
               {
-                "label": "No se",
+                "label": "No sé",
                 "value": "no-se"
               }
             ]
@@ -849,7 +900,7 @@
                 "value": "urbano"
               },
               {
-                "label": "No se",
+                "label": "No sé",
                 "value": "no-se"
               }
             ]
@@ -898,25 +949,25 @@
             "optional": true,
             "content": [
               {
-              "label": "Agua clara",
-              "value": "estado-agua-clara"
-            },
+                "label": "Agua clara",
+                "value": "estado-agua-clara"
+              },
               {
-              "label": "Poco clara",
-              "value": "estado-poco-clara"
-            },
+                "label": "Poco clara",
+                "value": "estado-poco-clara"
+              },
               {
-              "label": "Turbia",
-              "value": "estado-turbia"
-            },
+                "label": "Turbia",
+                "value": "estado-turbia"
+              },
               {
-              "label": "Muy turbia",
-              "value": "estado-muy-turbia"
-            },
+                "label": "Muy turbia",
+                "value": "estado-muy-turbia"
+              },
               {
-              "label": "Otro",
-              "value": "estado-otro"
-            }
+                "label": "Otro",
+                "value": "estado-otro"
+              }
             ]
           },
           {
@@ -926,28 +977,35 @@
             "prompt": "¿Cuál es el color del agua en el lugar y el momento del registro?",
             "display_prompt": "Color del agua",
             "optional": true,
-            "content": [{
-              "label": "Transparente",
-              "value": "transparente"
-            },{
-              "label": "Verde",
-              "value": "verde"
-            },{
-              "label": "Marrón",
-              "value": "marron"
-            },{
-              "label": "Gris",
-              "value": "gris"
-            },{
-              "label": "Negro",
-              "value": "negro"
-            },{
-              "label": "Rojo",
-              "value": "rojo"
-            },{
-              "label": "Otro",
-              "value": "otro"
-            }
+            "content": [
+              {
+                "label": "Transparente",
+                "value": "transparente"
+              },
+              {
+                "label": "Verde",
+                "value": "verde"
+              },
+              {
+                "label": "Marrón",
+                "value": "marron"
+              },
+              {
+                "label": "Gris",
+                "value": "gris"
+              },
+              {
+                "label": "Negro",
+                "value": "negro"
+              },
+              {
+                "label": "Rojo",
+                "value": "rojo"
+              },
+              {
+                "label": "Otro",
+                "value": "otro"
+              }
             ]
           },
           {
@@ -956,13 +1014,16 @@
             "prompt": "¿Se percibían olores del agua en el lugar y el momento del registro?",
             "display_prompt": "Olores",
             "optional": true,
-            "content": [{
-              "label": "Si",
-              "value": "si"
-            },{
-              "label": "No",
-              "value": "no"
-            }]
+            "content": [
+              {
+                "label": "Sí",
+                "value": "si"
+              },
+              {
+                "label": "No",
+                "value": "no"
+              }
+            ]
           },
           {
             "name": "estado-materiales-flotantes",
@@ -972,17 +1033,22 @@
             "optional": false,
             "triggers": [
               {
-              "value": "si_estado",
-              "targets": ["estado-materiales-cuales"]
-            }
+                "value": "si_estado",
+                "targets": [
+                  "estado-materiales-cuales"
+                ]
+              }
             ],
-            "content": [{
-              "label": "Si",
-              "value": "si_estado"
-            },{
-              "label": "No",
-              "value": "no"
-            }]
+            "content": [
+              {
+                "label": "Sí",
+                "value": "si_estado"
+              },
+              {
+                "label": "No",
+                "value": "no"
+              }
+            ]
           },
           {
             "name": "estado-materiales-cuales",
@@ -990,28 +1056,36 @@
             "prompt": "¿Cuáles?",
             "display_prompt": "Materiales",
             "optional": true,
-            "content": [{
-              "label": "Plásticos",
-              "value": "plasticos"
-            },{
-              "label": "Restos de vegetación",
-              "value": "restos-vegetacion"
-            },{
-              "label": "Pañales",
-              "value": "panales"
-            },{
-              "label": "Madera",
-              "value": "madera"
-            },{
-              "label": "Calzado y textiles",
-              "value": "calzado-textiles"
-            },{
-              "label": "Voluminosos",
-              "value": "voluminosos"
-            },{
-              "label": "Otros",
-              "value": "otros"
-            }]
+            "content": [
+              {
+                "label": "Plásticos",
+                "value": "plasticos"
+              },
+              {
+                "label": "Restos de vegetación",
+                "value": "restos-vegetacion"
+              },
+              {
+                "label": "Pañales",
+                "value": "panales"
+              },
+              {
+                "label": "Madera",
+                "value": "madera"
+              },
+              {
+                "label": "Calzado y textiles",
+                "value": "calzado-textiles"
+              },
+              {
+                "label": "Voluminosos",
+                "value": "voluminosos"
+              },
+              {
+                "label": "Otros",
+                "value": "otros"
+              }
+            ]
           },
           {
             "name": "fuente-contaminacion-cercana",
@@ -1021,19 +1095,26 @@
             "optional": true,
             "triggers": [
               {
-              "value": "si_fuente",
-              "targets": ["fuente-contaminacion-opcion"]
-            }],
-            "content": [{
-              "label": "Si",
-              "value": "si_fuente"
-            },{
-              "label": "No",
-              "value": "no"
-            },{
-              "label": "No sé",
-              "value": "no_se"
-            }]
+                "value": "si_fuente",
+                "targets": [
+                  "fuente-contaminacion-opcion"
+                ]
+              }
+            ],
+            "content": [
+              {
+                "label": "Sí",
+                "value": "si_fuente"
+              },
+              {
+                "label": "No",
+                "value": "no"
+              },
+              {
+                "label": "No sé",
+                "value": "no_se"
+              }
+            ]
           },
           {
             "name": "fuentes-opcion",
@@ -1041,58 +1122,74 @@
             "prompt": "¿Cuál?",
             "display_prompt": "Fuentes",
             "optional": true,
-            "content": [{
-              "label": "Domésticos",
-              "value": "domesticos"
-            },{
-              "label": "cloacal",
-              "value": "cloacal"
-            },{
-              "label": "Pluvial",
-              "value": "pluvial"
-            },{
-              "label": "Industrial",
-              "value": "industrial"
-            },{
-              "label": "No sé",
-              "value": "no_se"
-            }]
+            "content": [
+              {
+                "label": "Domésticos",
+                "value": "domesticos"
+              },
+              {
+                "label": "cloacal",
+                "value": "cloacal"
+              },
+              {
+                "label": "Pluvial",
+                "value": "pluvial"
+              },
+              {
+                "label": "Industrial",
+                "value": "industrial"
+              },
+              {
+                "label": "No sé",
+                "value": "no_se"
+              }
+            ]
           },
           {
             "name": "vegetacion-margenes-cuerpo",
             "type": "dropdown",
-            "prompt": "¿Hay vegetación en los márgenes del cuerpo de auga?",
+            "prompt": "¿Hay vegetación en los márgenes del cuerpo de agua?",
             "display_prompt": "Vegetacion de los margenes",
             "optional": false,
             "triggers": [
               {
-              "value": "si_vegetacion",
-              "targets": ["vegetacion-margenes-cuerpo"]
-            }],
-            "content": [{
-              "label": "Si",
-              "value": "si_vegetacion"
-            },{
-              "label": "No",
-              "value": "no"
-            }]
+                "value": "si_vegetacion",
+                "targets": [
+                  "vegetacion-margenes-cuerpo"
+                ]
+              }
+            ],
+            "content": [
+              {
+                "label": "Sí",
+                "value": "si_vegetacion"
+              },
+              {
+                "label": "No",
+                "value": "no"
+              }
+            ]
           },
           {
             "name": "vegetacion-opcion",
             "type": "dropdown",
             "prompt": "¿Cuál?",
-            "display_prompt": "Vegetacion",
+            "display_prompt": "Vegetación",
             "optional": true,
-            "content": [{
-              "label": "Césped mantenido",
-              "value": "cesped_mantenido"
-            },{
-              "label": "Arbustos",
-              "value": "arbustos"
-            },{
-              "label": "Arboles",
-              "value": "arboles"
-            }]
+            "content": [
+              {
+                "label": "Césped mantenido",
+                "value": "cesped_mantenido"
+              },
+              {
+                "label": "Arbustos",
+                "value": "arbustos"
+              },
+              {
+                "label": "Árboles",
+                "value": "arboles"
+              }
+            ]
           },
           {
             "name": "vegetacion-cuerpo-agua",
@@ -1102,19 +1199,26 @@
             "optional": true,
             "triggers": [
               {
-              "value": "si-vegetacion-cuerpo",
-              "targets": ["vegetacion-cuerpo-agua-option"]
-            }],
-            "content": [{
-              "label": "Si",
-              "value": "si-vegetacion-cuerpo"
-            },{
-              "label": "No",
-              "value": "no-vegetacion-cuerpo"
-            },{
-              "label": "No sé",
-              "value": "no-se-vegetacion-cuerpo"
-            }]
+                "value": "si-vegetacion-cuerpo",
+                "targets": [
+                  "vegetacion-cuerpo-agua-option"
+                ]
+              }
+            ],
+            "content": [
+              {
+                "label": "Sí",
+                "value": "si-vegetacion-cuerpo"
+              },
+              {
+                "label": "No",
+                "value": "no-vegetacion-cuerpo"
+              },
+              {
+                "label": "No sé",
+                "value": "no-se-vegetacion-cuerpo"
+              }
+            ]
           },
           {
             "name": "vegetacion-cuerpo-agua-option",
@@ -1122,13 +1226,16 @@
             "prompt": "¿Cuál?",
             "display_prompt": "Vegetación cuerpo",
             "optional": true,
-            "content": [{
-              "label": "Algas",
-              "value": "algas-vegetacion-cuerpo"
-            },{
-              "label": "Plantas acuáticas",
-              "value": "vegetacion-plantas"
-            }]
+            "content": [
+              {
+                "label": "Algas",
+                "value": "algas-vegetacion-cuerpo"
+              },
+              {
+                "label": "Plantas acuáticas",
+                "value": "vegetacion-plantas"
+              }
+            ]
           },
           {
             "name": "fauna-opcion",
@@ -1136,30 +1243,42 @@
             "prompt": "¿Hay fauna en la zona?",
             "display_prompt": "Fauna en la zona",
             "optional": true,
-            "content": [{
-              "label": "Si",
-              "value": "si"
-            },{
-              "label": "No",
-              "value": "no"
-            }]
+            "content": [
+              {
+                "label": "Sí",
+                "value": "si"
+              },
+              {
+                "label": "No",
+                "value": "no"
+              }
+            ]
+          },
+          {
+            "name": "info-3",
+            "type": "informational_html",
+            "content": "<b>Ahora vamos a registrar la situación hidrometeorológica del cuerpo de agua (río, arroyo, canal).</b>"
           },
           {
             "name": "nivel-agua-cuerpo",
             "type": "dropdown",
-            "prompt": "¿Cual es el nivel del agua del cuerpo del agua al momento de observar la situación?",
+            "prompt": "¿Cuál es el nivel del agua del cuerpo del agua al momento de observar la situación?",
             "display_prompt": "Nivel del agua",
             "optional": true,
-            "content": [{
-              "label": "Alto",
-              "value": "alto-nivel-agua-cuerpo"
-            },{
-              "label": "Medio",
-              "value": "medio-nivel-agua-cuerpo"
-            },{
-              "label": "Bajo",
-              "value": "bajo-nivel-agua-cuerpo"
-            }]
+            "content": [
+              {
+                "label": "Alto",
+                "value": "alto-nivel-agua-cuerpo"
+              },
+              {
+                "label": "Medio",
+                "value": "medio-nivel-agua-cuerpo"
+              },
+              {
+                "label": "Bajo",
+                "value": "bajo-nivel-agua-cuerpo"
+              }
+            ]
           },
           {
             "name": "vientos-fuertes",
@@ -1167,39 +1286,49 @@
             "prompt": "¿En los días previos o durante el momento de la observación existieron vientos fuertes (sudestada)?",
             "display_prompt": "Días previos",
             "optional": true,
-            "content": [{
-              "label": "Si",
-              "value": "si-vientos-fuertes"
-            },{
-              "label": "No",
-              "value": "no-vientos-fuertes"
-            },{
-              "label": "No sé",
-              "value": "no_se_vientos-fuertes"
-            }]
+            "content": [
+              {
+                "label": "Sí",
+                "value": "si-vientos-fuertes"
+              },
+              {
+                "label": "No",
+                "value": "no-vientos-fuertes"
+              },
+              {
+                "label": "No sé",
+                "value": "no_se_vientos-fuertes"
+              }
+            ]
           },
           {
             "name": "lluvias-observación",
             "type": "dropdown",
-            "prompt": "¿LLovió en los días previos o durante el momento de la observación?",
-            "display_prompt": "LLuvia",
+            "prompt": "¿Llovió en los días previos o durante el momento de la observación?",
+            "display_prompt": "Lluvia",
             "optional": true,
             "triggers": [
               {
                 "value": "si-lluvias-observacion",
-                "targets": ["lluvias-observacion-opcion"]
+                "targets": [
+                  "lluvias-observacion-opcion"
+                ]
               }
             ],
-            "content": [{
-              "label": "Si",
-              "value": "si-lluvias-observación"
-            },{
-              "label": "No",
-              "value": "no-lluvias-observación"
-            },{
-              "label": "No sé",
-              "value": "no_se_lluvias-observación"
-            }]
+            "content": [
+              {
+                "label": "Sí",
+                "value": "si-lluvias-observación"
+              },
+              {
+                "label": "No",
+                "value": "no-lluvias-observación"
+              },
+              {
+                "label": "No sé",
+                "value": "no_se_lluvias-observación"
+              }
+            ]
           },
           {
             "name": "lluvias-observación-opcion",
@@ -1207,27 +1336,26 @@
             "prompt": "¿Qué tipo de lluvia se produjo?",
             "display_prompt": "Tipo de lluvia",
             "optional": true,
-            "content": [{
-              "label": "LLovizna",
-              "value": "llovizna"
-            },{
-              "label": "Llovizna intensa breve",
-              "value": "llovizna-intensa-breve"
-            },{
-              "label": "Lluvia intensa extendida",
-              "value": "lluvia-intensa-extendida"
-            }]
-          },
-          {
-            "name": "info-final",
-            "type": "informational_html",
-            "content": "<p>Podés agregar un título, descripción, adjuntar imágenes, documentos en pdf y enlaces.</p>"
+            "content": [
+              {
+                "label": "Llovizna",
+                "value": "llovizna"
+              },
+              {
+                "label": "Llovizna intensa breve",
+                "value": "llovizna-intensa-breve"
+              },
+              {
+                "label": "Lluvia intensa extendida",
+                "value": "lluvia-intensa-extendida"
+              }
+            ]
           },
           {
             "name": "info-finaltext",
             "type": "text",
             "display_prompt": "Observación",
-            "prompt": " ",
+            "prompt": "Podés agregar un título, descripción, adjuntar imágenes, documentos en pdf y enlaces.",
             "placeholder": "Título",
             "optional": true
           },
@@ -1240,26 +1368,27 @@
             "optional": true
           },
           {
-            "name": "info-pdf",
-            "type": "pdf",
+            "name": "info-finalenlace",
+            "type": "text",
+            "display_prompt": " ",
             "prompt": " ",
-            "label": "PDF",
+            "placeholder": "Enlace",
             "optional": true
           },
           {
-            "name": "info-finalenlace",
-            "type": "text",
-            "prompt": "Enlace",
-            "placeholder": "Enlace",
-            "display_prompt": "Enlace",
-            "hidden_default": true
+            "name": "info-file",
+            "type": "file",
+            "label": "ADJUNTAR ARCHIVO DE IMAGEN O PDF",
+            "prompt": " ",
+            "optional": true
           },
           {
             "name": "submit",
             "type": "common_form_element"
           }
         ]
-      },{
+      },
+      {
         "category": "areas-protegidas-2",
         "formId": "areas-protegidas-2",
         "includeOnForm": true,
@@ -1287,7 +1416,8 @@
             "end_field_index": 50,
             "header": "Áreas Naturales",
             "description": ""
-          },{
+          },
+          {
             "start_field_index": 51,
             "end_field_index": 52,
             "header": "Áreas Naturales",
@@ -1301,77 +1431,96 @@
             "prompt": "¿Querés compartir experiencias sobre los procesos de protección de las áreas naturales de la cuenca Matanza-Riachuelo?",
             "display_prompt": "Experiencia",
             "optional": false,
-            "content":
-            [
+            "content": [
               {
-              "label": "Reserva municipal morón",
-              "value": "reserva-municipal-moron"
-            },{
-              "label": "Reserva natural de objetivo definido educativo arroyo el durazno",
-              "value": "reserva-natural-el-durazno"
-            },{
-              "label": "Reserva natural y paisaje protegido de interés provincial Santa Catalina",
-              "value": "reserva-natural-santa-catalina"
-            },{
-              "label": "Reserva ecológica laguna saladita norte",
-              "value": "reserva-ecologica-laguna-salidata-norte"
-            },{
-              "label": "Reserva natural municipal de objetivo definido educativo museo guardia del juncal",
-              "value": "reserva-natural-guardia-juncal"
-            },{
-              "label": "Reserva natural de objetivo definido mixto educativo y de proteccion de cuencas hídricas lagunas de San Vicente",
-              "value": "reserva-natural-lagunas-de-san-vicente"
-            },{
-              "label": "Reserva municipal Santa Catalina",
-              "value": "reserva-municipal-santa-catalina"
-            },{
-              "label": "Reserva natural costanera sur",
-              "value": "reserva-natural-costanera-sur"
-            },{
-              "label": "Reserva paleontológica Francisco P. Moreno parque natural lago lugano",
-              "value": "reserva-paleontologica-moreno"
-            },{
-              "label": "Reserva natural integral y mixta laguna de rocha",
-              "value": "reserva-natural-integral-mixta"
-            },{
-              "label": "Reserva natural y área ecológicamente protegida bosques de Ciudad Evita",
-              "value": "reserva-natural-area-ciudad-evita"
-            },{
-              "label": "Reserva natural de la defensa el Palomar",
-              "value": "reserva-natural-defensa-palomar"
-            },{
-              "label": "Reserva ecológica laguna saladita sur",
-              "value": "reserva-natural-laguna-saladita"
-            },{
-              "label": "Reserva costera municipal de Avellaneda - Ecorea",
-              "value": "reserva-costera-municipal-avellaneda-ecorea"
-            },{
-              "label": "Reserva ecológica Ciudad Universitaria - Costanera Norte",
-              "value": "reserva-ecológica-ciudad-universitaria"
-            },{
-              "label": "Otra área natural",
-              "value": "otra-area-natural"
-            }
+                "label": "Reserva municipal morón",
+                "value": "reserva-municipal-moron"
+              },
+              {
+                "label": "Reserva natural de objetivo definido educativo arroyo el durazno",
+                "value": "reserva-natural-el-durazno"
+              },
+              {
+                "label": "Reserva natural y paisaje protegido de interés provincial Santa Catalina",
+                "value": "reserva-natural-santa-catalina"
+              },
+              {
+                "label": "Reserva ecológica laguna saladita norte",
+                "value": "reserva-ecologica-laguna-salidata-norte"
+              },
+              {
+                "label": "Reserva natural municipal de objetivo definido educativo museo guardia del juncal",
+                "value": "reserva-natural-guardia-juncal"
+              },
+              {
+                "label": "Reserva natural de objetivo definido mixto educativo y de proteccion de cuencas hídricas lagunas de San Vicente",
+                "value": "reserva-natural-lagunas-de-san-vicente"
+              },
+              {
+                "label": "Reserva municipal Santa Catalina",
+                "value": "reserva-municipal-santa-catalina"
+              },
+              {
+                "label": "Reserva natural costanera sur",
+                "value": "reserva-natural-costanera-sur"
+              },
+              {
+                "label": "Reserva paleontológica Francisco P. Moreno parque natural lago lugano",
+                "value": "reserva-paleontologica-moreno"
+              },
+              {
+                "label": "Reserva natural integral y mixta laguna de rocha",
+                "value": "reserva-natural-integral-mixta"
+              },
+              {
+                "label": "Reserva natural y área ecológicamente protegida bosques de Ciudad Evita",
+                "value": "reserva-natural-area-ciudad-evita"
+              },
+              {
+                "label": "Reserva natural de la defensa el Palomar",
+                "value": "reserva-natural-defensa-palomar"
+              },
+              {
+                "label": "Reserva ecológica laguna saladita sur",
+                "value": "reserva-natural-laguna-saladita"
+              },
+              {
+                "label": "Reserva costera municipal de Avellaneda - Ecorea",
+                "value": "reserva-costera-municipal-avellaneda-ecorea"
+              },
+              {
+                "label": "Reserva ecológica Ciudad Universitaria - Costanera Norte",
+                "value": "reserva-ecológica-ciudad-universitaria"
+              },
+              {
+                "label": "Otra área natural",
+                "value": "otra-area-natural"
+              }
             ]
-         },{
+          },
+          {
             "name": "lng-lat",
             "type": "lng_lat"
-         },{
+          },
+          {
             "name": "intro_areas-naturales",
             "type": "informational_html",
             "content": "<b>¿Dónde está ubicada esta área?</b><br><p>Arrastrá el mapa a tu izquierda o ingresá la ubicación en el buscador</p>"
-        },{
+          },
+          {
             "name": "private-address",
             "type": "geocoding",
             "prompt": " ",
             "display_prompt": "Address",
             "placeholder": "Enter your address",
             "optional": false
-        },{
-          "name": "intro-areas-naturales-2",
-          "type": "informational_html",
-          "content": "<p>¿Sabés si ese espacio cuenta con algún tipo de protección formal por parte de la nación, el municipio o la provincia, es decir, alguna normativa de creación como una ordenanza, una ley, un convenio o un decreto?</p>"
-        },{
+          },
+          {
+            "name": "intro-areas-naturales-2",
+            "type": "informational_html",
+            "content": "<p>¿Sabés si ese espacio cuenta con algún tipo de protección formal por parte de la nación, el municipio o la provincia, es decir, alguna normativa de creación como una ordenanza, una ley, un convenio o un decreto?</p>"
+          },
+          {
             "name": "proteccion_del_espacio",
             "type": "big_radio",
             "prompt": " ",
@@ -1380,27 +1529,39 @@
             "triggers": [
               {
                 "value": "si",
-                "targets": ["porque_proteccion"]
-            },{
+                "targets": [
+                  "porque_proteccion"
+                ]
+              },
+              {
                 "value": "no",
-                "targets": ["reconocido_area_protegida"]
-            },{
+                "targets": [
+                  "reconocido_area_protegida"
+                ]
+              },
+              {
                 "value": "no_se_formal",
-                "targets": ["reconocido_area_protegida"]
-            }],
+                "targets": [
+                  "reconocido_area_protegida_2"
+                ]
+              }
+            ],
             "content": [
               {
                 "label": "Sí, cuenta con algún tipo de protección formal",
                 "value": "si"
-              },{
+              },
+              {
                 "label": "No, no cuenta con ningún tipo de protección formal",
                 "value": "no"
-              },{
+              },
+              {
                 "label": "No sé si cuenta con algún tipo de protección formal",
                 "value": "no_se_formal"
               }
             ]
-        },{
+          },
+          {
             "name": "reconocido_area_protegida",
             "type": "big_radio",
             "prompt": "¿Considerás que este espacio debería estar reconocido como un área protegida?",
@@ -1410,12 +1571,15 @@
             "triggers": [
               {
                 "value": "si",
-                "targets": ["porque_motivos_protegido"]
-              },{
+                "targets": [
+                  "porque_motivos_protegido"
+                ]
+              },
+              {
                 "value": "no",
                 "targets": [
                   "proteccion_recursos",
-                  "proteccion_recursos_guardabosques",
+                  "proteccion_recursos_guardaparques",
                   "proteccion_recursos_organizacion",
                   "proteccion_recursos_cercos",
                   "proteccion_recursos_plan"
@@ -1424,15 +1588,57 @@
             ],
             "content": [
               {
-              "label": "Sí",
-              "value": "si"
-            },{
-              "label": "No",
-              "value": "no"
-            },{
-              "label": "No sé",
-              "value": "no_se"
-            }
+                "label": "Sí",
+                "value": "si"
+              },
+              {
+                "label": "No",
+                "value": "no"
+              },
+              {
+                "label": "No sé",
+                "value": "no_se"
+              }
+            ]
+          },
+          {
+            "name": "reconocido_area_protegida_2",
+            "type": "big_radio",
+            "prompt": "¿Considerás que este espacio debería estar reconocido como un área protegida?",
+            "hidden_default": true,
+            "display_prompt": "Espacio",
+            "optional": false,
+            "triggers": [
+              {
+                "value": "si",
+                "targets": [
+                  "porque_motivos_protegido"
+                ]
+              },
+              {
+                "value": "no",
+                "targets": [
+                  "proteccion_recursos",
+                  "proteccion_recursos_guardaparques",
+                  "proteccion_recursos_organizacion",
+                  "proteccion_recursos_cercos",
+                  "proteccion_recursos_plan"
+                ]
+              }
+            ],
+            "content": [
+              {
+                "label": "Sí",
+                "value": "si"
+              },
+              {
+                "label": "No",
+                "value": "no"
+              },
+              {
+                "label": "No sé",
+                "value": "no_se"
+              }
             ]
           },
           {
@@ -1444,24 +1650,29 @@
             "optional": false,
             "content": [
               {
-              "label": "Porque es un área natural importante para el ecosistema",
-              "value": "porque-natural-ecosistema"
-            },{
-              "label": "Por su biodiversidad",
-              "value": "por-biodiversidad"
-            },{
-              "label": "Porque es un espacio recreativo y social frecuentado por la comunidad",
-              "value": "porque-espacio-recreativo"
-            },{
-              "label": "Porque tiene un valor histórico",
-              "value": "porque-valor-historico"
-            },{
-              "label": "Porque tiene o podría tener patrimonio arqueológico",
-              "value": "porque-patrimonio-arqueologico"
-            },{
-              "label": "Ninguna de las anteriores",
-              "value": "ninguna-anteriores"
-            }
+                "label": "Porque es un área natural importante para el ecosistema",
+                "value": "porque-natural-ecosistema"
+              },
+              {
+                "label": "Por su biodiversidad",
+                "value": "por-biodiversidad"
+              },
+              {
+                "label": "Porque es un espacio recreativo y social frecuentado por la comunidad",
+                "value": "porque-espacio-recreativo"
+              },
+              {
+                "label": "Porque tiene un valor histórico",
+                "value": "porque-valor-historico"
+              },
+              {
+                "label": "Porque tiene o podría tener patrimonio arqueológico",
+                "value": "porque-patrimonio-arqueologico"
+              },
+              {
+                "label": "Ninguna de las anteriores",
+                "value": "ninguna-anteriores"
+              }
             ]
           },
           {
@@ -1473,30 +1684,35 @@
             "optional": false,
             "content": [
               {
-              "label": "Porque es un área natural importante para el ecosistema",
-              "value": "porque-natural-ecosistema"
-            },{
-              "label": "Por su biodiversidad",
-              "value": "por-biodiversidad"
-            },{
-              "label": "Porque es un espacio recreativo y social frecuentado por la comunidad",
-              "value": "porque-espacio-recreativo"
-            },{
-              "label": "Porque tiene un valor histórico",
-              "value": "porque-valor-historico"
-            },{
-              "label": "Porque tiene o podría tener patrimonio arqueológico",
-              "value": "porque-patrimonio-arqueologico"
-            },{
-              "label": "Ninguna de las anteriores",
-              "value": "ninguna-anteriores"
-            }
+                "label": "Porque es un área natural importante para el ecosistema",
+                "value": "porque-natural-ecosistema"
+              },
+              {
+                "label": "Por su biodiversidad",
+                "value": "por-biodiversidad"
+              },
+              {
+                "label": "Porque es un espacio recreativo y social frecuentado por la comunidad",
+                "value": "porque-espacio-recreativo"
+              },
+              {
+                "label": "Porque tiene un valor histórico",
+                "value": "porque-valor-historico"
+              },
+              {
+                "label": "Porque tiene o podría tener patrimonio arqueológico",
+                "value": "porque-patrimonio-arqueologico"
+              },
+              {
+                "label": "Ninguna de las anteriores",
+                "value": "ninguna-anteriores"
+              }
             ]
           },
           {
             "name": "proteccion_recursos",
             "type": "informational_html",
-            "prompt": "Más allá de la protección formal, ¿sabés si esta área cuenta para su protección con alguno de los siguientes recursos? Respondé en cada caso.",
+            "content": "<p>Más allá de la protección formal, ¿sabés si esta área cuenta para su protección con alguno de los siguientes recursos? Respondé en cada caso.</p>",
             "hidden_default": true,
             "display_prompt": "Protección formal",
             "optional": true
@@ -1510,15 +1726,17 @@
             "optional": true,
             "content": [
               {
-              "label": "Sí",
-              "value": "si"
-            },{
-              "label": "No",
-              "value": "no"
-            },{
-              "label": "No sé",
-              "value": "no_se"
-            }
+                "label": "Sí",
+                "value": "si"
+              },
+              {
+                "label": "No",
+                "value": "no"
+              },
+              {
+                "label": "No sé",
+                "value": "no_se"
+              }
             ]
           },
           {
@@ -1530,15 +1748,17 @@
             "optional": true,
             "content": [
               {
-              "label": "Sí",
-              "value": "si"
-            },{
-              "label": "No",
-              "value": "no"
-            },{
-              "label": "No sé",
-              "value": "no_se"
-            }
+                "label": "Sí",
+                "value": "si"
+              },
+              {
+                "label": "No",
+                "value": "no"
+              },
+              {
+                "label": "No sé",
+                "value": "no_se"
+              }
             ]
           },
           {
@@ -1550,15 +1770,17 @@
             "optional": true,
             "content": [
               {
-              "label": "Sí",
-              "value": "si"
-            },{
-              "label": "No",
-              "value": "no"
-            },{
-              "label": "No sé",
-              "value": "no_se"
-            }
+                "label": "Sí",
+                "value": "si"
+              },
+              {
+                "label": "No",
+                "value": "no"
+              },
+              {
+                "label": "No sé",
+                "value": "no_se"
+              }
             ]
           },
           {
@@ -1570,15 +1792,17 @@
             "optional": true,
             "content": [
               {
-              "label": "Sí",
-              "value": "si"
-            },{
-              "label": "No",
-              "value": "no"
-            },{
-              "label": "No sé",
-              "value": "no_se"
-            }
+                "label": "Sí",
+                "value": "si"
+              },
+              {
+                "label": "No",
+                "value": "no"
+              },
+              {
+                "label": "No sé",
+                "value": "no_se"
+              }
             ]
           },
           {
@@ -1594,21 +1818,25 @@
             "optional": false,
             "content": [
               {
-              "label": "Nunca",
-              "value": "nunca"
-            },{
-              "label": "Poco frecuente",
-              "value": "poco-frecuente"
-            },{
-              "label": "frecuentemente",
-              "value": "frecuentemente"
-            },{
-              "label": "Muy frecuentemente",
-              "value": "muy-frecuentemente"
-            },{
-              "label": "No sabe/No contesta",
-              "value": "nosabe-nocontesta"
-            }
+                "label": "Nunca",
+                "value": "nunca"
+              },
+              {
+                "label": "Poco frecuente",
+                "value": "poco-frecuente"
+              },
+              {
+                "label": "Frecuentemente",
+                "value": "frecuentemente"
+              },
+              {
+                "label": "Muy frecuentemente",
+                "value": "muy-frecuentemente"
+              },
+              {
+                "label": "No sabe/No contesta",
+                "value": "nosabe-nocontesta"
+              }
             ]
           },
           {
@@ -1619,21 +1847,25 @@
             "optional": false,
             "content": [
               {
-              "label": "Nunca",
-              "value": "nunca"
-            },{
-              "label": "Poco frecuente",
-              "value": "poco-frecuente"
-            },{
-              "label": "frecuentemente",
-              "value": "frecuentemente"
-            },{
-              "label": "Muy frecuentemente",
-              "value": "muy-frecuentemente"
-            },{
-              "label": "No sabe/No contesta",
-              "value": "nosabe-nocontesta"
-            }
+                "label": "Nunca",
+                "value": "nunca"
+              },
+              {
+                "label": "Poco frecuente",
+                "value": "poco-frecuente"
+              },
+              {
+                "label": "Frecuentemente",
+                "value": "frecuentemente"
+              },
+              {
+                "label": "Muy frecuentemente",
+                "value": "muy-frecuentemente"
+              },
+              {
+                "label": "No sabe/No contesta",
+                "value": "nosabe-nocontesta"
+              }
             ]
           },
           {
@@ -1644,21 +1876,25 @@
             "optional": false,
             "content": [
               {
-              "label": "Nunca",
-              "value": "nunca"
-            },{
-              "label": "Poco frecuente",
-              "value": "poco-frecuente"
-            },{
-              "label": "frecuentemente",
-              "value": "frecuentemente"
-            },{
-              "label": "Muy frecuentemente",
-              "value": "muy-frecuentemente"
-            },{
-              "label": "No sabe/No contesta",
-              "value": "nosabe-nocontesta"
-            }
+                "label": "Nunca",
+                "value": "nunca"
+              },
+              {
+                "label": "Poco frecuente",
+                "value": "poco-frecuente"
+              },
+              {
+                "label": "Frecuentemente",
+                "value": "frecuentemente"
+              },
+              {
+                "label": "Muy frecuentemente",
+                "value": "muy-frecuentemente"
+              },
+              {
+                "label": "No sabe/No contesta",
+                "value": "nosabe-nocontesta"
+              }
             ]
           },
           {
@@ -1669,21 +1905,25 @@
             "optional": false,
             "content": [
               {
-              "label": "Nunca",
-              "value": "nunca"
-            },{
-              "label": "Poco frecuente",
-              "value": "poco-frecuente"
-            },{
-              "label": "frecuentemente",
-              "value": "frecuentemente"
-            },{
-              "label": "Muy frecuentemente",
-              "value": "muy-frecuentemente"
-            },{
-              "label": "No sabe/No contesta",
-              "value": "nosabe-nocontesta"
-            }
+                "label": "Nunca",
+                "value": "nunca"
+              },
+              {
+                "label": "Poco frecuente",
+                "value": "poco-frecuente"
+              },
+              {
+                "label": "Frecuentemente",
+                "value": "frecuentemente"
+              },
+              {
+                "label": "Muy frecuentemente",
+                "value": "muy-frecuentemente"
+              },
+              {
+                "label": "No sabe/No contesta",
+                "value": "nosabe-nocontesta"
+              }
             ]
           },
           {
@@ -1694,19 +1934,24 @@
             "optional": false,
             "content": [
               {
-              "label": "Vivo o trabajo en la zona",
-              "value": "vivo-trabajo"
-            },{
-              "label": "Formo parte de una organización relacionada con el área",
-              "value": "formo-organizacion"
-            },{
-              "label": "Formo parte de una organización relacionada con temas ambientales",
-              "value": "formo-organizacion-ambiental"
-            },{
-              "label": "Ninguna de las anteriores",
-              "value": "ninguna-anterior"
-            }]
-          },{
+                "label": "Vivo o trabajo en la zona",
+                "value": "vivo-trabajo"
+              },
+              {
+                "label": "Formo parte de una organización relacionada con el área",
+                "value": "formo-organizacion"
+              },
+              {
+                "label": "Formo parte de una organización relacionada con temas ambientales",
+                "value": "formo-organizacion-ambiental"
+              },
+              {
+                "label": "Ninguna de las anteriores",
+                "value": "ninguna-anterior"
+              }
+            ]
+          },
+          {
             "name": "proteccion_del_espacio_novedad_info",
             "type": "informational_html",
             "content": "<p>Podés contribuir al conocimiento y a la protección de esta área natural aportando información sobre los siguientes aspectos. Podés adjuntar imágenes, documentos en pdf y enlaces.</p>"
@@ -1728,7 +1973,7 @@
                   "proteccion-espacio-enlace"
                 ]
               }
-              ],
+            ],
             "content": [
               {
                 "label": "PROTECCION DEL ESPACIO",
@@ -1783,21 +2028,21 @@
             "display_prompt": "Biodiversidad y especies",
             "triggers": [
               {
-              "value": "biodiversidad_especies",
-              "targets": [
-                "biodiversidad_especies-title",
-                "biodiversidad_especies-desc",
-                "biodiversidad_especies-image",
-                "biodiversidad_especies-pdf",
-                "biodiversidad_especies-link"
-              ]
-            }
+                "value": "biodiversidad_especies",
+                "targets": [
+                  "biodiversidad_especies-title",
+                  "biodiversidad_especies-desc",
+                  "biodiversidad_especies-image",
+                  "biodiversidad_especies-pdf",
+                  "biodiversidad_especies-link"
+                ]
+              }
             ],
             "content": [
               {
-              "label": "BIODIVERSIDAD Y ESPECIES",
-              "value": "biodiversidad_especies"
-            }
+                "label": "BIODIVERSIDAD Y ESPECIES",
+                "value": "biodiversidad_especies"
+              }
             ]
           },
           {
@@ -1847,21 +2092,21 @@
             "display_prompt": "Reportes de estado del area",
             "triggers": [
               {
-              "value": "reportes_estado",
-              "targets": [
-                "reportes_estado-title",
-                "reportes_estado-text",
-                "reportes_estado-pdf",
-                "reportes_estado-image",
-                "reportes_estado-link"
-              ]
-            }
+                "value": "reportes_estado",
+                "targets": [
+                  "reportes_estado-title",
+                  "reportes_estado-text",
+                  "reportes_estado-pdf",
+                  "reportes_estado-image",
+                  "reportes_estado-link"
+                ]
+              }
             ],
             "content": [
               {
-              "label": "REPORTES DE ESTADO DEL AREA",
-              "value": "reportes_estado"
-            }
+                "label": "REPORTES DE ESTADO DEL AREA",
+                "value": "reportes_estado"
+              }
             ]
           },
           {
@@ -1911,21 +2156,21 @@
             "display_prompt": "Usos y memorias en el area",
             "triggers": [
               {
-              "value": "usos_memorias",
-              "targets": [
-                "usos_memorias-title",
-                "usos_memorias-text",
-                "usos_memorias-pdf",
-                "usos_memorias-image",
-                "usos_memorias-link"
-              ]
-            }
+                "value": "usos_memorias",
+                "targets": [
+                  "usos_memorias-title",
+                  "usos_memorias-text",
+                  "usos_memorias-pdf",
+                  "usos_memorias-image",
+                  "usos_memorias-link"
+                ]
+              }
             ],
             "content": [
               {
-              "label": "USOS Y MEMORIAS EN EL AREA",
-              "value": "usos_memorias"
-            }
+                "label": "USOS Y MEMORIAS EN EL AREA",
+                "value": "usos_memorias"
+              }
             ]
           },
           {
@@ -1975,21 +2220,21 @@
             "display_prompt": "Patrimonio arqueológico",
             "triggers": [
               {
-              "value": "patrimonio_arqueologico",
-              "targets": [
-                "patrimonio_arqueologico-title",
-                "patrimonio_arqueologico-text",
-                "patrimonio_arqueologico-pdf",
-                "patrimonio_arqueologico-image",
-                "patrimonio_arqueologico-link"
-              ]
-            }
+                "value": "patrimonio_arqueologico",
+                "targets": [
+                  "patrimonio_arqueologico-title",
+                  "patrimonio_arqueologico-text",
+                  "patrimonio_arqueologico-pdf",
+                  "patrimonio_arqueologico-image",
+                  "patrimonio_arqueologico-link"
+                ]
+              }
             ],
             "content": [
               {
-              "label": "PATRIMONIO ARQUEOLÓGICO",
-              "value": "patrimonio_arqueologico"
-            }
+                "label": "PATRIMONIO ARQUEOLÓGICO",
+                "value": "patrimonio_arqueologico"
+              }
             ]
           },
           {
@@ -2036,7 +2281,8 @@
             "type": "common_form_element"
           }
         ]
-      },{
+      },
+      {
         "category": "reporte-territorial",
         "formId": "reporte-territorial",
         "includeOnForm": true,
@@ -2064,7 +2310,8 @@
             "end_field_index": 3,
             "header": "Reporte Territorial",
             "description": ""
-          },{
+          },
+          {
             "start_field_index": 4,
             "end_field_index": 10,
             "header": "Reporte Territorial",
@@ -2075,12 +2322,14 @@
             "end_field_index": 20,
             "header": "Reporte Territorial",
             "description": ""
-          },{
+          },
+          {
             "start_field_index": 21,
             "end_field_index": 23,
             "header": "Reporte Territorial",
             "description": ""
-          },{
+          },
+          {
             "start_field_index": 24,
             "end_field_index": 25,
             "header": "Reporte Territorial",
@@ -2124,43 +2373,64 @@
             "triggers": [
               {
                 "value": "ciudad-de-buenos-aires",
-                "targets": ["ciudad-de-buenos-aires-barrios"]
+                "targets": [
+                  "ciudad-de-buenos-aires-barrios"
+                ]
               },
               {
                 "value": "almirante-brown",
-                "targets": ["almirante-brown-barrios"]
+                "targets": [
+                  "almirante-brown-barrios"
+                ]
               },
               {
                 "value": "avellaneda",
-                "targets": ["avellaneda-barrios"]
+                "targets": [
+                  "avellaneda-barrios"
+                ]
               },
               {
                 "value": "esteban-echeverria",
-                "targets": ["esteban-echeverria-barrios"]
+                "targets": [
+                  "esteban-echeverria-barrios"
+                ]
               },
               {
                 "value": "la-matanza",
-                "targets": ["la-matanza-barrios"]
+                "targets": [
+                  "la-matanza-barrios"
+                ]
               },
               {
                 "value": "lanus",
-                "targets": ["lanus-barrios"]
+                "targets": [
+                  "lanus-barrios"
+                ]
               },
               {
                 "value": "lomas-de-zamora",
-                "targets": ["lomas-de-zamora-barrios"]
+                "targets": [
+                  "lomas-de-zamora-barrios"
+                ]
               },
               {
                 "value": "marcos-paz",
-                "targets": ["marcos-paz-barrios"]
+                "targets": [
+                  "marcos-paz-barrios"
+                ]
               },
               {
                 "value": "merlo",
-                "targets": ["merlo-barrios"]
+                "targets": [
+                  "merlo-barrios"
+                ]
               },
               {
                 "value": "otro",
-                "targets": ["otro-municipio", "otro-barrio"]
+                "targets": [
+                  "otro-municipio",
+                  "otro-barrio"
+                ]
               }
             ],
             "content": [
@@ -2844,11 +3114,15 @@
             "triggers": [
               {
                 "value": "otro-barrio",
-                "targets": ["barrio-antes"]
+                "targets": [
+                  "barrio-antes"
+                ]
               },
               {
                 "value": "otros",
-                "targets": ["otra-situacion"]
+                "targets": [
+                  "otra-situacion"
+                ]
               }
             ],
             "content": [
@@ -2877,7 +3151,7 @@
           {
             "name": "barrio-antes",
             "type": "text",
-            "prompt": "¿En qué barrio vivía antes?",
+            "prompt": "¿En qué barrio vivías antes?",
             "placeholder": "Escribí el nombre de tu barrio...",
             "display_prompt": "Barrio antes",
             "hidden_default": true,
@@ -2965,7 +3239,8 @@
             "prompt": "Comparte un PDF",
             "label": "Agregar un PDF",
             "optional": true
-          },{
+          },
+          {
             "name": "recaptcha",
             "type": "recaptcha",
             "prompt": " ",
@@ -3351,19 +3626,22 @@
       "url": "/page/about",
       "name": "overview",
       "start_page": true
-    },{
-      "title": "Areas naturales",
+    },
+    {
+      "title": "Áreas naturales",
       "type": "internal_link",
       "url": "/page/areasnaturales",
-      "name": "overview", 
+      "name": "overview",
       "start_page": true
-    },{
+    },
+    {
       "title": "Relocalizaciones",
       "type": "internal_link",
       "url": "/page/relocalizaciones",
       "name": "overview",
       "start_page": true
-    },{
+    },
+    {
       "title": "Calidad del agua",
       "type": "internal_link",
       "url": "/page/calidaddelagua",
@@ -3375,29 +3653,29 @@
     {
       "slug": "about",
       "content": [
-        "<h1 style='margin-bottom:4px;color:#75beb1;'>Qué Pasa, Riachuelo?</h1>",
+        "<h1 style='margin-bottom:4px;color:#75beb1;'>¿Qué Pasa, Riachuelo?</h1>",
         "<p><b>¿Qué Pasa Riachuelo?</b> (QPR) es el resultado del esfuerzo colectivo de la Fundación Ambiente y Recursos Naturales (FARN), Universidad Nacional de San Martín (UNSAM) y otros actores que desde 2020 colaboran y participan en distintas actividades en el marco del proyecto “CoAct Ciencia Ciudadana Social para la Acción Colectiva”, una iniciativa global financiada por la Unión Europea que tiene como objetivo promover la ciencia ciudadana para avanzar acciones hacia la justicia ambiental en la Cuenca Matanza-Riachuelo.</p>"
       ]
     },
     {
       "slug": "areasnaturales",
       "content": [
-        "<h1 style='margin-bottom:4px;color:#75beb1;'>Qué Pasa, Riachuelo?</h1>",
-        "<p><b>¿Qué pasa, Riachuelo?</b> registra y brinda información sobre los procesos de protección de áreas naturales en la cuenca Matanza-Riachuelo como los humedales y espacios verdes de origen natural o no (parques, plazas, y otros), importantes para la conservación del patrimonio biológico y cultural de la cuenca. Estos espacios brindan beneficios ecosistémicos y dan lugar a la interacción social y a la recreación, contribuyendo a la calidad de vida de la población. Están amenazados por el avance de la industrialización y la urbanización y por eso es importante compartir información y promover la participación para contribuir con su conservación.</p><br><p>QPR te permite:</p><br><ul><li>identificar zonas amenazadas que requieren desplegar estrategias de protección;</li><li>visibilizar la situación de protección de las áreas naturales de la cuenca;</li><li>Reportar eventos relativos al estado actual de estas áreas y compartir información sobre las mismas con fines educativos y de concientización sobre su relevancia social y ambiental</li></ul>"
+        "<h1 style='margin-bottom:4px;color:#75beb1;'>¿Qué Pasa, Riachuelo?</h1>",
+        "<p><b>¿Qué pasa, Riachuelo?</b> registra y brinda información sobre los procesos de protección de áreas naturales en la cuenca Matanza-Riachuelo como los humedales y espacios verdes de origen natural o no (parques, plazas, y otros), importantes para la conservación del patrimonio biológico y cultural de la cuenca. Estos espacios brindan beneficios ecosistémicos y dan lugar a la interacción social y a la recreación, contribuyendo a la calidad de vida de la población. Están amenazados por el avance de la industrialización y la urbanización y por eso es importante compartir información y promover la participación para contribuir con su conservación.</p><br><p>QPR te permite:</p><br><ul style='font-family: Roboto;'><li>identificar zonas amenazadas que requieren desplegar estrategias de protección;</li><li>visibilizar la situación de protección de las áreas naturales de la cuenca;</li><li>Reportar eventos relativos al estado actual de estas áreas y compartir información sobre las mismas con fines educativos y de concientización sobre su relevancia social y ambiental</li></ul>"
       ]
     },
     {
       "slug": "relocalizaciones",
       "content": [
-        "<h1 style='margin-bottom:4px;color:#75beb1;'>Qué Pasa, Riachuelo?</h1>",
-        "<p>En <b>¿Qué pasa, Riachuelo?</b> podés consultar y brindar información acerca de los procesos de relocalización de los barrios, villas y asentamientos de la cuenca Matanza Riachuelo. La cuestión de la relocalización afecta directamente a más de 17 mil familias que habitan en condiciones deficitarias de vivienda y hábitat en distintas zonas de la cuenca expuestas al riesgo ambiental. En estos procesos el acceso a la información y la participación de la población es clave para encontrar soluciones habitacionales integrales que garanticen sus derechos.</p><br> QPR permite: <br><ul><li>Acceder a información sobre las mesas de trabajo barriales a lo largo de la cuenca;</li><li>Reportar cuestiones relativas a las condiciones de hábitat y vivienda, salud, económicas, educativas y acerca de la participación y acceso a la información en torno a la relocalización;</li><li>Compartir experiencias de las comunidades relacionadas con  los procesos de relocalización</li></ul>"
+        "<h1 style='margin-bottom:4px;color:#75beb1;'>¿Qué Pasa, Riachuelo?</h1>",
+        "<p>En <b>¿Qué pasa, Riachuelo?</b> podés consultar y brindar información acerca de los procesos de relocalización de los barrios, villas y asentamientos de la cuenca Matanza Riachuelo. La cuestión de la relocalización afecta directamente a más de 17 mil familias que habitan en condiciones deficitarias de vivienda y hábitat en distintas zonas de la cuenca expuestas al riesgo ambiental. En estos procesos el acceso a la información y la participación de la población es clave para encontrar soluciones habitacionales integrales que garanticen sus derechos.</p><br><p> QPR permite:</p> <br><ul style='font-family: Roboto';><li>Acceder a información sobre las mesas de trabajo barriales a lo largo de la cuenca;</li><li>Reportar cuestiones relativas a las condiciones de hábitat y vivienda, salud, económicas, educativas y acerca de la participación y acceso a la información en torno a la relocalización;</li><li>Compartir experiencias de las comunidades relacionadas con  los procesos de relocalización</li></ul>"
       ]
     },
     {
       "slug": "calidaddelagua",
       "content": [
-        "<h1 style='margin-bottom:4px;color:#75beb1;'>Qué Pasa, Riachuelo?</h1>",
-        "<p>En <b>¿Qué pasa, Riachuelo?</b> podés visualizar y discutir indicadores de calidad de agua en la cuenca y aportar a los mismos datos sobre la presencia de residuos sólidos en los cursos y otras materias observables (hidrocarburos, algas, cianobacterias, escombros, plásticos flotantes,etc). De esta forma, puede resultar una herramienta pedagógica útil para valorizar al río como un recurso biocultural</p><br><p>QRP permite:</p><br><ul><li>Visibilizar información sobre la calidad de agua en determinados puntos y el riesgo que implica;</li><li>reportar eventos que afectan a la calidad del agua a partir de parámetros observables en los cursos superficiales y sus entornos;</li><li>compartir información para contribuir con distintas estrategias pedagógicas.</li></ul>"
+        "<h1 style='margin-bottom:4px;color:#75beb1;'>¿Qué Pasa, Riachuelo?</h1>",
+        "<p>En <b>¿Qué pasa, Riachuelo?</b> podés visualizar y discutir indicadores de calidad de agua en la cuenca y aportar a los mismos datos sobre la presencia de residuos sólidos en los cursos y otras materias observables (hidrocarburos, algas, cianobacterias, escombros, plásticos flotantes,etc). De esta forma, puede resultar una herramienta pedagógica útil para valorizar al río como un recurso biocultural</p><br><p>QRP permite:</p><br><ul style='font-family: Roboto';><li>Visibilizar información sobre la calidad de agua en determinados puntos y el riesgo que implica;</li><li>reportar eventos que afectan a la calidad del agua a partir de parámetros observables en los cursos superficiales y sus entornos;</li><li>compartir información para contribuir con distintas estrategias pedagógicas.</li></ul>"
       ]
     }
   ],
@@ -3417,7 +3695,10 @@
         "renderIn": "FeaturedPlacesMenu",
         "placeId": 9041,
         "zoom": 12.18,
-        "pan_to": [-58.40005, -34.66138],
+        "pan_to": [
+          -58.40005,
+          -34.66138
+        ],
         "iconUrl": "/static/css/images/markers/marker-recorrido.svg",
         "spotlight": false
       }

@@ -773,6 +773,7 @@ class InputForm extends Component {
               top: 13em;
               left: 4em;
               background-color: #FFF;
+              font-family:Roboto;
             `}> 
             <h1>Datos guardados con éxito</h1>
           </div>
