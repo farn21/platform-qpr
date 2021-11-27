@@ -819,7 +819,7 @@
           },
           {
             "start_field_index": 32,
-            "end_field_index": 33,
+            "end_field_index": 34,
             "header": "Calidad del Agua",
             "description": ""
           }
@@ -1421,13 +1421,13 @@
         "multi_stage": [
           {
             "start_field_index": 1,
-            "end_field_index": 50,
+            "end_field_index": 52,
             "header": "Áreas Naturales",
             "description": ""
           },
           {
-            "start_field_index": 51,
-            "end_field_index": 52,
+            "start_field_index": 53,
+            "end_field_index": 54,
             "header": "Áreas Naturales",
             "description": ""
           }
@@ -1995,7 +1995,8 @@
             "prompt": "Titulo",
             "display_prompt": "Observación",
             "placeholder": "Titulo",
-            "hidden_default": true
+            "hidden_default": true,
+            "optional": true
           },
           {
             "name": "proteccion-espacio-text",
@@ -2003,7 +2004,8 @@
             "prompt": " ",
             "placeholder": "Texto",
             "display_prompt": "Descripcion",
-            "hidden_default": true
+            "hidden_default": true,
+            "optional": true
           },
           {
             "name": "proteccion-espacio-pdf",
@@ -2011,14 +2013,16 @@
             "prompt": " ",
             "label": "PDF",
             "display_prompt": "Adjunto",
-            "hidden_default": true
+            "hidden_default": true,
+            "optional": true
           },
           {
             "name": "proteccion-espacio-image",
             "type": "file",
             "hidden_default": true,
             "label": "IMAGEN",
-            "prompt": " "
+            "prompt": " ",
+            "optional": true
           },
           {
             "name": "proteccion-espacio-enlace",
@@ -2026,7 +2030,8 @@
             "prompt": "Enlace",
             "placeholder": "Enlace",
             "display_prompt": "Enlace",
-            "hidden_default": true
+            "hidden_default": true,
+            "optional": true
           },
           {
             "name": "biodiversidad_especies",
@@ -2059,7 +2064,8 @@
             "prompt": "Titulo",
             "display_prompt": "Observación",
             "placeholder": "Titulo",
-            "hidden_default": true
+            "hidden_default": true,
+            "optional": true
           },
           {
             "name": "biodiversidad_especies-desc",
@@ -2067,7 +2073,8 @@
             "prompt": " ",
             "placeholder": "Texto",
             "display_prompt": "Descripcion",
-            "hidden_default": true
+            "hidden_default": true,
+            "optional": true
           },
           {
             "name": "biodiversidad_especies-pdf",
@@ -2075,14 +2082,16 @@
             "prompt": " ",
             "label": "PDF",
             "display_prompt": "Adjunto",
-            "hidden_default": true
+            "hidden_default": true,
+            "optional": true
           },
           {
             "name": "biodiversidad_especies-image",
             "type": "file",
             "hidden_default": true,
             "label": "IMAGEN",
-            "prompt": " "
+            "prompt": " ",
+            "optional": true
           },
           {
             "name": "biodiversidad_especies-link",
@@ -2090,7 +2099,8 @@
             "prompt": "Enlace",
             "placeholder": "Enlace",
             "display_prompt": "Enlace",
-            "hidden_default": true
+            "hidden_default": true,
+            "optional": true
           },
           {
             "name": "reportes_estado_area",
@@ -2123,7 +2133,8 @@
             "prompt": "Titulo",
             "display_prompt": "Observación",
             "placeholder": "Titulo",
-            "hidden_default": true
+            "hidden_default": true,
+            "optional": true
           },
           {
             "name": "reportes_estado-text",
@@ -2131,7 +2142,8 @@
             "prompt": " ",
             "placeholder": "Texto",
             "display_prompt": "Descripcion",
-            "hidden_default": true
+            "hidden_default": true,
+            "optional": true
           },
           {
             "name": "reportes_estado-pdf",
@@ -2139,14 +2151,16 @@
             "prompt": " ",
             "label": "PDF",
             "display_prompt": "Adjunto",
-            "hidden_default": true
+            "hidden_default": true,
+            "optional": true
           },
           {
             "name": "reportes_estado-image",
             "type": "file",
             "hidden_default": true,
             "label": "IMAGEN",
-            "prompt": " "
+            "prompt": " ",
+            "optional": true
           },
           {
             "name": "reportes_estado-link",
@@ -2154,7 +2168,8 @@
             "prompt": "Enlace",
             "placeholder": "Enlace",
             "display_prompt": "Enlace",
-            "hidden_default": true
+            "hidden_default": true,
+            "optional": true
           },
           {
             "name": "usos_memorias",
@@ -2187,15 +2202,17 @@
             "prompt": "Titulo",
             "display_prompt": "Observación",
             "placeholder": "Titulo",
-            "hidden_default": true
+            "hidden_default": true,
+            "optional": true
           },
           {
-            "name": "usos_memorias-desc",
+            "name": "usos_memorias-text",
             "type": "textarea",
             "prompt": " ",
             "placeholder": "Texto",
             "display_prompt": "Descripcion",
-            "hidden_default": true
+            "hidden_default": true,
+            "optional": true
           },
           {
             "name": "usos_memorias-pdf",
@@ -2203,14 +2220,16 @@
             "prompt": " ",
             "label": "PDF",
             "display_prompt": "Adjunto",
-            "hidden_default": true
+            "hidden_default": true,
+            "optional": true
           },
           {
             "name": "usos_memorias-image",
             "type": "file",
             "hidden_default": true,
             "label": "IMAGEN",
-            "prompt": " "
+            "prompt": " ",
+            "optional": true
           },
           {
             "name": "usos_memorias-link",
@@ -2218,7 +2237,8 @@
             "prompt": "Enlace",
             "placeholder": "Enlace",
             "display_prompt": "Enlace",
-            "hidden_default": true
+            "hidden_default": true,
+            "optional": true
           },
           {
             "name": "patrimonio_arqueologico",
@@ -2251,7 +2271,8 @@
             "prompt": "Titulo",
             "display_prompt": "Observación",
             "placeholder": "Titulo",
-            "hidden_default": true
+            "hidden_default": true,
+            "optional": true
           },
           {
             "name": "patrimonio_arqueologico-text",
@@ -2259,7 +2280,8 @@
             "prompt": " ",
             "placeholder": "Texto",
             "display_prompt": "Descripcion",
-            "hidden_default": true
+            "hidden_default": true,
+            "optional": true
           },
           {
             "name": "patrimonio_arqueologico-pdf",
@@ -2267,14 +2289,17 @@
             "prompt": " ",
             "label": "PDF",
             "display_prompt": "Adjunto",
-            "hidden_default": true
+            "hidden_default": true,
+            "optional": true
           },
           {
             "name": "patrimonio_arqueologico-image",
             "type": "file",
             "hidden_default": true,
             "label": "IMAGEN",
-            "prompt": " "
+            "prompt": " ",
+            "optional": true
+            
           },
           {
             "name": "patrimonio_arqueologico-link",
@@ -2282,7 +2307,8 @@
             "prompt": "Enlace",
             "placeholder": "Enlace",
             "display_prompt": "Enlace",
-            "hidden_default": true
+            "hidden_default": true,
+            "optional": true
           },
           {
             "name": "submit",
