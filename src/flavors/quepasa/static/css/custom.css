@@ -602,6 +602,6 @@ div[class*=-RichTextareaFieldResponseWrapper] {
   padding: 10px !important;
 }
 
-.mapboxgl-ctrl-group > button {
-  display: unset !important;
+.mapboxgl-ctrl-compass {
+  display: none !important;
 }

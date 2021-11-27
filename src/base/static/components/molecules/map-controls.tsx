@@ -47,7 +47,7 @@ class CustomControl extends React.Component<CustomControlProps> {
         <button
           className={`mapboxgl-ctrl-icon ${this.props.icon}`}
           type="button"
-          title="Capas de información"
+          title="Custom control"
           onClick={this.props.onClick}
         />
       </div>
@@ -76,30 +76,23 @@ const MapControls: React.FunctionComponent<MapControlProps> = props => {
     <div
       className="mapseed-map-controls"
       css={{
-        "position": "absolute",
-        "bottom": "8px",
-        "right": "8px",
-        "display": "flex",
-        "align-items": "baseline",
+        position: "absolute",
+        top: "8px",
+        left: "8px",
       }}
     >
+      <NavigationControl onViewportChange={setViewport} />
       <GeolocateControl
         trackUserLocation={true}
         positionOptions={{ enableHighAccuracy: true, timeout: 6000 }}
-      />
-      <NavigationControl 
-        css={{
-          "display": "flex",
+        style={{
+          marginTop: "8px",
         }}
-        showCompass={false}
-        onViewportChange={setViewport} 
       />
       <CustomControl
         icon={props.leftSidebarConfig.icon}
         onClick={() => props.setLeftSidebarExpanded(true)}
       />
-
-      {/*
       {props.isMeasurementToolEnabled && (
         <CustomControl
           icon={"fas fa-ruler-combined"}
@@ -109,7 +102,7 @@ const MapControls: React.FunctionComponent<MapControlProps> = props => {
             )
           }
         />
-      )}*/}
+      )}
     </div>
   );
 };
