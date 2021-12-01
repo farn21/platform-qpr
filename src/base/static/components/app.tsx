@@ -522,10 +522,14 @@ class App extends React.Component<Props, State> {
                           <div 
                             css={css`
                               position: absolute;
-                              top: 27%;
-                              left: 35%;
+                              top: 15%;
+                              left: 20%;
+                              right:20%;
                               background-color: #FFF;
                               padding: 2em 4em;
+                              font-family: Roboto;
+                              
+                    
                             `}> 
                             <h2
                               css={css`

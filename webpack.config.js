@@ -10,7 +10,7 @@ const configPreprocessor = require("./scripts/config-preprocessor");
 
 require("dotenv").config({ path: "src/.env" });
 
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 const flavor = process.env.FLAVOR;
 
 const config = configPreprocessor(

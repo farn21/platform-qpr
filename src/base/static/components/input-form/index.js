@@ -626,6 +626,7 @@ class InputForm extends Component {
   }
 
   getFields() {
+    console.log('multistage', this.selectedCategoryConfig.multi_stage)
     return (this.selectedCategoryConfig.multi_stage
       ? this.getFieldsFromStage({
           fields: this.state.fields,
@@ -638,6 +639,8 @@ class InputForm extends Component {
   }
 
   getFieldsFromStage({ fields, stage }) {
+    console.log('fields', fields)
+    console.log('stage', stage)
     return fields.slice(stage.start_field_index - 1, stage.end_field_index);
   }
 
@@ -773,6 +776,7 @@ class InputForm extends Component {
               top: 13em;
               left: 4em;
               background-color: #FFF;
+              font-family:Roboto;
             `}> 
             <h1>Datos guardados con éxito</h1>
           </div>

@@ -27,7 +27,6 @@ const FormStageControlBar = props => {
   } else if (props.layout === "mobile") {
     leftPosition = 0;
   }
-
   return (
     <div
       css={css`
@@ -56,7 +55,7 @@ const FormStageControlBar = props => {
           weight="bold"
         >
           <Trans i18nKey="progressCounter">
-            Page {{ currentStage }} of {{ numStages }}
+            Sección {{ currentStage }} de {{ numStages }}
           </Trans>
         </RegularText>
       )}
@@ -66,11 +65,12 @@ const FormStageControlBar = props => {
           align-items: center;
         `}
       >
+        {props.currentStage !== props.numStages && !props.isSingleCategory && (<RegularText> Hacé click en "SIGUIENTE" para publicar tu experiencia</RegularText>)}
         <ProgressBar
           total={props.numStages}
           currentProgress={props.currentStage}
         />
-        <Button
+        {props.currentStage > 1 && <Button
           style={{ marginLeft: "8px" }}
           disabled={props.isSingleCategory && props.currentStage === 1}
           variant="flat"
@@ -78,9 +78,9 @@ const FormStageControlBar = props => {
           size="regular"
           {...retreatOpts}
         >
-          <RegularText>{props.t("previousStageLinkLabel", "Back")}</RegularText>
-        </Button>
-        <Button
+          <RegularText>{props.t("previousStageLinkLabel", "Atrás")}</RegularText>
+        </Button>}
+        {props.currentStage !== props.numStages && <Button
           style={{ marginLeft: "8px" }}
           disabled={props.currentStage === props.numStages}
           variant="flat"
@@ -88,8 +88,8 @@ const FormStageControlBar = props => {
           size="regular"
           {...advanceOpts}
         >
-          <RegularText>{props.t("nextStageLinkLabel", "Next")}</RegularText>
-        </Button>
+          <RegularText>{props.t("nextStageLinkLabel", "Siguiente")}</RegularText>
+        </Button>}
       </div>
     </div>
   );
