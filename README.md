@@ -34,7 +34,7 @@ NODE_ENV=production FLAVOR=<flavor> npm start
 By default, this will output all production files to a folder called www in the root of the project. This folder will contain all the assets required to deliver your map to users. Furthermore, the assets output to www will be entirely static, meaning they won't require a server to host, and can be made available via a static site hosting service such as AWS's S3.
 
 
-### Using the in-app editor###
+### Using the in-app editor
 
 Mapseed includes an in-app editor that you can use to update and hide places and comments on a per-dataset basis. Only authenticated administrators are allowed to make edits. Authentication is performed via third-party social media services (Twitter, Facebook, and Google+ are currently supported), so administrators will need an account on one of these services to use the editor.
 
