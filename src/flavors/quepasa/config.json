@@ -40,7 +40,7 @@
   "app": {
     "title": "¿Qué pasa, Riachuelo?",
     "name": "¿Qué pasa, Riachuelo?",
-    "show_name_in_header": true,
+    "show_name_in_header": false,
     "meta_description": "Track projects on the Riachuelo River",
     "meta_author": "mapseed.org",
     "api_root": "https://dev-api.mapseed.org/api/v2/",
@@ -57,9 +57,9 @@
       },
       "text": {
         "titleColor": "#ffffff",
-        "titleFontFamily": "Rubik, sans-serif",
-        "bodyFontFamily": "Rubik, sans-serif",
-        "navBarFontFamily": "Rubik, sans-serif"
+        "titleFontFamily": "Montserrat, sans-serif",
+        "bodyFontFamily": "Montserrat, sans-serif",
+        "navBarFontFamily": "Montserrat, sans-serif"
       },
       "map": {
         "addPlaceButtonBackgroundColor": "#ffab00",
@@ -267,7 +267,7 @@
       {
         "id": "riachuelo-areas-protegidas",
         "interactive": true,
-        "popupContent": "<h5 style='font-family: Rubik, sans-serif; font-weight: 400; margin: 0; padding:0 1rem;'>{{NAME}}</h5>",
+        "popupContent": "<h5 style='font-family: Montserrat, sans-serif; font-weight: 400; margin: 0; padding:0 1rem;'>{{NAME}}</h5>",
         "visibleDefault": false,
         "mapboxLayers": [
           {
@@ -366,7 +366,7 @@
       {
         "id": "renabap",
         "interactive": true,
-        "popupContent": "<p style='color: #aaa; display: block; font-family: Rubik, sans-serif; margin: 0; padding: 0 1rem 0 0;font-size:.875rem;'>ID: {{id_renabap}}</p><h3 style='font-family: Rubik, sans-serif; font-weight: 400; margin: 0;font-size:1rem;'>{{nombre_bar}}</h3>",
+        "popupContent": "<p style='color: #aaa; display: block; font-family: Montserrat, sans-serif; margin: 0; padding: 0 1rem 0 0;font-size:.875rem;'>ID: {{id_renabap}}</p><h3 style='font-family: Montserrat, sans-serif; font-weight: 400; margin: 0;font-size:1rem;'>{{nombre_bar}}</h3>",
         "mapboxLayers": [
           {
             "id": "renabap",
@@ -394,7 +394,7 @@
       {
         "id": "riachuelo-villas-y-asentamientos-precarios",
         "interactive": true,
-        "popupContent": "<div style='color: #aaa; display: block; font-family: Rubik, sans-serif; padding: 0 1rem 0 0;'><p style='margin: 0;'>Nombre: {{NOMBRE}}</p><p style='margin: 0;'>Municipio: {{MUNICIPIO}}</p><p style='margin: 0;'>Intervención: {{INTERVENCI}}</p></div>",
+        "popupContent": "<div style='color: #aaa; display: block; font-family: Montserrat, sans-serif; padding: 0 1rem 0 0;'><p style='margin: 0;'>Nombre: {{NOMBRE}}</p><p style='margin: 0;'>Municipio: {{MUNICIPIO}}</p><p style='margin: 0;'>Intervención: {{INTERVENCI}}</p></div>",
         "visibleDefault": false,
         "mapboxLayers": [
           {
@@ -442,7 +442,7 @@
       {
         "id": "riachuelo-mesas-trabajo",
         "interactive": true,
-        "popupContent": "<div style='color: #aaa; display: block; font-family: Rubik, sans-serif; padding: 0 1rem 0 0;'><p style='margin: 0;'>Nombre: {{NOMBRE}}</p><p style='margin: 0;'>Jurisdicción: {{JURISDICCI}}</p></div>",
+        "popupContent": "<div style='color: #aaa; display: block; font-family: Montserrat, sans-serif; padding: 0 1rem 0 0;'><p style='margin: 0;'>Nombre: {{NOMBRE}}</p><p style='margin: 0;'>Jurisdicción: {{JURISDICCI}}</p></div>",
         "visibleDefault": false,
         "mapboxLayers": [
           {
