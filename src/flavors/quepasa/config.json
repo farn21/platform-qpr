@@ -832,19 +832,19 @@
           {
             "name": "intro-calidad-agua",
             "type": "informational_html",
-            "content": "<h3>¿Querés compartir una situación vinculada a la calidad de agua en la cuenca Matanza-Riachuelo?</h1><br><h4>¡Completá el siguiente formulario!</h3><br><br>"
+            "content": "<span><b>¿Querés compartir una situación vinculada a la calidad de agua en la cuenca Matanza-Riachuelo?</b></span><br><br><span>¡Completá el siguiente formulario!</span>"
           },
           {
             "name": "intro-calidad-agua-2",
             "type": "informational_html",
-            "content": "<b>Ingresá la ubicación</b><br><p>Arrastrá el mapa a tu izquierda o ingresá la ubicación en el buscador</p>"
+            "content": "Ingresá la ubicación. Arrastrá el mapa a tu izquierda o ingresá la ubicación en el buscador."
           },
           {
             "name": "private-address",
             "type": "geocoding",
             "prompt": " ",
             "display_prompt": "Address",
-            "placeholder": "Enter your address",
+            "placeholder": "Requerido",
             "optional": false
           },
           {
@@ -1520,7 +1520,7 @@
             "type": "geocoding",
             "prompt": " ",
             "display_prompt": "Address",
-            "placeholder": "Enter your address",
+            "placeholder": "Ingresá la ubicación",
             "optional": false
           },
           {
@@ -2385,7 +2385,7 @@
             "type": "geocoding",
             "prompt": " ",
             "display_prompt": "Address",
-            "placeholder": "Enter your address",
+            "placeholder": "Ingresá la ubicación",
             "optional": false
           },
           {
@@ -2393,7 +2393,7 @@
             "type": "geocoding",
             "prompt": " ",
             "display_prompt": "Address",
-            "placeholder": "Enter your address",
+            "placeholder": "Ingresá la ubicación",
             "optional": false
           },
           {

@@ -13,6 +13,7 @@ const FormStageHeaderBar = props => {
         "form-stage-header-bar--without-image": !props.stageConfig.icon_url,
       })}
     >
+    <div style={{display: "flex", justifyContent: "flex-start", margin: 0, padding: 0, paddingBottom: '10px'}}>
       <Header3 classes="form-stage-header-bar__header">
         {props.stageConfig.icon_url && (
           <img
@@ -22,6 +23,9 @@ const FormStageHeaderBar = props => {
         )}
         {props.stageConfig.header}
       </Header3>
+      <img style={{width: '36px', marginLeft: '8px'}} src={'/static/css/images/markers/marker-agua.svg'} alt={'icono de formulario'} />
+      </div>      
+  
       <Paragraph className="form-stage-header-bar__description">
         {props.stageConfig.description}
       </Paragraph>
