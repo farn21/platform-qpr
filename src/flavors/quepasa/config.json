@@ -148,7 +148,7 @@
       "f4": {
         "type": "raster",
         "tiles": [
-          "https://tile3.f4map.com/tiles/f4_2d/{z}/{x}/{y}.png"
+          "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
         ],
         "tileSize": 256,
         "attribution": "<a href=\"/page/terms\">Terms and conditions</a> &copy; OpenStreetMap contributors, CC-BY-SA. <a href=\"//mapbox.com/about/maps\" target=\"_blank\">Mapbox</a>. Geocoding Courtesy of <a href=\"//www.mapquest.com/\" target=\"_blank\">MapQuest</a> <img src=\"//developer.mapquest.com/content/osm/mq_logo.png\">.'"
