@@ -271,7 +271,7 @@ const SiteHeader: React.FunctionComponent<Props> = props => {
         zIndex: 25,
         backgroundColor: theme.bg.default,
         display: "flex",
-        height: isMobileHeaderExpanded ? "auto" : "56px",
+        height: isMobileHeaderExpanded ? "auto" : "70px",
         alignItems: "center",
         boxShadow: "0 2px 0 rgba(0,0,0,0.2)",
         boxSizing: "border-box",
@@ -359,6 +359,7 @@ const SiteHeader: React.FunctionComponent<Props> = props => {
           },
         }}
       >
+      <img style={{width: '100px', marginTop: '10px', marginBottom: '10px', marginRight: '30px'}} src={'/static/css/images/Logo_QPR_3.png'} alt={'logo Qué Pasa Riachuelo'} />
         {props.navBarConfig.map((navBarItem, i) => {
           const NavItemComponent = navItemMappings[navBarItem.type];
           return (
