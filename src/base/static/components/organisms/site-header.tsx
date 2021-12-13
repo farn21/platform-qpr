@@ -254,6 +254,15 @@ const SiteHeader: React.FunctionComponent<Props> = props => {
   ] = React.useState<boolean>(false);
 
   const defaultMapViewport = props.mapConfig.defaultMapViewport;
+  
+  const separatorStyle = {
+    [mq[1]]:{
+      width: '1px', 
+      height: '20px', 
+      borderRight: '1px solid #aeadb3'
+    }
+  }
+  
   return (
     <header
       className="mapseed-site-header"
@@ -353,6 +362,7 @@ const SiteHeader: React.FunctionComponent<Props> = props => {
         {props.navBarConfig.map((navBarItem, i) => {
           const NavItemComponent = navItemMappings[navBarItem.type];
           return (
+          <React.Fragment key={i}>
             <NavItemComponent
               key={i}
               position={i}
@@ -368,6 +378,8 @@ const SiteHeader: React.FunctionComponent<Props> = props => {
             >
               {props.t(`navBarItem${i}`, navBarItem.title)}
             </NavItemComponent>
+            {(i < 3) && <div css={separatorStyle}></div>}
+          </React.Fragment>  
           );
         })}
       </nav>
