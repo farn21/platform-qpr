@@ -3687,12 +3687,9 @@
     {
       "slug": "about",
       "content": [
-        "<img style='width: 20%; display: inline-block;' src='/static/css/images/Logo_QPR_3.png'/>",
+        "<div style='padding-bottom: 10px; margin-bottom: 20px;'><img style='border-radius: 0; width: 20%; display: block;' src='/static/css/images/Logo_QPR_3.png'/></div>",
         "<p><b>¿Qué Pasa Riachuelo?</b> (QPR) es el resultado del esfuerzo colectivo de la Fundación Ambiente y Recursos Naturales (FARN), Universidad Nacional de San Martín (UNSAM) y otros actores que desde 2020 colaboran y participan en distintas actividades en el marco del proyecto “CoAct Ciencia Ciudadana Social para la Acción Colectiva”, una iniciativa global financiada por la Unión Europea que tiene como objetivo promover la ciencia ciudadana para avanzar acciones hacia la justicia ambiental en la Cuenca Matanza-Riachuelo.<br><br><b>¿Qué Pasa Riachuelo?</b> (QPR) permite organizar, sistematizar y compartir las visiones y el conocimiento acumulado a lo largo de los años por organizaciones sociales, científicos y otros actores que buscan soluciones para los graves problemas socioambientales de la cuenca Matanza-Riachuelo.</p>",
-        "<img style='width: 20%; display: inline-block; margin-right: 5%;' src='/static/css/images/00-LOGO FARN.png'/>",
-        "<img style='width: 20%; display: inline-block; margin-right: 5%;' src='/static/css/images/CENIT_UNSAM.png'/>",
-        "<img style='width: 20%; display: inline-block; margin-right: 5%;' src='/static/css/images/coact.png'/>",
-        "<img style='width: 20%; display: inline-block;' src='/static/css/images/union-europea.jpg'/>"
+        "<div style='border-bottom: 0; display: flex; justify-content: space-between; align-items: center; width: 100%;'><img style='width: 13%; border-radius: 0; display: inline-block; margin-bottom: 0; margin-right: 2%;' src='/static/css/images/00-LOGO FARN.png'/><div style='margin-right: 2%; width: 1px; height: 40px; border-right: 1px solid #aeadb3; display: inline-block;'></div><img style='width: 13%; border-radius: 0; display: inline-block; margin-bottom: 0; margin-right: 2%;' src='/static/css/images/CENIT_UNSAM.png'/><div style='margin-right: 2%; width: 1px; height: 40px; border-right: 1px solid #aeadb3; display: inline-block;'></div><img style='width: 13%;border-radius: 0; display: inline-block; margin-bottom: 0; margin-right: 2%;' src='/static/css/images/coact.png'/><div style='margin-right: 2%; width: 1px; height: 40px; border-right: 1px solid #aeadb3; display: inline-block;'></div><img style='width: 13%;border-radius: 0; display: inline-block; margin-bottom: 0; margin-right: 2%;' src='/static/css/images/union-europea.jpg'/><span style='font-family: Montserrat, sans-serif; font-size: 7px;'>The CoAct project has received funding from the European Union´s Horizon 2020 research and innovation programme under grant agreement number 873048.</span></div>"
       ]
     },
     {

@@ -94,10 +94,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#mapseed-custom-page-container p, #mapseed-custom-page-container li,{
-  color: #aeadb3;
+#mapseed-custom-page-container p, #mapseed-custom-page-container li {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
+  padding-right: 10px;
 }
 
 /* About page */
