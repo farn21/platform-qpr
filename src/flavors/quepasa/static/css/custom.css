@@ -93,6 +93,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+#mapseed-custom-page-container p, #mapseed-custom-page-container li,{
+  color: #aeadb3;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
 /* About page */
 #mapseed-custom-page-container .about-title {
   font-size: 1.5rem;
@@ -110,7 +117,7 @@ body {
 #mapseed-custom-page-container .about-text {
   font-size: 1rem;
   line-height: 1.3125;
-  color: #1c313a;
+  color: #aeadb3;
   margin: 0 0 1.3125rem 0;
 }
 /* Header */
@@ -269,11 +276,11 @@ body {
 }
 #site-wrap>div>section button[aria-label="close"] {
   border-radius: 0;
-  background-color: #ffffff;
+  background-color: transparent;
   right: 12px;
   left: auto;
   box-shadow: none;
-  color: #455a64;
+  color: #aeadb3;
 }
 #site-wrap>div>section button[aria-label="close"]:hover {
   color: #c67c00;
