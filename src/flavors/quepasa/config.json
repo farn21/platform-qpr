@@ -3687,28 +3687,28 @@
     {
       "slug": "about",
       "content": [
-        "<h1 style='margin-bottom:4px;color:#75beb1;'>¿Qué Pasa, Riachuelo?</h1>",
-        "<p><b>¿Qué Pasa Riachuelo?</b> (QPR) es el resultado del esfuerzo colectivo de la Fundación Ambiente y Recursos Naturales (FARN), Universidad Nacional de San Martín (UNSAM) y otros actores que desde 2020 colaboran y participan en distintas actividades en el marco del proyecto “CoAct Ciencia Ciudadana Social para la Acción Colectiva”, una iniciativa global financiada por la Unión Europea que tiene como objetivo promover la ciencia ciudadana para avanzar acciones hacia la justicia ambiental en la Cuenca Matanza-Riachuelo.</p>"
+        "<h1 style='margin-bottom:4px;color:#000000;'>¿Qué Pasa, Riachuelo?</h1>",
+        "<p><b>¿Qué Pasa Riachuelo?</b> (QPR) es el resultado del esfuerzo colectivo de la Fundación Ambiente y Recursos Naturales (FARN), Universidad Nacional de San Martín (UNSAM) y otros actores que desde 2020 colaboran y participan en distintas actividades en el marco del proyecto “CoAct Ciencia Ciudadana Social para la Acción Colectiva”, una iniciativa global financiada por la Unión Europea que tiene como objetivo promover la ciencia ciudadana para avanzar acciones hacia la justicia ambiental en la Cuenca Matanza-Riachuelo.<br><br><b>¿Qué Pasa Riachuelo?</b> (QPR) permite organizar, sistematizar y compartir las visiones y el conocimiento acumulado a lo largo de los años por organizaciones sociales, científicos y otros actores que buscan soluciones para los graves problemas socioambientales de la cuenca Matanza-Riachuelo.<img style='width: 20%; display: inline-block; margin-right: 5%;' src='/static/css/images/00-LOGO FARN.png'/><img style='width: 20%; display: inline-block; margin-right: 5%;' src='/static/css/images/CENIT_UNSAM.png'/><img style='width: 20%; display: inline-block; margin-right: 5%;' src='/static/css/images/coact.png'/><img style='width: 20%; display: inline-block;' src='/static/css/images/union-europea.jpg'/></p>" 
       ]
     },
     {
       "slug": "areasnaturales",
       "content": [
-        "<h1 style='margin-bottom:4px;color:#75beb1;'>¿Qué Pasa, Riachuelo?</h1>",
-        "<p><b>¿Qué pasa, Riachuelo?</b> registra y brinda información sobre los procesos de protección de áreas naturales en la cuenca Matanza-Riachuelo como los humedales y espacios verdes de origen natural o no (parques, plazas, y otros), importantes para la conservación del patrimonio biológico y cultural de la cuenca. Estos espacios brindan beneficios ecosistémicos y dan lugar a la interacción social y a la recreación, contribuyendo a la calidad de vida de la población. Están amenazados por el avance de la industrialización y la urbanización y por eso es importante compartir información y promover la participación para contribuir con su conservación.</p><br><p>QPR te permite:</p><br><ul style='font-family: Roboto;'><li>identificar zonas amenazadas que requieren desplegar estrategias de protección;</li><li>visibilizar la situación de protección de las áreas naturales de la cuenca;</li><li>Reportar eventos relativos al estado actual de estas áreas y compartir información sobre las mismas con fines educativos y de concientización sobre su relevancia social y ambiental</li></ul>"
+        "<h1 style='margin-bottom:4px;color:#000000;'>¿Qué Pasa, Riachuelo?</h1>",
+        "<p><b>¿Qué pasa, Riachuelo?</b> registra y brinda información sobre los procesos de protección de áreas naturales en la cuenca Matanza-Riachuelo como los humedales y espacios verdes de origen natural o no (parques, plazas, y otros), importantes para la conservación del patrimonio biológico y cultural de la cuenca. Estos espacios brindan beneficios ecosistémicos y dan lugar a la interacción social y a la recreación, contribuyendo a la calidad de vida de la población. Están amenazados por el avance de la industrialización y la urbanización y por eso es importante compartir información y promover la participación para contribuir con su conservación.<br>QPR te permite:<br><ul style='font-family: Roboto;'><li>identificar zonas amenazadas que requieren desplegar estrategias de protección;</li><li>visibilizar la situación de protección de las áreas naturales de la cuenca;</li><li>Reportar eventos relativos al estado actual de estas áreas y compartir información sobre las mismas con fines educativos y de concientización sobre su relevancia social y ambiental</li></ul></p>"
       ]
     },
     {
       "slug": "relocalizaciones",
       "content": [
-        "<h1 style='margin-bottom:4px;color:#75beb1;'>¿Qué Pasa, Riachuelo?</h1>",
+        "<h1 style='margin-bottom:4px;color:#000000;'>¿Qué Pasa, Riachuelo?</h1>",
         "<p>En <b>¿Qué pasa, Riachuelo?</b> podés consultar y brindar información acerca de los procesos de relocalización de los barrios, villas y asentamientos de la cuenca Matanza Riachuelo. La cuestión de la relocalización afecta directamente a más de 17 mil familias que habitan en condiciones deficitarias de vivienda y hábitat en distintas zonas de la cuenca expuestas al riesgo ambiental. En estos procesos el acceso a la información y la participación de la población es clave para encontrar soluciones habitacionales integrales que garanticen sus derechos.</p><br><p> QPR permite:</p> <br><ul style='font-family: Roboto';><li>Acceder a información sobre las mesas de trabajo barriales a lo largo de la cuenca;</li><li>Reportar cuestiones relativas a las condiciones de hábitat y vivienda, salud, económicas, educativas y acerca de la participación y acceso a la información en torno a la relocalización;</li><li>Compartir experiencias de las comunidades relacionadas con  los procesos de relocalización</li></ul>"
       ]
     },
     {
       "slug": "calidaddelagua",
       "content": [
-        "<h1 style='margin-bottom:4px;color:#75beb1;'>¿Qué Pasa, Riachuelo?</h1>",
+        "<h1 style='margin-bottom:4px;color:#000000;'>¿Qué Pasa, Riachuelo?</h1>",
         "<p>En <b>¿Qué pasa, Riachuelo?</b> podés visualizar y discutir indicadores de calidad de agua en la cuenca y aportar a los mismos datos sobre la presencia de residuos sólidos en los cursos y otras materias observables (hidrocarburos, algas, cianobacterias, escombros, plásticos flotantes,etc). De esta forma, puede resultar una herramienta pedagógica útil para valorizar al río como un recurso biocultural</p><br><p>QRP permite:</p><br><ul style='font-family: Roboto';><li>Visibilizar información sobre la calidad de agua en determinados puntos y el riesgo que implica;</li><li>reportar eventos que afectan a la calidad del agua a partir de parámetros observables en los cursos superficiales y sus entornos;</li><li>compartir información para contribuir con distintas estrategias pedagógicas.</li></ul>"
       ]
     }

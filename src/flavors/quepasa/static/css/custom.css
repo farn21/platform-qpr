@@ -264,12 +264,12 @@ body {
 /* Section panel */
 #site-wrap>div>section {
   padding: 18px;
-  background-color: #ededed;
-  box-shadow: -2px 0 3px rgba(0, 0, 0, .3);
+  background-color: #ffffff;
+  border-left: 1px solid #aeadb3;
 }
 #site-wrap>div>section button[aria-label="close"] {
   border-radius: 0;
-  background-color: #ededed;
+  background-color: #ffffff;
   right: 12px;
   left: auto;
   box-shadow: none;
@@ -483,7 +483,7 @@ div[data-field-type="submit"] button:hover {
 
 /* Left sidebar */
 .mapseed-left-sidebar {
-  background-color: #ededed;
+  background-color: #ffffff;
 }
 .mapseed-left-sidebar>div {
   padding: 1.5rem;
@@ -524,7 +524,7 @@ div[data-field-type="submit"] button:hover {
   right: 10px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  background-color: #ededed;
+  background-color: #ffffff;
   color: #455a64;
   box-shadow: none;
 }
