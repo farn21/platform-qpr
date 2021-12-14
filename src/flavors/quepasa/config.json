@@ -860,12 +860,12 @@
             "type": "text",
             "prompt": "Ingresá la hora de la situación que estás compartiendo. Se trata de la hora del día en la que registraste la situación vinculada a la calidad de agua",
             "display_prompt": "Hora vinculada a la calidad del agua",
-            "placeholder": "00:00",
+            "placeholder": "Seleccioná una hora",
             "optional": false
           },
           {
             "name": "cuerpo-agua",
-            "type": "dropdown",
+            "type": "big_radio",
             "prompt": "¿En qué cuerpo de agua registraste la situación que estás compartiendo?",
             "display_prompt": "Cuerpo de agua",
             "optional": false,
@@ -894,7 +894,7 @@
           },
           {
             "name": "entorno-cuerpo-agua",
-            "type": "dropdown",
+            "type": "big_radio",
             "prompt": "¿En qué entorno se encuentra este cuerpo de agua?",
             "display_prompt": "Entorno",
             "optional": false,
@@ -920,7 +920,7 @@
           },
           {
             "name": "referencia-cercana",
-            "type": "dropdown",
+            "type": "big_radio",
             "includeOnListItem": true,
             "prompt": "Indicá una referencia de un lugar cercano en donde tuvo lugar la situación que estás compartiendo.",
             "display_prompt": "Referencia",
@@ -950,7 +950,7 @@
           },
           {
             "name": "estado-agua-registro",
-            "type": "dropdown",
+            "type": "big_radio",
             "includeOnListItem": true,
             "prompt": "¿Cuál es el estado del agua en el lugar y el momento del registro?",
             "display_prompt": "Estado del agua",
@@ -980,7 +980,7 @@
           },
           {
             "name": "estado-color-agua",
-            "type": "dropdown",
+            "type": "big_radio",
             "includeOnListItem": true,
             "prompt": "¿Cuál es el color del agua en el lugar y el momento del registro?",
             "display_prompt": "Color del agua",
@@ -1018,7 +1018,7 @@
           },
           {
             "name": "estado-olores-agua",
-            "type": "dropdown",
+            "type": "big_radio",
             "prompt": "¿Se percibían olores del agua en el lugar y el momento del registro?",
             "display_prompt": "Olores",
             "optional": true,
@@ -1060,7 +1060,7 @@
           },
           {
             "name": "estado-materiales-cuales",
-            "type": "dropdown",
+            "type": "big_checkbox",
             "prompt": "¿Cuáles?",
             "display_prompt": "Materiales",
             "optional": true,
@@ -1097,7 +1097,7 @@
           },
           {
             "name": "fuente-contaminacion-cercana",
-            "type": "dropdown",
+            "type": "big_radio",
             "prompt": "¿Conocés una fuente de contaminación cercana?",
             "display_prompt": "Fuente de contaminación",
             "optional": true,
@@ -1126,7 +1126,7 @@
           },
           {
             "name": "fuentes-opcion",
-            "type": "dropdown",
+            "type": "big_radio",
             "prompt": "¿Cuál?",
             "display_prompt": "Fuentes",
             "optional": true,
@@ -1155,7 +1155,7 @@
           },
           {
             "name": "vegetacion-margenes-cuerpo",
-            "type": "dropdown",
+            "type": "big_radio",
             "prompt": "¿Hay vegetación en los márgenes del cuerpo de agua?",
             "display_prompt": "Vegetacion de los margenes",
             "optional": false,
@@ -1180,7 +1180,7 @@
           },
           {
             "name": "vegetacion-opcion",
-            "type": "dropdown",
+            "type": "big_radio",
             "prompt": "¿Cuál?",
             "display_prompt": "Vegetación",
             "optional": true,
@@ -1201,7 +1201,7 @@
           },
           {
             "name": "vegetacion-cuerpo-agua",
-            "type": "dropdown",
+            "type": "big_radio",
             "prompt": "¿Hay vegetación en el cuerpo de agua?",
             "display_prompt": "Vegetación en el cuerpo de agua",
             "optional": true,
@@ -1230,7 +1230,7 @@
           },
           {
             "name": "vegetacion-cuerpo-agua-option",
-            "type": "dropdown",
+            "type": "big_radio",
             "prompt": "¿Cuál?",
             "display_prompt": "Vegetación cuerpo",
             "optional": true,
@@ -1269,7 +1269,7 @@
           },
           {
             "name": "nivel-agua-cuerpo",
-            "type": "dropdown",
+            "type": "big_radio",
             "prompt": "¿Cuál es el nivel del agua del cuerpo del agua al momento de observar la situación?",
             "display_prompt": "Nivel del agua",
             "optional": true,
@@ -1290,7 +1290,7 @@
           },
           {
             "name": "vientos-fuertes",
-            "type": "dropdown",
+            "type": "big_radio",
             "prompt": "¿En los días previos o durante el momento de la observación existieron vientos fuertes (sudestada)?",
             "display_prompt": "Días previos",
             "optional": true,
@@ -1311,7 +1311,7 @@
           },
           {
             "name": "lluvias-observación",
-            "type": "dropdown",
+            "type": "big_radio",
             "prompt": "¿Llovió en los días previos o durante el momento de la observación?",
             "display_prompt": "Lluvia",
             "optional": true,
@@ -1340,7 +1340,7 @@
           },
           {
             "name": "lluvias-observación-opcion",
-            "type": "dropdown",
+            "type": "big_radio",
             "prompt": "¿Qué tipo de lluvia se produjo?",
             "display_prompt": "Tipo de lluvia",
             "optional": true,
