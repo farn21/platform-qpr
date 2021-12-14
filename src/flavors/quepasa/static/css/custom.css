@@ -354,6 +354,10 @@ body {
   font-weight: 700;
 }
 
+div[data-field-type="geocoding"]{
+padding-left: 0 !important;
+}
+
 div[data-field-type="text"], 
 div[data-field-type="informational_html"], 
 div[data-field-type="dropdown_autocomplete"],
@@ -503,11 +507,6 @@ div[data-field-type="informational_html"][data-field-name*="intro-"] p {
   border-radius: 4px !important;
   padding: 0.6875rem !important;
 }
-.textarea-field {
-  border: 1px solid #ccc !important;
-  border-radius: 4px !important;
-  padding: 0.6875rem !important;
-}
 .ql-toolbar.ql-snow {
   border-top: none !important;
   border-right: none !important;
@@ -555,6 +554,10 @@ div[data-field-type="submit"] button:hover {
   border-width: 1px !important;
   border-color: #a1cde7 !important;
   font-size: 14px !important;
+}
+
+.textarea-field {
+  resize: none !important;
 }
 
 .datetime-field__input, .text-field {
