@@ -359,7 +359,10 @@ const SiteHeader: React.FunctionComponent<Props> = props => {
           },
         }}
       >
-      <img style={{width: '100px', marginTop: '10px', marginBottom: '10px', marginRight: '30px'}} src={'/static/css/images/Logo_QPR_3.png'} alt={'logo Qué Pasa Riachuelo'} />
+      <a href="#">
+      <img style={{width: '110px', marginTop: '10px', marginBottom: '10px', marginRight: '30px'}} src={'/static/css/images/Logo_QPR_3.png'} alt={'logo Qué Pasa Riachuelo'} />
+      </a>
+      
         {props.navBarConfig.map((navBarItem, i) => {
           const NavItemComponent = navItemMappings[navBarItem.type];
           return (
