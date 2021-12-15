@@ -725,6 +725,12 @@ div[class*=-RichTextareaFieldResponseWrapper] {
   display: none !important;
 }
 
+.input-form__optional-msg {
+color: #aeadb3 !important;
+font-size: 11px !important;
+font-weight: 400 !important;
+}
+
 .border-color-water{
   border-color: #a1cde7  !important;
 }
