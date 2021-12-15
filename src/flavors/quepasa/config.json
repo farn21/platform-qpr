@@ -815,13 +815,15 @@
             "start_field_index": 1,
             "end_field_index": 31,
             "header": "Calidad del Agua",
-            "description": ""
+            "description": "",
+            "qprFormType": "water"
           },
           {
             "start_field_index": 32,
             "end_field_index": 34,
             "header": "Calidad del Agua",
-            "description": ""
+            "description": "",
+            "qprFormType": "water"
           }
         ],
         "fields": [
@@ -1373,7 +1375,8 @@
             "prompt": " ",
             "display_prompt": " ",
             "placeholder": "Texto",
-            "optional": true
+            "optional": true,
+            "qpr_form_type": "water"
           },
           {
             "name": "info-finalenlace",
@@ -1423,12 +1426,14 @@
             "start_field_index": 1,
             "end_field_index": 52,
             "header": "Áreas Naturales",
+            "qprFormType": "protected-areas",
             "description": ""
           },
           {
             "start_field_index": 53,
             "end_field_index": 54,
             "header": "Áreas Naturales",
+            "qprFormType": "protected-areas",
             "description": ""
           }
         ],
@@ -2005,7 +2010,8 @@
             "placeholder": "Texto",
             "display_prompt": "Descripcion",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qpr_form_type": "relocations"
           },
           {
             "name": "proteccion-espacio-pdf",
@@ -2074,7 +2080,9 @@
             "placeholder": "Texto",
             "display_prompt": "Descripcion",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qpr_form_type": "protected-area"
+            
           },
           {
             "name": "biodiversidad_especies-pdf",
@@ -2343,13 +2351,15 @@
             "start_field_index": 1,
             "end_field_index": 3,
             "header": "Reporte Territorial",
-            "description": ""
+            "description": "",
+            "qprFormType": "relocations"
           },
           {
             "start_field_index": 4,
             "end_field_index": 10,
             "header": "Reporte Territorial",
-            "description": ""
+            "description": "",
+            "qprFormType": "relocations"
           },
           {
             "start_field_index": 11,
@@ -2361,13 +2371,15 @@
             "start_field_index": 21,
             "end_field_index": 23,
             "header": "Reporte Territorial",
-            "description": ""
+            "description": "",
+            "qprFormType": "relocations"
           },
           {
             "start_field_index": 24,
             "end_field_index": 25,
             "header": "Reporte Territorial",
-            "description": ""
+            "description": "",
+            "qprFormType": "relocations"
           }
         ],
         "fields": [
