@@ -726,13 +726,13 @@ div[class*=-RichTextareaFieldResponseWrapper] {
 }
 
 .border-color-water{
-  border-color: #a1cde7;
+  border-color: #a1cde7  !important;
 }
 
 .border-color-relocations{
-  border-color: #efcc5a;
+  border-color: #efcc5a  !important;
 }
 
 .border-color-protected-area{
-  border-color: #a2ba91;
+  border-color: #a2ba91 !important;
 }

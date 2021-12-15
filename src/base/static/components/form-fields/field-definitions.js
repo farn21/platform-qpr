@@ -97,7 +97,8 @@ export default {
   [constants.TEXTAREA_FIELD_TYPENAME]: {
     getValidator: getDefaultValidator,
     getComponent: (fieldConfig, context) => (
-      <TextareaField {...getSharedFieldProps(fieldConfig, context)} />
+      <TextareaField {...getSharedFieldProps(fieldConfig, context)} 
+      qprFormType={fieldConfig.qpr_form_type} />
     ),
     getInitialValue: ({ value }) => value,
     getResponseComponent: () => TextareaFieldResponse,
