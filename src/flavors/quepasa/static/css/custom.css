@@ -302,12 +302,14 @@ body {
   font-weight: 700;
   font-size: 0.75rem;
   border: none;
-  border-radius: 0;
-  padding: 10px;
+  border-radius: 20px !important;
+  background-color: #f0a300;
+  padding: 8px 16px;
 } 
-@media (max-width: 960px) {
-  .mapseed-add-place-button-container {
-    border-radius: 0;
+@media (min-width: 960px) {
+  .css-1extdu3-Button-AddPlaceButtonContainer {
+    top: 78px !important;
+    left: 60px !important;
   }
 }
 /* Forms reportes - Customozables desde theme varaibles.scss si tuvieramos uno propio */ 
