@@ -397,9 +397,23 @@ border-left: none !important;
   margin-right: 35px !important;
   padding: 8px 16px;
   }
-
-
 /* END FORM STAGE CONTROL BAR STYLES */
+
+
+/*START SUBMIT PANEL STYLES*/
+
+.css-1pcpdx4-Button-InputFormSubmitButton {
+  border-radius: 20px !important;
+  background-color: #a1cde7 !important;
+  margin-left: 35px !important;
+  margin-right: 35px !important;
+  padding: 8px 16px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  width: 200px !important;
+}
+
+/*END SUBMIT PANEL STYLES*/
 
 div[data-field-type="geocoding"]{
 padding-left: 0 !important;
