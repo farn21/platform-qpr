@@ -531,16 +531,21 @@ div[data-field-type="informational_html"][data-field-name*="intro-"] p {
   border: none !important;
 }
 .add-attachment-button__file-field-label {
-  color: #455a64 !important;
+  color: #ffffff !important;
   padding: 0.5rem 1rem !important;
-  background-color: transparent !important;
-  border: 1px solid #718792 !important;
+  border: 1px solid #a1cde7 !important;
   box-shadow: none !important;
-  border-radius: 4px !important;
+  height: 40px;
+  box-sizing: border-box !important;
+  border-radius: 20px !important;
   font-size: 0.875em !important;
+  text-align: center !important;
+  font-weight: 700;
+  line-height: 1.5em !important;
 }
 .add-attachment-button__file-field-label:hover {
   background-color: #c8ced2 !important;
+  border-color: #c8ced2 !important;
 }
 div[data-field-type="submit"] button {
   color: #fff;
@@ -731,4 +736,16 @@ font-weight: 400 !important;
 
 .border-color-protected-area{
   border-color: #a2ba91 !important;
+}
+
+.background-color-water{
+  background-color: #a1cde7  !important;
+}
+
+.background-color-relocations{
+  background-color: #efcc5a  !important;
+}
+
+.background-color-protected-area{
+  background-color: #a2ba91 !important;
 }

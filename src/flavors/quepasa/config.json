@@ -1391,7 +1391,8 @@
             "type": "file",
             "label": "ADJUNTAR ARCHIVO DE IMAGEN O PDF",
             "prompt": " ",
-            "optional": true
+            "optional": true,
+            "qpr_form_type": "water"
           },
           {
             "name": "submit",

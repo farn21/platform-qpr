@@ -270,6 +270,7 @@ export default {
         label={fieldConfig.label}
         formId={context.props.formId}
         mode="image"
+        qprFormType={fieldConfig.qpr_form_type}
       />
     ),
     getInitialValue: () => null,
