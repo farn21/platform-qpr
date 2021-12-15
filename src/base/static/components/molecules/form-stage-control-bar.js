@@ -54,9 +54,6 @@ const FormStageControlBar = props => {
           `}
           weight="bold"
         >
-          <Trans i18nKey="progressCounter">
-            Sección {{ currentStage }} de {{ numStages }}
-          </Trans>
         </RegularText>
       )}
       <div
@@ -66,10 +63,6 @@ const FormStageControlBar = props => {
         `}
       >
         {props.currentStage !== props.numStages && !props.isSingleCategory && (<RegularText> Hacé click en "SIGUIENTE" para publicar tu experiencia</RegularText>)}
-        <ProgressBar
-          total={props.numStages}
-          currentProgress={props.currentStage}
-        />
         {props.currentStage > 1 && <Button
           style={{ marginLeft: "8px" }}
           disabled={props.isSingleCategory && props.currentStage === 1}
@@ -87,6 +80,7 @@ const FormStageControlBar = props => {
           color="primary"
           size="regular"
           {...advanceOpts}
+          className="form-orange-button"
         >
           <RegularText>{props.t("nextStageLinkLabel", "Siguiente")}</RegularText>
         </Button>}
