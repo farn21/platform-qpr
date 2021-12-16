@@ -439,13 +439,23 @@ div[data-field-type="informational_html"][data-field-name*="intro-"] p {
 }
 /* --- */
 
+.input-container{
+display: 'flex';
+align-items: center;
+}
+
 /* Radio input styles */
+.big-radio-field {
+display: block !important;
+}
+
 .big-radio-field__label:before{
 background-color: #ffffff!important;
 border: 1px solid #000000 !important;
 border-radius: 50% !important;
 height: 16px !important;
 width: 16px !important;
+margin-top: 7px !important;
 }
 
 .big-radio-field__label--toggled{
@@ -460,10 +470,10 @@ border: none !important;
 .big-radio-field__label {
   border: none !important;
   font-size: 14px ​!important;
-  line-height: 3px !important;
   color: #000000 !important;
   padding: 8px 10px 8px 24px !important;
-  overflow: hidden;
+  display: block !important;
+  line-height: 1rem !important;
 }
 
 .big-radio-field__label--toggled:before {
@@ -491,17 +501,18 @@ border: none !important;
 .big-checkbox-field__label {
   border: none !important;
   font-size: 14px ​!important;
-  line-height: 3px !important;
+  line-height: 1rem !important;
   color: #000000 !important;
   padding: 8px 10px 8px 24px !important;
-  overflow: hidden;
   border-radius: 0 !important;
+  display: block !important;
 }
 .big-checkbox-field__label:before {
   background-color: #ffffff!important;
   border: 1px solid #000000 !important;
   height: 16px !important;
   width: 16px !important;
+  margin-top: 6px !important;
 }
 .big-checkbox-field__label--toggled:before {
   background-color: #000000 !important;
