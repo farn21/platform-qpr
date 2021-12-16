@@ -369,7 +369,6 @@ body {
 }
 
 /* START FORM STAGE CONTROL BAR STYLES */
-
 .css-w1p6qw-RegularText{
   font-size: 14px !important;
   font-weight: 700;
@@ -387,11 +386,11 @@ body {
 }
 
 .css-12t4dd3-FormStageControlBar {
-width: 200px !important;
-border-left: none !important;
-
+  width: 200px !important;
+  border-left: none !important;
 }
 
+/*Continue button*/  
 .form-orange-button{
   border-radius: 20px !important;
   background-color: #f0a300;
@@ -399,6 +398,12 @@ border-left: none !important;
   margin-right: 35px !important;
   padding: 8px 16px;
   }
+
+/*Go back button*/  
+.css-1unahh2-Button{
+  border-radius: 20px !important;
+  padding: 8px 16px !important;
+}
 /* END FORM STAGE CONTROL BAR STYLES */
 
 
