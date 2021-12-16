@@ -13,7 +13,7 @@ import {
   AddAttachmentButton,
   BigRadioField,
   BigCheckboxField,
-  InputFormSubmitButton,
+  InputFormSubmitCard,
   RichTextareaField,
   AutocompleteComboboxField,
   BigToggleField,
@@ -294,10 +294,11 @@ export default {
   [constants.SUBMIT_FIELD_TYPENAME]: {
     getValidator: getPermissiveValidator,
     getComponent: (fieldConfig, context) => (
-      <InputFormSubmitButton
+      <InputFormSubmitCard
         {...getSharedFieldProps(fieldConfig, context)}
         onClickSubmit={context.props.onClickSubmit.bind(context)}
         label={fieldConfig.label}
+        qprFormType={fieldConfig.qpr_form_type}
       />
     ),
     getInitialValue: () => null,

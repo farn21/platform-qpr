@@ -403,18 +403,24 @@ border-left: none !important;
 
 
 /*START SUBMIT PANEL STYLES*/
+.input-form-submit-card{
+ width: 300px;
+ height: 130px;
+ border: 1px solid #a1cde7;
+ border-radius: 20px;
+ padding: 15px;
+ font-size: 14px !important;
+ margin: auto !important;
+}
 
-.css-1pcpdx4-Button-InputFormSubmitButton {
+.css-13sk7ex-Button-InputFormSubmitCard {
   border-radius: 20px !important;
   background-color: #a1cde7 !important;
-  margin-left: 35px !important;
-  margin-right: 35px !important;
   padding: 8px 16px !important;
   font-size: 14px !important;
   font-weight: 700 !important;
   width: 200px !important;
 }
-
 /*END SUBMIT PANEL STYLES*/
 
 div[data-field-type="geocoding"]{
@@ -434,7 +440,7 @@ div[data-field-type="datetime"],
 div[data-field-type="dropdown"] {
   padding: 0;
   margin-bottom: 1.5rem;
-  border: none;
+  border: none !important;
 }
 
 div[data-field-type="informational_html"]{

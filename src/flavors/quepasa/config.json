@@ -1396,7 +1396,9 @@
           },
           {
             "name": "submit",
-            "type": "common_form_element"
+            "type": "submit",
+            "label": "Publicar en el mapa",
+            "qpr_form_type": "water"
           }
         ]
       },
@@ -2321,8 +2323,9 @@
           },
           {
             "name": "submit",
-            "type": "common_form_element"
-          }
+            "type": "submit",
+            "label": "Publicar en el mapa",
+            "qpr_form_type": "protected-area"          }
         ]
       },
       {
@@ -3297,7 +3300,9 @@
           },
           {
             "name": "submit",
-            "type": "common_form_element"
+            "type": "submit",
+            "label": "Publicar en el mapa",
+            "qpr_form_type": "relocations"
           }
         ]
       }
