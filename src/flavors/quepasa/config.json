@@ -1429,14 +1429,14 @@
             "start_field_index": 1,
             "end_field_index": 52,
             "header": "Áreas Naturales",
-            "qprFormType": "protected-areas",
+            "qprFormType": "protected-area",
             "description": ""
           },
           {
             "start_field_index": 53,
             "end_field_index": 54,
             "header": "Áreas Naturales",
-            "qprFormType": "protected-areas",
+            "qprFormType": "protected-area",
             "description": ""
           }
         ],
@@ -1534,7 +1534,7 @@
           {
             "name": "intro-areas-naturales-2",
             "type": "informational_html",
-            "content": "<p>¿Sabés si ese espacio cuenta con algún tipo de protección formal por parte de la nación, el municipio o la provincia, es decir, alguna normativa de creación como una ordenanza, una ley, un convenio o un decreto?</p>"
+            "content": "<span><b>¿Sabés si ese espacio cuenta con algún tipo de protección formal por parte de la nación, el municipio o la provincia, es decir, alguna normativa de creación como una ordenanza, una ley, un convenio o un decreto?</b></span>"
           },
           {
             "name": "proteccion_del_espacio",
@@ -1674,7 +1674,7 @@
                 "value": "por-biodiversidad"
               },
               {
-                "label": "Porque es un espacio recreativo y social frecuentado por la comunidad",
+                "label": "Porque es un espacio recreativo social frecuentado por la comunidad",
                 "value": "porque-espacio-recreativo"
               },
               {
@@ -1824,12 +1824,12 @@
           {
             "name": "conservacion_areas_naturales",
             "type": "informational_html",
-            "content": "<p>A continuación vas a leer algunas frases que describen posibles amenazas a la conservación de las áreas naturales, ¿con qué frecuencia dirías que ocurren las siguientes situaciones en el área natural que seleccionaste? Elegí para cada frase la opción adecuada.</p>"
+            "content": "<span><b>A continuación vas a leer algunas frases que describen posibles amenazas a la conservación de las áreas naturales, ¿con qué frecuencia dirías que ocurren las siguientes situaciones en el área natural que seleccionaste? Elegí para cada frase la opción adecuada.</b></span>"
           },
           {
             "name": "conservacion_incendios",
             "type": "big_radio",
-            "prompt": "“Se producen o se produjeron incendios en el área”",
+            "prompt": "“SE PRODUCEN O SE PRODUJERON INCENDIOS EN EL ÁREA”",
             "display_prompt": "Conservación",
             "optional": false,
             "content": [
@@ -1858,7 +1858,7 @@
           {
             "name": "conservacion_area",
             "type": "big_radio",
-            "prompt": "“Se acumulan o arrojan residuos en alguna parte del área”",
+            "prompt": "“SE ACUMULAN O ARROJAN RESIDUOS EN ALGUNA PARTE DEL ÁREA”",
             "display_prompt": "Residuos",
             "optional": false,
             "content": [
@@ -1887,7 +1887,7 @@
           {
             "name": "conservacion_fauna",
             "type": "big_radio",
-            "prompt": "“La flora y/o la fauna están amenazadas”",
+            "prompt": "“LA FLORA Y/O LA FAUNA ESTÁN AMENAZADAS”",
             "display_prompt": "Flora",
             "optional": false,
             "content": [
@@ -1916,7 +1916,7 @@
           {
             "name": "conservacion_conflictos",
             "type": "big_radio",
-            "prompt": "“Hay disputas o conflictos por los usos permitidos y/o los límites del área”",
+            "prompt": "“HAY DISPUTAS O CONFLICTOS POR LOS USOS PERMITIDOS Y/O LOS LÍMITES DEL ÁREA”",
             "display_prompt": "Conflictos",
             "optional": false,
             "content": [
@@ -1970,7 +1970,7 @@
           {
             "name": "proteccion_del_espacio_novedad_info",
             "type": "informational_html",
-            "content": "<p>Podés contribuir al conocimiento y a la protección de esta área natural aportando información sobre los siguientes aspectos. Podés adjuntar imágenes, documentos en pdf y enlaces.</p>"
+            "content": "<span><b>Podés contribuir al conocimiento y a la protección de esta área natural aportando información sobre los siguientes aspectos. Podés adjuntar imágenes, documentos en pdf y enlaces.</b></span>"
           },
           {
             "name": "proteccion_espacio",
@@ -1984,8 +1984,7 @@
                 "targets": [
                   "proteccion-espacio-title",
                   "proteccion-espacio-text",
-                  "proteccion-espacio-pdf",
-                  "proteccion-espacio-image",
+                  "proteccion-espacio-file",
                   "proteccion-espacio-enlace"
                 ]
               }
@@ -2000,38 +1999,31 @@
           {
             "name": "proteccion-espacio-title",
             "type": "text",
-            "prompt": "Titulo",
+            "prompt": "",
             "display_prompt": "Observación",
             "placeholder": "Titulo",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qpr_form_type": "protected-area"
           },
           {
             "name": "proteccion-espacio-text",
             "type": "textarea",
-            "prompt": " ",
+            "prompt": "",
             "placeholder": "Texto",
             "display_prompt": "Descripcion",
             "hidden_default": true,
             "optional": true,
-            "qpr_form_type": "relocations"
+            "qpr_form_type": "protected-area"
           },
           {
-            "name": "proteccion-espacio-pdf",
-            "type": "pdf",
-            "prompt": " ",
-            "label": "PDF",
-            "display_prompt": "Adjunto",
-            "hidden_default": true,
-            "optional": true
-          },
-          {
-            "name": "proteccion-espacio-image",
+            "name": "proteccion-espacio-file",
             "type": "file",
-            "hidden_default": true,
-            "label": "IMAGEN",
+            "label": "ADJUNTAR ARCHIVO DE IMAGEN O PDF",
             "prompt": " ",
-            "optional": true
+            "hidden_default": true,
+            "optional": true,
+            "qpr_form_type": "protected-area"
           },
           {
             "name": "proteccion-espacio-enlace",
@@ -2040,7 +2032,8 @@
             "placeholder": "Enlace",
             "display_prompt": "Enlace",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qpr_form_type": "protected-area"
           },
           {
             "name": "biodiversidad_especies",
@@ -2054,8 +2047,7 @@
                 "targets": [
                   "biodiversidad_especies-title",
                   "biodiversidad_especies-desc",
-                  "biodiversidad_especies-image",
-                  "biodiversidad_especies-pdf",
+                  "biodiversidad_especies-file",
                   "biodiversidad_especies-link"
                 ]
               }
@@ -2070,11 +2062,12 @@
           {
             "name": "biodiversidad_especies-title",
             "type": "text",
-            "prompt": "Titulo",
+            "prompt": "",
             "display_prompt": "Observación",
             "placeholder": "Titulo",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qpr_form_type": "protected-area"
           },
           {
             "name": "biodiversidad_especies-desc",
@@ -2084,25 +2077,16 @@
             "display_prompt": "Descripcion",
             "hidden_default": true,
             "optional": true,
-            "qpr_form_type": "protected-area"
-            
+            "qpr_form_type": "protected-area"            
           },
           {
-            "name": "biodiversidad_especies-pdf",
-            "type": "pdf",
-            "prompt": " ",
-            "label": "PDF",
-            "display_prompt": "Adjunto",
-            "hidden_default": true,
-            "optional": true
-          },
-          {
-            "name": "biodiversidad_especies-image",
+            "name": "biodiversidad_especies-file",
             "type": "file",
-            "hidden_default": true,
-            "label": "IMAGEN",
+            "label": "ADJUNTAR ARCHIVO DE IMAGEN O PDF",
             "prompt": " ",
-            "optional": true
+            "optional": true,
+            "hidden_default": true,
+            "qpr_form_type": "protected-area"
           },
           {
             "name": "biodiversidad_especies-link",
@@ -2111,7 +2095,8 @@
             "placeholder": "Enlace",
             "display_prompt": "Enlace",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qpr_form_type": "protected-area"
           },
           {
             "name": "reportes_estado_area",
@@ -2125,8 +2110,7 @@
                 "targets": [
                   "reportes_estado-title",
                   "reportes_estado-text",
-                  "reportes_estado-pdf",
-                  "reportes_estado-image",
+                  "reportes_estado-file",
                   "reportes_estado-link"
                 ]
               }
@@ -2141,11 +2125,12 @@
           {
             "name": "reportes_estado-title",
             "type": "text",
-            "prompt": "Titulo",
+            "prompt": "",
             "display_prompt": "Observación",
             "placeholder": "Titulo",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qpr_form_type": "protected-area"
           },
           {
             "name": "reportes_estado-text",
@@ -2154,24 +2139,17 @@
             "placeholder": "Texto",
             "display_prompt": "Descripcion",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qpr_form_type": "protected-area"
           },
           {
-            "name": "reportes_estado-pdf",
-            "type": "pdf",
-            "prompt": " ",
-            "label": "PDF",
-            "display_prompt": "Adjunto",
-            "hidden_default": true,
-            "optional": true
-          },
-          {
-            "name": "reportes_estado-image",
+            "name": "reportes_estado-file",
             "type": "file",
-            "hidden_default": true,
-            "label": "IMAGEN",
+            "label": "ADJUNTAR ARCHIVO DE IMAGEN O PDF",
             "prompt": " ",
-            "optional": true
+            "optional": true,
+            "hidden_default": true,
+            "qpr_form_type": "protected-area"
           },
           {
             "name": "reportes_estado-link",
@@ -2180,7 +2158,8 @@
             "placeholder": "Enlace",
             "display_prompt": "Enlace",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qpr_form_type": "protected-area"
           },
           {
             "name": "usos_memorias",
@@ -2194,8 +2173,7 @@
                 "targets": [
                   "usos_memorias-title",
                   "usos_memorias-text",
-                  "usos_memorias-pdf",
-                  "usos_memorias-image",
+                  "usos_memorias-file",
                   "usos_memorias-link"
                 ]
               }
@@ -2210,11 +2188,12 @@
           {
             "name": "usos_memorias-title",
             "type": "text",
-            "prompt": "Titulo",
+            "prompt": "",
             "display_prompt": "Observación",
             "placeholder": "Titulo",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qpr_form_type": "protected-area"
           },
           {
             "name": "usos_memorias-text",
@@ -2223,24 +2202,17 @@
             "placeholder": "Texto",
             "display_prompt": "Descripcion",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qpr_form_type": "protected-area"
           },
           {
-            "name": "usos_memorias-pdf",
-            "type": "pdf",
-            "prompt": " ",
-            "label": "PDF",
-            "display_prompt": "Adjunto",
-            "hidden_default": true,
-            "optional": true
-          },
-          {
-            "name": "usos_memorias-image",
+            "name": "usos_memorias-file",
             "type": "file",
-            "hidden_default": true,
-            "label": "IMAGEN",
+            "label": "ADJUNTAR ARCHIVO DE IMAGEN O PDF",
             "prompt": " ",
-            "optional": true
+            "optional": true,
+            "hidden_default": true,
+            "qpr_form_type": "protected-area"
           },
           {
             "name": "usos_memorias-link",
@@ -2249,7 +2221,8 @@
             "placeholder": "Enlace",
             "display_prompt": "Enlace",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qpr_form_type": "protected-area"
           },
           {
             "name": "patrimonio_arqueologico",
@@ -2263,8 +2236,7 @@
                 "targets": [
                   "patrimonio_arqueologico-title",
                   "patrimonio_arqueologico-text",
-                  "patrimonio_arqueologico-pdf",
-                  "patrimonio_arqueologico-image",
+                  "patrimonio_arqueologico-file",
                   "patrimonio_arqueologico-link"
                 ]
               }
@@ -2279,11 +2251,12 @@
           {
             "name": "patrimonio_arqueologico-title",
             "type": "text",
-            "prompt": "Titulo",
+            "prompt": "",
             "display_prompt": "Observación",
             "placeholder": "Titulo",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qpr_form_type": "protected-area"
           },
           {
             "name": "patrimonio_arqueologico-text",
@@ -2292,24 +2265,17 @@
             "placeholder": "Texto",
             "display_prompt": "Descripcion",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qpr_form_type": "protected-area"
           },
           {
-            "name": "patrimonio_arqueologico-pdf",
-            "type": "pdf",
-            "prompt": " ",
-            "label": "PDF",
-            "display_prompt": "Adjunto",
-            "hidden_default": true,
-            "optional": true
-          },
-          {
-            "name": "patrimonio_arqueologico-image",
+            "name": "patrimonio_arqueologico-file",
             "type": "file",
-            "hidden_default": true,
-            "label": "IMAGEN",
+            "label": "ADJUNTAR ARCHIVO DE IMAGEN O PDF",
             "prompt": " ",
-            "optional": true
+            "optional": true,
+            "hidden_default": true,
+            "qpr_form_type": "protected-area"
             
           },
           {
@@ -2319,7 +2285,8 @@
             "placeholder": "Enlace",
             "display_prompt": "Enlace",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qpr_form_type": "protected-area"
           },
           {
             "name": "submit",

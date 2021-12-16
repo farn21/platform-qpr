@@ -11,7 +11,7 @@ const FormStageHeaderBar = props => {
       return '/static/css/images/markers/marker-agua.svg';
     case "relocations":
       return '/static/css/images/markers/marker-relocalizaciones.svg';
-    case "protected-areas":
+    case "protected-area":
       return '/static/css/images/markers/marker-areas.svg';
     default:
       return '/static/css/images/markers/marker-agua.svg';
@@ -32,7 +32,7 @@ const FormStageHeaderBar = props => {
           />
         )}
         <span className={classNames({
-        "text-color-protected-areas": props.stageConfig.qprFormType === "protected-areas",
+        "text-color-protected-area": props.stageConfig.qprFormType === "protected-area",
         "text-color-relocations": props.stageConfig.qprFormType === "relocations",
         "text-color-water": props.stageConfig.qprFormType === "water"
       })}>
