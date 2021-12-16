@@ -89,7 +89,7 @@ export default {
   [constants.TEXT_FIELD_TYPENAME]: {
     getValidator: getDefaultValidator,
     getComponent: (fieldConfig, context) => (
-      <TextField {...getSharedFieldProps(fieldConfig, context)} qprFormType={fieldConfig.qpr_form_type} />
+      <TextField {...getSharedFieldProps(fieldConfig, context)} qprFormType={fieldConfig.qprFormType} />
     ),
     getInitialValue: ({ value }) => value,
     getResponseComponent: () => TextFieldResponse,
@@ -98,7 +98,7 @@ export default {
     getValidator: getDefaultValidator,
     getComponent: (fieldConfig, context) => (
       <TextareaField {...getSharedFieldProps(fieldConfig, context)} 
-      qprFormType={fieldConfig.qpr_form_type} />
+      qprFormType={fieldConfig.qprFormType} />
     ),
     getInitialValue: ({ value }) => value,
     getResponseComponent: () => TextareaFieldResponse,
@@ -184,6 +184,7 @@ export default {
       <DropdownField
         {...getSharedFieldProps(fieldConfig, context)}
         options={fieldConfig.content}
+        qprFormType={fieldConfig.qprFormType}
       />
     ),
     getInitialValue: ({ value }) => value,
@@ -270,7 +271,7 @@ export default {
         label={fieldConfig.label}
         formId={context.props.formId}
         mode="image"
-        qprFormType={fieldConfig.qpr_form_type}
+        qprFormType={fieldConfig.qprFormType}
       />
     ),
     getInitialValue: () => null,
@@ -298,7 +299,7 @@ export default {
         {...getSharedFieldProps(fieldConfig, context)}
         onClickSubmit={context.props.onClickSubmit.bind(context)}
         label={fieldConfig.label}
-        qprFormType={fieldConfig.qpr_form_type}
+        qprFormType={fieldConfig.qprFormType}
       />
     ),
     getInitialValue: () => null,

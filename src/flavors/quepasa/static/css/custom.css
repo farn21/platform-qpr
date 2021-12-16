@@ -596,10 +596,72 @@ height: 40px !important;
 
 /* Dropdown styles */
 .dropdown-field {
-  border: 1px solid #ccc !important;
-  padding: 0.5em 0.5em 0.5em 0.5em !important;
-  border-radius: 4px;
+  border: none !important;
+  border-radius: 18px !important;
+  color: #ffffff;
+  background-color: #a2ba91;
+  font-size: 14px !important;
+  height: 40px !important;
+  padding: 8px 16px !important;
+}
+
+.dropdown-field:focus-visible {
+  outline: 0 !important;
+}
+
+.dropdown-field option {
+  background-color: #D0DCC7;
   color: #000000;
+  -webkit-appearance: none !important;
+  font-family: 'Montserrat, sans-serif' !important;
+}
+
+option:hover {
+  background-color: #a2ba91 !important;
+}
+
+.dropdown-field:focus-within{
+  border-radius: none !important;
+  border-top-left-radius: 18px !important;
+  border-top-right-radius: 18px !important;
+}
+
+#autocomplete-municipio, #autocomplete-ciudad-de-buenos-aires-barrios{
+  border: none !important;
+  border-top-left-radius: 16px !important;
+  border-top-right-radius: 16px !important;
+  color: #000000 !important;
+  background-color: #efcc5a;
+  font-size: 14px !important;
+  height: 40px !important;
+  padding: 8px 16px !important;
+}
+
+#autocomplete-municipio:focus-visible {
+  outline: 0 !important;
+}
+
+#autocomplete-ciudad-de-buenos-aires-barrios:focus-visible {
+  outline: 0 !important;
+}
+
+.autocomplete__menu {
+  background-color: #F7E5AC !important;
+  color: #000000 !important;
+  outline: 0 !important;
+  border: none !important;
+  font-size: 14px !important;
+  border-bottom-left-radius: 16px !important;
+  border-bottom-right-radius: 16px !important;
+  width: 100% !important;
+  padding: 4px 16px !important;
+  box-sizing: border-box !important;
+}
+
+.autocomplete__option {
+  background-color: #F7E5AC !important;
+  color: #000000 !important;
+  border: none !important;
 }
 /* --- */
 /* END FORM STYLES */
@@ -659,7 +721,8 @@ height: 40px !important;
    padding: 8px 16px !important;
    font-size: 14px !important;
    font-weight: 700 !important;
-   width: 200px !important;
+   width: 75% !important;
+   box-shadow: none !important;
  }
  /*END SUBMIT PANEL STYLES*/
 

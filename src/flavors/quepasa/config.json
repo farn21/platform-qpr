@@ -1380,7 +1380,7 @@
             "display_prompt": " ",
             "placeholder": "Texto",
             "optional": true,
-            "qpr_form_type": "water"
+            "qprFormType": "water"
           },
           {
             "name": "info-finalenlace",
@@ -1396,13 +1396,13 @@
             "label": "ADJUNTAR ARCHIVO DE IMAGEN O PDF",
             "prompt": " ",
             "optional": true,
-            "qpr_form_type": "water"
+            "qprFormType": "water"
           },
           {
             "name": "submit",
             "type": "submit",
             "label": "Publicar en el mapa",
-            "qpr_form_type": "water"
+            "qprFormType": "water"
           }
         ]
       },
@@ -1451,6 +1451,7 @@
             "prompt": "¿Querés compartir experiencias sobre los procesos de protección de las áreas naturales de la cuenca Matanza-Riachuelo?",
             "display_prompt": "Experiencia",
             "optional": false,
+            "qprFormType": "protected-area",
             "content": [
               {
                 "label": "Reserva municipal morón",
@@ -1952,6 +1953,7 @@
             "prompt": "¿Cuál es tu vínculo con esta área? Elegí la respuesta que más se ajuste.",
             "display_prompt": "Vinculo",
             "optional": false,
+            "qprFormType": "protected-area",
             "content": [
               {
                 "label": "Vivo o trabajo en la zona",
@@ -2009,7 +2011,7 @@
             "placeholder": "Titulo",
             "hidden_default": true,
             "optional": true,
-            "qpr_form_type": "protected-area"
+            "qprFormType": "protected-area"
           },
           {
             "name": "proteccion-espacio-text",
@@ -2019,7 +2021,7 @@
             "display_prompt": "Descripcion",
             "hidden_default": true,
             "optional": true,
-            "qpr_form_type": "protected-area"
+            "qprFormType": "protected-area"
           },
           {
             "name": "proteccion-espacio-pdf",
@@ -2028,7 +2030,7 @@
             "prompt": " ",
             "hidden_default": true,
             "optional": true,
-            "qpr_form_type": "protected-area"
+            "qprFormType": "protected-area"
           },
           {
             "name": "proteccion-espacio-image",
@@ -2037,7 +2039,7 @@
             "prompt": " ",
             "hidden_default": true,
             "optional": true,
-            "qpr_form_type": "protected-area"
+            "qprFormType": "protected-area"
           },
           {
             "name": "proteccion-espacio-enlace",
@@ -2047,7 +2049,7 @@
             "display_prompt": "Enlace",
             "hidden_default": true,
             "optional": true,
-            "qpr_form_type": "protected-area"
+            "qprFormType": "protected-area"
           },
           {
             "name": "biodiversidad_especies",
@@ -2082,7 +2084,7 @@
             "placeholder": "Titulo",
             "hidden_default": true,
             "optional": true,
-            "qpr_form_type": "protected-area"
+            "qprFormType": "protected-area"
           },
           {
             "name": "biodiversidad_especies-desc",
@@ -2092,7 +2094,7 @@
             "display_prompt": "Descripcion",
             "hidden_default": true,
             "optional": true,
-            "qpr_form_type": "protected-area"            
+            "qprFormType": "protected-area"            
           },
           {
             "name": "biodiversidad_especies-pdf",
@@ -2101,7 +2103,7 @@
             "prompt": " ",
             "optional": true,
             "hidden_default": true,
-            "qpr_form_type": "protected-area"
+            "qprFormType": "protected-area"
           },
           {
             "name": "biodiversidad_especies-image",
@@ -2110,7 +2112,7 @@
             "prompt": " ",
             "optional": true,
             "hidden_default": true,
-            "qpr_form_type": "protected-area"
+            "qprFormType": "protected-area"
           },
           {
             "name": "biodiversidad_especies-link",
@@ -2120,7 +2122,7 @@
             "display_prompt": "Enlace",
             "hidden_default": true,
             "optional": true,
-            "qpr_form_type": "protected-area"
+            "qprFormType": "protected-area"
           },
           {
             "name": "reportes_estado_area",
@@ -2155,7 +2157,7 @@
             "placeholder": "Titulo",
             "hidden_default": true,
             "optional": true,
-            "qpr_form_type": "protected-area"
+            "qprFormType": "protected-area"
           },
           {
             "name": "reportes_estado-text",
@@ -2165,7 +2167,7 @@
             "display_prompt": "Descripcion",
             "hidden_default": true,
             "optional": true,
-            "qpr_form_type": "protected-area"
+            "qprFormType": "protected-area"
           },
           {
             "name": "reportes_estado-pdf",
@@ -2174,7 +2176,7 @@
             "prompt": " ",
             "optional": true,
             "hidden_default": true,
-            "qpr_form_type": "protected-area"
+            "qprFormType": "protected-area"
           },
           {
             "name": "reportes_estado-image",
@@ -2183,7 +2185,7 @@
             "prompt": " ",
             "optional": true,
             "hidden_default": true,
-            "qpr_form_type": "protected-area"
+            "qprFormType": "protected-area"
           },
           {
             "name": "reportes_estado-link",
@@ -2193,7 +2195,7 @@
             "display_prompt": "Enlace",
             "hidden_default": true,
             "optional": true,
-            "qpr_form_type": "protected-area"
+            "qprFormType": "protected-area"
           },
           {
             "name": "usos_memorias",
@@ -2228,7 +2230,7 @@
             "placeholder": "Titulo",
             "hidden_default": true,
             "optional": true,
-            "qpr_form_type": "protected-area"
+            "qprFormType": "protected-area"
           },
           {
             "name": "usos_memorias-text",
@@ -2238,7 +2240,7 @@
             "display_prompt": "Descripcion",
             "hidden_default": true,
             "optional": true,
-            "qpr_form_type": "protected-area"
+            "qprFormType": "protected-area"
           },
           {
             "name": "usos_memorias-pdf",
@@ -2247,7 +2249,7 @@
             "prompt": " ",
             "optional": true,
             "hidden_default": true,
-            "qpr_form_type": "protected-area"
+            "qprFormType": "protected-area"
           },
           {
             "name": "usos_memorias-image",
@@ -2256,7 +2258,7 @@
             "prompt": " ",
             "optional": true,
             "hidden_default": true,
-            "qpr_form_type": "protected-area"
+            "qprFormType": "protected-area"
           },
           {
             "name": "usos_memorias-link",
@@ -2266,7 +2268,7 @@
             "display_prompt": "Enlace",
             "hidden_default": true,
             "optional": true,
-            "qpr_form_type": "protected-area"
+            "qprFormType": "protected-area"
           },
           {
             "name": "patrimonio_arqueologico",
@@ -2301,7 +2303,7 @@
             "placeholder": "Titulo",
             "hidden_default": true,
             "optional": true,
-            "qpr_form_type": "protected-area"
+            "qprFormType": "protected-area"
           },
           {
             "name": "patrimonio_arqueologico-text",
@@ -2311,7 +2313,7 @@
             "display_prompt": "Descripcion",
             "hidden_default": true,
             "optional": true,
-            "qpr_form_type": "protected-area"
+            "qprFormType": "protected-area"
           },
           {
             "name": "patrimonio_arqueologico-pdf",
@@ -2320,7 +2322,7 @@
             "prompt": " ",
             "optional": true,
             "hidden_default": true,
-            "qpr_form_type": "protected-area"
+            "qprFormType": "protected-area"
             
           },
           {
@@ -2330,7 +2332,7 @@
             "prompt": " ",
             "optional": true,
             "hidden_default": true,
-            "qpr_form_type": "protected-area"
+            "qprFormType": "protected-area"
             
           },
           {
@@ -2341,13 +2343,13 @@
             "display_prompt": "Enlace",
             "hidden_default": true,
             "optional": true,
-            "qpr_form_type": "protected-area"
+            "qprFormType": "protected-area"
           },
           {
             "name": "submit",
             "type": "submit",
             "label": "Publicar en el mapa",
-            "qpr_form_type": "protected-area"          
+            "qprFormType": "protected-area"          
           }
         ]
       },
@@ -2392,7 +2394,8 @@
             "start_field_index": 11,
             "end_field_index": 20,
             "header": "Reporte Territorial",
-            "description": ""
+            "description": "",
+            "qprFormType": "relocations"
           },
           {
             "start_field_index": 21,
@@ -2417,7 +2420,7 @@
           {
             "name": "intro",
             "type": "informational_html",
-            "content": "<h4>Por favor seleccioná una ubicación en el mapa</h4><br><h5>Podés arrastrar el ícono en el mapa o ingresar una dirección.</h5><br><p>Si añade este reporte a QPR, se mostrará públicamente</p>"
+            "content": "<span><b>Por favor seleccioná una ubicación en el mapa</b><span><br><br><span>Podés arrastrar el ícono en el mapa o ingresar una dirección.<span><br><br><span>Si añade este reporte a QPR, se mostrará públicamente</span>"
           },
           {
             "name": "private-address",
@@ -2443,6 +2446,7 @@
             "display_prompt": "Municipio",
             "placeholder": "Escribí el nombre de tu municipio...",
             "optional": false,
+            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "ciudad-de-buenos-aires",
@@ -2578,6 +2582,7 @@
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
             "optional": false,
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "Asentamiento Lamadrid",
@@ -2666,6 +2671,7 @@
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
             "optional": false,
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "2 de Abril",
@@ -2730,6 +2736,7 @@
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
             "optional": false,
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "7 de Enero",
@@ -2854,6 +2861,7 @@
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
             "optional": false,
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "9 de Enero",
@@ -2890,6 +2898,7 @@
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
             "optional": false,
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "22 de Enero",
@@ -2994,6 +3003,7 @@
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
             "optional": false,
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "10 de Enero",
@@ -3054,6 +3064,7 @@
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
             "optional": false,
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "Asentamiento 3 de Enero",
@@ -3114,6 +3125,7 @@
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
             "optional": false,
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "El Palenque",
@@ -3150,6 +3162,7 @@
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
             "optional": false,
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "El Juancito",
@@ -3184,6 +3197,7 @@
             "type": "big_radio",
             "prompt": "Situación de Relocalización: marca la opción que describa mejor tu situación con respecto al programa de relocalización de villas y asentamientos de la Cuenca Matanza Riachuelo.",
             "optional": false,
+            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "otro-barrio",
@@ -3228,7 +3242,8 @@
             "placeholder": "Escribí el nombre de tu barrio...",
             "display_prompt": "Barrio antes",
             "hidden_default": true,
-            "optional": false
+            "optional": false,
+            "qprFormType": "relocations"
           },
           {
             "name": "otra-situacion",
@@ -3237,7 +3252,8 @@
             "placeholder": "Escribí aquí...",
             "display_prompt": "Otra situación",
             "hidden_default": true,
-            "optional": false
+            "optional": false,
+            "qprFormType": "relocations"
           },
           {
             "name": "tema_interese",
@@ -3293,25 +3309,32 @@
             "prompt": "Comentario",
             "placeholder": "Comentario...",
             "display_prompt": "Comentario",
-            "optional": true
+            "optional": true,
+            "qprFormType": "relocations"
           },
           {
             "name": "additional_info",
             "type": "rich_textarea",
             "prompt": "Información Adicional",
             "display_prompt": "Información Adicional",
-            "placeholder": "Adjunte archivos PDF, videos y otra información"
+            "placeholder": "Adjunte archivos PDF, videos y otra información",
+            "qprFormType": "relocations"
           },
           {
-            "name": "my_image",
-            "type": "common_form_element"
+            "name": "relocalizaciones-image",
+            "type": "file",
+            "prompt": "Comparte una imagen",
+            "label": "Agregar una imagen",
+            "optional": true,
+            "qprFormType": "relocations"
           },
           {
             "name": "relocalizaciones-pdf",
-            "type": "pdf",
+            "type": "file",
             "prompt": "Comparte un PDF",
             "label": "Agregar un PDF",
-            "optional": true
+            "optional": true,
+            "qprFormType": "relocations"
           },
           {
             "name": "recaptcha",
@@ -3325,7 +3348,7 @@
             "name": "submit",
             "type": "submit",
             "label": "Publicar en el mapa",
-            "qpr_form_type": "relocations"
+            "qprFormType": "relocations"
           }
         ]
       }
@@ -3348,6 +3371,7 @@
         "display_prompt": "Barrio",
         "placeholder": "Escribí el nombre de tu barrio...",
         "optional": false,
+        "qprFormType": "relocations",
         "content": [
           {
             "label": "Las Antenas",
