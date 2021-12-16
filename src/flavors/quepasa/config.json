@@ -2042,7 +2042,7 @@
           {
             "name": "proteccion-espacio-enlace",
             "type": "text",
-            "prompt": "Enlace",
+            "prompt": "",
             "placeholder": "Enlace",
             "display_prompt": "Enlace",
             "hidden_default": true,
@@ -2115,7 +2115,7 @@
           {
             "name": "biodiversidad_especies-link",
             "type": "text",
-            "prompt": "Enlace",
+            "prompt": "",
             "placeholder": "Enlace",
             "display_prompt": "Enlace",
             "hidden_default": true,
@@ -2188,7 +2188,7 @@
           {
             "name": "reportes_estado-link",
             "type": "text",
-            "prompt": "Enlace",
+            "prompt": "",
             "placeholder": "Enlace",
             "display_prompt": "Enlace",
             "hidden_default": true,
@@ -2261,7 +2261,7 @@
           {
             "name": "usos_memorias-link",
             "type": "text",
-            "prompt": "Enlace",
+            "prompt": "",
             "placeholder": "Enlace",
             "display_prompt": "Enlace",
             "hidden_default": true,
@@ -2336,7 +2336,7 @@
           {
             "name": "patrimonio_arqueologico-link",
             "type": "text",
-            "prompt": "Enlace",
+            "prompt": "",
             "placeholder": "Enlace",
             "display_prompt": "Enlace",
             "hidden_default": true,
