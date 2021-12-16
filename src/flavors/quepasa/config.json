@@ -847,7 +847,8 @@
             "prompt": " ",
             "display_prompt": "Address",
             "placeholder": "Requerido",
-            "optional": false
+            "optional": false,
+            "qprFormType": "water"
           },
           {
             "name": "datetime_field",
@@ -855,7 +856,8 @@
             "prompt": "Ingresá la fecha de la situación que estás compartiendo. Se trata de la fecha del día en la que registraste la situación vinculada a la calidad de agua",
             "display_prompt": "Fecha vinculada a la calidad del agua",
             "placeholder": "Seleccioná una fecha",
-            "optional": false
+            "optional": false,
+            "qprFormType": "water"
           },
           {
             "name": "report-time",
@@ -863,7 +865,8 @@
             "prompt": "Ingresá la hora de la situación que estás compartiendo. Se trata de la hora del día en la que registraste la situación vinculada a la calidad de agua",
             "display_prompt": "Hora vinculada a la calidad del agua",
             "placeholder": "Seleccioná una hora",
-            "optional": false
+            "optional": false,
+            "qprFormType": "water"
           },
           {
             "name": "cuerpo-agua",
@@ -1367,7 +1370,8 @@
             "display_prompt": "Observación",
             "prompt": "Podés agregar un título, descripción, adjuntar imágenes, documentos en pdf y enlaces.",
             "placeholder": "Título",
-            "optional": true
+            "optional": true,
+            "qprFormType": "water"
           },
           {
             "name": "info-finalarea",
@@ -1984,7 +1988,8 @@
                 "targets": [
                   "proteccion-espacio-title",
                   "proteccion-espacio-text",
-                  "proteccion-espacio-file",
+                  "proteccion-espacio-pdf",
+                  "proteccion-espacio-image",
                   "proteccion-espacio-enlace"
                 ]
               }
@@ -2017,9 +2022,18 @@
             "qpr_form_type": "protected-area"
           },
           {
-            "name": "proteccion-espacio-file",
+            "name": "proteccion-espacio-pdf",
             "type": "file",
-            "label": "ADJUNTAR ARCHIVO DE IMAGEN O PDF",
+            "label": "ADJUNTAR ARCHIVO PDF",
+            "prompt": " ",
+            "hidden_default": true,
+            "optional": true,
+            "qpr_form_type": "protected-area"
+          },
+          {
+            "name": "proteccion-espacio-image",
+            "type": "file",
+            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
             "prompt": " ",
             "hidden_default": true,
             "optional": true,
@@ -2047,7 +2061,8 @@
                 "targets": [
                   "biodiversidad_especies-title",
                   "biodiversidad_especies-desc",
-                  "biodiversidad_especies-file",
+                  "biodiversidad_especies-pdf",
+                  "biodiversidad_especies-image",
                   "biodiversidad_especies-link"
                 ]
               }
@@ -2080,9 +2095,18 @@
             "qpr_form_type": "protected-area"            
           },
           {
-            "name": "biodiversidad_especies-file",
+            "name": "biodiversidad_especies-pdf",
             "type": "file",
-            "label": "ADJUNTAR ARCHIVO DE IMAGEN O PDF",
+            "label": "ADJUNTAR ARCHIVO PDF",
+            "prompt": " ",
+            "optional": true,
+            "hidden_default": true,
+            "qpr_form_type": "protected-area"
+          },
+          {
+            "name": "biodiversidad_especies-image",
+            "type": "file",
+            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
             "prompt": " ",
             "optional": true,
             "hidden_default": true,
@@ -2110,7 +2134,8 @@
                 "targets": [
                   "reportes_estado-title",
                   "reportes_estado-text",
-                  "reportes_estado-file",
+                  "reportes_estado-pdf",
+                  "reportes_estado-image",
                   "reportes_estado-link"
                 ]
               }
@@ -2143,9 +2168,18 @@
             "qpr_form_type": "protected-area"
           },
           {
-            "name": "reportes_estado-file",
+            "name": "reportes_estado-pdf",
             "type": "file",
-            "label": "ADJUNTAR ARCHIVO DE IMAGEN O PDF",
+            "label": "ADJUNTAR ARCHIVO PDF",
+            "prompt": " ",
+            "optional": true,
+            "hidden_default": true,
+            "qpr_form_type": "protected-area"
+          },
+          {
+            "name": "reportes_estado-image",
+            "type": "file",
+            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
             "prompt": " ",
             "optional": true,
             "hidden_default": true,
@@ -2173,7 +2207,8 @@
                 "targets": [
                   "usos_memorias-title",
                   "usos_memorias-text",
-                  "usos_memorias-file",
+                  "usos_memorias-pdf",
+                  "usos_memorias-image",
                   "usos_memorias-link"
                 ]
               }
@@ -2206,9 +2241,18 @@
             "qpr_form_type": "protected-area"
           },
           {
-            "name": "usos_memorias-file",
+            "name": "usos_memorias-pdf",
             "type": "file",
-            "label": "ADJUNTAR ARCHIVO DE IMAGEN O PDF",
+            "label": "ADJUNTAR ARCHIVO PDF",
+            "prompt": " ",
+            "optional": true,
+            "hidden_default": true,
+            "qpr_form_type": "protected-area"
+          },
+          {
+            "name": "usos_memorias-image",
+            "type": "file",
+            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
             "prompt": " ",
             "optional": true,
             "hidden_default": true,
@@ -2236,7 +2280,8 @@
                 "targets": [
                   "patrimonio_arqueologico-title",
                   "patrimonio_arqueologico-text",
-                  "patrimonio_arqueologico-file",
+                  "patrimonio_arqueologico-pdf",
+                  "patrimonio_arqueologico-image",
                   "patrimonio_arqueologico-link"
                 ]
               }
@@ -2269,9 +2314,19 @@
             "qpr_form_type": "protected-area"
           },
           {
-            "name": "patrimonio_arqueologico-file",
+            "name": "patrimonio_arqueologico-pdf",
             "type": "file",
-            "label": "ADJUNTAR ARCHIVO DE IMAGEN O PDF",
+            "label": "ADJUNTAR ARCHIVO PDF",
+            "prompt": " ",
+            "optional": true,
+            "hidden_default": true,
+            "qpr_form_type": "protected-area"
+            
+          },
+          {
+            "name": "patrimonio_arqueologico-image",
+            "type": "file",
+            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
             "prompt": " ",
             "optional": true,
             "hidden_default": true,
@@ -2292,7 +2347,8 @@
             "name": "submit",
             "type": "submit",
             "label": "Publicar en el mapa",
-            "qpr_form_type": "protected-area"          }
+            "qpr_form_type": "protected-area"          
+          }
         ]
       },
       {
