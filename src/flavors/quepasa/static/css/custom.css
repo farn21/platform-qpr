@@ -485,13 +485,6 @@ border: none !important;
 .input-form__field-prompt-container span span {
   font-size: 0.75em;
 }
-
-.text-field {
-  border: 1px solid #ccc !important;
-  border-radius: 4px !important;
-  padding: 0.6875rem !important;
-}
-
 /* --- */
 
 /* Checkbox styles */
@@ -563,6 +556,19 @@ border: none !important;
 }
 
 /* Input styles */
+.text-field {
+  border: 1px solid #ccc !important;
+  padding: 0.6875rem !important;
+}
+
+.text-field:active {
+  outline: none;
+}
+
+.text-field:focus-visible {
+  outline: none;
+}
+
 .datetime-field__input, .text-field, .textarea-field {
   padding-left: 1em !important;
   border-radius: 20px !important;
@@ -571,8 +577,16 @@ border: none !important;
   font-size: 14px !important;
 }
 
+.datetime-field__input:focus-visible {
+  outline: 0 !important;
+}
+
 .textarea-field {
   resize: none !important;
+}
+
+.textarea-field:focus-visible {
+  outline: 0 !important;
 }
 
 .datetime-field__input, .text-field {
