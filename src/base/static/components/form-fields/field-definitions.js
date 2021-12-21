@@ -326,9 +326,9 @@ export default {
   },
   [constants.RECAPTCHA_FIELD_TYPENAME]: {
     getValidator: getDefaultValidator,
-    getComponent: (fieldConfig, context) => (
-      <Reaptcha 
-        sitekey="6LcfpPMcAAAAADlc5ygkBfzEP_UWuhhBqUpsMACH" 
+     getComponent: (fieldConfig, context) => (
+      <Reaptcha
+        sitekey='6LcSpLgdAAAAAKZqvWMxkCpjodlHHa3-FRo0J6qr'
         onVerify={(rs)=>{
           context.onChange(fieldConfig.name, rs)
         }}

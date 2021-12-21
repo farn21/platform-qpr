@@ -1036,7 +1036,7 @@
           {
             "name": "estado-materiales-flotantes",
             "type": "big_radio",
-            "prompt": "¿Observaste materiales flotantes en la superficie del curso del agua? Seleccioná una opción de la lista?",
+            "prompt": "¿Observaste materiales flotantes en la superficie del curso del agua? Seleccioná una opción de la lista",
             "display_prompt": "Materiales flotantes",
             "optional": false,
             "triggers": [
@@ -1063,6 +1063,7 @@
             "type": "dropdown",
             "prompt": "¿Cuáles?",
             "display_prompt": "Materiales",
+            "hidden_default": true,
             "optional": true,
             "content": [
               {
@@ -1125,10 +1126,11 @@
             ]
           },
           {
-            "name": "fuentes-opcion",
+            "name": "fuente-contaminacion-opcion",
             "type": "dropdown",
             "prompt": "¿Cuál?",
             "display_prompt": "Fuentes",
+            "hidden_default": true,
             "optional": true,
             "content": [
               {
@@ -1156,7 +1158,7 @@
           {
             "name": "vegetacion-margenes-cuerpo",
             "type": "dropdown",
-            "prompt": "¿Hay vegetación en los márgenes del cuerpo de agua?",
+            "prompt": "¿Hay vegetación en los márgenes del cuerpo de agua? Seleccioná una opción de la lista.",
             "display_prompt": "Vegetacion de los margenes",
             "optional": false,
             "triggers": [
@@ -1179,10 +1181,11 @@
             ]
           },
           {
-            "name": "vegetacion-opcion",
+            "name": "vegetacion-margenes-cuerpo",
             "type": "dropdown",
             "prompt": "¿Cuál?",
             "display_prompt": "Vegetación",
+            "hidden_default": true,
             "optional": true,
             "content": [
               {
@@ -1233,6 +1236,7 @@
             "type": "dropdown",
             "prompt": "¿Cuál?",
             "display_prompt": "Vegetación cuerpo",
+            "hidden_default": true,
             "optional": true,
             "content": [
               {
@@ -1389,8 +1393,14 @@
             "label": "ADJUNTAR ARCHIVO DE IMAGEN O PDF",
             "prompt": " ",
             "optional": true
-          },
-          {
+          },{
+              "name": "recaptcha",
+              "type": "recaptcha",
+              "prompt": " ",
+              "display_prompt": "",
+              "placeholder": "",
+              "optional": false
+          },{
             "name": "submit",
             "type": "common_form_element"
           }
@@ -2299,7 +2309,6 @@
             "label": "IMAGEN",
             "prompt": " ",
             "optional": true
-            
           },
           {
             "name": "patrimonio_arqueologico-link",
@@ -2309,8 +2318,14 @@
             "display_prompt": "Enlace",
             "hidden_default": true,
             "optional": true
-          },
-          {
+          },{
+              "name": "recaptcha",
+              "type": "recaptcha",
+              "prompt": " ",
+              "display_prompt": "",
+              "placeholder": "",
+              "optional": false
+          },{
             "name": "submit",
             "type": "common_form_element"
           }
@@ -3660,26 +3675,29 @@
       "url": "/page/about",
       "name": "overview",
       "start_page": true
-    },
-    {
+    },{
       "title": "Áreas naturales",
       "type": "internal_link",
       "url": "/page/areasnaturales",
       "name": "overview",
       "start_page": true
-    },
-    {
+    },{
       "title": "Relocalizaciones",
       "type": "internal_link",
       "url": "/page/relocalizaciones",
       "name": "overview",
       "start_page": true
-    },
-    {
+    },{
       "title": "Calidad del agua",
       "type": "internal_link",
       "url": "/page/calidaddelagua",
       "name": "overview",
+      "start_page": true
+    },{
+      "title": "Ver todo",
+      "type": "internal_link",
+      "url": "/list",
+      "name": "list",
       "start_page": true
     }
   ],

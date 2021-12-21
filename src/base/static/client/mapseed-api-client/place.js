@@ -55,8 +55,6 @@ const createPlace = async ({
   clientSlug,
   includePrivate = false,
 }) => {
-  
-  placeData.visitas = 0
 
   placeData = toServerGeoJSONFeature(placeData);
 
@@ -66,7 +64,7 @@ const createPlace = async ({
       include_submissions: true,
     },
     includePrivate,
-  ); 
+  );
 
   const response = await fetch(
     `${datasetUrl}/places?${qs.stringify(placeParams)}`,
