@@ -174,6 +174,23 @@ const PlaceField = ({ field, place, t, placeFieldIndex }) => {
         </p>
       </>
     );
+  } else if (field.type === "dropdown") {
+    return (
+      <>
+        {!!prompt && (
+          <PlaceFieldTitle>
+            {t(`placeFieldPrompt${placeFieldIndex}`, prompt)}
+          </PlaceFieldTitle>
+        )}
+        <p
+          css={css`
+            margin-top: 4px;
+          `}
+        >
+          <PlaceFieldText>{fieldValue}</PlaceFieldText>
+        </p>
+      </>
+    );
   } else {
     throw new Error(`field type is not supported: ${field.type}`);
   }

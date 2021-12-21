@@ -424,7 +424,6 @@ class PlaceDetail extends React.Component<Props, State> {
             label={categoryConfig.label}
             createdDatetime={this.props.focusedPlace.created_datetime}
             submitterName={submitterName}
-            visits={this.props.focusedPlace.visitas}
             submitterAvatarUrl={
               this.props.focusedPlace.submitter &&
               this.props.focusedPlace.submitter.avatar_url

@@ -71,6 +71,7 @@ class FormField extends Component {
   }
 
   componentDidMount() {
+
     this.setState({
       isInitialized: true,
     });
