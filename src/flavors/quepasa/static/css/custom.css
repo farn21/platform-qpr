@@ -125,6 +125,22 @@ body {
 /* END ABOUT PAGE STYLES */
 
 /* START HEADER STYLES */
+@media (min-width: 320px) {
+  .header-logo-container {
+    display: flex;
+    justify-content: center;
+  }
+  .header-logo {
+    margin-right: 0 !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-logo {
+    margin-right: 30px !important;
+  }
+}
+
 .mapseed-site-header {
   box-shadow: none;
   background-color: #ffffff;
