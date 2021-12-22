@@ -2396,71 +2396,26 @@
         "multi_stage": [
           {
             "start_field_index": 1,
-            "end_field_index": 3,
-            "header": "Relocalizaciones",
-            "description": "",
-            "qprFormType": "relocations"
-          },
-          {
-            "start_field_index": 4,
-            "end_field_index": 10,
-            "header": "Relocalizaciones",
-            "description": "",
-            "qprFormType": "relocations"
-          },
-          {
-            "start_field_index": 11,
-            "end_field_index": 20,
-            "header": "Relocalizaciones",
-            "description": "",
-            "qprFormType": "relocations"
-          },
-          {
-            "start_field_index": 21,
+            "end_field_index": 21,
+            "header": "Reporte Territorial",
+            "description": ""
+          },{
+            "start_field_index": 22,
             "end_field_index": 23,
-            "header": "Relocalizaciones",
-            "description": "",
-            "qprFormType": "relocations"
-          },
-          {
-            "start_field_index": 24,
-            "end_field_index": 25,
-            "header": "Relocalizaciones",
-            "description": "",
-            "qprFormType": "relocations"
+            "header": "Reporte Territorial",
+            "description": ""
           }
         ],
         "fields": [
           {
-            "name": "lng-lat",
-            "type": "lng_lat"
-          },
-          {
             "name": "intro",
             "type": "informational_html",
-            "content": "<span><b>Por favor seleccioná una ubicación en el mapa</b><span><br><br><span>Podés arrastrar el ícono en el mapa o ingresar una dirección.<span><br><br><span></span>"
-          },
-          {
-            "name": "private-address",
-            "type": "geocoding",
-            "prompt": " ",
-            "display_prompt": "Address",
-            "placeholder": "Ingresá la ubicación",
-            "optional": false
-          },
-          {
-            "name": "private-address",
-            "type": "geocoding",
-            "prompt": " ",
-            "display_prompt": "Address",
-            "placeholder": "Ingresá la ubicación",
-            "optional": false
-          },
-          {
+            "content": "<p>Si vivís en algún barrio de la Cuenca Matanza Riachuelo afectado por procesos de relocalización y querés comentar sobre tu experiencia podés responder a las siguientes preguntas.</p>"
+          },{
             "name": "municipio",
             "type": "dropdown_autocomplete",
             "includeOnListItem": true,
-            "prompt": "¿En cuál de los siguientes municipio vivís actualmente?",
+            "prompt": "¿En qué municipio vivís? Elegí una de las siguientes opciones.",
             "display_prompt": "Municipio",
             "placeholder": "Escribí el nombre de tu municipio...",
             "optional": false,
@@ -2595,7 +2550,7 @@
             "name": "ciudad-de-buenos-aires-barrios",
             "type": "dropdown_autocomplete",
             "includeOnListItem": true,
-            "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
+            "prompt": "¿En qué barrio vivís? Elegí una de las siguientes opciones.",
             "display_prompt": "Barrio",
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
@@ -2684,7 +2639,7 @@
             "name": "almirante-brown-barrios",
             "type": "dropdown_autocomplete",
             "includeOnListItem": true,
-            "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
+            "prompt": "¿En qué barrio vivís? Elegí una de las siguientes opciones.",
             "display_prompt": "Barrio",
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
@@ -2749,7 +2704,7 @@
             "name": "avellaneda-barrios",
             "type": "dropdown_autocomplete",
             "includeOnListItem": true,
-            "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
+            "prompt": "¿En qué barrio vivís? Elegí una de las siguientes opciones.",
             "display_prompt": "Barrio",
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
@@ -2874,7 +2829,7 @@
             "name": "esteban-echeverria-barrios",
             "type": "dropdown_autocomplete",
             "includeOnListItem": true,
-            "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
+            "prompt": "¿En qué barrio vivís? Elegí una de las siguientes opciones.",
             "display_prompt": "Barrio",
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
@@ -2911,7 +2866,7 @@
             "name": "la-matanza-barrios",
             "type": "dropdown_autocomplete",
             "includeOnListItem": true,
-            "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
+            "prompt": "¿En qué barrio vivís? Elegí una de las siguientes opciones.",
             "display_prompt": "Barrio",
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
@@ -3016,7 +2971,7 @@
             "name": "lanus-barrios",
             "type": "dropdown_autocomplete",
             "includeOnListItem": true,
-            "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
+            "prompt": "¿En qué barrio vivís? Elegí una de las siguientes opciones.",
             "display_prompt": "Barrio",
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
@@ -3077,7 +3032,7 @@
             "name": "lomas-de-zamora-barrios",
             "type": "dropdown_autocomplete",
             "includeOnListItem": true,
-            "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
+            "prompt": "¿En qué barrio vivís? Elegí una de las siguientes opciones.",
             "display_prompt": "Barrio",
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
@@ -3138,7 +3093,7 @@
             "name": "marcos-paz-barrios",
             "type": "dropdown_autocomplete",
             "includeOnListItem": true,
-            "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
+            "prompt": "¿En qué barrio vivís? Elegí una de las siguientes opciones.",
             "display_prompt": "Barrio",
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
@@ -3175,7 +3130,7 @@
             "name": "merlo-barrios",
             "type": "dropdown_autocomplete",
             "includeOnListItem": true,
-            "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
+            "prompt": "¿En qué barrio vivís? Elegí una de las siguientes opciones.",
             "display_prompt": "Barrio",
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
@@ -3213,7 +3168,7 @@
           {
             "name": "situacion_de_relocalizacion",
             "type": "big_radio",
-            "prompt": "Situación de Relocalización: marca la opción que describa mejor tu situación con respecto al programa de relocalización de villas y asentamientos de la Cuenca Matanza Riachuelo.",
+            "prompt": "¿Cuál es tu situación actual con respecto a la relocalización de villas y asentamientos de la Cuenca Matanza Riachuelo? Marcá la opción que describa mejor tu situación.",
             "optional": false,
             "qprFormType": "relocations",
             "triggers": [
@@ -3278,6 +3233,24 @@
             "type": "big_radio",
             "prompt": "¿Sobre cuál de los siguientes temas vas a comentar? Elegí la temática que se adecua mejor a lo que vas a compartir.",
             "optional": false,
+            "triggers": [
+                {
+                    "value": "participacion",
+                    "targets": [
+                        "comentario",
+                        "additional_info",
+                        "additional_image",
+                        "relocalizaciones_pdf"
+                    ]
+            },{
+                    "value": "informacion",
+                    "targets": [
+                        "comentario",
+                        "additional_info",
+                        "additional_image",
+                        "relocalizaciones_pdf"
+                    ]
+            }],
             "content": [
               {
                 "label": "Participación en el proceso relocalización/mesas de trabajo",
@@ -3327,28 +3300,29 @@
             "prompt": "Comentario",
             "placeholder": "Comentario...",
             "display_prompt": "Comentario",
-            "optional": true,
-            "qprFormType": "relocations"
+            "hidden_default": true,
+            "optional": true
           },
           {
             "name": "additional_info",
             "type": "rich_textarea",
             "prompt": "Información Adicional",
             "display_prompt": "Información Adicional",
-            "placeholder": "Adjunte archivos PDF, videos y otra información",
-            "qprFormType": "relocations"
+            "hidden_default": true,
+            "placeholder": "Adjunte archivos PDF, videos y otra información"
           },
           {
-            "name": "relocalizaciones-image",
+            "name": "additional_image",
             "type": "file",
-            "prompt": "Comparte una imagen",
-            "label": "Agregar una imagen",
-            "optional": true,
-            "qprFormType": "relocations"
+            "hidden_default": true,
+            "label": "IMAGEN",
+            "prompt": " ",
+            "optional": true
           },
           {
             "name": "relocalizaciones-pdf",
-            "type": "file",
+            "type": "pdf",
+            "hidden_default": true,
             "prompt": "Comparte un PDF",
             "label": "Agregar un PDF",
             "optional": true,
