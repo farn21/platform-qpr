@@ -278,8 +278,21 @@ body {
   margin-bottom: 5px;
 }
 #site-wrap>div>section button[aria-label="close"]:hover {
-  color: #c67c00;
+  color: transparent;
 }
+
+@media (min-width: 320px) {
+  #site-wrap>div>section {
+    padding-bottom: 140px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  #site-wrap>div>section {
+    padding-bottom: 92px !important;
+  }
+}
+
 @media(max-width:960px) {
   #site-wrap>div>section>div {
     padding: 2rem 8px 8px 8px;
@@ -696,7 +709,14 @@ option:hover {
 
 .css-12t4dd3-FormStageControlBar {
   width: 200px !important;
-  border-left: none !important;
+  border-left: 1px solid #aeadb3 !important;
+}
+
+@media (min-width: 320px) {
+  .css-12t4dd3-FormStageControlBar {
+    height: 130px !important;
+    width: 100% !important;
+  }
 }
 
 /*Continue button*/  
