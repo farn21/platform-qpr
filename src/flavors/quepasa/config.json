@@ -341,7 +341,7 @@
             },
             "paint": {
               "text-color": "#000000",
-              "text-halo-color": "#ffff00",
+              "text-halo-color": "#f0a300",
               "text-halo-width": 1
             }
           }
