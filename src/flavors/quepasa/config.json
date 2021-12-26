@@ -578,78 +578,67 @@
     "title": "Capas",
     "sections": [
       {
-        "title": "Mapas base:",
+        "title": "Mapas",
         "options": [
           {
             "layerGroupId": "satellite",
-            "title": "Satélite"
+            "title": "Satelital"
           },
           {
             "layerGroupId": "f4",
-            "title": "Calles"
+            "title": "Estándar"
           }
         ]
       },
       {
-        "title": "Reportes",
+        "title": "",
         "options": [
           {
             "layerGroupId": "quepasa-input",
-            "title": "Reportes Territoriales"
-          },
-          {
-            "layerGroupId": "quepasa-featured",
-            "title": "Recorrido del mapa"
+            "title": "Experencias"
           }
+     
         ]
       },
       {
-        "title": "Calidad de agua",
-        "options": []
-      },
-      {
-        "title": "Áreas Naturales",
+        "title": "",
         "options": [
           {
             "layerGroupId": "riachuelo-subbasins",
-            "title": "Subcuencas"
+            "title": "Sub-cuencas (ACUMAR)"
           },
           {
             "layerGroupId": "riachuelo-watercourses",
-            "title": "Cursos de agua"
+            "title": "Cursos de agua en la cuenca (ACUMAR)"
           },
           {
             "layerGroupId": "riachuelo-lineas-de-ribera",
-            "title": "Riachuelo Líneas de Ribera"
+            "title": "Cuencas de la provincia de Buenos Aires (ADA)"
           },
           {
             "layerGroupId": "riachuelo-areas-protegidas",
-            "title": "Áreas Protegidas Cuenca del Riachuelo"
+            "title": "  Áreas protegidas en la cuenca (ACUMAR)"
           },
           {
             "layerGroupId": "areas-naturales-protegidas",
-            "title": "Áreas Naturales Protegidas"
-          }
-        ]
-      },
-      {
-        "title": "Relocalización",
-        "options": [
+            "title": "Áreas protegidas en la provincia de Buenos Aires (SINIA)"
+          },
+       
           {
             "layerGroupId": "renabap",
-            "title": "RENABAP"
+            "title": "Barrios populares registrados en el país (RENABAP)"
           },
           {
             "layerGroupId": "riachuelo-villas-y-asentamientos-precarios",
-            "title": "Villas y Asentamientos Precarios"
+            "title": "Villas y asentamientos en la cuenca (ACUMAR)"
           },
           {
             "layerGroupId": "riachuelo-obras-convenio",
-            "title": "Obras Convenio"
+            "title": "Soluciones habitacionales - Convenio Marco 2010 (ACUMAR)"
           },
           {
             "layerGroupId": "riachuelo-mesas-trabajo",
-            "title": "Mesas Trabajo"
+            "title": "Mesas de trabajo por la relocalización/reurbanización (ACUMAR)"
           }
         ]
       }
@@ -2379,35 +2368,35 @@
           {
             "start_field_index": 1,
             "end_field_index": 3,
-            "header": "Reporte Territorial",
+            "header": "Relocalizaciones",
             "description": "",
             "qprFormType": "relocations"
           },
           {
             "start_field_index": 4,
             "end_field_index": 10,
-            "header": "Reporte Territorial",
+            "header": "Relocalizaciones",
             "description": "",
             "qprFormType": "relocations"
           },
           {
             "start_field_index": 11,
             "end_field_index": 20,
-            "header": "Reporte Territorial",
+            "header": "Relocalizaciones",
             "description": "",
             "qprFormType": "relocations"
           },
           {
             "start_field_index": 21,
             "end_field_index": 23,
-            "header": "Reporte Territorial",
+            "header": "Relocalizaciones",
             "description": "",
             "qprFormType": "relocations"
           },
           {
             "start_field_index": 24,
             "end_field_index": 25,
-            "header": "Reporte Territorial",
+            "header": "Relocalizaciones",
             "description": "",
             "qprFormType": "relocations"
           }
