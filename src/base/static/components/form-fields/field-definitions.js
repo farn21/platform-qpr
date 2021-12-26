@@ -13,7 +13,7 @@ import {
   AddAttachmentButton,
   BigRadioField,
   BigCheckboxField,
-  InputFormSubmitButton,
+  InputFormSubmitCard,
   RichTextareaField,
   AutocompleteComboboxField,
   BigToggleField,
@@ -89,7 +89,7 @@ export default {
   [constants.TEXT_FIELD_TYPENAME]: {
     getValidator: getDefaultValidator,
     getComponent: (fieldConfig, context) => (
-      <TextField {...getSharedFieldProps(fieldConfig, context)} />
+      <TextField {...getSharedFieldProps(fieldConfig, context)} qprFormType={fieldConfig.qprFormType} />
     ),
     getInitialValue: ({ value }) => value,
     getResponseComponent: () => TextFieldResponse,
@@ -97,7 +97,8 @@ export default {
   [constants.TEXTAREA_FIELD_TYPENAME]: {
     getValidator: getDefaultValidator,
     getComponent: (fieldConfig, context) => (
-      <TextareaField {...getSharedFieldProps(fieldConfig, context)} />
+      <TextareaField {...getSharedFieldProps(fieldConfig, context)} 
+      qprFormType={fieldConfig.qprFormType} />
     ),
     getInitialValue: ({ value }) => value,
     getResponseComponent: () => TextareaFieldResponse,
@@ -183,6 +184,7 @@ export default {
       <DropdownField
         {...getSharedFieldProps(fieldConfig, context)}
         options={fieldConfig.content}
+        qprFormType={fieldConfig.qprFormType}
       />
     ),
     getInitialValue: ({ value }) => value,
@@ -269,6 +271,7 @@ export default {
         label={fieldConfig.label}
         formId={context.props.formId}
         mode="image"
+        qprFormType={fieldConfig.qprFormType}
       />
     ),
     getInitialValue: () => null,
@@ -292,10 +295,11 @@ export default {
   [constants.SUBMIT_FIELD_TYPENAME]: {
     getValidator: getPermissiveValidator,
     getComponent: (fieldConfig, context) => (
-      <InputFormSubmitButton
+      <InputFormSubmitCard
         {...getSharedFieldProps(fieldConfig, context)}
         onClickSubmit={context.props.onClickSubmit.bind(context)}
         label={fieldConfig.label}
+        qprFormType={fieldConfig.qprFormType}
       />
     ),
     getInitialValue: () => null,

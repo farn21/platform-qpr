@@ -192,6 +192,7 @@ const RegularText = styled("span")(props => {
     fontSize: "1rem",
     lineHeight: "1.3rem",
     fontWeight: "normal",
+    fontFamily: "Montserrat, sans-serif",
   };
   return textHandler(props, styles);
 });

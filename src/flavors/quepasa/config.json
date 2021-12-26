@@ -40,14 +40,14 @@
   "app": {
     "title": "¿Qué pasa, Riachuelo?",
     "name": "¿Qué pasa, Riachuelo?",
-    "show_name_in_header": true,
+    "show_name_in_header": false,
     "meta_description": "Track projects on the Riachuelo River",
     "meta_author": "mapseed.org",
     "api_root": "https://dev-api.mapseed.org/api/v2/",
     "theme": {
       "brand": {
-        "primary": "#455a64",
-        "secondary": "#1c313a",
+        "primary": "#aeadb3",
+        "secondary": "#f0a300",
         "accent": "#ffab00",
         "light": "#ffffff"
       },
@@ -57,9 +57,9 @@
       },
       "text": {
         "titleColor": "#ffffff",
-        "titleFontFamily": "Rubik, sans-serif",
-        "bodyFontFamily": "Rubik, sans-serif",
-        "navBarFontFamily": "Rubik, sans-serif"
+        "titleFontFamily": "Montserrat, sans-serif",
+        "bodyFontFamily": "Montserrat, sans-serif",
+        "navBarFontFamily": "Montserrat, sans-serif"
       },
       "map": {
         "addPlaceButtonBackgroundColor": "#ffab00",
@@ -148,7 +148,7 @@
       "f4": {
         "type": "raster",
         "tiles": [
-          "https://tile3.f4map.com/tiles/f4_2d/{z}/{x}/{y}.png"
+          "https://api.mapbox.com/styles/v1/farn/ckx5jrp202nt214lykxn9w3n3/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZmFybiIsImEiOiJja3ZpaHN0bDhjbDVtMnFuejY5M3lzZW9mIn0.hi5YZzPO1DAnyRZWx7oxGw"
         ],
         "tileSize": 256,
         "attribution": "<a href=\"/page/terms\">Terms and conditions</a> &copy; OpenStreetMap contributors, CC-BY-SA. <a href=\"//mapbox.com/about/maps\" target=\"_blank\">Mapbox</a>. Geocoding Courtesy of <a href=\"//www.mapquest.com/\" target=\"_blank\">MapQuest</a> <img src=\"//developer.mapquest.com/content/osm/mq_logo.png\">.'"
@@ -267,7 +267,7 @@
       {
         "id": "riachuelo-areas-protegidas",
         "interactive": true,
-        "popupContent": "<h5 style='font-family: Rubik, sans-serif; font-weight: 400; margin: 0; padding:0 1rem;'>{{NAME}}</h5>",
+        "popupContent": "<h5 style='font-family: Montserrat, sans-serif; font-weight: 400; margin: 0; padding:0 1rem;'>{{NAME}}</h5>",
         "visibleDefault": false,
         "mapboxLayers": [
           {
@@ -341,7 +341,7 @@
             },
             "paint": {
               "text-color": "#000000",
-              "text-halo-color": "#ffff00",
+              "text-halo-color": "#f0a300",
               "text-halo-width": 1
             }
           }
@@ -366,7 +366,7 @@
       {
         "id": "renabap",
         "interactive": true,
-        "popupContent": "<p style='color: #aaa; display: block; font-family: Rubik, sans-serif; margin: 0; padding: 0 1rem 0 0;font-size:.875rem;'>ID: {{id_renabap}}</p><h3 style='font-family: Rubik, sans-serif; font-weight: 400; margin: 0;font-size:1rem;'>{{nombre_bar}}</h3>",
+        "popupContent": "<p style='color: #aaa; display: block; font-family: Montserrat, sans-serif; margin: 0; padding: 0 1rem 0 0;font-size:.875rem;'>ID: {{id_renabap}}</p><h3 style='font-family: Montserrat, sans-serif; font-weight: 400; margin: 0;font-size:1rem;'>{{nombre_bar}}</h3>",
         "mapboxLayers": [
           {
             "id": "renabap",
@@ -394,7 +394,7 @@
       {
         "id": "riachuelo-villas-y-asentamientos-precarios",
         "interactive": true,
-        "popupContent": "<div style='color: #aaa; display: block; font-family: Rubik, sans-serif; padding: 0 1rem 0 0;'><p style='margin: 0;'>Nombre: {{NOMBRE}}</p><p style='margin: 0;'>Municipio: {{MUNICIPIO}}</p><p style='margin: 0;'>Intervención: {{INTERVENCI}}</p></div>",
+        "popupContent": "<div style='color: #aaa; display: block; font-family: Montserrat, sans-serif; padding: 0 1rem 0 0;'><p style='margin: 0;'>Nombre: {{NOMBRE}}</p><p style='margin: 0;'>Municipio: {{MUNICIPIO}}</p><p style='margin: 0;'>Intervención: {{INTERVENCI}}</p></div>",
         "visibleDefault": false,
         "mapboxLayers": [
           {
@@ -442,7 +442,7 @@
       {
         "id": "riachuelo-mesas-trabajo",
         "interactive": true,
-        "popupContent": "<div style='color: #aaa; display: block; font-family: Rubik, sans-serif; padding: 0 1rem 0 0;'><p style='margin: 0;'>Nombre: {{NOMBRE}}</p><p style='margin: 0;'>Jurisdicción: {{JURISDICCI}}</p></div>",
+        "popupContent": "<div style='color: #aaa; display: block; font-family: Montserrat, sans-serif; padding: 0 1rem 0 0;'><p style='margin: 0;'>Nombre: {{NOMBRE}}</p><p style='margin: 0;'>Jurisdicción: {{JURISDICCI}}</p></div>",
         "visibleDefault": false,
         "mapboxLayers": [
           {
@@ -578,78 +578,67 @@
     "title": "Capas",
     "sections": [
       {
-        "title": "Mapas base:",
+        "title": "Mapas",
         "options": [
           {
             "layerGroupId": "satellite",
-            "title": "Satélite"
+            "title": "Satelital"
           },
           {
             "layerGroupId": "f4",
-            "title": "Calles"
+            "title": "Estándar"
           }
         ]
       },
       {
-        "title": "Reportes",
+        "title": "",
         "options": [
           {
             "layerGroupId": "quepasa-input",
-            "title": "Reportes Territoriales"
-          },
-          {
-            "layerGroupId": "quepasa-featured",
-            "title": "Recorrido del mapa"
+            "title": "Experencias"
           }
+     
         ]
       },
       {
-        "title": "Calidad de agua",
-        "options": []
-      },
-      {
-        "title": "Áreas Naturales",
+        "title": "",
         "options": [
           {
             "layerGroupId": "riachuelo-subbasins",
-            "title": "Subcuencas"
+            "title": "Sub-cuencas (ACUMAR)"
           },
           {
             "layerGroupId": "riachuelo-watercourses",
-            "title": "Cursos de agua"
+            "title": "Cursos de agua en la cuenca (ACUMAR)"
           },
           {
             "layerGroupId": "riachuelo-lineas-de-ribera",
-            "title": "Riachuelo Líneas de Ribera"
+            "title": "Cuencas de la provincia de Buenos Aires (ADA)"
           },
           {
             "layerGroupId": "riachuelo-areas-protegidas",
-            "title": "Áreas Protegidas Cuenca del Riachuelo"
+            "title": "  Áreas protegidas en la cuenca (ACUMAR)"
           },
           {
             "layerGroupId": "areas-naturales-protegidas",
-            "title": "Áreas Naturales Protegidas"
-          }
-        ]
-      },
-      {
-        "title": "Relocalización",
-        "options": [
+            "title": "Áreas protegidas en la provincia de Buenos Aires (SINIA)"
+          },
+       
           {
             "layerGroupId": "renabap",
-            "title": "RENABAP"
+            "title": "Barrios populares registrados en el país (RENABAP)"
           },
           {
             "layerGroupId": "riachuelo-villas-y-asentamientos-precarios",
-            "title": "Villas y Asentamientos Precarios"
+            "title": "Villas y asentamientos en la cuenca (ACUMAR)"
           },
           {
             "layerGroupId": "riachuelo-obras-convenio",
-            "title": "Obras Convenio"
+            "title": "Soluciones habitacionales - Convenio Marco 2010 (ACUMAR)"
           },
           {
             "layerGroupId": "riachuelo-mesas-trabajo",
-            "title": "Mesas Trabajo"
+            "title": "Mesas de trabajo por la relocalización/reurbanización (ACUMAR)"
           }
         ]
       }
@@ -815,13 +804,15 @@
             "start_field_index": 1,
             "end_field_index": 31,
             "header": "Calidad del Agua",
-            "description": ""
+            "description": "",
+            "qprFormType": "water"
           },
           {
             "start_field_index": 32,
             "end_field_index": 34,
             "header": "Calidad del Agua",
-            "description": ""
+            "description": "",
+            "qprFormType": "water"
           }
         ],
         "fields": [
@@ -832,20 +823,21 @@
           {
             "name": "intro-calidad-agua",
             "type": "informational_html",
-            "content": "<h3>¿Querés compartir una situación vinculada a la calidad de agua en la cuenca Matanza-Riachuelo?</h1><br><h4>¡Completá el siguiente formulario!</h3><br><br>"
+            "content": "<span><b>¿Querés compartir una situación vinculada a la calidad de agua en la cuenca Matanza-Riachuelo?</b></span><br><br><span>¡Completá el siguiente formulario!</span>"
           },
           {
             "name": "intro-calidad-agua-2",
             "type": "informational_html",
-            "content": "<b>Ingresá la ubicación</b><br><p>Arrastrá el mapa a tu izquierda o ingresá la ubicación en el buscador</p>"
+            "content": "Ingresá la ubicación. Arrastrá el mapa a tu izquierda o ingresá la ubicación en el buscador."
           },
           {
             "name": "private-address",
             "type": "geocoding",
             "prompt": " ",
             "display_prompt": "Address",
-            "placeholder": "Enter your address",
-            "optional": false
+            "placeholder": "Requerido",
+            "optional": false,
+            "qprFormType": "water"
           },
           {
             "name": "datetime_field",
@@ -853,19 +845,21 @@
             "prompt": "Ingresá la fecha de la situación que estás compartiendo. Se trata de la fecha del día en la que registraste la situación vinculada a la calidad de agua",
             "display_prompt": "Fecha vinculada a la calidad del agua",
             "placeholder": "Seleccioná una fecha",
-            "optional": false
+            "optional": false,
+            "qprFormType": "water"
           },
           {
             "name": "report-time",
             "type": "text",
             "prompt": "Ingresá la hora de la situación que estás compartiendo. Se trata de la hora del día en la que registraste la situación vinculada a la calidad de agua",
             "display_prompt": "Hora vinculada a la calidad del agua",
-            "placeholder": "00:00",
-            "optional": false
+            "placeholder": "Seleccioná una hora",
+            "optional": false,
+            "qprFormType": "water"
           },
           {
             "name": "cuerpo-agua",
-            "type": "dropdown",
+            "type": "big_radio",
             "prompt": "¿En qué cuerpo de agua registraste la situación que estás compartiendo?",
             "display_prompt": "Cuerpo de agua",
             "optional": false,
@@ -894,7 +888,7 @@
           },
           {
             "name": "entorno-cuerpo-agua",
-            "type": "dropdown",
+            "type": "big_radio",
             "prompt": "¿En qué entorno se encuentra este cuerpo de agua?",
             "display_prompt": "Entorno",
             "optional": false,
@@ -920,7 +914,7 @@
           },
           {
             "name": "referencia-cercana",
-            "type": "dropdown",
+            "type": "big_radio",
             "includeOnListItem": true,
             "prompt": "Indicá una referencia de un lugar cercano en donde tuvo lugar la situación que estás compartiendo.",
             "display_prompt": "Referencia",
@@ -950,7 +944,7 @@
           },
           {
             "name": "estado-agua-registro",
-            "type": "dropdown",
+            "type": "big_radio",
             "includeOnListItem": true,
             "prompt": "¿Cuál es el estado del agua en el lugar y el momento del registro?",
             "display_prompt": "Estado del agua",
@@ -980,7 +974,7 @@
           },
           {
             "name": "estado-color-agua",
-            "type": "dropdown",
+            "type": "big_radio",
             "includeOnListItem": true,
             "prompt": "¿Cuál es el color del agua en el lugar y el momento del registro?",
             "display_prompt": "Color del agua",
@@ -1018,7 +1012,7 @@
           },
           {
             "name": "estado-olores-agua",
-            "type": "dropdown",
+            "type": "big_radio",
             "prompt": "¿Se percibían olores del agua en el lugar y el momento del registro?",
             "display_prompt": "Olores",
             "optional": true,
@@ -1060,7 +1054,7 @@
           },
           {
             "name": "estado-materiales-cuales",
-            "type": "dropdown",
+            "type": "big_checkbox",
             "prompt": "¿Cuáles?",
             "display_prompt": "Materiales",
             "optional": true,
@@ -1097,7 +1091,7 @@
           },
           {
             "name": "fuente-contaminacion-cercana",
-            "type": "dropdown",
+            "type": "big_radio",
             "prompt": "¿Conocés una fuente de contaminación cercana?",
             "display_prompt": "Fuente de contaminación",
             "optional": true,
@@ -1126,7 +1120,7 @@
           },
           {
             "name": "fuentes-opcion",
-            "type": "dropdown",
+            "type": "big_radio",
             "prompt": "¿Cuál?",
             "display_prompt": "Fuentes",
             "optional": true,
@@ -1155,7 +1149,7 @@
           },
           {
             "name": "vegetacion-margenes-cuerpo",
-            "type": "dropdown",
+            "type": "big_radio",
             "prompt": "¿Hay vegetación en los márgenes del cuerpo de agua?",
             "display_prompt": "Vegetacion de los margenes",
             "optional": false,
@@ -1180,7 +1174,7 @@
           },
           {
             "name": "vegetacion-opcion",
-            "type": "dropdown",
+            "type": "big_radio",
             "prompt": "¿Cuál?",
             "display_prompt": "Vegetación",
             "optional": true,
@@ -1201,7 +1195,7 @@
           },
           {
             "name": "vegetacion-cuerpo-agua",
-            "type": "dropdown",
+            "type": "big_radio",
             "prompt": "¿Hay vegetación en el cuerpo de agua?",
             "display_prompt": "Vegetación en el cuerpo de agua",
             "optional": true,
@@ -1230,7 +1224,7 @@
           },
           {
             "name": "vegetacion-cuerpo-agua-option",
-            "type": "dropdown",
+            "type": "big_radio",
             "prompt": "¿Cuál?",
             "display_prompt": "Vegetación cuerpo",
             "optional": true,
@@ -1269,7 +1263,7 @@
           },
           {
             "name": "nivel-agua-cuerpo",
-            "type": "dropdown",
+            "type": "big_radio",
             "prompt": "¿Cuál es el nivel del agua del cuerpo del agua al momento de observar la situación?",
             "display_prompt": "Nivel del agua",
             "optional": true,
@@ -1290,7 +1284,7 @@
           },
           {
             "name": "vientos-fuertes",
-            "type": "dropdown",
+            "type": "big_radio",
             "prompt": "¿En los días previos o durante el momento de la observación existieron vientos fuertes (sudestada)?",
             "display_prompt": "Días previos",
             "optional": true,
@@ -1311,7 +1305,7 @@
           },
           {
             "name": "lluvias-observación",
-            "type": "dropdown",
+            "type": "big_radio",
             "prompt": "¿Llovió en los días previos o durante el momento de la observación?",
             "display_prompt": "Lluvia",
             "optional": true,
@@ -1340,7 +1334,7 @@
           },
           {
             "name": "lluvias-observación-opcion",
-            "type": "dropdown",
+            "type": "big_radio",
             "prompt": "¿Qué tipo de lluvia se produjo?",
             "display_prompt": "Tipo de lluvia",
             "optional": true,
@@ -1365,7 +1359,8 @@
             "display_prompt": "Observación",
             "prompt": "Podés agregar un título, descripción, adjuntar imágenes, documentos en pdf y enlaces.",
             "placeholder": "Título",
-            "optional": true
+            "optional": true,
+            "qprFormType": "water"
           },
           {
             "name": "info-finalarea",
@@ -1373,7 +1368,8 @@
             "prompt": " ",
             "display_prompt": " ",
             "placeholder": "Texto",
-            "optional": true
+            "optional": true,
+            "qprFormType": "water"
           },
           {
             "name": "info-finalenlace",
@@ -1388,11 +1384,14 @@
             "type": "file",
             "label": "ADJUNTAR ARCHIVO DE IMAGEN O PDF",
             "prompt": " ",
-            "optional": true
+            "optional": true,
+            "qprFormType": "water"
           },
           {
             "name": "submit",
-            "type": "common_form_element"
+            "type": "submit",
+            "label": "Publicar en el mapa",
+            "qprFormType": "water"
           }
         ]
       },
@@ -1423,12 +1422,14 @@
             "start_field_index": 1,
             "end_field_index": 52,
             "header": "Áreas Naturales",
+            "qprFormType": "protected-area",
             "description": ""
           },
           {
             "start_field_index": 53,
             "end_field_index": 54,
             "header": "Áreas Naturales",
+            "qprFormType": "protected-area",
             "description": ""
           }
         ],
@@ -1439,6 +1440,7 @@
             "prompt": "¿Querés compartir experiencias sobre los procesos de protección de las áreas naturales de la cuenca Matanza-Riachuelo?",
             "display_prompt": "Experiencia",
             "optional": false,
+            "qprFormType": "protected-area",
             "content": [
               {
                 "label": "Reserva municipal morón",
@@ -1520,13 +1522,13 @@
             "type": "geocoding",
             "prompt": " ",
             "display_prompt": "Address",
-            "placeholder": "Enter your address",
+            "placeholder": "Ingresá la ubicación",
             "optional": false
           },
           {
             "name": "intro-areas-naturales-2",
             "type": "informational_html",
-            "content": "<p>¿Sabés si ese espacio cuenta con algún tipo de protección formal por parte de la nación, el municipio o la provincia, es decir, alguna normativa de creación como una ordenanza, una ley, un convenio o un decreto?</p>"
+            "content": "<span><b>¿Sabés si ese espacio cuenta con algún tipo de protección formal por parte de la nación, el municipio o la provincia, es decir, alguna normativa de creación como una ordenanza, una ley, un convenio o un decreto?</b></span>"
           },
           {
             "name": "proteccion_del_espacio",
@@ -1666,7 +1668,7 @@
                 "value": "por-biodiversidad"
               },
               {
-                "label": "Porque es un espacio recreativo y social frecuentado por la comunidad",
+                "label": "Porque es un espacio recreativo social frecuentado por la comunidad",
                 "value": "porque-espacio-recreativo"
               },
               {
@@ -1816,12 +1818,12 @@
           {
             "name": "conservacion_areas_naturales",
             "type": "informational_html",
-            "content": "<p>A continuación vas a leer algunas frases que describen posibles amenazas a la conservación de las áreas naturales, ¿con qué frecuencia dirías que ocurren las siguientes situaciones en el área natural que seleccionaste? Elegí para cada frase la opción adecuada.</p>"
+            "content": "<span><b>A continuación vas a leer algunas frases que describen posibles amenazas a la conservación de las áreas naturales, ¿con qué frecuencia dirías que ocurren las siguientes situaciones en el área natural que seleccionaste? Elegí para cada frase la opción adecuada.</b></span>"
           },
           {
             "name": "conservacion_incendios",
             "type": "big_radio",
-            "prompt": "“Se producen o se produjeron incendios en el área”",
+            "prompt": "“SE PRODUCEN O SE PRODUJERON INCENDIOS EN EL ÁREA”",
             "display_prompt": "Conservación",
             "optional": false,
             "content": [
@@ -1850,7 +1852,7 @@
           {
             "name": "conservacion_area",
             "type": "big_radio",
-            "prompt": "“Se acumulan o arrojan residuos en alguna parte del área”",
+            "prompt": "“SE ACUMULAN O ARROJAN RESIDUOS EN ALGUNA PARTE DEL ÁREA”",
             "display_prompt": "Residuos",
             "optional": false,
             "content": [
@@ -1879,7 +1881,7 @@
           {
             "name": "conservacion_fauna",
             "type": "big_radio",
-            "prompt": "“La flora y/o la fauna están amenazadas”",
+            "prompt": "“LA FLORA Y/O LA FAUNA ESTÁN AMENAZADAS”",
             "display_prompt": "Flora",
             "optional": false,
             "content": [
@@ -1908,7 +1910,7 @@
           {
             "name": "conservacion_conflictos",
             "type": "big_radio",
-            "prompt": "“Hay disputas o conflictos por los usos permitidos y/o los límites del área”",
+            "prompt": "“HAY DISPUTAS O CONFLICTOS POR LOS USOS PERMITIDOS Y/O LOS LÍMITES DEL ÁREA”",
             "display_prompt": "Conflictos",
             "optional": false,
             "content": [
@@ -1940,6 +1942,7 @@
             "prompt": "¿Cuál es tu vínculo con esta área? Elegí la respuesta que más se ajuste.",
             "display_prompt": "Vinculo",
             "optional": false,
+            "qprFormType": "protected-area",
             "content": [
               {
                 "label": "Vivo o trabajo en la zona",
@@ -1962,7 +1965,7 @@
           {
             "name": "proteccion_del_espacio_novedad_info",
             "type": "informational_html",
-            "content": "<p>Podés contribuir al conocimiento y a la protección de esta área natural aportando información sobre los siguientes aspectos. Podés adjuntar imágenes, documentos en pdf y enlaces.</p>"
+            "content": "<span><b>Podés contribuir al conocimiento y a la protección de esta área natural aportando información sobre los siguientes aspectos. Podés adjuntar imágenes, documentos en pdf y enlaces.</b></span>"
           },
           {
             "name": "proteccion_espacio",
@@ -1992,46 +1995,50 @@
           {
             "name": "proteccion-espacio-title",
             "type": "text",
-            "prompt": "Titulo",
+            "prompt": "",
             "display_prompt": "Observación",
             "placeholder": "Titulo",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qprFormType": "protected-area"
           },
           {
             "name": "proteccion-espacio-text",
             "type": "textarea",
-            "prompt": " ",
+            "prompt": "",
             "placeholder": "Texto",
             "display_prompt": "Descripcion",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qprFormType": "protected-area"
           },
           {
             "name": "proteccion-espacio-pdf",
-            "type": "pdf",
+            "type": "file",
+            "label": "ADJUNTAR ARCHIVO PDF",
             "prompt": " ",
-            "label": "PDF",
-            "display_prompt": "Adjunto",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qprFormType": "protected-area"
           },
           {
             "name": "proteccion-espacio-image",
             "type": "file",
-            "hidden_default": true,
-            "label": "IMAGEN",
+            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
             "prompt": " ",
-            "optional": true
+            "hidden_default": true,
+            "optional": true,
+            "qprFormType": "protected-area"
           },
           {
             "name": "proteccion-espacio-enlace",
             "type": "text",
-            "prompt": "Enlace",
+            "prompt": "",
             "placeholder": "Enlace",
             "display_prompt": "Enlace",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qprFormType": "protected-area"
           },
           {
             "name": "biodiversidad_especies",
@@ -2045,8 +2052,8 @@
                 "targets": [
                   "biodiversidad_especies-title",
                   "biodiversidad_especies-desc",
-                  "biodiversidad_especies-image",
                   "biodiversidad_especies-pdf",
+                  "biodiversidad_especies-image",
                   "biodiversidad_especies-link"
                 ]
               }
@@ -2061,11 +2068,12 @@
           {
             "name": "biodiversidad_especies-title",
             "type": "text",
-            "prompt": "Titulo",
+            "prompt": "",
             "display_prompt": "Observación",
             "placeholder": "Titulo",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qprFormType": "protected-area"
           },
           {
             "name": "biodiversidad_especies-desc",
@@ -2074,33 +2082,36 @@
             "placeholder": "Texto",
             "display_prompt": "Descripcion",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qprFormType": "protected-area"            
           },
           {
             "name": "biodiversidad_especies-pdf",
-            "type": "pdf",
+            "type": "file",
+            "label": "ADJUNTAR ARCHIVO PDF",
             "prompt": " ",
-            "label": "PDF",
-            "display_prompt": "Adjunto",
+            "optional": true,
             "hidden_default": true,
-            "optional": true
+            "qprFormType": "protected-area"
           },
           {
             "name": "biodiversidad_especies-image",
             "type": "file",
-            "hidden_default": true,
-            "label": "IMAGEN",
+            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
             "prompt": " ",
-            "optional": true
+            "optional": true,
+            "hidden_default": true,
+            "qprFormType": "protected-area"
           },
           {
             "name": "biodiversidad_especies-link",
             "type": "text",
-            "prompt": "Enlace",
+            "prompt": "",
             "placeholder": "Enlace",
             "display_prompt": "Enlace",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qprFormType": "protected-area"
           },
           {
             "name": "reportes_estado_area",
@@ -2130,11 +2141,12 @@
           {
             "name": "reportes_estado-title",
             "type": "text",
-            "prompt": "Titulo",
+            "prompt": "",
             "display_prompt": "Observación",
             "placeholder": "Titulo",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qprFormType": "protected-area"
           },
           {
             "name": "reportes_estado-text",
@@ -2143,33 +2155,36 @@
             "placeholder": "Texto",
             "display_prompt": "Descripcion",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qprFormType": "protected-area"
           },
           {
             "name": "reportes_estado-pdf",
-            "type": "pdf",
+            "type": "file",
+            "label": "ADJUNTAR ARCHIVO PDF",
             "prompt": " ",
-            "label": "PDF",
-            "display_prompt": "Adjunto",
+            "optional": true,
             "hidden_default": true,
-            "optional": true
+            "qprFormType": "protected-area"
           },
           {
             "name": "reportes_estado-image",
             "type": "file",
-            "hidden_default": true,
-            "label": "IMAGEN",
+            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
             "prompt": " ",
-            "optional": true
+            "optional": true,
+            "hidden_default": true,
+            "qprFormType": "protected-area"
           },
           {
             "name": "reportes_estado-link",
             "type": "text",
-            "prompt": "Enlace",
+            "prompt": "",
             "placeholder": "Enlace",
             "display_prompt": "Enlace",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qprFormType": "protected-area"
           },
           {
             "name": "usos_memorias",
@@ -2199,11 +2214,12 @@
           {
             "name": "usos_memorias-title",
             "type": "text",
-            "prompt": "Titulo",
+            "prompt": "",
             "display_prompt": "Observación",
             "placeholder": "Titulo",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qprFormType": "protected-area"
           },
           {
             "name": "usos_memorias-text",
@@ -2212,33 +2228,36 @@
             "placeholder": "Texto",
             "display_prompt": "Descripcion",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qprFormType": "protected-area"
           },
           {
             "name": "usos_memorias-pdf",
-            "type": "pdf",
+            "type": "file",
+            "label": "ADJUNTAR ARCHIVO PDF",
             "prompt": " ",
-            "label": "PDF",
-            "display_prompt": "Adjunto",
+            "optional": true,
             "hidden_default": true,
-            "optional": true
+            "qprFormType": "protected-area"
           },
           {
             "name": "usos_memorias-image",
             "type": "file",
-            "hidden_default": true,
-            "label": "IMAGEN",
+            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
             "prompt": " ",
-            "optional": true
+            "optional": true,
+            "hidden_default": true,
+            "qprFormType": "protected-area"
           },
           {
             "name": "usos_memorias-link",
             "type": "text",
-            "prompt": "Enlace",
+            "prompt": "",
             "placeholder": "Enlace",
             "display_prompt": "Enlace",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qprFormType": "protected-area"
           },
           {
             "name": "patrimonio_arqueologico",
@@ -2268,11 +2287,12 @@
           {
             "name": "patrimonio_arqueologico-title",
             "type": "text",
-            "prompt": "Titulo",
+            "prompt": "",
             "display_prompt": "Observación",
             "placeholder": "Titulo",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qprFormType": "protected-area"
           },
           {
             "name": "patrimonio_arqueologico-text",
@@ -2281,38 +2301,44 @@
             "placeholder": "Texto",
             "display_prompt": "Descripcion",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qprFormType": "protected-area"
           },
           {
             "name": "patrimonio_arqueologico-pdf",
-            "type": "pdf",
+            "type": "file",
+            "label": "ADJUNTAR ARCHIVO PDF",
             "prompt": " ",
-            "label": "PDF",
-            "display_prompt": "Adjunto",
+            "optional": true,
             "hidden_default": true,
-            "optional": true
+            "qprFormType": "protected-area"
+            
           },
           {
             "name": "patrimonio_arqueologico-image",
             "type": "file",
-            "hidden_default": true,
-            "label": "IMAGEN",
+            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
             "prompt": " ",
-            "optional": true
+            "optional": true,
+            "hidden_default": true,
+            "qprFormType": "protected-area"
             
           },
           {
             "name": "patrimonio_arqueologico-link",
             "type": "text",
-            "prompt": "Enlace",
+            "prompt": "",
             "placeholder": "Enlace",
             "display_prompt": "Enlace",
             "hidden_default": true,
-            "optional": true
+            "optional": true,
+            "qprFormType": "protected-area"
           },
           {
             "name": "submit",
-            "type": "common_form_element"
+            "type": "submit",
+            "label": "Publicar en el mapa",
+            "qprFormType": "protected-area"          
           }
         ]
       },
@@ -2342,32 +2368,37 @@
           {
             "start_field_index": 1,
             "end_field_index": 3,
-            "header": "Reporte Territorial",
-            "description": ""
+            "header": "Relocalizaciones",
+            "description": "",
+            "qprFormType": "relocations"
           },
           {
             "start_field_index": 4,
             "end_field_index": 10,
-            "header": "Reporte Territorial",
-            "description": ""
+            "header": "Relocalizaciones",
+            "description": "",
+            "qprFormType": "relocations"
           },
           {
             "start_field_index": 11,
             "end_field_index": 20,
-            "header": "Reporte Territorial",
-            "description": ""
+            "header": "Relocalizaciones",
+            "description": "",
+            "qprFormType": "relocations"
           },
           {
             "start_field_index": 21,
             "end_field_index": 23,
-            "header": "Reporte Territorial",
-            "description": ""
+            "header": "Relocalizaciones",
+            "description": "",
+            "qprFormType": "relocations"
           },
           {
             "start_field_index": 24,
             "end_field_index": 25,
-            "header": "Reporte Territorial",
-            "description": ""
+            "header": "Relocalizaciones",
+            "description": "",
+            "qprFormType": "relocations"
           }
         ],
         "fields": [
@@ -2378,14 +2409,14 @@
           {
             "name": "intro",
             "type": "informational_html",
-            "content": "<h4>Por favor seleccioná una ubicación en el mapa</h4><br><h5>Podés arrastrar el ícono en el mapa o ingresar una dirección.</h5><br><p>Si añade este reporte a QPR, se mostrará públicamente</p>"
+            "content": "<span><b>Por favor seleccioná una ubicación en el mapa</b><span><br><br><span>Podés arrastrar el ícono en el mapa o ingresar una dirección.<span><br><br><span>Si añade este reporte a QPR, se mostrará públicamente</span>"
           },
           {
             "name": "private-address",
             "type": "geocoding",
             "prompt": " ",
             "display_prompt": "Address",
-            "placeholder": "Enter your address",
+            "placeholder": "Ingresá la ubicación",
             "optional": false
           },
           {
@@ -2393,7 +2424,7 @@
             "type": "geocoding",
             "prompt": " ",
             "display_prompt": "Address",
-            "placeholder": "Enter your address",
+            "placeholder": "Ingresá la ubicación",
             "optional": false
           },
           {
@@ -2404,6 +2435,7 @@
             "display_prompt": "Municipio",
             "placeholder": "Escribí el nombre de tu municipio...",
             "optional": false,
+            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "ciudad-de-buenos-aires",
@@ -2539,6 +2571,7 @@
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
             "optional": false,
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "Asentamiento Lamadrid",
@@ -2627,6 +2660,7 @@
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
             "optional": false,
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "2 de Abril",
@@ -2691,6 +2725,7 @@
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
             "optional": false,
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "7 de Enero",
@@ -2815,6 +2850,7 @@
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
             "optional": false,
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "9 de Enero",
@@ -2851,6 +2887,7 @@
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
             "optional": false,
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "22 de Enero",
@@ -2955,6 +2992,7 @@
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
             "optional": false,
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "10 de Enero",
@@ -3015,6 +3053,7 @@
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
             "optional": false,
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "Asentamiento 3 de Enero",
@@ -3075,6 +3114,7 @@
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
             "optional": false,
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "El Palenque",
@@ -3111,6 +3151,7 @@
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
             "optional": false,
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "El Juancito",
@@ -3145,6 +3186,7 @@
             "type": "big_radio",
             "prompt": "Situación de Relocalización: marca la opción que describa mejor tu situación con respecto al programa de relocalización de villas y asentamientos de la Cuenca Matanza Riachuelo.",
             "optional": false,
+            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "otro-barrio",
@@ -3189,7 +3231,8 @@
             "placeholder": "Escribí el nombre de tu barrio...",
             "display_prompt": "Barrio antes",
             "hidden_default": true,
-            "optional": false
+            "optional": false,
+            "qprFormType": "relocations"
           },
           {
             "name": "otra-situacion",
@@ -3198,7 +3241,8 @@
             "placeholder": "Escribí aquí...",
             "display_prompt": "Otra situación",
             "hidden_default": true,
-            "optional": false
+            "optional": false,
+            "qprFormType": "relocations"
           },
           {
             "name": "tema_interese",
@@ -3254,25 +3298,32 @@
             "prompt": "Comentario",
             "placeholder": "Comentario...",
             "display_prompt": "Comentario",
-            "optional": true
+            "optional": true,
+            "qprFormType": "relocations"
           },
           {
             "name": "additional_info",
             "type": "rich_textarea",
             "prompt": "Información Adicional",
             "display_prompt": "Información Adicional",
-            "placeholder": "Adjunte archivos PDF, videos y otra información"
+            "placeholder": "Adjunte archivos PDF, videos y otra información",
+            "qprFormType": "relocations"
           },
           {
-            "name": "my_image",
-            "type": "common_form_element"
+            "name": "relocalizaciones-image",
+            "type": "file",
+            "prompt": "Comparte una imagen",
+            "label": "Agregar una imagen",
+            "optional": true,
+            "qprFormType": "relocations"
           },
           {
             "name": "relocalizaciones-pdf",
-            "type": "pdf",
+            "type": "file",
             "prompt": "Comparte un PDF",
             "label": "Agregar un PDF",
-            "optional": true
+            "optional": true,
+            "qprFormType": "relocations"
           },
           {
             "name": "recaptcha",
@@ -3284,7 +3335,9 @@
           },
           {
             "name": "submit",
-            "type": "common_form_element"
+            "type": "submit",
+            "label": "Publicar en el mapa",
+            "qprFormType": "relocations"
           }
         ]
       }
@@ -3307,6 +3360,7 @@
         "display_prompt": "Barrio",
         "placeholder": "Escribí el nombre de tu barrio...",
         "optional": false,
+        "qprFormType": "relocations",
         "content": [
           {
             "label": "Las Antenas",
@@ -3687,29 +3741,33 @@
     {
       "slug": "about",
       "content": [
-        "<h1 style='margin-bottom:4px;color:#75beb1;'>¿Qué Pasa, Riachuelo?</h1>",
-        "<p><b>¿Qué Pasa Riachuelo?</b> (QPR) es el resultado del esfuerzo colectivo de la Fundación Ambiente y Recursos Naturales (FARN), Universidad Nacional de San Martín (UNSAM) y otros actores que desde 2020 colaboran y participan en distintas actividades en el marco del proyecto “CoAct Ciencia Ciudadana Social para la Acción Colectiva”, una iniciativa global financiada por la Unión Europea que tiene como objetivo promover la ciencia ciudadana para avanzar acciones hacia la justicia ambiental en la Cuenca Matanza-Riachuelo.</p>"
+        "<div style='padding-bottom: 10px; margin-bottom: 20px;'><img style='border-radius: 0; width: 20%; display: block;' src='/static/css/images/Logo_QPR_3_.png'/></div>",
+        "<p><b>¿Qué Pasa Riachuelo?</b> (QPR) es el resultado del esfuerzo colectivo de la Fundación Ambiente y Recursos Naturales (FARN), Universidad Nacional de San Martín (UNSAM) y otros actores que desde 2020 colaboran y participan en distintas actividades en el marco del proyecto “CoAct Ciencia Ciudadana Social para la Acción Colectiva”, una iniciativa global financiada por la Unión Europea que tiene como objetivo promover la ciencia ciudadana para avanzar acciones hacia la justicia ambiental en la Cuenca Matanza-Riachuelo.<br><br><b>¿Qué Pasa Riachuelo?</b> (QPR) permite organizar, sistematizar y compartir las visiones y el conocimiento acumulado a lo largo de los años por organizaciones sociales, científicos y otros actores que buscan soluciones para los graves problemas socioambientales de la cuenca Matanza-Riachuelo.</p>",
+        "<div style='border-bottom: 0; display: flex; justify-content: space-between; align-items: center; width: 100%;'><img style='width: 13%; border-radius: 0; display: inline-block; margin-bottom: 0; margin-right: 2%;' src='/static/css/images/00-LOGO FARN.png'/><div style='margin-right: 2%; width: 1px; height: 40px; border-right: 1px solid #aeadb3; display: inline-block;'></div><img style='width: 13%; border-radius: 0; display: inline-block; margin-bottom: 0; margin-right: 2%;' src='/static/css/images/CENIT_UNSAM.png'/><div style='margin-right: 2%; width: 1px; height: 40px; border-right: 1px solid #aeadb3; display: inline-block;'></div><img style='width: 13%;border-radius: 0; display: inline-block; margin-bottom: 0; margin-right: 2%;' src='/static/css/images/coact.png'/><div style='margin-right: 2%; width: 1px; height: 40px; border-right: 1px solid #aeadb3; display: inline-block;'></div><img style='width: 13%;border-radius: 0; display: inline-block; margin-bottom: 0; margin-right: 2%;' src='/static/css/images/union-europea.png'/><span style='font-family: Montserrat, sans-serif; font-size: 7px;'>The CoAct project has received funding from the European Union´s Horizon 2020 research and innovation programme under grant agreement number 873048.</span></div>"
       ]
     },
     {
       "slug": "areasnaturales",
       "content": [
-        "<h1 style='margin-bottom:4px;color:#75beb1;'>¿Qué Pasa, Riachuelo?</h1>",
-        "<p><b>¿Qué pasa, Riachuelo?</b> registra y brinda información sobre los procesos de protección de áreas naturales en la cuenca Matanza-Riachuelo como los humedales y espacios verdes de origen natural o no (parques, plazas, y otros), importantes para la conservación del patrimonio biológico y cultural de la cuenca. Estos espacios brindan beneficios ecosistémicos y dan lugar a la interacción social y a la recreación, contribuyendo a la calidad de vida de la población. Están amenazados por el avance de la industrialización y la urbanización y por eso es importante compartir información y promover la participación para contribuir con su conservación.</p><br><p>QPR te permite:</p><br><ul style='font-family: Roboto;'><li>identificar zonas amenazadas que requieren desplegar estrategias de protección;</li><li>visibilizar la situación de protección de las áreas naturales de la cuenca;</li><li>Reportar eventos relativos al estado actual de estas áreas y compartir información sobre las mismas con fines educativos y de concientización sobre su relevancia social y ambiental</li></ul>"
+        "<h1 style='margin-bottom:4px;color:#aeadb3;'>¿Qué Pasa, Riachuelo?</h1>",
+        "<p><b>¿Qué pasa, Riachuelo?</b> registra y brinda información sobre los procesos de protección de áreas naturales en la cuenca Matanza-Riachuelo como los humedales y espacios verdes de origen natural o no (parques, plazas, y otros), importantes para la conservación del patrimonio biológico y cultural de la cuenca. Estos espacios brindan beneficios ecosistémicos y dan lugar a la interacción social y a la recreación, contribuyendo a la calidad de vida de la población. Están amenazados por el avance de la industrialización y la urbanización y por eso es importante compartir información y promover la participación para contribuir con su conservación.<br>QPR te permite:</p>",
+        "<ul style='font-family: Roboto;'><li>identificar zonas amenazadas que requieren desplegar estrategias de protección;</li><li>visibilizar la situación de protección de las áreas naturales de la cuenca;</li><li>Reportar eventos relativos al estado actual de estas áreas y compartir información sobre las mismas con fines educativos y de concientización sobre su relevancia social y ambiental</li></ul>"
       ]
     },
     {
       "slug": "relocalizaciones",
       "content": [
-        "<h1 style='margin-bottom:4px;color:#75beb1;'>¿Qué Pasa, Riachuelo?</h1>",
-        "<p>En <b>¿Qué pasa, Riachuelo?</b> podés consultar y brindar información acerca de los procesos de relocalización de los barrios, villas y asentamientos de la cuenca Matanza Riachuelo. La cuestión de la relocalización afecta directamente a más de 17 mil familias que habitan en condiciones deficitarias de vivienda y hábitat en distintas zonas de la cuenca expuestas al riesgo ambiental. En estos procesos el acceso a la información y la participación de la población es clave para encontrar soluciones habitacionales integrales que garanticen sus derechos.</p><br><p> QPR permite:</p> <br><ul style='font-family: Roboto';><li>Acceder a información sobre las mesas de trabajo barriales a lo largo de la cuenca;</li><li>Reportar cuestiones relativas a las condiciones de hábitat y vivienda, salud, económicas, educativas y acerca de la participación y acceso a la información en torno a la relocalización;</li><li>Compartir experiencias de las comunidades relacionadas con  los procesos de relocalización</li></ul>"
+        "<h1 style='margin-bottom:4px;color:#aeadb3;'>¿Qué Pasa, Riachuelo?</h1>",
+        "<p style='color:#aeadb3;'>En <b>¿Qué pasa, Riachuelo?</b> podés consultar y brindar información acerca de los procesos de relocalización de los barrios, villas y asentamientos de la cuenca Matanza Riachuelo. La cuestión de la relocalización afecta directamente a más de 17 mil familias que habitan en condiciones deficitarias de vivienda y hábitat en distintas zonas de la cuenca expuestas al riesgo ambiental. En estos procesos el acceso a la información y la participación de la población es clave para encontrar soluciones habitacionales integrales que garanticen sus derechos.<br>QPR permite:</p>",
+        "<ul><li>Acceder a información sobre las mesas de trabajo barriales a lo largo de la cuenca;</li><li>Reportar cuestiones relativas a las condiciones de hábitat y vivienda, salud, económicas, educativas y acerca de la participación y acceso a la información en torno a la relocalización;</li><li>Compartir experiencias de las comunidades relacionadas con  los procesos de relocalización</li></ul>"
       ]
     },
     {
       "slug": "calidaddelagua",
       "content": [
-        "<h1 style='margin-bottom:4px;color:#75beb1;'>¿Qué Pasa, Riachuelo?</h1>",
-        "<p>En <b>¿Qué pasa, Riachuelo?</b> podés visualizar y discutir indicadores de calidad de agua en la cuenca y aportar a los mismos datos sobre la presencia de residuos sólidos en los cursos y otras materias observables (hidrocarburos, algas, cianobacterias, escombros, plásticos flotantes,etc). De esta forma, puede resultar una herramienta pedagógica útil para valorizar al río como un recurso biocultural</p><br><p>QRP permite:</p><br><ul style='font-family: Roboto';><li>Visibilizar información sobre la calidad de agua en determinados puntos y el riesgo que implica;</li><li>reportar eventos que afectan a la calidad del agua a partir de parámetros observables en los cursos superficiales y sus entornos;</li><li>compartir información para contribuir con distintas estrategias pedagógicas.</li></ul>"
+        "<h1 style='margin-bottom:4px;color:#aeadb3;'>¿Qué Pasa, Riachuelo?</h1>",
+        "<p>En <b>¿Qué pasa, Riachuelo?</b> podés visualizar y discutir indicadores de calidad de agua en la cuenca y aportar a los mismos datos sobre la presencia de residuos sólidos en los cursos y otras materias observables (hidrocarburos, algas, cianobacterias, escombros, plásticos flotantes,etc). De esta forma, puede resultar una herramienta pedagógica útil para valorizar al río como un recurso biocultural.<br>QRP permite:</p>",
+        "<ul><li>Visibilizar información sobre la calidad de agua en determinados puntos y el riesgo que implica;</li><li>reportar eventos que afectan a la calidad del agua a partir de parámetros observables en los cursos superficiales y sus entornos;</li><li>compartir información para contribuir con distintas estrategias pedagógicas.</li></ul>"
       ]
     }
   ],

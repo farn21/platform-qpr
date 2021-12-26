@@ -8,6 +8,9 @@ import "./text-field.scss";
 const TextField = props => {
   const cn = classNames("text-field", {
     "text-field--has-autofill": props.hasAutofill,
+    "border-color-protected-area": props.qprFormType === "protected-area",
+    "border-color-water": props.qprFormType === "water",
+    "border-color-relocations": props.qprFormType === "relocations",
   });
 
   return (

@@ -24,14 +24,6 @@ class BigCheckboxField extends Component {
 
     return (
       <div className="big-checkbox-field">
-        <CheckboxField
-          className="big-checkbox-field__input"
-          id={this.props.id}
-          name={this.props.name}
-          value={this.props.value}
-          checked={isChecked}
-          onChange={this.onChange.bind(this)}
-        />
         <label
           className={classNames("big-checkbox-field__label", {
             "big-checkbox-field__label--hoverable": !isTouchDevice,
@@ -41,6 +33,16 @@ class BigCheckboxField extends Component {
           })}
           htmlFor={this.props.id}
         >
+              <div className="input-container">
+        <CheckboxField
+          className="big-checkbox-field__input"
+          id={this.props.id}
+          name={this.props.name}
+          value={this.props.value}
+          checked={isChecked}
+          onChange={this.onChange.bind(this)}
+        />
+        </div>
           {this.props.t(
             `checkboxFieldPlaceholder${this.props.formId}${this.props.name}${this.props.id}`,
             this.props.label,

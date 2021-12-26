@@ -7,7 +7,11 @@ import "./textarea-field.scss";
 
 const TextareaField = props => {
   const cn = classNames("textarea-field", {
-    "textarea-field--has-autofill": props.hasAutofill,
+    "textarea-field--has-autofill": props.hasAutofill, 
+    "border-color-protected-area": props.qprFormType === "protected-area",
+    "border-color-water": props.qprFormType === "water",
+    "border-color-relocations": props.qprFormType === "relocations"
+    
   });
 
   return (
