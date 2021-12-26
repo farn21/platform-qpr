@@ -359,8 +359,8 @@ const SiteHeader: React.FunctionComponent<Props> = props => {
           },
         }}
       >
-      <a href="#">
-      <img style={{width: '110px', marginTop: '10px', marginBottom: '10px', marginRight: '30px'}} src={'/static/css/images/Logo_QPR_3.png'} alt={'logo Qué Pasa Riachuelo'} />
+      <a href="#" className={'header-logo-container'} >
+      <img className={'header-logo'} style={{width: '110px', marginTop: '10px', marginBottom: '10px', marginRight: '30px'}} src={'/static/css/images/Logo_QPR_3.png'} alt={'logo Qué Pasa Riachuelo'} />
       </a>
       
         {props.navBarConfig.map((navBarItem, i) => {
