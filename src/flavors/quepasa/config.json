@@ -597,48 +597,61 @@
             "layerGroupId": "quepasa-input",
             "title": "Experencias"
           }
-     
         ]
       },
       {
-        "title": "",
+        "title": "ADA",
+        "options": [
+          {
+            "layerGroupId": "riachuelo-lineas-de-ribera",
+            "title": "Cuencas de la provincia de Buenos Aires"
+          }
+        ]
+      },
+      {
+        "title": "ACUMAR",
         "options": [
           {
             "layerGroupId": "riachuelo-subbasins",
-            "title": "Sub-cuencas (ACUMAR)"
+            "title": "Sub-cuencas"
           },
           {
             "layerGroupId": "riachuelo-watercourses",
-            "title": "Cursos de agua en la cuenca (ACUMAR)"
-          },
-          {
-            "layerGroupId": "riachuelo-lineas-de-ribera",
-            "title": "Cuencas de la provincia de Buenos Aires (ADA)"
+            "title": "Cursos de agua en la cuenca"
           },
           {
             "layerGroupId": "riachuelo-areas-protegidas",
-            "title": "  Áreas protegidas en la cuenca (ACUMAR)"
-          },
-          {
-            "layerGroupId": "areas-naturales-protegidas",
-            "title": "Áreas protegidas en la provincia de Buenos Aires (SINIA)"
-          },
-       
-          {
-            "layerGroupId": "renabap",
-            "title": "Barrios populares registrados en el país (RENABAP)"
-          },
-          {
-            "layerGroupId": "riachuelo-villas-y-asentamientos-precarios",
-            "title": "Villas y asentamientos en la cuenca (ACUMAR)"
+            "title": "  Áreas protegidas en la cuenca"
           },
           {
             "layerGroupId": "riachuelo-obras-convenio",
-            "title": "Soluciones habitacionales - Convenio Marco 2010 (ACUMAR)"
+            "title": "Soluciones habitacionales - Convenio Marco 2010"
+          },
+          {
+            "layerGroupId": "riachuelo-villas-y-asentamientos-precarios",
+            "title": "Villas y asentamientos en la cuenca"
           },
           {
             "layerGroupId": "riachuelo-mesas-trabajo",
-            "title": "Mesas de trabajo por la relocalización/reurbanización (ACUMAR)"
+            "title": "Mesas de trabajo por la relocalización/reurbanización"
+          }
+        ]
+      },
+      {
+        "title": "RENABAP",
+        "options": [
+          {
+            "layerGroupId": "renabap",
+            "title": "Barrios populares registrados en el país"
+          }
+        ]
+      },
+      {
+        "title": "SINIA",
+        "options": [
+          {
+            "layerGroupId": "areas-naturales-protegidas",
+            "title": "Áreas protegidas en la provincia de Buenos Aires"
           }
         ]
       }
@@ -1515,7 +1528,7 @@
           {
             "name": "intro_areas-naturales",
             "type": "informational_html",
-            "content": "<b>¿Dónde está ubicada esta área?</b><br><p>Arrastrá el mapa a tu izquierda o ingresá la ubicación en el buscador</p>"
+            "content": "<b>¿Dónde está ubicada esta área?</b><br><p>Arrastrá el mapa o ingresá la ubicación en el buscador</p>"
           },
           {
             "name": "private-address",
@@ -2083,7 +2096,7 @@
             "display_prompt": "Descripcion",
             "hidden_default": true,
             "optional": true,
-            "qprFormType": "protected-area"            
+            "qprFormType": "protected-area"
           },
           {
             "name": "biodiversidad_especies-pdf",
@@ -2312,7 +2325,6 @@
             "optional": true,
             "hidden_default": true,
             "qprFormType": "protected-area"
-            
           },
           {
             "name": "patrimonio_arqueologico-image",
@@ -2322,7 +2334,6 @@
             "optional": true,
             "hidden_default": true,
             "qprFormType": "protected-area"
-            
           },
           {
             "name": "patrimonio_arqueologico-link",
@@ -2338,7 +2349,7 @@
             "name": "submit",
             "type": "submit",
             "label": "Publicar en el mapa",
-            "qprFormType": "protected-area"          
+            "qprFormType": "protected-area"
           }
         ]
       },
@@ -2409,7 +2420,7 @@
           {
             "name": "intro",
             "type": "informational_html",
-            "content": "<span><b>Por favor seleccioná una ubicación en el mapa</b><span><br><br><span>Podés arrastrar el ícono en el mapa o ingresar una dirección.<span><br><br><span>Si añade este reporte a QPR, se mostrará públicamente</span>"
+            "content": "<span><b>Por favor seleccioná una ubicación en el mapa</b><span><br><br><span>Podés arrastrar el ícono en el mapa o ingresar una dirección.<span><br><br><span></span>"
           },
           {
             "name": "private-address",

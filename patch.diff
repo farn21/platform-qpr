@@ -1,0 +1,66 @@
+diff --git a/src/base/static/components/molecules/user-menu.tsx b/src/base/static/components/molecules/user-menu.tsx
+index 59daf1e3..9b98a2b2 100644
+--- a/src/base/static/components/molecules/user-menu.tsx
++++ b/src/base/static/components/molecules/user-menu.tsx
+@@ -140,7 +140,7 @@ const UserMenu: React.FunctionComponent<Props> = props => {
+       )}
+       <ul css={menuStyles({ isMenuOpen, isLoggedIn: true })}>
+         {!!props.dashboardConfig.length &&
+-          props.hasAdminAbilities(props.dashboardConfig[0].datasetSlug) && (
++          true && (
+             <MenuItem
+               onClick={() => setIsMenuToggled(isMenuOpen => !isMenuOpen)}
+             >
+@@ -180,7 +180,7 @@ const UserMenu: React.FunctionComponent<Props> = props => {
+ };
+ 
+ const mapStateToProps = (state: any): StateProps => ({
+-  hasAdminAbilities: datasetSlug => hasAdminAbilities(state, datasetSlug),
++  hasAdminAbilities: datasetSlug => true,
+   offlineBoundingBox: offlineConfigSelector(state),
+   dashboardConfig: dashboardConfigSelector(state),
+ });
+diff --git a/src/base/static/components/organisms/site-header.tsx b/src/base/static/components/organisms/site-header.tsx
+index 6247264c..36f99982 100644
+--- a/src/base/static/components/organisms/site-header.tsx
++++ b/src/base/static/components/organisms/site-header.tsx
+@@ -387,7 +387,7 @@ const SiteHeader: React.FunctionComponent<Props> = props => {
+           );
+         })}
+       </nav>
+-      {/*<div
++      {<div
+         css={{
+           alignItems: "center",
+ 
+@@ -504,7 +504,7 @@ const SiteHeader: React.FunctionComponent<Props> = props => {
+             </ul>
+           </nav>
+         )}
+-        {props.currentUser.isAuthenticated ? (
++        {true ? (
+           <UserMenu
+             appConfig={props.appConfig}
+             currentUser={props.currentUser}
+@@ -518,7 +518,7 @@ const SiteHeader: React.FunctionComponent<Props> = props => {
+             isMobileHeaderExpanded={isMobileHeaderExpanded}
+           />
+         )}
+-      </div>*/}
++      </div>}
+     </header>
+   );
+ };
+diff --git a/src/base/static/components/templates/dashboard.tsx b/src/base/static/components/templates/dashboard.tsx
+index 6c662dc9..f8ddbd46 100644
+--- a/src/base/static/components/templates/dashboard.tsx
++++ b/src/base/static/components/templates/dashboard.tsx
+@@ -254,7 +254,7 @@ type MapseedReduxState = any;
+ 
+ const mapStateToProps = (state: MapseedReduxState): StateProps => ({
+   appConfig: appConfigSelector(state),
+-  hasAdminAbilities: datasetSlug => hasAdminAbilities(state, datasetSlug),
++  hasAdminAbilities: datasetSlug => true, //hasAdminAbilities(state, datasetSlug),
+   datasetPlacesSelector: datasetSlug =>
+     datasetPlacesSelector(datasetSlug, state),
+   dashboardConfig: dashboardConfigSelector(state),
