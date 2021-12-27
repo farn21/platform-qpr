@@ -597,48 +597,61 @@
             "layerGroupId": "quepasa-input",
             "title": "Experencias"
           }
-     
         ]
       },
       {
-        "title": "",
+        "title": "ADA",
+        "options": [
+          {
+            "layerGroupId": "riachuelo-lineas-de-ribera",
+            "title": "Cuencas de la provincia de Buenos Aires"
+          }
+        ]
+      },
+      {
+        "title": "ACUMAR",
         "options": [
           {
             "layerGroupId": "riachuelo-subbasins",
-            "title": "Sub-cuencas (ACUMAR)"
+            "title": "Sub-cuencas"
           },
           {
             "layerGroupId": "riachuelo-watercourses",
-            "title": "Cursos de agua en la cuenca (ACUMAR)"
-          },
-          {
-            "layerGroupId": "riachuelo-lineas-de-ribera",
-            "title": "Cuencas de la provincia de Buenos Aires (ADA)"
+            "title": "Cursos de agua en la cuenca"
           },
           {
             "layerGroupId": "riachuelo-areas-protegidas",
-            "title": "  Áreas protegidas en la cuenca (ACUMAR)"
-          },
-          {
-            "layerGroupId": "areas-naturales-protegidas",
-            "title": "Áreas protegidas en la provincia de Buenos Aires (SINIA)"
-          },
-       
-          {
-            "layerGroupId": "renabap",
-            "title": "Barrios populares registrados en el país (RENABAP)"
-          },
-          {
-            "layerGroupId": "riachuelo-villas-y-asentamientos-precarios",
-            "title": "Villas y asentamientos en la cuenca (ACUMAR)"
+            "title": "  Áreas protegidas en la cuenca"
           },
           {
             "layerGroupId": "riachuelo-obras-convenio",
-            "title": "Soluciones habitacionales - Convenio Marco 2010 (ACUMAR)"
+            "title": "Soluciones habitacionales - Convenio Marco 2010"
+          },
+          {
+            "layerGroupId": "riachuelo-villas-y-asentamientos-precarios",
+            "title": "Villas y asentamientos en la cuenca"
           },
           {
             "layerGroupId": "riachuelo-mesas-trabajo",
-            "title": "Mesas de trabajo por la relocalización/reurbanización (ACUMAR)"
+            "title": "Mesas de trabajo por la relocalización/reurbanización"
+          }
+        ]
+      },
+      {
+        "title": "RENABAP",
+        "options": [
+          {
+            "layerGroupId": "renabap",
+            "title": "Barrios populares registrados en el país"
+          }
+        ]
+      },
+      {
+        "title": "SINIA",
+        "options": [
+          {
+            "layerGroupId": "areas-naturales-protegidas",
+            "title": "Áreas protegidas en la provincia de Buenos Aires"
           }
         ]
       }
@@ -1515,7 +1528,7 @@
           {
             "name": "intro_areas-naturales",
             "type": "informational_html",
-            "content": "<b>¿Dónde está ubicada esta área?</b><br><p>Arrastrá el mapa a tu izquierda o ingresá la ubicación en el buscador</p>"
+            "content": "<b>¿Dónde está ubicada esta área?</b><br><p>Arrastrá el mapa o ingresá la ubicación en el buscador</p>"
           },
           {
             "name": "private-address",
@@ -2083,7 +2096,7 @@
             "display_prompt": "Descripcion",
             "hidden_default": true,
             "optional": true,
-            "qprFormType": "protected-area"            
+            "qprFormType": "protected-area"
           },
           {
             "name": "biodiversidad_especies-pdf",
@@ -2312,7 +2325,6 @@
             "optional": true,
             "hidden_default": true,
             "qprFormType": "protected-area"
-            
           },
           {
             "name": "patrimonio_arqueologico-image",
@@ -2322,7 +2334,6 @@
             "optional": true,
             "hidden_default": true,
             "qprFormType": "protected-area"
-            
           },
           {
             "name": "patrimonio_arqueologico-link",
@@ -2338,7 +2349,7 @@
             "name": "submit",
             "type": "submit",
             "label": "Publicar en el mapa",
-            "qprFormType": "protected-area"          
+            "qprFormType": "protected-area"
           }
         ]
       },
@@ -2409,7 +2420,7 @@
           {
             "name": "intro",
             "type": "informational_html",
-            "content": "<span><b>Por favor seleccioná una ubicación en el mapa</b><span><br><br><span>Podés arrastrar el ícono en el mapa o ingresar una dirección.<span><br><br><span>Si añade este reporte a QPR, se mostrará públicamente</span>"
+            "content": "<span><b>Por favor seleccioná una ubicación en el mapa</b><span><br><br><span>Podés arrastrar el ícono en el mapa o ingresar una dirección.<span><br><br><span></span>"
           },
           {
             "name": "private-address",
@@ -3749,7 +3760,8 @@
     {
       "slug": "areasnaturales",
       "content": [
-        "<h1 style='margin-bottom:4px;color:#aeadb3;'>¿Qué Pasa, Riachuelo?</h1>",
+        "<h1 style='margin-bottom:4px;color:#aeadb3;'>Áreas naturales</h1>",
+        "<div style='padding-bottom: 10px; margin-bottom: 20px;'></div>",
         "<p><b>¿Qué pasa, Riachuelo?</b> registra y brinda información sobre los procesos de protección de áreas naturales en la cuenca Matanza-Riachuelo como los humedales y espacios verdes de origen natural o no (parques, plazas, y otros), importantes para la conservación del patrimonio biológico y cultural de la cuenca. Estos espacios brindan beneficios ecosistémicos y dan lugar a la interacción social y a la recreación, contribuyendo a la calidad de vida de la población. Están amenazados por el avance de la industrialización y la urbanización y por eso es importante compartir información y promover la participación para contribuir con su conservación.<br>QPR te permite:</p>",
         "<ul style='font-family: Roboto;'><li>identificar zonas amenazadas que requieren desplegar estrategias de protección;</li><li>visibilizar la situación de protección de las áreas naturales de la cuenca;</li><li>Reportar eventos relativos al estado actual de estas áreas y compartir información sobre las mismas con fines educativos y de concientización sobre su relevancia social y ambiental</li></ul>"
       ]
@@ -3757,15 +3769,17 @@
     {
       "slug": "relocalizaciones",
       "content": [
-        "<h1 style='margin-bottom:4px;color:#aeadb3;'>¿Qué Pasa, Riachuelo?</h1>",
-        "<p style='color:#aeadb3;'>En <b>¿Qué pasa, Riachuelo?</b> podés consultar y brindar información acerca de los procesos de relocalización de los barrios, villas y asentamientos de la cuenca Matanza Riachuelo. La cuestión de la relocalización afecta directamente a más de 17 mil familias que habitan en condiciones deficitarias de vivienda y hábitat en distintas zonas de la cuenca expuestas al riesgo ambiental. En estos procesos el acceso a la información y la participación de la población es clave para encontrar soluciones habitacionales integrales que garanticen sus derechos.<br>QPR permite:</p>",
+        "<h1 style='margin-bottom:4px;color:#aeadb3;'>Relocalizaciones</h1>",
+        "<div style='padding-bottom: 10px; margin-bottom: 20px;'></div>",
+        "<p>En <b>¿Qué pasa, Riachuelo?</b> podés consultar y brindar información acerca de los procesos de relocalización de los barrios, villas y asentamientos de la cuenca Matanza Riachuelo. La cuestión de la relocalización afecta directamente a más de 17 mil familias que habitan en condiciones deficitarias de vivienda y hábitat en distintas zonas de la cuenca expuestas al riesgo ambiental. En estos procesos el acceso a la información y la participación de la población es clave para encontrar soluciones habitacionales integrales que garanticen sus derechos.<br>QPR permite:</p>",
         "<ul><li>Acceder a información sobre las mesas de trabajo barriales a lo largo de la cuenca;</li><li>Reportar cuestiones relativas a las condiciones de hábitat y vivienda, salud, económicas, educativas y acerca de la participación y acceso a la información en torno a la relocalización;</li><li>Compartir experiencias de las comunidades relacionadas con  los procesos de relocalización</li></ul>"
       ]
     },
     {
       "slug": "calidaddelagua",
       "content": [
-        "<h1 style='margin-bottom:4px;color:#aeadb3;'>¿Qué Pasa, Riachuelo?</h1>",
+        "<h1 style='margin-bottom:4px;color:#aeadb3;'>Calidad del agua</h1>",
+        "<div style='padding-bottom: 10px; margin-bottom: 20px;'></div>",
         "<p>En <b>¿Qué pasa, Riachuelo?</b> podés visualizar y discutir indicadores de calidad de agua en la cuenca y aportar a los mismos datos sobre la presencia de residuos sólidos en los cursos y otras materias observables (hidrocarburos, algas, cianobacterias, escombros, plásticos flotantes,etc). De esta forma, puede resultar una herramienta pedagógica útil para valorizar al río como un recurso biocultural.<br>QRP permite:</p>",
         "<ul><li>Visibilizar información sobre la calidad de agua en determinados puntos y el riesgo que implica;</li><li>reportar eventos que afectan a la calidad del agua a partir de parámetros observables en los cursos superficiales y sus entornos;</li><li>compartir información para contribuir con distintas estrategias pedagógicas.</li></ul>"
       ]
