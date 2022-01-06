@@ -76,6 +76,8 @@ class FormField extends Component {
       isInitialized: true,
     });
 
+      console.log(this.props)
+
     if (this.props.fieldConfig.type === "lng_lat") {
       this.props.updateMapInteractionState({
         isMapDraggedOrZoomedByUser: false,
