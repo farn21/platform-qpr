@@ -9,11 +9,66 @@
         "code": "en",
         "label": "English"
       }
+    ],
+    "placeFilters": [
+     
+
+      {
+        "placeProperty": "location_type",
+        "operator": "equals",
+        "datasetSlug": "novedades",
+        "value": "novedades-compartidas",
+        "label": "Novedades",
+        "icon": "/static/css/images/markers/marker-observation.png"
+      },
+      {
+        "placeProperty": "location_type",
+        "operator": "equals",
+        "datasetSlug": "quepasa-input",
+        "value": "agua-calidad",
+        "label": "Calidad de agua",
+        "icon": "/static/css/images/markers/marker-observation.png"
+      },
+      {
+        "placeProperty": "location_type",
+        "operator": "equals",
+        "datasetSlug": "quepasa-input",
+        "value": "areas-protegidas-2",
+        "label": "Áreas naturales",
+        "icon": "/static/css/images/markers/marker-observation.png"
+      },
+      {
+        "placeProperty": "location_type",
+        "operator": "equals",
+        "datasetSlug": "novedades",
+        "value": "novedades",
+        "label": "Novedades",
+        "icon": "/static/css/images/markers/marker-observation.png"
+      },
+      {
+        "placeProperty": "location_type",
+        "operator": "equals",
+        "datasetSlug": "quepasa-input",
+        "value": "reporte-territorial",
+        "label": "Relocalizaciones",
+        "icon": "/static/css/images/markers/marker-observation.png"
+      }
     ]
   },
   "datasets": [
     {
       "slug": "quepasa-input",
+      "clientSlug": "site",
+      "anonymous_permissions": [
+        {
+          "abilities": [
+            "create"
+          ],
+          "submission_set": "*"
+        }
+      ]
+    },   {
+      "slug": "novedades-input",
       "clientSlug": "site",
       "anonymous_permissions": [
         {
@@ -468,6 +523,14 @@
         "mapboxFocusedLayers": [
           {
             "id": "quespasa-input-focused",
+            "filter": [
+              "==",
+              [
+                "get",
+                "location_type"
+              ],
+              "featured_place"
+            ],
             "source": "demo",
             "type": "symbol",
             "layout": {
@@ -567,6 +630,43 @@
             }
           }
         ]
+      },
+      {
+        "id": "novedades-input",
+        "datasetSlug": "novedades-input",
+        "interactive": true,
+        "mapboxFocusedLayers": [
+          {
+            "id": "novedades-input-focused",
+            "type": "symbol",
+            "filter": [
+              "==",
+              [
+                "get",
+                "location_type"
+              ],
+              "featured_place"
+            ],
+            "source": "novedades-input",
+            "layout": {
+              "icon-image": "marker-amenaza.png",
+              "icon-size": 1.1,
+              "icon-anchor": "center"
+            }
+          }
+        ],
+        "mapboxLayers": [
+          {
+            "id": "novedades-input",
+            "type": "symbol",
+            "source": "novedades-input",
+            "layout": {
+              "icon-image": "marker-amenaza.png",
+              "icon-size": 0.9,
+              "icon-anchor": "center"
+            }
+          }
+        ]
       }
     ]
   },
@@ -596,7 +696,11 @@
           {
             "layerGroupId": "quepasa-input",
             "title": "Experencias"
-          }
+          },
+          {
+            "layerGroupId": "novedades-input",
+            "title": "Novedades"
+          }          
         ]
       },
       {
@@ -681,6 +785,9 @@
           {
             "layerGroupId": "quepasa-input",
             "title": "Reportes Territoriales"
+          },     {
+            "layerGroupId": "quepasa-input",
+            "title": "Reportes Territoriales"
           },
           {
             "layerGroupId": "quepasa-featured",
@@ -743,7 +850,7 @@
   "place": {
     "adding_supported": true,
     "add_button_label": "Compartir experiencia",
-    "action_text": "creada",
+    "action_text": "creó",
     "anonymous_name": "Alguien",
     "submit_button_label": "Enviar",
     "location_item_name": "reporte",
@@ -788,10 +895,50 @@
         ]
       },
       {
+        "formId": "novedades-input",
+        "category": "novedades",
+        "admin_only": false,
+        "includeOnForm": true, 
+        "includeOnList": true,
+        "showMetadata": true,
+        "suppressAttachments": false,
+        "horizontal_rule": true,
+        "name": "location_type",
+        "datasetSlug": "novedades-input",
+        "icon_url": "/static/css/images/markers/marker-recorrido.svg",
+        "value": "novedades",
+        "label": "Novedades",
+        "fields": [
+          {
+            "name": "lng-lat",
+            "type": "lng_lat"
+          },
+          {
+            "name": "title",
+            "type": "text",
+            "prompt": "Título:",
+            "display_prompt": " ",
+            "placeholder": "Introducir título",
+            "optional": false
+          },
+          {
+            "name": "description",
+            "type": "rich_textarea",
+            "prompt": "Contenido:",
+            "display_prompt": " ",
+            "placeholder": "Escribir texto. Se puede añadir enlaces, fotos o videos."
+          },
+          {
+            "name": "submit",
+            "type": "common_form_element"
+          }
+        ]
+      },
+      {
         "category": "agua-calidad",
         "formId": "agua-calidad",
         "includeOnForm": true,
-        "includeOnList": true,
+        "includeOnList": false,
         "name": "location_type",
         "datasetSlug": "quepasa-input",
         "icon_url": "/static/css/images/markers/marker-agua.svg",
@@ -928,7 +1075,7 @@
           {
             "name": "referencia-cercana",
             "type": "big_radio",
-            "includeOnListItem": true,
+            "includeOnListItem": false,
             "prompt": "Indicá una referencia de un lugar cercano en donde tuvo lugar la situación que estás compartiendo.",
             "display_prompt": "Referencia",
             "optional": true,
@@ -1408,6 +1555,7 @@
           }
         ]
       },
+     
       {
         "category": "areas-protegidas-2",
         "formId": "areas-protegidas-2",
@@ -2357,7 +2505,7 @@
         "category": "reporte-territorial",
         "formId": "reporte-territorial",
         "includeOnForm": true,
-        "includeOnList": true,
+        "includeOnList": false,
         "name": "location_type",
         "datasetSlug": "quepasa-input",
         "icon_url": "/static/css/images/markers/marker-relocalizaciones.svg",
@@ -3260,6 +3408,26 @@
             "type": "big_radio",
             "prompt": "¿Sobre cuál de los siguientes temas vas a comentar? Elegí la temática que se adecua mejor a lo que vas a compartir.",
             "optional": false,
+            "triggers": [
+              {
+                "value": "participacion",
+                "targets": [
+                  "comentario",
+                  "additional_info",
+                  "additional_image",
+                  "relocalizaciones_pdf"
+                ]
+              },
+              {
+                "value": "informacion",
+                "targets": [
+                  "comentario",
+                  "additional_info",
+                  "additional_image",
+                  "relocalizaciones_pdf"
+                ]
+              }
+            ],
             "content": [
               {
                 "label": "Participación en el proceso relocalización/mesas de trabajo",
@@ -3745,6 +3913,13 @@
       "type": "internal_link",
       "url": "/page/calidaddelagua",
       "name": "overview",
+      "start_page": true
+    },
+    {
+      "title": "Ver todo",
+      "type": "internal_link",
+      "url": "/list",
+      "name": "list",
       "start_page": true
     }
   ],

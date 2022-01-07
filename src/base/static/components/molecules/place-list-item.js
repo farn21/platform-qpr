@@ -272,7 +272,7 @@ const PlaceListItem = props => {
                   `comment${numberOfComments === 1 ? "" : "s"}`,
                 )}
               </CommentsText>
-              <PlaceInfoLink
+               <PlaceInfoLink
                 href={`/${props.place.clientSlug}/${props.place.id}`}
               >
                 <SmallText

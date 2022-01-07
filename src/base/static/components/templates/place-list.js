@@ -15,7 +15,7 @@ import {
   placeConfigSelector,
   placeConfigPropType,
 } from "../../state/ducks/place-config";
-import { updateCurrentTemplate } from "../../state/ducks/ui";
+import { uiVisibilitySelector, updateCurrentTemplate } from "../../state/ducks/ui";
 import PlaceListItem from "../molecules/place-list-item";
 import Button from "@material-ui/core/Button";
 import { TextInput } from "../atoms/input";
@@ -283,7 +283,7 @@ PlaceList.propTypes = {
 
 const mapStateToProps = state => ({
   places: filteredPlacesSelector(state),
-  placeConfig: placeConfigSelector(state),
+  placeConfig: placeConfigSelector(state)
 });
 
 const mapDispatchToProps = dispatch => ({
