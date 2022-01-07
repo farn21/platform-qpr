@@ -2392,12 +2392,12 @@
         "multi_stage": [
           {
             "start_field_index": 1,
-            "end_field_index": 94,
+            "end_field_index": 95,
             "header": "Reporte Territorial",
             "description": "",
             "qprFormType": "relocations"
           },{
-            "start_field_index": 95,
+            "start_field_index": 96,
             "end_field_index": 97,
             "header": "Reporte Territorial",
             "description": "",
@@ -3168,8 +3168,8 @@
           },{
               "name": "situacion-relocalizacion-barrio",
               "type": "big_checkbox",
-              "prompt": " ",
-              "optional": false,
+              "prompt": "",
+              "optional": true,
               "triggers": [{
                   "value": "otro-barrio-value",
                   "targets": [
@@ -3916,7 +3916,8 @@
           },{
               "name": "informaron-relocalizacion-no",
               "type": "big_checkbox",
-              "prompt": " ",
+              "prompt": "",
+              "optional": true,
               "triggers": [{
                   "value": "informaron-relocalizacion-no-sucedio",
                   "targets": [
@@ -3979,8 +3980,8 @@
           },{
               "name": "situacion-relocalizacion-barrio-caso",
               "type": "big_checkbox",
-              "prompt": " ",
-              "optional": false,
+              "prompt": "",
+              "optional": true,
               "content": [{
                   "label": "Soy habitante de un barrio donde hubo o habrá personas relocalizadas pero no es mi caso.",
                   "value": "barrio-pero-no-mi-caso"
@@ -3988,8 +3989,8 @@
           },{
               "name": "situacion-relocalizacion-personas-relocalizadas",
               "type": "big_checkbox",
-              "prompt": " ",
-              "optional": false,
+              "prompt": "",
+              "optional": true,
               "content": [{
                   "label": "Soy habitante de un barrio o complejo habitacional al que llegaron personas relocalizadas de otros barrios de la Cuenca del Río Matanza Riachuelo.",
                   "value": "barrio-que-llegaron-personas"
@@ -4001,10 +4002,10 @@
           },{
               "name": "tema_interes_participacion",
               "type": "big_checkbox",
-              "prompt": " ",
+              "prompt": "",
               "display_prompt": "Participacion",
-              "triggers": [
-                  {
+              "optional": true,
+              "triggers": [{
                   "value": "participacion",
                   "targets": [
                       "comentario-participacion",
@@ -4014,12 +4015,10 @@
                       "tema_intereses_declaracion"
                   ]
               }],
-              "content": [
-              {
-                "label": "Participación en el proceso relocalización/mesas de trabajo",
-                "value": "participacion"
-              }
-            ]
+              "content": [{
+                  "label": "Participación en el proceso relocalización/mesas de trabajo",
+                  "value": "participacion"
+              }]
           },{
               "name": "comentario-participacion",
               "type": "text",
@@ -4057,10 +4056,10 @@
           },{
               "name": "tema_interes_informacion",
               "type": "big_checkbox",
-              "prompt": " ",
+              "prompt": "",
               "display_prompt": "Información de relocalización",
-              "triggers": [
-                  {
+              "optional": true,
+              "triggers": [{
                   "value": "informacion",
                   "targets": [
                       "comentario-informacion",
@@ -4070,12 +4069,10 @@
                       "tema_intereses_informacion-declaracion"
                   ]
               }],
-              "content": [
-                  {
+              "content": [{
                   "label": "Información sobre el proceso de relocalización",
                   "value": "informacion"
-                  }
-            ]
+              }]
           },{
               "name": "comentario-informacion",
               "type": "text",
@@ -4115,6 +4112,7 @@
               "type": "big_checkbox",
               "prompt": "",
               "display_prompt": "Salud",
+              "optional": true,
               "triggers": [
                   {
                   "value": "salud",
@@ -4171,6 +4169,7 @@
               "type": "big_checkbox",
               "prompt": "",
               "display_prompt": "Vivienda",
+              "optional": true,
               "triggers": [
                   {
                   "value": "vivienda",
@@ -4227,6 +4226,7 @@
               "type": "big_checkbox",
               "prompt": "",
               "display_prompt": "Habitat",
+              "optional": true,
               "triggers": [
                   {
                   "value": "habitat",
@@ -4283,6 +4283,7 @@
               "type": "big_checkbox",
               "prompt": "",
               "display_prompt": "Conexion",
+              "optional": true,
               "triggers": [
                   {
                   "value": "conexion",
@@ -4339,6 +4340,7 @@
               "type": "big_checkbox",
               "prompt": "",
               "display_prompt": "Económica y laboral",
+              "optional": true,
               "triggers": [
                   {
                   "value": "economica-laboral",
@@ -4398,6 +4400,7 @@
               "type": "big_checkbox",
               "prompt": "",
               "display_prompt": "Educacion",
+              "optional": true,
               "triggers": [
                   {
                   "value": "educacion",
@@ -4458,6 +4461,7 @@
               "type": "big_checkbox",
               "prompt": "",
               "display_prompt": "Relaciones comunitarias y acciones",
+              "optional": true,
               "triggers": [
                   {
                   "value": "relaciones-comunitarias",
@@ -4512,8 +4516,9 @@
           },{
               "name": "tema_interes_otros",
               "type": "big_checkbox",
-              "prompt": " ",
+              "prompt": "",
               "display_prompt": "Otros",
+              "optional": true,
               "triggers": [
                   {
                   "value": "otros",
