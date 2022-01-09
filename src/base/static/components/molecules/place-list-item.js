@@ -259,7 +259,7 @@ const PlaceListItem = props => {
               <RegularText>
                 {props.t(
                   "placeActionText",
-                  `${props.placeConfig.action_text} this`,
+                  `${props.placeConfig.action_text} esta experiencia en`,
                 )}{" "}
                 {placeDetailConfig.label}
               </RegularText>
