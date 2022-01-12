@@ -2392,13 +2392,13 @@
         "multi_stage": [
           {
             "start_field_index": 1,
-            "end_field_index": 95,
+            "end_field_index": 104,
             "header": "Reporte Territorial",
             "description": "",
             "qprFormType": "relocations"
           },{
-            "start_field_index": 96,
-            "end_field_index": 97,
+            "start_field_index": 105,
+            "end_field_index": 106,
             "header": "Reporte Territorial",
             "description": "",
             "qprFormType": "relocations"
@@ -4011,7 +4011,8 @@
                       "comentario-participacion",
                       "additional-info-participacion",
                       "additional-image-participacion",
-                      "relocalizaciones-pdf-participacion",
+                      "additional-pdf-participacion",
+                      "additional-enlace-participacion",
                       "tema_intereses_declaracion"
                   ]
               }],
@@ -4022,31 +4023,40 @@
           },{
               "name": "comentario-participacion",
               "type": "text",
-              "prompt": " ",
+              "prompt": "",
               "placeholder": "Titulo...",
               "display_prompt": "Título",
               "hidden_default": true,
-              "optional": true
+              "optional": false
           },{
               "name": "additional-info-participacion",
-              "type": "rich_textarea",
-              "prompt": " ",
+              "type": "textarea",
+              "prompt": "",
               "display_prompt": "Texto",
               "hidden_default": true,
-              "placeholder": "Adjunte archivos PDF, videos y otra información"
+              "placeholder": "Texto",
+              "optional": false
           },{
               "name": "additional-image-participacion",
               "type": "file",
               "hidden_default": true,
-              "label": "IMAGEN",
+              "label": "Adjuntar archivo de IMAGEN",
               "prompt": " ",
               "optional": true
           },{
-              "name": "relocalizaciones-pdf-participacion",
-              "type": "pdf",
+              "name": "additional-pdf-participacion",
+              "type": "file",
               "hidden_default": true,
+              "label": "Adjuntar archivo PDF",
               "prompt": " ",
-              "label": "Enlace",
+              "optional": true
+          },{
+              "name": "additional-enlace-participacion",
+              "type": "text",
+              "hidden_default": true,
+              "prompt": "",
+              "placeholder": "Enlace",
+              "display_prompt": "Enlace",
               "optional": true
           },{
               "name": "tema_intereses_declaracion",
@@ -4066,6 +4076,7 @@
                       "additional-info-informacion",
                       "additional-image-informacion",
                       "relocalizaciones-pdf-informacion",
+                      "tema-intereses-enlace-informacion",
                       "tema_intereses_informacion-declaracion"
                   ]
               }],
@@ -4080,27 +4091,36 @@
               "placeholder": "Título",
               "display_prompt": "Titulo",
               "hidden_default": true,
-              "optional": true
+              "optional": false
           },{
               "name": "additional-info-informacion",
-              "type": "rich_textarea",
+              "type": "textarea",
               "prompt": " ",
               "display_prompt": "Texto",
               "hidden_default": true,
-              "placeholder": "Adjunte archivos PDF, videos y otra información"
+              "placeholder": "Texto",
+              "optional": false
           },{
               "name": "additional-image-informacion",
               "type": "file",
               "hidden_default": true,
-              "label": "IMAGEN",
+              "label": "Adjuntar archivo de IMAGEN",
               "prompt": " ",
               "optional": true
           },{
               "name": "relocalizaciones-pdf-informacion",
-              "type": "pdf",
+              "type": "file",
               "hidden_default": true,
               "prompt": " ",
-              "label": "Agregar un PDF",
+              "label": "Adjuntar archivo PDF",
+              "optional": true
+          },{
+              "name": "tema-intereses-enlace-informacion",
+              "type": "text",
+              "hidden_default": true,
+              "prompt": "",
+              "placeholder": "Enlace",
+              "display_prompt": "Enlace",
               "optional": true
           },{
               "name": "tema_intereses_informacion-declaracion",
@@ -4120,7 +4140,8 @@
                       "comentario-salud",
                       "additional-info-salud",
                       "additional-image-salud",
-                      "relocalizaciones-pdf-salud",
+                      "additional-pdf-salud",
+                      "additional-enlace-salud",
                       "tema_intereses_salud-declaracion"
                   ]
               }],
@@ -4137,27 +4158,36 @@
               "placeholder": "Título",
               "display_prompt": "Título",
               "hidden_default": true,
-              "optional": true
+              "optional": false
           },{
               "name": "additional-info-salud",
-              "type": "rich_textarea",
+              "type": "textarea",
               "prompt": " ",
               "display_prompt": "Texto",
               "hidden_default": true,
-              "placeholder": "Texto"
+              "placeholder": "Texto",
+              "optional": false
           },{
               "name": "additional-image-salud",
               "type": "file",
               "hidden_default": true,
-              "label": "IMAGEN",
+              "label": "Adjuntar archivo de IMAGEN",
               "prompt": " ",
               "optional": true
           },{
-              "name": "relocalizaciones-pdf-salud",
-              "type": "pdf",
+              "name": "additional-pdf-salud",
+              "type": "file",
               "hidden_default": true,
               "prompt": " ",
-              "label": "Enlace",
+              "label": "Adjuntar archivo PDF",
+              "optional": true
+          },{
+              "name": "additional-enlace-salud",
+              "type": "text",
+              "hidden_default": true,
+              "prompt": "",
+              "placeholder": "Enlace",
+              "display_prompt": "Enlace",
               "optional": true
           },{
               "name": "tema_intereses_salud-declaracion",
@@ -4177,7 +4207,8 @@
                       "comentario-vivienda",
                       "additional-info-vivienda",
                       "additional-image-vivienda",
-                      "relocalizaciones-pdf-vivienda",
+                      "additional-pdf-vivienda",
+                      "additional-enlace-vivienda",
                       "tema_intereses_vivienda-declaracion"
                   ]
               }],
@@ -4194,27 +4225,36 @@
               "placeholder": "Título",
               "display_prompt": "Título",
               "hidden_default": true,
-              "optional": true
+              "optional": false
           },{
               "name": "additional-info-vivienda",
-              "type": "rich_textarea",
+              "type": "textarea",
               "prompt": " ",
               "display_prompt": "Texto",
               "hidden_default": true,
-              "placeholder": "Texto"
+              "placeholder": "Texto",
+              "optional": false
           },{
               "name": "additional-image-vivienda",
               "type": "file",
               "hidden_default": true,
-              "label": "IMAGEN",
+              "label": "Adjuntar archivo de IMAGEN",
               "prompt": " ",
               "optional": true
           },{
-              "name": "relocalizaciones-pdf-vivienda",
-              "type": "pdf",
+              "name": "additional-pdf-vivienda",
+              "type": "file",
+              "hidden_default": true,
+              "prompt": " ",
+              "label": "Adjuntar archivo de PDF",
+              "optional": true
+          },{
+              "name": "additional-enlace-vivienda",
+              "type": "text",
               "hidden_default": true,
               "prompt": "",
-              "label": "Enlace",
+              "placeholder": "Enlace",
+              "display_prompt": "Enlace",
               "optional": true
           },{
               "name": "tema_intereses_vivienda-declaracion",
@@ -4234,7 +4274,8 @@
                       "comentario-habitat",
                       "additional-info-habitat",
                       "additional-image-habitat",
-                      "relocalizaciones-pdf-habitat",
+                      "additional-pdf-habitat",
+                      "additional-enlace-habitat",
                       "tema_intereses_habitat-declaracion"
                   ]
               }],
@@ -4251,27 +4292,36 @@
               "placeholder": "Título",
               "display_prompt": "Título",
               "hidden_default": true,
-              "optional": true
+              "optional": false
           },{
               "name": "additional-info-habitat",
-              "type": "rich_textarea",
+              "type": "textarea",
               "prompt": " ",
               "display_prompt": "Texto",
               "hidden_default": true,
-              "placeholder": "Texto"
+              "placeholder": "Texto",
+              "optional": false
           },{
               "name": "additional-image-habitat",
               "type": "file",
               "hidden_default": true,
-              "label": "Imagen",
+              "label": "Adjuntar archivo de IMAGEN",
               "prompt": " ",
               "optional": true
           },{
-              "name": "relocalizaciones-pdf-habitat",
-              "type": "pdf",
+              "name": "additional-pdf-habitat",
+              "type": "file",
               "hidden_default": true,
-              "prompt": "Comparte un PDF",
+              "prompt": " ",
               "label": "Agregar un PDF",
+              "optional": true
+          },{
+              "name": "additional-enlace-habitat",
+              "type": "text",
+              "hidden_default": true,
+              "prompt": "",
+              "placeholder": "Enlace",
+              "display_prompt": "Enlace",
               "optional": true
           },{
               "name": "tema_intereses_habitat-declaracion",
@@ -4291,7 +4341,8 @@
                       "comentario-conexion",
                       "additional-info-conexion",
                       "additional-image-conexion",
-                      "relocalizaciones-pdf-conexion",
+                      "additional-pdf-conexion",
+                      "additional-enlace-conexion",
                       "tema_intereses_conexion-declaracion"
                   ]
               }],
@@ -4308,27 +4359,36 @@
               "placeholder": "Texto",
               "display_prompt": "Texto",
               "hidden_default": true,
-              "optional": true
+              "optional": false
           },{
               "name": "additional-info-conexion",
-              "type": "rich_textarea",
+              "type": "textarea",
               "prompt": " ",
               "display_prompt": "Texto",
               "hidden_default": true,
-              "placeholder": "Texto"
+              "placeholder": "Texto",
+              "optional": false
           },{
               "name": "additional-image-conexion",
               "type": "file",
               "hidden_default": true,
-              "label": "IMAGEN",
+              "label": "Adjuntar archivo de IMAGEN",
               "prompt": " ",
               "optional": true
           },{
-              "name": "relocalizaciones-pdf-conexion",
-              "type": "pdf",
+              "name": "additional-pdf-conexion",
+              "type": "file",
               "hidden_default": true,
-              "prompt": "Comparte un PDF",
-              "label": "Agregar un PDF",
+              "prompt": " ",
+              "label": "Adjuntar archivo PDF",
+              "optional": true
+          },{
+              "name": "additional-enlace-conexion",
+              "type": "text",
+              "hidden_default": true,
+              "prompt": "",
+              "placeholder": "Enlace",
+              "display_prompt": "Enlace",
               "optional": true
           },{
               "name": "tema_intereses_conexion-declaracion",
@@ -4348,7 +4408,8 @@
                       "comentario-economica-laboral",
                       "additional-info-economica-laboral",
                       "additional-image-economica-laboral",
-                      "relocalizaciones-pdf-economica-laboral",
+                      "additional-pdf-economica-laboral",
+                      "additional-enlace-economica-laboral",
                       "tema_intereses_economica-declaracion"
                   ]
               }],
@@ -4358,37 +4419,43 @@
                 "value": "economica-laboral"
               }
             ]
-          },
-          {
+          },{
               "name": "comentario-economica-laboral",
               "type": "text",
               "prompt": "",
               "placeholder": "Título",
               "display_prompt": "Titulo",
               "hidden_default": true,
-              "optional": true
-          },
-          {
+              "optional": false
+          },{
               "name": "additional-info-economica-laboral",
-              "type": "rich_textarea",
+              "type": "textarea",
               "prompt": "",
               "display_prompt": "Texto",
               "hidden_default": true,
-              "placeholder": "Texto"
-          },
-          {
+              "placeholder": "Texto",
+              "optional": false
+          },{
               "name": "additional-image-economica-laboral",
               "type": "file",
               "hidden_default": true,
-              "label": "IMAGEN",
+              "label": "Adjuntar archivo de IMAGEN",
               "prompt": " ",
               "optional": true
           },{
-              "name": "relocalizaciones-pdf-economica-laboral",
-              "type": "pdf",
+              "name": "additional-pdf-economica-laboral",
+              "type": "file",
               "hidden_default": true,
-              "prompt": "Comparte un PDF",
-              "label": "Agregar un PDF",
+              "prompt": " ",
+              "label": "Adjuntar archivo PDF",
+              "optional": true
+          },{
+              "name": "additional-enlace-economica-laboral",
+              "type": "text",
+              "hidden_default": true,
+              "prompt": "",
+              "placeholder": "Enlace",
+              "display_prompt": "Enlace",
               "optional": true
           },{
               "name": "tema_intereses_economica-declaracion",
@@ -4401,23 +4468,21 @@
               "prompt": "",
               "display_prompt": "Educacion",
               "optional": true,
-              "triggers": [
-                  {
+              "triggers": [{
                   "value": "educacion",
                   "targets": [
                       "comentario-educacion",
                       "additional-info-educacion",
                       "additional-image-educacion",
-                      "relocalizaciones-pdf-educacion",
+                      "additional-pdf-educacion",
+                      "additional-enlace-educacion",
                       "tema_intereses_educacion-declaracion"
                   ]
               }],
-              "content": [
-                  {
+              "content": [{
                   "label": "Educación",
                   "value": "educacion"
-              }
-            ]
+              }]
           },
           {
               "name": "comentario-educacion",
@@ -4430,7 +4495,7 @@
           },
           {
               "name": "additional-info-educacion",
-              "type": "rich_textarea",
+              "type": "textarea",
               "prompt": " ",
               "display_prompt": "Texto",
               "hidden_default": true,
@@ -4440,16 +4505,16 @@
               "name": "additional-image-educacion",
               "type": "file",
               "hidden_default": true,
-              "label": "IMAGEN",
+              "label": "Adjuntar archivo de IMAGEN",
               "prompt": " ",
               "optional": true
           },
           {
-              "name": "relocalizaciones-pdf-educacion",
-              "type": "pdf",
+              "name": "additional-pdf-educacion",
+              "type": "file",
               "hidden_default": true,
-              "prompt": "Comparte un PDF",
-              "label": "Agregar un PDF",
+              "prompt": " ",
+              "label": "Adjuntar archivo PDF",
               "optional": true
           },{
               "name": "tema_intereses_educacion-declaracion",
@@ -4469,7 +4534,8 @@
                       "comentario-relaciones-comunitarias",
                       "additional-info-relaciones-comunitarias",
                       "additional-image-relaciones-comunitarias",
-                      "relocalizaciones-pdf-relaciones-comunitarias",
+                      "additional-pdf-relaciones-comunitarias",
+                      "additional-enlace-relaciones-comunitarias",
                       "tema_intereses_relaciones-declaracion"
                   ]
               }],
@@ -4486,27 +4552,36 @@
               "placeholder": "Título",
               "display_prompt": "Titulo",
               "hidden_default": true,
-              "optional": true
+              "optional": false
           },{
               "name": "additional-info-relaciones-comunitarias",
-              "type": "rich_textarea",
-              "prompt": "Información Adicional",
+              "type": "textarea",
+              "prompt": " ",
               "display_prompt": "Información Adicional",
               "hidden_default": true,
-              "placeholder": "Adjunte archivos PDF, videos y otra información"
+              "placeholder": "Texto",
+              "optional": false
           },{
               "name": "additional-image-relaciones-comunitarias",
               "type": "file",
               "hidden_default": true,
-              "label": "IMAGEN",
+              "label": "Adjuntar archivo en IMAGEN",
               "prompt": " ",
               "optional": true
           },{
-              "name": "relocalizaciones-pdf-relaciones-comunitarias",
-              "type": "pdf",
+              "name": "additional-pdf-relaciones-comunitarias",
+              "type": "file",
               "hidden_default": true,
-              "prompt": "Comparte un PDF",
-              "label": "Agregar un PDF",
+              "prompt": " ",
+              "label": "Adjuntar archivo PDF",
+              "optional": true
+          },{
+              "name": "additional-enlace-relaciones-comunitarias",
+              "type": "text",
+              "hidden_default": true,
+              "prompt": "",
+              "placeholder": "Enlace",
+              "display_prompt": "Enlace",
               "optional": true
           },{
               "name": "tema_intereses_relaciones-declaracion",
@@ -4526,7 +4601,8 @@
                       "comentario-otros",
                       "additional-info-otros",
                       "additional-image-otros",
-                      "relocalizaciones-pdf-otros",
+                      "additional-pdf-otros",
+                      "additional-enlace-otros",
                       "tema_intereses_otros-declaracion"
                   ]
               }],
@@ -4543,27 +4619,36 @@
               "placeholder": "Título",
               "display_prompt": "Titulo",
               "hidden_default": true,
-              "optional": true
+              "optional": false
           },{
               "name": "additional-info-otros",
-              "type": "rich_textarea",
+              "type": "textarea",
               "prompt": " ",
               "display_prompt": "Texto",
               "hidden_default": true,
-              "placeholder": "Texto"
+              "placeholder": "Texto",
+              "optional": false
           },{
               "name": "additional-image-otros",
               "type": "file",
               "hidden_default": true,
-              "label": "IMAGEN",
+              "label": "Adjuntar archivo de IMAGEN",
               "prompt": " ",
               "optional": true
           },{
-              "name": "relocalizaciones-pdf-otros",
-              "type": "pdf",
+              "name": "additional-pdf-otros",
+              "type": "file",
               "hidden_default": true,
-              "prompt": "Comparte un PDF",
-              "label": "Agregar un PDF",
+              "prompt": " ",
+              "label": "Adjuntar archivo PDF",
+              "optional": true
+          },{
+              "name": "additional-enlace-otros",
+              "type": "text",
+              "hidden_default": true,
+              "prompt": "",
+              "placeholder": "Enlace",
+              "display_prompt": "Enlace",
               "optional": true
           },{
               "name": "tema_intereses_otros-declaracion",
