@@ -2392,13 +2392,13 @@
         "multi_stage": [
           {
             "start_field_index": 1,
-            "end_field_index": 104,
+            "end_field_index": 105,
             "header": "Reporte Territorial",
             "description": "",
             "qprFormType": "relocations"
           },{
-            "start_field_index": 105,
-            "end_field_index": 106,
+            "start_field_index": 106,
+            "end_field_index": 107,
             "header": "Reporte Territorial",
             "description": "",
             "qprFormType": "relocations"
@@ -4042,6 +4042,7 @@
               "hidden_default": true,
               "label": "Adjuntar archivo de IMAGEN",
               "prompt": " ",
+              "qprFormType": "relocations",
               "optional": true
           },{
               "name": "additional-pdf-participacion",
@@ -4049,6 +4050,7 @@
               "hidden_default": true,
               "label": "Adjuntar archivo PDF",
               "prompt": " ",
+              "qprFormType": "relocations",
               "optional": true
           },{
               "name": "additional-enlace-participacion",
@@ -4106,6 +4108,7 @@
               "hidden_default": true,
               "label": "Adjuntar archivo de IMAGEN",
               "prompt": " ",
+              "qprFormType": "relocations",
               "optional": true
           },{
               "name": "relocalizaciones-pdf-informacion",
@@ -4113,6 +4116,7 @@
               "hidden_default": true,
               "prompt": " ",
               "label": "Adjuntar archivo PDF",
+              "qprFormType": "relocations",
               "optional": true
           },{
               "name": "tema-intereses-enlace-informacion",
@@ -4173,6 +4177,7 @@
               "hidden_default": true,
               "label": "Adjuntar archivo de IMAGEN",
               "prompt": " ",
+              "qprFormType": "relocations",
               "optional": true
           },{
               "name": "additional-pdf-salud",
@@ -4180,6 +4185,7 @@
               "hidden_default": true,
               "prompt": " ",
               "label": "Adjuntar archivo PDF",
+              "qprFormType": "relocations",
               "optional": true
           },{
               "name": "additional-enlace-salud",
@@ -4239,6 +4245,7 @@
               "type": "file",
               "hidden_default": true,
               "label": "Adjuntar archivo de IMAGEN",
+              "qprFormType": "relocations",
               "prompt": " ",
               "optional": true
           },{
@@ -4247,6 +4254,7 @@
               "hidden_default": true,
               "prompt": " ",
               "label": "Adjuntar archivo de PDF",
+              "qprFormType": "relocations",
               "optional": true
           },{
               "name": "additional-enlace-vivienda",
@@ -4306,6 +4314,7 @@
               "type": "file",
               "hidden_default": true,
               "label": "Adjuntar archivo de IMAGEN",
+              "qprFormType": "relocations",
               "prompt": " ",
               "optional": true
           },{
@@ -4314,6 +4323,7 @@
               "hidden_default": true,
               "prompt": " ",
               "label": "Agregar un PDF",
+              "qprFormType": "relocations",
               "optional": true
           },{
               "name": "additional-enlace-habitat",
@@ -4373,6 +4383,7 @@
               "type": "file",
               "hidden_default": true,
               "label": "Adjuntar archivo de IMAGEN",
+              "qprFormType": "relocations",
               "prompt": " ",
               "optional": true
           },{
@@ -4381,6 +4392,7 @@
               "hidden_default": true,
               "prompt": " ",
               "label": "Adjuntar archivo PDF",
+              "qprFormType": "relocations",
               "optional": true
           },{
               "name": "additional-enlace-conexion",
@@ -4440,6 +4452,7 @@
               "type": "file",
               "hidden_default": true,
               "label": "Adjuntar archivo de IMAGEN",
+              "qprFormType": "relocations",
               "prompt": " ",
               "optional": true
           },{
@@ -4448,6 +4461,7 @@
               "hidden_default": true,
               "prompt": " ",
               "label": "Adjuntar archivo PDF",
+              "qprFormType": "relocations",
               "optional": true
           },{
               "name": "additional-enlace-economica-laboral",
@@ -4506,15 +4520,24 @@
               "type": "file",
               "hidden_default": true,
               "label": "Adjuntar archivo de IMAGEN",
+              "qprFormType": "relocations",
               "prompt": " ",
               "optional": true
-          },
-          {
+          },{
               "name": "additional-pdf-educacion",
               "type": "file",
               "hidden_default": true,
               "prompt": " ",
               "label": "Adjuntar archivo PDF",
+              "qprFormType": "relocations",
+              "optional": true
+          },{
+              "name": "additional-enlace-educacion",
+              "type": "text",
+              "hidden_default": true,
+              "prompt": "",
+              "placeholder": "Enlace",
+              "display_prompt": "Enlace",
               "optional": true
           },{
               "name": "tema_intereses_educacion-declaracion",
@@ -4566,6 +4589,7 @@
               "type": "file",
               "hidden_default": true,
               "label": "Adjuntar archivo en IMAGEN",
+              "qprFormType": "relocations",
               "prompt": " ",
               "optional": true
           },{
@@ -4574,6 +4598,7 @@
               "hidden_default": true,
               "prompt": " ",
               "label": "Adjuntar archivo PDF",
+              "qprFormType": "relocations",
               "optional": true
           },{
               "name": "additional-enlace-relaciones-comunitarias",
@@ -4633,6 +4658,7 @@
               "type": "file",
               "hidden_default": true,
               "label": "Adjuntar archivo de IMAGEN",
+              "qprFormType": "relocations",
               "prompt": " ",
               "optional": true
           },{
@@ -4641,6 +4667,7 @@
               "hidden_default": true,
               "prompt": " ",
               "label": "Adjuntar archivo PDF",
+              "qprFormType": "relocations",
               "optional": true
           },{
               "name": "additional-enlace-otros",
