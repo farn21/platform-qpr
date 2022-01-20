@@ -344,20 +344,25 @@ body {
   .add-news-button {
     height: 32px;
     width: 160px;
-    position: fixed;
-    top: 238px;
+    position: absolute;
+    top: 0px;
     left: 194px;
   }
 }
 
 @media (min-width: 960px) {
   .add-news-button {
-    position: absolute;
-    top: 56px;
+    top: 90px;
     left: 120px;
   }
 }
 /* END ADD NEWS BUTTON STYLES */
+
+/* START NEWS FEED HEADER STYLES */
+.css-axz6ts-ListHeader {
+  height: 100px;
+}
+/* END NEWS FEED HEADER STYLES */
 
 /* START FORMS STYLES */ 
 .form-stage-header-bar__header{
