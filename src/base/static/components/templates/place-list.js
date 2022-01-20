@@ -17,6 +17,7 @@ import {
 } from "../../state/ducks/place-config";
 import { uiVisibilitySelector, updateCurrentTemplate } from "../../state/ducks/ui";
 import PlaceListItem from "../molecules/place-list-item";
+import AddNewsButton from "../molecules/add-news-button";
 import Button from "@material-ui/core/Button";
 import { TextInput } from "../atoms/input";
 
@@ -229,6 +230,7 @@ class PlaceList extends React.Component {
               </Button>
             </SearchContainer>
             <ButtonContainer>
+            <AddNewsButton onClick={() => {this.props.history.push("/new")}}>Cargar novedad</AddNewsButton>
               <SortButton
                 isActive={this.state.sortBy === "dates"}
                 onClick={() => this.setState({ sortBy: "dates" })}

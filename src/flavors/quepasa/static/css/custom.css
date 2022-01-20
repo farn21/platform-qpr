@@ -339,6 +339,26 @@ body {
 }
 /* END ADD PLACE BUTTON STYLES */
 
+/* START ADD NEWS BUTTON STYLES*/
+@media (min-width: 320px) {
+  .add-news-button {
+    height: 32px;
+    width: 160px;
+    position: fixed;
+    top: 238px;
+    left: 194px;
+  }
+}
+
+@media (min-width: 960px) {
+  .add-news-button {
+    position: absolute;
+    top: 56px;
+    left: 120px;
+  }
+}
+/* END ADD NEWS BUTTON STYLES */
+
 /* START FORMS STYLES */ 
 .form-stage-header-bar__header{
   font-family: 'Montserrat';
