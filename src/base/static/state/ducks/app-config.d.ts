@@ -33,7 +33,7 @@ export type PrivacyPolicy = {
 }
 
 export type LoginProvider = {
-  name: "google" | "twitter" | "discourse" | "facebook";
+  name: "google" | "twitter" | "discourse" | "facebook" | "login";
   provider: string; // eg: "discourse-hdk", "google-oauth2",
 };
 

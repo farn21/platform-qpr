@@ -44,6 +44,12 @@
     "meta_description": "Track projects on the Riachuelo River",
     "meta_author": "mapseed.org",
     "api_root": "https://dev-api.mapseed.org/api/v2/",
+    "loginProviders": [
+      {
+        "name": "login",
+        "provider": "django"
+      }
+    ],
     "theme": {
       "brand": {
         "primary": "#455a64",
