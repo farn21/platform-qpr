@@ -24,6 +24,7 @@ export { default as BigToggleField } from "./big-toggle-field";
 export { default as DatetimeField } from "./datetime-field";
 export { default as GeocodingField } from "../../molecules/form-field-types/geocoding-field";
 export { default as InputFormSubmitButton } from "./input-form-submit-button";
+export { default as InputFormSubmitCard } from "./input-form-submit-card";
 export { default as PublishControlToolbar } from "./publish-control-toolbar";
 export { default as RangeSliderWithLabel } from "./range-slider-with-label";
 export { default as RichTextareaField } from "./rich-textarea-field";

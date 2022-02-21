@@ -1,99 +1,108 @@
+/* START FONT IMPORTS */
 /* cyrillic-ext */
 @font-face {
-  font-family: 'Rubik';
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/rubik/v12/iJWKBXyIfDnIV7nMrXyw023e1Ik.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/montserrat/v10/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
   unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 /* cyrillic */
 @font-face {
-  font-family: 'Rubik';
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/rubik/v12/iJWKBXyIfDnIV7nFrXyw023e1Ik.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/montserrat/v10/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* hebrew */
 @font-face {
-  font-family: 'Rubik';
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/rubik/v12/iJWKBXyIfDnIV7nDrXyw023e1Ik.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/montserrat/v10/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
   unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Rubik';
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/rubik/v12/iJWKBXyIfDnIV7nPrXyw023e1Ik.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/montserrat/v10/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Rubik';
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/rubik/v12/iJWKBXyIfDnIV7nBrXyw023e.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/montserrat/v10/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 /* cyrillic-ext */
 @font-face {
-  font-family: 'Rubik';
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/rubik/v12/iJWKBXyIfDnIV7nMrXyw023e1Ik.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/montserrat/v10/IQHow_FEYlDC4Gzy_m8fcoWiMMZ7xLd792ULpGE4W_Y.woff2) format('woff2');
   unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 /* cyrillic */
 @font-face {
-  font-family: 'Rubik';
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/rubik/v12/iJWKBXyIfDnIV7nFrXyw023e1Ik.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/montserrat/v10/IQHow_FEYlDC4Gzy_m8fcoWiMMZ7xLd792ULpGE4W_Y.woff2) format('woff2');
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* hebrew */
 @font-face {
-  font-family: 'Rubik';
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/rubik/v12/iJWKBXyIfDnIV7nDrXyw023e1Ik.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/montserrat/v10/IQHow_FEYlDC4Gzy_m8fcoWiMMZ7xLd792ULpGE4W_Y.woff2) format('woff2');
   unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Rubik';
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/rubik/v12/iJWKBXyIfDnIV7nPrXyw023e1Ik.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/montserrat/v10/IQHow_FEYlDC4Gzy_m8fcoWiMMZ7xLd792ULpGE4W_Y.woff2) format('woff2');
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Rubik';
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/rubik/v12/iJWKBXyIfDnIV7nBrXyw023e.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/montserrat/v10/IQHow_FEYlDC4Gzy_m8fcoWiMMZ7xLd792ULpGE4W_Y.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
+/* END FONT IMPORTS */
 
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* About page */
+
+#mapseed-custom-page-container p, #mapseed-custom-page-container li {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  padding-right: 10px;
+}
+
+/* START ABOUT PAGE STYLES */
 #mapseed-custom-page-container .about-title {
   font-size: 1.5rem;
   line-height: 1.33;
@@ -110,12 +119,32 @@ body {
 #mapseed-custom-page-container .about-text {
   font-size: 1rem;
   line-height: 1.3125;
-  color: #1c313a;
+  color: #aeadb3;
   margin: 0 0 1.3125rem 0;
 }
-/* Header */
+/* END ABOUT PAGE STYLES */
+
+/* START HEADER STYLES */
+@media (min-width: 320px) {
+  .header-logo-container {
+    display: flex;
+    justify-content: center;
+  }
+  .header-logo {
+    margin-right: 0 !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-logo {
+    margin-right: 30px !important;
+  }
+}
+
 .mapseed-site-header {
   box-shadow: none;
+  background-color: #ffffff;
+  border-bottom: 1px solid #aeadb3;
 }
 .mapseed-site-header h2 {
   letter-spacing: -.5px;
@@ -128,11 +157,13 @@ body {
 .mapseed-site-header .mapseed-internal-link {
   text-transform: none;
   font-weight: 400;
-  font-size: 1.125rem;
-  color: #fff;
+  font-size: 0.65rem;
+  color: #aeadb3;
+  text-transform: uppercase;
 }
 .mapseed-site-header .mapseed-internal-link:hover {
-  background-color: #718792;
+  color: #f0a300;
+  background-color: transparent;
 }
 .mapseed-site-header>div .mapseed-internal-link:hover {
   background-color: transparent;
@@ -153,7 +184,7 @@ body {
   background-color: #718792;
 }
 .mapseed-site-header nav[aria-label="navigation header"] {
-  color: #1c313a;
+  color: #000000;
   font-weight: 400;
   font-size: 1rem;
 }
@@ -163,7 +194,7 @@ body {
   border-radius: 4px;
   font-weight: 400;
   font-size: 1rem;
-  color: #1c313a;
+  color: #000000;
 }
 .mapseed-site-header :nth-child(3) nav:hover {
   background-color: #718792;
@@ -174,10 +205,10 @@ body {
   padding: 0.3rem 1rem;
 }
 .mapseed-site-header :nth-child(3) button .MuiTypography-body1 {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .mapseed-site-header :nth-child(3) button:hover {
-  background-color: #1c313a;
+  background-color: #000000;
   color: #fff;
 }
 @media(max-width:960px) {
@@ -214,7 +245,7 @@ body {
     height: 0;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-top: 6px solid #1c313a;
+    border-top: 6px solid #000000;
     position: absolute;
     top: 50%;
     margin-top: -4px;
@@ -237,43 +268,47 @@ body {
   }
   .mapseed-site-header :nth-child(3) nav ul li button{
     background-color: transparent;
-    color: #1c313a;
+    color: #000000;
     margin-right: 0;
   }
   .mapseed-site-header :nth-child(3) nav ul li button:hover{
     background-color: #f2f2f2;
-    color: #1c313a;
+    color: #000000;
   }
 }
-/* Buscador mapa */
-#site-wrap>div>form {
-  box-shadow: 0 2px 3px rgba(0, 0, 0, .3);
-}
-/* #site-wrap>div>form>div input{
-  border-color: #fff;
-} */
-#site-wrap>div>form>div div {
-  background-color: #c63f17;
-  font-family: 'Rubik', sans-serif;
-  box-shadow: none;
-}
-/* Section panel */
+/* END HEADER STYLES */
+
+/* START SECTION PANEL STYLES */
 #site-wrap>div>section {
   padding: 18px;
-  background-color: #ededed;
-  box-shadow: -2px 0 3px rgba(0, 0, 0, .3);
+  background-color: #ffffff;
+  border-left: 1px solid #aeadb3;
 }
 #site-wrap>div>section button[aria-label="close"] {
   border-radius: 0;
-  background-color: #ededed;
+  background-color: transparent;
   right: 12px;
   left: auto;
   box-shadow: none;
-  color: #455a64;
+  color: #aeadb3;
+  margin-bottom: 5px;
 }
 #site-wrap>div>section button[aria-label="close"]:hover {
-  color: #c67c00;
+  color: transparent;
 }
+
+@media (min-width: 320px) {
+  #site-wrap>div>section {
+    padding-bottom: 140px !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  #site-wrap>div>section {
+    padding-bottom: 92px !important;
+  }
+}
+
 @media(max-width:960px) {
   #site-wrap>div>section>div {
     padding: 2rem 8px 8px 8px;
@@ -281,23 +316,48 @@ body {
 }
 @media (min-width: 960px) {
   #site-wrap>div>section {
-    padding: 24px 0 24px 24px;
+    padding: 30px 0 0 5px;
   }
 }
-/* Add button */
+/* END SECTION PANEL STYLES */
+
+/* START ADD PLACE BUTTON STYLES */
 .mapseed-add-place-button-container {
   box-shadow: none;
-  border-radius: 4px;
-  font-weight: 400;
-  font-size: 1.125rem;
+  font-weight: 700;
+  font-size: 0.75rem;
   border: none;
-}
-@media (max-width: 960px) {
-  .mapseed-add-place-button-container {
-    border-radius: 0;
+  border-radius: 20px !important;
+  background-color: #f0a300;
+  padding: 8px 16px;
+} 
+@media (min-width: 960px) {
+  .css-1extdu3-Button-AddPlaceButtonContainer {
+    top: 78px !important;
+    left: 60px !important;
   }
 }
-/* Forms reportes - Customozables desde theme varaibles.scss si tuvieramos uno propio */ 
+/* END ADD PLACE BUTTON STYLES */
+
+/* START FORMS STYLES */ 
+.form-stage-header-bar__header{
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  color: #a1cde7;
+  margin: 0;
+}
+
+#site-wrap>div>section #mapseed-input-form {
+  margin-top: 2rem;
+}
+
+.input-form__optional-msg {
+  color: #aeadb3 !important;
+  font-size: 11px !important;
+  font-weight: 400 !important;
+  }
+
+/* Form category buttons */
 .input-form-category-button {
   height: 48px !important;
   background-color: transparent !important;
@@ -323,15 +383,20 @@ body {
 }
 .input-form-category-button label span:nth-child(2) {
   padding-left: 0;
-  color: #1c313a;
+  color: #000000;
 }
-#site-wrap>div>section #mapseed-input-form {
-  margin-top: 2rem;
+/* --- */
+
+/* Data field type generic styles */
+div[data-field-type="geocoding"]{
+  padding-left: 0 !important;
 }
+
 div[data-field-type="text"], 
 div[data-field-type="informational_html"], 
 div[data-field-type="dropdown_autocomplete"],
 div[data-field-type="big_radio"],
+div[data-field-type="big_checkbox"],
 div[data-field-type="textarea"],
 div[data-field-type="rich_textarea"],
 div[data-field-type="file"],
@@ -340,60 +405,150 @@ div[data-field-type="datetime"],
 div[data-field-type="dropdown"] {
   padding: 0;
   margin-bottom: 1.5rem;
-  border: none;
+  border: none !important;
 }
+
+div[data-field-type="informational_html"]{
+font-size: 14px;
+}
+
+div[data-field-type="big_radio"]{
+display: flex;
+flex-direction: column;
+}
+
+div[data-field-type="big_checkbox"]{
+  display: flex;
+  flex-direction: column;
+}
+
 div[data-field-type="submit"]{
   padding-top: 1rem;
   border-top: 1px solid #ccc;
   text-align: center;
 }
+
 div[data-field-type="informational_html"][data-field-name*="intro-"] p {
   color: #718792;
   border-top: 1px solid;
   padding-top: 1rem;
 }
+
+[data-field-type="big_toggle"] {
+  padding: 0;
+  margin: 0;
+}
+/* --- */
+
+/* Geocoding field styles */
+[class*="TextInput-GeocodingField"] {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #aeadb3;
+  width: 100%;
+  font-size: 12px;
+  color: #999;
+}
+
+.TextInput-GeocodingField:hover{
+  border: none;
+  outline: none;
+} 
+
+.TextInput-GeocodingField:active{
+  border: none;
+  outline: none;
+}
+
+.TextInput-GeocodingField:focus{
+  border: none;
+  outline: none;
+}
+/* --- */
+
+.input-container{
+display: 'flex';
+align-items: center;
+}
+
+/* Radio input styles */
+.big-radio-field {
+display: block !important;
+}
+
+.big-radio-field__label:before{
+background-color: #ffffff!important;
+border: 1px solid #000000 !important;
+border-radius: 50% !important;
+height: 16px !important;
+width: 16px !important;
+margin-top: 7px !important;
+}
+
+.big-radio-field__label--toggled{
+border: none !important;
+}
+
+.big-radio-field__label--toggled:before{
+color: transparent !important;
+border: none !important;
+}
+
+.big-radio-field__label {
+  border: none !important;
+  font-size: 14px ​!important;
+  color: #000000 !important;
+  padding: 8px 10px 8px 24px !important;
+  display: block !important;
+  line-height: 1rem !important;
+}
+
+.big-radio-field__label--toggled:before {
+  background-color: #000000 !important;
+}
+/* --- */
+
+/* Text styles */
+[class*="RegularText-FormField"] {
+  font-size: 14px !important;
+  font-weight: 700;
+}
+
 .input-form__field-prompt-container span {
   font-size: 1rem;
-  color: #1c313a;
+  color: #000000;
 }
+
 .input-form__field-prompt-container span span {
   font-size: 0.75em;
 }
-.autocomplete__input {
-  border: 1px solid #ccc !important;
-  border-radius: 4px !important;
-  padding: .6875rem !important;
-}
+/* --- */
+
+/* Checkbox styles */
 .big-checkbox-field__label {
-  font-size: 1rem !important;
-  line-height: 1.3 !important;
-  padding-left: 50px !important;
-  border: 1px solid #ccc !important;
-  color: #999 !important;
+  border: none !important;
+  font-size: 14px ​!important;
+  line-height: 1rem !important;
+  color: #000000 !important;
+  padding: 8px 10px 8px 24px !important;
+  border-radius: 0 !important;
+  display: block !important;
 }
 .big-checkbox-field__label:before {
-  background-color: #ccc !important;
-}
-.big-checkbox-field__label--toggled {
-  border: 1px solid #ffab00 !important;
-  color: #1c313a !important;
+  background-color: #ffffff!important;
+  border: 1px solid #000000 !important;
+  height: 16px !important;
+  width: 16px !important;
+  margin-top: 6px !important;
 }
 .big-checkbox-field__label--toggled:before {
-  background-color: #ffab00 !important;
+  background-color: #000000 !important;
 }
-.big-radio-field__label {
-  font-size: 1rem !important;
-  line-height: 1.3rem !important;
-  color: #999 !important;
-  padding: 8px 10px 8px 50px !important;
-}
-.big-radio-field__label--toggled {
-  border: 2px solid #ffab00 !important;
-  color: #1c313a !important;
-}
-.big-radio-field__label--toggled:before {
-  background-color: #ffab00 !important;
-}
+/* --- */
+
+/* Toggle styles */
 .big-toggle-field {
   margin-bottom: .5rem;
 }
@@ -405,86 +560,227 @@ div[data-field-type="informational_html"][data-field-name*="intro-"] p {
 }
 .big-toggle-field__label--toggled {
   border: 2px solid #ffab00 !important;
-  color: #1c313a !important;
+  color: #000000 !important;
 }
 .big-toggle-field__label--toggled:before {
   background-color: #ffab00 !important;
 }
-[data-field-type="big_toggle"] {
-  padding: 0;
-  margin: 0;
-}
-.text-field {
-  border: 1px solid #ccc !important;
-  border-radius: 4px !important;
-  padding: 0.6875rem !important;
-}
-.textarea-field {
-  border: 1px solid #ccc !important;
-  border-radius: 4px !important;
-  padding: 0.6875rem !important;
-}
-.ql-toolbar.ql-snow {
-  border-top: none !important;
-  border-right: none !important;
-  border-left: none !important;
-}
-.ql-toolbar.ql-snow + .ql-container.ql-snow {
-  border: none !important;
-}
+/* --- */
+
+/* Add attachment button styles */
 .add-attachment-button__file-field-label {
-  color: #455a64 !important;
+  color: #ffffff !important;
   padding: 0.5rem 1rem !important;
-  background-color: transparent !important;
-  border: 1px solid #718792 !important;
+  border: 1px solid #a1cde7 !important;
   box-shadow: none !important;
-  border-radius: 4px !important;
+  height: 40px;
+  box-sizing: border-box !important;
+  border-radius: 20px !important;
   font-size: 0.875em !important;
+  text-align: center !important;
+  font-weight: 700;
+  line-height: 1.5em !important;
 }
 .add-attachment-button__file-field-label:hover {
   background-color: #c8ced2 !important;
+  border-color: #c8ced2 !important;
 }
-div[data-field-type="submit"] button {
-  color: #fff;
-  background-color: #ffab00;
-  padding: 0.6875rem 1rem;
-  font-weight: 400;
-  border: none;
-  border-radius: 4px;
-  box-shadow: none;
-  width: 100%;
-}
-div[data-field-type="submit"] button:hover {
-  background-color: #c67c00;
-}
+/* --- */
+
 #mapseed-input-form h4 {
   font-size: 1.125rem;
   line-height: 1.3;
   font-weight: 400;
   margin: 0;
-  color: #1c313a;
-}
-.datetime-field__input {
-  border-radius: 4px;
-  border-width: 1px;
-  border-color: #ccc;
-}
-.dropdown-field {
-  border: 1px solid #ccc !important;
-  padding: 0.5em 0.5em 0.5em 0.5em !important;
-  border-radius: 4px;
-  color: #1c313a;
+  color: #000000;
 }
 
-/* Left sidebar */
+/* Input styles */
+.text-field {
+  border: 1px solid #ccc !important;
+  padding: 0.6875rem !important;
+}
+
+.text-field:active {
+  outline: none;
+}
+
+.text-field:focus-visible {
+  outline: none;
+}
+
+.datetime-field__input, .text-field, .textarea-field {
+  padding-left: 1em !important;
+  border-radius: 20px !important;
+  border-width: 1px !important;
+  border-color: #a1cde7 !important;
+  font-size: 14px !important;
+}
+
+.datetime-field__input:focus-visible {
+  outline: 0 !important;
+}
+
+.textarea-field {
+  resize: none !important;
+}
+
+.textarea-field:focus-visible {
+  outline: 0 !important;
+}
+
+.datetime-field__input, .text-field {
+height: 40px !important;
+}
+/* --- */
+
+/* Dropdown styles */
+.dropdown-field {
+  border: none !important;
+  border-radius: 18px !important;
+  color: #ffffff;
+  background-color: #a2ba91;
+  font-size: 14px !important;
+  height: 40px !important;
+  padding: 8px 16px !important;
+}
+
+.dropdown-field:focus-visible {
+  outline: 0 !important;
+}
+
+.dropdown-field option {
+  background-color: #D0DCC7;
+  color: #000000;
+  -webkit-appearance: none !important;
+}
+
+option:hover {
+  background-color: #a2ba91 !important;
+}
+
+.dropdown-field:focus-within{
+  border-radius: none !important;
+  border-top-left-radius: 18px !important;
+  border-top-right-radius: 18px !important;
+}
+
+#autocomplete-municipio, #autocomplete-ciudad-de-buenos-aires-barrios{
+  border: none !important;
+  border-top-left-radius: 16px !important;
+  border-top-right-radius: 16px !important;
+  color: #000000 !important;
+  background-color: #efcc5a;
+  font-size: 14px !important;
+  height: 40px !important;
+  padding: 8px 16px !important;
+}
+
+#autocomplete-municipio:focus-visible {
+  outline: 0 !important;
+}
+
+#autocomplete-ciudad-de-buenos-aires-barrios:focus-visible {
+  outline: 0 !important;
+}
+
+.autocomplete__menu {
+  background-color: #F7E5AC !important;
+  color: #000000 !important;
+  outline: 0 !important;
+  border: none !important;
+  font-size: 14px !important;
+  border-bottom-left-radius: 16px !important;
+  border-bottom-right-radius: 16px !important;
+  width: 100% !important;
+  padding: 4px 16px !important;
+  box-sizing: border-box !important;
+}
+
+.autocomplete__option {
+  background-color: #F7E5AC !important;
+  color: #000000 !important;
+  border: none !important;
+}
+/* --- */
+/* END FORM STYLES */
+
+/* START FORM STAGE CONTROL BAR STYLES */
+.css-w1p6qw-RegularText{
+  font-size: 14px !important;
+  font-weight: 700;
+}
+
+.css-1cwt1ry-FormStageControlBar, .css-12t4dd3-FormStageControlBar {
+  border-top: 1px solid #aeadb3;
+  box-shadow: none !important;
+  margin-top: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  padding-top: 25px !important;
+  padding-bottom: 25px !important;
+  padding-left: 15px !important;
+}
+
+.css-12t4dd3-FormStageControlBar {
+  width: 200px !important;
+  border-left: 1px solid #aeadb3 !important;
+}
+
+@media (min-width: 320px) {
+  .css-12t4dd3-FormStageControlBar {
+    height: 130px !important;
+    width: 100% !important;
+  }
+}
+
+/*Continue button*/  
+.form-orange-button{
+  border-radius: 20px !important;
+  background-color: #f0a300;
+  margin-left: 35px !important;
+  margin-right: 35px !important;
+  padding: 8px 16px;
+  }
+
+/*Go back button*/  
+.css-1unahh2-Button{
+  border-radius: 20px !important;
+  padding: 8px 16px !important;
+}
+/* END FORM STAGE CONTROL BAR STYLES */
+
+/*START SUBMIT PANEL STYLES*/
+.input-form-submit-card{
+  width: 300px;
+  height: 130px;
+  border: 1px solid #a1cde7;
+  border-radius: 20px;
+  padding: 15px;
+  font-size: 14px !important;
+  margin: auto !important;
+ }
+ 
+ .css-13sk7ex-Button-InputFormSubmitCard {
+   border-radius: 20px !important;
+   background-color: #a1cde7 !important;
+   padding: 8px 16px !important;
+   font-size: 14px !important;
+   font-weight: 700 !important;
+   width: 75% !important;
+   box-shadow: none !important;
+ }
+ /*END SUBMIT PANEL STYLES*/
+
+/* START LEFT SIDEBAR STYLES */
 .mapseed-left-sidebar {
-  background-color: #ededed;
+  background-color: #ffffff;
 }
 .mapseed-left-sidebar>div {
   padding: 1.5rem;
 }
 .mapseed-left-sidebar h3 {
-  color: #1c313a;
+  color: #000000;
   font-size: 1.3125rem;
   font-weight: 700;
   margin: 0 0 1rem 0;
@@ -506,7 +802,7 @@ div[data-field-type="submit"] button:hover {
   font-size: .875rem;
   display: inline-block;
   padding: .5rem .5rem .5rem 0;
-  color: #1c313a;
+  color: #000000;
  }
  .mapseed-map-layer-selector-container span span:last-child{
   margin: 0;
@@ -519,7 +815,7 @@ div[data-field-type="submit"] button:hover {
   right: 10px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  background-color: #ededed;
+  background-color: #ffffff;
   color: #455a64;
   box-shadow: none;
 }
@@ -531,13 +827,24 @@ div[data-field-type="submit"] button:hover {
     font-size: 18px;
   }
 }
-/* Reportes */
+
+.ql-toolbar.ql-snow {
+  border-top: none !important;
+  border-right: none !important;
+  border-left: none !important;
+}
+.ql-toolbar.ql-snow + .ql-container.ql-snow {
+  border: none !important;
+}
+
+/* END LEFT SIDEBAR STYLES */
+
+/* START REPORTS STYLES */
 #site-wrap>div>section>div>div {
-  color: #1c313a;
+  color: #000000;
 }
 #site-wrap>div>section>div:first-of-type>div:first-of-type>div:first-of-type {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #aeadb3;
 }
 #site-wrap>div>section>div:first-of-type>div:first-of-type>div:first-of-type.input-form-category-button {
   border-bottom: none;
@@ -605,3 +912,68 @@ div[class*=-RichTextareaFieldResponseWrapper] {
 .mapboxgl-ctrl-compass {
   display: none !important;
 }
+/* --- */
+/* END REPORTS STYLES */
+
+/* START PRIVACY POLICY STYLES */
+@media (min-width: 320px) {
+  .css-wg8uo8-App {
+    top: auto !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    padding: 1.2em 2.5em !important;
+    }
+}
+
+@media (min-width: 1024px) {
+  .css-wg8uo8-App {
+    top: 20% !important;
+    left: 20% !important;
+    right: 20% !important;
+    bottom: auto !important;
+    }
+  .css-wg8uo8-App:focus{
+  outline: none !important;
+  }
+}
+
+/* END PRIVACY POLICY STYLES */
+
+/* START DYNAMIC COLOR CLASSES */
+.text-color-water{
+  color: #a1cde7 !important;
+}
+
+.text-color-relocations{
+  color: #efcc5a !important;
+}
+
+.text-color-protected-area{
+  color: #a2ba91 !important;
+}
+
+.border-color-water{
+  border-color: #a1cde7  !important;
+}
+
+.border-color-relocations{
+  border-color: #efcc5a  !important;
+}
+
+.border-color-protected-area{
+  border-color: #a2ba91 !important;
+}
+
+.background-color-water{
+  background-color: #a1cde7  !important;
+}
+
+.background-color-relocations{
+  background-color: #efcc5a  !important;
+}
+
+.background-color-protected-area{
+  background-color: #a2ba91 !important;
+}
+/* END DYNAMIC COLOR CLASSES */

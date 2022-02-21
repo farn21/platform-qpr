@@ -102,12 +102,12 @@ const OptionSelector: React.FunctionComponent<MapLayerSelectorProps> = props => 
         <span
           css={theme => ({
             flex: 6,
-            backgroundColor: props.isLayerGroupVisible ? "#ffff00" : "initial",
+            backgroundColor: props.isLayerGroupVisible ? "#f0a300" : "initial",
             fontFamily: theme.text.bodyFontFamily,
 
             "&:hover": {
               backgroundColor: props.isLayerGroupVisible
-                ? "#ffff00"
+                ? "#f0a300"
                 : "#ffffd4",
             },
           })}
