@@ -5,11 +5,16 @@ import PropTypes from "prop-types";
 import "moment-timezone";
 import { withRouter, RouteComponentProps } from "react-router-dom";
 import { connect } from "react-redux";
-
+import FormField from "../form-fields/form-field";
+import config from "config";
 import { Button } from "../atoms/buttons";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import { datasetPlacesSelector } from "../../state/ducks/places";
+import mapseedApiClient from "../../client/mapseed-api-client";
+import { Map, OrderedMap } from "immutable";
+import { RegularText } from "../atoms/typography";
+
 import {
   datasetsConfigPropType,
   datasetsConfigSelector,
@@ -26,7 +31,7 @@ import {
   FormFieldsConfig,
 } from "../../state/ducks/forms-config";
 import { hasAdminAbilities } from "../../state/ducks/user";
-import { RegularTitle, SmallText, ExternalLink } from "../atoms/typography";
+import { RegularTitle, SmallText, ExternalLink, TinyTitle } from "../atoms/typography";
 import { FontAwesomeIcon } from "../atoms/imagery";
 import ChartWrapper from "../organisms/dashboard/chart-wrapper";
 
@@ -42,6 +47,9 @@ type StateProps = {
   datasetsConfig: PropTypes.InferProps<typeof datasetsConfigPropType>;
 };
 
+const HEADER_HEIGHT = "56px";
+
+
 type OwnProps = {
   apiRoot: string;
 };
@@ -56,6 +64,8 @@ interface State {
 class Dashboard extends React.Component<Props, State> {
   allowedDashboardConfigs;
   state: State = {
+    fieldUsername: new OrderedMap(),
+    fieldPassword: new OrderedMap(),
     anchorEl: null,
     dashboard: null,
   };
@@ -90,6 +100,13 @@ class Dashboard extends React.Component<Props, State> {
       dashboard: newDashboardConfig,
     });
   };
+
+  onCreateUser = (event) => {
+    var f = document.querySelector("#userNewForm")
+    var formData = new FormData(f)
+    mapseedApiClient.user.create(config.app.api_root, formData)
+    event.preventDefault();
+  }
 
   render() {
     const dataset =
@@ -244,6 +261,76 @@ class Dashboard extends React.Component<Props, State> {
               )}
             />
           ))}
+          <div
+            ref="asdasd"
+            css={css`
+              background-color: #fff;
+              margin: 8px;
+              border-radius: 4px;
+              box-sizing: border-box;
+              box-shadow: 0 2px 3px hsla(0, 0%, 0%, 0.3),
+                0 3px 5px hsla(0, 0%, 0%, 0.1);
+            `}
+          >
+          <div
+          css={css`
+            height: ${HEADER_HEIGHT};
+            max-height: ${HEADER_HEIGHT};
+            color: #777;
+            font-weight: 900;
+            border-top-right-radius: 4px;
+            border-top-left-radius: 4px;
+            background-color: #f5f5f5;
+            padding: 8px 16px 8px 16px;
+            box-sizing: border-box;
+          `}
+        >
+        <FontAwesomeIcon
+        color="#777"
+        hoverColor="#777"
+        faClassname=""
+      />
+      <TinyTitle
+        css={css`
+          margin: 0 0 0 12px;
+          display: inline-block;
+        `}
+      >
+      Creación de Usuarios
+      </TinyTitle>
+    </div>
+    <div
+    css={css`
+      width: 100%;
+      height: calc(100% - ${HEADER_HEIGHT});
+    `}
+  >
+  <div
+  key="asdasd"
+  css={css`
+    margin-top: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  `}
+>
+            <form id="userNewForm" onSubmit={this.onCreateUser} css={css`margin-bottom: 50px; width: 500px;`} className="place-form" >
+              <FormField formId="userNewForm" fieldState={this.state.fieldUsername} fieldConfig={{placeholder: "Usuario", display_prompt: "Usuario", name:"username", type: "text", prompt: "Usuario"}} onFieldChange={()=>{}} showValidityStatus={true} >
+              </FormField>
+              <FormField formId="userNewForm" fieldState={this.state.fieldPassword} fieldConfig={{placeholder: "Contraseña", display_prompt: "Contraseña", name:"password1", type: "text", prompt: "Contraseña"}} onFieldChange={()=>{}} showValidityStatus={true} >
+              </FormField>
+              <Button  variant="flat"
+              onClick={this.onCreateUser}
+              color="primary"
+              size="regular" >
+              <RegularText>{"Crear"}</RegularText>
+              </Button>
+            </form>
+          </div>
+        </div>
+          </div>
         </div>
       </div>
     ) : null;
