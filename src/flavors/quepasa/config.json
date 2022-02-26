@@ -1738,6 +1738,1391 @@
             "qprFormType": "protected-area"
           }
         ]
+      },
+      {
+        "category": "agua-calidad",
+        "formId": "agua-calidad",
+        "includeOnForm": true,
+        "name": "location_type",
+        "datasetSlug": "calidad-input",
+        "icon_url": "/static/css/images/markers/marker-agua.svg",
+        "value": "agua-calidad-open",
+        "label": "Calidad del agua",
+        "geospatialAnalysis": [
+          {
+            "name": "subbasin_name",
+            "type": "pointInPolygon",
+            "analysisTarget": "riachuelo-subbasins.geojson",
+            "propertiesToPluck": [
+              {
+                "name": "NOMBRE"
+              }
+            ]
+          }
+        ],
+        "visibleLayerGroupIds": [
+          "riachuelo-subbasins"
+        ],
+        "multi_stage": [
+          {
+            "start_field_index": 1,
+            "end_field_index": 28,
+            "header": "Calidad del agua",
+            "description": "",
+            "qprFormType": "water"
+          },
+          {
+            "start_field_index": 29,
+            "end_field_index": 32,
+            "header": "Calidad del agua",
+            "description": "",
+            "qprFormType": "water"
+          }
+        ],
+        "fields": [
+          {
+            "name": "lng-lat",
+            "type": "lng_lat"
+          },
+          {
+            "name": "intro-calidad-agua",
+            "type": "informational_html",
+            "content": "<span><b>Compartí una experiencia o una situación vinculada a la calidad del agua en la cuenca Matanza-Riachuelo. ¿Tenés dudas? Consultá la guía de campo.</b></span>"
+          },
+          {
+            "name": "municipio-calidad",
+            "type": "dropdown",
+            "includeOnListItem": true,
+            "prompt": "¿En qué municipio tiene lugar esta experiencia? Elegí una de estas opciones:",
+            "display_prompt": "Municipio",
+            "placeholder": "Elegí el municipio...",
+            "optional": false,
+            "content": [
+              {
+                "label": "Ciudad de Buenos Aires",
+                "value": "ciudad-de-buenos-aires"
+              },
+              {
+                "label": "Almirante Brown",
+                "value": "almirante-brown"
+              },
+              {
+                "label": "Avellaneda",
+                "value": "avellaneda"
+              },
+              {
+                "label": "Cañuelas",
+                "value": "canuelas"
+              },
+              {
+                "label": "Esteban Echeverría",
+                "value": "esteban-echeverria"
+              },
+              {
+                "label": "Ezeiza",
+                "value": "ezeiza"
+              },
+              {
+                "label": "La Matanza",
+                "value": "la-matanza"
+              },
+              {
+                "label": "Lanús",
+                "value": "lanus"
+              },
+              {
+                "label": "Las Heras",
+                "value": "las-heras"
+              },
+              {
+                "label": "Lomas de Zamora",
+                "value": "lomas-de-zamora"
+              },
+              {
+                "label": "Marcos Paz",
+                "value": "marcos-paz"
+              },
+              {
+                "label": "Merlo",
+                "value": "merlo"
+              },
+              {
+                "label": "Presidente Juan D. Perón",
+                "value": "presidente-juan-d-peron"
+              },
+              {
+                "label": "San Vicente",
+                "value": "san-vicente"
+              }
+            ]
+          },
+          {
+            "name": "address-calidad-open",
+            "type": "geocoding",
+            "prompt": "Arrastrá el mapa para ubicar tu experiencia. ",
+            "display_prompt": "",
+            "placeholder": "Requerido",
+            "optional": false,
+            "qprFormType": "water"
+          },
+          {
+            "name": "datetime_field-calidad",
+            "type": "datetime",
+            "prompt": "Ingresá la fecha de la situación que estás compartiendo. Se trata de la fecha del día en la que registraste la situación vinculada a la calidad de agua.",
+            "display_prompt": "Fecha",
+            "placeholder": "Seleccioná una fecha",
+            "optional": false,
+            "qprFormType": "water"
+          },
+          {
+            "name": "report-time-calidad",
+            "type": "text",
+            "prompt": "Ingresá la hora de la situación que estás compartiendo. Se trata de la hora del día en la que registraste la situación vinculada a la calidad de agua.",
+            "display_prompt": "Hora",
+            "placeholder": "Seleccioná una hora",
+            "optional": false,
+            "qprFormType": "water"
+          },
+          {
+            "name": "cuerpo-agua",
+            "type": "big_radio",
+            "prompt": "¿En qué cuerpo de agua registraste la situación que estás compartiendo? Elegí una de estas opciones:",
+            "display_prompt": "Cuerpo de agua",
+            "optional": false,
+            "content": [
+              {
+                "label": "río",
+                "value": "rio"
+              },
+              {
+                "label": "arroyo",
+                "value": "arroyo"
+              },
+              {
+                "label": "canal",
+                "value": "canal"
+              },
+              {
+                "label": "otro",
+                "value": "otro"
+              }
+            ]
+          },
+          {
+            "name": "entorno-cuerpo-agua",
+            "type": "big_radio",
+            "prompt": "¿En qué entorno se encuentra este cuerpo de agua? Elegí una de estas opciones:",
+            "display_prompt": "Entorno",
+            "optional": false,
+            "content": [
+              {
+                "label": "rural",
+                "value": "rural"
+              },
+              {
+                "label": "urbano",
+                "value": "urbano"
+              },
+              {
+                "label": "No sé.",
+                "value": "no-se"
+              }
+            ]
+          },
+          {
+            "name": "info-2-calidad",
+            "type": "informational_html",
+            "content": "<b>Ahora vamos a ingresar información sobre algunos aspectos del cuerpo de agua sobre el que estás compartiendo que pueden ser importantes para registrar la calidad del agua.</b>"
+          },
+          {
+            "name": "referencia-cercana-calidad",
+            "type": "big_radio",
+            "includeOnListItem": true,
+            "prompt": "Indicá una referencia de un lugar cercano en donde tuvo lugar la situación que estás compartiendo. Elegí una de estas opciones:",
+            "display_prompt": "Referencia",
+            "optional": true,
+            "content": [
+              {
+                "label": "puente",
+                "value": "puente"
+              },
+              {
+                "label": "pasarela",
+                "value": "pasarela"
+              },
+              {
+                "label": "baranda",
+                "value": "baranda"
+              },
+              {
+                "label": "escala",
+                "value": "escala"
+              },
+              {
+                "label": "otro",
+                "value": "otro"
+              }
+            ]
+          },
+          {
+            "name": "estado-agua-registro ",
+            "type": "big_radio",
+            "includeOnListItem": true,
+            "prompt": "¿Cuál es el estado del agua en el lugar y el momento del registro? Elegí una de estas opciones:",
+            "display_prompt": "Estado del agua",
+            "optional": true,
+            "content": [
+              {
+                "label": "agua clara",
+                "value": "estado-agua-clara"
+              },
+              {
+                "label": "poco clara",
+                "value": "estado-poco-clara"
+              },
+              {
+                "label": "turbia",
+                "value": "estado-turbia"
+              },
+              {
+                "label": "muy turbia",
+                "value": "estado-muy-turbia"
+              },
+              {
+                "label": "otro",
+                "value": "estado-otro"
+              }
+            ]
+          },
+          {
+            "name": "estado-color-agua",
+            "type": "big_radio",
+            "includeOnListItem": true,
+            "prompt": "¿Cuál es el color del agua en el lugar y el momento del registro? Elegí una de estas opciones:",
+            "display_prompt": "Color del agua",
+            "optional": true,
+            "content": [
+              {
+                "label": "transparente",
+                "value": "transparente"
+              },
+              {
+                "label": "verde",
+                "value": "verde"
+              },
+              {
+                "label": "marrón",
+                "value": "marron"
+              },
+              {
+                "label": "gris",
+                "value": "gris"
+              },
+              {
+                "label": "negro",
+                "value": "negro"
+              },
+              {
+                "label": "rojo",
+                "value": "rojo"
+              },
+              {
+                "label": "otro",
+                "value": "otro"
+              }
+            ]
+          },
+          {
+            "name": "estado-olores-agua",
+            "type": "big_radio",
+            "prompt": "¿Se percibían olores del agua en el lugar y el momento del registro?",
+            "display_prompt": "Olores",
+            "optional": true,
+            "content": [
+              {
+                "label": "Sí.",
+                "value": "si"
+              },
+              {
+                "label": "No.",
+                "value": "no"
+              },
+              {
+                "label": "No sé.",
+                "value": "no_se"
+              }
+            ]
+          },
+          {
+            "name": "estado-materiales-flotantes",
+            "type": "big_radio",
+            "prompt": "¿Observaste materiales flotantes en la superficie del curso del agua?",
+            "display_prompt": "Materiales flotantes",
+            "optional": false,
+            "triggers": [
+              {
+                "value": "si_estado",
+                "targets": [
+                  "estado-materiales-cuales"
+                ]
+              }
+            ],
+            "content": [
+              {
+                "label": "Sí.",
+                "value": "si_estado"
+              },
+              {
+                "label": "No.",
+                "value": "no"
+              },
+              {
+                "label": "No sé.",
+                "value": "no_se"
+              }
+            ]
+          },
+          {
+            "name": "estado-materiales-cuales",
+            "type": "big_checkbox",
+            "hidden_default": true,
+            "prompt": "¿Cuáles? Elegí una o más de estas opciones:",
+            "display_prompt": "Materiales flotantes",
+            "optional": true,
+            "content": [
+              {
+                "label": "plásticos",
+                "value": "plasticos"
+              },
+              {
+                "label": "restos de vegetación",
+                "value": "restos-vegetacion"
+              },
+              {
+                "label": "pañales",
+                "value": "panales"
+              },
+              {
+                "label": "madera",
+                "value": "madera"
+              },
+              {
+                "label": "calzado y textiles",
+                "value": "calzado-textiles"
+              },
+              {
+                "label": "voluminosos",
+                "value": "voluminosos"
+              },
+              {
+                "label": "otros",
+                "value": "otros"
+              }
+            ]
+          },
+          {
+            "name": "fuente-contaminacion-cercana",
+            "type": "big_radio",
+            "prompt": "¿Conocés una fuente de contaminación cercana?",
+            "display_prompt": "",
+            "optional": true,
+            "triggers": [
+              {
+                "value": "si_fuente",
+                "targets": [
+                  "fuentes-contaminacion-opcion"
+                ]
+              }
+            ],
+            "content": [
+              {
+                "label": "Sí.",
+                "value": "si_fuente"
+              },
+              {
+                "label": "No.",
+                "value": "no"
+              },
+              {
+                "label": "No sé.",
+                "value": "no_se"
+              }
+            ]
+          },
+          {
+            "name": "fuentes-contaminacion-opcion",
+            "type": "big_checkbox",
+            "hidden_default": true,
+            "prompt": "¿Cuál? ",
+            "display_prompt": "Fuentes de contaminación",
+            "optional": true,
+            "content": [
+              {
+                "label": "doméstica",
+                "value": "domesticos"
+              },
+              {
+                "label": "cloacal",
+                "value": "cloacal"
+              },
+              {
+                "label": "pluvial",
+                "value": "pluvial"
+              },
+              {
+                "label": "industrial",
+                "value": "industrial"
+              },
+              {
+                "label": "No sé.",
+                "value": "no_se"
+              }
+            ]
+          },
+          {
+            "name": "vegetacion-margenes-cuerpo",
+            "type": "big_radio",
+            "prompt": "¿Hay vegetación en los márgenes del cuerpo de agua?",
+            "display_prompt": "",
+            "optional": false,
+            "triggers": [
+              {
+                "value": "si_vegetacion",
+                "targets": [
+                  "vegetacion-margenes-opciones"
+                ]
+              }
+            ],
+            "content": [
+              {
+                "label": "Sí.",
+                "value": "si_vegetacion"
+              },
+              {
+                "label": "No.",
+                "value": "no"
+              },
+              {
+                "label": "No sé.",
+                "value": "no_se"
+              }
+            ]
+          },
+          {
+            "name": "vegetacion-margenes-opciones",
+            "type": "big_checkbox",
+            "hidden_default": true,
+            "prompt": "¿Cuál? Elegí una o más de las siguientes opciones:",
+            "display_prompt": "Vegetacion en los margenes",
+            "optional": false,
+            "content": [
+              {
+                "label": "césped mantenido",
+                "value": "cesped_mantenido"
+              },
+              {
+                "label": "arbustos",
+                "value": "arbustos"
+              },
+              {
+                "label": "árboles",
+                "value": "arboles"
+              }
+            ]
+          },
+          {
+            "name": "vegetacion-cuerpo-agua",
+            "type": "big_radio",
+            "prompt": "¿Hay vegetación en el cuerpo de agua? ",
+            "display_prompt": "",
+            "optional": true,
+            "triggers": [
+              {
+                "value": "si",
+                "targets": [
+                  "vegetacion-cuerpo-agua-option"
+                ]
+              }
+            ],
+            "content": [
+              {
+                "label": "Sí.",
+                "value": "si"
+              },
+              {
+                "label": "No.",
+                "value": "no"
+              },
+              {
+                "label": "No sé.",
+                "value": "no_se"
+              }
+            ]
+          },
+          {
+            "name": "vegetacion-cuerpo-agua-option",
+            "type": "big_checkbox",
+            "hidden_default": true,
+            "prompt": "¿Cuál? Elegí una o más de estas opciones:",
+            "display_prompt": "Vegetación en el cuerpo de agua",
+            "optional": true,
+            "content": [
+              {
+                "label": "algas",
+                "value": "algas-vegetacion-cuerpo"
+              },
+              {
+                "label": "plantas acuáticas",
+                "value": "vegetacion-plantas"
+              }
+            ]
+          },
+          {
+            "name": "fauna-opcion",
+            "type": "big_radio",
+            "prompt": "¿Hay fauna en la zona?",
+            "display_prompt": "Fauna en la zona",
+            "optional": true,
+            "content": [
+              {
+                "label": "Sí.",
+                "value": "si"
+              },
+              {
+                "label": "No.",
+                "value": "no"
+              },
+              {
+                "label": "No sé.",
+                "value": "no_se"
+              }
+            ]
+          },
+          {
+            "name": "info-hidro",
+            "type": "informational_html",
+            "content": "<b>Ahora vamos a registrar la situación hidrometeorológica del cuerpo de agua (río, arroyo, canal).</b>"
+          },
+          {
+            "name": "nivel-agua-cuerpo-open",
+            "type": "big_radio",
+            "prompt": "¿Cuál es el nivel del agua del cuerpo del agua al momento de observar la situación? Elegí una de estas opciones:",
+            "display_prompt": "Nivel del agua",
+            "optional": true,
+            "content": [
+              {
+                "label": "alto",
+                "value": "alto-nivel-agua-cuerpo"
+              },
+              {
+                "label": "medio",
+                "value": "medio-nivel-agua-cuerpo"
+              },
+              {
+                "label": "bajo",
+                "value": "bajo-nivel-agua-cuerpo"
+              }
+            ]
+          },
+          {
+            "name": "vientos-fuertes",
+            "type": "big_radio",
+            "prompt": "¿En los días previos o durante el momento de la observación existieron vientos fuertes (sudestada)? ",
+            "display_prompt": "Vientos en los días previos",
+            "optional": true,
+            "content": [
+              {
+                "label": "Sí.",
+                "value": "si"
+              },
+              {
+                "label": "No.",
+                "value": "no"
+              },
+              {
+                "label": "No sé.",
+                "value": "no_se"
+              }
+            ]
+          },
+          {
+            "name": "lluvias-observacion",
+            "type": "big_radio",
+            "prompt": "¿Llovió en los días previos o durante el momento de la observación?",
+            "display_prompt": "Lluvia en los días previos",
+            "optional": true,
+            "triggers": [
+              {
+                "value": "si-lluvias-observacion",
+                "targets": [
+                  "lluvias-observacion-opcion"
+                ]
+              }
+            ],
+            "content": [
+              {
+                "label": "Sí",
+                "value": "si-lluvias-observacion"
+              },
+              {
+                "label": "No",
+                "value": "no-lluvias-observacion"
+              },
+              {
+                "label": "No sé",
+                "value": "no_se_lluvias-observacion"
+              }
+            ]
+          },
+          {
+            "name": "lluvias-observacion-opcion",
+            "type": "big_radio",
+            "hidden_default": true,
+            "prompt": "¿Qué tipo de lluvia se produjo? Elegí una de estas opciones:",
+            "display_prompt": "Tipo de lluvia",
+            "optional": true,
+            "content": [
+              {
+                "label": "llovizna",
+                "value": "llovizna"
+              },
+              {
+                "label": "llovizna intensa breve",
+                "value": "llovizna-intensa-breve"
+              },
+              {
+                "label": "lluvia intensa extendida",
+                "value": "lluvia-intensa-extendida"
+              }
+            ]
+          },
+          {
+            "name": "submit",
+            "type": "submit",
+            "label": "Publicar en el mapa",
+            "qprFormType": "water"
+          }
+        ]
+      },
+      {
+        "category": "agua-calidad-open",
+        "formId": "agua-calidad-open",
+        "includeOnForm": true,
+        "includeOnList": false,
+        "name": "location_type",
+        "datasetSlug": "calidad-open-input",
+        "icon_url": "/static/css/images/markers/marker-agua.svg",
+        "value": "agua-calidad-open",
+        "label": "Calidad del agua: imágenes y descripciones",
+        "geospatialAnalysis": [
+          {
+            "name": "subbasin_name",
+            "type": "pointInPolygon",
+            "analysisTarget": "riachuelo-subbasins.geojson",
+            "propertiesToPluck": [
+              {
+                "name": "NOMBRE"
+              }
+            ]
+          }
+        ],
+        "visibleLayerGroupIds": [
+          "riachuelo-subbasins"
+        ],
+        "multi_stage": [
+          {
+            "start_field_index": 1,
+            "end_field_index": 34,
+            "header": "Calidad del agua: imágenes y descripciones",
+            "description": "",
+            "qprFormType": "water"
+          },
+          {
+            "start_field_index": 35,
+            "end_field_index": 36,
+            "header": "Calidad del agua: imágenes y descripciones",
+            "description": "",
+            "qprFormType": "water"
+          }
+        ],
+        "fields": [
+          {
+            "name": "lng-lat",
+            "type": "lng_lat"
+          },
+          {
+            "name": "intro-calidad-agua",
+            "type": "informational_html",
+            "content": "<span><b>Compartí una experiencia o una situación vinculada a la calidad del agua en la cuenca Matanza-Riachuelo. ¿Tenés dudas? Consultá la guía de campo.</b></span>"
+          },
+          {
+            "name": "municipio-calidad-open",
+            "type": "dropdown",
+            "includeOnListItem": true,
+            "prompt": "¿En qué municipio tiene lugar esta experiencia? Elegí una de estas opciones:",
+            "display_prompt": "Municipio",
+            "placeholder": "Elegí el municipio...",
+            "optional": false,
+            "content": [
+              {
+                "label": "Ciudad de Buenos Aires",
+                "value": "ciudad-de-buenos-aires"
+              },
+              {
+                "label": "Almirante Brown",
+                "value": "almirante-brown"
+              },
+              {
+                "label": "Avellaneda",
+                "value": "avellaneda"
+              },
+              {
+                "label": "Cañuelas",
+                "value": "canuelas"
+              },
+              {
+                "label": "Esteban Echeverría",
+                "value": "esteban-echeverria"
+              },
+              {
+                "label": "Ezeiza",
+                "value": "ezeiza"
+              },
+              {
+                "label": "La Matanza",
+                "value": "la-matanza"
+              },
+              {
+                "label": "Lanús",
+                "value": "lanus"
+              },
+              {
+                "label": "Las Heras",
+                "value": "las-heras"
+              },
+              {
+                "label": "Lomas de Zamora",
+                "value": "lomas-de-zamora"
+              },
+              {
+                "label": "Marcos Paz",
+                "value": "marcos-paz"
+              },
+              {
+                "label": "Merlo",
+                "value": "merlo"
+              },
+              {
+                "label": "Presidente Juan D. Perón",
+                "value": "presidente-juan-d-peron"
+              },
+              {
+                "label": "San Vicente",
+                "value": "san-vicente"
+              }
+            ]
+          },
+          {
+            "name": "address-calidad-open",
+            "type": "geocoding",
+            "prompt": "Arrastrá el mapa para ubicar tu experiencia. ",
+            "display_prompt": "",
+            "placeholder": "Requerido",
+            "optional": false,
+            "qprFormType": "water"
+          },
+          {
+            "name": "datetime_field-calidad-open",
+            "type": "datetime",
+            "prompt": "Ingresá la fecha de la situación que estás compartiendo. Se trata de la fecha del día en la que registraste la situación vinculada a la calidad de agua.",
+            "display_prompt": "Fecha",
+            "placeholder": "Seleccioná una fecha",
+            "optional": false,
+            "qprFormType": "water"
+          },
+          {
+            "name": "report-time-calidad-open",
+            "type": "text",
+            "prompt": "Ingresá la hora de la situación que estás compartiendo. Se trata de la hora del día en la que registraste la situación vinculada a la calidad de agua.",
+            "display_prompt": "Hora",
+            "placeholder": "Seleccioná una hora",
+            "optional": false,
+            "qprFormType": "water"
+          },
+          {
+            "name": "cuerpo-agua-open",
+            "type": "big_radio",
+            "prompt": "¿En qué cuerpo de agua registraste la situación que estás compartiendo? Elegí una de estas opciones:",
+            "display_prompt": "Cuerpo de agua",
+            "optional": false,
+            "content": [
+              {
+                "label": "río",
+                "value": "rio"
+              },
+              {
+                "label": "arroyo",
+                "value": "arroyo"
+              },
+              {
+                "label": "canal",
+                "value": "canal"
+              },
+              {
+                "label": "otro",
+                "value": "otro"
+              }
+            ]
+          },
+          {
+            "name": "entorno-cuerpo-agua-open",
+            "type": "big_radio",
+            "prompt": "¿En qué entorno se encuentra este cuerpo de agua? Elegí una de estas opciones:",
+            "display_prompt": "Entorno",
+            "optional": false,
+            "content": [
+              {
+                "label": "rural",
+                "value": "rural"
+              },
+              {
+                "label": "urbano",
+                "value": "urbano"
+              },
+              {
+                "label": "No sé.",
+                "value": "no-se"
+              }
+            ]
+          },
+          {
+            "name": "info-2-calidad-open",
+            "type": "informational_html",
+            "content": "<b>Ahora vamos a ingresar información sobre algunos aspectos del cuerpo de agua sobre el que estás compartiendo que pueden ser importantes para registrar la calidad del agua.</b>"
+          },
+          {
+            "name": "referencia-cercana-calidad-open",
+            "type": "big_radio",
+            "includeOnListItem": true,
+            "prompt": "Indicá una referencia de un lugar cercano en donde tuvo lugar la situación que estás compartiendo. Elegí una de estas opciones:",
+            "display_prompt": "Referencia",
+            "optional": true,
+            "content": [
+              {
+                "label": "puente",
+                "value": "puente"
+              },
+              {
+                "label": "pasarela",
+                "value": "pasarela"
+              },
+              {
+                "label": "baranda",
+                "value": "baranda"
+              },
+              {
+                "label": "escala",
+                "value": "escala"
+              },
+              {
+                "label": "otro",
+                "value": "otro"
+              }
+            ]
+          },
+          {
+            "name": "estado-agua-registro-open",
+            "type": "big_radio",
+            "includeOnListItem": true,
+            "prompt": "¿Cuál es el estado del agua en el lugar y el momento del registro? Elegí una de estas opciones:",
+            "display_prompt": "Estado del agua",
+            "optional": true,
+            "content": [
+              {
+                "label": "agua clara",
+                "value": "estado-agua-clara"
+              },
+              {
+                "label": "poco clara",
+                "value": "estado-poco-clara"
+              },
+              {
+                "label": "turbia",
+                "value": "estado-turbia"
+              },
+              {
+                "label": "muy turbia",
+                "value": "estado-muy-turbia"
+              },
+              {
+                "label": "otro",
+                "value": "estado-otro"
+              }
+            ]
+          },
+          {
+            "name": "estado-color-agua-open",
+            "type": "big_radio",
+            "includeOnListItem": true,
+            "prompt": "¿Cuál es el color del agua en el lugar y el momento del registro? Elegí una de estas opciones: ",
+            "display_prompt": "Color del agua",
+            "optional": true,
+            "content": [
+              {
+                "label": "transparente",
+                "value": "transparente"
+              },
+              {
+                "label": "verde",
+                "value": "verde"
+              },
+              {
+                "label": "marrón",
+                "value": "marron"
+              },
+              {
+                "label": "gris",
+                "value": "gris"
+              },
+              {
+                "label": "negro",
+                "value": "negro"
+              },
+              {
+                "label": "rojo",
+                "value": "rojo"
+              },
+              {
+                "label": "otro",
+                "value": "otro"
+              }
+            ]
+          },
+          {
+            "name": "estado-olores-agua-open",
+            "type": "big_radio",
+            "prompt": "¿Se percibían olores del agua en el lugar y el momento del registro?",
+            "display_prompt": "Olores",
+            "optional": true,
+            "content": [
+              {
+                "label": "Sí.",
+                "value": "si"
+              },
+              {
+                "label": "No.",
+                "value": "no"
+              },
+              {
+                "label": "No sé.",
+                "value": "no_se"
+              }
+            ]
+          },
+          {
+            "name": "estado-materiales-flotantes-open",
+            "type": "big_radio",
+            "prompt": "¿Observaste materiales flotantes en la superficie del curso del agua?",
+            "display_prompt": "Materiales flotantes",
+            "optional": false,
+            "triggers": [
+              {
+                "value": "si_estado",
+                "targets": [
+                  "estado-materiales-cuales-open"
+                ]
+              }
+            ],
+            "content": [
+              {
+                "label": "Sí.",
+                "value": "si_estado"
+              },
+              {
+                "label": "No.",
+                "value": "no"
+              },
+              {
+                "label": "No sé.",
+                "value": "no_se"
+              }
+            ]
+          },
+          {
+            "name": "estado-materiales-cuales-open",
+            "type": "big_checkbox",
+            "hidden_default": true,
+            "prompt": "¿Cuáles? Elegí una o más de estas opciones:",
+            "display_prompt": "Materiales observados",
+            "optional": true,
+            "triggers": [
+              {
+                "value": "otros",
+                "targets": [
+                  "cual-estado-materiales-open"
+                ]
+              }
+            ],
+            "content": [
+              {
+                "label": "plásticos",
+                "value": "plasticos"
+              },
+              {
+                "label": "restos de vegetación",
+                "value": "restos-vegetacion"
+              },
+              {
+                "label": "pañales",
+                "value": "panales"
+              },
+              {
+                "label": "madera",
+                "value": "madera"
+              },
+              {
+                "label": "calzado y textiles",
+                "value": "calzado-textiles"
+              },
+              {
+                "label": "voluminosos",
+                "value": "voluminosos"
+              },
+              {
+                "label": "otros",
+                "value": "otros"
+              }
+            ]
+          },
+          {
+            "name": "cual-estado-materiales-open",
+            "type": "text",
+            "prompt": "¿Cuál?",
+            "display_prompt": "Materiales flotantes",
+            "optional": false,
+            "hidden_default":true
+          },
+          {
+            "name": "fuente-contaminacion-cercana-open",
+            "type": "big_radio",
+            "prompt": "¿Conocés una fuente de contaminación cercana?",
+            "display_prompt": "",
+            "optional": true,
+            "triggers": [
+              {
+                "value": "si_fuente",
+                "targets": [
+                  "fuentes-contaminacion-opcion-open"
+                ]
+              }
+            ],
+            "content": [
+              {
+                "label": "Sí.",
+                "value": "si_fuente"
+              },
+              {
+                "label": "No.",
+                "value": "no"
+              },
+              {
+                "label": "No sé.",
+                "value": "no_se"
+              }
+            ]
+          },
+          {
+            "name": "fuentes-contaminacion-opcion-open",
+            "type": "big_checkbox",
+            "hidden_default": true,
+            "prompt": "¿Cuál? ",
+            "display_prompt": "Fuentes de contaminación",
+            "optional": true,
+            "content": [
+              {
+                "label": "doméstica",
+                "value": "domesticos"
+              },
+              {
+                "label": "cloacal",
+                "value": "cloacal"
+              },
+              {
+                "label": "pluvial",
+                "value": "pluvial"
+              },
+              {
+                "label": "industrial",
+                "value": "industrial"
+              },
+              {
+                "label": "No sé.",
+                "value": "no_se"
+              }
+            ]
+          },
+          {
+            "name": "vegetacion-margenes-cuerpo-open",
+            "type": "big_radio",
+            "prompt": "¿Hay vegetación en los márgenes del cuerpo de agua?",
+            "display_prompt": "",
+            "optional": false,
+            "triggers": [
+              {
+                "value": "si_vegetacion",
+                "targets": [
+                  "vegetacion-margenes-opciones-open"
+                ]
+              }
+            ],
+            "content": [
+              {
+                "label": "Sí.",
+                "value": "si_vegetacion"
+              },
+              {
+                "label": "No.",
+                "value": "no"
+              },
+              {
+                "label": "No sé.",
+                "value": "no_se"
+              }
+            ]
+          },
+          {
+            "name": "vegetacion-margenes-opciones-open",
+            "type": "big_checkbox",
+            "hidden_default": true,
+            "prompt": "¿Cuál? Elegí una o más de las siguientes opciones:",
+            "display_prompt": "Vegetacion en los margenes",
+            "optional": false,
+            "content": [
+              {
+                "label": "césped mantenido",
+                "value": "cesped_mantenido"
+              },
+              {
+                "label": "arbustos",
+                "value": "arbustos"
+              },
+              {
+                "label": "árboles",
+                "value": "arboles"
+              }
+            ]
+          },
+          {
+            "name": "vegetacion-cuerpo-agua-open",
+            "type": "big_radio",
+            "prompt": "¿Hay vegetación en el cuerpo de agua? ",
+            "display_prompt": "",
+            "optional": true,
+            "triggers": [
+              {
+                "value": "si",
+                "targets": [
+                  "vegetacion-cuerpo-agua-option-open"
+                ]
+              }
+            ],
+            "content": [
+              {
+                "label": "Sí.",
+                "value": "si"
+              },
+              {
+                "label": "No.",
+                "value": "no"
+              },
+              {
+                "label": "No sé.",
+                "value": "no_se"
+              }
+            ]
+          },
+          {
+            "name": "vegetacion-cuerpo-agua-option-open",
+            "type": "big_checkbox",
+            "hidden_default": true,
+            "prompt": "¿Cuál? Elegí una o más de estas opciones:",
+            "display_prompt": "Vegetación en el cuerpo de agua",
+            "optional": true,
+            "content": [
+              {
+                "label": "algas",
+                "value": "algas-vegetacion-cuerpo"
+              },
+              {
+                "label": "plantas acuáticas",
+                "value": "vegetacion-plantas"
+              }
+            ]
+          },
+          {
+            "name": "fauna-opcion",
+            "type": "big_radio",
+            "prompt": "¿Hay fauna en la zona?",
+            "display_prompt": "Fauna en la zona",
+            "optional": true,
+            "content": [
+              {
+                "label": "Sí.",
+                "value": "si"
+              },
+              {
+                "label": "No.",
+                "value": "no"
+              },
+              {
+                "label": "No sé.",
+                "value": "no_se"
+              }
+            ]
+          },
+          {
+            "name": "info-hidro-open",
+            "type": "informational_html",
+            "content": "<b>Ahora vamos a registrar la situación hidrometeorológica del cuerpo de agua (río, arroyo, canal).</b>"
+          },
+          {
+            "name": "nivel-agua-cuerpo-open",
+            "type": "big_radio",
+            "prompt": "¿Cuál es el nivel del agua del cuerpo del agua al momento de observar la situación? Elegí una de estas opciones:",
+            "display_prompt": "Nivel del agua",
+            "optional": true,
+            "content": [
+              {
+                "label": "alto",
+                "value": "alto-nivel-agua-cuerpo"
+              },
+              {
+                "label": "medio",
+                "value": "medio-nivel-agua-cuerpo"
+              },
+              {
+                "label": "bajo",
+                "value": "bajo-nivel-agua-cuerpo"
+              }
+            ]
+          },
+          {
+            "name": "vientos-fuertes-open",
+            "type": "big_radio",
+            "prompt": "¿En los días previos o durante el momento de la observación existieron vientos fuertes (sudestada)? ",
+            "display_prompt": "Vientos en los días previos",
+            "optional": true,
+            "content": [
+              {
+                "label": "Sí.",
+                "value": "si"
+              },
+              {
+                "label": "No.",
+                "value": "no"
+              },
+              {
+                "label": "No sé.",
+                "value": "no_se"
+              }
+            ]
+          },
+          {
+            "name": "lluvias-observacion-open",
+            "type": "big_radio",
+            "prompt": "¿Llovió en los días previos o durante el momento de la observación?",
+            "display_prompt": "Lluvia en los días previos",
+            "optional": true,
+            "triggers": [
+              {
+                "value": "si-lluvias-observacion",
+                "targets": [
+                  "lluvias-observacion-opcion"
+                ]
+              }
+            ],
+            "content": [
+              {
+                "label": "Sí",
+                "value": "si-lluvias-observacion"
+              },
+              {
+                "label": "No",
+                "value": "no-lluvias-observacion"
+              },
+              {
+                "label": "No sé",
+                "value": "no_se_lluvias-observacion"
+              }
+            ]
+          },
+          {
+            "name": "lluvias-observacion-opcion",
+            "type": "big_radio",
+            "hidden_default": true,
+            "prompt": "¿Qué tipo de lluvia se produjo? Elegí una de estas opciones:",
+            "display_prompt": "Tipo de lluvia",
+            "optional": true,
+            "content": [
+              {
+                "label": "llovizna",
+                "value": "llovizna"
+              },
+              {
+                "label": "llovizna intensa breve",
+                "value": "llovizna-intensa-breve"
+              },
+              {
+                "label": "lluvia intensa extendida",
+                "value": "lluvia-intensa-extendida"
+              }
+            ]
+          },
+          {
+            "name": "intro-attach-calidad-open",
+            "type": "informational_html",
+            "prompt": "¿Querés agregar un comentario, imagen, enlace o documento?",
+            "content": "<span> <i> Recordá que las fotografías y documentos que adjuntás deben ser de tu autoría o debés contar con permiso para poder publicarlos . No se pueden incluir imágenes en las que se pueda identificar rostros de personas.  </i> </span>"
+          },
+          {
+            "name": "title-calidad-open",
+            "type": "text",
+            "prompt": "",
+            "display_prompt": " ",
+            "placeholder": "Título",
+            "optional": true
+          },
+          {
+            "name": "info-finalarea-calidad-open",
+            "type": "textarea",
+            "prompt": " ",
+            "display_prompt": " ",
+            "placeholder": "Texto",
+            "optional": true,
+            "qprFormType": "water"
+          },
+          {
+            "name": "info-attach-calidad-open",
+            "type": "file",
+            "label": "ADJUNTAR ARCHIVO DE IMAGEN O PDF",
+            "optional": true,
+            "qprFormType": "water"
+          },
+          {
+            "name": "info-finalenlace-open",
+            "type": "text",
+            "display_prompt": " ",
+            "prompt": " ",
+            "placeholder": "Enlace",
+            "optional": true
+          },
+          {
+            "name": "submit",
+            "type": "submit",
+            "label": "Publicar en el mapa",
+            "qprFormType": "water"
+          }
+        ]
       },   
       {
         "category": "reporte-territorial",
