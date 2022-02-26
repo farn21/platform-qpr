@@ -10,16 +10,17 @@
   display: flex;
 }
 
-.input-form__optional-msg {
+.input-form__optional-msg, .input-form__required-msg {
   display: none;
   padding-left: 0.5em;
   font-size: $input-form-optional-msg-font-size;
 }
 
-.input-form__optional-msg--visible {
+.input-form__optional-msg--visible, .input-form__required-msg--visible {
   display: inline;
+  font-weight: normal;
 }
 
-.input-form__field-container--hidden {
+.input-form__field-container--hidden  {
   display: none;
 }
