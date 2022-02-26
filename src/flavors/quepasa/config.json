@@ -1247,6 +1247,497 @@
             "type": "common_form_element"
           }
         ]
+      },
+      
+      {
+        "category": "areas-protegidas-2",
+        "formId": "areas-protegidas-2",
+        "includeOnForm": true,
+        "name": "location_type",
+        "datasetSlug": "areas-input",
+        "icon_url": "/static/css/images/markers/marker-areas.svg",
+        "value": "areas-protegidas-2",
+        "label": "Áreas Naturales: visitas",
+        "geospatialAnalysis": [
+          {
+            "name": "subbasin_name",
+            "type": "pointInPolygon",
+            "analysisTarget": "riachuelo-subbasins.geojson",
+            "propertiesToPluck": [
+              {
+                "name": "NOMBRE"
+              }
+            ]
+          }
+        ],
+        "multi_stage": [
+          {
+            "start_field_index": 1,
+            "end_field_index": 17,
+            "header": "Áreas Naturales: visitas",
+            "qprFormType": "protected-area",
+            "description": ""
+          },
+          {
+            "start_field_index": 18,
+            "end_field_index": 19,
+            "header": "Áreas Naturales: visitas",
+            "qprFormType": "protected-area",
+            "description": ""
+          }
+        ],
+        "fields": [
+          {
+            "name": "intro-areas",
+            "type": "informational_html",
+            "content": "<span><b>Compartí experiencias sobre los usos, actividades y observaciones en las áreas naturales de la Cuenca Matanza-Riachuelo. ¿Tenés dudas? Consultá la guía de campo.</b></span>"
+          },
+          {
+            "name": "intro-guide-areas",
+            "type": "informational_html",
+            "content": "<span><b>¿Tenés dudas? Consultá la guía de campo.</b></span>"
+          },
+          {
+            "name": "municipio-areas",
+            "type": "dropdown",
+            "prompt": "¿En qué municipio tiene lugar esta experiencia? Elegí una de estas opciones:",
+            "display_prompt": "Municipio",
+            "placeholder": "Elegí el municipio...",
+            "optional": false,
+            "content": [
+              {
+                "label": "Ciudad de Buenos Aires",
+                "value": "ciudad-de-buenos-aires"
+              },
+              {
+                "label": "Almirante Brown",
+                "value": "almirante-brown"
+              },
+              {
+                "label": "Avellaneda",
+                "value": "avellaneda"
+              },
+              {
+                "label": "Cañuelas",
+                "value": "canuelas"
+              },
+              {
+                "label": "Esteban Echeverría",
+                "value": "esteban-echeverria"
+              },
+              {
+                "label": "Ezeiza",
+                "value": "ezeiza"
+              },
+              {
+                "label": "La Matanza",
+                "value": "la-matanza"
+              },
+              {
+                "label": "Lanús",
+                "value": "lanus"
+              },
+              {
+                "label": "Las Heras",
+                "value": "las-heras"
+              },
+              {
+                "label": "Lomas de Zamora",
+                "value": "lomas-de-zamora"
+              },
+              {
+                "label": "Marcos Paz",
+                "value": "marcos-paz"
+              },
+              {
+                "label": "Merlo",
+                "value": "merlo"
+              },
+              {
+                "label": "Presidente Juan D. Perón",
+                "value": "presidente-juan-d-peron"
+              },
+              {
+                "label": "San Vicente",
+                "value": "san-vicente"
+              }
+            ]
+          },
+          {
+            "name": "reserva-areas",
+            "type": "dropdown",
+            "prompt": "Elegí la reserva sobre la cual vas a compartir tu experiencia.",
+            "display_prompt": "Reserva",
+            "optional": false,
+            "qprFormType": "protected-area",
+            "content": [
+              {
+                "label": "Reserva Municipal Morón",
+                "value": "reserva-municipal-moron"
+              },
+              {
+                "label": "Reserva Natural de Objetivo Definido Educativo Arroyo El Durazno",
+                "value": "reserva-natural-el-durazno"
+              },
+              {
+                "label": "Reserva Natural y Paisaje Protegido de Interés Provincial Santa Catalina",
+                "value": "reserva-natural-santa-catalina"
+              },
+              {
+                "label": "Reserva Ecológica Laguna Saladita Norte",
+                "value": "reserva-ecologica-laguna-salidata-norte"
+              },
+              {
+                "label": "Reserva Natural Municipal de Objetivo Definido Educativo Museo Guardia del Juncal",
+                "value": "reserva-natural-guardia-juncal"
+              },
+              {
+                "label": "Reserva Natural de Objetivo Definido Mixto Educativo y de Proteccion de Cuencas Hídricas Lagunas de San Vicente",
+                "value": "reserva-natural-lagunas-de-san-vicente"
+              },
+              {
+                "label": "Reserva Municipal Santa Catalina",
+                "value": "reserva-municipal-santa-catalina"
+              },
+              {
+                "label": "Reserva Natural Costanera Sur",
+                "value": "reserva-natural-costanera-sur"
+              },
+              {
+                "label": "Reserva Paleontológica Francisco P. Moreno Parque Natural Lago Lugano",
+                "value": "reserva-paleontologica-moreno"
+              },
+              {
+                "label": "Reserva Natural Integral y Mixta Laguna de Rocha",
+                "value": "reserva-natural-integral-mixta"
+              },
+              {
+                "label": "Reserva Natural y Área Ecológicamente Protegida Bosques de Ciudad Evita",
+                "value": "reserva-natural-area-ciudad-evita"
+              },
+              {
+                "label": "Reserva Natural de la Defensa El Palomar",
+                "value": "reserva-natural-defensa-palomar"
+              },
+              {
+                "label": "Reserva Ecológica Laguna Saladita Sur",
+                "value": "reserva-natural-laguna-saladita"
+              },
+              {
+                "label": "Reserva Costera Municipal de Avellaneda - Ecoarea",
+                "value": "reserva-costera-municipal-avellaneda-ecorea"
+              },
+              {
+                "label": "Reserva Ecológica Ciudad Universitaria - Costanera Norte",
+                "value": "reserva-ecológica-ciudad-universitaria"
+              },
+              {
+                "label": "Otra área natural",
+                "value": "otra-area-natural"
+              }
+            ]
+          },
+          {
+            "name": "lng-lat",
+            "type": "lng_lat"
+          },
+          {
+            "name": "address-area",
+            "type": "geocoding",
+            "prompt": "¿Dónde está ubicada esta área? Arrastrá el mapa para ubicar tu experiencia. ",
+            "display_prompt": "",
+            "placeholder": "",
+            "optional": false,
+            "qprFormType": "water"
+          },
+          {
+            "name": "visit-area",
+            "type": "big_radio",
+            "prompt": "¿Es la primera vez que visitás este espacio?",
+            "optional": false,
+            "display_prompt": "¿Visita por primera vez?",
+            "triggers": [
+              {
+                "value": "no",
+                "targets": [
+                  "frequency-area"
+                ]
+              }
+            ],
+            "content": [
+              {
+                "label": "Sí.",
+                "value": "si"
+              },
+              {
+                "label": "No.",
+                "value": "no"
+              }           
+            ]
+          },
+          {
+            "name": "frequency-area",
+            "type": "big_radio",
+            "prompt": "¿Con qué frecuencia visitás el espacio? Elegí una de estas opciones:",
+            "hidden_default": true,
+            "display_prompt": "Frecuencia",
+            "optional": false,
+            "content": [
+              {
+                "label": "semanal",
+                "value": "semanal"
+              },
+              {
+                "label": "mensual",
+                "value": "mensual"
+              },
+              {
+                "label": "trimestral",
+                "value": "trimestral"
+              },
+              {
+                "label": "anual",
+                "value": "anual"
+              },
+              {
+                "label": "No sé.",
+                "value": "no_se"
+              }
+            ]
+          },
+          {
+            "name": "last-visit-areas",
+            "type": "datetime",
+            "prompt": "¿Cuándo fue tu última visita? Seleccioná una fecha en el calendario.",
+            "display_prompt": "Fecha de última visita",
+            "placeholder": "Seleccioná una fecha",
+            "optional": false
+          },
+          {
+            "name": "activities-last-visit-areas",
+            "type": "big_checkbox",
+            "prompt": " ¿Qué actividades realizaste en tu última visita? Elegí una de estas opciones:",
+            "display_prompt": "Actividades realizadas en la última visita",
+            "optional": false,
+            "content": [
+              {
+                "label": "recreación (recorrida, deporte, reuniones sociales)",
+                "value": "recreacion"
+              },
+              {
+                "label": "observación de flora y fauna",
+                "value": "observacion"
+              },
+              {
+                "label": "mantenimiento del espacio (limpieza, reforestación, colocación de carteles)",
+                "value": "mantenimiento"
+              },
+              {
+                "label": "actividades educativas o de investigación",
+                "value": "educativas"
+              },
+              {
+                "label": "otros",
+                "value": "otros"
+              }
+            ]
+          },
+          {
+            "name": "fires-areas",
+            "type": "big_radio",
+            "prompt": "En tu última visita, ¿observaste incendios en el área?",
+            "display_prompt": "¿Observó incendios?",
+            "optional": false,
+            "content": [
+              {
+                "label": "Sí.",
+                "value": "si"
+              },
+              {
+                "label": "No.",
+                "value": "no"
+              },
+              {
+                "label": "No sé.",
+                "value": "no_se"
+              }
+            ]
+          },
+          {
+            "name": "waste-areas",
+            "type": "big_radio",
+            "prompt": "En tu última visita, ¿observaste residuos en alguna parte del área?",
+            "display_prompt": "¿Observó residuos?",
+            "optional": false,
+            "content": [
+              {
+                "label": "Sí.",
+                "value": "si"
+              },
+              {
+                "label": "No.",
+                "value": "no"
+              },
+              {
+                "label": "No sé.",
+                "value": "no_se"
+              }
+            ]
+          },
+          {
+            "name": "damage-areas",
+            "type": "big_radio",
+            "prompt": "En tu última visita, ¿observaste daño en la flora o fauna?",
+            "display_prompt": "¿Observó daño en la flora o fauna?",
+            "optional": false,
+            "content": [
+              {
+                "label": "Sí.",
+                "value": "si"
+              },
+              {
+                "label": "No.",
+                "value": "no"
+              },
+              {
+                "label": "No sé.",
+                "value": "no_se"
+              }
+            ]
+          },
+          {
+            "name": "cars-areas",
+            "type": "big_radio",
+            "prompt": "En tu última visita, ¿observaste vehículos circulando en el área?",
+            "display_prompt": "¿Observó vehículos circulando en el área?",
+            "optional": false,
+            "content": [
+              {
+                "label": "Sí.",
+                "value": "si"
+              },
+              {
+                "label": "No.",
+                "value": "no"
+              },
+              {
+                "label": "No sé.",
+                "value": "no_se"
+              }
+            ]
+          },
+          {
+            "name": "services-areas",
+            "type": "big_checkbox",
+            "prompt": "En tu última visita, ¿observaste alguno de los siguientes servicios de atención al visitante? Elegí una o más de estas opciones:",
+            "display_prompt": "Servicios protección observados",
+            "optional": true,
+            "content": [
+              {
+                "label": "entrada delimitada",
+                "value": "entrada-delimitada"
+              },
+              {
+                "label": "senderos y caminos",
+                "value": "senderos-caminos"
+              },
+              {
+                "label": "carteles y señalización",
+                "value": "carteles"
+              },
+              {
+                "label": "cestos de basura",
+                "value": "cestos"
+              },
+              {
+                "label": "área de recreación o zona de picnic",
+                "value": "recreacion"
+              },
+              {
+                "label": "personal a cargo (representante del área)",
+                "value": "personal"
+              },
+              {
+                "label": "centro de interpretación y provisión de material informativo",
+                "value": "centro"
+              },
+              {
+                "label": "otros",
+                "value": "otros"
+              },
+              {
+                "label": "ninguna de las anteriores",
+                "value": "ninguna"
+              }
+            ]
+          },
+          {
+            "name": "bond_area",
+            "type": "big_checkbox",
+            "prompt": "¿Cuál es tu vínculo con esta área? Elegí una o más opciones:",
+            "display_prompt": "Vinculo con esta área",
+            "optional": false,
+            "qprFormType": "protected-area",
+            "content": [
+              {
+                "label": "Vivo o trabajo en la zona.",
+                "value": "vivo-trabajo"
+              },
+              {
+                "label": "Formo parte de una organización que trabaja para proteger esta área.",
+                "value": "formo-organizacion"
+              },
+              {
+                "label": "Formo parte de una organización relacionada con temas ambientales.",
+                "value": "formo-organizacion-ambiental"
+              },
+              {
+                "label": "Me interesa realizar actividades educativas en esta área.",
+                "value": "formo-actividades"
+              },
+              {
+                "label": "Mantengo otro vínculo.",
+                "value": "otro-vinculo"
+              }
+            ]
+          },
+          {
+            "name": "value_area",
+            "type": "big_checkbox",
+            "prompt": "¿Qué valorás en esta área natural? Elegí una o más opciones:",
+            "display_prompt": "Aspectos valorados en el área",
+            "optional": false,
+            "qprFormType": "protected-area",
+            "content": [
+              {
+                "label": "Valoro su biodiversidad.",
+                "value": "valoro-biodiversidad"
+              },
+              {
+                "label": "Valoro que sea un espacio recreativo y social frecuentado por la comunidad.",
+                "value": "valoro-social"
+              },
+              {
+                "label": "Valoro su valor histórico.",
+                "value": "valoro-historico"
+              },
+              {
+                "label": "Valoro su patrimonio cultural y arqueológico.",
+                "value": "valoro-patrimonio"
+              },
+              {
+                "label": "Valoro otros aspectos no mencionados.",
+                "value": "valoro-no-mencionados"
+              }
+            ]
+          },  
+          {
+            "name": "submit",
+            "type": "submit",
+            "label": "Publicar en el mapa",
+            "qprFormType": "protected-area"
+          }
+        ]
       },   
       {
         "category": "reporte-territorial",
