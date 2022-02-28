@@ -11,6 +11,7 @@ import {
   MuiDiscourseIcon,
   MuiFacebookFIcon,
   MuiTwitterIcon,
+  MuiLoginIcon,
   MuiGoogleIcon,
 } from "../atoms/icons";
 
@@ -37,6 +38,13 @@ const useSocialButtonStyles = makeStyles({
   },
 });
 
+const getLoginProviderUrl = (apiRoot, loginProvider) => {
+  switch (loginProvider.name)  {
+    default:
+      return `${apiRoot}users/login/${loginProvider.provider}/`
+    } 
+}
+
 const SocialLoginButton = ({
   loginProvider,
   apiRoot,
@@ -50,6 +58,10 @@ const SocialLoginButton = ({
     case "twitter":
       backgroundColor = "#4099ff";
       SocialIcon = MuiTwitterIcon;
+      break;
+    case "login":
+      backgroundColor = "gray";
+      SocialIcon = MuiLoginIcon;
       break;
     case "facebook":
       backgroundColor = "#3b5998";
@@ -79,7 +91,7 @@ const SocialLoginButton = ({
       classes={{
         button: classes.button,
       }}
-      href={`${apiRoot}users/login/${loginProvider.provider}/`}
+      href={getLoginProviderUrl(apiRoot, loginProvider)}
     >
       <ListItemIcon css={{ minWidth: "32px" }}>
         <SocialIcon fill={"#fff"} />
