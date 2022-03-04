@@ -6,8 +6,10 @@ import "moment-timezone";
 import { withRouter, RouteComponentProps } from "react-router-dom";
 import { connect } from "react-redux";
 import FormField from "../form-fields/form-field";
-import config from "config";
 import { Button } from "../atoms/buttons";
+// eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+// @ts-ignore
+import config from "config";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import { datasetPlacesSelector } from "../../state/ducks/places";
@@ -57,6 +59,8 @@ type OwnProps = {
 type Props = StateProps & OwnProps & RouteComponentProps<{}>;
 
 interface State {
+  fieldPassword: any;
+  fieldUsername: any;
   anchorEl: any;
   dashboard: any;
 }
@@ -64,8 +68,8 @@ interface State {
 class Dashboard extends React.Component<Props, State> {
   allowedDashboardConfigs;
   state: State = {
-    fieldUsername: new OrderedMap(),
-    fieldPassword: new OrderedMap(),
+    fieldUsername: OrderedMap(),
+    fieldPassword: OrderedMap(),
     anchorEl: null,
     dashboard: null,
   };
@@ -101,8 +105,10 @@ class Dashboard extends React.Component<Props, State> {
     });
   };
 
-  onCreateUser = (event) => {
+  onCreateUser(event) {
     var f = document.querySelector("#userNewForm")
+    // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+    // @ts-ignore
     var formData = new FormData(f)
     mapseedApiClient.user.create(config.app.api_root, formData)
     event.preventDefault();
