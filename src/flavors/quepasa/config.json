@@ -3511,14 +3511,6 @@
             "qprFormType": "relocations"
           },
           {
-            "name": "recaptcha",
-            "type": "recaptcha",
-            "prompt": " ",
-            "display_prompt": "",
-            "placeholder": "",
-            "optional": false
-          },
-          {
             "name": "submit",
             "type": "submit",
             "label": "Publicar en el mapa",
