@@ -14,7 +14,6 @@ export type Place = {
   created_datetime: string;
   dataset: string;
   visible: boolean;
-  visitas: number;
   datasetSlug: string;
   submitter_name?: string;
   submission_sets: {

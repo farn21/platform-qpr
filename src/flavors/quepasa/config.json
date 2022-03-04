@@ -821,14 +821,14 @@
         "multi_stage": [
           {
             "start_field_index": 1,
-            "end_field_index": 31,
+            "end_field_index": 30,
             "header": "Calidad del Agua",
             "description": "",
             "qprFormType": "water"
           },
           {
-            "start_field_index": 32,
-            "end_field_index": 34,
+            "start_field_index": 31,
+            "end_field_index": 32,
             "header": "Calidad del Agua",
             "description": "",
             "qprFormType": "water"
@@ -1049,7 +1049,7 @@
           {
             "name": "estado-materiales-flotantes",
             "type": "big_radio",
-            "prompt": "¿Observaste materiales flotantes en la superficie del curso del agua? Seleccioná una opción de la lista?",
+            "prompt": "¿Observaste materiales flotantes en la superficie del curso del agua? Seleccioná una opción de la lista",
             "display_prompt": "Materiales flotantes",
             "optional": false,
             "triggers": [
@@ -1076,6 +1076,7 @@
             "type": "big_checkbox",
             "prompt": "¿Cuáles?",
             "display_prompt": "Materiales",
+            "hidden_default": true,
             "optional": true,
             "content": [
               {
@@ -1138,10 +1139,11 @@
             ]
           },
           {
-            "name": "fuentes-opcion",
-            "type": "big_radio",
+            "name": "fuente-contaminacion-opcion",
+            "type": "dropdown",
             "prompt": "¿Cuál?",
             "display_prompt": "Fuentes",
+            "hidden_default": true,
             "optional": true,
             "content": [
               {
@@ -1168,8 +1170,8 @@
           },
           {
             "name": "vegetacion-margenes-cuerpo",
-            "type": "big_radio",
-            "prompt": "¿Hay vegetación en los márgenes del cuerpo de agua?",
+            "type": "dropdown",
+            "prompt": "¿Hay vegetación en los márgenes del cuerpo de agua? Seleccioná una opción de la lista.",
             "display_prompt": "Vegetacion de los margenes",
             "optional": false,
             "triggers": [
@@ -1192,10 +1194,11 @@
             ]
           },
           {
-            "name": "vegetacion-opcion",
-            "type": "big_radio",
+            "name": "vegetacion-margenes-cuerpo",
+            "type": "dropdown",
             "prompt": "¿Cuál?",
             "display_prompt": "Vegetación",
+            "hidden_default": true,
             "optional": true,
             "content": [
               {
@@ -1246,6 +1249,7 @@
             "type": "big_radio",
             "prompt": "¿Cuál?",
             "display_prompt": "Vegetación cuerpo",
+            "hidden_default": true,
             "optional": true,
             "content": [
               {
@@ -1399,18 +1403,23 @@
             "optional": true
           },
           {
-            "name": "info-file",
-            "type": "file",
-            "label": "ADJUNTAR ARCHIVO DE IMAGEN O PDF",
-            "prompt": " ",
-            "optional": true,
-            "qprFormType": "water"
-          },
-          {
-            "name": "submit",
-            "type": "submit",
-            "label": "Publicar en el mapa",
-            "qprFormType": "water"
+              "name": "info-file",
+              "type": "file",
+              "label": "ADJUNTAR ARCHIVO DE IMAGEN O PDF",
+              "prompt": " ",
+              "optional": true
+          },{
+              "name": "recaptcha",
+              "type": "recaptcha",
+              "prompt": " ",
+              "display_prompt": "",
+              "placeholder": "",
+              "optional": false
+          },{
+              "name": "submit",
+              "type": "submit",
+              "label": "Publicar en el mapa",
+              "qprFormType": "water"
           }
         ]
       },
@@ -2333,29 +2342,34 @@
             "qprFormType": "protected-area"
           },
           {
-            "name": "patrimonio_arqueologico-image",
-            "type": "file",
-            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
-            "prompt": " ",
-            "optional": true,
-            "hidden_default": true,
-            "qprFormType": "protected-area"
+              "name": "patrimonio_arqueologico-image",
+              "type": "file",
+              "label": "ADJUNTAR ARCHIVO DE IMAGEN",
+              "prompt": " ",
+              "optional": true,
+              "hidden_default": true,
+              "qprFormType": "protected-area"
           },
           {
-            "name": "patrimonio_arqueologico-link",
-            "type": "text",
-            "prompt": "",
-            "placeholder": "Enlace",
-            "display_prompt": "Enlace",
-            "hidden_default": true,
-            "optional": true,
-            "qprFormType": "protected-area"
-          },
-          {
-            "name": "submit",
-            "type": "submit",
-            "label": "Publicar en el mapa",
-            "qprFormType": "protected-area"
+              "name": "patrimonio_arqueologico-link",
+              "type": "text",
+              "prompt": "",
+              "placeholder": "Enlace",
+              "display_prompt": "Enlace",
+              "hidden_default": true,
+              "optional": true
+          },{
+              "name": "recaptcha",
+              "type": "recaptcha",
+              "prompt": " ",
+              "display_prompt": "",
+              "placeholder": "",
+              "optional": false
+          },{
+              "name": "submit",
+              "type": "submit",
+              "label": "Publicar en el mapa",
+              "qprFormType": "protected-area"
           }
         ]
       },
@@ -2384,71 +2398,28 @@
         "multi_stage": [
           {
             "start_field_index": 1,
-            "end_field_index": 3,
-            "header": "Relocalizaciones",
+            "end_field_index": 105,
+            "header": "Reporte Territorial",
             "description": "",
             "qprFormType": "relocations"
-          },
-          {
-            "start_field_index": 4,
-            "end_field_index": 10,
-            "header": "Relocalizaciones",
-            "description": "",
-            "qprFormType": "relocations"
-          },
-          {
-            "start_field_index": 11,
-            "end_field_index": 20,
-            "header": "Relocalizaciones",
-            "description": "",
-            "qprFormType": "relocations"
-          },
-          {
-            "start_field_index": 21,
-            "end_field_index": 23,
-            "header": "Relocalizaciones",
-            "description": "",
-            "qprFormType": "relocations"
-          },
-          {
-            "start_field_index": 24,
-            "end_field_index": 25,
-            "header": "Relocalizaciones",
+          },{
+            "start_field_index": 106,
+            "end_field_index": 107,
+            "header": "Reporte Territorial",
             "description": "",
             "qprFormType": "relocations"
           }
         ],
         "fields": [
           {
-            "name": "lng-lat",
-            "type": "lng_lat"
-          },
-          {
             "name": "intro",
             "type": "informational_html",
-            "content": "<span><b>Por favor seleccioná una ubicación en el mapa</b><span><br><br><span>Podés arrastrar el ícono en el mapa o ingresar una dirección.<span><br><br><span></span>"
-          },
-          {
-            "name": "private-address",
-            "type": "geocoding",
-            "prompt": " ",
-            "display_prompt": "Address",
-            "placeholder": "Ingresá la ubicación",
-            "optional": false
-          },
-          {
-            "name": "private-address",
-            "type": "geocoding",
-            "prompt": " ",
-            "display_prompt": "Address",
-            "placeholder": "Ingresá la ubicación",
-            "optional": false
-          },
-          {
+            "content": "<p>Si vivís en algún barrio de la Cuenca Matanza Riachuelo afectado por procesos de relocalización y querés comentar sobre tu experiencia podés responder a las siguientes preguntas.</p>"
+          },{
             "name": "municipio",
             "type": "dropdown_autocomplete",
             "includeOnListItem": true,
-            "prompt": "¿En cuál de los siguientes municipio vivís actualmente?",
+            "prompt": "¿En qué municipio vivís? Elegí una de las siguientes opciones.",
             "display_prompt": "Municipio",
             "placeholder": "Escribí el nombre de tu municipio...",
             "optional": false,
@@ -2583,7 +2554,7 @@
             "name": "ciudad-de-buenos-aires-barrios",
             "type": "dropdown_autocomplete",
             "includeOnListItem": true,
-            "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
+            "prompt": "¿En qué barrio vivís? Elegí una de las siguientes opciones.",
             "display_prompt": "Barrio",
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
@@ -2672,7 +2643,7 @@
             "name": "almirante-brown-barrios",
             "type": "dropdown_autocomplete",
             "includeOnListItem": true,
-            "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
+            "prompt": "¿En qué barrio vivís? Elegí una de las siguientes opciones.",
             "display_prompt": "Barrio",
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
@@ -2737,7 +2708,7 @@
             "name": "avellaneda-barrios",
             "type": "dropdown_autocomplete",
             "includeOnListItem": true,
-            "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
+            "prompt": "¿En qué barrio vivís? Elegí una de las siguientes opciones.",
             "display_prompt": "Barrio",
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
@@ -2862,7 +2833,7 @@
             "name": "esteban-echeverria-barrios",
             "type": "dropdown_autocomplete",
             "includeOnListItem": true,
-            "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
+            "prompt": "¿En qué barrio vivís? Elegí una de las siguientes opciones.",
             "display_prompt": "Barrio",
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
@@ -2899,7 +2870,7 @@
             "name": "la-matanza-barrios",
             "type": "dropdown_autocomplete",
             "includeOnListItem": true,
-            "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
+            "prompt": "¿En qué barrio vivís? Elegí una de las siguientes opciones.",
             "display_prompt": "Barrio",
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
@@ -3004,7 +2975,7 @@
             "name": "lanus-barrios",
             "type": "dropdown_autocomplete",
             "includeOnListItem": true,
-            "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
+            "prompt": "¿En qué barrio vivís? Elegí una de las siguientes opciones.",
             "display_prompt": "Barrio",
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
@@ -3065,7 +3036,7 @@
             "name": "lomas-de-zamora-barrios",
             "type": "dropdown_autocomplete",
             "includeOnListItem": true,
-            "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
+            "prompt": "¿En qué barrio vivís? Elegí una de las siguientes opciones.",
             "display_prompt": "Barrio",
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
@@ -3126,7 +3097,7 @@
             "name": "marcos-paz-barrios",
             "type": "dropdown_autocomplete",
             "includeOnListItem": true,
-            "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
+            "prompt": "¿En qué barrio vivís? Elegí una de las siguientes opciones.",
             "display_prompt": "Barrio",
             "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
@@ -3160,201 +3131,1573 @@
             ]
           },
           {
-            "name": "merlo-barrios",
-            "type": "dropdown_autocomplete",
-            "includeOnListItem": true,
-            "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
-            "placeholder": "Escribí el nombre de tu barrio...",
-            "hidden_default": true,
-            "optional": false,
-            "qprFormType": "relocations",
-            "content": [
-              {
-                "label": "El Juancito",
-                "value": "el-juancito"
+              "name": "merlo-barrios",
+              "type": "dropdown_autocomplete",
+              "includeOnListItem": true,
+              "prompt": "¿En qué barrio vivís? Elegí una de las siguientes opciones.",
+              "display_prompt": "Barrio",
+              "placeholder": "Escribí el nombre de tu barrio...",
+              "hidden_default": true,
+              "optional": false,
+              "content": [
+                  {
+                  "label": "El Juancito",
+                  "value": "el-juancito"
               },
-              {
-                "label": "Las Torres",
-                "value": "las-torres"
+                  {
+                  "label": "Las Torres",
+                  "value": "las-torres"
               }
-            ]
+              ]
           },
           {
-            "name": "otro-municipio",
-            "type": "text",
-            "prompt": "Otro (especificar municipio)",
-            "placeholder": "Escribí el nombre de tu municipio...",
-            "display_prompt": "Municipio",
-            "hidden_default": true,
-            "optional": false
+              "name": "otro-municipio",
+              "type": "text",
+              "prompt": "Otro (especificar municipio)",
+              "placeholder": "Escribí el nombre de tu municipio...",
+              "display_prompt": "Municipio",
+              "hidden_default": true,
+              "optional": false
           },
           {
-            "name": "otro-barrio",
-            "type": "text",
-            "prompt": "Otro (especificar barrio)",
-            "placeholder": "Escribí el nombre de tu barrio...",
-            "display_prompt": "Barrio",
-            "hidden_default": true,
-            "optional": false
-          },
-          {
-            "name": "situacion_de_relocalizacion",
-            "type": "big_radio",
-            "prompt": "Situación de Relocalización: marca la opción que describa mejor tu situación con respecto al programa de relocalización de villas y asentamientos de la Cuenca Matanza Riachuelo.",
-            "optional": false,
-            "qprFormType": "relocations",
-            "triggers": [
-              {
-                "value": "otro-barrio",
-                "targets": [
-                  "barrio-antes"
-                ]
+              "name": "otro-barrio",
+              "type": "text",
+              "prompt": "Otro (especificar barrio)",
+              "placeholder": "Escribí el nombre de tu barrio...",
+              "display_prompt": "Barrio",
+              "hidden_default": true,
+              "optional": false
+          },{
+              "name": "situacion-relocalizacion",
+              "type": "informational_html",
+              "content": "¿Cuál es tu situación actual con respecto a la relocalización de villas y asentamientos de la Cuenca Matanza Riachuelo? Marcá la opción que describa mejor tu situación."
+          },{
+              "name": "situacion-relocalizacion-barrio",
+              "type": "big_checkbox",
+              "prompt": "",
+              "optional": true,
+              "triggers": [{
+                  "value": "otro-barrio-value",
+                  "targets": [
+                      "barrio-antes-municipio"
+                  ]
+              }],
+              "content": [{
+                  "label": "Me relocalizaron en otro barrio o complejo habitacional",
+                  "value": "otro-barrio-value"
+              }]
+          },{
+              "name": "barrio-antes-municipio",
+              "type": "dropdown_autocomplete",
+              "includeOnListItem": true,
+              "prompt": "¿En qué municipio vivías antes? Elegí una de las siguientes opciones.",
+              "display_prompt": "Municipio",
+              "placeholder": "Escribí el nombre de tu municipio...",
+              "hidden_default": true,
+              "optional": false,
+              "triggers": [
+                  {
+                  "value": "barrio-antesciudad-de-buenos-aires",
+                  "targets": [
+                      "barrio-antes-ciudad-de-buenos-aires-barrios"
+                  ]
               },
-              {
-                "value": "otros",
-                "targets": [
-                  "otra-situacion"
-                ]
+                  {
+                  "value": "barrio-antes-almirante-brown",
+                  "targets": [
+                      "barrio-antes-almirante-brown-barrios"
+                  ]
+              },
+                  {
+                  "value": "barrio-antes-avellaneda",
+                  "targets": [
+                      "barrio-antes-avellaneda-barrios"
+                  ]
+              },{
+                  "value": "barrio-antes-esteban-echeverria",
+                  "targets": [
+                      "barrio-antes-esteban-echeverria-barrios"
+                  ]
+              },{
+                  "value": "barrio-antes-la-matanza",
+                  "targets": [
+                      "barrio-antes-la-matanza-barrios"
+                  ]
+              },{
+                  "value": "barrio-antes-lanus",
+                  "targets": [
+                      "barrio-antes-lanus-barrios"
+                  ]
+              },{
+                  "value": "barrio-antes-lomas-de-zamora",
+                  "targets": [
+                      "barrio-antes-lomas-de-zamora-barrios"
+                  ]
+              },{
+                  "value": "barrio-antes-marcos-paz",
+                  "targets": [
+                      "barrio-antes-marcos-paz-barrios"
+                  ]
+              },{
+                  "value": "barrio-antes-merlo",
+                  "targets": [
+                      "barrio-antes-merlo-barrios"
+                  ]
+              },{
+                  "value": "barrio-antes-otro",
+                  "targets": [
+                      "barrio-antes-otro-municipio",
+                      "barrio-antes-otro-barrio"
+                  ]
               }
             ],
             "content": [
               {
-                "label": "Me relocalizaron en otro barrio o complejo habitacional",
-                "value": "otro-barrio"
+                "label": "Ciudad de Buenos Aires",
+                "value": "barrio-antes-ciudad-de-buenos-aires"
               },
               {
-                "label": "Me informaron que me van a relocalizar pero aún no sucedió.",
-                "value": "no-sucedio"
+                "label": "Almirante Brown",
+                "value": "barrio-antes-almirante-brown"
               },
               {
-                "label": "Soy habitante de un barrio donde hubo o habrá personas relocalizadas pero no es mi caso.",
-                "value": "barrio-pero-no-mi-caso"
+                "label": "Avellaneda",
+                "value": "barrio-antes-avellaneda"
               },
               {
-                "label": "Soy habitante de un barrio o complejo habitacional al que llegaron personas relocalizadas de otros barrios de la Cuenca del Río Matanza Riachuelo.",
-                "value": "barrio-que-llegaron-personas"
+                "label": "Cañuelas",
+                "value": "barrio-antes-canuelas"
               },
               {
-                "label": "Otros",
-                "value": "otros"
+                "label": "Esteban Echeverría",
+                "value": "barrio-antes-esteban-echeverria"
+              },
+              {
+                "label": "Ezeiza",
+                "value": "barrio-antes-ezeiza"
+              },
+              {
+                "label": "La Matanza",
+                "value": "barrio-antes-la-matanza"
+              },
+              {
+                "label": "Lanús",
+                "value": "barrio-antes-lanus"
+              },
+              {
+                "label": "Las Heras",
+                "value": "barrio-antes-las-heras"
+              },
+              {
+                "label": "Lomas de Zamora",
+                "value": "barrio-antes-lomas-de-zamora"
+              },
+              {
+                "label": "Marcos Paz",
+                "value": "barrio-antes-marcos-paz"
+              },
+              {
+                "label": "Merlo",
+                "value": "barrio-antes-merlo"
+              },
+              {
+                "label": "Presidente Juan D. Perón",
+                "value": "barrio-antes-presidente-juan-d-peron"
+              },
+              {
+                "label": "San Vicente",
+                "value": "barrio-antes-san-vicente"
+              },
+              {
+                "label": "Otro",
+                "value": "barrio-antes-otro"
               }
             ]
           },
           {
-            "name": "barrio-antes",
-            "type": "text",
-            "prompt": "¿En qué barrio vivías antes?",
+              "name": "barrio-antes-ciudad-de-buenos-aires-barrios",
+              "type": "dropdown_autocomplete",
+              "includeOnListItem": true,
+              "prompt": "¿En qué barrio vivís? Elegí una de las siguientes opciones.",
+              "display_prompt": "Barrio",
+              "placeholder": "Escribí el nombre de tu barrio...",
+              "hidden_default": true,
+              "optional": false,
+              "content": [
+                  {
+                  "label": "Asentamiento Lamadrid",
+                  "value": "asentamiento-lamadrid"
+              },{
+                  "label": "Asentamiento Luján",
+                  "value": "asentamiento-lujan"
+              },{
+                  "label": "Asentamiento Magaldi",
+                  "value": "asentamiento-magaldi"
+              },{
+                  "label": "Asentamiento Rodrigo Bueno",
+                  "value": "asentamiento-rodrigo-bueno"
+              },{
+                  "label": "Asentamiento Suárez y Pedro de Mendoza",
+                  "value": "asentamiento-suarez-y-pedro-de-mendoza"
+              },{
+                  "label": "Barrio Padre Mugica (Av. Castañares y Av.General Paz)",
+                  "value": "barrio-padre-mugica"
+              },{
+                  "label": "El pueblito",
+                  "value": "el-pueblito"
+              },{
+                  "label": "El triángulo",
+                  "value": "el-triangulo"
+              },{
+                  "label": "Complejo Lacarra 2049",
+                  "value": "complejo-lacarra-2049"
+              },{
+                  "label": "Complejo Luzuriaga 837",
+                  "value": "complejo-luzuriaga-837"
+              },{
+                  "label": "Complejo Mundo Grúa",
+                  "value": "complejo-mundo-grua"
+              },{
+                  "label": "Complejo San Antonio 721",
+                  "value": "complejo-san-antonio-721"
+              },{
+                  "label": "Complejo Valparaíso 3570",
+                  "value": "complejo-valparaiso-3570"
+              },{
+                  "label": "Complejo Veracruz 3459",
+                  "value": "complejo-veracruz-3459"
+              },{
+                  "label": "Los Piletones",
+                  "value": "los-piletones"
+              },{
+                  "label": "Predio IVC",
+                  "value": "predio-ivc"
+              },{
+                  "label": "San Francisco",
+                  "value": "san-francisco"
+              },{
+                  "label": "Villa 21-24",
+                  "value": "villa-21-24"
+              },{
+                  "label": "Villa 26",
+                  "value": "villa-26"
+              }
+            ]
+          },
+          {
+            "name": "barrio-antes-almirante-brown-barrios",
+            "type": "dropdown_autocomplete",
+            "includeOnListItem": true,
+            "prompt": "¿En qué barrio vivís? Elegí una de las siguientes opciones.",
+            "display_prompt": "Barrio",
             "placeholder": "Escribí el nombre de tu barrio...",
-            "display_prompt": "Barrio antes",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations"
+            "triggers": [
+                {
+                    "value": "participacion",
+                    "targets": [
+                        "comentario",
+                        "additional_info",
+                        "additional_image",
+                        "relocalizaciones_pdf"
+                    ]
+            },{
+                    "value": "informacion",
+                    "targets": [
+                        "comentario",
+                        "additional_info",
+                        "additional_image",
+                        "relocalizaciones_pdf"
+                    ]
+            }],
+            "content": [
+              {
+                "label": "2 de Abril",
+                "value": "2-de-abril"
+              },
+              {
+                "label": "14 de Noviembre",
+                "value": "14-de-noviembre"
+              },
+              {
+                "label": "Arroyo del Rey",
+                "value": "arroyo-del-rey"
+              },
+              {
+                "label": "Barrio Bicentenario",
+                "value": "barrio-bicentenario"
+              },
+              {
+                "label": "Barrio Lindo I",
+                "value": "barrio-lindo-i"
+              },
+              {
+                "label": "Barrio Lindo II",
+                "value": "barrio-lindo-ii"
+              },
+              {
+                "label": "Barrio Santa Ana",
+                "value": "barrio-santa-ana"
+              },
+              {
+                "label": "Glew",
+                "value": "glew"
+              },
+              {
+                "label": "La Cumbre",
+                "value": "la-cumbre"
+              },
+              {
+                "label": "Las Tunas",
+                "value": "las-tunas"
+              },
+              {
+                "label": "Medalla Milagrosa",
+                "value": "medalla-milagrosa"
+              },
+              {
+                "label": "San Pablo",
+                "value": "san-pablo"
+              },
+              {
+                "label": "Santa Ana",
+                "value": "santa-ana"
+              }
+            ]
           },
           {
-            "name": "otra-situacion",
-            "type": "text",
-            "prompt": "Describí tu situación con respecto al programa",
-            "placeholder": "Escribí aquí...",
-            "display_prompt": "Otra situación",
+            "name": "barrio-antes-avellaneda-barrios",
+            "type": "dropdown_autocomplete",
+            "includeOnListItem": true,
+            "prompt": "¿En qué barrio vivís? Elegí una de las siguientes opciones.",
+            "display_prompt": "Barrio",
+            "placeholder": "Escribí el nombre de tu barrio...",
             "hidden_default": true,
-            "optional": false,
-            "qprFormType": "relocations"
-          },
-          {
-            "name": "tema_interese",
-            "type": "big_radio",
-            "prompt": "¿Sobre cuál de los siguientes temas vas a comentar? Elegí la temática que se adecua mejor a lo que vas a compartir.",
             "optional": false,
             "content": [
               {
-                "label": "Participación en el proceso relocalización/mesas de trabajo",
-                "value": "participacion"
+                "label": "7 de Enero",
+                "value": "7-de-enero"
               },
               {
-                "label": "Información sobre el proceso de relocalización",
-                "value": "informacion"
+                "label": "7 de Septiembre",
+                "value": "7-de-septiembre"
               },
               {
-                "label": "Salud",
-                "value": "salud"
+                "label": "Asentamiento Luján",
+                "value": "asentamiento-lujan"
               },
               {
-                "label": "Vivienda",
-                "value": "vivienda"
+                "label": "Barrio Alianza",
+                "value": "barrio-alianza"
               },
               {
-                "label": "Hábitat: servicios públicos, infraestructura barrial y ambiente",
-                "value": "habitat"
+                "label": "Barrio La Saladita",
+                "value": "barrio-la-saladita"
               },
               {
-                "label": "Acceso y conexión con la ciudad y movilidad urbana",
-                "value": "conexion"
+                "label": "Barrio La Saladita Norte",
+                "value": "barrio-la-saladita-norte"
               },
               {
-                "label": "Situación económica y laboral",
-                "value": "economica-y-laboral"
+                "label": "CAEM",
+                "value": "caem"
               },
               {
-                "label": "Educación",
-                "value": "educacion"
+                "label": "Deheza y Helguera",
+                "value": "deheza-y-helguera"
               },
               {
-                "label": "Relaciones comunitarias y acciones",
-                "value": "relaciones-comunitarias"
+                "label": "Entre Vías",
+                "value": "entre-vias"
               },
               {
-                "label": "Otros",
-                "value": "otros"
+                "label": "Ex ACINDAR",
+                "value": "ex-acindar"
+              },
+              {
+                "label": "French y Autopista",
+                "value": "french-y-autopista"
+              },
+              {
+                "label": "Gerli",
+                "value": "gerli"
+              },
+              {
+                "label": "Isla Maciel",
+                "value": "isla-maciel"
+              },
+              {
+                "label": "Nueva Ana",
+                "value": "nueva-ana"
+              },
+              {
+                "label": "Los Cardales",
+                "value": "los-cardales"
+              },
+              {
+                "label": "Pasaje Aldaz",
+                "value": "pasaje-aldaz"
+              },
+              {
+                "label": "Predio Madariaga",
+                "value": "predio-madariaga"
+              },
+              {
+                "label": "Predio Llaneza",
+                "value": "predio-llaneza"
+              },
+              {
+                "label": "Predio Pinzón",
+                "value": "predio-pinzon"
+              },
+              {
+                "label": "Predio Pitágoras",
+                "value": "predio-pitagoras"
+              },
+              {
+                "label": "Pte. Agüero",
+                "value": "pte-aguero"
+              },
+              {
+                "label": "Rancho Grande",
+                "value": "rancho-grande"
+              },
+              {
+                "label": "Relámpago",
+                "value": "relampago"
+              },
+              {
+                "label": "Tellier",
+                "value": "tellier"
+              },
+              {
+                "label": "Villa Azul",
+                "value": "villa-azul"
+              },
+              {
+                "label": "Villa Corina",
+                "value": "villa-corina"
+              },
+              {
+                "label": "Villa Inflamable",
+                "value": "villa-inflamable"
+              },
+              {
+                "label": "Villa Tranquila",
+                "value": "villa-tranquila"
               }
             ]
           },
           {
-            "name": "comentario",
-            "type": "textarea",
-            "prompt": "Comentario",
-            "placeholder": "Comentario...",
-            "display_prompt": "Comentario",
-            "optional": true,
-            "qprFormType": "relocations"
+            "name": "barrio-antes-esteban-echeverria-barrios",
+            "type": "dropdown_autocomplete",
+            "includeOnListItem": true,
+            "prompt": "¿En qué barrio vivís? Elegí una de las siguientes opciones.",
+            "display_prompt": "Barrio",
+            "placeholder": "Escribí el nombre de tu barrio...",
+            "hidden_default": true,
+            "optional": false,
+            "content": [
+              {
+                "label": "9 de Enero",
+                "value": "9-de-enero"
+              },
+              {
+                "label": "Barrio Montecarlo",
+                "value": "barrio-montecarlo"
+              },
+              {
+                "label": "Juan Pablo II",
+                "value": "uan-pablo-ii"
+              },
+              {
+                "label": "Las Praderas",
+                "value": "las-praderas"
+              },
+              {
+                "label": "Papa Francisco",
+                "value": "papa-francisco"
+              },
+              {
+                "label": "Sarmiento",
+                "value": "sarmiento"
+              }
+            ]
           },
           {
-            "name": "additional_info",
-            "type": "rich_textarea",
-            "prompt": "Información Adicional",
-            "display_prompt": "Información Adicional",
-            "placeholder": "Adjunte archivos PDF, videos y otra información",
-            "qprFormType": "relocations"
+            "name": "barrio-antes-la-matanza-barrios",
+            "type": "dropdown_autocomplete",
+            "includeOnListItem": true,
+            "prompt": "¿En qué barrio vivís? Elegí una de las siguientes opciones.",
+            "display_prompt": "Barrio",
+            "placeholder": "Escribí el nombre de tu barrio...",
+            "hidden_default": true,
+            "optional": false,
+            "content": [
+              {
+                "label": "22 de Enero",
+                "value": "22-de-enero"
+              },
+              {
+                "label": "Arroyo las Víboras",
+                "value": "arroyo-las-viboras"
+              },
+              {
+                "label": "Artilleros",
+                "value": "artilleros"
+              },
+              {
+                "label": "Asentamiento J.L. Cabezas",
+                "value": "asentamiento-jl-cabezas"
+              },
+              {
+                "label": "Asentamiento la Isla (La Saladita)",
+                "value": "asentamiento-la-isla-la-saladita"
+              },
+              {
+                "label": "Asentamiento los Ceibos Sur",
+                "value": "asentamiento-los-ceibos-sur"
+              },
+              {
+                "label": "Asentamiento mi Esperanza",
+                "value": "asentamiento-mi-esperanza"
+              },
+              {
+                "label": "Barrio Scasso",
+                "value": "barrio-scasso"
+              },
+              {
+                "label": "Don Juan",
+                "value": "don-juan"
+              },
+              {
+                "label": "El mosquito",
+                "value": "el-mosquito"
+              },
+              {
+                "label": "Evo Morales",
+                "value": "evo-morales"
+              },
+              {
+                "label": "Finocchieto",
+                "value": "finocchieto"
+              },
+              {
+                "label": "Dupy",
+                "value": "dupy"
+              },
+              {
+                "label": "Las antenas",
+                "value": "Las-antenas"
+              },
+              {
+                "label": "La Bastilla I",
+                "value": "la-bastilla-i"
+              },
+              {
+                "label": "La Bastilla II",
+                "value": "la-bastilla-ii"
+              },
+              {
+                "label": "Lucero",
+                "value": "lucero"
+              },
+              {
+                "label": "Puerta de Hierro",
+                "value": "puerta-de-hierro"
+              },
+              {
+                "label": "Villa Domingo Villán",
+                "value": "villa-domingo-villan"
+              },
+              {
+                "label": "Villa Godoy Cruz",
+                "value": "villa-godoy-cruz"
+              },
+              {
+                "label": "Villa San Petersburgo",
+                "value": "villa-san-petersburgo"
+              },
+              {
+                "label": "Villa Santos Vega",
+                "value": "villa-santos-vega"
+              },
+              {
+                "label": "Villa Susana",
+                "value": "villa-susana"
+              }
+            ]
           },
           {
-            "name": "relocalizaciones-image",
-            "type": "file",
-            "prompt": "Comparte una imagen",
-            "label": "Agregar una imagen",
-            "optional": true,
-            "qprFormType": "relocations"
+            "name": "barrio-antes-lanus-barrios",
+            "type": "dropdown_autocomplete",
+            "includeOnListItem": true,
+            "prompt": "¿En qué barrio vivís? Elegí una de las siguientes opciones.",
+            "display_prompt": "Barrio",
+            "placeholder": "Escribí el nombre de tu barrio...",
+            "hidden_default": true,
+            "optional": false,
+            "content": [
+              {
+                "label": "10 de Enero",
+                "value": "10-de-enero"
+              },
+              {
+                "label": "Acuba I",
+                "value": "acuba-i"
+              },
+              {
+                "label": "Acuba II",
+                "value": "acuba-ii"
+              },
+              {
+                "label": "Asentamiento Pte. Alsina",
+                "value": "asentamiento-pte-alsina"
+              },
+              {
+                "label": "Fabricaciones Militares",
+                "value": "fabricaciones-militares"
+              },
+              {
+                "label": "La Fe",
+                "value": "la-fe"
+              },
+              {
+                "label": "La Maquinita",
+                "value": "la-maquinita"
+              },
+              {
+                "label": "San Francisco de Asís",
+                "value": "san-francisco-de-asis"
+              },
+              {
+                "label": "Vialidad Nacional (Néstor Kirchner)",
+                "value": "vialidad-nacional-nestor-kirchner"
+              },
+              {
+                "label": "Villa Besada",
+                "value": "villa-besada"
+              },
+              {
+                "label": "Villa Jardín",
+                "value": "villa-jardin"
+              },
+              {
+                "label": "Villa Talleres",
+                "value": "villa-talleres"
+              }
+            ]
           },
           {
-            "name": "relocalizaciones-pdf",
-            "type": "file",
-            "prompt": "Comparte un PDF",
-            "label": "Agregar un PDF",
-            "optional": true,
-            "qprFormType": "relocations"
+            "name": "barrio-antes-lomas-de-zamora-barrios",
+            "type": "dropdown_autocomplete",
+            "includeOnListItem": true,
+            "prompt": "¿En qué barrio vivís? Elegí una de las siguientes opciones.",
+            "display_prompt": "Barrio",
+            "placeholder": "Escribí el nombre de tu barrio...",
+            "hidden_default": true,
+            "optional": false,
+            "content": [
+              {
+                "label": "Asentamiento 3 de Enero",
+                "value": "asentamiento-3-de-enero"
+              },
+              {
+                "label": "Asentamiento 2 de Mayo",
+                "value": "asentamiento-2-de-mayo"
+              },
+              {
+                "label": "Asentamiento 1 de Octubre",
+                "value": "asentamiento-1-de-octubre"
+              },
+              {
+                "label": "Asentamiento Amanecer",
+                "value": "asentamiento-amanecer"
+              },
+              {
+                "label": "Asentamiento DAM",
+                "value": "asentamiento-dam"
+              },
+              {
+                "label": "Asentamiento La Lonja",
+                "value": "asentamiento-la-lonja"
+              },
+              {
+                "label": "Asentamiento Libertad",
+                "value": "asentamiento-libertad"
+              },
+              {
+                "label": "Asentamiento Soledad",
+                "value": "asentamiento-soledad"
+              },
+              {
+                "label": "Barrio Unamuno",
+                "value": "barrio-unamuno"
+              },
+              {
+                "label": "Predio la Herradura",
+                "value": "predio-la-herradura"
+              },
+              {
+                "label": "Predio Pombo I",
+                "value": "predio-pombo-i"
+              },
+              {
+                "label": "Predio Pombo II",
+                "value": "predio-pombo-ii"
+              }
+            ]
+          },{
+            "name": "barrio-antes-marcos-paz-barrios",
+            "type": "dropdown_autocomplete",
+            "includeOnListItem": true,
+            "prompt": "¿En qué barrio vivís? Elegí una de las siguientes opciones.",
+            "display_prompt": "Barrio",
+            "placeholder": "Escribí el nombre de tu barrio...",
+            "hidden_default": true,
+            "optional": false,
+            "content": [
+              {
+                "label": "El Palenque",
+                "value": "el-palenque"
+              },
+              {
+                "label": "El Zorzal",
+                "value": "el-zorzal"
+              },
+              {
+                "label": "Gándara",
+                "value": "gandara"
+              },
+              {
+                "label": "Rayo de Sol",
+                "value": "rayo-de-sol"
+              },
+              {
+                "label": "Santa Catalina",
+                "value": "santa-catalina"
+              },
+              {
+                "label": "Urioste",
+                "value": "urioste"
+              }
+            ]
+          },{
+              "name": "barrio-antes-merlo-barrios",
+              "type": "dropdown_autocomplete",
+              "includeOnListItem": true,
+              "prompt": "¿En qué barrio vivís? Elegí una de las siguientes opciones.",
+              "display_prompt": "Barrio",
+              "placeholder": "Escribí el nombre de tu barrio...",
+              "hidden_default": true,
+              "optional": false,
+              "content": [
+                  {
+                  "label": "El Juancito",
+                  "value": "el-juancito"
+              },
+                  {
+                  "label": "Las Torres",
+                  "value": "las-torres"
+              }
+              ]
+          },{
+              "name": "barrio-antes-otro-municipio",
+              "type": "text",
+              "prompt": "Otro (especificar municipio)",
+              "placeholder": "Escribí el nombre de tu municipio...",
+              "display_prompt": "Municipio",
+              "hidden_default": true,
+              "optional": false
+          },{
+              "name": "barrio-antes-otro-barrio",
+              "type": "text",
+              "prompt": "Otro (especificar barrio)",
+              "placeholder": "Escribí el nombre de tu barrio...",
+              "display_prompt": "Barrio",
+              "hidden_default": true,
+              "optional": false
+          },{
+              "name": "informaron-relocalizacion-no",
+              "type": "big_checkbox",
+              "prompt": "",
+              "optional": true,
+              "triggers": [{
+                  "value": "informaron-relocalizacion-no-sucedio",
+                  "targets": [
+                      "relocalizacion-barrio-info",
+                      "relocalizacion-barrio-si",
+                      "relocalizacion-barrio-no"
+                  ]
+              }],
+              "content": [{
+                  "label": "Me informaron que me van a relocalizar pero aún no sucedió.",
+                  "value": "informaron-relocalizacion-no-sucedio"
+              }]
+          },{
+              "name": "relocalizacion-barrio-info",
+              "type": "informational_html",
+              "hidden_default": true,
+              "content": "<span>¿Sabés en qué barrio o complejo te van a asignar una vivienda?</span>"
+          },{
+              "name": "relocalizacion-barrio-si",
+              "type": "big_checkbox",
+              "prompt": " ",
+              "display_prompt": "Se relocaliza",
+              "hidden_default": true,
+              "optional": true,
+              "content": [{
+                  "label": "Si",
+                  "value": "asignar-rotonda-si-value"
+              }]
+          },{
+              "name": "relocalizacion-barrio-no",
+              "type": "big_checkbox",
+              "prompt": " ",
+              "display_prompt": "No se relocaliza",
+              "optional": true,
+              "hidden_default": true,
+              "triggers": [{
+                  "value": "asignar-rotonda-no-value",
+                  "targets": [
+                      "cuando-relocalizacion"
+                  ]
+              }],
+              "content": [{
+                  "label": "No",
+                  "value": "asignar-rotonda-no-value"
+              }]
+          },{
+              "name": "cuando-relocalizacion",
+              "type": "big_radio",
+              "prompt": " ",
+              "display_prompt": "¿Sabés cuándo va a ser la mudanza?",
+              "optional": true,
+              "hidden_default": true,
+              "content": [{
+                  "label": "Sí",
+                  "value": "cuando-relocaliza-si"
+              },{
+                  "label": "No",
+                  "value": "cuando-relocaliza-no"
+              }]
+          },{
+              "name": "situacion-relocalizacion-barrio-caso",
+              "type": "big_checkbox",
+              "prompt": "",
+              "optional": true,
+              "content": [{
+                  "label": "Soy habitante de un barrio donde hubo o habrá personas relocalizadas pero no es mi caso.",
+                  "value": "barrio-pero-no-mi-caso"
+              }]
+          },{
+              "name": "situacion-relocalizacion-personas-relocalizadas",
+              "type": "big_checkbox",
+              "prompt": "",
+              "optional": true,
+              "content": [{
+                  "label": "Soy habitante de un barrio o complejo habitacional al que llegaron personas relocalizadas de otros barrios de la Cuenca del Río Matanza Riachuelo.",
+                  "value": "barrio-que-llegaron-personas"
+              }]
+          },{
+              "name": "tema_interese",
+              "type": "informational_html",
+              "content": "<span>¿Sobre cuál de los siguientes temas vas a comentar? Elegí la temática que se adecua mejor a lo que vas a compartir.</span>"
+          },{
+              "name": "tema_interes_participacion",
+              "type": "big_checkbox",
+              "prompt": "",
+              "display_prompt": "Participacion",
+              "optional": true,
+              "triggers": [{
+                  "value": "participacion",
+                  "targets": [
+                      "comentario-participacion",
+                      "additional-info-participacion",
+                      "additional-image-participacion",
+                      "additional-pdf-participacion",
+                      "additional-enlace-participacion",
+                      "tema_intereses_declaracion"
+                  ]
+              }],
+              "content": [{
+                  "label": "Participación en el proceso relocalización/mesas de trabajo",
+                  "value": "participacion"
+              }]
+          },{
+              "name": "comentario-participacion",
+              "type": "text",
+              "prompt": "",
+              "placeholder": "Titulo...",
+              "display_prompt": "Título",
+              "hidden_default": true,
+              "optional": false
+          },{
+              "name": "additional-info-participacion",
+              "type": "textarea",
+              "prompt": "",
+              "display_prompt": "Texto",
+              "hidden_default": true,
+              "placeholder": "Texto",
+              "optional": false
+          },{
+              "name": "additional-image-participacion",
+              "type": "file",
+              "hidden_default": true,
+              "label": "Adjuntar archivo de IMAGEN",
+              "prompt": " ",
+              "qprFormType": "relocations",
+              "optional": true
+          },{
+              "name": "additional-pdf-participacion",
+              "type": "file",
+              "hidden_default": true,
+              "label": "Adjuntar archivo PDF",
+              "prompt": " ",
+              "qprFormType": "relocations",
+              "optional": true
+          },{
+              "name": "additional-enlace-participacion",
+              "type": "text",
+              "hidden_default": true,
+              "prompt": "",
+              "placeholder": "Enlace",
+              "display_prompt": "Enlace",
+              "optional": true
+          },{
+              "name": "tema_intereses_declaracion",
+              "type": "informational_html",
+              "hidden_default": true,
+              "content": "<span>Declaro que la fotografías y documentos que adjunto son de mi autoría o bien cuento con permiso expreso para poder publicarlos.</span>"
+          },{
+              "name": "tema_interes_informacion",
+              "type": "big_checkbox",
+              "prompt": "",
+              "display_prompt": "Información de relocalización",
+              "optional": true,
+              "triggers": [{
+                  "value": "informacion",
+                  "targets": [
+                      "comentario-informacion",
+                      "additional-info-informacion",
+                      "additional-image-informacion",
+                      "relocalizaciones-pdf-informacion",
+                      "tema-intereses-enlace-informacion",
+                      "tema_intereses_informacion-declaracion"
+                  ]
+              }],
+              "content": [{
+                  "label": "Información sobre el proceso de relocalización",
+                  "value": "informacion"
+              }]
+          },{
+              "name": "comentario-informacion",
+              "type": "text",
+              "prompt": " ",
+              "placeholder": "Título",
+              "display_prompt": "Titulo",
+              "hidden_default": true,
+              "optional": false
+          },{
+              "name": "additional-info-informacion",
+              "type": "textarea",
+              "prompt": " ",
+              "display_prompt": "Texto",
+              "hidden_default": true,
+              "placeholder": "Texto",
+              "optional": false
+          },{
+              "name": "additional-image-informacion",
+              "type": "file",
+              "hidden_default": true,
+              "label": "Adjuntar archivo de IMAGEN",
+              "prompt": " ",
+              "qprFormType": "relocations",
+              "optional": true
+          },{
+              "name": "relocalizaciones-pdf-informacion",
+              "type": "file",
+              "hidden_default": true,
+              "prompt": " ",
+              "label": "Adjuntar archivo PDF",
+              "qprFormType": "relocations",
+              "optional": true
+          },{
+              "name": "tema-intereses-enlace-informacion",
+              "type": "text",
+              "hidden_default": true,
+              "prompt": "",
+              "placeholder": "Enlace",
+              "display_prompt": "Enlace",
+              "optional": true
+          },{
+              "name": "tema_intereses_informacion-declaracion",
+              "type": "informational_html",
+              "hidden_default": true,
+              "content": "<span>Declaro que la fotografías y documentos que adjunto son de mi autoría o bien cuento con permiso expreso para poder publicarlos.</span>"
+          },{
+              "name": "tema_interes_salud",
+              "type": "big_checkbox",
+              "prompt": "",
+              "display_prompt": "Salud",
+              "optional": true,
+              "triggers": [
+                  {
+                  "value": "salud",
+                  "targets": [
+                      "comentario-salud",
+                      "additional-info-salud",
+                      "additional-image-salud",
+                      "additional-pdf-salud",
+                      "additional-enlace-salud",
+                      "tema_intereses_salud-declaracion"
+                  ]
+              }],
+              "content": [
+                  {
+                  "label": "Salud",
+                  "value": "salud"
+                  }
+            ]
+          },{
+              "name": "comentario-salud",
+              "type": "text",
+              "prompt": " ",
+              "placeholder": "Título",
+              "display_prompt": "Título",
+              "hidden_default": true,
+              "optional": false
+          },{
+              "name": "additional-info-salud",
+              "type": "textarea",
+              "prompt": " ",
+              "display_prompt": "Texto",
+              "hidden_default": true,
+              "placeholder": "Texto",
+              "optional": false
+          },{
+              "name": "additional-image-salud",
+              "type": "file",
+              "hidden_default": true,
+              "label": "Adjuntar archivo de IMAGEN",
+              "prompt": " ",
+              "qprFormType": "relocations",
+              "optional": true
+          },{
+              "name": "additional-pdf-salud",
+              "type": "file",
+              "hidden_default": true,
+              "prompt": " ",
+              "label": "Adjuntar archivo PDF",
+              "qprFormType": "relocations",
+              "optional": true
+          },{
+              "name": "additional-enlace-salud",
+              "type": "text",
+              "hidden_default": true,
+              "prompt": "",
+              "placeholder": "Enlace",
+              "display_prompt": "Enlace",
+              "optional": true
+          },{
+              "name": "tema_intereses_salud-declaracion",
+              "type": "informational_html",
+              "hidden_default": true,
+              "content": "<span>Declaro que la fotografías y documentos que adjunto son de mi autoría o bien cuento con permiso expreso para poder publicarlos.</span>"
+          },{
+              "name": "tema_interes_vivienda",
+              "type": "big_checkbox",
+              "prompt": "",
+              "display_prompt": "Vivienda",
+              "optional": true,
+              "triggers": [
+                  {
+                  "value": "vivienda",
+                  "targets": [
+                      "comentario-vivienda",
+                      "additional-info-vivienda",
+                      "additional-image-vivienda",
+                      "additional-pdf-vivienda",
+                      "additional-enlace-vivienda",
+                      "tema_intereses_vivienda-declaracion"
+                  ]
+              }],
+              "content": [
+              {
+                "label": "Vivienda",
+                "value": "vivienda"
+              }
+            ]
+          },{
+              "name": "comentario-vivienda",
+              "type": "text",
+              "prompt": " ",
+              "placeholder": "Título",
+              "display_prompt": "Título",
+              "hidden_default": true,
+              "optional": false
+          },{
+              "name": "additional-info-vivienda",
+              "type": "textarea",
+              "prompt": " ",
+              "display_prompt": "Texto",
+              "hidden_default": true,
+              "placeholder": "Texto",
+              "optional": false
+          },{
+              "name": "additional-image-vivienda",
+              "type": "file",
+              "hidden_default": true,
+              "label": "Adjuntar archivo de IMAGEN",
+              "qprFormType": "relocations",
+              "prompt": " ",
+              "optional": true
+          },{
+              "name": "additional-pdf-vivienda",
+              "type": "file",
+              "hidden_default": true,
+              "prompt": " ",
+              "label": "Adjuntar archivo de PDF",
+              "qprFormType": "relocations",
+              "optional": true
+          },{
+              "name": "additional-enlace-vivienda",
+              "type": "text",
+              "hidden_default": true,
+              "prompt": "",
+              "placeholder": "Enlace",
+              "display_prompt": "Enlace",
+              "optional": true
+          },{
+              "name": "tema_intereses_vivienda-declaracion",
+              "type": "informational_html",
+              "hidden_default": true,
+              "content": "<span>Declaro que la fotografías y documentos que adjunto son de mi autoría o bien cuento con permiso expreso para poder publicarlos.</span>"
+          },{
+              "name": "tema_interes_habitat",
+              "type": "big_checkbox",
+              "prompt": "",
+              "display_prompt": "Habitat",
+              "optional": true,
+              "triggers": [
+                  {
+                  "value": "habitat",
+                  "targets": [
+                      "comentario-habitat",
+                      "additional-info-habitat",
+                      "additional-image-habitat",
+                      "additional-pdf-habitat",
+                      "additional-enlace-habitat",
+                      "tema_intereses_habitat-declaracion"
+                  ]
+              }],
+              "content": [
+              {
+                "label": "Hábitat: servicios públicos, infraestructura barrial y ambiente",
+                "value": "habitat"
+              }
+            ]
+          },{
+              "name": "comentario-habitat",
+              "type": "text",
+              "prompt": " ",
+              "placeholder": "Título",
+              "display_prompt": "Título",
+              "hidden_default": true,
+              "optional": false
+          },{
+              "name": "additional-info-habitat",
+              "type": "textarea",
+              "prompt": " ",
+              "display_prompt": "Texto",
+              "hidden_default": true,
+              "placeholder": "Texto",
+              "optional": false
+          },{
+              "name": "additional-image-habitat",
+              "type": "file",
+              "hidden_default": true,
+              "label": "Adjuntar archivo de IMAGEN",
+              "qprFormType": "relocations",
+              "prompt": " ",
+              "optional": true
+          },{
+              "name": "additional-pdf-habitat",
+              "type": "file",
+              "hidden_default": true,
+              "prompt": " ",
+              "label": "Agregar un PDF",
+              "qprFormType": "relocations",
+              "optional": true
+          },{
+              "name": "additional-enlace-habitat",
+              "type": "text",
+              "hidden_default": true,
+              "prompt": "",
+              "placeholder": "Enlace",
+              "display_prompt": "Enlace",
+              "optional": true
+          },{
+              "name": "tema_intereses_habitat-declaracion",
+              "type": "informational_html",
+              "hidden_default": true,
+              "content": "<span>Declaro que la fotografías y documentos que adjunto son de mi autoría o bien cuento con permiso expreso para poder publicarlos.</span>"
+          },{
+              "name": "tema_interes_conexion",
+              "type": "big_checkbox",
+              "prompt": "",
+              "display_prompt": "Conexion",
+              "optional": true,
+              "triggers": [
+                  {
+                  "value": "conexion",
+                  "targets": [
+                      "comentario-conexion",
+                      "additional-info-conexion",
+                      "additional-image-conexion",
+                      "additional-pdf-conexion",
+                      "additional-enlace-conexion",
+                      "tema_intereses_conexion-declaracion"
+                  ]
+              }],
+              "content": [
+              {
+                "label": "Acceso y conexión con la ciudad y movilidad urbana",
+                "value": "conexion"
+              }
+            ]
+          },{
+              "name": "comentario-conexion",
+              "type": "text",
+              "prompt": " ",
+              "placeholder": "Texto",
+              "display_prompt": "Texto",
+              "hidden_default": true,
+              "optional": false
+          },{
+              "name": "additional-info-conexion",
+              "type": "textarea",
+              "prompt": " ",
+              "display_prompt": "Texto",
+              "hidden_default": true,
+              "placeholder": "Texto",
+              "optional": false
+          },{
+              "name": "additional-image-conexion",
+              "type": "file",
+              "hidden_default": true,
+              "label": "Adjuntar archivo de IMAGEN",
+              "qprFormType": "relocations",
+              "prompt": " ",
+              "optional": true
+          },{
+              "name": "additional-pdf-conexion",
+              "type": "file",
+              "hidden_default": true,
+              "prompt": " ",
+              "label": "Adjuntar archivo PDF",
+              "qprFormType": "relocations",
+              "optional": true
+          },{
+              "name": "additional-enlace-conexion",
+              "type": "text",
+              "hidden_default": true,
+              "prompt": "",
+              "placeholder": "Enlace",
+              "display_prompt": "Enlace",
+              "optional": true
+          },{
+              "name": "tema_intereses_conexion-declaracion",
+              "type": "informational_html",
+              "hidden_default": true,
+              "content": "<span>Declaro que la fotografías y documentos que adjunto son de mi autoría o bien cuento con permiso expreso para poder publicarlos.</span>"
+          },{
+              "name": "tema_interes_economica-laboral",
+              "type": "big_checkbox",
+              "prompt": "",
+              "display_prompt": "Económica y laboral",
+              "optional": true,
+              "triggers": [
+                  {
+                  "value": "economica-laboral",
+                  "targets": [
+                      "comentario-economica-laboral",
+                      "additional-info-economica-laboral",
+                      "additional-image-economica-laboral",
+                      "additional-pdf-economica-laboral",
+                      "additional-enlace-economica-laboral",
+                      "tema_intereses_economica-declaracion"
+                  ]
+              }],
+              "content": [
+              {
+                "label": "Situación económica y laboral",
+                "value": "economica-laboral"
+              }
+            ]
+          },{
+              "name": "comentario-economica-laboral",
+              "type": "text",
+              "prompt": "",
+              "placeholder": "Título",
+              "display_prompt": "Titulo",
+              "hidden_default": true,
+              "optional": false
+          },{
+              "name": "additional-info-economica-laboral",
+              "type": "textarea",
+              "prompt": "",
+              "display_prompt": "Texto",
+              "hidden_default": true,
+              "placeholder": "Texto",
+              "optional": false
+          },{
+              "name": "additional-image-economica-laboral",
+              "type": "file",
+              "hidden_default": true,
+              "label": "Adjuntar archivo de IMAGEN",
+              "qprFormType": "relocations",
+              "prompt": " ",
+              "optional": true
+          },{
+              "name": "additional-pdf-economica-laboral",
+              "type": "file",
+              "hidden_default": true,
+              "prompt": " ",
+              "label": "Adjuntar archivo PDF",
+              "qprFormType": "relocations",
+              "optional": true
+          },{
+              "name": "additional-enlace-economica-laboral",
+              "type": "text",
+              "hidden_default": true,
+              "prompt": "",
+              "placeholder": "Enlace",
+              "display_prompt": "Enlace",
+              "optional": true
+          },{
+              "name": "tema_intereses_economica-declaracion",
+              "type": "informational_html",
+              "hidden_default": true,
+              "content": "<span>Declaro que la fotografías y documentos que adjunto son de mi autoría o bien cuento con permiso expreso para poder publicarlos.</span>"
+          },{
+              "name": "tema_interes_educacion",
+              "type": "big_checkbox",
+              "prompt": "",
+              "display_prompt": "Educacion",
+              "optional": true,
+              "triggers": [{
+                  "value": "educacion",
+                  "targets": [
+                      "comentario-educacion",
+                      "additional-info-educacion",
+                      "additional-image-educacion",
+                      "additional-pdf-educacion",
+                      "additional-enlace-educacion",
+                      "tema_intereses_educacion-declaracion"
+                  ]
+              }],
+              "content": [{
+                  "label": "Educación",
+                  "value": "educacion"
+              }]
           },
           {
-            "name": "recaptcha",
-            "type": "recaptcha",
-            "prompt": " ",
-            "display_prompt": "",
-            "placeholder": "",
-            "optional": false
+              "name": "comentario-educacion",
+              "type": "text",
+              "prompt": " ",
+              "placeholder": "Título",
+              "display_prompt": "Título",
+              "hidden_default": true,
+              "optional": true
           },
           {
-            "name": "submit",
-            "type": "submit",
-            "label": "Publicar en el mapa",
-            "qprFormType": "relocations"
+              "name": "additional-info-educacion",
+              "type": "textarea",
+              "prompt": " ",
+              "display_prompt": "Texto",
+              "hidden_default": true,
+              "placeholder": "Texto"
+          },
+          {
+              "name": "additional-image-educacion",
+              "type": "file",
+              "hidden_default": true,
+              "label": "Adjuntar archivo de IMAGEN",
+              "qprFormType": "relocations",
+              "prompt": " ",
+              "optional": true
+          },{
+              "name": "additional-pdf-educacion",
+              "type": "file",
+              "hidden_default": true,
+              "prompt": " ",
+              "label": "Adjuntar archivo PDF",
+              "qprFormType": "relocations",
+              "optional": true
+          },{
+              "name": "additional-enlace-educacion",
+              "type": "text",
+              "hidden_default": true,
+              "prompt": "",
+              "placeholder": "Enlace",
+              "display_prompt": "Enlace",
+              "optional": true
+          },{
+              "name": "tema_intereses_educacion-declaracion",
+              "type": "informational_html",
+              "hidden_default": true,
+              "content": "<span>Declaro que la fotografías y documentos que adjunto son de mi autoría o bien cuento con permiso expreso para poder publicarlos.</span>"
+          },{
+              "name": "tema_interes_relaciones_comunitarias",
+              "type": "big_checkbox",
+              "prompt": "",
+              "display_prompt": "Relaciones comunitarias y acciones",
+              "optional": true,
+              "triggers": [
+                  {
+                  "value": "relaciones-comunitarias",
+                  "targets": [
+                      "comentario-relaciones-comunitarias",
+                      "additional-info-relaciones-comunitarias",
+                      "additional-image-relaciones-comunitarias",
+                      "additional-pdf-relaciones-comunitarias",
+                      "additional-enlace-relaciones-comunitarias",
+                      "tema_intereses_relaciones-declaracion"
+                  ]
+              }],
+              "content": [
+                  {
+                  "label": "Relaciones comunitarias y acciones",
+                  "value": "relaciones-comunitarias"
+              }
+            ]
+          },{
+              "name": "comentario-relaciones-comunitarias",
+              "type": "text",
+              "prompt": " ",
+              "placeholder": "Título",
+              "display_prompt": "Titulo",
+              "hidden_default": true,
+              "optional": false
+          },{
+              "name": "additional-info-relaciones-comunitarias",
+              "type": "textarea",
+              "prompt": " ",
+              "display_prompt": "Información Adicional",
+              "hidden_default": true,
+              "placeholder": "Texto",
+              "optional": false
+          },{
+              "name": "additional-image-relaciones-comunitarias",
+              "type": "file",
+              "hidden_default": true,
+              "label": "Adjuntar archivo en IMAGEN",
+              "qprFormType": "relocations",
+              "prompt": " ",
+              "optional": true
+          },{
+              "name": "additional-pdf-relaciones-comunitarias",
+              "type": "file",
+              "hidden_default": true,
+              "prompt": " ",
+              "label": "Adjuntar archivo PDF",
+              "qprFormType": "relocations",
+              "optional": true
+          },{
+              "name": "additional-enlace-relaciones-comunitarias",
+              "type": "text",
+              "hidden_default": true,
+              "prompt": "",
+              "placeholder": "Enlace",
+              "display_prompt": "Enlace",
+              "optional": true
+          },{
+              "name": "tema_intereses_relaciones-declaracion",
+              "type": "informational_html",
+              "hidden_default": true,
+              "content": "<span>Declaro que la fotografías y documentos que adjunto son de mi autoría o bien cuento con permiso expreso para poder publicarlos.</span>"
+          },{
+              "name": "tema_interes_otros",
+              "type": "big_checkbox",
+              "prompt": "",
+              "display_prompt": "Otros",
+              "optional": true,
+              "triggers": [
+                  {
+                  "value": "otros",
+                  "targets": [
+                      "comentario-otros",
+                      "additional-info-otros",
+                      "additional-image-otros",
+                      "additional-pdf-otros",
+                      "additional-enlace-otros",
+                      "tema_intereses_otros-declaracion"
+                  ]
+              }],
+              "content": [
+                  {
+                  "label": "Otros",
+                  "value": "otros"
+              }
+            ]
+          },{
+              "name": "comentario-otros",
+              "type": "text",
+              "prompt": " ",
+              "placeholder": "Título",
+              "display_prompt": "Titulo",
+              "hidden_default": true,
+              "optional": false
+          },{
+              "name": "additional-info-otros",
+              "type": "textarea",
+              "prompt": " ",
+              "display_prompt": "Texto",
+              "hidden_default": true,
+              "placeholder": "Texto",
+              "optional": false
+          },{
+              "name": "additional-image-otros",
+              "type": "file",
+              "hidden_default": true,
+              "label": "Adjuntar archivo de IMAGEN",
+              "qprFormType": "relocations",
+              "prompt": " ",
+              "optional": true
+          },{
+              "name": "additional-pdf-otros",
+              "type": "file",
+              "hidden_default": true,
+              "prompt": " ",
+              "label": "Adjuntar archivo PDF",
+              "qprFormType": "relocations",
+              "optional": true
+          },{
+              "name": "additional-enlace-otros",
+              "type": "text",
+              "hidden_default": true,
+              "prompt": "",
+              "placeholder": "Enlace",
+              "display_prompt": "Enlace",
+              "optional": true
+          },{
+              "name": "tema_intereses_otros-declaracion",
+              "type": "informational_html",
+              "hidden_default": true,
+              "content": "<span>Declaro que la fotografías y documentos que adjunto son de mi autoría o bien cuento con permiso expreso para poder publicarlos.</span>"
+          },{
+              "name": "recaptcha",
+              "type": "recaptcha",
+              "prompt": " ",
+              "display_prompt": "",
+              "placeholder": "",
+              "optional": false
+          },{
+              "name": "submit",
+              "type": "common_form_element"
           }
         ]
       }
@@ -3731,26 +5074,29 @@
       "url": "/page/about",
       "name": "overview",
       "start_page": true
-    },
-    {
+    },{
       "title": "Áreas naturales",
       "type": "internal_link",
       "url": "/page/areasnaturales",
       "name": "overview",
       "start_page": true
-    },
-    {
+    },{
       "title": "Relocalizaciones",
       "type": "internal_link",
       "url": "/page/relocalizaciones",
       "name": "overview",
       "start_page": true
-    },
-    {
+    },{
       "title": "Calidad del agua",
       "type": "internal_link",
       "url": "/page/calidaddelagua",
       "name": "overview",
+      "start_page": true
+    },{
+      "title": "Ver todo",
+      "type": "internal_link",
+      "url": "/list",
+      "name": "list",
       "start_page": true
     }
   ],

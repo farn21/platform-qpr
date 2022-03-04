@@ -626,7 +626,7 @@ class InputForm extends Component {
   }
 
   getFields() {
-    console.log('multistage', this.selectedCategoryConfig.multi_stage)
+    //console.log('multistage', this.selectedCategoryConfig.multi_stage)
     return (this.selectedCategoryConfig.multi_stage
       ? this.getFieldsFromStage({
           fields: this.state.fields,
@@ -639,8 +639,8 @@ class InputForm extends Component {
   }
 
   getFieldsFromStage({ fields, stage }) {
-    console.log('fields', fields)
-    console.log('stage', stage)
+    //console.log('fields', fields)
+    //console.log('stage', stage)
     return fields.slice(stage.start_field_index - 1, stage.end_field_index);
   }
 

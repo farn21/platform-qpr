@@ -77,15 +77,6 @@ const MetadataBar = (props: MetadataBarProps) => (
                 props.commentFormConfig.response_plural_name,
               )}
         </SmallText>
-        <SmallText
-          css={css`
-            line-height: 0.9rem;
-          `}
-          display="block"
-          textTransform="uppercase"
-        >
-          {props.visits} visitas
-        </SmallText>
       </div>
       {props.appConfig.show_timestamps && (
         <SmallText
