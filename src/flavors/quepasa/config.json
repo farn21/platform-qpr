@@ -641,7 +641,7 @@
             ],
             "source": "quepasa-featured",
             "layout": {
-              "icon-image": "marker-amenaza.png",
+              "icon-image": "marker-novedades.png",
               "icon-size": 1.1,
               "icon-anchor": "center"
             }
@@ -653,7 +653,7 @@
             "type": "symbol",
             "source": "quepasa-featured",
             "layout": {
-              "icon-image": "marker-amenaza.png",
+              "icon-image": "marker-novedades.png",
               "icon-size": 0.9,
               "icon-anchor": "center"
             }
@@ -679,7 +679,7 @@
             ],
             "source": "novedades-input",
             "layout": {
-              "icon-image": "marker-amenaza.png",
+              "icon-image": "marker-novedades.png",
               "icon-size": 1.1,
               "icon-anchor": "center"
             }
@@ -691,7 +691,7 @@
             "type": "symbol",
             "source": "novedades-input",
             "layout": {
-              "icon-image": "marker-amenaza.png",
+              "icon-image": "marker-novedades.png",
               "icon-size": [
                 "step",
                 [
@@ -776,7 +776,7 @@
             ],
             "source": "calidad-input",
             "layout": {
-              "icon-image": "puertos.png",
+              "icon-image": "marker-agua",
               "icon-size": 1.1,
               "icon-anchor": "center"
             }
@@ -789,7 +789,7 @@
             "source": "calidad-input",
             "layout": {
               "icon-allow-overlap": true,
-              "icon-image": "puertos.png",
+              "icon-image": "marker-agua",
               "icon-size": [
                 "step",
                 [
@@ -825,7 +825,7 @@
             ],
             "source": "calidad-open-input",
             "layout": {
-              "icon-image": "represas.png",
+              "icon-image": "marker-agua",
               "icon-size": 1.1,
               "icon-anchor": "center"
             }
@@ -838,7 +838,7 @@
             "source": "calidad-open-input",
             "layout": {
               "icon-allow-overlap": true,
-              "icon-image": "represas.png",
+              "icon-image": "marker-agua",
               "icon-size": [
                 "step",
                 [
@@ -1095,13 +1095,13 @@
         ]
       },
       {
-        "formId": "novedades-input",
-        "category": "novedades",
+        "formId": "news-form",
+        "category": "riachuelo-news",
         "includeOnForm": true,
         "includeOnList": true,
         "name": "location_type",
         "datasetSlug": "novedades-input",
-        "icon_url": "/static/css/images/markers/marker-amenaza.png",
+        "icon_url": "/static/css/images/markers/marker-novedades.png",
         "value": "novedades",
         "label": "Novedades",
         "fields": [
@@ -1122,10 +1122,7 @@
             "placeholder": "Escribí el nombre de tu municipio...",
             "optional": false,
             "content": [
-              {
-                "label": "Ciudad de Buenos Aires",
-                "value": "ciudad-de-buenos-aires"
-              },
+          
               {
                 "label": "Almirante Brown",
                 "value": "almirante-brown"
@@ -1177,6 +1174,10 @@
               {
                 "label": "San Vicente",
                 "value": "san-vicente"
+              },
+              {
+                "label": "Ciudad de Buenos Aires",
+                "value": "ciudad-de-buenos-aires"
               }
             ]
           },
@@ -1246,8 +1247,8 @@
         ]
       },
       {
-        "category": "areas-protegidas-2",
-        "formId": "areas-protegidas-2",
+        "category": "riachuelo-natural-areas",
+        "formId": "areas-form",
         "includeOnForm": true,
         "name": "location_type",
         "datasetSlug": "areas-input",
@@ -1286,7 +1287,7 @@
           {
             "name": "intro-areas",
             "type": "informational_html",
-            "content": "<span><b>Compartí experiencias sobre los usos, actividades y observaciones en las áreas naturales de la Cuenca Matanza-Riachuelo. ¿Tenés dudas? Consultá la guía de campo.</b></span>"
+            "content": "<span><b>Compartí experiencias sobre los usos, actividades y observaciones en las áreas naturales de la Cuenca Matanza-Riachuelo.</b></span>"
           },
           {
             "name": "intro-guide-areas",
@@ -1301,10 +1302,6 @@
             "placeholder": "Elegí el municipio...",
             "optional": false,
             "content": [
-              {
-                "label": "Ciudad de Buenos Aires",
-                "value": "ciudad-de-buenos-aires"
-              },
               {
                 "label": "Almirante Brown",
                 "value": "almirante-brown"
@@ -1356,6 +1353,10 @@
               {
                 "label": "San Vicente",
                 "value": "san-vicente"
+              },
+              {
+                "label": "Ciudad de Buenos Aires",
+                "value": "ciudad-de-buenos-aires"
               }
             ]
           },
@@ -1699,7 +1700,7 @@
             ]
           },
           {
-            "name": "value_area",
+            "name": "value-area",
             "type": "big_checkbox",
             "prompt": "¿Qué valorás en esta área natural? Elegí una o más opciones:",
             "display_prompt": "Aspectos valorados en el área",
@@ -1737,8 +1738,650 @@
         ]
       },
       {
-        "category": "agua-calidad",
-        "formId": "agua-calidad",
+        "category": "riachuelo-natural-areas-registered-users",
+        "formId": "areas-form-registered-users",
+        "includeOnForm": true,
+        "name": "location_type",
+        "datasetSlug": "areas-open-input",
+        "icon_url": "/static/css/images/markers/marker-areas.svg",
+        "value": "areas-protegidas-2",
+        "label": "ÁREAS NATURALES: SEGUIMIENTO",
+        "geospatialAnalysis": [
+          {
+            "name": "subbasin_name",
+            "type": "pointInPolygon",
+            "analysisTarget": "riachuelo-subbasins.geojson",
+            "propertiesToPluck": [
+              {
+                "name": "NOMBRE"
+              }
+            ]
+          }
+        ],
+        "multi_stage": [
+          {
+            "start_field_index": 1,
+            "end_field_index": 40,
+            "header": "ÁREAS NATURALES: SEGUIMIENTO",
+            "qprFormType": "protected-area",
+            "description": ""
+          },
+          {
+            "start_field_index": 41,
+            "end_field_index": 42,
+            "header": "ÁREAS NATURALES: SEGUIMIENTO",
+            "qprFormType": "protected-area",
+            "description": ""
+          }
+        ],
+        "fields": [
+          {
+            "name": "intro-areas-registered-users",
+            "type": "informational_html",
+            "content": "<span><b>Podés compartir experiencias sobre los usos, actividades y observaciones en las áreas naturales de la Cuenca Matanza-Riachuelo.</b></span>"
+          },
+          {
+            "name": "intro-guide-areas-registered-users",
+            "type": "informational_html",
+            "content": "<span><b>¿Tenés dudas? Consultá la guía de campo.</b></span>"
+          },
+          {
+            "name": "municipio-areas-registered-users",
+            "type": "dropdown",
+            "prompt": "¿En qué municipio tiene lugar esta experiencia? Elegí una de estas opciones:",
+            "display_prompt": "Municipio",
+            "placeholder": "Elegí el municipio...",
+            "optional": false,
+            "content": [
+          
+              {
+                "label": "Almirante Brown",
+                "value": "almirante-brown"
+              },
+              {
+                "label": "Avellaneda",
+                "value": "avellaneda"
+              },
+              {
+                "label": "Cañuelas",
+                "value": "canuelas"
+              },
+              {
+                "label": "Esteban Echeverría",
+                "value": "esteban-echeverria"
+              },
+              {
+                "label": "Ezeiza",
+                "value": "ezeiza"
+              },
+              {
+                "label": "La Matanza",
+                "value": "la-matanza"
+              },
+              {
+                "label": "Lanús",
+                "value": "lanus"
+              },
+              {
+                "label": "Las Heras",
+                "value": "las-heras"
+              },
+              {
+                "label": "Lomas de Zamora",
+                "value": "lomas-de-zamora"
+              },
+              {
+                "label": "Marcos Paz",
+                "value": "marcos-paz"
+              },
+              {
+                "label": "Merlo",
+                "value": "merlo"
+              },
+              {
+                "label": "Presidente Juan D. Perón",
+                "value": "presidente-juan-d-peron"
+              },
+              {
+                "label": "San Vicente",
+                "value": "san-vicente"
+              },
+              {
+                "label": "Ciudad de Buenos Aires",
+                "value": "ciudad-de-buenos-aires"
+              }
+            ]
+          },
+          {
+            "name": "reserva-areas-registered-users",
+            "type": "dropdown",
+            "prompt": "Elegí la reserva sobre la cual vas a compartir tu experiencia.",
+            "display_prompt": "Reserva",
+            "optional": false,
+            "qprFormType": "protected-area",
+            "content": [
+              {
+                "label": "Reserva Municipal Morón",
+                "value": "reserva-municipal-moron"
+              },
+              {
+                "label": "Reserva Natural de Objetivo Definido Educativo Arroyo El Durazno",
+                "value": "reserva-natural-el-durazno"
+              },
+              {
+                "label": "Reserva Natural y Paisaje Protegido de Interés Provincial Santa Catalina",
+                "value": "reserva-natural-santa-catalina"
+              },
+              {
+                "label": "Reserva Ecológica Laguna Saladita Norte",
+                "value": "reserva-ecologica-laguna-salidata-norte"
+              },
+              {
+                "label": "Reserva Natural Municipal de Objetivo Definido Educativo Museo Guardia del Juncal",
+                "value": "reserva-natural-guardia-juncal"
+              },
+              {
+                "label": "Reserva Natural de Objetivo Definido Mixto Educativo y de Proteccion de Cuencas Hídricas Lagunas de San Vicente",
+                "value": "reserva-natural-lagunas-de-san-vicente"
+              },
+              {
+                "label": "Reserva Municipal Santa Catalina",
+                "value": "reserva-municipal-santa-catalina"
+              },
+              {
+                "label": "Reserva Natural Costanera Sur",
+                "value": "reserva-natural-costanera-sur"
+              },
+              {
+                "label": "Reserva Paleontológica Francisco P. Moreno Parque Natural Lago Lugano",
+                "value": "reserva-paleontologica-moreno"
+              },
+              {
+                "label": "Reserva Natural Integral y Mixta Laguna de Rocha",
+                "value": "reserva-natural-integral-mixta"
+              },
+              {
+                "label": "Reserva Natural y Área Ecológicamente Protegida Bosques de Ciudad Evita",
+                "value": "reserva-natural-area-ciudad-evita"
+              },
+              {
+                "label": "Reserva Natural de la Defensa El Palomar",
+                "value": "reserva-natural-defensa-palomar"
+              },
+              {
+                "label": "Reserva Ecológica Laguna Saladita Sur",
+                "value": "reserva-natural-laguna-saladita"
+              },
+              {
+                "label": "Reserva Costera Municipal de Avellaneda - Ecoarea",
+                "value": "reserva-costera-municipal-avellaneda-ecorea"
+              },
+              {
+                "label": "Reserva Ecológica Ciudad Universitaria - Costanera Norte",
+                "value": "reserva-ecológica-ciudad-universitaria"
+              },
+              {
+                "label": "Otra área natural",
+                "value": "otra-area-natural"
+              }
+            ]
+          },
+          {
+            "name": "lng-lat",
+            "type": "lng_lat"
+          },
+          {
+            "name": "address-area-registered-users",
+            "type": "geocoding",
+            "prompt": "¿Dónde está ubicada esta área? Arrastrá el mapa para ubicar tu experiencia. ",
+            "display_prompt": "",
+            "placeholder": "",
+            "optional": false,
+            "qprFormType": "water"
+          },
+          {
+            "name": "value-area-registered-users",
+            "type": "big_checkbox",
+            "prompt": "¿Qué valorás en esta área natural? Elegí una o más opciones:",
+            "display_prompt": "Aspectos valorados en el área",
+            "optional": false,
+            "qprFormType": "protected-area",
+            "triggers": [
+              {
+                "value": "value-other-aspects",
+                "targets": [
+                  "value-other-aspects-answer-area-registered-users"
+                ]
+              }
+            ],
+            "content": [
+              {
+                "label": "Valoro su biodiversidad.",
+                "value": "value-biodiversiy"
+              },
+              {
+                "label": "Valoro que sea un espacio recreativo y social frecuentado por la comunidad.",
+                "value": "value-social"
+              },
+              {
+                "label": "Valoro su valor histórico.",
+                "value": "value-history"
+              },
+              {
+                "label": "Valoro su patrimonio cultural y arqueológico.",
+                "value": "value-patrimony"
+              },
+              {
+                "label": "Valoro otros aspectos no mencionados.",
+                "value": "value-other-aspects"
+              }
+            ]
+          },
+          {
+            "name": "value-other-aspects-answer-area-registered-users",
+            "type": "text",
+            "prompt": "¿Cuál?",
+            "placeholder": "",
+            "display_prompt": "Otro aspecto",
+            "hidden_default": true,
+            "optional": true
+          },
+          {
+            "name": "threat-area-registered-users",
+            "type": "big_checkbox",
+            "prompt": "De los siguientes aspectos que caracterizan a esta área natural, ¿considerás que alguno/s está/n amenazado/s?",
+            "display_prompt": "Amenazas",
+            "optional": true,
+            "qprFormType": "protected-area",
+            "triggers": [
+              {
+                "value": "threat-other-aspects",
+                "targets": [
+                  "threat-other-aspects-answer-area-registered-users"
+                ]
+              }
+            ],
+            "content": [
+              {
+                "label": "Su flora y fauna.",
+                "value": "threat-flora-fauna"
+              },
+              {
+                "label": "Su territorio, dimensiones, área, extensión.",
+                "value": "threat-territory"
+              },
+              {
+                "label": "Sus usos recreativos.",
+                "value": "threat-recreational"
+              },
+              {
+                "label": "Su valor histórico.",
+                "value": "threat-history"
+              },
+              {
+                "label": "Su valor cultural y arqueológico.",
+                "value": "threat-cultural"
+              },
+              {
+                "label": "Otro.",
+                "value": "threat-other-aspects"
+              }
+            ]
+          },
+          {
+            "name": "threat-other-aspects-answer-area-registered-users",
+            "type": "text",
+            "prompt": "¿Cuál?",
+            "placeholder": "",
+            "display_prompt": "Otro aspecto",
+            "hidden_default": true,
+            "optional": true
+          },
+
+          {
+            "name": "info-contributions-areas-registered-users",
+            "type": "informational_html",
+            "content": "<span><b>Podés contribuir al conocimiento y a la protección de esta área natural aportando información sobre alguno de los siguientes aspectos. Podés adjuntar imágenes, documentos en pdf y enlaces.</b></span>"
+          },
+          {
+            "name": "contributions-areas-registered-users",
+            "type": "big_radio",
+            "prompt": " ",
+            "optional": false,
+            "display_prompt": "Contribuciones",
+            "triggers": [           
+              {
+                "value": "area-protection",
+                "targets": [
+                  "intro-area-protection-areas-registered-users",
+                  "title-area-protection-areas-registered-users",
+                  "text-area-protection-areas-registered-users",
+                  "intro-attach-protection-state-areas-registered-users",
+                  "attach-image-protection-state-areas-registered-users",
+                  "attach-pdf-protection-state-areas-registered-users",
+                  "link-area-protection-areas-registered-users"
+                ]
+              },
+              {
+                "value": "area-state",
+                "targets": [
+                  "intro-area-state-areas-registered-users",
+                  "title-area-state-areas-registered-users",
+                  "text-area-state-areas-registered-users",
+                  "intro-attach-area-state-areas-registered-users",
+                  "attach-image-area-state-areas-registered-users",
+                  "attach-pdf-area-state-areas-registered-users",
+                  "link-area-state-areas-registered-users"
+                ]
+              },
+              {
+                "value": "area-patrimony",
+                "targets": [
+                  "intro-area-patrimony-areas-registered-users",
+                  "title-area-patrimony-areas-registered-users",
+                  "text-area-patrimony-areas-registered-users",
+                  "intro-attach-area-patrimony-areas-registered-users",
+                  "attach-image-area-patrimony-areas-registered-users",
+                  "attach-pdf-area-patrimony-areas-registered-users",
+                  "link-area-patrimony-areas-registered-users"
+                ]
+              },
+              {
+                "value": "area-memories",
+                "targets": [
+                  "intro-area-memories-areas-registered-users",
+                  "title-area-memories-areas-registered-users",
+                  "text-area-memories-areas-registered-users",
+                  "intro-attach-area-memories-areas-registered-users",
+                  "attach-image-area-memories-areas-registered-users",
+                  "attach-pdf-area-memories-areas-registered-users",
+                  "link-area-memories-areas-registered-users"
+                ]
+              }
+      
+            ],
+            "content": [
+              {
+                "label": "PROTECCIÓN DEL ESPACIO",
+                "value": "area-protection"
+              },
+              {
+                "label": "ESTADO DEL ÁREA ",
+                "value": "area-state"
+              },
+              {
+                "label": "PATRIMONIO NATURAL, ARQUEOLÓGICO Y CULTURAL",
+                "value": "area-patrimony"
+              },
+              {
+                "label": "USOS Y MEMORIAS EN EL ÁREA",
+                "value": "area-memories"
+              }
+            ]
+          },
+          {
+            "name": "intro-area-protection-areas-registered-users",
+            "type": "informational_html",
+            "hidden_default":true,
+            "prompt": "",
+            "content":"<span>Podés compartir fotos, textos, notas periodísticas locales, enlaces a videos, posteos de redes locales, documentación legal,  expedientes y otros sobre la situación de protección del espacio. Podés contar cuál creés que es el principal problema a resolver para garantizar la protección del espacio y cómo creés que se podría colaborar con la protección del espacio. </span>"
+         },
+          {
+            "name": "title-area-protection-areas-registered-users",
+            "type": "text",
+            "prompt": "",
+            "display_prompt": "Título",
+            "placeholder": "Titulo",
+            "hidden_default": true,
+            "optional": false,
+            "qprFormType": "protected-area"
+          },
+          {
+            "name": "text-area-protection-areas-registered-users",
+            "type": "textarea",
+            "prompt": "",
+            "placeholder": "Texto",
+            "display_prompt": "Descripción",
+            "hidden_default": true,
+            "optional": false,
+            "qprFormType": "protected-area"
+          },
+   
+          {
+            "name": "intro-attach-area-protection-areas-registered-users",
+            "type": "informational_html",
+            "hidden_default": true,
+            "prompt": "¿Querés agregar un comentario, imagen, enlace o documento?",
+            "content": "<span> <i> Recordá que las fotografías y documentos que adjuntás deben ser de tu autoría o debés contar con permiso para poder publicarlos . No se pueden incluir imágenes en las que se pueda identificar rostros de personas.  </i> </span>"
+          },
+          {
+            "name": "attach-image-protection-state-areas-registered-users",
+            "type": "file",
+            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
+            "prompt": " ",
+            "hidden_default": true,
+            "optional": true,
+            "qprFormType": "protected-area"
+          },
+          {
+            "name": "attach-pdf-protection-state-areas-registered-users",
+            "type": "file",
+            "label": "ADJUNTAR ARCHIVO PDF",
+            "prompt": " ",
+            "hidden_default": true,
+            "optional": true,
+            "qprFormType": "protected-area"
+          },
+          {
+            "name": "link-area-protection-areas-registered-users",
+            "type": "text",
+            "prompt": "",
+            "placeholder": "Enlace",
+            "display_prompt": "Enlace",
+            "hidden_default": true,
+            "optional": true,
+            "qprFormType": "protected-area"
+          },
+          {
+            "name": "intro-area-state-areas-registered-users",
+            "type": "informational_html",
+            "hidden_default":true,
+            "prompt": "",
+            "content":"<span>Podés reportar diversos aspectos que amenazan el área (incendios, residuos, pesca, caza,  desmalezamiento excesivo, industrias contaminantes, urbanización, vehículo, etc.). También podés hacer comentarios sobre la señalización, la presencia de guardia y demás recursos en el área. </span>"
+         },
+          {
+            "name": "title-area-state-areas-registered-users",
+            "type": "text",
+            "prompt": "",
+            "display_prompt": "Título",
+            "placeholder": "Titulo",
+            "hidden_default": true,
+            "optional": false,
+            "qprFormType": "protected-area"
+          },
+          {
+            "name": "text-area-state-areas-registered-users",
+            "type": "textarea",
+            "prompt": "",
+            "placeholder": "Texto",
+            "display_prompt": "Descripción",
+            "hidden_default": true,
+            "optional": false,
+            "qprFormType": "protected-area"
+          },
+   
+          {
+            "name": "intro-attach-area-state-areas-registered-users",
+            "type": "informational_html",
+            "hidden_default": true,
+            "prompt": "¿Querés agregar un comentario, imagen, enlace o documento?",
+            "content": "<span> <i> Recordá que las fotografías y documentos que adjuntás deben ser de tu autoría o debés contar con permiso para poder publicarlos . No se pueden incluir imágenes en las que se pueda identificar rostros de personas.  </i> </span>"
+          },
+          {
+            "name": "attach-image-area-state-areas-registered-users",
+            "type": "file",
+            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
+            "prompt": " ",
+            "hidden_default": true,
+            "optional": true,
+            "qprFormType": "protected-area"
+          },
+          {
+            "name": "attach-pdf-area-state-areas-registered-users",
+            "type": "file",
+            "label": "ADJUNTAR ARCHIVO PDF",
+            "prompt": " ",
+            "hidden_default": true,
+            "optional": true,
+            "qprFormType": "protected-area"
+          },
+          {
+            "name": "link-area-state-areas-registered-users",
+            "type": "text",
+            "prompt": "",
+            "placeholder": "Enlace",
+            "display_prompt": "Enlace",
+            "hidden_default": true,
+            "optional": true,
+            "qprFormType": "protected-area"
+          },
+          {
+            "name": "intro-area-patrimony-areas-registered-users",
+            "type": "informational_html",
+            "hidden_default":true,
+            "prompt": "",
+            "content":"<span>Podés compartir una experiencia para dar cuenta de la biodiversidad en términos de flora y fauna o de su valor arqueológico y cultural. Podés subir fotos de especies que viste en el área; o de documentos, noticias, materiales sobre objetos y restos arqueológicos del área; o sobre bienes arquitectónicos, esculturas, murales, fuentes. </span>"
+         },
+          {
+            "name": "title-area-patrimony-areas-registered-users",
+            "type": "text",
+            "prompt": "",
+            "display_prompt": "Título",
+            "placeholder": "Titulo",
+            "hidden_default": true,
+            "optional": false,
+            "qprFormType": "protected-area"
+          },
+          {
+            "name": "text-area-patrimony-areas-registered-users",
+            "type": "textarea",
+            "prompt": "",
+            "placeholder": "Texto",
+            "display_prompt": "Descripción",
+            "hidden_default": true,
+            "optional": false,
+            "qprFormType": "protected-area"
+          },
+   
+          {
+            "name": "intro-attach-area-patrimony-areas-registered-users",
+            "type": "informational_html",
+            "hidden_default": true,
+            "prompt": "¿Querés agregar un comentario, imagen, enlace o documento?",
+            "content": "<span> <i> Recordá que las fotografías y documentos que adjuntás deben ser de tu autoría o debés contar con permiso para poder publicarlos . No se pueden incluir imágenes en las que se pueda identificar rostros de personas.  </i> </span>"
+          },
+          {
+            "name": "attach-image-area-patrimony-areas-registered-users",
+            "type": "file",
+            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
+            "prompt": " ",
+            "hidden_default": true,
+            "optional": true,
+            "qprFormType": "protected-area"
+          },
+          {
+            "name": "attach-pdf-area-patrimony-areas-registered-users",
+            "type": "file",
+            "label": "ADJUNTAR ARCHIVO PDF",
+            "prompt": " ",
+            "hidden_default": true,
+            "optional": true,
+            "qprFormType": "protected-area"
+          },
+          {
+            "name": "link-area-patrimony-areas-registered-users",
+            "type": "text",
+            "prompt": "",
+            "placeholder": "Enlace",
+            "display_prompt": "Enlace",
+            "hidden_default": true,
+            "optional": true,
+            "qprFormType": "protected-area"
+          },
+          {
+            "name": "intro-area-memories-areas-registered-users",
+            "type": "informational_html",
+            "hidden_default":true,
+            "prompt": "",
+            "content":"<span>Podés subir relatos, fotos, documentos, noticias, materiales, actividades recreativas u otras, actuales o históricos del área.</span>"
+         },
+          {
+            "name": "title-area-memories-areas-registered-users",
+            "type": "text",
+            "prompt": "",
+            "display_prompt": "Título",
+            "placeholder": "Titulo",
+            "hidden_default": true,
+            "optional": false,
+            "qprFormType": "protected-area"
+          },
+          {
+            "name": "text-area-memories-areas-registered-users",
+            "type": "textarea",
+            "prompt": "",
+            "placeholder": "Texto",
+            "display_prompt": "Descripción",
+            "hidden_default": true,
+            "optional": false,
+            "qprFormType": "protected-area"
+          },
+   
+          {
+            "name": "intro-attach-area-memories-areas-registered-users",
+            "type": "informational_html",
+            "hidden_default": true,
+            "prompt": "¿Querés agregar un comentario, imagen, enlace o documento?",
+            "content": "<span> <i> Recordá que las fotografías y documentos que adjuntás deben ser de tu autoría o debés contar con permiso para poder publicarlos . No se pueden incluir imágenes en las que se pueda identificar rostros de personas.  </i> </span>"
+          },
+          {
+            "name": "attach-image-area-memories-areas-registered-users",
+            "type": "file",
+            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
+            "prompt": " ",
+            "hidden_default": true,
+            "optional": true,
+            "qprFormType": "protected-area"
+          },
+          {
+            "name": "attach-pdf-area-memories-areas-registered-users",
+            "type": "file",
+            "label": "ADJUNTAR ARCHIVO PDF",
+            "prompt": " ",
+            "hidden_default": true,
+            "optional": true,
+            "qprFormType": "protected-area"
+          },
+          {
+            "name": "link-area-memories-areas-registered-users",
+            "type": "text",
+            "prompt": "",
+            "placeholder": "Enlace",
+            "display_prompt": "Enlace",
+            "hidden_default": true,
+            "optional": true,
+            "qprFormType": "protected-area"
+          },
+          {
+            "name": "submit",
+            "type": "submit",
+            "label": "Publicar en el mapa",
+            "qprFormType": "protected-area"
+          }
+        ]
+      },
+      {
+        "category": "riachuelo-water",
+        "formId": "water-form",
         "includeOnForm": true,
         "name": "location_type",
         "datasetSlug": "calidad-input",
@@ -1796,10 +2439,6 @@
             "optional": false,
             "content": [
               {
-                "label": "Ciudad de Buenos Aires",
-                "value": "ciudad-de-buenos-aires"
-              },
-              {
                 "label": "Almirante Brown",
                 "value": "almirante-brown"
               },
@@ -1850,6 +2489,10 @@
               {
                 "label": "San Vicente",
                 "value": "san-vicente"
+              },
+              {
+                "label": "Ciudad de Buenos Aires",
+                "value": "ciudad-de-buenos-aires"
               }
             ]
           },
@@ -2403,8 +3046,8 @@
         ]
       },
       {
-        "category": "agua-calidad-open",
-        "formId": "agua-calidad-open",
+        "category": "riachuelo-water-registered-users",
+        "formId": "water-form-registered-users",
         "includeOnForm": true,
         "includeOnList": false,
         "name": "location_type",
@@ -2463,10 +3106,6 @@
             "optional": false,
             "content": [
               {
-                "label": "Ciudad de Buenos Aires",
-                "value": "ciudad-de-buenos-aires"
-              },
-              {
                 "label": "Almirante Brown",
                 "value": "almirante-brown"
               },
@@ -2517,6 +3156,10 @@
               {
                 "label": "San Vicente",
                 "value": "san-vicente"
+              },
+              {
+                "label": "Ciudad de Buenos Aires",
+                "value": "ciudad-de-buenos-aires"
               }
             ]
           },
@@ -3124,12 +3767,12 @@
         ]
       },
       {
-        "category": "relocation-registered-users",
-        "formId": "relocation-registered-form",
+        "category": "riachuelo-relocation-registered-users",
+        "formId": "relocation-form-registered-form",
         "includeOnForm": true,
         "includeOnList": false,
         "name": "location_type",
-        "datasetSlug": "relocalizaciones-input",
+        "datasetSlug": "relocalizaciones-open-input",
         "icon_url": "/static/css/images/markers/marker-relocalizaciones.svg",
         "value": "reporte-territorial",
         "label": "RELOCALIZACIÓN Y REURBANIZACIÓN: MESAS DE TRABAJO",
@@ -5030,8 +5673,8 @@
         ]
       },
       {
-        "category": "reporte-territorial",
-        "formId": "reporte-territorial",
+        "category": "riachuelo-relocation",
+        "formId": "relocation-form",
         "includeOnForm": true,
         "includeOnList": false,
         "name": "location_type",
@@ -5096,10 +5739,6 @@
             "optional": false,
             "content": [
               {
-                "label": "Ciudad de Buenos Aires",
-                "value": "ciudad-de-buenos-aires"
-              },
-              {
                 "label": "Almirante Brown",
                 "value": "almirante-brown"
               },
@@ -5150,6 +5789,10 @@
               {
                 "label": "San Vicente",
                 "value": "san-vicente"
+              },
+              {
+                "label": "Ciudad de Buenos Aires",
+                "value": "ciudad-de-buenos-aires"
               }
             ]
           },
@@ -5266,10 +5909,6 @@
             ],
             "content": [
               {
-                "label": "Ciudad de Buenos Aires",
-                "value": "ciudad-de-buenos-aires"
-              },
-              {
                 "label": "Almirante Brown",
                 "value": "almirante-brown"
               },
@@ -5320,6 +5959,10 @@
               {
                 "label": "San Vicente",
                 "value": "san-vicente"
+              },
+              {
+                "label": "Ciudad de Buenos Aires",
+                "value": "ciudad-de-buenos-aires"
               },
               {
                 "label": "Otro",
@@ -6462,10 +7105,6 @@
             ],
             "content": [
               {
-                "label": "Ciudad de Buenos Aires",
-                "value": "ciudad-de-buenos-aires-before"
-              },
-              {
                 "label": "Almirante Brown",
                 "value": "almirante-brown-before"
               },
@@ -6516,6 +7155,10 @@
               {
                 "label": "San Vicente",
                 "value": "san-vicente-before"
+              },
+              {
+                "label": "Ciudad de Buenos Aires",
+                "value": "ciudad-de-buenos-aires-before"
               },
               {
                 "label": "Otro",
@@ -8100,6 +8743,7 @@
       "name": "overview",
       "start_page": true
     },
+
     {
       "title": "Ver todo",
       "type": "internal_link",
