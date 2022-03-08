@@ -2041,7 +2041,7 @@
           {
             "name": "info-contributions-areas-registered-users",
             "type": "informational_html",
-            "content": "<span><b>Podés contribuir al conocimiento y a la protección de esta área natural aportando información sobre alguno de los siguientes aspectos. Podés adjuntar imágenes, documentos en pdf y enlaces.</b></span>"
+            "content": "<span><b>Aportá información para contribuir al conocimiento y a la protección de esta área natural. Podés adjuntar imágenes, documentos en pdf y enlaces.</b> <br> <br> Elegí una de estas opciones:</span>"
           },
           {
             "name": "contributions-areas-registered-users",
