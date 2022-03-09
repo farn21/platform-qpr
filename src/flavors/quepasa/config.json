@@ -554,7 +554,7 @@
         "id": "quepasa-input",
         "datasetSlug": "quepasa-input",
         "interactive": true,
-        "visibleDefault": true,
+        "visibleDefault": false,
         "mapboxFocusedLayers": [
           {
             "id": "quespasa-input-focused",
@@ -715,6 +715,54 @@
         ]
       },
       {
+        "id": "areas-open-input",
+        "datasetSlug": "areas-open-input",
+        "interactive": true,
+        "visibleDefault": true,
+        "mapboxFocusedLayers": [
+          {
+            "id": "areas-open-input-focused",
+            "type": "symbol",
+            "filter": [
+              "==",
+              [
+                "get",
+                "location_type"
+              ],
+              "featured_place"
+            ],
+            "source": "areas-open-input",
+            "layout": {
+              "icon-image": "marker-areas.png",
+              "icon-size": 1.1,
+              "icon-anchor": "center"
+            }
+          }
+        ],
+        "mapboxLayers": [
+          {
+            "id": "areas-open-input",
+            "type": "symbol",
+            "source": "areas-open-input",
+            "layout": {
+              "icon-image": "marker-areas.png",
+              "icon-size": [
+                "step",
+                [
+                  "zoom"
+                ],
+                0.5,
+                11,
+                0.75,
+                14,
+                0.9
+              ],
+              "icon-anchor": "center"
+            }
+          }
+        ]
+      },
+      {
         "id": "areas-input",
         "datasetSlug": "areas-input",
         "interactive": true,
@@ -733,7 +781,7 @@
             ],
             "source": "areas-input",
             "layout": {
-              "icon-image": "areas-protegidas-2",
+              "icon-image": "marker-areas.png",
               "icon-size": 1.1,
               "icon-anchor": "center"
             }
@@ -746,7 +794,7 @@
             "source": "areas-input",
             "layout": {
               "icon-allow-overlap": true,
-              "icon-image": "marker-star.png",
+              "icon-image": "marker-areas.png",
               "icon-size": [
                 "step",
                 [
@@ -782,7 +830,7 @@
             ],
             "source": "calidad-input",
             "layout": {
-              "icon-image": "marker-agua",
+              "icon-image": "marker-question.png",
               "icon-size": 1.1,
               "icon-anchor": "center"
             }
@@ -795,7 +843,7 @@
             "source": "calidad-input",
             "layout": {
               "icon-allow-overlap": true,
-              "icon-image": "marker-agua",
+              "icon-image": "marker-question.png",
               "icon-size": [
                 "step",
                 [
@@ -831,7 +879,7 @@
             ],
             "source": "calidad-open-input",
             "layout": {
-              "icon-image": "marker-agua",
+              "icon-image": "marker-question.png",
               "icon-size": 1.1,
               "icon-anchor": "center"
             }
@@ -844,7 +892,105 @@
             "source": "calidad-open-input",
             "layout": {
               "icon-allow-overlap": true,
-              "icon-image": "marker-agua",
+              "icon-image": "marker-question.png",
+              "icon-size": [
+                "step",
+                [
+                  "zoom"
+                ],
+                0.5,
+                11,
+                0.75,
+                14,
+                0.9
+              ],
+              "icon-anchor": "center"
+            }
+          }
+        ]
+      },
+      {
+        "id": "relocalizaciones-input",
+        "datasetSlug": "relocalizaciones-input",
+        "interactive": true,
+        "visibleDefault": true,
+        "mapboxFocusedLayers": [
+          {
+            "id": "relocalizaciones-input-focused",
+            "type": "symbol",
+            "filter": [
+              "==",
+              [
+                "get",
+                "location_type"
+              ],
+              "featured_place"
+            ],
+            "source": "relocalizaciones-input",
+            "layout": {
+              "icon-image": "marker-observation.png",
+              "icon-size": 1.1,
+              "icon-anchor": "center"
+            }
+          }
+        ],
+        "mapboxLayers": [
+          {
+            "id": "relocalizaciones-input",
+            "type": "symbol",
+            "source": "relocalizaciones-input",
+            "layout": {
+              "icon-allow-overlap": true,
+              "icon-image": "marker-observation.png",
+              "icon-size": [
+                "step",
+                [
+                  "zoom"
+                ],
+                0.5,
+                11,
+                0.75,
+                14,
+                0.9
+              ],
+              "icon-anchor": "center"
+            }
+          }
+        ]
+      },
+      {
+        "id": "relocalizaciones-open-input",
+        "datasetSlug": "relocalizaciones-open-input",
+        "interactive": true,
+        "visibleDefault": true,
+        "mapboxFocusedLayers": [
+          {
+            "id": "relocalizaciones-open-input-focused",
+            "type": "symbol",
+            "filter": [
+              "==",
+              [
+                "get",
+                "location_type"
+              ],
+              "featured_place"
+            ],
+            "source": "relocalizaciones-open-input",
+            "layout": {
+              "icon-image": "marker-observation.png",
+              "icon-size": 1.1,
+              "icon-anchor": "center"
+            }
+          }
+        ],
+        "mapboxLayers": [
+          {
+            "id": "relocalizaciones-open-input",
+            "type": "symbol",
+            "source": "relocalizaciones-open-input",
+            "layout": {
+              "icon-allow-overlap": true,
+              "icon-image": "marker-observation.png",
               "icon-size": [
                 "step",
                 [
@@ -3794,22 +3940,7 @@
             ]
           }
         ],
-        "multi_stage": [
-          {
-            "start_field_index": 1,
-            "end_field_index": 49,
-            "header": "RELOCALIZACIÓN Y REURBANIZACIÓN: MESAS DE TRABAJO",
-            "description": "",
-            "qprFormType": "relocations"
-          },
-          {
-            "start_field_index": 50,
-            "end_field_index": 53,
-            "header": "RELOCALIZACIÓN Y REURBANIZACIÓN: MESAS DE TRABAJO",
-            "description": "",
-            "qprFormType": "relocations"
-          }
-        ],
+
         "fields": [
           {
             "name": "lng-lat",
@@ -3834,7 +3965,7 @@
             "name": "municipio-relocation-registered-users-description",
             "type": "dropdown",
             "prompt": "¿En qué municipio tiene lugar esta experiencia? Elegí una de estas opciones:",
-            "display_prompt": "Municipio",
+            "display_prompt": "¿En qué municipio tiene lugar esta experiencia?",
             "placeholder": "Elegí el municipio...",
             "optional": false,
             "content": [
@@ -3906,185 +4037,174 @@
             "qprFormType": "water"
           },
           {
-            "name": "municipio-relocation-registered-users-description",
+            "name": "actual-municipality-relocation-registered-users",
             "type": "dropdown",
-            "includeOnListItem": true,
-            "prompt": "¿En cuál de los siguientes municipio vivís actualmente?",
-            "display_prompt": "Municipio",
+            "prompt": "¿En cuál de los siguientes municipios vivís actualmente?",
+            "display_prompt": "¿En cuál de los siguientes municipios vivís actualmente?",
             "placeholder": "Elegí una de estas opciones...",
             "optional": false,
             "qprFormType": "relocations",
             "triggers": [
               {
-                "value": "almirante-brown",
+                "value": "almirante-brown-relocation-registered-users",
                 "targets": [
                   "almirante-brown-barrios"
                 ]
               },
               {
-                "value": "avellaneda",
+                "value": "avellaneda-relocation-registered-users",
                 "targets": [
                   "avellaneda-barrios"
                 ]
               },
               {
-                "value": "canuelas",
+                "value": "canuelas-relocation-registered-users",
                 "targets": [
                   "canuelas-barrios"
                 ]
               },
               {
-                "value": "esteban-echeverria",
+                "value": "esteban-echeverria-relocation-registered-users",
                 "targets": [
                   "esteban-echeverria-barrios"
                 ]
               },
               {
-                "value": "ezeiza",
+                "value": "ezeiza-relocation-registered-users",
                 "targets": [
                   "ezeiza-barrios"
                 ]
               },
               {
-                "value": "la-matanza",
+                "value": "la-matanza-relocation-registered-users",
                 "targets": [
                   "la-matanza-barrios"
                 ]
               },
               {
-                "value": "lanus",
+                "value": "lanus-relocation-registered-users",
                 "targets": [
                   "lanus-barrios"
                 ]
               },
               {
-                "value": "peron",
+                "value": "peron-relocation-registered-users",
                 "targets": [
                   "peron-barrios"
                 ]
               },
               {
-                "value": "las-heras",
+                "value": "las-heras-relocation-registered-users",
                 "targets": [
                   "las-heras-barrios"
                 ]
               },
               {
-                "value": "lomas-de-zamora",
+                "value": "lomas-de-zamora-relocation-registered-users",
                 "targets": [
                   "lomas-de-zamora-barrios"
                 ]
               },
               {
-                "value": "marcos-paz",
+                "value": "marcos-paz-relocation-registered-users",
                 "targets": [
                   "marcos-paz-barrios"
                 ]
               },
               {
-                "value": "san-vicente",
+                "value": "san-vicente-relocation-registered-users",
                 "targets": [
                   "san-vicente-barrios"
                 ]
               },
               {
-                "value": "merlo",
+                "value": "merlo-relocation-registered-users",
                 "targets": [
                   "merlo-barrios"
                 ]
               },
               {
-                "value": "ciudad-de-buenos-aires",
+                "value": "ciudad-de-buenos-aires-relocation-registered-users",
                 "targets": [
                   "ciudad-de-buenos-aires-barrios"
                 ]
               },
               {
-                "value": "other",
+                "value": "other-relocation-registered-users",
                 "targets": [
-                  "other-municipio",
-                  "other-barrio"
+                  "answer-other-municipality-relocation-registered-users"
                 ]
               }
             ],
             "content": [
               {
                 "label": "Almirante Brown",
-                "value": "almirante-brown"
+                "value": "almirante-brown-relocation-registered-users"
               },
               {
                 "label": "Avellaneda",
-                "value": "avellaneda"
+                "value": "avellaneda-relocation-registered-users"
               },
               {
                 "label": "Cañuelas",
-                "value": "canuelas"
+                "value": "canuelas-relocation-registered-users"
               },
               {
                 "label": "Esteban Echeverría",
-                "value": "esteban-echeverria"
+                "value": "esteban-echeverria-relocation-registered-users"
               },
               {
                 "label": "Ezeiza",
-                "value": "ezeiza"
+                "value": "ezeiza-relocation-registered-users"
               },
               {
                 "label": "La Matanza",
-                "value": "la-matanza"
+                "value": "la-matanza-relocation-registered-users"
               },
               {
                 "label": "Lanús",
-                "value": "lanus"
+                "value": "lanus-relocation-registered-users"
               },
               {
                 "label": "Las Heras",
-                "value": "las-heras"
+                "value": "las-heras-relocation-registered-users"
               },
               {
                 "label": "Lomas de Zamora",
-                "value": "lomas-de-zamora"
+                "value": "lomas-de-zamora-relocation-registered-users"
               },
               {
                 "label": "Marcos Paz",
-                "value": "marcos-paz"
+                "value": "marcos-paz-relocation-registered-users"
               },
               {
                 "label": "Merlo",
-                "value": "merlo"
+                "value": "merlo-relocation-registered-users"
               },
               {
                 "label": "Presidente Juan D. Perón",
-                "value": "peron"
+                "value": "peron-relocation-registered-users"
               },
               {
                 "label": "San Vicente",
-                "value": "san-vicente"
+                "value": "san-vicente-relocation-registered-users"
               },
               {
                 "label": "Ciudad de Buenos Aires",
-                "value": "ciudad-de-buenos-aires"
+                "value": "ciudad-de-buenos-aires-relocation-registered-users"
               },
               {
                 "label": "Otro",
-                "value": "other"
+                "value": "other-relocation-registered-users"
               }
             ]
-          },
+          }, 
           {
-            "name": "other-municipio-relocation-registered-users",
+            "name": "answer-other-municipality-relocation-registered-users",
             "type": "text",
             "prompt": "¿Cuál?",
             "placeholder": "Escribí el nombre de tu municipio...",
-            "display_prompt": "Municipio",
-            "hidden_default": true,
-            "optional": false
-          },
-          {
-            "name": "other-barrio-relocation-registered-users",
-            "type": "text",
-            "prompt": "¿Cuál?",
-            "placeholder": "Escribí el nombre de tu barrio...",
-            "display_prompt": "Barrio",
+            "display_prompt": "¿En qué municipio vivís actualmente?",
             "hidden_default": true,
             "optional": false
           },
@@ -4098,6 +4218,14 @@
             "hidden_default": true,
             "optional": false,
             "qprFormType": "relocations",
+            "triggers": [
+              {
+                "value": "other-barrio-relocation-registered-users",
+                "targets": [
+                  "answer-other-barrio-relocation-registered-users"
+                ]
+              }
+            ],
             "content": [
               {
                 "label": "Asentamiento Lamadrid",
@@ -4176,8 +4304,8 @@
                 "value": "villa-26"
               },
               {
-                "label": "Other",
-                "value": "other-barrio"
+                "label": "Otro",
+                "value": "other-barrio-relocation-registered-users"
               }
             ]
           },
@@ -4191,6 +4319,14 @@
             "hidden_default": true,
             "optional": false,
             "qprFormType": "relocations",
+            "triggers": [
+              {
+                "value": "other-barrio-relocation-registered-users",
+                "targets": [
+                  "answer-other-barrio-relocation-registered-users"
+                ]
+              }
+            ],
             "content": [
               {
                 "label": "2 de Abril",
@@ -4245,8 +4381,8 @@
                 "value": "santa-ana-almirante-brown"
               },
               {
-                "label": "Other",
-                "value": "other-barrio"
+                "label": "Otro",
+                "value": "other-barrio-relocation-registered-users"
               }
             ]
           },
@@ -4260,6 +4396,14 @@
             "hidden_default": true,
             "optional": false,
             "qprFormType": "relocations",
+            "triggers": [
+              {
+                "value": "other-barrio-relocation-registered-users",
+                "targets": [
+                  "answer-other-barrio-relocation-registered-users"
+                ]
+              }
+            ],
             "content": [
               {
                 "label": "7 de enero",
@@ -4375,7 +4519,7 @@
               },
               {
                 "label": "Otro",
-                "value": "other-barrio"
+                "value": "other-barrio-relocation-registered-users"
               }
             ]
           },
@@ -4389,6 +4533,14 @@
             "hidden_default": true,
             "optional": false,
             "qprFormType": "relocations",
+            "triggers": [
+              {
+                "value": "other-barrio-relocation-registered-users",
+                "targets": [
+                  "answer-other-barrio-relocation-registered-users"
+                ]
+              }
+            ],
             "content": [
               {
                 "label": "Barrio Libertad",
@@ -4420,7 +4572,7 @@
               },
               {
                 "label": "Otro",
-                "value": "other-barrio"
+                "value": "other-barrio-relocation-registered-users"
               }
             ]
           },
@@ -4434,6 +4586,14 @@
             "hidden_default": true,
             "optional": false,
             "qprFormType": "relocations",
+            "triggers": [
+              {
+                "value": "other-barrio-relocation-registered-users",
+                "targets": [
+                  "answer-other-barrio-relocation-registered-users"
+                ]
+              }
+            ],
             "content": [
               {
                 "label": "9 de enero",
@@ -4461,7 +4621,7 @@
               },
               {
                 "label": "Otro",
-                "value": "other-barrio"
+                "value": "other-barrio-relocation-registered-users"
               }
             ]
           },
@@ -4475,6 +4635,14 @@
             "hidden_default": true,
             "optional": false,
             "qprFormType": "relocations",
+            "triggers": [
+              {
+                "value": "other-barrio-relocation-registered-users",
+                "targets": [
+                  "answer-other-barrio-relocation-registered-users"
+                ]
+              }
+            ],
             "content": [
               {
                 "label": "El Ombú",
@@ -4530,7 +4698,7 @@
               },
               {
                 "label": "Otro",
-                "value": "other-barrio"
+                "value": "other-barrio-relocation-registered-users"
               }
             ]
           },
@@ -4544,6 +4712,14 @@
             "hidden_default": true,
             "optional": false,
             "qprFormType": "relocations",
+            "triggers": [
+              {
+                "value": "other-barrio-relocation-registered-users",
+                "targets": [
+                  "answer-other-barrio-relocation-registered-users"
+                ]
+              }
+            ],
             "content": [
               {
                 "label": "Enrique Flynn",
@@ -4575,7 +4751,7 @@
               },
               {
                 "label": "Otro",
-                "value": "other-barrio"
+                "value": "other-barrio-relocation-registered-users"
               }
             ]
           },
@@ -4589,6 +4765,14 @@
             "hidden_default": true,
             "optional": false,
             "qprFormType": "relocations",
+            "triggers": [
+              {
+                "value": "other-barrio-relocation-registered-users",
+                "targets": [
+                  "answer-other-barrio-relocation-registered-users"
+                ]
+              }
+            ],
             "content": [
               {
                 "label": "22 de enero",
@@ -4684,7 +4868,7 @@
               },
               {
                 "label": "Otro",
-                "value": "other-barrio"
+                "value": "other-barrio-relocation-registered-users"
               }
             ]
           },
@@ -4698,6 +4882,14 @@
             "hidden_default": true,
             "optional": false,
             "qprFormType": "relocations",
+            "triggers": [
+              {
+                "value": "other-barrio-relocation-registered-users",
+                "targets": [
+                  "answer-other-barrio-relocation-registered-users"
+                ]
+              }
+            ],
             "content": [
               {
                 "label": "10 de enero",
@@ -4749,7 +4941,7 @@
               },
               {
                 "label": "Otro",
-                "value": "other-barrio"
+                "value": "other-barrio-relocation-registered-users"
               }
             ]
           },
@@ -4763,6 +4955,14 @@
             "hidden_default": true,
             "optional": false,
             "qprFormType": "relocations",
+            "triggers": [
+              {
+                "value": "other-barrio-relocation-registered-users",
+                "targets": [
+                  "answer-other-barrio-relocation-registered-users"
+                ]
+              }
+            ],
             "content": [
               {
                 "label": "Asentamiento 3 de enero",
@@ -4814,7 +5014,7 @@
               },
               {
                 "label": "Otro",
-                "value": "other-barrio"
+                "value": "other-barrio-relocation-registered-users"
               }
             ]
           },
@@ -4828,6 +5028,14 @@
             "hidden_default": true,
             "optional": false,
             "qprFormType": "relocations",
+            "triggers": [
+              {
+                "value": "other-barrio-relocation-registered-users",
+                "targets": [
+                  "answer-other-barrio-relocation-registered-users"
+                ]
+              }
+            ],
             "content": [
               {
                 "label": "El Palenque",
@@ -4855,7 +5063,7 @@
               },
               {
                 "label": "Otro",
-                "value": "other-barrio"
+                "value": "other-barrio-relocation-registered-users"
               }
             ]
           },
@@ -4869,6 +5077,14 @@
             "hidden_default": true,
             "optional": false,
             "qprFormType": "relocations",
+            "triggers": [
+              {
+                "value": "other-barrio-relocation-registered-users",
+                "targets": [
+                  "answer-other-barrio-relocation-registered-users"
+                ]
+              }
+            ],
             "content": [
               {
                 "label": "El Juancito",
@@ -4880,7 +5096,7 @@
               },
               {
                 "label": "Otro",
-                "value": "other-barrio"
+                "value": "other-barrio-relocation-registered-users"
               }
             ]
           },
@@ -4894,6 +5110,14 @@
             "hidden_default": true,
             "optional": false,
             "qprFormType": "relocations",
+            "triggers": [
+              {
+                "value": "other-barrio-relocation-registered-users",
+                "targets": [
+                  "answer-other-barrio-relocation-registered-users"
+                ]
+              }
+            ],
             "content": [
               {
                 "label": "20 de junio",
@@ -4937,7 +5161,7 @@
               },
               {
                 "label": "Otro",
-                "value": "other-barrio"
+                "value": "other-barrio-relocation-registered-users"
               }
             ]
           },
@@ -4951,6 +5175,14 @@
             "hidden_default": true,
             "optional": false,
             "qprFormType": "relocations",
+            "triggers": [
+              {
+                "value": "other-barrio-relocation-registered-users",
+                "targets": [
+                  "answer-other-barrio-relocation-registered-users"
+                ]
+              }
+            ],
             "content": [
               {
                 "label": "Agrocolonias",
@@ -5006,7 +5238,7 @@
               },
               {
                 "label": "Otro",
-                "value": "other-barrio"
+                "value": "other-barrio-relocation-registered-users"
               }
             ]
           },
@@ -5020,6 +5252,14 @@
             "hidden_default": true,
             "optional": false,
             "qprFormType": "relocations",
+            "triggers": [
+              {
+                "value": "other-barrio-relocation-registered-users",
+                "targets": [
+                  "answer-other-barrio-relocation-registered-users"
+                ]
+              }
+            ],
             "content": [
               {
                 "label": "8 de octubre",
@@ -5095,9 +5335,18 @@
               },
               {
                 "label": "Otro",
-                "value": "other-barrio"
+                "value": "other-barrio-relocation-registered-users"
               }
             ]
+          },
+          {
+            "name": "answer-other-barrio-relocation-registered-users",
+            "type": "text",
+            "prompt": "¿Cuál?",
+            "placeholder": "Escribí el nombre de tu barrio...",
+            "display_prompt": "¿En qué barrio vivís actualmente?",
+            "hidden_default": true,
+            "optional": false
           },
           {
             "name": "share-information-relocation-registered-users",
@@ -5143,7 +5392,7 @@
             "type": "datetime",
             "time_format": false,
             "hidden_default":true,
-            "prompt": "¿En qué fecha fue la reunión? Elegí la  fecha del calendario.",
+            "prompt": "¿En qué fecha fue la reunión? Elegí la fecha del calendario.",
             "display_prompt": "Fecha de la mesa de trabajo o reunión barrial",
             "placeholder": "Seleccioná una fecha",
             "optional": false,
@@ -5151,7 +5400,7 @@
           },
           {
             "name": "place-relocation-registred-users",
-            "type": "big_checkbox",
+            "type": "big_radio",
             "hidden_default": true,
             "display_prompt": "Lugar de la reunión",
             "prompt": "¿En qué lugar se llevó a cabo la reunión? Elegí una de estas opciones:",
@@ -5530,7 +5779,7 @@
             "placeholder": "",
             "display_prompt": "Comentarios sobre la reunión",
             "hidden_default": true,
-            "optional": false,
+            "optional": true,
             "qprFormType": "relocations"
           },
           {
