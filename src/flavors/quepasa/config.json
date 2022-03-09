@@ -1354,14 +1354,14 @@
           {
             "start_field_index": 1,
             "end_field_index": 17,
-            "header": "Áreas Naturales: visitas",
+            "header": "Áreas Naturales: Visitas",
             "qprFormType": "protected-area",
             "description": ""
           },
           {
             "start_field_index": 18,
             "end_field_index": 19,
-            "header": "Áreas Naturales: visitas",
+            "header": "Áreas Naturales: Visitas",
             "qprFormType": "protected-area",
             "description": ""
           }
@@ -3871,7 +3871,22 @@
             ]
           }
         ],
-
+        "multi_stage": [
+          {
+            "start_field_index": 1,
+            "end_field_index": 50,
+            "header": "Relocalización y reurbanización: Mesas de trabajo",
+            "qprFormType": "relocation",
+            "description": ""
+          },
+          {
+            "start_field_index": 51,
+            "end_field_index": 52,
+            "header": "Relocalización y reurbanización: Mesas de trabajo",
+            "qprFormType": "relocation",
+            "description": ""
+          }
+        ],
         "fields": [
           {
             "name": "lng-lat",
@@ -5820,29 +5835,28 @@
             "qprFormType": "relocations"
           },
           {
-            "name": "intro-attach-img-relocation-registered-users",
+            "name": "intro-descripcion-attach-img-relocation-registered-users",
             "type": "informational_html",
-            "hidden_default": true,
-            "prompt": "",
+            "hidden_default": false,
             "optional": true,
             "content": "<span> <i> Recordá que las fotografías y documentos que adjuntás deben ser de tu autoría o debés contar con permiso para poder publicarlos . No se pueden incluir imágenes en las que se pueda identificar rostros de personas.  </i> </span>"
           },
           {
-            "name": "commentary-attach-img-relocation-registered-users",
+            "name": "description-attach-img-relocation-registered-users",
             "type": "file",
             "label": "ADJUNTAR ARCHIVO DE IMAGEN",
             "optional": true,
             "qprFormType": "water"
           },
           {
-            "name": "commentary-attach-pfd-relocation-registered-users",
+            "name": "description-attach-pfd-relocation-registered-users",
             "type": "file",
             "label": "ADJUNTAR ARCHIVO PDF",
             "optional": true,
             "qprFormType": "water"
           },
           {
-            "name": "commentary-attach-link-relocation-registered-users",
+            "name": "description-attach-link-relocation-registered-users",
             "type": "text",
             "display_prompt": "Enlace",
             "prompt": " ",
