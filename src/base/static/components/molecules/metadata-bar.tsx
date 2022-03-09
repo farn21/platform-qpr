@@ -58,7 +58,7 @@ const MetadataBar = (props: MetadataBarProps) => (
         <RegularText weight="black">{props.submitterName}</RegularText>{" "}
         <RegularText>
           {props.t("placeActionText", `${props.actionText}`)}{" "}
-          {props.t("this", "this")} {props.label}
+          {props.t("en", "en")} {props.label}
         </RegularText>
       </div>
       <div>

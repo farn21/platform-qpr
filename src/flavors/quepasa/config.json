@@ -697,6 +697,7 @@
             "type": "symbol",
             "source": "novedades-input",
             "layout": {
+              "icon-allow-overlap": true,
               "icon-image": "marker-novedades.png",
               "icon-size": [
                 "step",
@@ -1255,7 +1256,7 @@
         "datasetSlug": "novedades-input",
         "icon_url": "/static/css/images/markers/marker-novedades.png",
         "value": "novedades",
-        "label": "Novedades",
+        "label": "NOVEDADES",
         "fields": [
           {
             "name": "lng-lat",
@@ -1406,7 +1407,7 @@
         "datasetSlug": "areas-input",
         "icon_url": "/static/css/images/markers/marker-areas.svg",
         "value": "areas-protegidas-2",
-        "label": "Áreas Naturales: visitas",
+        "label": "ÁREAS NATURALES:VISITAS",
         "geospatialAnalysis": [
           {
             "name": "subbasin_name",
@@ -2539,7 +2540,7 @@
         "datasetSlug": "calidad-input",
         "icon_url": "/static/css/images/markers/marker-agua.svg",
         "value": "agua-calidad-open",
-        "label": "Calidad del agua",
+        "label": "CALIDAD DEL AGUA",
         "geospatialAnalysis": [
           {
             "name": "subbasin_name",
@@ -3206,7 +3207,7 @@
         "datasetSlug": "calidad-open-input",
         "icon_url": "/static/css/images/markers/marker-agua.svg",
         "value": "agua-calidad-open",
-        "label": "Calidad del agua: imágenes y descripciones",
+        "label": "CALIDAD DEL AGUA: IMÁGENES Y DESCRIPCIONES",
         "geospatialAnalysis": [
           {
             "name": "subbasin_name",
