@@ -549,86 +549,7 @@
             }
           }
         ]
-      },
-      {
-        "id": "quepasa-input",
-        "datasetSlug": "quepasa-input",
-        "interactive": true,
-        "visibleDefault": false,
-        "mapboxFocusedLayers": [
-          {
-            "id": "quespasa-input-focused",
-            "filter": [
-              "==",
-              [
-                "get",
-                "location_type"
-              ],
-              "featured_place"
-            ],
-            "source": "demo",
-            "type": "symbol",
-            "layout": {
-              "icon-size": 1.2,
-              "icon-anchor": "bottom",
-              "icon-image": [
-                "match",
-                [
-                  "get",
-                  "location_type"
-                ],
-                "areas-protegidas",
-                "marker-idea.png",
-                "areas-protegidas-2",
-                "marker-idea.png",
-                "reporte-territorial",
-                "marker-observation.png",
-                "agua-calidad",
-                "marker-question.png",
-                "__no-icon-image__"
-              ]
-            }
-          }
-        ],
-        "mapboxLayers": [
-          {
-            "id": "quepasa-input",
-            "source": "quepasa-input",
-            "type": "symbol",
-            "layout": {
-              "icon-allow-overlap": true,
-              "icon-size": [
-                "step",
-                [
-                  "zoom"
-                ],
-                0.5,
-                11,
-                0.75,
-                14,
-                0.9
-              ],
-              "icon-anchor": "bottom",
-              "icon-image": [
-                "match",
-                [
-                  "get",
-                  "location_type"
-                ],
-                "areas-protegidas",
-                "marker-idea.png",
-                "areas-protegidas-2",
-                "marker-idea.png",
-                "reporte-territorial",
-                "marker-observation.png",
-                "agua-calidad",
-                "marker-question.png",
-                "__no-icon-image__"
-              ]
-            }
-          }
-        ]
-      },
+      },   
       {
         "id": "quepasa-featured",
         "datasetSlug": "quepasa-featured",
@@ -1033,13 +954,14 @@
       {
         "title": "",
         "options": [
-          {
-            "layerGroupId": "quepasa-input",
-            "title": "Experencias"
-          },
+        
           {
             "layerGroupId": "novedades-input",
             "title": "Novedades"
+          },
+          {
+            "layerGroupId": "areas-open-input",
+            "title": "Áreas Naturales: Seguimiento"
           },
           {
             "layerGroupId": "areas-input",
@@ -1052,6 +974,14 @@
           {
             "layerGroupId": "calidad-open-input",
             "title": "Calidad del agua: Imágenes y Descripciones"
+          },
+          {
+            "layerGroupId": "relocalizaciones-input",
+            "title": "Relocalización y reurbanización: Seguimiento"
+          },
+          {
+            "layerGroupId": "relocalizaciones-open-input",
+            "title": "Relocalización y reurbanización: Mesas de trabajo"
           }
         ]
       },
