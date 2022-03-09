@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import Datetime from "react-datetime";
 import moment from "moment";
+import 'moment/locale/es';
 import classNames from "classnames";
 import { withTranslation } from "react-i18next";
 
