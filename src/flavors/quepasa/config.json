@@ -9078,29 +9078,7 @@
       "start_page": true
     },
     {
-      "title": "Áreas naturales",
-      "type": "internal_link",
-      "url": "/page/areasnaturales",
-      "name": "overview",
-      "start_page": true
-    },
-    {
-      "title": "Relocalizaciones",
-      "type": "internal_link",
-      "url": "/page/relocalizaciones",
-      "name": "overview",
-      "start_page": true
-    },
-    {
-      "title": "Calidad del agua",
-      "type": "internal_link",
-      "url": "/page/calidaddelagua",
-      "name": "overview",
-      "start_page": true
-    },
-
-    {
-      "title": "Ver todo",
+      "title": "Novedades de la cuenca",
       "type": "internal_link",
       "url": "/list",
       "name": "list",
@@ -9111,18 +9089,14 @@
     {
       "slug": "about",
       "content": [
-        "<div style='padding-bottom: 10px; margin-bottom: 20px;'><img style='border-radius: 0; width: 20%; display: block;' src='/static/css/images/Logo_QPR_3_.png'/></div>",
-        "<p><b>¿Qué Pasa Riachuelo?</b> (QPR) es el resultado del esfuerzo colectivo de la Fundación Ambiente y Recursos Naturales (FARN), Universidad Nacional de San Martín (UNSAM) y otros actores que desde 2020 colaboran y participan en distintas actividades en el marco del proyecto “CoAct Ciencia Ciudadana Social para la Acción Colectiva”, una iniciativa global financiada por la Unión Europea que tiene como objetivo promover la ciencia ciudadana para avanzar acciones hacia la justicia ambiental en la Cuenca Matanza-Riachuelo.<br><br><b>¿Qué Pasa Riachuelo?</b> (QPR) permite organizar, sistematizar y compartir las visiones y el conocimiento acumulado a lo largo de los años por organizaciones sociales, científicos y otros actores que buscan soluciones para los graves problemas socioambientales de la cuenca Matanza-Riachuelo.</p>",
-        "<div style='border-bottom: 0; display: flex; justify-content: space-between; align-items: center; width: 100%;'><img style='width: 13%; border-radius: 0; display: inline-block; margin-bottom: 0; margin-right: 2%;' src='/static/css/images/00-LOGO FARN.png'/><div style='margin-right: 2%; width: 1px; height: 40px; border-right: 1px solid #aeadb3; display: inline-block;'></div><img style='width: 13%; border-radius: 0; display: inline-block; margin-bottom: 0; margin-right: 2%;' src='/static/css/images/CENIT_UNSAM.png'/><div style='margin-right: 2%; width: 1px; height: 40px; border-right: 1px solid #aeadb3; display: inline-block;'></div><img style='width: 13%;border-radius: 0; display: inline-block; margin-bottom: 0; margin-right: 2%;' src='/static/css/images/coact.png'/><div style='margin-right: 2%; width: 1px; height: 40px; border-right: 1px solid #aeadb3; display: inline-block;'></div><img style='width: 13%;border-radius: 0; display: inline-block; margin-bottom: 0; margin-right: 2%;' src='/static/css/images/union-europea.png'/><span style='font-family: Montserrat, sans-serif; font-size: 7px;'>The CoAct project has received funding from the European Union´s Horizon 2020 research and innovation programme under grant agreement number 873048.</span></div>"
-      ]
-    },
-    {
-      "slug": "areasnaturales",
-      "content": [
-        "<h1 style='margin-bottom:4px;color:#aeadb3;'>Áreas naturales</h1>",
-        "<div style='padding-bottom: 10px; margin-bottom: 20px;'></div>",
-        "<p><b>¿Qué pasa, Riachuelo?</b> registra y brinda información sobre los procesos de protección de áreas naturales en la cuenca Matanza-Riachuelo como los humedales y espacios verdes de origen natural o no (parques, plazas, y otros), importantes para la conservación del patrimonio biológico y cultural de la cuenca. Estos espacios brindan beneficios ecosistémicos y dan lugar a la interacción social y a la recreación, contribuyendo a la calidad de vida de la población. Están amenazados por el avance de la industrialización y la urbanización y por eso es importante compartir información y promover la participación para contribuir con su conservación.<br>QPR te permite:</p>",
-        "<ul style='font-family: Roboto;'><li>identificar zonas amenazadas que requieren desplegar estrategias de protección;</li><li>visibilizar la situación de protección de las áreas naturales de la cuenca;</li><li>Reportar eventos relativos al estado actual de estas áreas y compartir información sobre las mismas con fines educativos y de concientización sobre su relevancia social y ambiental</li></ul>"
+        "<h3 style='padding-bottom:10px;margin-bottom:4px;color:#aeadb3;'>¿Para qué sirve compartir experiencias con QPR?</h3>",
+        "<p>Las personas que conocen de cerca la cuenca Matanza Riachuelo tienen un rol clave para orientar acciones de transformación hacia la <b>justicia ambiental</b>. Pueden compartir sus saberes y experiencias aportando información sobre la realidad que observan a diario y reflexionando sobre qué se necesita para transformarla.  QPR es una herramienta de <b>ciencia ciudadana social</b> que permite poner en común el conocimiento acumulado a lo largo de los años por personas y organizaciones que buscan soluciones a problemas socioambientales de la cuenca ¿No crees que vale la pena compartir tu experiencia con quienes, como vos, buscan mejorar la vida en la cuenca?</p>",
+        "<p>Te invitamos a informar a otras personas y reflexionar sobre tres temas clave: calidad del agua; áreas naturales y procesos de relocalización y reurbanización. Las experiencias que compartas irán alimentando el mapa y ampliando bases de datos de acceso abierto. </p>",
+        "<p>Si QPR te resulta interesante, te agradecemos que colabores con su difusión entre organizaciones sociales, redes, instituciones, etc.</p>",
+        "<p>Si tenés dudas o sugerencias escribinos a <a href={'qpr@farn.org.ar'}>qpr@farn.org.ar</a> </a> </p>",
+        "<p style='font-size:10px;'>QPR es una herramienta co-diseñada entre diversos actores impulsada la Fundación Ambiente y Recursos Naturales (FARN) y el Centro de Investigaciones para la Transformación (CENIT) de la Universidad de San Martín (UNSAM) en el marco del proyecto “CoAct Ciencia Ciudadana Social para la Acción Colectiva” financiado por la Unión Europea. El proyecto se propone usar el enfoque de ciencia ciudadana social para promover acciones de justicia ambiental en el cuenca Matanza-Riachuelo.</p>",
+        "<div style='border-bottom: 0; display: flex; justify-content: space-between; align-items: center; width: 100%;'><img style='width: 13%; border-radius: 0; display: inline-block; margin-bottom: 0; margin-right: 2%;' src='/static/css/images/00-LOGO FARN.png'/><div style='margin-right: 2%; width: 1px; height: 40px; border-right: 1px solid #aeadb3; display: inline-block;'></div><img style='width: 13%; border-radius: 0; display: inline-block; margin-bottom: 0; margin-right: 2%;' src='/static/css/images/CENIT_UNSAM.png'/><div style='margin-right: 2%; width: 1px; height: 40px; border-right: 1px solid #aeadb3; display: inline-block;'></div><img style='width: 13%;border-radius: 0; display: inline-block; margin-bottom: 0; margin-right: 2%;' src='/static/css/images/coact.png'/><div style='margin-right: 2%; width: 1px; height: 40px; border-right: 1px solid #aeadb3; display: inline-block;'></div><img style='width: 13%;border-radius: 0; display: inline-block; margin-bottom: 0; margin-right: 2%;' src='/static/css/images/union-europea.png'/><span style='font-family: Montserrat, sans-serif; font-size: 7px;'>El proyecto CoAct ha recibido financiación del programa de investigación e innovación Horizon 2020 de la Unión Europea bajo el acuerdo de subvención número 873048.</span></div>"
+
       ]
     },
     {
@@ -9132,15 +9106,6 @@
         "<div style='padding-bottom: 10px; margin-bottom: 20px;'></div>",
         "<p>En <b>¿Qué pasa, Riachuelo?</b> podés consultar y brindar información acerca de los procesos de relocalización de los barrios, villas y asentamientos de la cuenca Matanza Riachuelo. La cuestión de la relocalización afecta directamente a más de 17 mil familias que habitan en condiciones deficitarias de vivienda y hábitat en distintas zonas de la cuenca expuestas al riesgo ambiental. En estos procesos el acceso a la información y la participación de la población es clave para encontrar soluciones habitacionales integrales que garanticen sus derechos.<br>QPR permite:</p>",
         "<ul><li>Acceder a información sobre las mesas de trabajo barriales a lo largo de la cuenca;</li><li>Reportar cuestiones relativas a las condiciones de hábitat y vivienda, salud, económicas, educativas y acerca de la participación y acceso a la información en torno a la relocalización;</li><li>Compartir experiencias de las comunidades relacionadas con  los procesos de relocalización</li></ul>"
-      ]
-    },
-    {
-      "slug": "calidaddelagua",
-      "content": [
-        "<h1 style='margin-bottom:4px;color:#aeadb3;'>Calidad del agua</h1>",
-        "<div style='padding-bottom: 10px; margin-bottom: 20px;'></div>",
-        "<p>En <b>¿Qué pasa, Riachuelo?</b> podés visualizar y discutir indicadores de calidad de agua en la cuenca y aportar a los mismos datos sobre la presencia de residuos sólidos en los cursos y otras materias observables (hidrocarburos, algas, cianobacterias, escombros, plásticos flotantes,etc). De esta forma, puede resultar una herramienta pedagógica útil para valorizar al río como un recurso biocultural.<br>QRP permite:</p>",
-        "<ul><li>Visibilizar información sobre la calidad de agua en determinados puntos y el riesgo que implica;</li><li>reportar eventos que afectan a la calidad del agua a partir de parámetros observables en los cursos superficiales y sus entornos;</li><li>compartir información para contribuir con distintas estrategias pedagógicas.</li></ul>"
       ]
     }
   ],
