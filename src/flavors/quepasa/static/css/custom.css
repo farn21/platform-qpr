@@ -638,7 +638,7 @@ border: none !important;
   padding-left: 1em !important;
   border-radius: 20px !important;
   border-width: 1px !important;
-  border-color: #a1cde7 !important;
+  border-color: #F0A300!important;
   font-size: 14px !important;
 }
 
@@ -661,10 +661,11 @@ height: 40px !important;
 
 /* Dropdown styles */
 .dropdown-field {
-  border: none !important;
+  border-color: #F0A300 !important;
   border-radius: 18px !important;
-  color: #ffffff;
-  background-color: #a2ba91;
+  border-width: 0.8px !important;
+  color: #000000 !important;
+  background-color: #ffffff;
   font-size: 14px !important;
   height: 40px !important;
   padding: 8px 16px !important;
@@ -675,7 +676,7 @@ height: 40px !important;
 }
 
 .dropdown-field option {
-  background-color: #D0DCC7;
+  background-color: #ffffff;
   color: #000000;
   -webkit-appearance: none !important;
 }
@@ -971,7 +972,7 @@ div[class*=-RichTextareaFieldResponseWrapper] {
 }
 
 .text-color-relocations{
-  color: #efcc5a !important;
+  color: #F0A300 !important;
 }
 
 .text-color-protected-area{
@@ -983,7 +984,7 @@ div[class*=-RichTextareaFieldResponseWrapper] {
 }
 
 .border-color-relocations{
-  border-color: #efcc5a  !important;
+  border-color: #F0A300  !important;
 }
 
 .border-color-protected-area{
@@ -995,7 +996,7 @@ div[class*=-RichTextareaFieldResponseWrapper] {
 }
 
 .background-color-relocations{
-  background-color: #efcc5a  !important;
+  background-color: #F0A300  !important;
 }
 
 .background-color-protected-area{

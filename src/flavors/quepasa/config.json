@@ -13,7 +13,7 @@
   },
   "datasets": [
     {
-      "slug": "calidad-input",
+      "slug": "water-input",
       "clientSlug": "site",
       "anonymous_permissions": [
         {
@@ -25,7 +25,7 @@
       ]
     },
     {
-      "slug": "calidad-open-input",
+      "slug": "water-input-register",
       "clientSlug": "site",
       "anonymous_permissions": [
         {
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "slug": "relocalizaciones-input",
+      "slug": "relocations-input-register",
       "clientSlug": "site",
       "anonymous_permissions": [
         {
@@ -49,7 +49,7 @@
       ]
     },
     {
-      "slug": "relocalizaciones-open-input",
+      "slug": "relocations-input",
       "clientSlug": "site",
       "anonymous_permissions": [
         {
@@ -61,7 +61,7 @@
       ]
     },
     {
-      "slug": "areas-open-input",
+      "slug": "natural-areas-input-register",
       "clientSlug": "site",
       "anonymous_permissions": [
         {
@@ -73,7 +73,7 @@
       ]
     },
     {
-      "slug": "areas-input",
+      "slug": "natural-areas-input",
       "clientSlug": "site",
       "anonymous_permissions": [
         {
@@ -85,7 +85,7 @@
       ]
     },
     {
-      "slug": "novedades-input",
+      "slug": "news-input",
       "clientSlug": "site",
       "anonymous_permissions": [
         {
@@ -588,13 +588,13 @@
         ]
       },
       {
-        "id": "novedades-input",
-        "datasetSlug": "novedades-input",
+        "id": "news-input",
+        "datasetSlug": "news-input",
         "interactive": true,
         "visibleDefault": true,
         "mapboxFocusedLayers": [
           {
-            "id": "novedades-input-focused",
+            "id": "news-input-focused",
             "type": "symbol",
             "filter": [
               "==",
@@ -604,7 +604,7 @@
               ],
               "featured_place"
             ],
-            "source": "novedades-input",
+            "source": "news-input",
             "layout": {
               "icon-image": "marker-novedades.png",
               "icon-size": 1.1,
@@ -614,9 +614,9 @@
         ],
         "mapboxLayers": [
           {
-            "id": "novedades-input",
+            "id": "news-input",
             "type": "symbol",
-            "source": "novedades-input",
+            "source": "news-input",
             "layout": {
               "icon-allow-overlap": true,
               "icon-image": "marker-novedades.png",
@@ -637,13 +637,13 @@
         ]
       },
       {
-        "id": "areas-open-input",
-        "datasetSlug": "areas-open-input",
+        "id": "natural-areas-input",
+        "datasetSlug": "natural-areas-input",
         "interactive": true,
         "visibleDefault": true,
         "mapboxFocusedLayers": [
           {
-            "id": "areas-open-input-focused",
+            "id": "natural-areas-input-focused",
             "type": "symbol",
             "filter": [
               "==",
@@ -653,7 +653,7 @@
               ],
               "featured_place"
             ],
-            "source": "areas-open-input",
+            "source": "natural-areas-input",
             "layout": {
               "icon-image": "marker-areas.png",
               "icon-size": 1.1,
@@ -663,9 +663,9 @@
         ],
         "mapboxLayers": [
           {
-            "id": "areas-open-input",
+            "id": "natural-areas-input",
             "type": "symbol",
-            "source": "areas-open-input",
+            "source": "natural-areas-input",
             "layout": {
               "icon-image": "marker-areas.png",
               "icon-size": [
@@ -685,13 +685,13 @@
         ]
       },
       {
-        "id": "areas-input",
-        "datasetSlug": "areas-input",
+        "id": "natural-areas-input-register",
+        "datasetSlug": "natural-areas-input-register",
         "interactive": true,
         "visibleDefault": true,
         "mapboxFocusedLayers": [
           {
-            "id": "areas-input-focused",
+            "id": "natural-areas-input-register-focused",
             "type": "symbol",
             "filter": [
               "==",
@@ -701,7 +701,7 @@
               ],
               "featured_place"
             ],
-            "source": "areas-input",
+            "source": "natural-areas-input",
             "layout": {
               "icon-image": "marker-areas.png",
               "icon-size": 1.1,
@@ -711,9 +711,9 @@
         ],
         "mapboxLayers": [
           {
-            "id": "areas-input",
+            "id": "natural-areas-input-register",
             "type": "symbol",
-            "source": "areas-input",
+            "source": "natural-areas-input-register",
             "layout": {
               "icon-allow-overlap": true,
               "icon-image": "marker-areas.png",
@@ -734,13 +734,13 @@
         ]
       },
       {
-        "id": "calidad-input",
-        "datasetSlug": "calidad-input",
+        "id": "water-input",
+        "datasetSlug": "water-input",
         "interactive": true,
         "visibleDefault": true,
         "mapboxFocusedLayers": [
           {
-            "id": "calidad-input-focused",
+            "id": "water-input-focused",
             "type": "symbol",
             "filter": [
               "==",
@@ -750,7 +750,7 @@
               ],
               "featured_place"
             ],
-            "source": "calidad-input",
+            "source": "water-input",
             "layout": {
               "icon-image": "marker-question.png",
               "icon-size": 1.1,
@@ -760,9 +760,9 @@
         ],
         "mapboxLayers": [
           {
-            "id": "calidad-input",
+            "id": "water-input",
             "type": "symbol",
-            "source": "calidad-input",
+            "source": "water-input",
             "layout": {
               "icon-allow-overlap": true,
               "icon-image": "marker-question.png",
@@ -783,13 +783,13 @@
         ]
       },
       {
-        "id": "calidad-open-input",
-        "datasetSlug": "calidad-open-input",
+        "id": "water-input-register",
+        "datasetSlug": "water-input-register",
         "interactive": true,
         "visibleDefault": true,
         "mapboxFocusedLayers": [
           {
-            "id": "calidad-open-input-focused",
+            "id": "water-input-register-focused",
             "type": "symbol",
             "filter": [
               "==",
@@ -799,7 +799,7 @@
               ],
               "featured_place"
             ],
-            "source": "calidad-open-input",
+            "source": "water-input-register",
             "layout": {
               "icon-image": "marker-question.png",
               "icon-size": 1.1,
@@ -809,9 +809,9 @@
         ],
         "mapboxLayers": [
           {
-            "id": "calidad-open-input",
+            "id": "water-input-register",
             "type": "symbol",
-            "source": "calidad-open-input",
+            "source": "water-input-register",
             "layout": {
               "icon-allow-overlap": true,
               "icon-image": "marker-question.png",
@@ -832,13 +832,13 @@
         ]
       },
       {
-        "id": "relocalizaciones-input",
-        "datasetSlug": "relocalizaciones-input",
+        "id": "relocations-input",
+        "datasetSlug": "relocations-input",
         "interactive": true,
         "visibleDefault": true,
         "mapboxFocusedLayers": [
           {
-            "id": "relocalizaciones-input-focused",
+            "id": "relocations-input-focused",
             "type": "symbol",
             "filter": [
               "==",
@@ -848,7 +848,7 @@
               ],
               "featured_place"
             ],
-            "source": "relocalizaciones-input",
+            "source": "relocations-input",
             "layout": {
               "icon-image": "marker-observation.png",
               "icon-size": 1.1,
@@ -858,9 +858,9 @@
         ],
         "mapboxLayers": [
           {
-            "id": "relocalizaciones-input",
+            "id": "relocations-input",
             "type": "symbol",
-            "source": "relocalizaciones-input",
+            "source": "relocations-input",
             "layout": {
               "icon-allow-overlap": true,
               "icon-image": "marker-observation.png",
@@ -881,13 +881,13 @@
         ]
       },
       {
-        "id": "relocalizaciones-open-input",
-        "datasetSlug": "relocalizaciones-open-input",
+        "id": "relocations-input-register",
+        "datasetSlug": "relocations-input-register",
         "interactive": true,
         "visibleDefault": true,
         "mapboxFocusedLayers": [
           {
-            "id": "relocalizaciones-open-input-focused",
+            "id": "relocations-input-register-focused",
             "type": "symbol",
             "filter": [
               "==",
@@ -897,7 +897,7 @@
               ],
               "featured_place"
             ],
-            "source": "relocalizaciones-open-input",
+            "source": "relocations-input-register",
             "layout": {
               "icon-image": "marker-observation.png",
               "icon-size": 1.1,
@@ -907,9 +907,9 @@
         ],
         "mapboxLayers": [
           {
-            "id": "relocalizaciones-open-input",
+            "id": "relocations-input-register",
             "type": "symbol",
-            "source": "relocalizaciones-open-input",
+            "source": "relocations-input-register",
             "layout": {
               "icon-allow-overlap": true,
               "icon-image": "marker-observation.png",
@@ -956,31 +956,31 @@
         "options": [
         
           {
-            "layerGroupId": "novedades-input",
+            "layerGroupId": "news-input",
             "title": "Novedades"
           },
           {
-            "layerGroupId": "areas-open-input",
+            "layerGroupId": "natural-areas-input-register",
             "title": "Áreas Naturales: Seguimiento"
           },
           {
-            "layerGroupId": "areas-input",
+            "layerGroupId": "natural-areas-input",
             "title": "Áreas Naturales: Visitas"
           },
           {
-            "layerGroupId": "calidad-input",
+            "layerGroupId": "water-input",
             "title": "Calidad del agua"
           },
           {
-            "layerGroupId": "calidad-open-input",
+            "layerGroupId": "water-input-register",
             "title": "Calidad del agua: Imágenes y Descripciones"
           },
           {
-            "layerGroupId": "relocalizaciones-input",
+            "layerGroupId": "relocations-input",
             "title": "Relocalización y reurbanización: Seguimiento"
           },
           {
-            "layerGroupId": "relocalizaciones-open-input",
+            "layerGroupId": "relocations-input-register",
             "title": "Relocalización y reurbanización: Mesas de trabajo"
           }
         ]
@@ -1183,7 +1183,7 @@
         "includeOnForm": true,
         "includeOnList": true,
         "name": "location_type",
-        "datasetSlug": "novedades-input",
+        "datasetSlug": "news-input",
         "icon_url": "/static/css/images/markers/marker-novedades.png",
         "value": "novedades",
         "label": "NOVEDADES",
@@ -1198,11 +1198,12 @@
             "content": "<span><b>Compartí historias, novedades, eventos y actividades organizadas por y para la comunidad de la cuenca completando el siguiente formulario:</b></span>"
           },
           {
-            "name": "municipio-novedades",
+            "name": "municipality-news",
             "type": "dropdown",
             "prompt": "¿En qué municipio tiene lugar esta historia? Elegí una de estas opciones:",
-            "display_prompt": "Municipio",
-            "placeholder": "Escribí el nombre de tu municipio...",
+            "display_prompt": "Municipio donde sucede esta novedad",
+            "placeholder": "",
+            "qprFormType": "relocations",
             "optional": false,
             "content": [
           
@@ -1265,67 +1266,102 @@
             ]
           },
           {
-            "name": "address-calidad-open",
+            "name": "address-news",
             "type": "geocoding",
             "prompt": "Arrastrá el mapa para ubicar tu experiencia. ",
             "display_prompt": "",
-            "placeholder": "Requerido",
+            "placeholder": "",
             "optional": false,
-            "qprFormType": "water"
+            "qprFormType": "relocations"
           },
           {
-            "name": "title",
+            "name": "title-news",
             "type": "text",
             "prompt": "Ponele un título a tu historia.",
             "display_prompt": "Título",
-            "placeholder": "Introducir título",
+            "placeholder": "",
+            "qprFormType": "relocations",
             "optional": false
           },
           {
-            "name": "datetime-novedades",
+            "name": "datetime-news",
             "type": "datetime",
             "time_format": false,
             "prompt": "¿Cuándo? Elegí una fecha en el calendario.",
-            "display_prompt": "Fecha de la historia",
-            "placeholder": "Seleccioná una fecha",
+            "display_prompt": "Fecha",
+            "placeholder": "",
             "optional": false,
-            "qprFormType": "water"
+            "qprFormType": "relocations"
           },
           {
-            "name": "description-novedades",
+            "name": "theme-news",
+            "type": "big_checkbox",
+            "display_prompt": "Tema",
+            "prompt": "¿Con qué tema se relaciona tu historia? Elegí uno o más de estos temas:",
+            "optional": false,
+            "qprFormType": "relocations",
+            "content": [
+              {
+                "label": "áreas naturales",
+                "value": "natural-areas"
+              },
+              {
+                "label": "calidad del agua",
+                "value": "water-quality"
+              },
+              {
+                "label": "relocalizaciones y reurbanización",
+                "value": "relocations"
+              }
+            ]
+          },
+          {
+            "name": "description-news",
             "type": "textarea",
             "prompt": "Describí brevemente de qué se trata tu historia.",
-            "display_prompt": "Historia",
+            "display_prompt": "Descripción",
             "placeholder": "",
             "optional": true,
-            "qprFormType": "water"
+            "qprFormType": "relocations"
           },
           {
-            "name": "intro-attach-novedades",
+            "name": "intro-attach-news",
             "type": "informational_html",
             "prompt": "¿Querés agregar una imagen, enlace o documento?",
             "optional": true,
             "content": "<span> <i> Recordá que las fotografías y documentos que adjuntás deben ser de tu autoría o debés contar con permiso para poder publicarlos . No se pueden incluir imágenes en las que se pueda identificar rostros de personas.  </i> </span>"
           },
           {
-            "name": "info-attach-novedades",
+            "name": "info-attach-img-news",
             "type": "file",
-            "label": "ADJUNTAR ARCHIVO DE IMAGEN O PDF",
+            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
+            "placeholder": "",
             "optional": true,
-            "qprFormType": "water"
+            "qprFormType": "relocations"
           },
           {
-            "name": "link-novedades",
+            "name": "info-attach-pdf-news",
+            "type": "file",
+            "label": "ADJUNTAR ARCHIVO PDF",
+            "placeholder": "",
+            "display_prompt": "Documento",
+            "optional": true,
+            "qprFormType": "relocations"
+          },
+          {
+            "name": "link-news",
             "type": "text",
             "display_prompt": "Enlace",
             "prompt": " ",
             "placeholder": "Enlace",
             "optional": true,
-            "qprFormType": "water"
+            "qprFormType": "relocations"
           },
           {
             "name": "submit",
-            "type": "common_form_element"
+            "type": "submit",
+            "label": "Publicar en el mapa",
+            "qprFormType": "relocations"
           }
         ]
       },
@@ -1334,7 +1370,7 @@
         "formId": "areas-form",
         "includeOnForm": true,
         "name": "location_type",
-        "datasetSlug": "areas-input",
+        "datasetSlug": "natural-areas-input",
         "icon_url": "/static/css/images/markers/marker-areas.svg",
         "value": "areas-protegidas-2",
         "label": "ÁREAS NATURALES:VISITAS",
@@ -1366,7 +1402,11 @@
             "description": ""
           }
         ],
-        "fields": [
+        "fields": [  
+          {
+            "name": "lng-lat",
+            "type": "lng_lat"
+          },
           {
             "name": "intro-areas",
             "type": "informational_html",
@@ -1378,11 +1418,11 @@
             "content": "<span><b>¿Tenés dudas? Consultá la guía de campo.</b></span>"
           },
           {
-            "name": "municipio-areas",
+            "name": "municipality-areas",
             "type": "dropdown",
             "prompt": "¿En qué municipio tiene lugar esta experiencia? Elegí una de estas opciones:",
-            "display_prompt": "Municipio",
-            "placeholder": "Elegí el municipio...",
+            "display_prompt": "Municipio donde tiene lugar la experiencia sobre Áreas Naturales",
+            "placeholder": "",
             "optional": false,
             "content": [
               {
@@ -1444,12 +1484,11 @@
             ]
           },
           {
-            "name": "reserva-areas",
+            "name": "reserve-areas",
             "type": "dropdown",
             "prompt": "Elegí la reserva sobre la cual vas a compartir tu experiencia.",
-            "display_prompt": "Reserva",
+            "display_prompt": "Reserva donde tiene lugar la experiencia",
             "optional": false,
-            "qprFormType": "protected-area",
             "content": [
               {
                 "label": "Reserva Municipal Morón",
@@ -1518,29 +1557,26 @@
             ]
           },
           {
-            "name": "lng-lat",
-            "type": "lng_lat"
-          },
-          {
-            "name": "address-area",
+            "name": "address-areas",
             "type": "geocoding",
             "prompt": "¿Dónde está ubicada esta área? Arrastrá el mapa para ubicar tu experiencia. ",
             "display_prompt": "",
             "placeholder": "",
             "optional": false,
-            "qprFormType": "water"
+            "qprFormType": "relocations"
           },
           {
-            "name": "visit-area",
+            "name": "visit-areas",
             "type": "big_radio",
             "prompt": "¿Es la primera vez que visitás este espacio?",
             "optional": false,
-            "display_prompt": "¿Visita por primera vez?",
+            "display_prompt": "Visita por primera vez",
+            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "no",
                 "targets": [
-                  "frequency-area"
+                  "frequency-areas"
                 ]
               }
             ],
@@ -1556,12 +1592,13 @@
             ]
           },
           {
-            "name": "frequency-area",
+            "name": "frequency-areas",
             "type": "big_radio",
             "prompt": "¿Con qué frecuencia visitás el espacio? Elegí una de estas opciones:",
             "hidden_default": true,
-            "display_prompt": "Frecuencia",
+            "display_prompt": "Frecuencia de visita",
             "optional": false,
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "semanal",
@@ -1590,16 +1627,18 @@
             "type": "datetime",
             "time_format": false,
             "prompt": "¿Cuándo fue tu última visita? Seleccioná una fecha en el calendario.",
-            "display_prompt": "Fecha de última visita",
-            "placeholder": "Seleccioná una fecha",
+            "display_prompt": "Fecha de la visita",
+            "placeholder": "",
+            "qprFormType":"relocation",
             "optional": false
           },
           {
             "name": "activities-last-visit-areas",
             "type": "big_checkbox",
             "prompt": " ¿Qué actividades realizaste en tu última visita? Elegí una de estas opciones:",
-            "display_prompt": "Actividades realizadas en la última visita",
+            "display_prompt": "Actividades realizadas en la visita",
             "optional": false,
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "recreación (recorrida, deporte, reuniones sociales)",
@@ -1627,8 +1666,9 @@
             "name": "fires-areas",
             "type": "big_radio",
             "prompt": "En tu última visita, ¿observaste incendios en el área?",
-            "display_prompt": "¿Observó incendios?",
+            "display_prompt": "Observación de incendios",
             "optional": false,
+            "qprFormType":"relocation",
             "content": [
               {
                 "label": "Sí.",
@@ -1648,8 +1688,9 @@
             "name": "waste-areas",
             "type": "big_radio",
             "prompt": "En tu última visita, ¿observaste residuos en alguna parte del área?",
-            "display_prompt": "¿Observó residuos?",
+            "display_prompt": "Observación de residuos",
             "optional": false,
+            "qprFormType":"relocation",
             "content": [
               {
                 "label": "Sí.",
@@ -1669,8 +1710,9 @@
             "name": "damage-areas",
             "type": "big_radio",
             "prompt": "En tu última visita, ¿observaste daño en la flora o fauna?",
-            "display_prompt": "¿Observó daño en la flora o fauna?",
+            "display_prompt": "Observación de daños en la flora o fauna",
             "optional": false,
+            "qprFormType":"relocation",
             "content": [
               {
                 "label": "Sí.",
@@ -1690,8 +1732,9 @@
             "name": "cars-areas",
             "type": "big_radio",
             "prompt": "En tu última visita, ¿observaste vehículos circulando en el área?",
-            "display_prompt": "¿Observó vehículos circulando en el área?",
+            "display_prompt": "Observación de vehículos circulando",
             "optional": false,
+            "qprFormType":"relocation",
             "content": [
               {
                 "label": "Sí.",
@@ -1711,8 +1754,9 @@
             "name": "services-areas",
             "type": "big_checkbox",
             "prompt": "En tu última visita, ¿observaste alguno de los siguientes servicios de atención al visitante? Elegí una o más de estas opciones:",
-            "display_prompt": "Servicios protección observados",
+            "display_prompt": "Servicios de atención al visitante",
             "optional": true,
+            "qprFormType":"relocation",
             "content": [
               {
                 "label": "entrada delimitada",
@@ -1753,12 +1797,12 @@
             ]
           },
           {
-            "name": "bond_area",
+            "name": "bond_areas",
             "type": "big_checkbox",
             "prompt": "¿Cuál es tu vínculo con esta área? Elegí una o más opciones:",
-            "display_prompt": "Vinculo con esta área",
+            "display_prompt": "Vínculo con el área",
             "optional": false,
-            "qprFormType": "protected-area",
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "Vivo o trabajo en la zona.",
@@ -1783,12 +1827,12 @@
             ]
           },
           {
-            "name": "value-area",
+            "name": "value-areas",
             "type": "big_checkbox",
             "prompt": "¿Qué valorás en esta área natural? Elegí una o más opciones:",
-            "display_prompt": "Aspectos valorados en el área",
+            "display_prompt": "Valoraciones del área",
             "optional": false,
-            "qprFormType": "protected-area",
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "Valoro su biodiversidad.",
@@ -1816,7 +1860,7 @@
             "name": "submit",
             "type": "submit",
             "label": "Publicar en el mapa",
-            "qprFormType": "protected-area"
+            "qprFormType": "relocations"
           }
         ]
       },
@@ -1825,7 +1869,7 @@
         "formId": "areas-form-registered-users",
         "includeOnForm": true,
         "name": "location_type",
-        "datasetSlug": "areas-open-input",
+        "datasetSlug": "natural-areas-input-register",
         "icon_url": "/static/css/images/markers/marker-areas.svg",
         "value": "areas-protegidas-2",
         "label": "ÁREAS NATURALES: SEGUIMIENTO",
@@ -1844,20 +1888,24 @@
         "multi_stage": [
           {
             "start_field_index": 1,
-            "end_field_index": 40,
+            "end_field_index": 42,
             "header": "ÁREAS NATURALES: SEGUIMIENTO",
             "qprFormType": "protected-area",
             "description": ""
           },
           {
-            "start_field_index": 41,
-            "end_field_index": 42,
+            "start_field_index": 43,
+            "end_field_index": 44,
             "header": "ÁREAS NATURALES: SEGUIMIENTO",
             "qprFormType": "protected-area",
             "description": ""
           }
         ],
         "fields": [
+          {
+            "name": "lng-lat",
+            "type": "lng_lat"
+          },
           {
             "name": "intro-areas-registered-users",
             "type": "informational_html",
@@ -1869,10 +1917,10 @@
             "content": "<span><b>¿Tenés dudas? Consultá la guía de campo.</b></span>"
           },
           {
-            "name": "municipio-areas-registered-users",
+            "name": "municipality-areas-registered-users",
             "type": "dropdown",
             "prompt": "¿En qué municipio tiene lugar esta experiencia? Elegí una de estas opciones:",
-            "display_prompt": "Municipio",
+            "display_prompt": "Municipio donde tiene lugar la experiencia sobre Áreas Naturales",
             "placeholder": "Elegí el municipio...",
             "optional": false,
             "content": [
@@ -1939,9 +1987,8 @@
             "name": "reserva-areas-registered-users",
             "type": "dropdown",
             "prompt": "Elegí la reserva sobre la cual vas a compartir tu experiencia.",
-            "display_prompt": "Reserva",
+            "display_prompt": "Reserva donde tiene lugar la experiencia",
             "optional": false,
-            "qprFormType": "protected-area",
             "content": [
               {
                 "label": "Reserva Municipal Morón",
@@ -2010,25 +2057,69 @@
             ]
           },
           {
-            "name": "lng-lat",
-            "type": "lng_lat"
-          },
-          {
             "name": "address-area-registered-users",
             "type": "geocoding",
             "prompt": "¿Dónde está ubicada esta área? Arrastrá el mapa para ubicar tu experiencia. ",
             "display_prompt": "",
             "placeholder": "",
             "optional": false,
-            "qprFormType": "water"
+            "qprFormType": "relocations"
+          },
+          {
+            "name": "bond_areas-registered-users",
+            "type": "big_checkbox",
+            "prompt": "¿Cuál es tu vínculo con esta área? Elegí una o más opciones:",
+            "display_prompt": "Vínculo con el área",
+            "optional": false,
+            "qprFormType": "relocations",
+            "triggers": [
+              {
+                "value": "bond-other",
+                "targets": [
+                  "bond-other-answer-area-registered-users"
+                ]
+              }
+            ],
+            "content": [
+              {
+                "label": "Vivo o trabajo en la zona.",
+                "value": "bond-live-work"
+              },
+              {
+                "label": "Formo parte de una organización que trabaja para proteger esta área.",
+                "value": "bond-organization"
+              },
+              {
+                "label": "Formo parte de una organización relacionada con temas ambientales.",
+                "value": "bond-environmental-organization"
+              },
+              {
+                "label": "Me interesa realizar actividades educativas en esta área.",
+                "value": "bond-educational-activities"
+              },
+              {
+                "label": "Mantengo otro vínculo.",
+                "value": "bond-other"
+              }
+            ]
+          },
+          {
+            "name": "bond-other-answer-area-registered-users",
+            "type": "text",
+            "prompt": "¿Cuál?",
+            "placeholder": "",
+            "display_prompt": "Otro vínculo",
+            "qprFormType": "relocations",
+            "hidden_default": true,
+            "optional": true
           },
           {
             "name": "value-area-registered-users",
             "type": "big_checkbox",
             "prompt": "¿Qué valorás en esta área natural? Elegí una o más opciones:",
-            "display_prompt": "Aspectos valorados en el área",
+            "display_prompt": "Valoraciones del área",
             "optional": false,
-            "qprFormType": "protected-area",
+            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "value-other-aspects",
@@ -2065,17 +2156,18 @@
             "type": "text",
             "prompt": "¿Cuál?",
             "placeholder": "",
-            "display_prompt": "Otro aspecto",
+            "display_prompt": "Otros aspectos valorados",
             "hidden_default": true,
+            "qprFormType": "relocations",
             "optional": true
           },
           {
             "name": "threat-area-registered-users",
             "type": "big_checkbox",
             "prompt": "De los siguientes aspectos que caracterizan a esta área natural, ¿considerás que alguno/s está/n amenazado/s?",
-            "display_prompt": "Amenazas",
+            "display_prompt": "Aspectos amenazados en el área",
             "optional": true,
-            "qprFormType": "protected-area",
+            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "threat-other-aspects",
@@ -2116,7 +2208,8 @@
             "type": "text",
             "prompt": "¿Cuál?",
             "placeholder": "",
-            "display_prompt": "Otro aspecto",
+            "display_prompt": "Otros aspectos amenazados",
+            "qprFormType":"relocations",
             "hidden_default": true,
             "optional": true
           },
@@ -2132,6 +2225,7 @@
             "prompt": " ",
             "optional": false,
             "display_prompt": "Contribuciones",
+            "qprFormType":"relocation",
             "triggers": [           
               {
                 "value": "area-protection",
@@ -2212,22 +2306,22 @@
           {
             "name": "title-area-protection-areas-registered-users",
             "type": "text",
-            "prompt": "",
-            "display_prompt": "Título",
-            "placeholder": "Titulo",
+            "prompt": "Título",
+            "display_prompt": "Título de comentario sobre protección del espacio",
+            "placeholder": "",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "protected-area"
+            "qprFormType": "relocations"
           },
           {
             "name": "text-area-protection-areas-registered-users",
             "type": "textarea",
-            "prompt": "",
-            "placeholder": "Texto",
-            "display_prompt": "Descripción",
+            "prompt": "Comentario",
+            "placeholder": "",
+            "display_prompt": "Comentario sobre protección del espacio",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "protected-area"
+            "qprFormType": "relocations"
           },
    
           {
@@ -2235,16 +2329,17 @@
             "type": "informational_html",
             "hidden_default": true,
             "prompt": "¿Querés agregar un comentario, imagen, enlace o documento?",
+            "display_prompt": "Adjuntos sobre estado del área",
             "content": "<span> <i> Recordá que las fotografías y documentos que adjuntás deben ser de tu autoría o debés contar con permiso para poder publicarlos . No se pueden incluir imágenes en las que se pueda identificar rostros de personas.  </i> </span>"
           },
           {
             "name": "attach-image-protection-state-areas-registered-users",
             "type": "file",
             "label": "ADJUNTAR ARCHIVO DE IMAGEN",
-            "prompt": " ",
+            "prompt": "",
             "hidden_default": true,
             "optional": true,
-            "qprFormType": "protected-area"
+            "qprFormType": "relocations"
           },
           {
             "name": "attach-pdf-protection-state-areas-registered-users",
@@ -2253,17 +2348,17 @@
             "prompt": " ",
             "hidden_default": true,
             "optional": true,
-            "qprFormType": "protected-area"
+            "qprFormType": "relocations"
           },
           {
             "name": "link-area-protection-areas-registered-users",
             "type": "text",
-            "prompt": "",
+            "prompt": "Enlace",
             "placeholder": "Enlace",
             "display_prompt": "Enlace",
             "hidden_default": true,
             "optional": true,
-            "qprFormType": "protected-area"
+            "qprFormType": "relocations"
           },
           {
             "name": "intro-area-state-areas-registered-users",
@@ -2275,29 +2370,29 @@
           {
             "name": "title-area-state-areas-registered-users",
             "type": "text",
-            "prompt": "",
-            "display_prompt": "Título",
-            "placeholder": "Titulo",
+            "prompt": "Título",
+            "display_prompt": "Título de comentario sobre estado del área",
+            "placeholder": "",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "protected-area"
+            "qprFormType": "relocations"
           },
           {
             "name": "text-area-state-areas-registered-users",
             "type": "textarea",
-            "prompt": "",
-            "placeholder": "Texto",
-            "display_prompt": "Descripción",
+            "prompt": "Comentario",
+            "placeholder": "",
+            "display_prompt": "Comentario sobre estado del área",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "protected-area"
+            "qprFormType": "relocations"
           },
-   
           {
             "name": "intro-attach-area-state-areas-registered-users",
             "type": "informational_html",
             "hidden_default": true,
             "prompt": "¿Querés agregar un comentario, imagen, enlace o documento?",
+            "display_prompt": "Adjuntos sobre estado del área",
             "content": "<span> <i> Recordá que las fotografías y documentos que adjuntás deben ser de tu autoría o debés contar con permiso para poder publicarlos . No se pueden incluir imágenes en las que se pueda identificar rostros de personas.  </i> </span>"
           },
           {
@@ -2307,7 +2402,7 @@
             "prompt": " ",
             "hidden_default": true,
             "optional": true,
-            "qprFormType": "protected-area"
+            "qprFormType": "relocations"
           },
           {
             "name": "attach-pdf-area-state-areas-registered-users",
@@ -2316,17 +2411,16 @@
             "prompt": " ",
             "hidden_default": true,
             "optional": true,
-            "qprFormType": "protected-area"
+            "qprFormType": "relocations"
           },
           {
             "name": "link-area-state-areas-registered-users",
             "type": "text",
-            "prompt": "",
+            "prompt": "Enlace",
             "placeholder": "Enlace",
-            "display_prompt": "Enlace",
             "hidden_default": true,
             "optional": true,
-            "qprFormType": "protected-area"
+            "qprFormType": "relocations"
           },
           {
             "name": "intro-area-patrimony-areas-registered-users",
@@ -2338,22 +2432,22 @@
           {
             "name": "title-area-patrimony-areas-registered-users",
             "type": "text",
-            "prompt": "",
-            "display_prompt": "Título",
+            "prompt": "Título",
+            "display_prompt": "Título de comentario sobre patrimonio natural",
             "placeholder": "Titulo",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "protected-area"
+            "qprFormType": "relocations"
           },
           {
             "name": "text-area-patrimony-areas-registered-users",
             "type": "textarea",
-            "prompt": "",
+            "prompt": "Comentario",
             "placeholder": "Texto",
-            "display_prompt": "Descripción",
+            "display_prompt": "Comentario sobre patrimonio natural, arqueológico y cultural",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "protected-area"
+            "qprFormType": "relocations"
           },
    
           {
@@ -2361,6 +2455,7 @@
             "type": "informational_html",
             "hidden_default": true,
             "prompt": "¿Querés agregar un comentario, imagen, enlace o documento?",
+            "display_prompt": "Adjuntos sobre patrimonio natural, arqueológico y cultural", 
             "content": "<span> <i> Recordá que las fotografías y documentos que adjuntás deben ser de tu autoría o debés contar con permiso para poder publicarlos . No se pueden incluir imágenes en las que se pueda identificar rostros de personas.  </i> </span>"
           },
           {
@@ -2370,7 +2465,7 @@
             "prompt": " ",
             "hidden_default": true,
             "optional": true,
-            "qprFormType": "protected-area"
+            "qprFormType": "relocations"
           },
           {
             "name": "attach-pdf-area-patrimony-areas-registered-users",
@@ -2379,44 +2474,43 @@
             "prompt": " ",
             "hidden_default": true,
             "optional": true,
-            "qprFormType": "protected-area"
+            "qprFormType": "relocations"
           },
           {
             "name": "link-area-patrimony-areas-registered-users",
             "type": "text",
-            "prompt": "",
+            "prompt": "Enlace",
             "placeholder": "Enlace",
-            "display_prompt": "Enlace",
             "hidden_default": true,
             "optional": true,
-            "qprFormType": "protected-area"
+            "qprFormType": "relocations"
           },
           {
             "name": "intro-area-memories-areas-registered-users",
             "type": "informational_html",
-            "hidden_default":true,
+            "hidden_default": true,
             "prompt": "",
             "content":"<span>Podés subir relatos, fotos, documentos, noticias, materiales, actividades recreativas u otras, actuales o históricos del área.</span>"
          },
           {
             "name": "title-area-memories-areas-registered-users",
             "type": "text",
-            "prompt": "",
-            "display_prompt": "Título",
-            "placeholder": "Titulo",
+            "prompt": "Título",
+            "display_prompt": "Título de comentario sobre usos y memorias en el área",
+            "placeholder": "",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "protected-area"
+            "qprFormType": "relocations"
           },
           {
             "name": "text-area-memories-areas-registered-users",
             "type": "textarea",
-            "prompt": "",
+            "prompt": "Comentario",
             "placeholder": "Texto",
-            "display_prompt": "Descripción",
+            "display_prompt": "Comentario sobre usos y memorias en el área",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "protected-area"
+            "qprFormType": "relocations"
           },
    
           {
@@ -2424,6 +2518,7 @@
             "type": "informational_html",
             "hidden_default": true,
             "prompt": "¿Querés agregar un comentario, imagen, enlace o documento?",
+            "display_prompt": "Adjuntos sobre usos y memorias en el área",
             "content": "<span> <i> Recordá que las fotografías y documentos que adjuntás deben ser de tu autoría o debés contar con permiso para poder publicarlos . No se pueden incluir imágenes en las que se pueda identificar rostros de personas.  </i> </span>"
           },
           {
@@ -2433,7 +2528,7 @@
             "prompt": " ",
             "hidden_default": true,
             "optional": true,
-            "qprFormType": "protected-area"
+            "qprFormType": "relocations"
           },
           {
             "name": "attach-pdf-area-memories-areas-registered-users",
@@ -2442,23 +2537,22 @@
             "prompt": " ",
             "hidden_default": true,
             "optional": true,
-            "qprFormType": "protected-area"
+            "qprFormType": "relocations"
           },
           {
             "name": "link-area-memories-areas-registered-users",
             "type": "text",
-            "prompt": "",
+            "prompt": "Enlace",
             "placeholder": "Enlace",
-            "display_prompt": "Enlace",
             "hidden_default": true,
             "optional": true,
-            "qprFormType": "protected-area"
+            "qprFormType": "relocations"
           },
           {
             "name": "submit",
             "type": "submit",
             "label": "Publicar en el mapa",
-            "qprFormType": "protected-area"
+            "qprFormType": "relocations"
           }
         ]
       },
@@ -2467,7 +2561,7 @@
         "formId": "water-form",
         "includeOnForm": true,
         "name": "location_type",
-        "datasetSlug": "calidad-input",
+        "datasetSlug": "water-input",
         "icon_url": "/static/css/images/markers/marker-agua.svg",
         "value": "agua-calidad-open",
         "label": "CALIDAD DEL AGUA",
@@ -2508,17 +2602,17 @@
             "type": "lng_lat"
           },
           {
-            "name": "intro-calidad-agua",
+            "name": "intro-water",
             "type": "informational_html",
             "content": "<span><b>Compartí una experiencia o una situación vinculada a la calidad del agua en la cuenca Matanza-Riachuelo. ¿Tenés dudas? Consultá la guía de campo.</b></span>"
           },
           {
-            "name": "municipio-calidad",
+            "name": "municipality-water",
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En qué municipio tiene lugar esta experiencia? Elegí una de estas opciones:",
-            "display_prompt": "Municipio",
-            "placeholder": "Elegí el municipio...",
+            "display_prompt": "Municipio donde tiene lugar la experiencia sobre Calidad del agua",
+            "placeholder": "",
             "optional": false,
             "content": [
               {
@@ -2580,64 +2674,66 @@
             ]
           },
           {
-            "name": "address-calidad-open",
+            "name": "address-water",
             "type": "geocoding",
             "prompt": "Arrastrá el mapa para ubicar tu experiencia. ",
             "display_prompt": "",
-            "placeholder": "Requerido",
+            "placeholder": "",
             "optional": false,
-            "qprFormType": "water"
+            "qprFormType": "relocations"
           },
           {
-            "name": "datetime-field-calidad",
+            "name": "date-field-water",
             "type": "datetime",
             "time_format": false,
             "prompt": "Ingresá la fecha de la situación que estás compartiendo. Se trata de la fecha del día en la que registraste la situación vinculada a la calidad de agua.",
             "display_prompt": "Fecha",
-            "placeholder": "Seleccioná una fecha",
+            "placeholder": "",
             "optional": false,
-            "qprFormType": "water"
+            "qprFormType": "relocations"
           },
           {
-            "name": "report-time-calidad",
+            "name": "time-water",
             "type": "text",
             "prompt": "Ingresá la hora de la situación que estás compartiendo. Se trata de la hora del día en la que registraste la situación vinculada a la calidad de agua.",
             "display_prompt": "Hora",
             "placeholder": "Seleccioná una hora",
             "optional": false,
-            "qprFormType": "water"
+            "qprFormType": "relocations"
           },
           {
-            "name": "cuerpo-agua",
+            "name": "body-water",
             "type": "big_radio",
             "prompt": "¿En qué cuerpo de agua registraste la situación que estás compartiendo? Elegí una de estas opciones:",
             "display_prompt": "Cuerpo de agua",
             "optional": false,
+            "qprFormType":"relocations",
             "content": [
               {
                 "label": "río",
-                "value": "rio"
+                "value": "river"
               },
               {
                 "label": "arroyo",
-                "value": "arroyo"
+                "value": "stream"
               },
               {
                 "label": "canal",
-                "value": "canal"
+                "value": "channel"
               },
               {
                 "label": "otro",
-                "value": "otro"
+                "value": "other"
               }
             ]
           },
           {
-            "name": "entorno-cuerpo-agua",
+            "name": "environment-water",
             "type": "big_radio",
             "prompt": "¿En qué entorno se encuentra este cuerpo de agua? Elegí una de estas opciones:",
-            "display_prompt": "Entorno",
+            "display_prompt": "Entorno del cuerpo de agua",
             "optional": false,
+            "qprFormType":"relocations",
             "content": [
               {
                 "label": "rural",
@@ -2645,127 +2741,131 @@
               },
               {
                 "label": "urbano",
-                "value": "urbano"
+                "value": "urban"
               },
               {
                 "label": "No sé.",
-                "value": "no-se"
+                "value": "dont-know"
               }
             ]
           },
           {
-            "name": "info-2-calidad",
+            "name": "info-quality-water",
             "type": "informational_html",
             "content": "<b>Ahora vamos a ingresar información sobre algunos aspectos del cuerpo de agua sobre el que estás compartiendo que pueden ser importantes para registrar la calidad del agua.</b>"
           },
           {
-            "name": "referencia-cercana-calidad",
+            "name": "checkpoint-water",
             "type": "big_radio",
             "includeOnListItem": true,
             "prompt": "Indicá una referencia de un lugar cercano en donde tuvo lugar la situación que estás compartiendo. Elegí una de estas opciones:",
-            "display_prompt": "Referencia",
+            "display_prompt": "Referencia cercana al cuerpo de agua",
             "optional": true,
+            "qprFormType":"relocations",
             "content": [
               {
                 "label": "puente",
-                "value": "puente"
+                "value": "bridge"
               },
               {
                 "label": "pasarela",
-                "value": "pasarela"
+                "value": "walkway"
               },
               {
                 "label": "baranda",
-                "value": "baranda"
+                "value": "rail"
               },
               {
                 "label": "escala",
-                "value": "escala"
+                "value": "scale"
               },
               {
                 "label": "otro",
-                "value": "otro"
+                "value": "other"
               }
             ]
           },
           {
-            "name": "estado-agua-registro ",
+            "name": "turbidity-water",
             "type": "big_radio",
             "includeOnListItem": true,
             "prompt": "¿Cuál es el estado del agua en el lugar y el momento del registro? Elegí una de estas opciones:",
-            "display_prompt": "Estado del agua",
+            "display_prompt": "Estado de turbidez del agua",
             "optional": true,
+            "qprFormType":"relocations",
             "content": [
               {
                 "label": "agua clara",
-                "value": "estado-agua-clara"
+                "value": "clear"
               },
               {
                 "label": "poco clara",
-                "value": "estado-poco-clara"
+                "value": "less-clear"
               },
               {
                 "label": "turbia",
-                "value": "estado-turbia"
+                "value": "cloudy"
               },
               {
                 "label": "muy turbia",
-                "value": "estado-muy-turbia"
+                "value": "very-cloudy"
               },
               {
                 "label": "otro",
-                "value": "estado-otro"
+                "value": "other"
               }
             ]
           },
           {
-            "name": "estado-color-agua",
+            "name": "color-water",
             "type": "big_radio",
             "includeOnListItem": true,
             "prompt": "¿Cuál es el color del agua en el lugar y el momento del registro? Elegí una de estas opciones:",
             "display_prompt": "Color del agua",
             "optional": true,
+            "qprFormType":"relocations",
             "content": [
               {
                 "label": "transparente",
-                "value": "transparente"
+                "value": "transparent"
               },
               {
                 "label": "verde",
-                "value": "verde"
+                "value": "green"
               },
               {
                 "label": "marrón",
-                "value": "marron"
+                "value": "brown"
               },
               {
                 "label": "gris",
-                "value": "gris"
+                "value": "grey"
               },
               {
                 "label": "negro",
-                "value": "negro"
+                "value": "black"
               },
               {
                 "label": "rojo",
-                "value": "rojo"
+                "value": "red"
               },
               {
                 "label": "otro",
-                "value": "otro"
+                "value": "other"
               }
             ]
           },
           {
-            "name": "estado-olores-agua",
+            "name": "odor-water",
             "type": "big_radio",
             "prompt": "¿Se percibían olores del agua en el lugar y el momento del registro?",
-            "display_prompt": "Olores",
+            "display_prompt": "Presencia de olor del agua",
             "optional": true,
+            "qprFormType":"relocations",
             "content": [
               {
                 "label": "Sí.",
-                "value": "si"
+                "value": "yes"
               },
               {
                 "label": "No.",
@@ -2773,121 +2873,125 @@
               },
               {
                 "label": "No sé.",
-                "value": "no_se"
+                "value": "dont-know"
               }
             ]
           },
           {
-            "name": "estado-materiales-flotantes",
+            "name": "floating-materials-water",
             "type": "big_radio",
             "prompt": "¿Observaste materiales flotantes en la superficie del curso del agua?",
-            "display_prompt": "Materiales flotantes",
+            "display_prompt": "Presencia de materiales flotantes",
             "optional": false,
+            "qprFormType":"relocations",
             "triggers": [
               {
-                "value": "si_estado",
+                "value": "yes-floating-materials-water",
                 "targets": [
-                  "estado-materiales-cuales"
+                  "type-floating-materials-water"
                 ]
               }
             ],
             "content": [
               {
                 "label": "Sí.",
-                "value": "si_estado"
+                "value": "yes-floating-materials-water"
               },
               {
                 "label": "No.",
-                "value": "no"
+                "value": "no-floating-materials-water"
               },
               {
                 "label": "No sé.",
-                "value": "no_se"
+                "value": "dont-know-floating-materials-water"
               }
             ]
           },
           {
-            "name": "estado-materiales-cuales",
+            "name": "type-floating-materials-water",
             "type": "big_checkbox",
             "hidden_default": true,
             "prompt": "¿Cuáles? Elegí una o más de estas opciones:",
-            "display_prompt": "Materiales flotantes",
+            "display_prompt": "Tipos de materiales flotantes",
             "optional": true,
+            "qprFormType":"relocations",
             "content": [
               {
                 "label": "plásticos",
-                "value": "plasticos"
+                "value": "plastics"
               },
               {
                 "label": "restos de vegetación",
-                "value": "restos-vegetacion"
+                "value": "vegetation-remains"
               },
               {
                 "label": "pañales",
-                "value": "panales"
+                "value": "diapers"
               },
               {
                 "label": "madera",
-                "value": "madera"
+                "value": "wood"
               },
               {
                 "label": "calzado y textiles",
-                "value": "calzado-textiles"
+                "value": "textiles-footware"
               },
               {
                 "label": "voluminosos",
-                "value": "voluminosos"
+                "value": "bulky"
               },
               {
                 "label": "otros",
-                "value": "otros"
+                "value": "other"
               }
             ]
           },
           {
-            "name": "fuente-contaminacion-cercana",
+            "name": "pollution-source-water",
             "type": "big_radio",
             "prompt": "¿Conocés una fuente de contaminación cercana?",
-            "display_prompt": "",
+            "display_prompt": "Conocimiento sobre fuente de contaminación",
             "optional": true,
+            "qprFormType":"relocations",
             "triggers": [
               {
-                "value": "si_fuente",
+                "value": "yes-pollution-source-water",
                 "targets": [
-                  "fuentes-contaminacion-opcion"
+                  "type-pollution-source-water"
                 ]
               }
             ],
             "content": [
               {
                 "label": "Sí.",
-                "value": "si_fuente"
+                "value": "yes-pollution source-water"
               },
               {
                 "label": "No.",
-                "value": "no"
+                "value": "no-pollution source-water"
               },
               {
                 "label": "No sé.",
-                "value": "no_se"
+                "value": "no-dont-know-pollution source-water"
               }
             ]
           },
           {
-            "name": "fuentes-contaminacion-opcion",
+            "name": "type-pollution-source-water",
             "type": "big_checkbox",
             "hidden_default": true,
             "prompt": "¿Cuál? ",
-            "display_prompt": "Fuentes de contaminación",
+            "display_prompt": "Tipo de fuente de contaminación",
             "optional": true,
+            "qprFormType":"relocations",
             "content": [
               {
                 "label": "doméstica",
-                "value": "domesticos"
+                "value": "domestic"
               },
               {
                 "label": "cloacal",
-                "value": "cloacal"
+                "value": "sewer"
               },
               {
                 "label": "pluvial",
@@ -2898,119 +3002,124 @@
                 "value": "industrial"
               },
               {
-                "label": "No sé.",
-                "value": "no_se"
+                "label": "no identificada",
+                "value": "unidentified"
               }
             ]
           },
           {
-            "name": "vegetacion-margenes-cuerpo",
+            "name": "margin-vegetation-water",
             "type": "big_radio",
             "prompt": "¿Hay vegetación en los márgenes del cuerpo de agua?",
-            "display_prompt": "",
+            "display_prompt": "Presencia de vegetación en los márgenes del cuerpo de agua",
             "optional": false,
+            "qprFormType":"relocations",
             "triggers": [
               {
-                "value": "si_vegetacion",
+                "value": "yes-margin-vegetation-water",
                 "targets": [
-                  "vegetacion-margenes-opciones"
+                  "type-margin-vegetation-water"
                 ]
               }
             ],
             "content": [
               {
                 "label": "Sí.",
-                "value": "si_vegetacion"
+                "value": "yes-margin-vegetation-water"
               },
               {
                 "label": "No.",
-                "value": "no"
+                "value": "no-margin-vegetation-water"
               },
               {
                 "label": "No sé.",
-                "value": "no_se"
+                "value": "dont-know-margin-vegetation-water"
               }
             ]
           },
           {
-            "name": "vegetacion-margenes-opciones",
+            "name": "type-margin-vegetation-water",
             "type": "big_checkbox",
             "hidden_default": true,
             "prompt": "¿Cuál? Elegí una o más de las siguientes opciones:",
-            "display_prompt": "Vegetacion en los margenes",
+            "display_prompt": "Tipo de vegetación en los márgenes del cuerpo de agua",
             "optional": false,
+            "qprFormType":"relocations",
             "content": [
               {
                 "label": "césped mantenido",
-                "value": "cesped_mantenido"
+                "value": "grass"
               },
               {
                 "label": "arbustos",
-                "value": "arbustos"
+                "value": "shrubbery"
               },
               {
                 "label": "árboles",
-                "value": "arboles"
+                "value": "trees"
               }
             ]
           },
           {
-            "name": "vegetacion-cuerpo-agua",
+            "name": "body-vegetation-water",
             "type": "big_radio",
             "prompt": "¿Hay vegetación en el cuerpo de agua? ",
-            "display_prompt": "",
+            "display_prompt": "Presencia de vegetación en el cuerpo de agua",
             "optional": true,
+            "qprFormType":"relocations",
             "triggers": [
               {
-                "value": "si",
+                "value": "yes-body-vegetation-water",
                 "targets": [
-                  "vegetacion-cuerpo-agua-option"
+                  "type-body-vegetation-water"
                 ]
               }
             ],
             "content": [
               {
                 "label": "Sí.",
-                "value": "si"
+                "value": "yes-body-vegetation-water"
               },
               {
                 "label": "No.",
-                "value": "no"
+                "value": "no-body-vegetation-water"
               },
               {
                 "label": "No sé.",
-                "value": "no_se"
+                "value": "dont-know-body-vegetation-water"
               }
             ]
           },
           {
-            "name": "vegetacion-cuerpo-agua-option",
+            "name": "type-body-vegetation-water",
             "type": "big_checkbox",
             "hidden_default": true,
             "prompt": "¿Cuál? Elegí una o más de estas opciones:",
-            "display_prompt": "Vegetación en el cuerpo de agua",
+            "display_prompt": "Tipo de vegetación en el cuerpo de agua",
             "optional": true,
+            "qprFormType":"relocations",
             "content": [
               {
                 "label": "algas",
-                "value": "algas-vegetacion-cuerpo"
+                "value": "algae"
               },
               {
                 "label": "plantas acuáticas",
-                "value": "vegetacion-plantas"
+                "value": "aquatic-plants"
               }
             ]
           },
           {
-            "name": "fauna-opcion",
+            "name": "fauna-water",
             "type": "big_radio",
             "prompt": "¿Hay fauna en la zona?",
-            "display_prompt": "Fauna en la zona",
+            "display_prompt": "Presencia de fauna en la zona",
             "optional": true,
+            "qprFormType":"relocation",
             "content": [
               {
                 "label": "Sí.",
-                "value": "si"
+                "value": "yes"
               },
               {
                 "label": "No.",
@@ -3018,46 +3127,48 @@
               },
               {
                 "label": "No sé.",
-                "value": "no_se"
+                "value": "dont-know"
               }
             ]
           },
           {
-            "name": "info-hidro",
+            "name": "info-hidro-water",
             "type": "informational_html",
             "content": "<b>Ahora vamos a registrar la situación hidrometeorológica del cuerpo de agua (río, arroyo, canal).</b>"
           },
           {
-            "name": "nivel-agua-cuerpo-open",
+            "name": "water-level-water",
             "type": "big_radio",
             "prompt": "¿Cuál es el nivel del agua del cuerpo del agua al momento de observar la situación? Elegí una de estas opciones:",
             "display_prompt": "Nivel del agua",
             "optional": true,
+            "qprFormType":"relocations",
             "content": [
               {
                 "label": "alto",
-                "value": "alto-nivel-agua-cuerpo"
+                "value": "high"
               },
               {
                 "label": "medio",
-                "value": "medio-nivel-agua-cuerpo"
+                "value": "medium"
               },
               {
                 "label": "bajo",
-                "value": "bajo-nivel-agua-cuerpo"
+                "value": "low"
               }
             ]
           },
           {
-            "name": "vientos-fuertes",
+            "name": "wind-water",
             "type": "big_radio",
             "prompt": "¿En los días previos o durante el momento de la observación existieron vientos fuertes (sudestada)? ",
-            "display_prompt": "Vientos en los días previos",
+            "display_prompt": "Existencia de vientos fuertes en días previos o en el día de observación",
             "optional": true,
+            "qprFormType":"relocations",
             "content": [
               {
                 "label": "Sí.",
-                "value": "si"
+                "value": "yes"
               },
               {
                 "label": "No.",
@@ -3065,58 +3176,60 @@
               },
               {
                 "label": "No sé.",
-                "value": "no_se"
+                "value": "dont-know"
               }
             ]
           },
           {
-            "name": "lluvias-observacion",
+            "name": "rain-water",
             "type": "big_radio",
             "prompt": "¿Llovió en los días previos o durante el momento de la observación?",
-            "display_prompt": "Lluvia en los días previos",
+            "display_prompt": "Existencia de lluvias en días previos o en el día de observación",
             "optional": true,
+            "qprFormType": "relocations",
             "triggers": [
               {
-                "value": "si-lluvias-observacion",
+                "value": "yes-rain-water",
                 "targets": [
-                  "lluvias-observacion-opcion"
+                  "type-rain-water"
                 ]
               }
             ],
             "content": [
               {
                 "label": "Sí",
-                "value": "si-lluvias-observacion"
+                "value": "yes-rain-water"
               },
               {
                 "label": "No",
-                "value": "no-lluvias-observacion"
+                "value": "no-rain-water"
               },
               {
                 "label": "No sé",
-                "value": "no_se_lluvias-observacion"
+                "value": "no-rain-water"
               }
             ]
           },
           {
-            "name": "lluvias-observacion-opcion",
+            "name": "type-rain-water",
             "type": "big_radio",
             "hidden_default": true,
             "prompt": "¿Qué tipo de lluvia se produjo? Elegí una de estas opciones:",
-            "display_prompt": "Tipo de lluvia",
+            "display_prompt": "Tipo de lluvias en días previos o en el día de observación",
             "optional": true,
+            "qprFormType":"relocation",
             "content": [
               {
                 "label": "llovizna",
-                "value": "llovizna"
+                "value": "drizzle"
               },
               {
                 "label": "llovizna intensa breve",
-                "value": "llovizna-intensa-breve"
+                "value": "short-intense-drizzle"
               },
               {
                 "label": "lluvia intensa extendida",
-                "value": "lluvia-intensa-extendida"
+                "value": "long-intense-drizzle"
               }
             ]
           },
@@ -3124,7 +3237,7 @@
             "name": "submit",
             "type": "submit",
             "label": "Publicar en el mapa",
-            "qprFormType": "water"
+            "qprFormType": "relocations"
           }
         ]
       },
@@ -3134,7 +3247,7 @@
         "includeOnForm": true,
         "includeOnList": false,
         "name": "location_type",
-        "datasetSlug": "calidad-open-input",
+        "datasetSlug": "water-input-register",
         "icon_url": "/static/css/images/markers/marker-agua.svg",
         "value": "agua-calidad-open",
         "label": "CALIDAD DEL AGUA: IMÁGENES Y DESCRIPCIONES",
@@ -3156,14 +3269,14 @@
         "multi_stage": [
           {
             "start_field_index": 1,
-            "end_field_index": 33,
+            "end_field_index": 37,
             "header": "Calidad del agua: imágenes y descripciones",
             "description": "",
             "qprFormType": "water"
           },
           {
-            "start_field_index": 34,
-            "end_field_index": 36,
+            "start_field_index": 38,
+            "end_field_index": 39,
             "header": "Calidad del agua: imágenes y descripciones",
             "description": "",
             "qprFormType": "water"
@@ -3175,17 +3288,17 @@
             "type": "lng_lat"
           },
           {
-            "name": "intro-calidad-agua",
+            "name": "intro-water-registered-users",
             "type": "informational_html",
             "content": "<span><b>Compartí una experiencia o una situación vinculada a la calidad del agua en la cuenca Matanza-Riachuelo. ¿Tenés dudas? Consultá la guía de campo.</b></span>"
           },
           {
-            "name": "municipio-calidad-open",
+            "name": "municipality-water-registered-users",
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En qué municipio tiene lugar esta experiencia? Elegí una de estas opciones:",
-            "display_prompt": "Municipio",
-            "placeholder": "Elegí el municipio...",
+            "display_prompt": "Municipio donde tiene lugar la experiencia sobre Calidad del agua",
+            "placeholder": "Elegí una opción",
             "optional": false,
             "content": [
               {
@@ -3247,64 +3360,84 @@
             ]
           },
           {
-            "name": "address-calidad-open",
+            "name": "address-water-registered-users",
             "type": "geocoding",
             "prompt": "Arrastrá el mapa para ubicar tu experiencia. ",
             "display_prompt": "",
-            "placeholder": "Requerido",
+            "placeholder": "",
             "optional": false,
-            "qprFormType": "water"
+            "qprFormType": "relocations"
           },
           {
-            "name": "datetime_field-calidad-open",
+            "name": "date-water-registered-users",
             "type": "datetime",
             "time_format": false,
             "prompt": "Ingresá la fecha de la situación que estás compartiendo. Se trata de la fecha del día en la que registraste la situación vinculada a la calidad de agua.",
             "display_prompt": "Fecha",
+            "qprFormType": "relocations",
             "placeholder": "Seleccioná una fecha",
-            "optional": false,
-            "qprFormType": "water"
+            "optional": false
           },
           {
-            "name": "report-time-calidad-open",
+            "name": "time-water-registered-users",
             "type": "text",
             "prompt": "Ingresá la hora de la situación que estás compartiendo. Se trata de la hora del día en la que registraste la situación vinculada a la calidad de agua.",
             "display_prompt": "Hora",
             "placeholder": "Seleccioná una hora",
             "optional": false,
-            "qprFormType": "water"
+            "qprFormType": "relocations"
           },
           {
-            "name": "cuerpo-agua-open",
+            "name": "body-water-registered-users",
             "type": "big_radio",
             "prompt": "¿En qué cuerpo de agua registraste la situación que estás compartiendo? Elegí una de estas opciones:",
             "display_prompt": "Cuerpo de agua",
             "optional": false,
+            "qprFormType":"relocations",
+            "triggers": [
+              {
+                "value": "other-water-body",
+                "targets": [
+                  "other-answer-body-water-registered-users"
+                ]
+              }
+            ],
             "content": [
               {
                 "label": "río",
-                "value": "rio"
+                "value": "river"
               },
               {
                 "label": "arroyo",
-                "value": "arroyo"
+                "value": "stream"
               },
               {
                 "label": "canal",
-                "value": "canal"
+                "value": "channel"
               },
               {
                 "label": "otro",
-                "value": "otro"
+                "value": "other-water-body"
               }
             ]
           },
           {
-            "name": "entorno-cuerpo-agua-open",
+            "name": "other-answer-body-water-registered-users",
+            "type": "text",
+            "prompt": "¿Cuál?",
+            "placeholder": "",
+            "display_prompt": "Otro cuerpo de agua",
+            "qprFormType": "relocations",
+            "hidden_default": true,
+            "optional": true
+          },
+          {
+            "name": "environment-water-registered-users",
             "type": "big_radio",
             "prompt": "¿En qué entorno se encuentra este cuerpo de agua? Elegí una de estas opciones:",
-            "display_prompt": "Entorno",
+            "display_prompt": "Entorno del cuerpo de agua",
             "optional": false,
+            "qprFormType":"relocations",
             "content": [
               {
                 "label": "rural",
@@ -3312,127 +3445,149 @@
               },
               {
                 "label": "urbano",
-                "value": "urbano"
+                "value": "urban"
               },
               {
                 "label": "No sé.",
-                "value": "no-se"
+                "value": "dont-know"
               }
             ]
           },
           {
-            "name": "info-2-calidad-open",
+            "name": "info-quality-water-registered-users",
             "type": "informational_html",
             "content": "<b>Ahora vamos a ingresar información sobre algunos aspectos del cuerpo de agua sobre el que estás compartiendo que pueden ser importantes para registrar la calidad del agua.</b>"
           },
           {
-            "name": "referencia-cercana-calidad-open",
+            "name": "checkpoint-water-registered-users",
             "type": "big_radio",
             "includeOnListItem": true,
             "prompt": "Indicá una referencia de un lugar cercano en donde tuvo lugar la situación que estás compartiendo. Elegí una de estas opciones:",
-            "display_prompt": "Referencia",
+            "display_prompt": "Referencia cercana al cuerpo de agua",
             "optional": true,
+            "qprFormType":"relocations",
+            "triggers": [
+              {
+                "value": "other-checkpoint",
+                "targets": [
+                  "other-answer-checkpoint-water-registered-users"
+                ]
+              }
+            ],
             "content": [
               {
                 "label": "puente",
-                "value": "puente"
+                "value": "bridge"
               },
               {
                 "label": "pasarela",
-                "value": "pasarela"
+                "value": "walkway"
               },
               {
                 "label": "baranda",
-                "value": "baranda"
+                "value": "rail"
               },
               {
                 "label": "escala",
-                "value": "escala"
+                "value": "scale"
               },
               {
                 "label": "otro",
-                "value": "otro"
+                "value": "other-checkpoint"
               }
             ]
           },
           {
-            "name": "estado-agua-registro-open",
+            "name": "other-answer-checkpoint-water-registered-users",
+            "type": "text",
+            "prompt": "¿Cuál?",
+            "placeholder": "",
+            "display_prompt": "Otra referencia cercana al agua",
+            "qprFormType": "relocations",
+            "hidden_default": true,
+            "optional": true
+          },
+          {
+            "name": "turbidity-water-registered-users",
             "type": "big_radio",
             "includeOnListItem": true,
             "prompt": "¿Cuál es el estado del agua en el lugar y el momento del registro? Elegí una de estas opciones:",
-            "display_prompt": "Estado del agua",
+            "display_prompt": "Estado de turbidez del agua",
             "optional": true,
+            "qprFormType":"relocations",
             "content": [
               {
                 "label": "agua clara",
-                "value": "estado-agua-clara"
+                "value": "clear"
               },
               {
                 "label": "poco clara",
-                "value": "estado-poco-clara"
+                "value": "less-clear"
               },
               {
                 "label": "turbia",
-                "value": "estado-turbia"
+                "value": "cloudy"
               },
               {
                 "label": "muy turbia",
-                "value": "estado-muy-turbia"
+                "value": "very-cloudy"
               },
               {
                 "label": "otro",
-                "value": "estado-otro"
+                "value": "other"
               }
             ]
           },
           {
-            "name": "estado-color-agua-open",
+            "name": "color-water-registered-users",
             "type": "big_radio",
             "includeOnListItem": true,
-            "prompt": "¿Cuál es el color del agua en el lugar y el momento del registro? Elegí una de estas opciones: ",
+            "prompt": "¿Cuál es el color del agua en el lugar y el momento del registro? Elegí una de estas opciones:",
             "display_prompt": "Color del agua",
             "optional": true,
+            "qprFormType":"relocations",
             "content": [
               {
                 "label": "transparente",
-                "value": "transparente"
+                "value": "transparent"
               },
               {
                 "label": "verde",
-                "value": "verde"
+                "value": "green"
               },
               {
                 "label": "marrón",
-                "value": "marron"
+                "value": "brown"
               },
               {
                 "label": "gris",
-                "value": "gris"
+                "value": "grey"
               },
               {
                 "label": "negro",
-                "value": "negro"
+                "value": "black"
               },
               {
                 "label": "rojo",
-                "value": "rojo"
+                "value": "red"
               },
               {
                 "label": "otro",
-                "value": "otro"
+                "value": "other"
               }
             ]
           },
           {
-            "name": "estado-olores-agua-open",
+            "name": "odor-water-registered-users",
             "type": "big_radio",
             "prompt": "¿Se percibían olores del agua en el lugar y el momento del registro?",
-            "display_prompt": "Olores",
+            "display_prompt": "Presencia de olor del agua",
             "optional": true,
+            "qprFormType":"relocations",
             "content": [
               {
                 "label": "Sí.",
-                "value": "si"
+                "value": "yes"
               },
               {
                 "label": "No.",
@@ -3440,137 +3595,143 @@
               },
               {
                 "label": "No sé.",
-                "value": "no_se"
+                "value": "dont-know"
               }
             ]
           },
           {
-            "name": "estado-materiales-flotantes-open",
+            "name": "floating-materials-water-registered-users",
             "type": "big_radio",
             "prompt": "¿Observaste materiales flotantes en la superficie del curso del agua?",
-            "display_prompt": "Materiales flotantes",
+            "display_prompt": "Presencia de materiales flotantes",
             "optional": false,
+            "qprFormType":"relocations",
             "triggers": [
               {
-                "value": "si_estado",
+                "value": "yes-floating-materials-water",
                 "targets": [
-                  "estado-materiales-cuales-open"
+                  "type-floating-materials-water-registered-users"
                 ]
               }
             ],
             "content": [
               {
                 "label": "Sí.",
-                "value": "si_estado"
+                "value": "yes-floating-materials-water"
               },
               {
                 "label": "No.",
-                "value": "no"
+                "value": "no-floating-materials-water"
               },
               {
                 "label": "No sé.",
-                "value": "no_se"
+                "value": "dont-know-floating-materials-water"
               }
             ]
           },
           {
-            "name": "estado-materiales-cuales-open",
+            "name": "type-floating-materials-water-registered-users",
             "type": "big_checkbox",
             "hidden_default": true,
             "prompt": "¿Cuáles? Elegí una o más de estas opciones:",
-            "display_prompt": "Materiales observados",
+            "display_prompt": "Tipos de materiales flotantes",
             "optional": true,
+            "qprFormType":"relocations",
             "triggers": [
               {
-                "value": "otros",
+                "value": "other",
                 "targets": [
-                  "cual-estado-materiales-open"
+                  "other-answer-type-floating-materials-water-registered-users"
                 ]
               }
             ],
             "content": [
               {
                 "label": "plásticos",
-                "value": "plasticos"
+                "value": "plastics"
               },
               {
                 "label": "restos de vegetación",
-                "value": "restos-vegetacion"
+                "value": "vegetation-remains"
               },
               {
                 "label": "pañales",
-                "value": "panales"
+                "value": "diapers"
               },
               {
                 "label": "madera",
-                "value": "madera"
+                "value": "wood"
               },
               {
                 "label": "calzado y textiles",
-                "value": "calzado-textiles"
+                "value": "textiles-footware"
               },
               {
                 "label": "voluminosos",
-                "value": "voluminosos"
+                "value": "bulky"
               },
               {
                 "label": "otros",
-                "value": "otros"
+                "value": "other"
               }
             ]
           },
           {
-            "name": "cual-estado-materiales-open",
+            "name": "other-answer-type-floating-materials-water-registered-users",
             "type": "text",
             "prompt": "¿Cuál?",
-            "display_prompt": "Materiales flotantes",
-            "optional": false,
-            "hidden_default": true
+            "placeholder": "",
+            "display_prompt": "Otros tipos de materiales flotantes",
+            "qprFormType": "relocations",
+            "hidden_default": true,
+            "optional": true
           },
           {
-            "name": "fuente-contaminacion-cercana-open",
+            "name": "pollution-source-water-registered-users",
             "type": "big_radio",
             "prompt": "¿Conocés una fuente de contaminación cercana?",
-            "display_prompt": "",
+            "display_prompt": "Conocimiento sobre fuente de contaminación",
             "optional": true,
+            "qprFormType":"relocations",
             "triggers": [
               {
-                "value": "si_fuente",
+                "value": "yes-pollution-source-water",
                 "targets": [
-                  "fuentes-contaminacion-opcion-open"
+                  "type-pollution-source-water-registered-users"
                 ]
               }
             ],
             "content": [
               {
                 "label": "Sí.",
-                "value": "si_fuente"
+                "value": "yes-pollution-source-water"
               },
               {
                 "label": "No.",
-                "value": "no"
+                "value": "no-pollution-source-water"
               },
               {
                 "label": "No sé.",
-                "value": "no_se"
+                "value": "no-dont-know-pollution source-water"
               }
             ]
           },
           {
-            "name": "fuentes-contaminacion-opcion-open",
+            "name": "type-pollution-source-water-registered-users",
             "type": "big_checkbox",
             "hidden_default": true,
             "prompt": "¿Cuál? ",
-            "display_prompt": "Fuentes de contaminación",
+            "display_prompt": "Tipo de fuente de contaminación",
             "optional": true,
+            "qprFormType":"relocations",
             "content": [
               {
                 "label": "doméstica",
-                "value": "domesticos"
+                "value": "domestic"
               },
               {
                 "label": "cloacal",
-                "value": "cloacal"
+                "value": "sewer"
               },
               {
                 "label": "pluvial",
@@ -3581,166 +3742,191 @@
                 "value": "industrial"
               },
               {
-                "label": "No sé.",
-                "value": "no_se"
+                "label": "no identificada",
+                "value": "unidentified"
               }
             ]
           },
           {
-            "name": "vegetacion-margenes-cuerpo-open",
+            "name": "margin-vegetation-water-registered-users",
             "type": "big_radio",
             "prompt": "¿Hay vegetación en los márgenes del cuerpo de agua?",
-            "display_prompt": "",
+            "display_prompt": "Presencia de vegetación en los márgenes del cuerpo de agua",
             "optional": false,
+            "qprFormType":"relocations",
             "triggers": [
               {
-                "value": "si_vegetacion",
+                "value": "yes-margin-vegetation-water",
                 "targets": [
-                  "vegetacion-margenes-opciones-open"
+                  "type-margin-vegetation-water-registered-users"
                 ]
               }
             ],
             "content": [
               {
                 "label": "Sí.",
-                "value": "si_vegetacion"
+                "value": "yes-margin-vegetation-water"
               },
               {
                 "label": "No.",
-                "value": "no"
+                "value": "no-margin-vegetation-water"
               },
               {
                 "label": "No sé.",
-                "value": "no_se"
+                "value": "dont-know-margin-vegetation-water"
               }
             ]
           },
           {
-            "name": "vegetacion-margenes-opciones-open",
+            "name": "type-margin-vegetation-water-registered-users",
             "type": "big_checkbox",
             "hidden_default": true,
             "prompt": "¿Cuál? Elegí una o más de las siguientes opciones:",
-            "display_prompt": "Vegetacion en los margenes",
+            "display_prompt": "Tipo de vegetación en los márgenes del cuerpo de agua",
             "optional": false,
+            "qprFormType":"relocations",
             "content": [
               {
                 "label": "césped mantenido",
-                "value": "cesped_mantenido"
+                "value": "grass"
               },
               {
                 "label": "arbustos",
-                "value": "arbustos"
+                "value": "shrubbery"
               },
               {
                 "label": "árboles",
-                "value": "arboles"
+                "value": "trees"
               }
             ]
           },
           {
-            "name": "vegetacion-cuerpo-agua-open",
+            "name": "body-vegetation-water-registered-users",
             "type": "big_radio",
             "prompt": "¿Hay vegetación en el cuerpo de agua? ",
-            "display_prompt": "",
+            "display_prompt": "Presencia de vegetación en el cuerpo de agua",
             "optional": true,
+            "qprFormType":"relocations",
             "triggers": [
               {
-                "value": "si",
+                "value": "yes-body-vegetation-water",
                 "targets": [
-                  "vegetacion-cuerpo-agua-option-open"
+                  "type-body-vegetation-water-registered-users"
                 ]
               }
             ],
             "content": [
               {
                 "label": "Sí.",
-                "value": "si"
+                "value": "yes-body-vegetation-water"
               },
               {
                 "label": "No.",
-                "value": "no"
+                "value": "no-body-vegetation-water"
               },
               {
                 "label": "No sé.",
-                "value": "no_se"
+                "value": "dont-know-body-vegetation-water"
               }
             ]
           },
           {
-            "name": "vegetacion-cuerpo-agua-option-open",
+            "name": "type-body-vegetation-water-registered-users",
             "type": "big_checkbox",
             "hidden_default": true,
             "prompt": "¿Cuál? Elegí una o más de estas opciones:",
-            "display_prompt": "Vegetación en el cuerpo de agua",
+            "display_prompt": "Tipo de vegetación en el cuerpo de agua",
             "optional": true,
+            "qprFormType":"relocations",
             "content": [
               {
                 "label": "algas",
-                "value": "algas-vegetacion-cuerpo"
+                "value": "algae"
               },
               {
                 "label": "plantas acuáticas",
-                "value": "vegetacion-plantas"
+                "value": "aquatic-plants"
               }
             ]
           },
           {
-            "name": "fauna-opcion",
+            "name": "fauna-water-registered-users",
             "type": "big_radio",
             "prompt": "¿Hay fauna en la zona?",
-            "display_prompt": "Fauna en la zona",
+            "display_prompt": "Presencia de fauna en la zona",
             "optional": true,
+            "qprFormType":"relocations",
+            "triggers": [
+              {
+                "value": "yes-fauna",
+                "targets": [
+                  "type-fauna-water-registered-users"
+                ]
+              }
+            ],
             "content": [
               {
                 "label": "Sí.",
-                "value": "si"
+                "value": "yes-fauna"
               },
               {
                 "label": "No.",
-                "value": "no"
+                "value": "no-fauna"
               },
               {
                 "label": "No sé.",
-                "value": "no_se"
+                "value": "dont-know-fauna"
               }
             ]
           },
           {
-            "name": "info-hidro-open",
+            "name": "type-fauna-water-registered-users",
+            "type": "text",
+            "prompt": "¿Cuál?",
+            "placeholder": "",
+            "display_prompt": "Qué animales",
+            "qprFormType": "relocations",
+            "hidden_default": true,
+            "optional": true
+          },
+          {
+            "name": "info-hidro-water-registered-users",
             "type": "informational_html",
             "content": "<b>Ahora vamos a registrar la situación hidrometeorológica del cuerpo de agua (río, arroyo, canal).</b>"
           },
           {
-            "name": "nivel-agua-cuerpo-open",
+            "name": "water-level-water-registered-users",
             "type": "big_radio",
             "prompt": "¿Cuál es el nivel del agua del cuerpo del agua al momento de observar la situación? Elegí una de estas opciones:",
             "display_prompt": "Nivel del agua",
             "optional": true,
+            "qprFormType":"relocations",
             "content": [
               {
                 "label": "alto",
-                "value": "alto-nivel-agua-cuerpo"
+                "value": "high"
               },
               {
                 "label": "medio",
-                "value": "medio-nivel-agua-cuerpo"
+                "value": "medium"
               },
               {
                 "label": "bajo",
-                "value": "bajo-nivel-agua-cuerpo"
+                "value": "low"
               }
             ]
           },
           {
-            "name": "vientos-fuertes-open",
+            "name": "wind-water-registered-users",
             "type": "big_radio",
             "prompt": "¿En los días previos o durante el momento de la observación existieron vientos fuertes (sudestada)? ",
-            "display_prompt": "Vientos en los días previos",
+            "display_prompt": "Existencia de vientos fuertes en días previos o en el día de observación",
             "optional": true,
+            "qprFormType":"relocations",
             "content": [
               {
                 "label": "Sí.",
-                "value": "si"
+                "value": "yes"
               },
               {
                 "label": "No.",
@@ -3748,114 +3934,128 @@
               },
               {
                 "label": "No sé.",
-                "value": "no_se"
+                "value": "dont-know"
               }
             ]
           },
           {
-            "name": "lluvias-observacion-open",
+            "name": "rain-water-registered-users",
             "type": "big_radio",
             "prompt": "¿Llovió en los días previos o durante el momento de la observación?",
-            "display_prompt": "Lluvia en los días previos",
+            "display_prompt": "Existencia de lluvias en días previos o en el día de observación",
             "optional": true,
+            "qprFormType": "relocations",
             "triggers": [
               {
-                "value": "si-lluvias-observacion",
+                "value": "yes-rain-water",
                 "targets": [
-                  "lluvias-observacion-opcion"
+                  "type-rain-water"
                 ]
               }
             ],
             "content": [
               {
                 "label": "Sí",
-                "value": "si-lluvias-observacion"
+                "value": "yes-rain-water"
               },
               {
                 "label": "No",
-                "value": "no-lluvias-observacion"
+                "value": "no-rain-water"
               },
               {
                 "label": "No sé",
-                "value": "no_se_lluvias-observacion"
+                "value": "no-rain-water"
               }
             ]
           },
           {
-            "name": "lluvias-observacion-opcion",
+            "name": "type-rain-water-registered-users",
             "type": "big_radio",
             "hidden_default": true,
             "prompt": "¿Qué tipo de lluvia se produjo? Elegí una de estas opciones:",
-            "display_prompt": "Tipo de lluvia",
+            "display_prompt": "Tipo de lluvias en días previos o en el día de observación",
             "optional": true,
+            "qprFormType":"relocations",
             "content": [
               {
                 "label": "llovizna",
-                "value": "llovizna"
+                "value": "drizzle"
               },
               {
                 "label": "llovizna intensa breve",
-                "value": "llovizna-intensa-breve"
+                "value": "short-intense-drizzle"
               },
               {
                 "label": "lluvia intensa extendida",
-                "value": "lluvia-intensa-extendida"
+                "value": "long-intense-drizzle"
               }
             ]
           },
           {
-            "name": "intro-attach-calidad-open",
+            "name": "intro-description-attach-water-registered-users",
             "type": "informational_html",
             "prompt": "¿Querés agregar un comentario, imagen, enlace o documento?",
             "content": "<span> <i> Recordá que las fotografías y documentos que adjuntás deben ser de tu autoría o debés contar con permiso para poder publicarlos . No se pueden incluir imágenes en las que se pueda identificar rostros de personas.  </i> </span>"
           },
           {
-            "name": "title-calidad-open",
+            "name": "title-description-water-registered-users",
             "type": "text",
-            "prompt": "",
-            "display_prompt": " ",
-            "placeholder": "Título",
+            "prompt": "Título",
+            "display_prompt": "Título de comentario sobre calidad del agua",
+            "placeholder": "",
+            "qprFormType":"relocations",
             "optional": true
           },
           {
-            "name": "info-final-calidad-open",
+            "name": "description-water-registered-users",
             "type": "textarea",
-            "prompt": " ",
-            "display_prompt": " ",
+            "prompt": "Comentario",
+            "display_prompt": "Comentario sobre calidad del agua",
             "placeholder": "Texto",
             "optional": true,
-            "qprFormType": "water"
+            "qprFormType": "relocations"
           },
           {
-            "name": "info-attach-calidad-open",
+            "name": "description-attach-img-water-registered-users",
             "type": "file",
-            "label": "ADJUNTAR ARCHIVO DE IMAGEN O PDF",
+            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
+            "display_prompt": "Adjuntos sobre calidad del agua",
             "optional": true,
-            "qprFormType": "water"
+            "qprFormType": "relocations"
+          },
+          
+          {
+            "name": "description-attach-pdf-water-registered-users",
+            "type": "file",
+            "label": "ADJUNTAR ARCHIVO PDF",
+            "display_prompt":"Adjuntos sobre calidad del agua",
+            "optional": true,
+            "qprFormType": "relocations"
           },
           {
-            "name": "info-finalenlace-open",
+            "name": "description-link-water-registered-users",
             "type": "text",
-            "display_prompt": " ",
-            "prompt": " ",
-            "placeholder": "Enlace",
+            "display_prompt": "Adjuntos sobre calidad del agua",
+            "prompt": "Enlace",
+            "placeholder": "",
+            "qprFormType":"relocations",
             "optional": true
           },
           {
             "name": "submit",
             "type": "submit",
             "label": "Publicar en el mapa",
-            "qprFormType": "water"
+            "qprFormType": "relocations"
           }
         ]
       },
       {
         "category": "riachuelo-relocation-registered-users",
-        "formId": "relocation-form-registered-form",
+        "formId": "relocation-form-registered-users",
         "includeOnForm": true,
         "includeOnList": false,
         "name": "location_type",
-        "datasetSlug": "relocalizaciones-open-input",
+        "datasetSlug": "relocations-input-register",
         "icon_url": "/static/css/images/markers/marker-relocalizaciones.svg",
         "value": "reporte-territorial",
         "label": "RELOCALIZACIÓN Y REURBANIZACIÓN: MESAS DE TRABAJO",
@@ -3874,16 +4074,16 @@
         "multi_stage": [
           {
             "start_field_index": 1,
-            "end_field_index": 50,
+            "end_field_index": 52,
             "header": "Relocalización y reurbanización: Mesas de trabajo",
-            "qprFormType": "relocation",
+            "qprFormType": "relocations",
             "description": ""
           },
           {
-            "start_field_index": 51,
-            "end_field_index": 52,
+            "start_field_index": 53,
+            "end_field_index": 54,
             "header": "Relocalización y reurbanización: Mesas de trabajo",
-            "qprFormType": "relocation",
+            "qprFormType": "relocations",
             "description": ""
           }
         ],
@@ -3911,7 +4111,7 @@
             "name": "municipio-relocation-registered-users-description",
             "type": "dropdown",
             "prompt": "¿En qué municipio tiene lugar esta experiencia? Elegí una de estas opciones:",
-            "display_prompt": "¿En qué municipio tiene lugar esta experiencia?",
+            "display_prompt": "Municipio donde se ubica la experiencia de relocalización o reurbanización",
             "placeholder": "Elegí el municipio...",
             "optional": false,
             "content": [
@@ -3983,13 +4183,12 @@
             "qprFormType": "water"
           },
           {
-            "name": "actual-municipality-relocation-registered-users",
+            "name": "current-municipality-relocation-registered-users",
             "type": "dropdown",
             "prompt": "¿En cuál de los siguientes municipios vivís actualmente?",
-            "display_prompt": "¿En cuál de los siguientes municipios vivís actualmente?",
+            "display_prompt": "Municipio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "optional": false,
-            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "almirante-brown-relocation-registered-users",
@@ -4150,7 +4349,7 @@
             "type": "text",
             "prompt": "¿Cuál?",
             "placeholder": "Escribí el nombre de tu municipio...",
-            "display_prompt": "¿En qué municipio vivís actualmente?",
+            "display_prompt": "Municipio de residencia actual",
             "hidden_default": true,
             "optional": false
           },
@@ -4159,11 +4358,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En qué barrio vivís actualmente? Elegí una de estas opciones:",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones:",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
@@ -4260,11 +4458,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
@@ -4337,11 +4534,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
@@ -4474,11 +4670,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
@@ -4527,11 +4722,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
@@ -4576,11 +4770,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
@@ -4653,11 +4846,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
@@ -4706,11 +4898,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí tu barrio...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
@@ -4823,11 +5014,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
@@ -4896,11 +5086,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
@@ -4969,11 +5158,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
@@ -5018,11 +5206,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
@@ -5051,11 +5238,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
@@ -5116,11 +5302,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
@@ -5193,11 +5378,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
@@ -5290,7 +5474,7 @@
             "type": "text",
             "prompt": "¿Cuál?",
             "placeholder": "Escribí el nombre de tu barrio...",
-            "display_prompt": "¿En qué barrio vivís actualmente?",
+            "display_prompt": "Barrio de residencia actual",
             "hidden_default": true,
             "optional": false
           },
@@ -5299,6 +5483,7 @@
             "type": "big_radio",
             "prompt": "¿Querés compartir información sobre una mesa de trabajo o reunión barrial en la que hayas participado?",
             "optional": false,
+            "display_prompt": "Experiencia en participación en una mesa de trabajo",
             "qprFormType": "relocations",
             "triggers": [
               {
@@ -5339,7 +5524,7 @@
             "time_format": false,
             "hidden_default":true,
             "prompt": "¿En qué fecha fue la reunión? Elegí la fecha del calendario.",
-            "display_prompt": "Fecha de la mesa de trabajo o reunión barrial",
+            "display_prompt": "Fecha de la reunión",
             "placeholder": "Seleccioná una fecha",
             "optional": false,
             "qprFormType": "water"
@@ -5403,7 +5588,7 @@
             "type": "text",
             "prompt": "¿Cuál?",
             "placeholder": "",
-            "display_prompt": "Otro lugar",
+            "display_prompt": " Qué  otro lugar de reunión",
             "hidden_default": true,
             "optional": true
           },
@@ -5411,7 +5596,7 @@
             "name": "host-relocation-registred-users",
             "type": "big_checkbox",
             "hidden_default": true,
-            "display_prompt": "Convocante",
+            "display_prompt": "Personas, organismos y organizaciones que convocaron a la reunión",
             "prompt": "¿Quién convocó a la reunión? Elegí una o más de estas opciones:",
             "optional": false,
             "triggers": [
@@ -5470,7 +5655,7 @@
             "type": "text",
             "prompt": "¿Cuál?",
             "placeholder": "",
-            "display_prompt": "Otro convocante",
+            "display_prompt": "Qué otras personas u organizaciones convocaron a la reunión",
             "hidden_default": true,
             "optional": true
           },
@@ -5478,7 +5663,7 @@
             "name": "meeting-attendees-relocation-registered-users",
             "type": "big_radio",
             "hidden_default": true,
-            "display_prompt": "Cantidad de personas",
+            "display_prompt": "Cantidad de participantes",
             "prompt": "¿Cuántas personas participaron? Elegí una de estas opciones: ",
             "optional": true,
             "qprFormType": "relocations",
@@ -5508,7 +5693,7 @@
           {
             "name": "authorities-attendees-relocation-registered-users",
             "type": "big_radio",
-            "display_prompt": "Funcionarios presentes",
+            "display_prompt": "Presencia de funcionario o autoridad responsable",
             "prompt": "¿Entre las personas que participaron había un/a funcionario/a o autoridad responsable?",
             "optional": false,
             "hidden_default":true,
@@ -5539,11 +5724,19 @@
           {
             "name": "authorities-relocation-registered-users",
             "type": "big_checkbox",
-            "display_prompt": "Organismos presentes",
+            "display_prompt": "Organismos a los que pertenecen los funcionarios que participaron",
             "prompt": "¿En representación de qué organismos participaron los funcionarios o autoridades? Elegí una o más de estas opciones:",
             "optional": false,
             "hidden_default": true,
             "qprFormType": "relocations",
+            "triggers": [
+              {
+                "value": "others-relocation-registered-users",
+                "targets": [
+                  "authorities-other-answer-relocation-registered-users"
+                ]
+              }
+            ],
             "content": [
               {
                 "label": "ACUMAR.",
@@ -5570,6 +5763,16 @@
                 "value": "dont-know-authority-relocation-registered-users"
               }
             ]
+          },
+          {
+            "name": "authorities-other-answer-relocation-registered-users",
+            "type": "text",
+            "prompt": "¿Cuál?",
+            "placeholder": "",
+            "display_prompt": "Otros organismos",
+            "qprFormType": "relocations",
+            "hidden_default": true,
+            "optional": true
           },
           {
             "name": "topics-relocation-registered-users",
@@ -5622,7 +5825,7 @@
             "type": "text",
             "prompt": "¿Cuál?",
             "placeholder": "",
-            "display_prompt": "Otro tema",
+            "display_prompt": "Otros temas tratados",
             "hidden_default": true,
             "optional": true
           },
@@ -5630,7 +5833,7 @@
             "name": "speak-meeting-relocation-registered-users",
             "type": "big_radio",
             "prompt": "¿Todas las personas que pidieron la palabra pudieron participar de la mesa haciendo preguntas, comentarios o propuestas?",
-            "display_prompt": "¿Todas las personas que pidieron la palabra pudieron participar de la mesa haciendo preguntas, comentarios o propuestas?",
+            "display_prompt": "Posibilidad de participación de todas las personas en la reunión con preguntas, comentarios o propuestas",
             "optional": false,
             "hidden_default":true,
             "qprFormType": "relocations",
@@ -5653,7 +5856,7 @@
             "name": "register-relocation-registered-users",
             "type": "big_radio",
             "hidden_default":true,
-            "display_prompt": "¿Hubo registro de la reunión?",
+            "display_prompt": "Existencia de un registro de la reunión: apuntes, acta escrita, grabación o video",
             "prompt": "¿Hubo algún registro de la reunión, ya sea apuntes o un acta escrita, grabación o video?",
             "optional": false,
             "qprFormType": "relocations",
@@ -5680,7 +5883,7 @@
             "name": "next-meeting-relocation-registered-users",
             "type": "big_radio",
             "prompt": "¿Se definió una fecha para la próxima reunión?",
-            "display_prompt":"¿Se definió una fecha para la próxima reunión?",
+            "display_prompt":"Definición de fecha de la próxima reunión o mesa de trabajo",
             "hidden_default": true,
             "optional": false,
             "qprFormType": "relocations",
@@ -5712,7 +5915,7 @@
             "type": "datetime",
             "time_format": false,
             "prompt": "¿Cuál? Elegí la  fecha del calendario.",
-            "display_prompt": "Fecha de la próxima reunión de mesa de trabajo o reunión barrial",
+            "display_prompt": "Fecha de la próxima reunión o mesa de trabajo",
             "hidden_default": true,
             "placeholder": "Seleccioná una fecha",
             "optional": true,
@@ -5723,7 +5926,7 @@
             "type": "text",
             "prompt": "¿Querés dejar un comentario y/o compartir algún material de la reunión? Podés escribir y/o subir documentos, enlaces, fotos.",
             "placeholder": "",
-            "display_prompt": "Comentarios sobre la reunión",
+            "display_prompt": "Comentarios, documentos, enlaces, fotos de la reunión o mesa de trabajo. ",
             "hidden_default": true,
             "optional": true,
             "qprFormType": "relocations"
@@ -5757,8 +5960,8 @@
             "type": "text",
             "hidden_default": true,
             "display_prompt": "Enlace",
-            "prompt": " ",
-            "placeholder": "Enlace",
+            "prompt": "Enlace",
+            "placeholder": "",
             "optional": true,
             "qprFormType": "water"
           },
@@ -5766,7 +5969,7 @@
             "name": "topic-interest-relocation-registered-users",
             "type": "big_checkbox",
             "prompt": "¿Qué tema o problema relacionado con el proceso de relocalización y/o reurbanización sería importante tratar con las autoridades? Elegí hasta tres opciones que se relacionan con el tema que querés proponer:",
-            "display_prompt": "Tema o problema relacionado",
+            "display_prompt": "Problemas relacionados con la relocalización o reurbanización que es importante tratar con las autoridades en mesas de trabajo barriales",
             "optional": false,
             "triggers": [
               {
@@ -5820,7 +6023,7 @@
             "type": "text",
             "prompt": "¿Cuál? Escribí un título o palabra clave para el tema o problema.",
             "placeholder": "",
-            "display_prompt": "Otro tema de interés",
+            "display_prompt": "Otro problema que es importante tratar con las autoridades en mesas de trabajo",
             "hidden_default": true,
             "optional": false
           },
@@ -5829,7 +6032,7 @@
             "type": "text",
             "prompt": "Describí el tema o problema que te parece relevante para tratar con las autoridades responsables en mesas de trabajo barriales. También podés compartir documentos, imágenes, enlaces",
             "placeholder": "",
-            "display_prompt": "Descripción del tema",
+            "display_prompt": "Descripción del problema a tratar con autoridades en mesas de trabajo barriales",
             "hidden_default": false,
             "optional": true,
             "qprFormType": "relocations"
@@ -5845,24 +6048,26 @@
             "name": "description-attach-img-relocation-registered-users",
             "type": "file",
             "label": "ADJUNTAR ARCHIVO DE IMAGEN",
+            "display_prompt": "Adjuntos",
             "optional": true,
-            "qprFormType": "water"
+            "qprFormType": "relocations"
           },
           {
             "name": "description-attach-pfd-relocation-registered-users",
             "type": "file",
             "label": "ADJUNTAR ARCHIVO PDF",
+            "display_prompt": "Adjuntos",
             "optional": true,
-            "qprFormType": "water"
+            "qprFormType": "relocations"
           },
           {
             "name": "description-attach-link-relocation-registered-users",
             "type": "text",
-            "display_prompt": "Enlace",
-            "prompt": " ",
+            "display_prompt": "Enlaces sobre mesas de trabajo barriales",
+            "prompt": "Enlace",
             "placeholder": "Enlace",
             "optional": true,
-            "qprFormType": "water"
+            "qprFormType": "relocations"
           },
           {
             "name": "submit",
@@ -5878,7 +6083,7 @@
         "includeOnForm": true,
         "includeOnList": false,
         "name": "location_type",
-        "datasetSlug": "relocalizaciones-input",
+        "datasetSlug": "relocations-input",
         "icon_url": "/static/css/images/markers/marker-relocalizaciones.svg",
         "value": "reporte-territorial",
         "label": "RELOCALIZACIÓN Y REURBANIZACIÓN: SEGUIMIENTO",
@@ -5916,25 +6121,25 @@
             "type": "lng_lat"
           },
           {
-            "name": "intro-relocalizaciones",
+            "name": "intro-relocation",
             "type": "informational_html",
             "content": "<span><b>Seguimiento del proceso de relocalización o reurbanización</b><span>"
           },
           {
-            "name": "intro-relocalizaciones-description",
+            "name": "description-intro-relocation",
             "type": "informational_html",
             "content": "<span><b>Si vivís en un barrio de la cuenca afectado por los programas de relocalización y/o reurbanización podés contribuir con información actualizada sobre el avance del proceso en tu barrio completando el siguiente formulario.</b><span>"
           },
           {
-            "name": "intro-guide-relocalizaciones",
+            "name": "guide-intro-relocation",
             "type": "informational_html",
             "content": "<span><b>¿Tenés dudas? Consultá la guía de campo.</b></span>"
           },
           {
-            "name": "municipio-relocalizaciones",
+            "name": "municipality-relocation",
             "type": "dropdown",
             "prompt": "¿En qué municipio tiene lugar esta experiencia? Elegí una de estas opciones:",
-            "display_prompt": "Municipio",
+            "display_prompt": "Municipio donde se ubica la experiencia de relocalización o reurbanización",
             "placeholder": "Elegí el municipio...",
             "optional": false,
             "content": [
@@ -5997,7 +6202,7 @@
             ]
           },
           {
-            "name": "address-relocalizaciones",
+            "name": "address-relocation",
             "type": "geocoding",
             "prompt": "Arrastrá el mapa para ubicar tu experiencia. ",
             "display_prompt": "",
@@ -6006,14 +6211,13 @@
             "qprFormType": "water"
           },
           {
-            "name": "municipio",
+            "name": "current-municipality-relocation",
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes municipio vivís actualmente?",
-            "display_prompt": "Municipio",
+            "display_prompt": "Municipio de residencia actua",
             "placeholder": "Elegí una de estas opciones...",
             "optional": false,
-            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "ciudad-de-buenos-aires",
@@ -6175,11 +6379,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En qué barrio vivís actualmente? Elegí una de estas opciones:",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones:",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "Asentamiento Lamadrid",
@@ -6268,11 +6471,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "2 de Abril",
@@ -6337,11 +6539,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "7 de enero",
@@ -6466,11 +6667,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "Barrio Libertad",
@@ -6511,11 +6711,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "9 de enero",
@@ -6552,11 +6751,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "El Ombú",
@@ -6621,11 +6819,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "Enrique Flynn",
@@ -6666,11 +6863,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí tu barrio...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "22 de enero",
@@ -6775,11 +6971,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "10 de enero",
@@ -6840,11 +7035,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "Asentamiento 3 de enero",
@@ -6905,11 +7099,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "El Palenque",
@@ -6946,11 +7139,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "El Juancito",
@@ -6971,11 +7163,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "20 de junio",
@@ -7028,11 +7219,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "Agrocolonias",
@@ -7097,11 +7287,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "8 de octubre",
@@ -7182,20 +7371,21 @@
             ]
           },
           {
-            "name": "situacion_de_relocalizacion",
+            "name": "situation-relocation",
             "type": "big_radio",
             "prompt": "¿Cuál es tu situación con respecto al programa de relocalización y reurbanización de villas y asentamientos de la Cuenca Matanza Riachuelo? Elegí una de estas opciones:",
             "optional": false,
+            "display_prompt":"Situación de relocalización",
             "qprFormType": "relocations",
             "triggers": [
               {
-                "value": "otro-barrio",
+                "value": "situacion-relocalized",
                 "targets": [
-                  "municipio-before"
+                  "before-municipality-relocation"
                 ]
               },
               {
-                "value": "otros",
+                "value": "situation-other",
                 "targets": [
                   "otra-situacion"
                 ]
@@ -7204,36 +7394,35 @@
             "content": [
               {
                 "label": "Me relocalizaron (antes vivía en otro sector, barrio o complejo habitacional).",
-                "value": "otro-barrio"
+                "value": "situacion-relocalized"
               },
               {
                 "label": "Me informaron que me van a relocalizar pero aún no sucedió.",
-                "value": "no-sucedio"
+                "value": "situation-not-relocalized"
               },
               {
                 "label": "Soy habitante de un barrio donde hubo o habrá personas relocalizadas pero no es mi caso.",
-                "value": "barrio-pero-no-mi-caso"
+                "value": "situacion-neighbourhood-relocalized"
               },
               {
                 "label": "No me informaron si me van a relocalizar o no.",
-                "value": "barrio-que-llegaron-personas"
+                "value": "situation-dont-know"
               },
               {
                 "label": "Otra situación.",
-                "value": "otros"
+                "value": "situation-other"
               }
             ]
           },
           {
-            "name": "municipio-before",
+            "name": "before-municipality-relocation",
             "type": "dropdown",
             "includeOnListItem": true,
             "hidden_default": true,
             "prompt": "¿En qué municipio vivías antes?",
-            "display_prompt": "Municipio",
+            "display_prompt": "Municipio de residencia anterior",
             "placeholder": "Elegí una de estas opciones...",
             "optional": false,
-            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "ciudad-de-buenos-aires-before",
@@ -7371,11 +7560,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia anterior",
             "placeholder": "Elegí una de estas opciones:",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "Asentamiento Lamadrid",
@@ -7464,11 +7652,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia anterior",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "2 de Abril",
@@ -7533,11 +7720,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia anterior",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "7 de enero",
@@ -7662,11 +7848,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia anterior",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "Barrio Libertad",
@@ -7707,11 +7892,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia anterior",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "9 de enero",
@@ -7748,11 +7932,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia anterior",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "El Ombú",
@@ -7817,11 +8000,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia anterior",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "Enrique Flynn",
@@ -7862,11 +8044,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia anterior",
             "placeholder": "Elegí tu barrio...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "22 de enero",
@@ -7971,11 +8152,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia anterior",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "10 de enero",
@@ -8036,11 +8216,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia anterior",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "Asentamiento 3 de enero",
@@ -8101,11 +8280,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia anterior",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "El Palenque",
@@ -8142,11 +8320,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia anterior",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "El Juancito",
@@ -8167,11 +8344,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia anterior",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "20 de junio",
@@ -8224,11 +8400,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia anterior",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "Agrocolonias",
@@ -8293,11 +8468,10 @@
             "type": "dropdown",
             "includeOnListItem": true,
             "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
-            "display_prompt": "Barrio",
+            "display_prompt": "Barrio de residencia anterior",
             "placeholder": "Elegí una de estas opciones...",
             "hidden_default": true,
             "optional": false,
-            "qprFormType": "relocations",
             "content": [
               {
                 "label": "8 de octubre",
@@ -8378,27 +8552,28 @@
             ]
           },
           {
-            "name": "advancements-relocalizacion",
+            "name": "advancements-relocation",
             "type": "big_radio",
             "prompt": "En el último mes, ¿hubo avances en obras de viviendas nuevas o de mejoramiento de viviendas ejecutadas por el gobierno en el barrio donde vivís? Elegí una de estas opciones:",
             "optional": false,
+            "display_prompt": "Existencia de avances en obras de vivienda en el último mes",
             "qprFormType": "relocations",
             "content": [
               {
                 "label": "Sí, se construyeron viviendas nuevas.",
-                "value": "si-viviendas-relocalizaciones"
+                "value": "si-viviendas-relocation"
               },
               {
                 "label": "Sí, se hicieron mejoras en viviendas existentes.",
-                "value": "si-viviendas-existentes-relocalizaciones"
+                "value": "si-viviendas-existentes-relocation"
               },
               {
                 "label": "Sí, hubo obras de vivienda nueva y mejoras en viviendas existentes.",
-                "value": "si-viviendas-mejoras-relocalizaciones"
+                "value": "si-viviendas-mejoras-relocation"
               },
               {
                 "label": "No, no hubo obras de vivienda ni mejoramientos.",
-                "value": "no-mejoras-relocalizaciones"
+                "value": "no-mejoras-relocation"
               },
               {
                 "label": "No sé.",
@@ -8407,10 +8582,11 @@
             ]
           },
           {
-            "name": "new-houses-relocalizacion",
+            "name": "new-houses-relocation",
             "type": "big_radio",
             "prompt": "En el último mes, ¿hubo mudanzas o se entregaron viviendas nuevas a familias del barrio donde vivís en el marco del programa de relocalización o reurbanización?",
             "optional": false,
+            "display_prompt": "Existencia de mudanzas o entrega de viviendas en el último mes",
             "qprFormType": "relocations",
             "content": [
               {
@@ -8428,11 +8604,11 @@
             ]
           },
           {
-            "name": "new-houses-relocalizacion",
+            "name": "new-houses-relocation",
             "type": "big_radio",
             "prompt": "En el último mes, ¿hubo avances en obras de servicios públicos en el barrio donde vivís, ya sea de la red de agua, cloacas o electricidad?",
             "optional": false,
-            "qprFormType": "relocations",
+            "display_prompt": "Existencia de avances en obras de servicios públicos en el último mes",            "qprFormType": "relocations",
             "content": [
               {
                 "label": "Sí.",
@@ -8449,10 +8625,11 @@
             ]
           },
           {
-            "name": "authorship-relocalizacion",
+            "name": "authoriship-relocation",
             "type": "big_radio",
-            "prompt": "En el último mes, ¿hubo avances en obras de servicios públicos en el barrio donde vivís, ya sea de la red de agua, cloacas o electricidad?",
+            "prompt": "En el último mes, ¿alguna autoridad hizo llegar alguna información relevante sobre el proceso de relocalización, reurbanización o sobre algún proyecto de obras públicas en el barrio?",
             "optional": false,
+            "display_prompt": "Existencia de información sobre el proceso compartida por autoridades en el último mes",
             "qprFormType": "relocations",
             "content": [
               {
@@ -8470,10 +8647,11 @@
             ]
           },
           {
-            "name": "working-table-relocalizacion",
+            "name": "working-table-relocation",
             "type": "big_radio",
             "prompt": "En el marco de los procesos de relocalización y reurbanización de villas y asentamientos de la cuenca es obligatorio celebrar mesas de trabajo para garantizar el derecho a la información y a la participación de la población. En el último mes, ¿se celebraron mesas de trabajo o reuniones relacionadas con el proceso de relocalización, reurbanización o con obras en el barrio donde vivís en las que hayan participado autoridades o funcionarios responsables?",
             "optional": false,
+            "display_prompt": "Celebración de mesas de trabajo o reuniones con autoridades en el último mes",
             "qprFormType": "relocations",
             "content": [
               {
@@ -8491,20 +8669,12 @@
             ]
           },
           {
-            "name": "subjects-relocalizaciones",
-            "type": "text",
-            "prompt": "Actualmente, en el marco del proceso de relocalización o reurbanización, ¿cuáles considerás que son las tres cuestiones más importantes que las autoridades responsables deberían atender en el  barrio en el que vivís? Elegí una o más de estas opciones:",
-            "placeholder": "Escribí aquí...",
-            "display_prompt": "Cuestiones más importantes",
-            "hidden_default": true,
-            "optional": false,
-            "qprFormType": "relocations"
-          },
-          {
-            "name": "tema_interese",
+            "name": "topics-relocation",
             "type": "big_checkbox",
             "prompt": "Actualmente, en el marco del proceso de relocalización o reurbanización, ¿cuáles considerás que son las tres cuestiones más importantes que las autoridades responsables deberían atender en el  barrio en el que vivís? Elegí una o más de estas opciones:",
             "optional": false,
+            "qprFormType": "relocations",
+            "display_prompt": "Tres cuestiones más importantes a considerar por las autoridades en el proceso de relocalización o reurbanización del barrio",
             "content": [
               {
                 "label": "acceso a la información y participación en el proceso de relocalización/reurbanización",
