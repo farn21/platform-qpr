@@ -1286,7 +1286,7 @@
             "time_format": false,
             "prompt": "¿Cuándo? Elegí una fecha en el calendario.",
             "display_prompt": "Fecha",
-            "placeholder": "",
+            "placeholder": "Elegí una fecha",
             "optional": false,
             "qprFormType": "relocations"
           },
@@ -1623,7 +1623,7 @@
             "time_format": false,
             "prompt": "¿Cuándo fue tu última visita? Seleccioná una fecha en el calendario.",
             "display_prompt": "Fecha de la visita",
-            "placeholder": "",
+            "placeholder": "Elegí una fecha",
             "qprFormType":"relocation",
             "optional": false
           },
@@ -2679,7 +2679,7 @@
             "time_format": false,
             "prompt": "Ingresá la fecha de la situación que estás compartiendo. Se trata de la fecha del día en la que registraste la situación vinculada a la calidad de agua.",
             "display_prompt": "Fecha",
-            "placeholder": "",
+            "placeholder": "Elegí una fecha",
             "optional": false,
             "qprFormType": "relocations"
           },
@@ -3364,7 +3364,7 @@
             "prompt": "Ingresá la fecha de la situación que estás compartiendo. Se trata de la fecha del día en la que registraste la situación vinculada a la calidad de agua.",
             "display_prompt": "Fecha",
             "qprFormType": "relocations",
-            "placeholder": "Seleccioná una fecha",
+            "placeholder": "Elegí una fecha",
             "optional": false
           },
           {
@@ -5512,7 +5512,7 @@
             "hidden_default":true,
             "prompt": "¿En qué fecha fue la reunión? Elegí la fecha del calendario.",
             "display_prompt": "Fecha de la reunión",
-            "placeholder": "Seleccioná una fecha",
+            "placeholder": "Elegí una fecha",
             "optional": false,
             "qprFormType": "water"
           },
@@ -5904,7 +5904,7 @@
             "prompt": "¿Cuál? Elegí la  fecha del calendario.",
             "display_prompt": "Fecha de la próxima reunión o mesa de trabajo",
             "hidden_default": true,
-            "placeholder": "Seleccioná una fecha",
+            "placeholder": "Elegí una fecha",
             "optional": true,
             "qprFormType": "water"
           },
@@ -8659,7 +8659,7 @@
             "prompt": "Actualmente, en el marco del proceso de relocalización o reurbanización, ¿cuáles considerás que son las tres cuestiones más importantes que las autoridades responsables deberían atender en el  barrio en el que vivís? Elegí una o más de estas opciones:",
             "optional": false,
             "qprFormType": "relocations",
-            "display_prompt": "Tres cuestiones más importantes a considerar por las autoridades en el proceso de relocalización o reurbanización del barrio",
+            "display_prompt": "Cuestiones más importantes a considerar por las autoridades en el proceso de relocalización o reurbanización del barrio",
             "content": [
               {
                 "label": "acceso a la información y participación en el proceso de relocalización/reurbanización",
