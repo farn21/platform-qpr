@@ -1203,7 +1203,6 @@
             "prompt": "¿En qué municipio tiene lugar esta historia? Elegí una de estas opciones:",
             "display_prompt": "Municipio donde sucede esta novedad",
             "placeholder": "",
-            "qprFormType": "relocations",
             "optional": false,
             "content": [
           
@@ -1267,12 +1266,10 @@
           },
           {
             "name": "address-news",
-            "type": "geocoding",
-            "prompt": "Arrastrá el mapa para ubicar tu experiencia. ",
-            "display_prompt": "",
-            "placeholder": "",
-            "optional": false,
-            "qprFormType": "relocations"
+            "type": "informational_html",
+            "prompt":"Arrastrá el mapa para ubicar tu experiencia",
+            "content": "<span><b></b></span>",
+            "optional": false
           },
           {
             "name": "title-news",
@@ -1558,12 +1555,10 @@
           },
           {
             "name": "address-areas",
-            "type": "geocoding",
-            "prompt": "¿Dónde está ubicada esta área? Arrastrá el mapa para ubicar tu experiencia. ",
-            "display_prompt": "",
-            "placeholder": "",
-            "optional": false,
-            "qprFormType": "relocations"
+            "type": "informational_html",
+            "prompt":"Arrastrá el mapa para ubicar tu experiencia",
+            "content": "<span><b></b></span>",
+            "optional": false
           },
           {
             "name": "visit-areas",
@@ -2058,12 +2053,10 @@
           },
           {
             "name": "address-area-registered-users",
-            "type": "geocoding",
-            "prompt": "¿Dónde está ubicada esta área? Arrastrá el mapa para ubicar tu experiencia. ",
-            "display_prompt": "",
-            "placeholder": "",
-            "optional": false,
-            "qprFormType": "relocations"
+            "type": "informational_html",
+            "prompt":"Arrastrá el mapa para ubicar tu experiencia",
+            "content": "<span><b></b></span>",
+            "optional": false
           },
           {
             "name": "bond_areas-registered-users",
@@ -2675,12 +2668,10 @@
           },
           {
             "name": "address-water",
-            "type": "geocoding",
-            "prompt": "Arrastrá el mapa para ubicar tu experiencia. ",
-            "display_prompt": "",
-            "placeholder": "",
-            "optional": false,
-            "qprFormType": "relocations"
+            "type": "informational_html",
+            "prompt":"Arrastrá el mapa para ubicar tu experiencia",
+            "content": "<span><b></b></span>",
+            "optional": false
           },
           {
             "name": "date-field-water",
@@ -3361,12 +3352,10 @@
           },
           {
             "name": "address-water-registered-users",
-            "type": "geocoding",
-            "prompt": "Arrastrá el mapa para ubicar tu experiencia. ",
-            "display_prompt": "",
-            "placeholder": "",
-            "optional": false,
-            "qprFormType": "relocations"
+            "type": "informational_html",
+            "prompt":"Arrastrá el mapa para ubicar tu experiencia",
+            "content": "<span><b></b></span>",
+            "optional": false
           },
           {
             "name": "date-water-registered-users",
@@ -4175,12 +4164,10 @@
           },
           {
             "name": "address-relocation-registered-users-description",
-            "type": "geocoding",
-            "prompt": "Arrastrá el mapa para ubicar tu experiencia. ",
-            "display_prompt": "",
-            "placeholder": "",
-            "optional": false,
-            "qprFormType": "water"
+            "type": "informational_html",
+            "prompt":"Arrastrá el mapa para ubicar tu experiencia",
+            "content": "<span><b></b></span>",
+            "optional": false
           },
           {
             "name": "current-municipality-relocation-registered-users",
@@ -6203,12 +6190,10 @@
           },
           {
             "name": "address-relocation",
-            "type": "geocoding",
-            "prompt": "Arrastrá el mapa para ubicar tu experiencia. ",
-            "display_prompt": "",
-            "placeholder": "",
-            "optional": false,
-            "qprFormType": "water"
+            "type": "informational_html",
+            "prompt":"Arrastrá el mapa para ubicar tu experiencia",
+            "content": "<span><b></b></span>",
+            "optional": false
           },
           {
             "name": "current-municipality-relocation",
