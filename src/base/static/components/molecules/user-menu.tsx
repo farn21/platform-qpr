@@ -119,7 +119,10 @@ const UserMenu: React.FunctionComponent<Props> = props => {
             width: "2.7em",
             height: "2.6em",
             maxWidth: "none",
+            marginRight: "5.5em",
+            paddingRight: "2em",
             cursor: "pointer",
+       
 
             fontSize: "1em",
             padding: "0",
@@ -145,7 +148,7 @@ const UserMenu: React.FunctionComponent<Props> = props => {
               onClick={() => setIsMenuToggled(isMenuOpen => !isMenuOpen)}
             >
               <InternalLink href={isDashboard ? "/" : "/dashboard"}>
-                {isDashboard ? "back to map" : `go to dashboard`}
+                {isDashboard ? "Volver al mapa" : `Ir al dashboard`}
               </InternalLink>
             </MenuItem>
           )}

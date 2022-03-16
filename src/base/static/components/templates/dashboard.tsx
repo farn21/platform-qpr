@@ -223,7 +223,7 @@ class Dashboard extends React.Component<Props, State> {
                     css={css`
                       display: flex;
                     `}
-                    href={`${this.props.apiRoot}smartercleanup/datasets/${dataset.slug}/mapseed-places.csv?format=csv&include_submissions&include_private_places&include_private_fields&page_size=10000`}
+                    href={`${this.props.apiRoot}smartercleanup/datasets/${dataset.slug}/qpr-experiencias.csv?format=csv&include_submissions&include_private_places&include_private_fields&page_size=10000`}
                   >
                     <SmallText
                       weight="black"
@@ -232,7 +232,7 @@ class Dashboard extends React.Component<Props, State> {
                         margin-right: 8px;
                       `}
                     >
-                      Export raw CSV data
+                      Exportar en csv
                     </SmallText>
                     <FontAwesomeIcon
                       fontSize="0.7rem"
