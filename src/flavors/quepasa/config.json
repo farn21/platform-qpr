@@ -164,10 +164,10 @@
   },
   "dashboard": [
     {
-      "header": "Qué Pasa, Riachuelo? -- Tablero",
+      "header": "¿Qué Pasa, Riachuelo? -- Dashboard",
       "isExportable": true,
       "backgroundColor": "#f5f3f0",
-      "datasetSlug": "quepasa-input",
+      "datasetSlug": "news-input", 
       "widgets": [
         {
           "header": "Visión general",
@@ -1251,6 +1251,10 @@
                 "value": "merlo"
               },
               {
+                "label": "Morón",
+                "value": "moron"
+              },
+              {
                 "label": "Presidente Juan D. Perón",
                 "value": "presidente-juan-d-peron"
               },
@@ -1465,6 +1469,10 @@
               {
                 "label": "Merlo",
                 "value": "merlo"
+              },
+              {
+                "label": "Morón",
+                "value": "moron"
               },
               {
                 "label": "Presidente Juan D. Perón",
@@ -1963,6 +1971,10 @@
               {
                 "label": "Merlo",
                 "value": "merlo"
+              },
+              {
+                "label": "Morón",
+                "value": "moron"
               },
               {
                 "label": "Presidente Juan D. Perón",
@@ -2653,6 +2665,10 @@
                 "value": "merlo"
               },
               {
+                "label": "Morón",
+                "value": "moron"
+              },
+              {
                 "label": "Presidente Juan D. Perón",
                 "value": "presidente-juan-d-peron"
               },
@@ -3335,6 +3351,10 @@
               {
                 "label": "Merlo",
                 "value": "merlo"
+              },
+              {
+                "label": "Morón",
+                "value": "moron"
               },
               {
                 "label": "Presidente Juan D. Perón",
@@ -4089,78 +4109,12 @@
           {
             "name": "intro-relocation-registered-users-description",
             "type": "informational_html",
-            "content": "<span><b>Compartí información sobre una mesa de trabajo o sobre una reunión barrial en la que hayas participado o proponer un tema que sea relevante para trabajar con las autoridades en futuras mesas.</b><span>"
+            "content": "<span><b>Compartí información sobre una mesa de trabajo o sobre una reunión barrial en la que hayas participado o proponé un tema que sea relevante para trabajar con las autoridades en futuras mesas.</b><span>"
           },
           {
             "name": "intro-guide-relocation-registered-users-description",
             "type": "informational_html",
-            "content": "<span><b>¿Tenés dudas? Consultá la guía para la carga de experiencias en QPR: Relocalización y reurbanización.</b></span>"
-          },
-          {
-            "name": "municipio-relocation-registered-users-description",
-            "type": "dropdown",
-            "prompt": "¿En qué municipio tiene lugar esta experiencia? Elegí una de estas opciones:",
-            "display_prompt": "Municipio donde se ubica la experiencia de relocalización o reurbanización",
-            "placeholder": "Elegí el municipio...",
-            "optional": false,
-            "content": [
-              {
-                "label": "Almirante Brown",
-                "value": "almirante-brown"
-              },
-              {
-                "label": "Avellaneda",
-                "value": "avellaneda"
-              },
-              {
-                "label": "Cañuelas",
-                "value": "canuelas"
-              },
-              {
-                "label": "Esteban Echeverría",
-                "value": "esteban-echeverria"
-              },
-              {
-                "label": "Ezeiza",
-                "value": "ezeiza"
-              },
-              {
-                "label": "La Matanza",
-                "value": "la-matanza"
-              },
-              {
-                "label": "Lanús",
-                "value": "lanus"
-              },
-              {
-                "label": "Las Heras",
-                "value": "las-heras"
-              },
-              {
-                "label": "Lomas de Zamora",
-                "value": "lomas-de-zamora"
-              },
-              {
-                "label": "Marcos Paz",
-                "value": "marcos-paz"
-              },
-              {
-                "label": "Merlo",
-                "value": "merlo"
-              },
-              {
-                "label": "Presidente Juan D. Perón",
-                "value": "presidente-juan-d-peron"
-              },
-              {
-                "label": "San Vicente",
-                "value": "san-vicente"
-              },
-              {
-                "label": "Ciudad de Buenos Aires",
-                "value": "ciudad-de-buenos-aires"
-              }
-            ]
+            "content": "<span><b>¿Tenés dudas? Consultá la Guía para compartir experiencias en QPR: Relocalización y reurbanización.</b></span>"
           },
           {
             "name": "address-relocation-registered-users-description",
@@ -4172,7 +4126,7 @@
           {
             "name": "current-municipality-relocation-registered-users",
             "type": "dropdown",
-            "prompt": "¿En cuál de los siguientes municipios vivís actualmente?",
+            "prompt": "¿En qué municipio tiene lugar esta experiencia?",
             "display_prompt": "Municipio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "optional": false,
@@ -4256,6 +4210,12 @@
                 ]
               },
               {
+                "value": "moron-relocation-registered-users",
+                "targets": [
+                  "moron-barrios"
+                ]
+              },
+              {
                 "value": "ciudad-de-buenos-aires-relocation-registered-users",
                 "targets": [
                   "ciudad-de-buenos-aires-barrios"
@@ -4314,6 +4274,10 @@
                 "value": "merlo-relocation-registered-users"
               },
               {
+                "label": "Morón",
+                "value": "moron"
+              },
+              {
                 "label": "Presidente Juan D. Perón",
                 "value": "peron-relocation-registered-users"
               },
@@ -4344,7 +4308,7 @@
             "name": "ciudad-de-buenos-aires-barrios",
             "type": "dropdown",
             "includeOnListItem": true,
-            "prompt": "¿En qué barrio vivís actualmente? Elegí una de estas opciones:",
+            "prompt": "¿En qué barrio  tiene lugar esta experiencia? Elegí una de estas opciones:",
             "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones:",
             "hidden_default": true,
@@ -4871,7 +4835,7 @@
                 "value": "plomer-las-heras"
               },
               {
-                "label": "villars",
+                "label": "Villars",
                 "value": "villars-las-heras"
               },
               {
@@ -5380,75 +5344,79 @@
             "content": [
               {
                 "label": "8 de octubre",
-                "value": "agrocolonias-peron"
+                "value": "8-octubre-san-vicente"
               },
               {
                 "label": "Biocca",
-                "value": "america-unida-peron"
+                "value": "biocca-san-vicente"
               },
               {
                 "label": "El Fortín",
-                "value": "america-unida-ii-peron"
+                "value": "el-fortin-san-vicente"
               },
               {
                 "label": "Hospital",
-                "value": "el-roble-peron"
+                "value": "hospital-san-vicente"
               },
               {
                 "label": "La Laguna",
-                "value": "estacion-numancia-peron"
+                "value": "la-laguna-san-vicente"
               },
               {
                 "label": "La Laurita",
-                "value": "hospital-guernica-peron"
+                "value": "laurita-san-vicente"
               },
               {
                 "label": "La Pradera",
-                "value": "la-yaya-i-peron"
+                "value": "la-pradera-san-vicente"
               },
               {
                 "label": "Los Hornos",
-                "value": "las-lomas-peron"
+                "value": "los-hornos-san-vicente"
+              },
+              {
+                "label": "Los Naranjos",
+                "value": "los-naranjos-san-vicente"
               },
               {
                 "label": "Mataderos",
-                "value": "numancia-norte-peron"
+                "value": "mataderos-san-vicente"
               },
               {
                 "label": "Nueva Esperanza",
-                "value": "parque-americano-peron"
+                "value": "nueva-esperanza-san-vicente"
               },
               {
                 "label": "Parque Ibáñez",
-                "value": "san-martin-peron"
+                "value": "parque-ibanez-san-vicente"
               },
               {
                 "label": "San José I",
-                "value": "san-roque-peron"
+                "value": "san-jose-san-vicente"
               },
               {
                 "label": "San José II",
-                "value": "santa-teresita-peron"
+                "value": "san-jose-ii-san-vicente"
               },
               {
                 "label": "San José Ferrocarril",
-                "value": "america-unida-peron"
+                "value": "san-jose-ferrocarril-san-vicente"
               },
               {
                 "label": "Santa Ana",
-                "value": "america-unida-ii-peron"
+                "value": "santa-ana-san-vicente"
               },
               {
                 "label": "Santa Rosa",
-                "value": "el-roble-peron"
+                "value": "santa-rosa-san-vicente"
               },
               {
                 "label": "Versalles",
-                "value": "estacion-numancia-peron"
+                "value": "versalles-san-vicente"
               },
               {
                 "label": "Villa Coll",
-                "value": "hospital-guernica-peron"
+                "value": "villa-coll-san-vicente"
               },
               {
                 "label": "Otro",
@@ -5955,7 +5923,7 @@
           {
             "name": "topic-interest-relocation-registered-users",
             "type": "big_checkbox",
-            "prompt": "¿Qué tema o problema relacionado con el proceso de relocalización y/o reurbanización sería importante tratar con las autoridades? Elegí hasta tres opciones que se relacionan con el tema que querés proponer:",
+            "prompt": "¿Qué tema o problema relacionado con el proceso de relocalización y/o reurbanización sería importante tratar con las autoridades? Elegí una o más opciones que se relacionan con el tema que querés proponer:",
             "display_prompt": "Problemas relacionados con la relocalización o reurbanización que es importante tratar con las autoridades en mesas de trabajo barriales",
             "optional": false,
             "triggers": [
@@ -5968,7 +5936,7 @@
             ],
             "content": [
               {
-                "label": "información, participación y mesas de trabajo por la relocalización/ reurbanización",
+                "label": "nformación, participación y mesas de trabajo por la relocalización o reurbanización",
                 "value": "information-topic-relocation-registered-users"
               },
               {
@@ -6096,7 +6064,7 @@
           },
           {
             "start_field_index": 46,
-            "end_field_index": 53,
+            "end_field_index": 47,
             "header": "RELOCALIZACIÓN Y REURBANIZACIÓN: SEGUIMIENTO",
             "description": "",
             "qprFormType": "relocations"
@@ -6120,7 +6088,7 @@
           {
             "name": "guide-intro-relocation",
             "type": "informational_html",
-            "content": "<span><b>¿Tenés dudas? Consultá la guía de campo.</b></span>"
+            "content": "<span><b>¿Tenés dudas? Consultá la Guía para compartir experiencias en QPR: Relocalización y reurbanización.</b></span>"
           },
           {
             "name": "municipality-relocation",
@@ -6173,6 +6141,10 @@
               {
                 "label": "Merlo",
                 "value": "merlo"
+              },
+              {
+                "label": "Morón",
+                "value": "moron"
               },
               {
                 "label": "Presidente Juan D. Perón",
@@ -6289,6 +6261,12 @@
                 ]
               },
               {
+                "value": "moron",
+                "targets": [
+                  "moron-barrios"
+                ]
+              },
+              {
                 "value": "otro",
                 "targets": [
                   "otro-municipio",
@@ -6340,6 +6318,10 @@
               {
                 "label": "Merlo",
                 "value": "merlo"
+              },
+              {
+                "label": "Morón",
+                "value": "moron"
               },
               {
                 "label": "Presidente Juan D. Perón",
@@ -6834,7 +6816,7 @@
                 "value": "plomer-las-heras"
               },
               {
-                "label": "villars",
+                "label": "Villars",
                 "value": "villars-las-heras"
               },
               {
@@ -7279,75 +7261,79 @@
             "content": [
               {
                 "label": "8 de octubre",
-                "value": "agrocolonias-peron"
+                "value": "8-octubre-san-vicente"
               },
               {
                 "label": "Biocca",
-                "value": "america-unida-peron"
+                "value": "biocca-san-vicente"
               },
               {
                 "label": "El Fortín",
-                "value": "america-unida-ii-peron"
+                "value": "el-fortin-san-vicente"
               },
               {
                 "label": "Hospital",
-                "value": "el-roble-peron"
+                "value": "hospital-san-vicente"
               },
               {
                 "label": "La Laguna",
-                "value": "estacion-numancia-peron"
+                "value": "la-laguna-san-vicente"
               },
               {
                 "label": "La Laurita",
-                "value": "hospital-guernica-peron"
+                "value": "laurita-san-vicente"
               },
               {
                 "label": "La Pradera",
-                "value": "la-yaya-i-peron"
+                "value": "la-pradera-san-vicente"
               },
               {
                 "label": "Los Hornos",
-                "value": "las-lomas-peron"
+                "value": "los-hornos-san-vicente"
+              },
+              {
+                "label": "Los Naranjos",
+                "value": "los-naranjos-san-vicente"
               },
               {
                 "label": "Mataderos",
-                "value": "numancia-norte-peron"
+                "value": "mataderos-san-vicente"
               },
               {
                 "label": "Nueva Esperanza",
-                "value": "parque-americano-peron"
+                "value": "nueva-esperanza-san-vicente"
               },
               {
                 "label": "Parque Ibáñez",
-                "value": "san-martin-peron"
+                "value": "parque-ibanez-san-vicente"
               },
               {
                 "label": "San José I",
-                "value": "san-roque-peron"
+                "value": "san-jose-san-vicente"
               },
               {
                 "label": "San José II",
-                "value": "santa-teresita-peron"
+                "value": "san-jose-ii-san-vicente"
               },
               {
                 "label": "San José Ferrocarril",
-                "value": "america-unida-peron"
+                "value": "san-jose-ferrocarril-san-vicente"
               },
               {
                 "label": "Santa Ana",
-                "value": "america-unida-ii-peron"
+                "value": "santa-ana-san-vicente"
               },
               {
                 "label": "Santa Rosa",
-                "value": "el-roble-peron"
+                "value": "santa-rosa-san-vicente"
               },
               {
                 "label": "Versalles",
-                "value": "estacion-numancia-peron"
+                "value": "versalles-san-vicente"
               },
               {
                 "label": "Villa Coll",
-                "value": "hospital-guernica-peron"
+                "value": "villa-coll-san-vicente"
               },
               {
                 "label": "Otro",
@@ -7367,12 +7353,6 @@
                 "value": "situacion-relocalized",
                 "targets": [
                   "before-municipality-relocation"
-                ]
-              },
-              {
-                "value": "situation-other",
-                "targets": [
-                  "otra-situacion"
                 ]
               }
             ],
@@ -7402,7 +7382,6 @@
           {
             "name": "before-municipality-relocation",
             "type": "dropdown",
-            "includeOnListItem": true,
             "hidden_default": true,
             "prompt": "¿En qué municipio vivías antes?",
             "display_prompt": "Municipio de residencia anterior",
@@ -7444,11 +7423,29 @@
                 "targets": [
                   "la-matanza-barrios-before"
                 ]
-              },
+              },         
               {
                 "value": "lanus-before",
                 "targets": [
                   "lanus-barrios-before"
+                ]
+              },
+              {
+                "value": "las-heras-before",
+                "targets": [
+                  "las-heras-barrios-before"
+                ]
+              },
+              {
+                "value": "peron-barrios",
+                "targets": [
+                  "peron-barrios-before"
+                ]
+              },
+              {
+                "value": "ezeiza-before",
+                "targets": [
+                  "ezeiza-barrios-before"
                 ]
               },
               {
@@ -7467,6 +7464,12 @@
                 "value": "merlo-before",
                 "targets": [
                   "merlo-barrios-before"
+                ]
+              },
+              {
+                "value": "moron-before",
+                "targets": [
+                  "moron-barrios-before"
                 ]
               },
               {
@@ -7521,6 +7524,10 @@
               {
                 "label": "Merlo",
                 "value": "merlo-before"
+              }, 
+              {
+                "label": "Morón",
+                "value": "moron-before"
               },
               {
                 "label": "Presidente Juan D. Perón",
@@ -8015,7 +8022,7 @@
                 "value": "plomer-las-heras-before"
               },
               {
-                "label": "villars",
+                "label": "Villars",
                 "value": "villars-las-heras-before"
               },
               {
@@ -8460,75 +8467,79 @@
             "content": [
               {
                 "label": "8 de octubre",
-                "value": "agrocolonias-peron-before"
+                "value": "8-octubre-san-vicente-before"
               },
               {
                 "label": "Biocca",
-                "value": "america-unida-peron-before"
+                "value": "biocca-san-vicente-before"
               },
               {
                 "label": "El Fortín",
-                "value": "america-unida-ii-peron-before"
+                "value": "el-fortin-san-vicente-before"
               },
               {
                 "label": "Hospital",
-                "value": "el-roble-peron-before"
+                "value": "hospital-san-vicente-before"
               },
               {
                 "label": "La Laguna",
-                "value": "estacion-numancia-peron-before"
+                "value": "la-laguna-san-vicente-before"
               },
               {
                 "label": "La Laurita",
-                "value": "hospital-guernica-peron-before"
+                "value": "laurita-san-vicente-before"
               },
               {
                 "label": "La Pradera",
-                "value": "la-yaya-i-peron-before"
+                "value": "la-pradera-san-vicente-before"
               },
               {
                 "label": "Los Hornos",
-                "value": "las-lomas-peron-before"
+                "value": "los-hornos-san-vicente-before"
+              },
+              {
+                "label": "Los Naranjos",
+                "value": "los-naranjos-san-vicente-before"
               },
               {
                 "label": "Mataderos",
-                "value": "numancia-norte-peron-before"
+                "value": "mataderos-san-vicente-before"
               },
               {
                 "label": "Nueva Esperanza",
-                "value": "parque-americano-peron-before"
+                "value": "nueva-esperanza-san-vicente-before"
               },
               {
                 "label": "Parque Ibáñez",
-                "value": "san-martin-peron-before"
+                "value": "parque-ibanez-san-vicente-before"
               },
               {
                 "label": "San José I",
-                "value": "san-roque-peron-before"
+                "value": "san-jose-san-vicente-before"
               },
               {
                 "label": "San José II",
-                "value": "santa-teresita-peron-before"
+                "value": "san-jose-ii-san-vicente-before"
               },
               {
                 "label": "San José Ferrocarril",
-                "value": "america-unida-peron-before"
+                "value": "san-jose-ferrocarril-san-vicente-before"
               },
               {
                 "label": "Santa Ana",
-                "value": "america-unida-ii-peron-before"
+                "value": "santa-ana-san-vicente-before"
               },
               {
                 "label": "Santa Rosa",
-                "value": "el-roble-peron-before"
+                "value": "santa-rosa-san-vicente-before"
               },
               {
                 "label": "Versalles",
-                "value": "estacion-numancia-peron-before"
+                "value": "versalles-san-vicente-before"
               },
               {
                 "label": "Villa Coll",
-                "value": "hospital-guernica-peron-before"
+                "value": "villa-coll-san-vicente-before"
               },
               {
                 "label": "Otro",
@@ -8589,7 +8600,7 @@
             ]
           },
           {
-            "name": "new-houses-relocation",
+            "name": "new-services-relocation",
             "type": "big_radio",
             "prompt": "En el último mes, ¿hubo avances en obras de servicios públicos en el barrio donde vivís, ya sea de la red de agua, cloacas o electricidad?",
             "optional": false,
@@ -8656,13 +8667,13 @@
           {
             "name": "topics-relocation",
             "type": "big_checkbox",
-            "prompt": "Actualmente, en el marco del proceso de relocalización o reurbanización, ¿cuáles considerás que son las tres cuestiones más importantes que las autoridades responsables deberían atender en el  barrio en el que vivís? Elegí una o más de estas opciones:",
+            "prompt": "Actualmente, en el marco del proceso de relocalización o reurbanización, ¿cuáles considerás que son las cuestiones más importantes que las autoridades responsables deberían atender en el  barrio en el que vivís? Elegí una o más de estas opciones:",
             "optional": false,
             "qprFormType": "relocations",
             "display_prompt": "Cuestiones más importantes a considerar por las autoridades en el proceso de relocalización o reurbanización del barrio",
             "content": [
               {
-                "label": "acceso a la información y participación en el proceso de relocalización/reurbanización",
+                "label": "acceso a la información y participación en el proceso de relocalización o reurbanización",
                 "value": "participacion-relocalizaciones"
               },
               {
@@ -9066,7 +9077,7 @@
     "submit_btn_text": "Apoyo",
     "response_name": "apoyo",
     "response_plural_name": "apoyos",
-    "action_text": "soportada",
+    "action_text": "apoyada",
     "anonymous_name": "Alguien"
   },
   "nav_bar": [
