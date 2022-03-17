@@ -7467,6 +7467,18 @@
                 ]
               },
               {
+                "value": "peron-before",
+                "targets": [
+                  "peron-barrios-before"
+                ]
+              },
+              {
+                "value": "san-vicente-before",
+                "targets": [
+                  "san-vicente-barrios-before"
+                ]
+              },
+              {
                 "value": "moron-before",
                 "targets": [
                   "moron-barrios-before"
@@ -7531,7 +7543,7 @@
               },
               {
                 "label": "Presidente Juan D. Perón",
-                "value": "presidente-juan-d-peron-before"
+                "value": "peron-before"
               },
               {
                 "label": "San Vicente",
