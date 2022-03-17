@@ -267,7 +267,7 @@
         "tileSize": 256,
         "maxzoom": 14
       },
-      "riachuelo-protected-natural-areas": {
+      "riachuelo-areas-protegidas": {
         "type": "vector",
         "tiles": [
           "https://vector-tiles.mapseed.org/riachuelo-areas-protegidas/{z}/{x}/{y}.pbf"
@@ -355,15 +355,15 @@
         ]
       },
       {
-        "id": "riachuelo-protected-natural-areas",
+        "id": "riachuelo-areas-protegidas",
         "interactive": true,
         "popupContent": "<h5 style='font-family: Montserrat, sans-serif; font-weight: 400; margin: 0; padding:0 1rem;'>{{NAME}}</h5>",
         "visibleDefault": false,
         "mapboxLayers": [
           {
-            "id": "riachuelo-protected-natural-areas",
-            "source": "riachuelo-protected-natural-areas",
-            "source-layer": "riachuelo-protected-natural-areas",
+            "id": "riachuelo-areas-protegidas",
+            "source": "riachuelo-areas-protegidas",
+            "source-layer": "riachuelo-areas-protegidas",
             "type": "fill",
             "paint": {
               "fill-color": "#008e76",
@@ -371,9 +371,9 @@
             }
           },
           {
-            "id": "riachuelo-protected-natural-areas-outline",
-            "source": "riachuelo-protected-natural-areas",
-            "source-layer": "riachuelo-protected-natural-areas",
+            "id": "riachuelo-areas-protegidas-outline",
+            "source": "riachuelo-areas-protegidas",
+            "source-layer": "riachuelo-areas-protegidas",
             "type": "line",
             "paint": {
               "line-color": "#008e76",
@@ -1006,7 +1006,7 @@
             "title": "Cursos de agua en la cuenca"
           },
           {
-            "layerGroupId": "riachuelo-protected-natural-areas",
+            "layerGroupId": "riachuelo-areas-protegidas",
             "title": "  Áreas protegidas en la cuenca"
           },
           {
@@ -1098,7 +1098,7 @@
             "title": "Riachuelo Líneas de Ribera"
           },
           {
-            "layerGroupId": "riachuelo-protected-natural-areas",
+            "layerGroupId": "riachuelo-areas-protegidas",
             "title": "Áreas Protegidas Cuenca del Riachuelo"
           },
           {
