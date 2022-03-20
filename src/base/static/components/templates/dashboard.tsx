@@ -205,7 +205,7 @@ class Dashboard extends React.Component<Props, State> {
                               dashboardConfig,
                             );
                           }}
-                        >{`${dataset.clientSlug}s`}</MenuItem>
+                        >{`${dataset.clientSlug}`}</MenuItem>
                       );
                     })}
                   </Menu>
