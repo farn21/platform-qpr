@@ -14,7 +14,7 @@
   "datasets": [
     {
       "slug": "water-input",
-      "clientSlug": "site",
+      "clientSlug": "Calidad del agua",
       "anonymous_permissions": [
         {
           "abilities": [
@@ -26,7 +26,7 @@
     },
     {
       "slug": "water-input-register",
-      "clientSlug": "site",
+      "clientSlug": "Calidad del Agua: Imágenes y descripciones",
       "anonymous_permissions": [
         {
           "abilities": [
@@ -38,7 +38,7 @@
     },
     {
       "slug": "relocations-input-register",
-      "clientSlug": "site",
+      "clientSlug": "Relocalización y reurbanización: Mesas de trabajo",
       "anonymous_permissions": [
         {
           "abilities": [
@@ -50,7 +50,7 @@
     },
     {
       "slug": "relocations-input",
-      "clientSlug": "site",
+      "clientSlug": "Relocalización y reurbanización: Seguimiento",
       "anonymous_permissions": [
         {
           "abilities": [
@@ -62,7 +62,7 @@
     },
     {
       "slug": "natural-areas-input-register",
-      "clientSlug": "site",
+      "clientSlug": "Áreas naturales: Seguimiento",
       "anonymous_permissions": [
         {
           "abilities": [
@@ -74,7 +74,7 @@
     },
     {
       "slug": "natural-areas-input",
-      "clientSlug": "site",
+      "clientSlug": "Áreas naturales: Visitas",
       "anonymous_permissions": [
         {
           "abilities": [
@@ -86,7 +86,7 @@
     },
     {
       "slug": "news-input",
-      "clientSlug": "site",
+      "clientSlug": "Novedades",
       "anonymous_permissions": [
         {
           "abilities": [
@@ -164,10 +164,59 @@
   },
   "dashboard": [
     {
-      "header": "Qué Pasa, Riachuelo? -- Tablero",
+      "header": "¿Qué Pasa, Riachuelo? -- Dashboard",
       "isExportable": true,
       "backgroundColor": "#f5f3f0",
-      "datasetSlug": "quepasa-input",
+      "datasetSlug": "news-input",
+      "widgets": [
+        {
+          "header": "Visión general",
+          "type": "statSummary",
+          "rows": [
+            {
+              "type": "placeCount",
+              "label": "Total de experiencias"
+            }
+          ],
+          "layout": {
+            "start": 1,
+            "end": 4
+          }
+        },
+        {
+          "header": "Actividades de informes",
+          "type": "lineChart",
+          "xAxisLabel": "Fecha",
+          "yAxisLabel": "Número de experiencias",
+          "layout": {
+            "start": 4,
+            "end": 13,
+            "height": 300
+          }
+        },
+        {
+          "header": "Reportes por subcuenca",
+          "isExportable": true,
+          "type": "freeBarChart",
+          "groupBy": "subbasin_name_NOMBRE",
+          "groupValue": [
+            "get-count"
+          ],
+          "tooltipFormat": "count",
+          "xAxisLabel": "Subcuenca",
+          "yAxisLabel": "Numero de reportes",
+          "layout": {
+            "start": 1,
+            "end": 13
+          }
+        }
+      ]
+    },
+    {
+      "header": "¿Qué Pasa, Riachuelo? -- Dashboard",
+      "isExportable": true,
+      "backgroundColor": "#f5f3f0",
+      "datasetSlug": "water-input",
       "widgets": [
         {
           "header": "Visión general",
@@ -203,7 +252,252 @@
             "get-count"
           ],
           "tooltipFormat": "count",
-          "xAxisLabel": "Subceunca",
+          "xAxisLabel": "Subcuenca",
+          "yAxisLabel": "Numero de reportes",
+          "layout": {
+            "start": 1,
+            "end": 13
+          }
+        }
+      ]
+    },
+    {
+      "header": "¿Qué Pasa, Riachuelo? -- Dashboard",
+      "isExportable": true,
+      "backgroundColor": "#f5f3f0",
+      "datasetSlug": "water-input-register",
+      "widgets": [
+        {
+          "header": "Visión general",
+          "type": "statSummary",
+          "rows": [
+            {
+              "type": "placeCount",
+              "label": "Total de informes"
+            }
+          ],
+          "layout": {
+            "start": 1,
+            "end": 4
+          }
+        },
+        {
+          "header": "Actividades de informes",
+          "type": "lineChart",
+          "xAxisLabel": "Fecha",
+          "yAxisLabel": "Numero de reportes",
+          "layout": {
+            "start": 4,
+            "end": 13,
+            "height": 300
+          }
+        },
+        {
+          "header": "Reprorts por subcuenca",
+          "isExportable": true,
+          "type": "freeBarChart",
+          "groupBy": "subbasin_name_NOMBRE",
+          "groupValue": [
+            "get-count"
+          ],
+          "tooltipFormat": "count",
+          "xAxisLabel": "Subcuenca",
+          "yAxisLabel": "Numero de reportes",
+          "layout": {
+            "start": 1,
+            "end": 13
+          }
+        }
+      ]
+    },
+    {
+      "header": "¿Qué Pasa, Riachuelo? -- Dashboard",
+      "isExportable": true,
+      "backgroundColor": "#f5f3f0",
+      "datasetSlug": "natural-areas-input",
+      "widgets": [
+        {
+          "header": "Visión general",
+          "type": "statSummary",
+          "rows": [
+            {
+              "type": "placeCount",
+              "label": "Total de informes"
+            }
+          ],
+          "layout": {
+            "start": 1,
+            "end": 4
+          }
+        },
+        {
+          "header": "Actividades de informes",
+          "type": "lineChart",
+          "xAxisLabel": "Fecha",
+          "yAxisLabel": "Numero de reportes",
+          "layout": {
+            "start": 4,
+            "end": 13,
+            "height": 300
+          }
+        },
+        {
+          "header": "Reprorts por subcuenca",
+          "isExportable": true,
+          "type": "freeBarChart",
+          "groupBy": "subbasin_name_NOMBRE",
+          "groupValue": [
+            "get-count"
+          ],
+          "tooltipFormat": "count",
+          "xAxisLabel": "Subcuenca",
+          "yAxisLabel": "Numero de reportes",
+          "layout": {
+            "start": 1,
+            "end": 13
+          }
+        }
+      ]
+    },
+    {
+      "header": "¿Qué Pasa, Riachuelo? -- Dashboard",
+      "isExportable": true,
+      "backgroundColor": "#f5f3f0",
+      "datasetSlug": "natural-areas-input-register",
+      "widgets": [
+        {
+          "header": "Visión general",
+          "type": "statSummary",
+          "rows": [
+            {
+              "type": "placeCount",
+              "label": "Total de informes"
+            }
+          ],
+          "layout": {
+            "start": 1,
+            "end": 4
+          }
+        },
+        {
+          "header": "Actividades de informes",
+          "type": "lineChart",
+          "xAxisLabel": "Fecha",
+          "yAxisLabel": "Numero de reportes",
+          "layout": {
+            "start": 4,
+            "end": 13,
+            "height": 300
+          }
+        },
+        {
+          "header": "Reprorts por subcuenca",
+          "isExportable": true,
+          "type": "freeBarChart",
+          "groupBy": "subbasin_name_NOMBRE",
+          "groupValue": [
+            "get-count"
+          ],
+          "tooltipFormat": "count",
+          "xAxisLabel": "Subcuenca",
+          "yAxisLabel": "Numero de reportes",
+          "layout": {
+            "start": 1,
+            "end": 13
+          }
+        }
+      ]
+    },
+    {
+      "header": "¿Qué Pasa, Riachuelo? -- Dashboard",
+      "isExportable": true,
+      "backgroundColor": "#f5f3f0",
+      "datasetSlug": "relocations-input",
+      "widgets": [
+        {
+          "header": "Visión general",
+          "type": "statSummary",
+          "rows": [
+            {
+              "type": "placeCount",
+              "label": "Total de informes"
+            }
+          ],
+          "layout": {
+            "start": 1,
+            "end": 4
+          }
+        },
+        {
+          "header": "Actividades de informes",
+          "type": "lineChart",
+          "xAxisLabel": "Fecha",
+          "yAxisLabel": "Numero de reportes",
+          "layout": {
+            "start": 4,
+            "end": 13,
+            "height": 300
+          }
+        },
+        {
+          "header": "Reprorts por subcuenca",
+          "isExportable": true,
+          "type": "freeBarChart",
+          "groupBy": "subbasin_name_NOMBRE",
+          "groupValue": [
+            "get-count"
+          ],
+          "tooltipFormat": "count",
+          "xAxisLabel": "Subcuenca",
+          "yAxisLabel": "Numero de reportes",
+          "layout": {
+            "start": 1,
+            "end": 13
+          }
+        }
+      ]
+    },
+    {
+      "header": "¿Qué Pasa, Riachuelo? -- Dashboard",
+      "isExportable": true,
+      "backgroundColor": "#f5f3f0",
+      "datasetSlug": "relocations-input-register",
+      "widgets": [
+        {
+          "header": "Visión general",
+          "type": "statSummary",
+          "rows": [
+            {
+              "type": "placeCount",
+              "label": "Total de informes"
+            }
+          ],
+          "layout": {
+            "start": 1,
+            "end": 4
+          }
+        },
+        {
+          "header": "Actividades de informes",
+          "type": "lineChart",
+          "xAxisLabel": "Fecha",
+          "yAxisLabel": "Numero de reportes",
+          "layout": {
+            "start": 4,
+            "end": 13,
+            "height": 300
+          }
+        },
+        {
+          "header": "Reprorts por subcuenca",
+          "isExportable": true,
+          "type": "freeBarChart",
+          "groupBy": "subbasin_name_NOMBRE",
+          "groupValue": [
+            "get-count"
+          ],
+          "tooltipFormat": "count",
+          "xAxisLabel": "Subcuenca",
           "yAxisLabel": "Numero de reportes",
           "layout": {
             "start": 1,
@@ -267,7 +561,7 @@
         "tileSize": 256,
         "maxzoom": 14
       },
-      "riachuelo-protected-natural-areas": {
+      "riachuelo-areas-protegidas": {
         "type": "vector",
         "tiles": [
           "https://vector-tiles.mapseed.org/riachuelo-areas-protegidas/{z}/{x}/{y}.pbf"
@@ -355,15 +649,15 @@
         ]
       },
       {
-        "id": "riachuelo-protected-natural-areas",
+        "id": "riachuelo-areas-protegidas",
         "interactive": true,
         "popupContent": "<h5 style='font-family: Montserrat, sans-serif; font-weight: 400; margin: 0; padding:0 1rem;'>{{NAME}}</h5>",
         "visibleDefault": false,
         "mapboxLayers": [
           {
-            "id": "riachuelo-protected-natural-areas",
-            "source": "riachuelo-protected-natural-areas",
-            "source-layer": "riachuelo-protected-natural-areas",
+            "id": "riachuelo-areas-protegidas",
+            "source": "riachuelo-areas-protegidas",
+            "source-layer": "riachuelo-areas-protegidas",
             "type": "fill",
             "paint": {
               "fill-color": "#008e76",
@@ -371,9 +665,9 @@
             }
           },
           {
-            "id": "riachuelo-protected-natural-areas-outline",
-            "source": "riachuelo-protected-natural-areas",
-            "source-layer": "riachuelo-protected-natural-areas",
+            "id": "riachuelo-areas-protegidas-outline",
+            "source": "riachuelo-areas-protegidas",
+            "source-layer": "riachuelo-areas-protegidas",
             "type": "line",
             "paint": {
               "line-color": "#008e76",
@@ -549,7 +843,7 @@
             }
           }
         ]
-      },   
+      },
       {
         "id": "quepasa-featured",
         "datasetSlug": "quepasa-featured",
@@ -954,7 +1248,6 @@
       {
         "title": "",
         "options": [
-        
           {
             "layerGroupId": "news-input",
             "title": "Novedades"
@@ -1006,7 +1299,7 @@
             "title": "Cursos de agua en la cuenca"
           },
           {
-            "layerGroupId": "riachuelo-protected-natural-areas",
+            "layerGroupId": "riachuelo-areas-protegidas",
             "title": "  Áreas protegidas en la cuenca"
           },
           {
@@ -1098,7 +1391,7 @@
             "title": "Riachuelo Líneas de Ribera"
           },
           {
-            "layerGroupId": "riachuelo-protected-natural-areas",
+            "layerGroupId": "riachuelo-areas-protegidas",
             "title": "Áreas Protegidas Cuenca del Riachuelo"
           },
           {
@@ -1205,7 +1498,6 @@
             "placeholder": "",
             "optional": false,
             "content": [
-          
               {
                 "label": "Almirante Brown",
                 "value": "almirante-brown"
@@ -1251,6 +1543,10 @@
                 "value": "merlo"
               },
               {
+                "label": "Morón",
+                "value": "moron"
+              },
+              {
                 "label": "Presidente Juan D. Perón",
                 "value": "presidente-juan-d-peron"
               },
@@ -1267,7 +1563,7 @@
           {
             "name": "address-news",
             "type": "informational_html",
-            "prompt":"Arrastrá el mapa para ubicar tu experiencia",
+            "prompt": "Arrastrá el mapa para ubicar tu experiencia",
             "content": "<span><b></b></span>",
             "optional": false
           },
@@ -1309,6 +1605,10 @@
               {
                 "label": "relocalizaciones y reurbanización",
                 "value": "relocations"
+              },
+              {
+                "label": "otros",
+                "value": "other-theme"
               }
             ]
           },
@@ -1338,7 +1638,7 @@
           },
           {
             "name": "info-attach-pdf-news",
-            "type": "file",
+            "type": "pdf",
             "label": "ADJUNTAR ARCHIVO PDF",
             "placeholder": "",
             "display_prompt": "Documento",
@@ -1399,7 +1699,7 @@
             "description": ""
           }
         ],
-        "fields": [  
+        "fields": [
           {
             "name": "lng-lat",
             "type": "lng_lat"
@@ -1465,6 +1765,10 @@
               {
                 "label": "Merlo",
                 "value": "merlo"
+              },
+              {
+                "label": "Morón",
+                "value": "moron"
               },
               {
                 "label": "Presidente Juan D. Perón",
@@ -1556,7 +1860,7 @@
           {
             "name": "address-areas",
             "type": "informational_html",
-            "prompt":"Arrastrá el mapa para ubicar tu experiencia",
+            "prompt": "Arrastrá el mapa para ubicar tu experiencia",
             "content": "<span><b></b></span>",
             "optional": false
           },
@@ -1569,7 +1873,7 @@
             "qprFormType": "relocations",
             "triggers": [
               {
-                "value": "no",
+                "value": "no-visit",
                 "targets": [
                   "frequency-areas"
                 ]
@@ -1578,11 +1882,11 @@
             "content": [
               {
                 "label": "Sí.",
-                "value": "si"
+                "value": "yes-visit"
               },
               {
                 "label": "No.",
-                "value": "no"
+                "value": "no-visit"
               }
             ]
           },
@@ -1624,13 +1928,13 @@
             "prompt": "¿Cuándo fue tu última visita? Seleccioná una fecha en el calendario.",
             "display_prompt": "Fecha de la visita",
             "placeholder": "Elegí una fecha",
-            "qprFormType":"relocation",
+            "qprFormType": "relocation",
             "optional": false
           },
           {
             "name": "activities-last-visit-areas",
             "type": "big_checkbox",
-            "prompt": " ¿Qué actividades realizaste en tu última visita? Elegí una de estas opciones:",
+            "prompt": " ¿Qué actividades realizaste en tu última visita? Elegí una o más de estas opciones:",
             "display_prompt": "Actividades realizadas en la visita",
             "optional": false,
             "qprFormType": "relocations",
@@ -1653,7 +1957,7 @@
               },
               {
                 "label": "otros",
-                "value": "otros"
+                "value": "other-activities"
               }
             ]
           },
@@ -1663,19 +1967,19 @@
             "prompt": "En tu última visita, ¿observaste incendios en el área?",
             "display_prompt": "Observación de incendios",
             "optional": false,
-            "qprFormType":"relocation",
+            "qprFormType": "relocation",
             "content": [
               {
                 "label": "Sí.",
-                "value": "si"
+                "value": "yes-fires"
               },
               {
                 "label": "No.",
-                "value": "no"
+                "value": "no-fires"
               },
               {
                 "label": "No sé.",
-                "value": "no_se"
+                "value": "dont-know-fires"
               }
             ]
           },
@@ -1685,19 +1989,19 @@
             "prompt": "En tu última visita, ¿observaste residuos en alguna parte del área?",
             "display_prompt": "Observación de residuos",
             "optional": false,
-            "qprFormType":"relocation",
+            "qprFormType": "relocation",
             "content": [
               {
                 "label": "Sí.",
-                "value": "si"
+                "value": "yes-waste"
               },
               {
                 "label": "No.",
-                "value": "no"
+                "value": "no-waste"
               },
               {
                 "label": "No sé.",
-                "value": "no_se"
+                "value": "dont-know-waste"
               }
             ]
           },
@@ -1707,19 +2011,19 @@
             "prompt": "En tu última visita, ¿observaste daño en la flora o fauna?",
             "display_prompt": "Observación de daños en la flora o fauna",
             "optional": false,
-            "qprFormType":"relocation",
+            "qprFormType": "relocation",
             "content": [
               {
                 "label": "Sí.",
-                "value": "si"
+                "value": "yes-damage"
               },
               {
                 "label": "No.",
-                "value": "no"
+                "value": "no-damage"
               },
               {
                 "label": "No sé.",
-                "value": "no_se"
+                "value": "dont-know-damage"
               }
             ]
           },
@@ -1729,19 +2033,19 @@
             "prompt": "En tu última visita, ¿observaste vehículos circulando en el área?",
             "display_prompt": "Observación de vehículos circulando",
             "optional": false,
-            "qprFormType":"relocation",
+            "qprFormType": "relocation",
             "content": [
               {
                 "label": "Sí.",
-                "value": "si"
+                "value": "yes-cars"
               },
               {
                 "label": "No.",
-                "value": "no"
+                "value": "no-cars"
               },
               {
                 "label": "No sé.",
-                "value": "no_se"
+                "value": "dont-know-cars"
               }
             ]
           },
@@ -1750,8 +2054,8 @@
             "type": "big_checkbox",
             "prompt": "En tu última visita, ¿observaste alguno de los siguientes servicios de atención al visitante? Elegí una o más de estas opciones:",
             "display_prompt": "Servicios de atención al visitante",
-            "optional": true,
-            "qprFormType":"relocation",
+            "optional": false,
+            "qprFormType": "relocation",
             "content": [
               {
                 "label": "entrada delimitada",
@@ -1794,7 +2098,7 @@
           {
             "name": "bond_areas",
             "type": "big_checkbox",
-            "prompt": "¿Cuál es tu vínculo con esta área? Elegí una o más opciones:",
+            "prompt": "¿Cuál es tu vínculo con esta área? Elegí una o más de estas opciones:",
             "display_prompt": "Vínculo con el área",
             "optional": false,
             "qprFormType": "relocations",
@@ -1824,30 +2128,26 @@
           {
             "name": "value-areas",
             "type": "big_checkbox",
-            "prompt": "¿Qué valorás en esta área natural? Elegí una o más opciones:",
+            "prompt": "¿Qué valorás en esta área natural? Elegí una o más de estas opciones:",
             "display_prompt": "Valoraciones del área",
             "optional": false,
             "qprFormType": "relocations",
             "content": [
               {
                 "label": "Valoro su biodiversidad.",
-                "value": "valoro-biodiversidad"
+                "value": "value-biodiversity"
               },
               {
                 "label": "Valoro que sea un espacio recreativo y social frecuentado por la comunidad.",
-                "value": "valoro-social"
+                "value": "value-social"
               },
               {
-                "label": "Valoro su valor histórico.",
-                "value": "valoro-historico"
-              },
-              {
-                "label": "Valoro su patrimonio cultural y arqueológico.",
-                "value": "valoro-patrimonio"
+                "label": "Valoro su historia y su patrimonio cultural y arqueológico.",
+                "value": "value-history"
               },
               {
                 "label": "Valoro otros aspectos no mencionados.",
-                "value": "valoro-no-mencionados"
+                "value": "value-others"
               }
             ]
           },
@@ -1883,14 +2183,14 @@
         "multi_stage": [
           {
             "start_field_index": 1,
-            "end_field_index": 42,
+            "end_field_index": 20,
             "header": "ÁREAS NATURALES: SEGUIMIENTO",
             "qprFormType": "protected-area",
             "description": ""
           },
           {
-            "start_field_index": 43,
-            "end_field_index": 44,
+            "start_field_index": 21,
+            "end_field_index": 22,
             "header": "ÁREAS NATURALES: SEGUIMIENTO",
             "qprFormType": "protected-area",
             "description": ""
@@ -1919,7 +2219,6 @@
             "placeholder": "Elegí el municipio...",
             "optional": false,
             "content": [
-          
               {
                 "label": "Almirante Brown",
                 "value": "almirante-brown"
@@ -1963,6 +2262,10 @@
               {
                 "label": "Merlo",
                 "value": "merlo"
+              },
+              {
+                "label": "Morón",
+                "value": "moron"
               },
               {
                 "label": "Presidente Juan D. Perón",
@@ -2054,7 +2357,7 @@
           {
             "name": "address-area-registered-users",
             "type": "informational_html",
-            "prompt":"Arrastrá el mapa para ubicar tu experiencia",
+            "prompt": "Arrastrá el mapa para ubicar tu experiencia",
             "content": "<span><b></b></span>",
             "optional": false
           },
@@ -2111,11 +2414,11 @@
             "type": "big_checkbox",
             "prompt": "¿Qué valorás en esta área natural? Elegí una o más opciones:",
             "display_prompt": "Valoraciones del área",
-            "optional": false,
+            "optional": true,
             "qprFormType": "relocations",
             "triggers": [
               {
-                "value": "value-other-aspects",
+                "value": "value-other-aspects-registered-users",
                 "targets": [
                   "value-other-aspects-answer-area-registered-users"
                 ]
@@ -2124,23 +2427,19 @@
             "content": [
               {
                 "label": "Valoro su biodiversidad.",
-                "value": "value-biodiversiy"
+                "value": "value-biodiversiy-registered-users"
               },
               {
                 "label": "Valoro que sea un espacio recreativo y social frecuentado por la comunidad.",
-                "value": "value-social"
+                "value": "value-social-registered-users"
               },
               {
-                "label": "Valoro su valor histórico.",
-                "value": "value-history"
-              },
-              {
-                "label": "Valoro su patrimonio cultural y arqueológico.",
-                "value": "value-patrimony"
+                "label": "Valoro su historia y su patrimonio cultural y arqueológico.",
+                "value": "value-history-registered-users"
               },
               {
                 "label": "Valoro otros aspectos no mencionados.",
-                "value": "value-other-aspects"
+                "value": "value-other-aspects-registered-users"
               }
             ]
           },
@@ -2157,7 +2456,7 @@
           {
             "name": "threat-area-registered-users",
             "type": "big_checkbox",
-            "prompt": "De los siguientes aspectos que caracterizan a esta área natural, ¿considerás que alguno/s está/n amenazado/s?",
+            "prompt": "De los siguientes aspectos que caracterizan a esta área natural, ¿considerás que alguno/s está/n amenazado/s?  Elegí una o más de estas opciones:",
             "display_prompt": "Aspectos amenazados en el área",
             "optional": true,
             "qprFormType": "relocations",
@@ -2183,12 +2482,8 @@
                 "value": "threat-recreational"
               },
               {
-                "label": "Su valor histórico.",
+                "label": "Su valor histórico, cultural y arqueológico.",
                 "value": "threat-history"
-              },
-              {
-                "label": "Su valor cultural y arqueológico.",
-                "value": "threat-cultural"
               },
               {
                 "label": "Otro.",
@@ -2202,15 +2497,14 @@
             "prompt": "¿Cuál?",
             "placeholder": "",
             "display_prompt": "Otros aspectos amenazados",
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "hidden_default": true,
             "optional": true
           },
-
           {
             "name": "info-contributions-areas-registered-users",
             "type": "informational_html",
-            "content": "<span><b>Aportá información para contribuir al conocimiento y a la protección de esta área natural. Podés adjuntar imágenes, documentos en pdf y enlaces.</b> <br> <br> Elegí una de estas opciones:</span>"
+            "content": "<span><b>Aportá información para contribuir al conocimiento y a la protección de esta área natural. Podés adjuntar imágenes, documentos en pdf y enlaces sobre uno de estos temas:</span>"
           },
           {
             "name": "contributions-areas-registered-users",
@@ -2218,326 +2512,73 @@
             "prompt": " ",
             "optional": false,
             "display_prompt": "Contribuciones",
-            "qprFormType":"relocation",
-            "triggers": [           
-              {
-                "value": "area-protection",
-                "targets": [
-                  "intro-area-protection-areas-registered-users",
-                  "title-area-protection-areas-registered-users",
-                  "text-area-protection-areas-registered-users",
-                  "intro-attach-protection-state-areas-registered-users",
-                  "attach-image-protection-state-areas-registered-users",
-                  "attach-pdf-protection-state-areas-registered-users",
-                  "link-area-protection-areas-registered-users"
-                ]
-              },
-              {
-                "value": "area-state",
-                "targets": [
-                  "intro-area-state-areas-registered-users",
-                  "title-area-state-areas-registered-users",
-                  "text-area-state-areas-registered-users",
-                  "intro-attach-area-state-areas-registered-users",
-                  "attach-image-area-state-areas-registered-users",
-                  "attach-pdf-area-state-areas-registered-users",
-                  "link-area-state-areas-registered-users"
-                ]
-              },
-              {
-                "value": "area-patrimony",
-                "targets": [
-                  "intro-area-patrimony-areas-registered-users",
-                  "title-area-patrimony-areas-registered-users",
-                  "text-area-patrimony-areas-registered-users",
-                  "intro-attach-area-patrimony-areas-registered-users",
-                  "attach-image-area-patrimony-areas-registered-users",
-                  "attach-pdf-area-patrimony-areas-registered-users",
-                  "link-area-patrimony-areas-registered-users"
-                ]
-              },
-              {
-                "value": "area-memories",
-                "targets": [
-                  "intro-area-memories-areas-registered-users",
-                  "title-area-memories-areas-registered-users",
-                  "text-area-memories-areas-registered-users",
-                  "intro-attach-area-memories-areas-registered-users",
-                  "attach-image-area-memories-areas-registered-users",
-                  "attach-pdf-area-memories-areas-registered-users",
-                  "link-area-memories-areas-registered-users"
-                ]
-              }
-      
-            ],
+            "qprFormType": "relocation",
             "content": [
               {
-                "label": "PROTECCIÓN DEL ESPACIO",
+                "label": "Protección del espacio: aspectos asociados a garantizar la protección legal del área, como acciones en curso o problemas que se enfrentan.",
                 "value": "area-protection"
               },
               {
-                "label": "ESTADO DEL ÁREA ",
+                "label": "Estado del área: observaciones del área; pueden ser amenazas o condiciones de cuidado y mantenimiento.",
                 "value": "area-state"
               },
               {
-                "label": "PATRIMONIO NATURAL, ARQUEOLÓGICO Y CULTURAL",
+                "label": "Patrimonio natural, cultural y arqueológico: apreciaciones sobre flora, fauna, restos arqueológicos y otros valores culturales del área.L",
                 "value": "area-patrimony"
               },
               {
-                "label": "USOS Y MEMORIAS EN EL ÁREA",
+                "label": "Usos y memorias del área:  actividades que se realizan en el área actualmente  o que conozcas a través de relatos históricos.",
                 "value": "area-memories"
               }
             ]
           },
           {
-            "name": "intro-area-protection-areas-registered-users",
-            "type": "informational_html",
-            "hidden_default":true,
-            "prompt": "",
-            "content":"<span>Podés compartir fotos, textos, notas periodísticas locales, enlaces a videos, posteos de redes locales, documentación legal,  expedientes y otros sobre la situación de protección del espacio. Podés contar cuál creés que es el principal problema a resolver para garantizar la protección del espacio y cómo creés que se podría colaborar con la protección del espacio. </span>"
-         },
-          {
-            "name": "title-area-protection-areas-registered-users",
+            "name": "title-contributions-registered-users",
             "type": "text",
             "prompt": "Título",
-            "display_prompt": "Título de comentario sobre protección del espacio",
+            "display_prompt": "Título",
             "placeholder": "",
-            "hidden_default": true,
             "optional": false,
             "qprFormType": "relocations"
           },
           {
-            "name": "text-area-protection-areas-registered-users",
+            "name": "text-area-contributions-registered-users",
             "type": "textarea",
             "prompt": "Comentario",
             "placeholder": "",
-            "display_prompt": "Comentario sobre protección del espacio",
-            "hidden_default": true,
+            "display_prompt": "Comentario",
             "optional": false,
             "qprFormType": "relocations"
           },
-   
           {
-            "name": "intro-attach-area-protection-areas-registered-users",
+            "name": "intro-attach-area-contributions-registered-users",
             "type": "informational_html",
-            "hidden_default": true,
             "prompt": "¿Querés agregar un comentario, imagen, enlace o documento?",
-            "display_prompt": "Adjuntos sobre estado del área",
+            "display_prompt": "Adjuntos",
             "content": "<span> <i> Recordá que las fotografías y documentos que adjuntás deben ser de tu autoría o debés contar con permiso para poder publicarlos . No se pueden incluir imágenes en las que se pueda identificar rostros de personas.  </i> </span>"
           },
           {
-            "name": "attach-image-protection-state-areas-registered-users",
+            "name": "attach-image-adjuntos-registered-users",
             "type": "file",
             "label": "ADJUNTAR ARCHIVO DE IMAGEN",
             "prompt": "",
-            "hidden_default": true,
             "optional": true,
             "qprFormType": "relocations"
           },
           {
-            "name": "attach-pdf-protection-state-areas-registered-users",
-            "type": "file",
+            "name": "attach-pdf-adjuntos-registered-users",
+            "type": "pdf",
             "label": "ADJUNTAR ARCHIVO PDF",
             "prompt": " ",
-            "hidden_default": true,
             "optional": true,
             "qprFormType": "relocations"
           },
           {
-            "name": "link-area-protection-areas-registered-users",
+            "name": "link-area-adjuntos-registered-users",
             "type": "text",
             "prompt": "Enlace",
             "placeholder": "Enlace",
             "display_prompt": "Enlace",
-            "hidden_default": true,
-            "optional": true,
-            "qprFormType": "relocations"
-          },
-          {
-            "name": "intro-area-state-areas-registered-users",
-            "type": "informational_html",
-            "hidden_default":true,
-            "prompt": "",
-            "content":"<span>Podés reportar diversos aspectos que amenazan el área (incendios, residuos, pesca, caza,  desmalezamiento excesivo, industrias contaminantes, urbanización, vehículo, etc.). También podés hacer comentarios sobre la señalización, la presencia de guardia y demás recursos en el área. </span>"
-         },
-          {
-            "name": "title-area-state-areas-registered-users",
-            "type": "text",
-            "prompt": "Título",
-            "display_prompt": "Título de comentario sobre estado del área",
-            "placeholder": "",
-            "hidden_default": true,
-            "optional": false,
-            "qprFormType": "relocations"
-          },
-          {
-            "name": "text-area-state-areas-registered-users",
-            "type": "textarea",
-            "prompt": "Comentario",
-            "placeholder": "",
-            "display_prompt": "Comentario sobre estado del área",
-            "hidden_default": true,
-            "optional": false,
-            "qprFormType": "relocations"
-          },
-          {
-            "name": "intro-attach-area-state-areas-registered-users",
-            "type": "informational_html",
-            "hidden_default": true,
-            "prompt": "¿Querés agregar un comentario, imagen, enlace o documento?",
-            "display_prompt": "Adjuntos sobre estado del área",
-            "content": "<span> <i> Recordá que las fotografías y documentos que adjuntás deben ser de tu autoría o debés contar con permiso para poder publicarlos . No se pueden incluir imágenes en las que se pueda identificar rostros de personas.  </i> </span>"
-          },
-          {
-            "name": "attach-image-area-state-areas-registered-users",
-            "type": "file",
-            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
-            "prompt": " ",
-            "hidden_default": true,
-            "optional": true,
-            "qprFormType": "relocations"
-          },
-          {
-            "name": "attach-pdf-area-state-areas-registered-users",
-            "type": "file",
-            "label": "ADJUNTAR ARCHIVO PDF",
-            "prompt": " ",
-            "hidden_default": true,
-            "optional": true,
-            "qprFormType": "relocations"
-          },
-          {
-            "name": "link-area-state-areas-registered-users",
-            "type": "text",
-            "prompt": "Enlace",
-            "placeholder": "Enlace",
-            "hidden_default": true,
-            "optional": true,
-            "qprFormType": "relocations"
-          },
-          {
-            "name": "intro-area-patrimony-areas-registered-users",
-            "type": "informational_html",
-            "hidden_default":true,
-            "prompt": "",
-            "content":"<span>Podés compartir una experiencia para dar cuenta de la biodiversidad en términos de flora y fauna o de su valor arqueológico y cultural. Podés subir fotos de especies que viste en el área; o de documentos, noticias, materiales sobre objetos y restos arqueológicos del área; o sobre bienes arquitectónicos, esculturas, murales, fuentes. </span>"
-         },
-          {
-            "name": "title-area-patrimony-areas-registered-users",
-            "type": "text",
-            "prompt": "Título",
-            "display_prompt": "Título de comentario sobre patrimonio natural",
-            "placeholder": "Titulo",
-            "hidden_default": true,
-            "optional": false,
-            "qprFormType": "relocations"
-          },
-          {
-            "name": "text-area-patrimony-areas-registered-users",
-            "type": "textarea",
-            "prompt": "Comentario",
-            "placeholder": "Texto",
-            "display_prompt": "Comentario sobre patrimonio natural, arqueológico y cultural",
-            "hidden_default": true,
-            "optional": false,
-            "qprFormType": "relocations"
-          },
-   
-          {
-            "name": "intro-attach-area-patrimony-areas-registered-users",
-            "type": "informational_html",
-            "hidden_default": true,
-            "prompt": "¿Querés agregar un comentario, imagen, enlace o documento?",
-            "display_prompt": "Adjuntos sobre patrimonio natural, arqueológico y cultural", 
-            "content": "<span> <i> Recordá que las fotografías y documentos que adjuntás deben ser de tu autoría o debés contar con permiso para poder publicarlos . No se pueden incluir imágenes en las que se pueda identificar rostros de personas.  </i> </span>"
-          },
-          {
-            "name": "attach-image-area-patrimony-areas-registered-users",
-            "type": "file",
-            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
-            "prompt": " ",
-            "hidden_default": true,
-            "optional": true,
-            "qprFormType": "relocations"
-          },
-          {
-            "name": "attach-pdf-area-patrimony-areas-registered-users",
-            "type": "file",
-            "label": "ADJUNTAR ARCHIVO PDF",
-            "prompt": " ",
-            "hidden_default": true,
-            "optional": true,
-            "qprFormType": "relocations"
-          },
-          {
-            "name": "link-area-patrimony-areas-registered-users",
-            "type": "text",
-            "prompt": "Enlace",
-            "placeholder": "Enlace",
-            "hidden_default": true,
-            "optional": true,
-            "qprFormType": "relocations"
-          },
-          {
-            "name": "intro-area-memories-areas-registered-users",
-            "type": "informational_html",
-            "hidden_default": true,
-            "prompt": "",
-            "content":"<span>Podés subir relatos, fotos, documentos, noticias, materiales, actividades recreativas u otras, actuales o históricos del área.</span>"
-         },
-          {
-            "name": "title-area-memories-areas-registered-users",
-            "type": "text",
-            "prompt": "Título",
-            "display_prompt": "Título de comentario sobre usos y memorias en el área",
-            "placeholder": "",
-            "hidden_default": true,
-            "optional": false,
-            "qprFormType": "relocations"
-          },
-          {
-            "name": "text-area-memories-areas-registered-users",
-            "type": "textarea",
-            "prompt": "Comentario",
-            "placeholder": "Texto",
-            "display_prompt": "Comentario sobre usos y memorias en el área",
-            "hidden_default": true,
-            "optional": false,
-            "qprFormType": "relocations"
-          },
-   
-          {
-            "name": "intro-attach-area-memories-areas-registered-users",
-            "type": "informational_html",
-            "hidden_default": true,
-            "prompt": "¿Querés agregar un comentario, imagen, enlace o documento?",
-            "display_prompt": "Adjuntos sobre usos y memorias en el área",
-            "content": "<span> <i> Recordá que las fotografías y documentos que adjuntás deben ser de tu autoría o debés contar con permiso para poder publicarlos . No se pueden incluir imágenes en las que se pueda identificar rostros de personas.  </i> </span>"
-          },
-          {
-            "name": "attach-image-area-memories-areas-registered-users",
-            "type": "file",
-            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
-            "prompt": " ",
-            "hidden_default": true,
-            "optional": true,
-            "qprFormType": "relocations"
-          },
-          {
-            "name": "attach-pdf-area-memories-areas-registered-users",
-            "type": "file",
-            "label": "ADJUNTAR ARCHIVO PDF",
-            "prompt": " ",
-            "hidden_default": true,
-            "optional": true,
-            "qprFormType": "relocations"
-          },
-          {
-            "name": "link-area-memories-areas-registered-users",
-            "type": "text",
-            "prompt": "Enlace",
-            "placeholder": "Enlace",
-            "hidden_default": true,
             "optional": true,
             "qprFormType": "relocations"
           },
@@ -2597,7 +2638,7 @@
           {
             "name": "intro-water",
             "type": "informational_html",
-            "content": "<span><b>Compartí una experiencia o una situación vinculada a la calidad del agua en la cuenca Matanza-Riachuelo. ¿Tenés dudas? Consultá la guía de campo.</b></span>"
+            "content": "<span><b>Compartí una experiencia o una situación vinculada a la calidad del agua en la cuenca Matanza-Riachuelo. ¿Tenés dudas? Consultá la Guía para compartir experiencias en QPR: Calidad del agua.</b></span>"
           },
           {
             "name": "municipality-water",
@@ -2653,6 +2694,10 @@
                 "value": "merlo"
               },
               {
+                "label": "Morón",
+                "value": "moron"
+              },
+              {
                 "label": "Presidente Juan D. Perón",
                 "value": "presidente-juan-d-peron"
               },
@@ -2669,7 +2714,7 @@
           {
             "name": "address-water",
             "type": "informational_html",
-            "prompt":"Arrastrá el mapa para ubicar tu experiencia",
+            "prompt": "Arrastrá el mapa para ubicar tu experiencia",
             "content": "<span><b></b></span>",
             "optional": false
           },
@@ -2698,7 +2743,7 @@
             "prompt": "¿En qué cuerpo de agua registraste la situación que estás compartiendo? Elegí una de estas opciones:",
             "display_prompt": "Cuerpo de agua",
             "optional": false,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "río",
@@ -2724,7 +2769,7 @@
             "prompt": "¿En qué entorno se encuentra este cuerpo de agua? Elegí una de estas opciones:",
             "display_prompt": "Entorno del cuerpo de agua",
             "optional": false,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "rural",
@@ -2735,7 +2780,7 @@
                 "value": "urban"
               },
               {
-                "label": "No sé.",
+                "label": "no identificado",
                 "value": "dont-know"
               }
             ]
@@ -2752,7 +2797,7 @@
             "prompt": "Indicá una referencia de un lugar cercano en donde tuvo lugar la situación que estás compartiendo. Elegí una de estas opciones:",
             "display_prompt": "Referencia cercana al cuerpo de agua",
             "optional": true,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "puente",
@@ -2783,7 +2828,7 @@
             "prompt": "¿Cuál es el estado del agua en el lugar y el momento del registro? Elegí una de estas opciones:",
             "display_prompt": "Estado de turbidez del agua",
             "optional": true,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "agua clara",
@@ -2814,7 +2859,7 @@
             "prompt": "¿Cuál es el color del agua en el lugar y el momento del registro? Elegí una de estas opciones:",
             "display_prompt": "Color del agua",
             "optional": true,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "transparente",
@@ -2852,7 +2897,7 @@
             "prompt": "¿Se percibían olores del agua en el lugar y el momento del registro?",
             "display_prompt": "Presencia de olor del agua",
             "optional": true,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "Sí.",
@@ -2874,7 +2919,7 @@
             "prompt": "¿Observaste materiales flotantes en la superficie del curso del agua?",
             "display_prompt": "Presencia de materiales flotantes",
             "optional": false,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "yes-floating-materials-water",
@@ -2905,7 +2950,7 @@
             "prompt": "¿Cuáles? Elegí una o más de estas opciones:",
             "display_prompt": "Tipos de materiales flotantes",
             "optional": true,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "plásticos",
@@ -2943,7 +2988,7 @@
             "prompt": "¿Conocés una fuente de contaminación cercana?",
             "display_prompt": "Conocimiento sobre fuente de contaminación",
             "optional": true,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "yes-pollution-source-water",
@@ -2955,7 +3000,7 @@
             "content": [
               {
                 "label": "Sí.",
-                "value": "yes-pollution source-water"
+                "value": "yes-pollution-source-water"
               },
               {
                 "label": "No.",
@@ -2974,7 +3019,7 @@
             "prompt": "¿Cuál? ",
             "display_prompt": "Tipo de fuente de contaminación",
             "optional": true,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "doméstica",
@@ -3004,7 +3049,7 @@
             "prompt": "¿Hay vegetación en los márgenes del cuerpo de agua?",
             "display_prompt": "Presencia de vegetación en los márgenes del cuerpo de agua",
             "optional": false,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "yes-margin-vegetation-water",
@@ -3034,8 +3079,8 @@
             "hidden_default": true,
             "prompt": "¿Cuál? Elegí una o más de las siguientes opciones:",
             "display_prompt": "Tipo de vegetación en los márgenes del cuerpo de agua",
-            "optional": false,
-            "qprFormType":"relocations",
+            "optional": true,
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "césped mantenido",
@@ -3057,7 +3102,7 @@
             "prompt": "¿Hay vegetación en el cuerpo de agua? ",
             "display_prompt": "Presencia de vegetación en el cuerpo de agua",
             "optional": true,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "yes-body-vegetation-water",
@@ -3088,7 +3133,7 @@
             "prompt": "¿Cuál? Elegí una o más de estas opciones:",
             "display_prompt": "Tipo de vegetación en el cuerpo de agua",
             "optional": true,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "algas",
@@ -3106,7 +3151,7 @@
             "prompt": "¿Hay fauna en la zona?",
             "display_prompt": "Presencia de fauna en la zona",
             "optional": true,
-            "qprFormType":"relocation",
+            "qprFormType": "relocation",
             "content": [
               {
                 "label": "Sí.",
@@ -3133,7 +3178,7 @@
             "prompt": "¿Cuál es el nivel del agua del cuerpo del agua al momento de observar la situación? Elegí una de estas opciones:",
             "display_prompt": "Nivel del agua",
             "optional": true,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "alto",
@@ -3155,7 +3200,7 @@
             "prompt": "¿En los días previos o durante el momento de la observación existieron vientos fuertes (sudestada)? ",
             "display_prompt": "Existencia de vientos fuertes en días previos o en el día de observación",
             "optional": true,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "Sí.",
@@ -3188,16 +3233,16 @@
             ],
             "content": [
               {
-                "label": "Sí",
+                "label": "Sí.",
                 "value": "yes-rain-water"
               },
               {
-                "label": "No",
+                "label": "No.",
                 "value": "no-rain-water"
               },
               {
-                "label": "No sé",
-                "value": "no-rain-water"
+                "label": "No sé.",
+                "value": "dont-know-rain-water"
               }
             ]
           },
@@ -3208,7 +3253,7 @@
             "prompt": "¿Qué tipo de lluvia se produjo? Elegí una de estas opciones:",
             "display_prompt": "Tipo de lluvias en días previos o en el día de observación",
             "optional": true,
-            "qprFormType":"relocation",
+            "qprFormType": "relocation",
             "content": [
               {
                 "label": "llovizna",
@@ -3337,6 +3382,10 @@
                 "value": "merlo"
               },
               {
+                "label": "Morón",
+                "value": "moron"
+              },
+              {
                 "label": "Presidente Juan D. Perón",
                 "value": "presidente-juan-d-peron"
               },
@@ -3353,7 +3402,7 @@
           {
             "name": "address-water-registered-users",
             "type": "informational_html",
-            "prompt":"Arrastrá el mapa para ubicar tu experiencia",
+            "prompt": "Arrastrá el mapa para ubicar tu experiencia",
             "content": "<span><b></b></span>",
             "optional": false
           },
@@ -3382,7 +3431,7 @@
             "prompt": "¿En qué cuerpo de agua registraste la situación que estás compartiendo? Elegí una de estas opciones:",
             "display_prompt": "Cuerpo de agua",
             "optional": false,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "other-water-body",
@@ -3426,7 +3475,7 @@
             "prompt": "¿En qué entorno se encuentra este cuerpo de agua? Elegí una de estas opciones:",
             "display_prompt": "Entorno del cuerpo de agua",
             "optional": false,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "rural",
@@ -3437,7 +3486,7 @@
                 "value": "urban"
               },
               {
-                "label": "No sé.",
+                "label": "no identificado",
                 "value": "dont-know"
               }
             ]
@@ -3454,7 +3503,7 @@
             "prompt": "Indicá una referencia de un lugar cercano en donde tuvo lugar la situación que estás compartiendo. Elegí una de estas opciones:",
             "display_prompt": "Referencia cercana al cuerpo de agua",
             "optional": true,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "other-checkpoint",
@@ -3503,7 +3552,7 @@
             "prompt": "¿Cuál es el estado del agua en el lugar y el momento del registro? Elegí una de estas opciones:",
             "display_prompt": "Estado de turbidez del agua",
             "optional": true,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "agua clara",
@@ -3534,7 +3583,7 @@
             "prompt": "¿Cuál es el color del agua en el lugar y el momento del registro? Elegí una de estas opciones:",
             "display_prompt": "Color del agua",
             "optional": true,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "transparente",
@@ -3572,7 +3621,7 @@
             "prompt": "¿Se percibían olores del agua en el lugar y el momento del registro?",
             "display_prompt": "Presencia de olor del agua",
             "optional": true,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "Sí.",
@@ -3594,7 +3643,7 @@
             "prompt": "¿Observaste materiales flotantes en la superficie del curso del agua?",
             "display_prompt": "Presencia de materiales flotantes",
             "optional": false,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "yes-floating-materials-water",
@@ -3625,7 +3674,7 @@
             "prompt": "¿Cuáles? Elegí una o más de estas opciones:",
             "display_prompt": "Tipos de materiales flotantes",
             "optional": true,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "other",
@@ -3681,7 +3730,7 @@
             "prompt": "¿Conocés una fuente de contaminación cercana?",
             "display_prompt": "Conocimiento sobre fuente de contaminación",
             "optional": true,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "yes-pollution-source-water",
@@ -3712,7 +3761,7 @@
             "prompt": "¿Cuál? ",
             "display_prompt": "Tipo de fuente de contaminación",
             "optional": true,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "doméstica",
@@ -3742,7 +3791,7 @@
             "prompt": "¿Hay vegetación en los márgenes del cuerpo de agua?",
             "display_prompt": "Presencia de vegetación en los márgenes del cuerpo de agua",
             "optional": false,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "yes-margin-vegetation-water",
@@ -3772,8 +3821,8 @@
             "hidden_default": true,
             "prompt": "¿Cuál? Elegí una o más de las siguientes opciones:",
             "display_prompt": "Tipo de vegetación en los márgenes del cuerpo de agua",
-            "optional": false,
-            "qprFormType":"relocations",
+            "optional": true,
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "césped mantenido",
@@ -3795,7 +3844,7 @@
             "prompt": "¿Hay vegetación en el cuerpo de agua? ",
             "display_prompt": "Presencia de vegetación en el cuerpo de agua",
             "optional": true,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "yes-body-vegetation-water",
@@ -3826,7 +3875,7 @@
             "prompt": "¿Cuál? Elegí una o más de estas opciones:",
             "display_prompt": "Tipo de vegetación en el cuerpo de agua",
             "optional": true,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "algas",
@@ -3844,7 +3893,7 @@
             "prompt": "¿Hay fauna en la zona?",
             "display_prompt": "Presencia de fauna en la zona",
             "optional": true,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "yes-fauna",
@@ -3889,7 +3938,7 @@
             "prompt": "¿Cuál es el nivel del agua del cuerpo del agua al momento de observar la situación? Elegí una de estas opciones:",
             "display_prompt": "Nivel del agua",
             "optional": true,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "alto",
@@ -3911,7 +3960,7 @@
             "prompt": "¿En los días previos o durante el momento de la observación existieron vientos fuertes (sudestada)? ",
             "display_prompt": "Existencia de vientos fuertes en días previos o en el día de observación",
             "optional": true,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "Sí.",
@@ -3938,22 +3987,22 @@
               {
                 "value": "yes-rain-water",
                 "targets": [
-                  "type-rain-water"
+                  "type-rain-water-registered-users"
                 ]
               }
             ],
             "content": [
               {
-                "label": "Sí",
+                "label": "Sí.",
                 "value": "yes-rain-water"
               },
               {
-                "label": "No",
+                "label": "No.",
                 "value": "no-rain-water"
               },
               {
                 "label": "No sé",
-                "value": "no-rain-water"
+                "value": "dont-know-rain-water"
               }
             ]
           },
@@ -3964,7 +4013,7 @@
             "prompt": "¿Qué tipo de lluvia se produjo? Elegí una de estas opciones:",
             "display_prompt": "Tipo de lluvias en días previos o en el día de observación",
             "optional": true,
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "llovizna",
@@ -3992,7 +4041,7 @@
             "prompt": "Título",
             "display_prompt": "Título de comentario sobre calidad del agua",
             "placeholder": "",
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "optional": true
           },
           {
@@ -4012,12 +4061,11 @@
             "optional": true,
             "qprFormType": "relocations"
           },
-          
           {
             "name": "description-attach-pdf-water-registered-users",
-            "type": "file",
+            "type": "pdf",
             "label": "ADJUNTAR ARCHIVO PDF",
-            "display_prompt":"Adjuntos sobre calidad del agua",
+            "display_prompt": "Adjuntos sobre calidad del agua",
             "optional": true,
             "qprFormType": "relocations"
           },
@@ -4027,7 +4075,7 @@
             "display_prompt": "Adjuntos sobre calidad del agua",
             "prompt": "Enlace",
             "placeholder": "",
-            "qprFormType":"relocations",
+            "qprFormType": "relocations",
             "optional": true
           },
           {
@@ -4063,14 +4111,14 @@
         "multi_stage": [
           {
             "start_field_index": 1,
-            "end_field_index": 52,
+            "end_field_index": 51,
             "header": "Relocalización y reurbanización: Mesas de trabajo",
             "qprFormType": "relocations",
             "description": ""
           },
           {
-            "start_field_index": 53,
-            "end_field_index": 54,
+            "start_field_index": 52,
+            "end_field_index": 53,
             "header": "Relocalización y reurbanización: Mesas de trabajo",
             "qprFormType": "relocations",
             "description": ""
@@ -4089,90 +4137,24 @@
           {
             "name": "intro-relocation-registered-users-description",
             "type": "informational_html",
-            "content": "<span><b>Compartí información sobre una mesa de trabajo o sobre una reunión barrial en la que hayas participado o proponer un tema que sea relevante para trabajar con las autoridades en futuras mesas.</b><span>"
+            "content": "<span><b>Compartí información sobre una mesa de trabajo o sobre una reunión barrial en la que hayas participado o proponé un tema que sea relevante para trabajar con las autoridades en futuras mesas.</b><span>"
           },
           {
             "name": "intro-guide-relocation-registered-users-description",
             "type": "informational_html",
-            "content": "<span><b>¿Tenés dudas? Consultá la guía para la carga de experiencias en QPR: Relocalización y reurbanización.</b></span>"
-          },
-          {
-            "name": "municipio-relocation-registered-users-description",
-            "type": "dropdown",
-            "prompt": "¿En qué municipio tiene lugar esta experiencia? Elegí una de estas opciones:",
-            "display_prompt": "Municipio donde se ubica la experiencia de relocalización o reurbanización",
-            "placeholder": "Elegí el municipio...",
-            "optional": false,
-            "content": [
-              {
-                "label": "Almirante Brown",
-                "value": "almirante-brown"
-              },
-              {
-                "label": "Avellaneda",
-                "value": "avellaneda"
-              },
-              {
-                "label": "Cañuelas",
-                "value": "canuelas"
-              },
-              {
-                "label": "Esteban Echeverría",
-                "value": "esteban-echeverria"
-              },
-              {
-                "label": "Ezeiza",
-                "value": "ezeiza"
-              },
-              {
-                "label": "La Matanza",
-                "value": "la-matanza"
-              },
-              {
-                "label": "Lanús",
-                "value": "lanus"
-              },
-              {
-                "label": "Las Heras",
-                "value": "las-heras"
-              },
-              {
-                "label": "Lomas de Zamora",
-                "value": "lomas-de-zamora"
-              },
-              {
-                "label": "Marcos Paz",
-                "value": "marcos-paz"
-              },
-              {
-                "label": "Merlo",
-                "value": "merlo"
-              },
-              {
-                "label": "Presidente Juan D. Perón",
-                "value": "presidente-juan-d-peron"
-              },
-              {
-                "label": "San Vicente",
-                "value": "san-vicente"
-              },
-              {
-                "label": "Ciudad de Buenos Aires",
-                "value": "ciudad-de-buenos-aires"
-              }
-            ]
+            "content": "<span><b>¿Tenés dudas? Consultá la Guía para compartir experiencias en QPR: Relocalización y reurbanización.</b></span>"
           },
           {
             "name": "address-relocation-registered-users-description",
             "type": "informational_html",
-            "prompt":"Arrastrá el mapa para ubicar tu experiencia",
+            "prompt": "Arrastrá el mapa para ubicar tu experiencia",
             "content": "<span><b></b></span>",
             "optional": false
           },
           {
             "name": "current-municipality-relocation-registered-users",
             "type": "dropdown",
-            "prompt": "¿En cuál de los siguientes municipios vivís actualmente?",
+            "prompt": "¿En qué municipio tiene lugar esta experiencia?",
             "display_prompt": "Municipio de residencia actual",
             "placeholder": "Elegí una de estas opciones...",
             "optional": false,
@@ -4256,6 +4238,12 @@
                 ]
               },
               {
+                "value": "moron-relocation-registered-users",
+                "targets": [
+                  "moron-barrios"
+                ]
+              },
+              {
                 "value": "ciudad-de-buenos-aires-relocation-registered-users",
                 "targets": [
                   "ciudad-de-buenos-aires-barrios"
@@ -4314,6 +4302,10 @@
                 "value": "merlo-relocation-registered-users"
               },
               {
+                "label": "Morón",
+                "value": "moron"
+              },
+              {
                 "label": "Presidente Juan D. Perón",
                 "value": "peron-relocation-registered-users"
               },
@@ -4330,7 +4322,7 @@
                 "value": "other-relocation-registered-users"
               }
             ]
-          }, 
+          },
           {
             "name": "answer-other-municipality-relocation-registered-users",
             "type": "text",
@@ -4344,7 +4336,7 @@
             "name": "ciudad-de-buenos-aires-barrios",
             "type": "dropdown",
             "includeOnListItem": true,
-            "prompt": "¿En qué barrio vivís actualmente? Elegí una de estas opciones:",
+            "prompt": "¿En qué barrio  tiene lugar esta experiencia? Elegí una de estas opciones:",
             "display_prompt": "Barrio de residencia actual",
             "placeholder": "Elegí una de estas opciones:",
             "hidden_default": true,
@@ -4871,7 +4863,7 @@
                 "value": "plomer-las-heras"
               },
               {
-                "label": "villars",
+                "label": "Villars",
                 "value": "villars-las-heras"
               },
               {
@@ -5380,75 +5372,79 @@
             "content": [
               {
                 "label": "8 de octubre",
-                "value": "agrocolonias-peron"
+                "value": "8-octubre-san-vicente"
               },
               {
                 "label": "Biocca",
-                "value": "america-unida-peron"
+                "value": "biocca-san-vicente"
               },
               {
                 "label": "El Fortín",
-                "value": "america-unida-ii-peron"
+                "value": "el-fortin-san-vicente"
               },
               {
                 "label": "Hospital",
-                "value": "el-roble-peron"
+                "value": "hospital-san-vicente"
               },
               {
                 "label": "La Laguna",
-                "value": "estacion-numancia-peron"
+                "value": "la-laguna-san-vicente"
               },
               {
                 "label": "La Laurita",
-                "value": "hospital-guernica-peron"
+                "value": "laurita-san-vicente"
               },
               {
                 "label": "La Pradera",
-                "value": "la-yaya-i-peron"
+                "value": "la-pradera-san-vicente"
               },
               {
                 "label": "Los Hornos",
-                "value": "las-lomas-peron"
+                "value": "los-hornos-san-vicente"
+              },
+              {
+                "label": "Los Naranjos",
+                "value": "los-naranjos-san-vicente"
               },
               {
                 "label": "Mataderos",
-                "value": "numancia-norte-peron"
+                "value": "mataderos-san-vicente"
               },
               {
                 "label": "Nueva Esperanza",
-                "value": "parque-americano-peron"
+                "value": "nueva-esperanza-san-vicente"
               },
               {
                 "label": "Parque Ibáñez",
-                "value": "san-martin-peron"
+                "value": "parque-ibanez-san-vicente"
               },
               {
                 "label": "San José I",
-                "value": "san-roque-peron"
+                "value": "san-jose-san-vicente"
               },
               {
                 "label": "San José II",
-                "value": "santa-teresita-peron"
+                "value": "san-jose-ii-san-vicente"
               },
               {
                 "label": "San José Ferrocarril",
-                "value": "america-unida-peron"
+                "value": "san-jose-ferrocarril-san-vicente"
               },
               {
                 "label": "Santa Ana",
-                "value": "america-unida-ii-peron"
+                "value": "santa-ana-san-vicente"
               },
               {
                 "label": "Santa Rosa",
-                "value": "el-roble-peron"
+                "value": "santa-rosa-san-vicente"
               },
               {
                 "label": "Versalles",
-                "value": "estacion-numancia-peron"
+                "value": "versalles-san-vicente"
               },
               {
                 "label": "Villa Coll",
-                "value": "hospital-guernica-peron"
+                "value": "villa-coll-san-vicente"
               },
               {
                 "label": "Otro",
@@ -5509,7 +5505,7 @@
             "name": "datetime-relocation-registered-users",
             "type": "datetime",
             "time_format": false,
-            "hidden_default":true,
+            "hidden_default": true,
             "prompt": "¿En qué fecha fue la reunión? Elegí la fecha del calendario.",
             "display_prompt": "Fecha de la reunión",
             "placeholder": "Elegí una fecha",
@@ -5683,7 +5679,7 @@
             "display_prompt": "Presencia de funcionario o autoridad responsable",
             "prompt": "¿Entre las personas que participaron había un/a funcionario/a o autoridad responsable?",
             "optional": false,
-            "hidden_default":true,
+            "hidden_default": true,
             "qprFormType": "relocations",
             "triggers": [
               {
@@ -5822,7 +5818,7 @@
             "prompt": "¿Todas las personas que pidieron la palabra pudieron participar de la mesa haciendo preguntas, comentarios o propuestas?",
             "display_prompt": "Posibilidad de participación de todas las personas en la reunión con preguntas, comentarios o propuestas",
             "optional": false,
-            "hidden_default":true,
+            "hidden_default": true,
             "qprFormType": "relocations",
             "content": [
               {
@@ -5842,7 +5838,7 @@
           {
             "name": "register-relocation-registered-users",
             "type": "big_radio",
-            "hidden_default":true,
+            "hidden_default": true,
             "display_prompt": "Existencia de un registro de la reunión: apuntes, acta escrita, grabación o video",
             "prompt": "¿Hubo algún registro de la reunión, ya sea apuntes o un acta escrita, grabación o video?",
             "optional": false,
@@ -5870,7 +5866,7 @@
             "name": "next-meeting-relocation-registered-users",
             "type": "big_radio",
             "prompt": "¿Se definió una fecha para la próxima reunión?",
-            "display_prompt":"Definición de fecha de la próxima reunión o mesa de trabajo",
+            "display_prompt": "Definición de fecha de la próxima reunión o mesa de trabajo",
             "hidden_default": true,
             "optional": false,
             "qprFormType": "relocations",
@@ -5936,10 +5932,10 @@
           },
           {
             "name": "attach-pdf-relocation-registered-users",
-            "type": "file",
+            "type": "pdf",
             "label": "ADJUNTAR ARCHIVO PDF",
             "optional": true,
-            "hidden_default":true,
+            "hidden_default": true,
             "qprFormType": "water"
           },
           {
@@ -5955,7 +5951,7 @@
           {
             "name": "topic-interest-relocation-registered-users",
             "type": "big_checkbox",
-            "prompt": "¿Qué tema o problema relacionado con el proceso de relocalización y/o reurbanización sería importante tratar con las autoridades? Elegí hasta tres opciones que se relacionan con el tema que querés proponer:",
+            "prompt": "¿Qué tema o problema relacionado con el proceso de relocalización y/o reurbanización sería importante tratar con las autoridades? Elegí una o más opciones que se relacionan con el tema que querés proponer:",
             "display_prompt": "Problemas relacionados con la relocalización o reurbanización que es importante tratar con las autoridades en mesas de trabajo barriales",
             "optional": false,
             "triggers": [
@@ -5968,7 +5964,7 @@
             ],
             "content": [
               {
-                "label": "información, participación y mesas de trabajo por la relocalización/ reurbanización",
+                "label": "información, participación y mesas de trabajo por la relocalización o reurbanización",
                 "value": "information-topic-relocation-registered-users"
               },
               {
@@ -6096,7 +6092,7 @@
           },
           {
             "start_field_index": 46,
-            "end_field_index": 53,
+            "end_field_index": 47,
             "header": "RELOCALIZACIÓN Y REURBANIZACIÓN: SEGUIMIENTO",
             "description": "",
             "qprFormType": "relocations"
@@ -6120,7 +6116,7 @@
           {
             "name": "guide-intro-relocation",
             "type": "informational_html",
-            "content": "<span><b>¿Tenés dudas? Consultá la guía de campo.</b></span>"
+            "content": "<span><b>¿Tenés dudas? Consultá la Guía para compartir experiencias en QPR: Relocalización y reurbanización.</b></span>"
           },
           {
             "name": "municipality-relocation",
@@ -6175,6 +6171,10 @@
                 "value": "merlo"
               },
               {
+                "label": "Morón",
+                "value": "moron"
+              },
+              {
                 "label": "Presidente Juan D. Perón",
                 "value": "presidente-juan-d-peron"
               },
@@ -6191,7 +6191,7 @@
           {
             "name": "address-relocation",
             "type": "informational_html",
-            "prompt":"Arrastrá el mapa para ubicar tu experiencia",
+            "prompt": "Arrastrá el mapa para ubicar tu experiencia",
             "content": "<span><b></b></span>",
             "optional": false
           },
@@ -6289,6 +6289,12 @@
                 ]
               },
               {
+                "value": "moron",
+                "targets": [
+                  "moron-barrios"
+                ]
+              },
+              {
                 "value": "otro",
                 "targets": [
                   "otro-municipio",
@@ -6340,6 +6346,10 @@
               {
                 "label": "Merlo",
                 "value": "merlo"
+              },
+              {
+                "label": "Morón",
+                "value": "moron"
               },
               {
                 "label": "Presidente Juan D. Perón",
@@ -6834,7 +6844,7 @@
                 "value": "plomer-las-heras"
               },
               {
-                "label": "villars",
+                "label": "Villars",
                 "value": "villars-las-heras"
               },
               {
@@ -7279,75 +7289,79 @@
             "content": [
               {
                 "label": "8 de octubre",
-                "value": "agrocolonias-peron"
+                "value": "8-octubre-san-vicente"
               },
               {
                 "label": "Biocca",
-                "value": "america-unida-peron"
+                "value": "biocca-san-vicente"
               },
               {
                 "label": "El Fortín",
-                "value": "america-unida-ii-peron"
+                "value": "el-fortin-san-vicente"
               },
               {
                 "label": "Hospital",
-                "value": "el-roble-peron"
+                "value": "hospital-san-vicente"
               },
               {
                 "label": "La Laguna",
-                "value": "estacion-numancia-peron"
+                "value": "la-laguna-san-vicente"
               },
               {
                 "label": "La Laurita",
-                "value": "hospital-guernica-peron"
+                "value": "laurita-san-vicente"
               },
               {
                 "label": "La Pradera",
-                "value": "la-yaya-i-peron"
+                "value": "la-pradera-san-vicente"
               },
               {
                 "label": "Los Hornos",
-                "value": "las-lomas-peron"
+                "value": "los-hornos-san-vicente"
+              },
+              {
+                "label": "Los Naranjos",
+                "value": "los-naranjos-san-vicente"
               },
               {
                 "label": "Mataderos",
-                "value": "numancia-norte-peron"
+                "value": "mataderos-san-vicente"
               },
               {
                 "label": "Nueva Esperanza",
-                "value": "parque-americano-peron"
+                "value": "nueva-esperanza-san-vicente"
               },
               {
                 "label": "Parque Ibáñez",
-                "value": "san-martin-peron"
+                "value": "parque-ibanez-san-vicente"
               },
               {
                 "label": "San José I",
-                "value": "san-roque-peron"
+                "value": "san-jose-san-vicente"
               },
               {
                 "label": "San José II",
-                "value": "santa-teresita-peron"
+                "value": "san-jose-ii-san-vicente"
               },
               {
                 "label": "San José Ferrocarril",
-                "value": "america-unida-peron"
+                "value": "san-jose-ferrocarril-san-vicente"
               },
               {
                 "label": "Santa Ana",
-                "value": "america-unida-ii-peron"
+                "value": "santa-ana-san-vicente"
               },
               {
                 "label": "Santa Rosa",
-                "value": "el-roble-peron"
+                "value": "santa-rosa-san-vicente"
               },
               {
                 "label": "Versalles",
-                "value": "estacion-numancia-peron"
+                "value": "versalles-san-vicente"
               },
               {
                 "label": "Villa Coll",
-                "value": "hospital-guernica-peron"
+                "value": "villa-coll-san-vicente"
               },
               {
                 "label": "Otro",
@@ -7360,19 +7374,13 @@
             "type": "big_radio",
             "prompt": "¿Cuál es tu situación con respecto al programa de relocalización y reurbanización de villas y asentamientos de la Cuenca Matanza Riachuelo? Elegí una de estas opciones:",
             "optional": false,
-            "display_prompt":"Situación de relocalización",
+            "display_prompt": "Situación de relocalización",
             "qprFormType": "relocations",
             "triggers": [
               {
                 "value": "situacion-relocalized",
                 "targets": [
                   "before-municipality-relocation"
-                ]
-              },
-              {
-                "value": "situation-other",
-                "targets": [
-                  "otra-situacion"
                 ]
               }
             ],
@@ -7402,7 +7410,6 @@
           {
             "name": "before-municipality-relocation",
             "type": "dropdown",
-            "includeOnListItem": true,
             "hidden_default": true,
             "prompt": "¿En qué municipio vivías antes?",
             "display_prompt": "Municipio de residencia anterior",
@@ -7452,6 +7459,24 @@
                 ]
               },
               {
+                "value": "las-heras-before",
+                "targets": [
+                  "las-heras-barrios-before"
+                ]
+              },
+              {
+                "value": "peron-barrios",
+                "targets": [
+                  "peron-barrios-before"
+                ]
+              },
+              {
+                "value": "ezeiza-before",
+                "targets": [
+                  "ezeiza-barrios-before"
+                ]
+              },
+              {
                 "value": "lomas-de-zamora-before",
                 "targets": [
                   "lomas-de-zamora-barrios-before"
@@ -7467,6 +7492,24 @@
                 "value": "merlo-before",
                 "targets": [
                   "merlo-barrios-before"
+                ]
+              },
+              {
+                "value": "peron-before",
+                "targets": [
+                  "peron-barrios-before"
+                ]
+              },
+              {
+                "value": "san-vicente-before",
+                "targets": [
+                  "san-vicente-barrios-before"
+                ]
+              },
+              {
+                "value": "moron-before",
+                "targets": [
+                  "moron-barrios-before"
                 ]
               },
               {
@@ -7523,8 +7566,12 @@
                 "value": "merlo-before"
               },
               {
+                "label": "Morón",
+                "value": "moron-before"
+              },
+              {
                 "label": "Presidente Juan D. Perón",
-                "value": "presidente-juan-d-peron-before"
+                "value": "peron-before"
               },
               {
                 "label": "San Vicente",
@@ -8015,7 +8062,7 @@
                 "value": "plomer-las-heras-before"
               },
               {
-                "label": "villars",
+                "label": "Villars",
                 "value": "villars-las-heras-before"
               },
               {
@@ -8460,75 +8507,79 @@
             "content": [
               {
                 "label": "8 de octubre",
-                "value": "agrocolonias-peron-before"
+                "value": "8-octubre-san-vicente-before"
               },
               {
                 "label": "Biocca",
-                "value": "america-unida-peron-before"
+                "value": "biocca-san-vicente-before"
               },
               {
                 "label": "El Fortín",
-                "value": "america-unida-ii-peron-before"
+                "value": "el-fortin-san-vicente-before"
               },
               {
                 "label": "Hospital",
-                "value": "el-roble-peron-before"
+                "value": "hospital-san-vicente-before"
               },
               {
                 "label": "La Laguna",
-                "value": "estacion-numancia-peron-before"
+                "value": "la-laguna-san-vicente-before"
               },
               {
                 "label": "La Laurita",
-                "value": "hospital-guernica-peron-before"
+                "value": "laurita-san-vicente-before"
               },
               {
                 "label": "La Pradera",
-                "value": "la-yaya-i-peron-before"
+                "value": "la-pradera-san-vicente-before"
               },
               {
                 "label": "Los Hornos",
-                "value": "las-lomas-peron-before"
+                "value": "los-hornos-san-vicente-before"
+              },
+              {
+                "label": "Los Naranjos",
+                "value": "los-naranjos-san-vicente-before"
               },
               {
                 "label": "Mataderos",
-                "value": "numancia-norte-peron-before"
+                "value": "mataderos-san-vicente-before"
               },
               {
                 "label": "Nueva Esperanza",
-                "value": "parque-americano-peron-before"
+                "value": "nueva-esperanza-san-vicente-before"
               },
               {
                 "label": "Parque Ibáñez",
-                "value": "san-martin-peron-before"
+                "value": "parque-ibanez-san-vicente-before"
               },
               {
                 "label": "San José I",
-                "value": "san-roque-peron-before"
+                "value": "san-jose-san-vicente-before"
               },
               {
                 "label": "San José II",
-                "value": "santa-teresita-peron-before"
+                "value": "san-jose-ii-san-vicente-before"
               },
               {
                 "label": "San José Ferrocarril",
-                "value": "america-unida-peron-before"
+                "value": "san-jose-ferrocarril-san-vicente-before"
               },
               {
                 "label": "Santa Ana",
-                "value": "america-unida-ii-peron-before"
+                "value": "santa-ana-san-vicente-before"
               },
               {
                 "label": "Santa Rosa",
-                "value": "el-roble-peron-before"
+                "value": "santa-rosa-san-vicente-before"
               },
               {
                 "label": "Versalles",
-                "value": "estacion-numancia-peron-before"
+                "value": "versalles-san-vicente-before"
               },
               {
                 "label": "Villa Coll",
-                "value": "hospital-guernica-peron-before"
+                "value": "villa-coll-san-vicente-before"
               },
               {
                 "label": "Otro",
@@ -8589,11 +8640,12 @@
             ]
           },
           {
-            "name": "new-houses-relocation",
+            "name": "new-services-relocation",
             "type": "big_radio",
             "prompt": "En el último mes, ¿hubo avances en obras de servicios públicos en el barrio donde vivís, ya sea de la red de agua, cloacas o electricidad?",
             "optional": false,
-            "display_prompt": "Existencia de avances en obras de servicios públicos en el último mes",            "qprFormType": "relocations",
+            "display_prompt": "Existencia de avances en obras de servicios públicos en el último mes",
+            "qprFormType": "relocations",
             "content": [
               {
                 "label": "Sí.",
@@ -8656,13 +8708,13 @@
           {
             "name": "topics-relocation",
             "type": "big_checkbox",
-            "prompt": "Actualmente, en el marco del proceso de relocalización o reurbanización, ¿cuáles considerás que son las tres cuestiones más importantes que las autoridades responsables deberían atender en el  barrio en el que vivís? Elegí una o más de estas opciones:",
+            "prompt": "Actualmente, en el marco del proceso de relocalización o reurbanización, ¿cuáles considerás que son las cuestiones más importantes que las autoridades responsables deberían atender en el  barrio en el que vivís? Elegí una o más de estas opciones:",
             "optional": false,
             "qprFormType": "relocations",
             "display_prompt": "Cuestiones más importantes a considerar por las autoridades en el proceso de relocalización o reurbanización del barrio",
             "content": [
               {
-                "label": "acceso a la información y participación en el proceso de relocalización/reurbanización",
+                "label": "acceso a la información y participación en el proceso de relocalización o reurbanización",
                 "value": "participacion-relocalizaciones"
               },
               {
@@ -9066,7 +9118,7 @@
     "submit_btn_text": "Apoyo",
     "response_name": "apoyo",
     "response_plural_name": "apoyos",
-    "action_text": "soportada",
+    "action_text": "apoyada",
     "anonymous_name": "Alguien"
   },
   "nav_bar": [
@@ -9096,7 +9148,6 @@
         "<p>Si tenés dudas o sugerencias escribinos a <a href={'qpr@farn.org.ar'}>qpr@farn.org.ar</a> </a> </p>",
         "<p style='font-size:10px;'>QPR es una herramienta co-diseñada entre diversos actores impulsada la Fundación Ambiente y Recursos Naturales (FARN) y el Centro de Investigaciones para la Transformación (CENIT) de la Universidad de San Martín (UNSAM) en el marco del proyecto “CoAct Ciencia Ciudadana Social para la Acción Colectiva” financiado por la Unión Europea. El proyecto se propone usar el enfoque de ciencia ciudadana social para promover acciones de justicia ambiental en el cuenca Matanza-Riachuelo.</p>",
         "<div style='border-bottom: 0; display: flex; justify-content: space-between; align-items: center; width: 100%;'><img style='width: 13%; border-radius: 0; display: inline-block; margin-bottom: 0; margin-right: 2%;' src='/static/css/images/00-LOGO FARN.png'/><div style='margin-right: 2%; width: 1px; height: 40px; border-right: 1px solid #aeadb3; display: inline-block;'></div><img style='width: 13%; border-radius: 0; display: inline-block; margin-bottom: 0; margin-right: 2%;' src='/static/css/images/CENIT_UNSAM.png'/><div style='margin-right: 2%; width: 1px; height: 40px; border-right: 1px solid #aeadb3; display: inline-block;'></div><img style='width: 13%;border-radius: 0; display: inline-block; margin-bottom: 0; margin-right: 2%;' src='/static/css/images/coact.png'/><div style='margin-right: 2%; width: 1px; height: 40px; border-right: 1px solid #aeadb3; display: inline-block;'></div><img style='width: 13%;border-radius: 0; display: inline-block; margin-bottom: 0; margin-right: 2%;' src='/static/css/images/union-europea.png'/><span style='font-family: Montserrat, sans-serif; font-size: 7px;'>El proyecto CoAct ha recibido financiación del programa de investigación e innovación Horizon 2020 de la Unión Europea bajo el acuerdo de subvención número 873048.</span></div>"
-
       ]
     },
     {
