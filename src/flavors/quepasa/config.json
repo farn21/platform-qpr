@@ -3470,6 +3470,10 @@
                 "value": "channel"
               },
               {
+                "label": "laguna",
+                "value": "lagoon"
+              },
+              {
                 "label": "otro",
                 "value": "other-water-body"
               }
@@ -3776,7 +3780,7 @@
             "hidden_default": true,
             "prompt": "¿Cuál? ",
             "display_prompt": "Tipo de fuente de contaminación",
-            "optional": true,
+            "optional": false,
             "qprFormType": "relocations",
             "content": [
               {
@@ -3851,6 +3855,10 @@
               {
                 "label": "árboles",
                 "value": "trees"
+              },
+              {
+                "label": "otros",
+                "value": "others"
               }
             ]
           },
@@ -3890,7 +3898,7 @@
             "hidden_default": true,
             "prompt": "¿Cuál? Elegí una o más de estas opciones:",
             "display_prompt": "Tipo de vegetación en el cuerpo de agua",
-            "optional": true,
+            "optional": false,
             "qprFormType": "relocations",
             "content": [
               {
@@ -3900,6 +3908,10 @@
               {
                 "label": "plantas acuáticas",
                 "value": "aquatic-plants"
+              },
+              {
+                "label": "otros",
+                "value": "others"
               }
             ]
           },
@@ -4028,7 +4040,7 @@
             "hidden_default": true,
             "prompt": "¿Qué tipo de lluvia se produjo? Elegí una de estas opciones:",
             "display_prompt": "Tipo de lluvias en días previos o en el día de observación",
-            "optional": true,
+            "optional": false,
             "qprFormType": "relocations",
             "content": [
               {
@@ -4042,6 +4054,10 @@
               {
                 "label": "lluvia intensa extendida",
                 "value": "long-intense-drizzle"
+              },
+              {
+                "label": "no identificada",
+                "value": "unidentified"
               }
             ]
           },
