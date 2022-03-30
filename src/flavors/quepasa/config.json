@@ -1570,7 +1570,7 @@
           {
             "name": "title-news",
             "type": "text",
-            "prompt": "Ponele un título a tu historia.",
+            "prompt": "Ponele un título a tu historia. Recordá que este es un espacio sujeto a políticas de publicación  y no se permiten contenidos propagandísticos partidarios ni lenguaje discriminatorio como se detalla en las condiciones de uso de QPR.",
             "display_prompt": "Título",
             "placeholder": "",
             "qprFormType": "relocations",
@@ -3022,7 +3022,7 @@
             "hidden_default": true,
             "prompt": "¿Cuál? ",
             "display_prompt": "Tipo de fuente de contaminación",
-            "optional": true,
+            "optional": false,
             "qprFormType": "relocations",
             "content": [
               {
@@ -3264,7 +3264,7 @@
             "hidden_default": true,
             "prompt": "¿Qué tipo de lluvia se produjo? Elegí una de estas opciones:",
             "display_prompt": "Tipo de lluvias en días previos o en el día de observación",
-            "optional": true,
+            "optional": false,
             "qprFormType": "relocation",
             "content": [
               {
