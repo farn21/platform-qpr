@@ -2758,6 +2758,10 @@
                 "value": "channel"
               },
               {
+                "label": "laguna",
+                "value": "lagoon"
+              },
+              {
                 "label": "otro",
                 "value": "other"
               }
@@ -2949,7 +2953,7 @@
             "hidden_default": true,
             "prompt": "¿Cuáles? Elegí una o más de estas opciones:",
             "display_prompt": "Tipos de materiales flotantes",
-            "optional": true,
+            "optional": false,
             "qprFormType": "relocations",
             "content": [
               {
@@ -2987,7 +2991,7 @@
             "type": "big_radio",
             "prompt": "¿Conocés una fuente de contaminación cercana?",
             "display_prompt": "Conocimiento sobre fuente de contaminación",
-            "optional": true,
+            "optional": false,
             "qprFormType": "relocations",
             "triggers": [
               {
@@ -3079,7 +3083,7 @@
             "hidden_default": true,
             "prompt": "¿Cuál? Elegí una o más de las siguientes opciones:",
             "display_prompt": "Tipo de vegetación en los márgenes del cuerpo de agua",
-            "optional": true,
+            "optional": false,
             "qprFormType": "relocations",
             "content": [
               {
@@ -3093,6 +3097,10 @@
               {
                 "label": "árboles",
                 "value": "trees"
+              },
+              {
+                "label": "otros",
+                "value": "others"
               }
             ]
           },
@@ -3101,7 +3109,7 @@
             "type": "big_radio",
             "prompt": "¿Hay vegetación en el cuerpo de agua? ",
             "display_prompt": "Presencia de vegetación en el cuerpo de agua",
-            "optional": true,
+            "optional": false,
             "qprFormType": "relocations",
             "triggers": [
               {
@@ -3132,7 +3140,7 @@
             "hidden_default": true,
             "prompt": "¿Cuál? Elegí una o más de estas opciones:",
             "display_prompt": "Tipo de vegetación en el cuerpo de agua",
-            "optional": true,
+            "optional": false,
             "qprFormType": "relocations",
             "content": [
               {
@@ -3142,6 +3150,10 @@
               {
                 "label": "plantas acuáticas",
                 "value": "aquatic-plants"
+              },
+              {
+                "label": "otros",
+                "value": "others"
               }
             ]
           },
@@ -3266,6 +3278,10 @@
               {
                 "label": "lluvia intensa extendida",
                 "value": "long-intense-drizzle"
+              },
+              {
+                "label": "no identificada",
+                "value": "unidentified"
               }
             ]
           },
