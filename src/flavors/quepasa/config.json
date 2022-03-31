@@ -2504,7 +2504,7 @@
           {
             "name": "info-contributions-areas-registered-users",
             "type": "informational_html",
-            "content": "<span><b>Aportá información para contribuir al conocimiento y a la protección de esta área natural. Podés adjuntar imágenes, documentos en pdf y enlaces sobre uno de estos temas:</span>"
+            "content": "<span><b>En este espacio podés compartir tu conocimiento sobre el área natural y los procesos para garantizar su protección. Podés escribir un relato y adjuntar imágenes, documentos en pdf o enlaces. ¿Con qué tema se relaciona lo que vas a compartir? Elegí uno de estos temas:</span>"
           },
           {
             "name": "contributions-areas-registered-users",
@@ -2514,10 +2514,7 @@
             "display_prompt": "Contribuciones",
             "qprFormType": "relocation",
             "content": [
-              {
-                "label": "Protección del espacio: aspectos asociados a garantizar la protección legal del área, como acciones en curso o problemas que se enfrentan.",
-                "value": "area-protection"
-              },
+
               {
                 "label": "Estado del área: observaciones del área; pueden ser amenazas o condiciones de cuidado y mantenimiento.",
                 "value": "area-state"
