@@ -3234,7 +3234,7 @@
             "type": "big_radio",
             "prompt": "¿Llovió en los días previos o durante el momento de la observación?",
             "display_prompt": "Existencia de lluvias en días previos o en el día de observación",
-            "optional": true,
+            "optional": false,
             "qprFormType": "relocations",
             "triggers": [
               {
@@ -3488,7 +3488,7 @@
             "display_prompt": "Otro cuerpo de agua",
             "qprFormType": "relocations",
             "hidden_default": true,
-            "optional": true
+            "optional": false
           },
           {
             "name": "environment-water-registered-users",
@@ -3523,7 +3523,7 @@
             "includeOnListItem": true,
             "prompt": "Indicá una referencia de un lugar cercano en donde tuvo lugar la situación que estás compartiendo. Elegí una de estas opciones:",
             "display_prompt": "Referencia cercana al cuerpo de agua",
-            "optional": true,
+            "optional": false,
             "qprFormType": "relocations",
             "triggers": [
               {
@@ -3694,7 +3694,7 @@
             "hidden_default": true,
             "prompt": "¿Cuáles? Elegí una o más de estas opciones:",
             "display_prompt": "Tipos de materiales flotantes",
-            "optional": true,
+            "optional": false,
             "qprFormType": "relocations",
             "triggers": [
               {
@@ -3842,7 +3842,7 @@
             "hidden_default": true,
             "prompt": "¿Cuál? Elegí una o más de las siguientes opciones:",
             "display_prompt": "Tipo de vegetación en los márgenes del cuerpo de agua",
-            "optional": true,
+            "optional": false,
             "qprFormType": "relocations",
             "content": [
               {
@@ -3954,7 +3954,7 @@
             "display_prompt": "Qué animales",
             "qprFormType": "relocations",
             "hidden_default": true,
-            "optional": true
+            "optional": false
           },
           {
             "name": "info-hidro-water-registered-users",
