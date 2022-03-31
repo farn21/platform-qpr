@@ -356,6 +356,12 @@ body {
     left: calc(50% - 45vw);
   }
 }
+@media (min-width: 960px) {
+  .css-1extdu3-Button-AddPlaceButtonContainer {
+    top: 78px !important;
+    left: 60px !important;
+  }
+}
 /* END ADD PLACE BUTTON STYLES */
 
 /* START ADD NEWS BUTTON STYLES*/
@@ -846,6 +852,8 @@ option:hover {
 /* START LEFT SIDEBAR STYLES */
 .mapseed-left-sidebar {
   background-color: #ffffff;
+  width: 350px;
+  max-width: 90vw;
 }
 .mapseed-left-sidebar > div {
   padding: 1.5rem;
@@ -869,6 +877,9 @@ option:hover {
   padding: 0;
   margin-bottom: 0;
 }
+.mapseed-map-layer-selector-container > span > span:first-child {
+  background-color: transparent;
+}
 .mapseed-map-layer-selector-container span span {
   font-size: 0.875rem;
   display: inline-block;
@@ -886,9 +897,12 @@ option:hover {
   right: 10px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  background-color: #ffffff;
+  background-color: #fff;
   color: #455a64;
   box-shadow: none;
+}
+.mapseed-left-sidebar > .css-pigogt {
+  background-color: transparent;
 }
 .css-pigogt:hover {
   color: #c67c00;
