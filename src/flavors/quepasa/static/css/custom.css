@@ -1,93 +1,111 @@
 /* START FONT IMPORTS */
 /* cyrillic-ext */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v10/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/montserrat/v10/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
 }
 /* cyrillic */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v10/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/montserrat/v10/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2)
+    format("woff2");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* hebrew */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v10/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/montserrat/v10/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2)
+    format("woff2");
   unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v10/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/montserrat/v10/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v10/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/montserrat/v10/zhcz-_WihjSQC0oHJ9TCYPk_vArhqVIZ0nv9q090hN8.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 /* cyrillic-ext */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v10/IQHow_FEYlDC4Gzy_m8fcoWiMMZ7xLd792ULpGE4W_Y.woff2) format('woff2');
-  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  src: url(https://fonts.gstatic.com/s/montserrat/v10/IQHow_FEYlDC4Gzy_m8fcoWiMMZ7xLd792ULpGE4W_Y.woff2)
+    format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+    U+FE2E-FE2F;
 }
 /* cyrillic */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v10/IQHow_FEYlDC4Gzy_m8fcoWiMMZ7xLd792ULpGE4W_Y.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/montserrat/v10/IQHow_FEYlDC4Gzy_m8fcoWiMMZ7xLd792ULpGE4W_Y.woff2)
+    format("woff2");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* hebrew */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v10/IQHow_FEYlDC4Gzy_m8fcoWiMMZ7xLd792ULpGE4W_Y.woff2) format('woff2');
+  src: url(https://fonts.gstatic.com/s/montserrat/v10/IQHow_FEYlDC4Gzy_m8fcoWiMMZ7xLd792ULpGE4W_Y.woff2)
+    format("woff2");
   unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
 }
 /* latin-ext */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v10/IQHow_FEYlDC4Gzy_m8fcoWiMMZ7xLd792ULpGE4W_Y.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  src: url(https://fonts.gstatic.com/s/montserrat/v10/IQHow_FEYlDC4Gzy_m8fcoWiMMZ7xLd792ULpGE4W_Y.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/montserrat/v10/IQHow_FEYlDC4Gzy_m8fcoWiMMZ7xLd792ULpGE4W_Y.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  src: url(https://fonts.gstatic.com/s/montserrat/v10/IQHow_FEYlDC4Gzy_m8fcoWiMMZ7xLd792ULpGE4W_Y.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
 }
 /* END FONT IMPORTS */
 
@@ -96,8 +114,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#mapseed-custom-page-container p, #mapseed-custom-page-container li {
-  font-family: 'Montserrat', sans-serif;
+#mapseed-custom-page-container p,
+#mapseed-custom-page-container li {
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   padding-right: 10px;
 }
@@ -147,7 +166,7 @@ body {
   border-bottom: 1px solid #aeadb3;
 }
 .mapseed-site-header h2 {
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
 }
 @media (max-width: 960px) {
   .mapseed-site-header h2 {
@@ -165,10 +184,10 @@ body {
   color: #f0a300;
   background-color: transparent;
 }
-.mapseed-site-header>div .mapseed-internal-link:hover {
+.mapseed-site-header > div .mapseed-internal-link:hover {
   background-color: transparent;
 }
-.mapseed-site-header>div .fa-bars {
+.mapseed-site-header > div .fa-bars {
   color: #718792;
 }
 .mapseed-featured-places-header-menu__button {
@@ -177,7 +196,7 @@ body {
   color: #fff;
   font-weight: 400;
 }
-.mapseed-featured-places-header-menu__button.MuiButton-root{
+.mapseed-featured-places-header-menu__button.MuiButton-root {
   line-height: 1.15;
 }
 .mapseed-featured-places-header-menu__button.MuiButton-root:hover {
@@ -190,7 +209,7 @@ body {
 }
 .mapseed-site-header :nth-child(3) nav {
   position: relative;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 4px;
   font-weight: 400;
   font-size: 1rem;
@@ -205,14 +224,14 @@ body {
   padding: 0.3rem 1rem;
 }
 .mapseed-site-header :nth-child(3) button .MuiTypography-body1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .mapseed-site-header :nth-child(3) button:hover {
   background-color: #000000;
   color: #fff;
 }
-@media(max-width:960px) {
-  .mapseed-site-header>div {
+@media (max-width: 960px) {
+  .mapseed-site-header > div {
     margin-top: 7px;
   }
   .mapseed-site-header :nth-child(3) nav {
@@ -221,7 +240,7 @@ body {
   .mapseed-site-header :nth-child(3) button.MuiButtonBase-root {
     border-radius: 4px;
   }
-  .mapseed-site-header :nth-child(3) ul  {
+  .mapseed-site-header :nth-child(3) ul {
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
@@ -229,7 +248,7 @@ body {
     justify-content: center;
     border-top: 1px solid #718792;
     border-bottom: 1px solid #718792;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
   }
   .mapseed-site-header :nth-child(3) ul li {
     width: auto;
@@ -240,7 +259,7 @@ body {
 }
 @media (min-width: 960px) {
   .mapseed-site-header :nth-child(3) nav::after {
-    content: '';  
+    content: "";
     width: 0;
     height: 0;
     border-left: 4px solid transparent;
@@ -257,7 +276,7 @@ body {
     border: none;
     border-radius: 4px;
     background-color: #fff;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, .3);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
     width: 100%;
     position: absolute;
     top: 34px;
@@ -266,12 +285,12 @@ body {
   .mapseed-site-header :nth-child(3) nav:hover ul {
     position: absolute;
   }
-  .mapseed-site-header :nth-child(3) nav ul li button{
+  .mapseed-site-header :nth-child(3) nav ul li button {
     background-color: transparent;
     color: #000000;
     margin-right: 0;
   }
-  .mapseed-site-header :nth-child(3) nav ul li button:hover{
+  .mapseed-site-header :nth-child(3) nav ul li button:hover {
     background-color: #f2f2f2;
     color: #000000;
   }
@@ -279,12 +298,12 @@ body {
 /* END HEADER STYLES */
 
 /* START SECTION PANEL STYLES */
-#site-wrap>div>section {
+#site-wrap > div > section {
   padding: 18px;
   background-color: #ffffff;
   border-left: 1px solid #aeadb3;
 }
-#site-wrap>div>section button[aria-label="close"] {
+#site-wrap > div > section button[aria-label="close"] {
   border-radius: 0;
   background-color: transparent;
   right: 12px;
@@ -293,29 +312,29 @@ body {
   color: #aeadb3;
   margin-bottom: 5px;
 }
-#site-wrap>div>section button[aria-label="close"]:hover {
+#site-wrap > div > section button[aria-label="close"]:hover {
   color: transparent;
 }
 
 @media (min-width: 320px) {
-  #site-wrap>div>section {
+  #site-wrap > div > section {
     padding-bottom: 140px !important;
   }
 }
 
 @media (min-width: 1024px) {
-  #site-wrap>div>section {
+  #site-wrap > div > section {
     padding-bottom: 92px !important;
   }
 }
 
-@media(max-width:960px) {
-  #site-wrap>div>section>div {
+@media (max-width: 960px) {
+  #site-wrap > div > section > div {
     padding: 2rem 8px 8px 8px;
   }
 }
 @media (min-width: 960px) {
-  #site-wrap>div>section {
+  #site-wrap > div > section {
     padding: 30px 0 0 5px;
   }
 }
@@ -330,7 +349,7 @@ body {
   border-radius: 20px !important;
   background-color: #f0a300;
   padding: 8px 16px;
-} 
+}
 @media (min-width: 960px) {
   .css-1extdu3-Button-AddPlaceButtonContainer {
     top: 78px !important;
@@ -364,15 +383,15 @@ body {
 }
 /* END NEWS FEED HEADER STYLES */
 
-/* START FORMS STYLES */ 
-.form-stage-header-bar__header{
-  font-family: 'Montserrat';
+/* START FORMS STYLES */
+.form-stage-header-bar__header {
+  font-family: "Montserrat";
   text-transform: uppercase;
   color: #a1cde7;
   margin: 0;
 }
 
-#site-wrap>div>section #mapseed-input-form {
+#site-wrap > div > section #mapseed-input-form {
   margin-top: 2rem;
 }
 
@@ -380,7 +399,7 @@ body {
   color: #aeadb3 !important;
   font-size: 11px !important;
   font-weight: 400 !important;
-  }
+}
 
 /* Form category buttons */
 .input-form-category-button {
@@ -413,12 +432,12 @@ body {
 /* --- */
 
 /* Data field type generic styles */
-div[data-field-type="geocoding"]{
+div[data-field-type="geocoding"] {
   padding-left: 0 !important;
 }
 
-div[data-field-type="text"], 
-div[data-field-type="informational_html"], 
+div[data-field-type="text"],
+div[data-field-type="informational_html"],
 div[data-field-type="dropdown_autocomplete"],
 div[data-field-type="big_radio"],
 div[data-field-type="big_checkbox"],
@@ -433,21 +452,21 @@ div[data-field-type="dropdown"] {
   border: none !important;
 }
 
-div[data-field-type="informational_html"]{
-font-size: 14px;
+div[data-field-type="informational_html"] {
+  font-size: 14px;
 }
 
-div[data-field-type="big_radio"]{
-display: flex;
-flex-direction: column;
-}
-
-div[data-field-type="big_checkbox"]{
+div[data-field-type="big_radio"] {
   display: flex;
   flex-direction: column;
 }
 
-div[data-field-type="submit"]{
+div[data-field-type="big_checkbox"] {
+  display: flex;
+  flex-direction: column;
+}
+
+div[data-field-type="submit"] {
   padding-top: 1rem;
   border-top: 1px solid #ccc;
   text-align: center;
@@ -477,53 +496,53 @@ div[data-field-type="informational_html"][data-field-name*="intro-"] p {
   color: #999;
 }
 
-.TextInput-GeocodingField:hover{
-  border: none;
-  outline: none;
-} 
-
-.TextInput-GeocodingField:active{
+.TextInput-GeocodingField:hover {
   border: none;
   outline: none;
 }
 
-.TextInput-GeocodingField:focus{
+.TextInput-GeocodingField:active {
+  border: none;
+  outline: none;
+}
+
+.TextInput-GeocodingField:focus {
   border: none;
   outline: none;
 }
 /* --- */
 
-.input-container{
-display: 'flex';
-align-items: center;
+.input-container {
+  display: "flex";
+  align-items: center;
 }
 
 /* Radio input styles */
 .big-radio-field {
-display: block !important;
+  display: block !important;
 }
 
-.big-radio-field__label:before{
-background-color: #ffffff!important;
-border: 1px solid #000000 !important;
-border-radius: 50% !important;
-height: 16px !important;
-width: 16px !important;
-margin-top: 7px !important;
+.big-radio-field__label:before {
+  background-color: #ffffff !important;
+  border: 1px solid #000000 !important;
+  border-radius: 50% !important;
+  height: 16px !important;
+  width: 16px !important;
+  margin-top: 7px !important;
 }
 
-.big-radio-field__label--toggled{
-border: none !important;
+.big-radio-field__label--toggled {
+  border: none !important;
 }
 
-.big-radio-field__label--toggled:before{
-color: transparent !important;
-border: none !important;
+.big-radio-field__label--toggled:before {
+  color: transparent !important;
+  border: none !important;
 }
 
 .big-radio-field__label {
   border: none !important;
-  font-size: 14px ​!important;
+  font-size: 14px ​ !important;
   color: #000000 !important;
   padding: 8px 10px 8px 24px !important;
   display: block !important;
@@ -554,7 +573,7 @@ border: none !important;
 /* Checkbox styles */
 .big-checkbox-field__label {
   border: none !important;
-  font-size: 14px ​!important;
+  font-size: 14px ​ !important;
   line-height: 1rem !important;
   color: #000000 !important;
   padding: 8px 10px 8px 24px !important;
@@ -562,7 +581,7 @@ border: none !important;
   display: block !important;
 }
 .big-checkbox-field__label:before {
-  background-color: #ffffff!important;
+  background-color: #ffffff !important;
   border: 1px solid #000000 !important;
   height: 16px !important;
   width: 16px !important;
@@ -575,7 +594,7 @@ border: none !important;
 
 /* Toggle styles */
 .big-toggle-field {
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 .big-toggle-field__label {
   font-size: 1rem !important;
@@ -634,11 +653,13 @@ border: none !important;
   outline: none;
 }
 
-.datetime-field__input, .text-field, .textarea-field {
+.datetime-field__input,
+.text-field,
+.textarea-field {
   padding-left: 1em !important;
   border-radius: 20px !important;
   border-width: 1px !important;
-  border-color: #F0A300!important;
+  border-color: #f0a300 !important;
   font-size: 14px !important;
 }
 
@@ -654,14 +675,15 @@ border: none !important;
   outline: 0 !important;
 }
 
-.datetime-field__input, .text-field {
-height: 40px !important;
+.datetime-field__input,
+.text-field {
+  height: 40px !important;
 }
 /* --- */
 
 /* Dropdown styles */
 .dropdown-field {
-  border-color: #F0A300 !important;
+  border-color: #f0a300 !important;
   border-radius: 18px !important;
   border-width: 0.8px !important;
   color: #000000 !important;
@@ -685,13 +707,14 @@ option:hover {
   background-color: #a2ba91 !important;
 }
 
-.dropdown-field:focus-within{
+.dropdown-field:focus-within {
   border-radius: none !important;
   border-top-left-radius: 18px !important;
   border-top-right-radius: 18px !important;
 }
 
-#autocomplete-municipio, #autocomplete-ciudad-de-buenos-aires-barrios{
+#autocomplete-municipio,
+#autocomplete-ciudad-de-buenos-aires-barrios {
   border: none !important;
   border-top-left-radius: 16px !important;
   border-top-right-radius: 16px !important;
@@ -711,7 +734,7 @@ option:hover {
 }
 
 .autocomplete__menu {
-  background-color: #F7E5AC !important;
+  background-color: #f7e5ac !important;
   color: #000000 !important;
   outline: 0 !important;
   border: none !important;
@@ -724,7 +747,7 @@ option:hover {
 }
 
 .autocomplete__option {
-  background-color: #F7E5AC !important;
+  background-color: #f7e5ac !important;
   color: #000000 !important;
   border: none !important;
 }
@@ -732,12 +755,13 @@ option:hover {
 /* END FORM STYLES */
 
 /* START FORM STAGE CONTROL BAR STYLES */
-.css-w1p6qw-RegularText{
+.css-w1p6qw-RegularText {
   font-size: 14px !important;
   font-weight: 700;
 }
 
-.css-1cwt1ry-FormStageControlBar, .css-12t4dd3-FormStageControlBar {
+.css-1cwt1ry-FormStageControlBar,
+.css-12t4dd3-FormStageControlBar {
   border-top: 1px solid #aeadb3;
   box-shadow: none !important;
   margin-top: 0 !important;
@@ -760,24 +784,24 @@ option:hover {
   }
 }
 
-/*Continue button*/  
-.form-orange-button{
+/*Continue button*/
+.form-orange-button {
   border-radius: 20px !important;
   background-color: #f0a300;
   margin-left: 35px !important;
   margin-right: 35px !important;
   padding: 8px 16px;
-  }
+}
 
-/*Go back button*/  
-.css-1unahh2-Button{
+/*Go back button*/
+.css-1unahh2-Button {
   border-radius: 20px !important;
   padding: 8px 16px !important;
 }
 /* END FORM STAGE CONTROL BAR STYLES */
 
 /*START SUBMIT PANEL STYLES*/
-.input-form-submit-card{
+.input-form-submit-card {
   width: 300px;
   height: 130px;
   border: 1px solid #a1cde7;
@@ -785,24 +809,26 @@ option:hover {
   padding: 15px;
   font-size: 14px !important;
   margin: auto !important;
- }
- 
- .css-13sk7ex-Button-InputFormSubmitCard {
-   border-radius: 20px !important;
-   background-color: #a1cde7 !important;
-   padding: 8px 16px !important;
-   font-size: 14px !important;
-   font-weight: 700 !important;
-   width: 75% !important;
-   box-shadow: none !important;
- }
- /*END SUBMIT PANEL STYLES*/
+}
+
+.css-13sk7ex-Button-InputFormSubmitCard {
+  border-radius: 20px !important;
+  background-color: #a1cde7 !important;
+  padding: 8px 16px !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  width: 75% !important;
+  box-shadow: none !important;
+}
+/*END SUBMIT PANEL STYLES*/
 
 /* START LEFT SIDEBAR STYLES */
 .mapseed-left-sidebar {
   background-color: #ffffff;
+  width: 350px;
+  max-width: 90vw;
 }
-.mapseed-left-sidebar>div {
+.mapseed-left-sidebar > div {
   padding: 1.5rem;
 }
 .mapseed-left-sidebar h3 {
@@ -812,7 +838,7 @@ option:hover {
   margin: 0 0 1rem 0;
 }
 .mapseed-left-sidebar h4 {
-  font-size: .875rem;
+  font-size: 0.875rem;
   color: #718792;
   font-weight: 700;
   text-transform: uppercase;
@@ -824,31 +850,55 @@ option:hover {
   padding: 0;
   margin-bottom: 0;
 }
+.mapseed-map-layer-selector-container > span > span:first-child {
+  background-color: transparent;
+}
 .mapseed-map-layer-selector-container span span {
-  font-size: .875rem;
+  font-size: 0.875rem;
   display: inline-block;
-  padding: .5rem .5rem .5rem 0;
-  color: #000000;
- }
- .mapseed-map-layer-selector-container span span:last-child{
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+.mapseed-map-layer-selector-container span span:last-child {
   margin: 0;
-  padding: .25rem;
- }
- .mapseed-map-layer-selector-container span.fa-check {
-   color: #ffab00;
- }
- .css-pigogt {
+  padding: 0.25rem;
+}
+.map-layer-status-spinner {
+  display: inline;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  margin: 0;
+}
+.map-layer-status-spinner:last-child {
+  display: inline;
+  padding: 0.25rem;
+  margin: 0;
+}
+.icon-container {
+  color: white;
+  border: solid;
+  border-color: #ffab00;
+  border-radius: 5px;
+}
+.icon-container:hover {
+  color: white;
+}
+.icon-container.checkbox-selected {
+  background-color: #ffab00;
+}
+.css-pigogt {
   right: 10px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  background-color: #ffffff;
+  background-color: #fff;
   color: #455a64;
   box-shadow: none;
+}
+.mapseed-left-sidebar > .css-pigogt {
+  background-color: transparent;
 }
 .css-pigogt:hover {
   color: #c67c00;
 }
-@media(max-width:960px) {
+@media (max-width: 960px) {
   .css-pigogt {
     font-size: 18px;
   }
@@ -866,21 +916,53 @@ option:hover {
 /* END LEFT SIDEBAR STYLES */
 
 /* START REPORTS STYLES */
-#site-wrap>div>section>div>div {
+#site-wrap > div > section > div > div {
   color: #000000;
 }
-#site-wrap>div>section>div:first-of-type>div:first-of-type>div:first-of-type {
+#site-wrap
+  > div
+  > section
+  > div:first-of-type
+  > div:first-of-type
+  > div:first-of-type {
   border-bottom: 2px solid #aeadb3;
 }
-#site-wrap>div>section>div:first-of-type>div:first-of-type>div:first-of-type.input-form-category-button {
+#site-wrap
+  > div
+  > section
+  > div:first-of-type
+  > div:first-of-type
+  > div:first-of-type.input-form-category-button {
   border-bottom: none;
   padding-bottom: 0;
 }
-#site-wrap>div>section>div:first-of-type>div:first-of-type>div:first-of-type img {
+#site-wrap
+  > div
+  > section
+  > div:first-of-type
+  > div:first-of-type
+  > div:first-of-type
+  img {
   border-radius: 50%;
 }
-#site-wrap>div>section>div:first-of-type>div:first-of-type>div:first-of-type>div:first-of-type div:nth-child(2) :nth-child(2), 
-#site-wrap>div>section>div:first-of-type>div:first-of-type>div:first-of-type>div:first-of-type div:nth-child(2) :nth-child(3) {
+#site-wrap
+  > div
+  > section
+  > div:first-of-type
+  > div:first-of-type
+  > div:first-of-type
+  > div:first-of-type
+  div:nth-child(2)
+  :nth-child(2),
+#site-wrap
+  > div
+  > section
+  > div:first-of-type
+  > div:first-of-type
+  > div:first-of-type
+  > div:first-of-type
+  div:nth-child(2)
+  :nth-child(3) {
   font-size: 1rem;
   color: #718792;
   text-transform: none;
@@ -895,16 +977,16 @@ option:hover {
 .field-summary h4 {
   font-size: 1rem;
 }
-div[class*=-RichTextareaFieldResponseWrapper] {
+div[class*="-RichTextareaFieldResponseWrapper"] {
   margin-top: 2rem;
 }
 .rich-textarea-field-response iframe {
   width: 100%;
-  height: calc(40vw/1.7);
+  height: calc(40vw / 1.7);
 }
-@media(max-width:960px) {
+@media (max-width: 960px) {
   .rich-textarea-field-response iframe {
-    height: calc(100vw/1.7);
+    height: calc(100vw / 1.7);
   }
 }
 .place-detail-survey-responses article {
@@ -949,7 +1031,7 @@ div[class*=-RichTextareaFieldResponseWrapper] {
     right: 0 !important;
     bottom: 0 !important;
     padding: 1.2em 2.5em !important;
-    }
+  }
 }
 
 @media (min-width: 1024px) {
@@ -958,48 +1040,48 @@ div[class*=-RichTextareaFieldResponseWrapper] {
     left: 20% !important;
     right: 20% !important;
     bottom: auto !important;
-    }
-  .css-wg8uo8-App:focus{
-  outline: none !important;
+  }
+  .css-wg8uo8-App:focus {
+    outline: none !important;
   }
 }
 
 /* END PRIVACY POLICY STYLES */
 
 /* START DYNAMIC COLOR CLASSES */
-.text-color-water{
+.text-color-water {
   color: #a1cde7 !important;
 }
 
-.text-color-relocations{
-  color: #F0A300 !important;
+.text-color-relocations {
+  color: #efcc5a !important;
 }
 
-.text-color-protected-area{
+.text-color-protected-area {
   color: #a2ba91 !important;
 }
 
-.border-color-water{
-  border-color: #a1cde7  !important;
+.border-color-water {
+  border-color: #a1cde7 !important;
 }
 
-.border-color-relocations{
-  border-color: #F0A300  !important;
+.border-color-relocations {
+  border-color: #efcc5a !important;
 }
 
-.border-color-protected-area{
+.border-color-protected-area {
   border-color: #a2ba91 !important;
 }
 
-.background-color-water{
-  background-color: #a1cde7  !important;
+.background-color-water {
+  background-color: #a1cde7 !important;
 }
 
-.background-color-relocations{
-  background-color: #F0A300  !important;
+.background-color-relocations {
+  background-color: #efcc5a !important;
 }
 
-.background-color-protected-area{
+.background-color-protected-area {
   background-color: #a2ba91 !important;
 }
 /* END DYNAMIC COLOR CLASSES */
