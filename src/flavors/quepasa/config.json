@@ -1568,9 +1568,16 @@
             "optional": false
           },
           {
+            "name": "title-news-info",
+            "type": "informational_html",
+            "prompt": "Ponele un título a tu historia.",
+            "content": "<span><i>Recordá que este es un espacio sujeto a políticas de publicación  y no se permiten contenidos propagandísticos partidarios ni lenguaje discriminatorio como se detalla en las condiciones de uso de QPR.</i></span>",
+            "optional": false
+          },
+          {
             "name": "title-news",
             "type": "text",
-            "prompt": "Ponele un título a tu historia. Recordá que este es un espacio sujeto a políticas de publicación  y no se permiten contenidos propagandísticos partidarios ni lenguaje discriminatorio como se detalla en las condiciones de uso de QPR.",
+            "prompt": "",
             "display_prompt": "Título",
             "placeholder": "",
             "qprFormType": "relocations",
