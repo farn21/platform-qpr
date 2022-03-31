@@ -14,7 +14,7 @@ const InputFormSubmitCard = props => {
       "border-color-water": props.qprFormType === "water",
       "border-color-relocations": props.qprFormType === "relocations"})}>
       <p style={{fontWeight: 700, color: '#000000'}}>Publicá tu experiencia en el mapa.</p>
-      <p style={{fontSize: '12px', color: '#aeadb3'}}>Si compartís tu experiencia con QPR, se mostrará públicamente.</p>
+      <p style={{fontSize: '12px', color: '#aeadb3'}}>Si compartís tu experiencia con QPR, se mostrará públicamente siempre que cumpla con las condiciones de uso.</p>
       <Button
         css={css`
           font-family: ${props.theme.text.bodyFontFamily};
