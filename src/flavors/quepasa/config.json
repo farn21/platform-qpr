@@ -2526,13 +2526,17 @@
               {
                 "label": "Usos y memorias del área:  actividades que se realizan en el área actualmente  o que conozcas a través de relatos históricos.",
                 "value": "area-memories"
+              },
+              {
+                "label": "Protección del espacio: aspectos asociados a garantizar la protección legal del área, como acciones en curso o problemas que se enfrentan.",
+                "value": "area-protection"
               }
             ]
           },
           {
             "name": "title-contributions-registered-users",
             "type": "text",
-            "prompt": "Título",
+            "prompt": "Elegí un título para presentar de qué se trata",
             "display_prompt": "Título",
             "placeholder": "",
             "optional": false,
@@ -2541,9 +2545,9 @@
           {
             "name": "text-area-contributions-registered-users",
             "type": "textarea",
-            "prompt": "Comentario",
+            "prompt": "Descripción",
             "placeholder": "",
-            "display_prompt": "Comentario",
+            "display_prompt": "Describí brevemente de qué se trata:",
             "optional": false,
             "qprFormType": "relocations"
           },
