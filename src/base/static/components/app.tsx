@@ -74,9 +74,9 @@ import { recordGoogleAnalyticsHit } from "../utils/analytics";
 import isValidNonConfigurableI18nKey from "../utils/i18n-utils";
 
 import Util from "../js/utils.js";
-import Modal from '@material-ui/core/Modal';
-import Button from '@material-ui/core/Button';
-import { makeStyles } from '@material-ui/core/styles';
+import Modal from "@material-ui/core/Modal";
+import Button from "@material-ui/core/Button";
+import { makeStyles } from "@material-ui/core/styles";
 
 browserUpdate({
   required: {
@@ -171,7 +171,7 @@ class App extends React.Component<Props, State> {
     },
     availableLanguages: [],
     currentLanguageCode: "",
-    openModal: true
+    openModal: true,
   };
 
   async componentDidMount() {
@@ -209,7 +209,7 @@ class App extends React.Component<Props, State> {
     const datasets = await mapseedApiClient.datasets.get(
       this.props.datasetsConfig,
     );
-    
+
     this.props.loadDatasets(datasets);
 
     // Load all other ducks.
@@ -515,39 +515,63 @@ class App extends React.Component<Props, State> {
                       {this.props.appConfig.privacyPolicy && (
                         <Modal
                           open={this.state.openModal}
-                          onClose={()=> this.setState({
-                            openModal: false
-                          })}
+                          onClose={() =>
+                            this.setState({
+                              openModal: false,
+                            })
+                          }
                         >
-                          <div 
+                          <div
+                            className="privacy-policy-container"
                             css={css`
                               position: absolute;
-                              top: 15%;
-                              left: 20%;
-                              right:20%;
-                              background-color: #FFF;
-                              padding: 2em 4em;
-                              font-family: Roboto;
-                              
-                    
-                            `}> 
+                              bottom: 0;
+                              background-color: #fff;
+                              padding: 2em 1em;
+                              display: flex;
+                              flex-direction: column;
+                              align-items: center;
+                            `}
+                          >
                             <h2
                               css={css`
                                 margin-top: 0;
+                                font-family: "Montserrat";
+                                font-size: 14px;
+                                align-self: flex-start;
                               `}
                             >
                               {this.props.appConfig.privacyPolicy.title}
                             </h2>
-                            <p>{this.props.appConfig.privacyPolicy.content}</p>
+                            <p
+                              css={css`
+                                font-family: "Montserrat";
+                                font-size: 14px;
+                                margin: 0 0 1em 0;
+                              `}
+                            >
+                              {this.props.appConfig.privacyPolicy.content}
+                            </p>
                             <Button
+                              className="privacy-policy-button"
                               variant="contained"
-                              color="primary"
-                              onClick={()=>{
+                              css={css`
+                                font-family: "Montserrat";
+                                color: #f0a300;
+                                border: solid 1px #f0a300;
+                                border-radius: 27px;
+                                background-color: transparent;
+                                box-shadow: none;
+                                text-transform: none;
+                              `}
+                              onClick={() => {
                                 this.setState({
-                                  openModal: false
-                                })
+                                  openModal: false,
+                                });
                               }}
-                            >Aceptar</Button>
+                            >
+                              Aceptar
+                            </Button>
                           </div>
                         </Modal>
                       )}

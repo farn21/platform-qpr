@@ -17,9 +17,7 @@
       "clientSlug": "Calidad del agua",
       "anonymous_permissions": [
         {
-          "abilities": [
-            "create"
-          ],
+          "abilities": ["create"],
           "submission_set": "*"
         }
       ]
@@ -29,9 +27,7 @@
       "clientSlug": "Calidad del Agua: Imágenes y descripciones",
       "anonymous_permissions": [
         {
-          "abilities": [
-            "create"
-          ],
+          "abilities": ["create"],
           "submission_set": "*"
         }
       ]
@@ -41,9 +37,7 @@
       "clientSlug": "Relocalización y reurbanización: Mesas de trabajo",
       "anonymous_permissions": [
         {
-          "abilities": [
-            "create"
-          ],
+          "abilities": ["create"],
           "submission_set": "*"
         }
       ]
@@ -53,9 +47,7 @@
       "clientSlug": "Relocalización y reurbanización: Seguimiento",
       "anonymous_permissions": [
         {
-          "abilities": [
-            "create"
-          ],
+          "abilities": ["create"],
           "submission_set": "*"
         }
       ]
@@ -65,9 +57,7 @@
       "clientSlug": "Áreas naturales: Seguimiento",
       "anonymous_permissions": [
         {
-          "abilities": [
-            "create"
-          ],
+          "abilities": ["create"],
           "submission_set": "*"
         }
       ]
@@ -77,9 +67,7 @@
       "clientSlug": "Áreas naturales: Visitas",
       "anonymous_permissions": [
         {
-          "abilities": [
-            "create"
-          ],
+          "abilities": ["create"],
           "submission_set": "*"
         }
       ]
@@ -89,9 +77,7 @@
       "clientSlug": "Novedades",
       "anonymous_permissions": [
         {
-          "abilities": [
-            "create"
-          ],
+          "abilities": ["create"],
           "submission_set": "*"
         }
       ]
@@ -101,9 +87,7 @@
       "clientSlug": "site",
       "anonymous_permissions": [
         {
-          "abilities": [
-            "create"
-          ],
+          "abilities": ["create"],
           "submission_set": "*"
         }
       ]
@@ -113,9 +97,7 @@
       "clientSlug": "featured",
       "anonymous_permissions": [
         {
-          "abilities": [
-            "create"
-          ],
+          "abilities": ["create"],
           "submission_set": "comments"
         }
       ]
@@ -158,7 +140,7 @@
     },
     "sharingProviders": [],
     "privacyPolicy": {
-      "title": "",
+      "title": "Politica de privacidad",
       "content": "QPR recoge datos e imágenes compartidos por voluntarios y los pone a disposición de terceras partes y del público general.  Tené en cuenta que QPR utiliza cookies en su sitio web, para habilitar sus servicios y la funcionalidad y comprender tu interacción con el sitio, tal como se detalla en las condiciones de uso. Para continuar navegando el sitio es necesario que aceptes estas condiciones."
     }
   },
@@ -199,9 +181,7 @@
           "isExportable": true,
           "type": "freeBarChart",
           "groupBy": "subbasin_name_NOMBRE",
-          "groupValue": [
-            "get-count"
-          ],
+          "groupValue": ["get-count"],
           "tooltipFormat": "count",
           "xAxisLabel": "Subcuenca",
           "yAxisLabel": "Numero de reportes",
@@ -248,9 +228,7 @@
           "isExportable": true,
           "type": "freeBarChart",
           "groupBy": "subbasin_name_NOMBRE",
-          "groupValue": [
-            "get-count"
-          ],
+          "groupValue": ["get-count"],
           "tooltipFormat": "count",
           "xAxisLabel": "Subcuenca",
           "yAxisLabel": "Numero de reportes",
@@ -297,9 +275,7 @@
           "isExportable": true,
           "type": "freeBarChart",
           "groupBy": "subbasin_name_NOMBRE",
-          "groupValue": [
-            "get-count"
-          ],
+          "groupValue": ["get-count"],
           "tooltipFormat": "count",
           "xAxisLabel": "Subcuenca",
           "yAxisLabel": "Numero de reportes",
@@ -346,9 +322,7 @@
           "isExportable": true,
           "type": "freeBarChart",
           "groupBy": "subbasin_name_NOMBRE",
-          "groupValue": [
-            "get-count"
-          ],
+          "groupValue": ["get-count"],
           "tooltipFormat": "count",
           "xAxisLabel": "Subcuenca",
           "yAxisLabel": "Numero de reportes",
@@ -395,9 +369,7 @@
           "isExportable": true,
           "type": "freeBarChart",
           "groupBy": "subbasin_name_NOMBRE",
-          "groupValue": [
-            "get-count"
-          ],
+          "groupValue": ["get-count"],
           "tooltipFormat": "count",
           "xAxisLabel": "Subcuenca",
           "yAxisLabel": "Numero de reportes",
@@ -444,9 +416,7 @@
           "isExportable": true,
           "type": "freeBarChart",
           "groupBy": "subbasin_name_NOMBRE",
-          "groupValue": [
-            "get-count"
-          ],
+          "groupValue": ["get-count"],
           "tooltipFormat": "count",
           "xAxisLabel": "Subcuenca",
           "yAxisLabel": "Numero de reportes",
@@ -493,9 +463,7 @@
           "isExportable": true,
           "type": "freeBarChart",
           "groupBy": "subbasin_name_NOMBRE",
-          "groupValue": [
-            "get-count"
-          ],
+          "groupValue": ["get-count"],
           "tooltipFormat": "count",
           "xAxisLabel": "Subcuenca",
           "yAxisLabel": "Numero de reportes",
@@ -510,10 +478,7 @@
   "map": {
     "geolocationEnabled": true,
     "geocodingBarEnabled": false,
-    "geocodeHint": [
-      -34.700521,
-      -59.254934
-    ],
+    "geocodeHint": [-34.700521, -59.254934],
     "geocodeCountry": "ar",
     "geocodeFieldLabel": "Buscar una dirección ...",
     "geolocationOnload": false,
@@ -689,12 +654,8 @@
               "fill-color": "#70cce4",
               "fill-opacity": [
                 "interpolate",
-                [
-                  "linear"
-                ],
-                [
-                  "zoom"
-                ],
+                ["linear"],
+                ["zoom"],
                 10,
                 0.3,
                 12,
@@ -718,10 +679,7 @@
             "source": "riachuelo-subbasins",
             "source-layer": "riachuelo-subbasins",
             "layout": {
-              "text-field": [
-                "get",
-                "NOMBRE"
-              ]
+              "text-field": ["get", "NOMBRE"]
             },
             "paint": {
               "text-color": "#000000",
@@ -815,10 +773,7 @@
             "paint": {
               "line-color": "#ffab00",
               "line-width": 2,
-              "line-dasharray": [
-                1,
-                1
-              ]
+              "line-dasharray": [1, 1]
             }
           }
         ]
@@ -852,14 +807,7 @@
           {
             "id": "quepasa-featured-focused",
             "type": "symbol",
-            "filter": [
-              "==",
-              [
-                "get",
-                "location_type"
-              ],
-              "featured_place"
-            ],
+            "filter": ["==", ["get", "location_type"], "featured_place"],
             "source": "quepasa-featured",
             "layout": {
               "icon-image": "marker-novedades.png",
@@ -890,14 +838,7 @@
           {
             "id": "news-input-focused",
             "type": "symbol",
-            "filter": [
-              "==",
-              [
-                "get",
-                "location_type"
-              ],
-              "featured_place"
-            ],
+            "filter": ["==", ["get", "location_type"], "featured_place"],
             "source": "news-input",
             "layout": {
               "icon-image": "marker-novedades.png",
@@ -914,17 +855,7 @@
             "layout": {
               "icon-allow-overlap": true,
               "icon-image": "marker-novedades.png",
-              "icon-size": [
-                "step",
-                [
-                  "zoom"
-                ],
-                0.5,
-                11,
-                0.75,
-                14,
-                0.9
-              ],
+              "icon-size": ["step", ["zoom"], 0.5, 11, 0.75, 14, 0.9],
               "icon-anchor": "center"
             }
           }
@@ -939,14 +870,7 @@
           {
             "id": "natural-areas-input-focused",
             "type": "symbol",
-            "filter": [
-              "==",
-              [
-                "get",
-                "location_type"
-              ],
-              "featured_place"
-            ],
+            "filter": ["==", ["get", "location_type"], "featured_place"],
             "source": "natural-areas-input",
             "layout": {
               "icon-image": "marker-areas.png",
@@ -962,17 +886,7 @@
             "source": "natural-areas-input",
             "layout": {
               "icon-image": "marker-areas.png",
-              "icon-size": [
-                "step",
-                [
-                  "zoom"
-                ],
-                0.5,
-                11,
-                0.75,
-                14,
-                0.9
-              ],
+              "icon-size": ["step", ["zoom"], 0.5, 11, 0.75, 14, 0.9],
               "icon-anchor": "center"
             }
           }
@@ -987,14 +901,7 @@
           {
             "id": "natural-areas-input-register-focused",
             "type": "symbol",
-            "filter": [
-              "==",
-              [
-                "get",
-                "location_type"
-              ],
-              "featured_place"
-            ],
+            "filter": ["==", ["get", "location_type"], "featured_place"],
             "source": "natural-areas-input",
             "layout": {
               "icon-image": "marker-areas.png",
@@ -1011,17 +918,7 @@
             "layout": {
               "icon-allow-overlap": true,
               "icon-image": "marker-areas.png",
-              "icon-size": [
-                "step",
-                [
-                  "zoom"
-                ],
-                0.5,
-                11,
-                0.75,
-                14,
-                0.9
-              ],
+              "icon-size": ["step", ["zoom"], 0.5, 11, 0.75, 14, 0.9],
               "icon-anchor": "center"
             }
           }
@@ -1036,14 +933,7 @@
           {
             "id": "water-input-focused",
             "type": "symbol",
-            "filter": [
-              "==",
-              [
-                "get",
-                "location_type"
-              ],
-              "featured_place"
-            ],
+            "filter": ["==", ["get", "location_type"], "featured_place"],
             "source": "water-input",
             "layout": {
               "icon-image": "marker-question.png",
@@ -1060,17 +950,7 @@
             "layout": {
               "icon-allow-overlap": true,
               "icon-image": "marker-question.png",
-              "icon-size": [
-                "step",
-                [
-                  "zoom"
-                ],
-                0.5,
-                11,
-                0.75,
-                14,
-                0.9
-              ],
+              "icon-size": ["step", ["zoom"], 0.5, 11, 0.75, 14, 0.9],
               "icon-anchor": "center"
             }
           }
@@ -1085,14 +965,7 @@
           {
             "id": "water-input-register-focused",
             "type": "symbol",
-            "filter": [
-              "==",
-              [
-                "get",
-                "location_type"
-              ],
-              "featured_place"
-            ],
+            "filter": ["==", ["get", "location_type"], "featured_place"],
             "source": "water-input-register",
             "layout": {
               "icon-image": "marker-question.png",
@@ -1109,17 +982,7 @@
             "layout": {
               "icon-allow-overlap": true,
               "icon-image": "marker-question.png",
-              "icon-size": [
-                "step",
-                [
-                  "zoom"
-                ],
-                0.5,
-                11,
-                0.75,
-                14,
-                0.9
-              ],
+              "icon-size": ["step", ["zoom"], 0.5, 11, 0.75, 14, 0.9],
               "icon-anchor": "center"
             }
           }
@@ -1134,14 +997,7 @@
           {
             "id": "relocations-input-focused",
             "type": "symbol",
-            "filter": [
-              "==",
-              [
-                "get",
-                "location_type"
-              ],
-              "featured_place"
-            ],
+            "filter": ["==", ["get", "location_type"], "featured_place"],
             "source": "relocations-input",
             "layout": {
               "icon-image": "marker-observation.png",
@@ -1158,17 +1014,7 @@
             "layout": {
               "icon-allow-overlap": true,
               "icon-image": "marker-observation.png",
-              "icon-size": [
-                "step",
-                [
-                  "zoom"
-                ],
-                0.5,
-                11,
-                0.75,
-                14,
-                0.9
-              ],
+              "icon-size": ["step", ["zoom"], 0.5, 11, 0.75, 14, 0.9],
               "icon-anchor": "center"
             }
           }
@@ -1183,14 +1029,7 @@
           {
             "id": "relocations-input-register-focused",
             "type": "symbol",
-            "filter": [
-              "==",
-              [
-                "get",
-                "location_type"
-              ],
-              "featured_place"
-            ],
+            "filter": ["==", ["get", "location_type"], "featured_place"],
             "source": "relocations-input-register",
             "layout": {
               "icon-image": "marker-observation.png",
@@ -1207,17 +1046,7 @@
             "layout": {
               "icon-allow-overlap": true,
               "icon-image": "marker-observation.png",
-              "icon-size": [
-                "step",
-                [
-                  "zoom"
-                ],
-                0.5,
-                11,
-                0.75,
-                14,
-                0.9
-              ],
+              "icon-size": ["step", ["zoom"], 0.5, 11, 0.75, 14, 0.9],
               "icon-anchor": "center"
             }
           }
@@ -1479,7 +1308,7 @@
         "datasetSlug": "news-input",
         "icon_url": "/static/css/images/markers/marker-novedades.png",
         "value": "novedades",
-        "label": "NOVEDADES",
+        "label": "Novedades",
         "fields": [
           {
             "name": "lng-lat",
@@ -1677,7 +1506,7 @@
         "datasetSlug": "natural-areas-input",
         "icon_url": "/static/css/images/markers/marker-areas.svg",
         "value": "areas-protegidas-2",
-        "label": "ÁREAS NATURALES:VISITAS",
+        "label": "Áreas naturales: visitas",
         "geospatialAnalysis": [
           {
             "name": "subbasin_name",
@@ -1881,9 +1710,7 @@
             "triggers": [
               {
                 "value": "no-visit",
-                "targets": [
-                  "frequency-areas"
-                ]
+                "targets": ["frequency-areas"]
               }
             ],
             "content": [
@@ -2174,7 +2001,7 @@
         "datasetSlug": "natural-areas-input-register",
         "icon_url": "/static/css/images/markers/marker-areas.svg",
         "value": "areas-protegidas-2",
-        "label": "ÁREAS NATURALES: SEGUIMIENTO",
+        "label": "Áreas naturales: seguimiento",
         "geospatialAnalysis": [
           {
             "name": "subbasin_name",
@@ -2378,9 +2205,7 @@
             "triggers": [
               {
                 "value": "bond-other",
-                "targets": [
-                  "bond-other-answer-area-registered-users"
-                ]
+                "targets": ["bond-other-answer-area-registered-users"]
               }
             ],
             "content": [
@@ -2426,9 +2251,7 @@
             "triggers": [
               {
                 "value": "value-other-aspects-registered-users",
-                "targets": [
-                  "value-other-aspects-answer-area-registered-users"
-                ]
+                "targets": ["value-other-aspects-answer-area-registered-users"]
               }
             ],
             "content": [
@@ -2470,9 +2293,7 @@
             "triggers": [
               {
                 "value": "threat-other-aspects",
-                "targets": [
-                  "threat-other-aspects-answer-area-registered-users"
-                ]
+                "targets": ["threat-other-aspects-answer-area-registered-users"]
               }
             ],
             "content": [
@@ -2521,7 +2342,6 @@
             "display_prompt": "Contribuciones",
             "qprFormType": "relocation",
             "content": [
-
               {
                 "label": "Estado del área: observaciones del área; pueden ser amenazas o condiciones de cuidado y mantenimiento.",
                 "value": "area-state"
@@ -2606,7 +2426,7 @@
         "datasetSlug": "water-input",
         "icon_url": "/static/css/images/markers/marker-agua.svg",
         "value": "agua-calidad-open",
-        "label": "CALIDAD DEL AGUA",
+        "label": "Calidad del agua",
         "geospatialAnalysis": [
           {
             "name": "subbasin_name",
@@ -2619,9 +2439,7 @@
             ]
           }
         ],
-        "visibleLayerGroupIds": [
-          "riachuelo-subbasins"
-        ],
+        "visibleLayerGroupIds": ["riachuelo-subbasins"],
         "multi_stage": [
           {
             "start_field_index": 1,
@@ -2935,9 +2753,7 @@
             "triggers": [
               {
                 "value": "yes-floating-materials-water",
-                "targets": [
-                  "type-floating-materials-water"
-                ]
+                "targets": ["type-floating-materials-water"]
               }
             ],
             "content": [
@@ -3004,9 +2820,7 @@
             "triggers": [
               {
                 "value": "yes-pollution-source-water",
-                "targets": [
-                  "type-pollution-source-water"
-                ]
+                "targets": ["type-pollution-source-water"]
               }
             ],
             "content": [
@@ -3065,9 +2879,7 @@
             "triggers": [
               {
                 "value": "yes-margin-vegetation-water",
-                "targets": [
-                  "type-margin-vegetation-water"
-                ]
+                "targets": ["type-margin-vegetation-water"]
               }
             ],
             "content": [
@@ -3122,9 +2934,7 @@
             "triggers": [
               {
                 "value": "yes-body-vegetation-water",
-                "targets": [
-                  "type-body-vegetation-water"
-                ]
+                "targets": ["type-body-vegetation-water"]
               }
             ],
             "content": [
@@ -3246,9 +3056,7 @@
             "triggers": [
               {
                 "value": "yes-rain-water",
-                "targets": [
-                  "type-rain-water"
-                ]
+                "targets": ["type-rain-water"]
               }
             ],
             "content": [
@@ -3310,7 +3118,7 @@
         "datasetSlug": "water-input-register",
         "icon_url": "/static/css/images/markers/marker-agua.svg",
         "value": "agua-calidad-open",
-        "label": "CALIDAD DEL AGUA: IMÁGENES Y DESCRIPCIONES",
+        "label": "Calidad del agua: imágenes y descripciones",
         "geospatialAnalysis": [
           {
             "name": "subbasin_name",
@@ -3323,9 +3131,7 @@
             ]
           }
         ],
-        "visibleLayerGroupIds": [
-          "riachuelo-subbasins"
-        ],
+        "visibleLayerGroupIds": ["riachuelo-subbasins"],
         "multi_stage": [
           {
             "start_field_index": 1,
@@ -3459,9 +3265,7 @@
             "triggers": [
               {
                 "value": "other-water-body",
-                "targets": [
-                  "other-answer-body-water-registered-users"
-                ]
+                "targets": ["other-answer-body-water-registered-users"]
               }
             ],
             "content": [
@@ -3535,9 +3339,7 @@
             "triggers": [
               {
                 "value": "other-checkpoint",
-                "targets": [
-                  "other-answer-checkpoint-water-registered-users"
-                ]
+                "targets": ["other-answer-checkpoint-water-registered-users"]
               }
             ],
             "content": [
@@ -3675,9 +3477,7 @@
             "triggers": [
               {
                 "value": "yes-floating-materials-water",
-                "targets": [
-                  "type-floating-materials-water-registered-users"
-                ]
+                "targets": ["type-floating-materials-water-registered-users"]
               }
             ],
             "content": [
@@ -3762,9 +3562,7 @@
             "triggers": [
               {
                 "value": "yes-pollution-source-water",
-                "targets": [
-                  "type-pollution-source-water-registered-users"
-                ]
+                "targets": ["type-pollution-source-water-registered-users"]
               }
             ],
             "content": [
@@ -3823,9 +3621,7 @@
             "triggers": [
               {
                 "value": "yes-margin-vegetation-water",
-                "targets": [
-                  "type-margin-vegetation-water-registered-users"
-                ]
+                "targets": ["type-margin-vegetation-water-registered-users"]
               }
             ],
             "content": [
@@ -3880,9 +3676,7 @@
             "triggers": [
               {
                 "value": "yes-body-vegetation-water",
-                "targets": [
-                  "type-body-vegetation-water-registered-users"
-                ]
+                "targets": ["type-body-vegetation-water-registered-users"]
               }
             ],
             "content": [
@@ -3933,9 +3727,7 @@
             "triggers": [
               {
                 "value": "yes-fauna",
-                "targets": [
-                  "type-fauna-water-registered-users"
-                ]
+                "targets": ["type-fauna-water-registered-users"]
               }
             ],
             "content": [
@@ -4022,9 +3814,7 @@
             "triggers": [
               {
                 "value": "yes-rain-water",
-                "targets": [
-                  "type-rain-water-registered-users"
-                ]
+                "targets": ["type-rain-water-registered-users"]
               }
             ],
             "content": [
@@ -4135,7 +3925,7 @@
         "datasetSlug": "relocations-input-register",
         "icon_url": "/static/css/images/markers/marker-relocalizaciones.svg",
         "value": "reporte-territorial",
-        "label": "RELOCALIZACIÓN Y REURBANIZACIÓN: MESAS DE TRABAJO",
+        "label": "Relocalización y reurbanización: mesas de trabajo",
         "geospatialAnalysis": [
           {
             "name": "subbasin_name",
@@ -4201,93 +3991,63 @@
             "triggers": [
               {
                 "value": "almirante-brown-relocation-registered-users",
-                "targets": [
-                  "almirante-brown-barrios"
-                ]
+                "targets": ["almirante-brown-barrios"]
               },
               {
                 "value": "avellaneda-relocation-registered-users",
-                "targets": [
-                  "avellaneda-barrios"
-                ]
+                "targets": ["avellaneda-barrios"]
               },
               {
                 "value": "canuelas-relocation-registered-users",
-                "targets": [
-                  "canuelas-barrios"
-                ]
+                "targets": ["canuelas-barrios"]
               },
               {
                 "value": "esteban-echeverria-relocation-registered-users",
-                "targets": [
-                  "esteban-echeverria-barrios"
-                ]
+                "targets": ["esteban-echeverria-barrios"]
               },
               {
                 "value": "ezeiza-relocation-registered-users",
-                "targets": [
-                  "ezeiza-barrios"
-                ]
+                "targets": ["ezeiza-barrios"]
               },
               {
                 "value": "la-matanza-relocation-registered-users",
-                "targets": [
-                  "la-matanza-barrios"
-                ]
+                "targets": ["la-matanza-barrios"]
               },
               {
                 "value": "lanus-relocation-registered-users",
-                "targets": [
-                  "lanus-barrios"
-                ]
+                "targets": ["lanus-barrios"]
               },
               {
                 "value": "peron-relocation-registered-users",
-                "targets": [
-                  "peron-barrios"
-                ]
+                "targets": ["peron-barrios"]
               },
               {
                 "value": "las-heras-relocation-registered-users",
-                "targets": [
-                  "las-heras-barrios"
-                ]
+                "targets": ["las-heras-barrios"]
               },
               {
                 "value": "lomas-de-zamora-relocation-registered-users",
-                "targets": [
-                  "lomas-de-zamora-barrios"
-                ]
+                "targets": ["lomas-de-zamora-barrios"]
               },
               {
                 "value": "marcos-paz-relocation-registered-users",
-                "targets": [
-                  "marcos-paz-barrios"
-                ]
+                "targets": ["marcos-paz-barrios"]
               },
               {
                 "value": "san-vicente-relocation-registered-users",
-                "targets": [
-                  "san-vicente-barrios"
-                ]
+                "targets": ["san-vicente-barrios"]
               },
               {
                 "value": "merlo-relocation-registered-users",
-                "targets": [
-                  "merlo-barrios"
-                ]
+                "targets": ["merlo-barrios"]
               },
               {
                 "value": "moron-relocation-registered-users",
-                "targets": [
-                  "moron-barrios"
-                ]
+                "targets": ["moron-barrios"]
               },
               {
                 "value": "ciudad-de-buenos-aires-relocation-registered-users",
-                "targets": [
-                  "ciudad-de-buenos-aires-barrios"
-                ]
+                "targets": ["ciudad-de-buenos-aires-barrios"]
               },
               {
                 "value": "other-relocation-registered-users",
@@ -4384,9 +4144,7 @@
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
-                "targets": [
-                  "answer-other-barrio-relocation-registered-users"
-                ]
+                "targets": ["answer-other-barrio-relocation-registered-users"]
               }
             ],
             "content": [
@@ -4484,9 +4242,7 @@
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
-                "targets": [
-                  "answer-other-barrio-relocation-registered-users"
-                ]
+                "targets": ["answer-other-barrio-relocation-registered-users"]
               }
             ],
             "content": [
@@ -4560,9 +4316,7 @@
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
-                "targets": [
-                  "answer-other-barrio-relocation-registered-users"
-                ]
+                "targets": ["answer-other-barrio-relocation-registered-users"]
               }
             ],
             "content": [
@@ -4696,9 +4450,7 @@
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
-                "targets": [
-                  "answer-other-barrio-relocation-registered-users"
-                ]
+                "targets": ["answer-other-barrio-relocation-registered-users"]
               }
             ],
             "content": [
@@ -4748,9 +4500,7 @@
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
-                "targets": [
-                  "answer-other-barrio-relocation-registered-users"
-                ]
+                "targets": ["answer-other-barrio-relocation-registered-users"]
               }
             ],
             "content": [
@@ -4796,9 +4546,7 @@
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
-                "targets": [
-                  "answer-other-barrio-relocation-registered-users"
-                ]
+                "targets": ["answer-other-barrio-relocation-registered-users"]
               }
             ],
             "content": [
@@ -4872,9 +4620,7 @@
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
-                "targets": [
-                  "answer-other-barrio-relocation-registered-users"
-                ]
+                "targets": ["answer-other-barrio-relocation-registered-users"]
               }
             ],
             "content": [
@@ -4924,9 +4670,7 @@
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
-                "targets": [
-                  "answer-other-barrio-relocation-registered-users"
-                ]
+                "targets": ["answer-other-barrio-relocation-registered-users"]
               }
             ],
             "content": [
@@ -5040,9 +4784,7 @@
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
-                "targets": [
-                  "answer-other-barrio-relocation-registered-users"
-                ]
+                "targets": ["answer-other-barrio-relocation-registered-users"]
               }
             ],
             "content": [
@@ -5112,9 +4854,7 @@
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
-                "targets": [
-                  "answer-other-barrio-relocation-registered-users"
-                ]
+                "targets": ["answer-other-barrio-relocation-registered-users"]
               }
             ],
             "content": [
@@ -5184,9 +4924,7 @@
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
-                "targets": [
-                  "answer-other-barrio-relocation-registered-users"
-                ]
+                "targets": ["answer-other-barrio-relocation-registered-users"]
               }
             ],
             "content": [
@@ -5232,9 +4970,7 @@
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
-                "targets": [
-                  "answer-other-barrio-relocation-registered-users"
-                ]
+                "targets": ["answer-other-barrio-relocation-registered-users"]
               }
             ],
             "content": [
@@ -5264,9 +5000,7 @@
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
-                "targets": [
-                  "answer-other-barrio-relocation-registered-users"
-                ]
+                "targets": ["answer-other-barrio-relocation-registered-users"]
               }
             ],
             "content": [
@@ -5328,9 +5062,7 @@
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
-                "targets": [
-                  "answer-other-barrio-relocation-registered-users"
-                ]
+                "targets": ["answer-other-barrio-relocation-registered-users"]
               }
             ],
             "content": [
@@ -5404,9 +5136,7 @@
             "triggers": [
               {
                 "value": "other-barrio-relocation-registered-users",
-                "targets": [
-                  "answer-other-barrio-relocation-registered-users"
-                ]
+                "targets": ["answer-other-barrio-relocation-registered-users"]
               }
             ],
             "content": [
@@ -5562,9 +5292,7 @@
             "triggers": [
               {
                 "value": "other-place-relocation-registred-users",
-                "targets": [
-                  "other-place-answer-relocation-registred-users"
-                ]
+                "targets": ["other-place-answer-relocation-registred-users"]
               }
             ],
             "content": [
@@ -5625,9 +5353,7 @@
             "triggers": [
               {
                 "value": "other-host-relocation-registred-users",
-                "targets": [
-                  "other-host-answer-relocation-registered-users"
-                ]
+                "targets": ["other-host-answer-relocation-registered-users"]
               }
             ],
             "content": [
@@ -5724,9 +5450,7 @@
             "triggers": [
               {
                 "value": "yes-authorities-attendees-relocation-registered-users",
-                "targets": [
-                  "authorities-relocation-registered-users"
-                ]
+                "targets": ["authorities-relocation-registered-users"]
               }
             ],
             "content": [
@@ -5807,9 +5531,7 @@
             "triggers": [
               {
                 "value": "other-topics-registered-users",
-                "targets": [
-                  "other-topics-answer-registered-users"
-                ]
+                "targets": ["other-topics-answer-registered-users"]
               }
             ],
             "content": [
@@ -5913,9 +5635,7 @@
             "triggers": [
               {
                 "value": "yes-next-meeting-relocation-registered-users",
-                "targets": [
-                  "date-next-meeting-relocation-registered-users"
-                ]
+                "targets": ["date-next-meeting-relocation-registered-users"]
               }
             ],
             "content": [
@@ -5997,9 +5717,7 @@
             "triggers": [
               {
                 "value": "other-topic-relocation-registered-users",
-                "targets": [
-                  "other-topic-answered-relocation-registered-users"
-                ]
+                "targets": ["other-topic-answered-relocation-registered-users"]
               }
             ],
             "content": [
@@ -6109,7 +5827,7 @@
         "datasetSlug": "relocations-input",
         "icon_url": "/static/css/images/markers/marker-relocalizaciones.svg",
         "value": "reporte-territorial",
-        "label": "RELOCALIZACIÓN Y REURBANIZACIÓN: SEGUIMIENTO",
+        "label": "Relocalización y reurbanización: seguimiento",
         "geospatialAnalysis": [
           {
             "name": "subbasin_name",
@@ -6246,100 +5964,67 @@
             "triggers": [
               {
                 "value": "ciudad-de-buenos-aires",
-                "targets": [
-                  "ciudad-de-buenos-aires-barrios"
-                ]
+                "targets": ["ciudad-de-buenos-aires-barrios"]
               },
               {
                 "value": "almirante-brown",
-                "targets": [
-                  "almirante-brown-barrios"
-                ]
+                "targets": ["almirante-brown-barrios"]
               },
               {
                 "value": "avellaneda",
-                "targets": [
-                  "avellaneda-barrios"
-                ]
+                "targets": ["avellaneda-barrios"]
               },
               {
                 "value": "canuelas",
-                "targets": [
-                  "canuelas-barrios"
-                ]
+                "targets": ["canuelas-barrios"]
               },
               {
                 "value": "esteban-echeverria",
-                "targets": [
-                  "esteban-echeverria-barrios"
-                ]
+                "targets": ["esteban-echeverria-barrios"]
               },
               {
                 "value": "ezeiza",
-                "targets": [
-                  "ezeiza-barrios"
-                ]
+                "targets": ["ezeiza-barrios"]
               },
               {
                 "value": "la-matanza",
-                "targets": [
-                  "la-matanza-barrios"
-                ]
+                "targets": ["la-matanza-barrios"]
               },
               {
                 "value": "lanus",
-                "targets": [
-                  "lanus-barrios"
-                ]
+                "targets": ["lanus-barrios"]
               },
               {
                 "value": "peron",
-                "targets": [
-                  "peron-barrios"
-                ]
+                "targets": ["peron-barrios"]
               },
               {
                 "value": "las-heras",
-                "targets": [
-                  "las-heras-barrios"
-                ]
+                "targets": ["las-heras-barrios"]
               },
               {
                 "value": "lomas-de-zamora",
-                "targets": [
-                  "lomas-de-zamora-barrios"
-                ]
+                "targets": ["lomas-de-zamora-barrios"]
               },
               {
                 "value": "marcos-paz",
-                "targets": [
-                  "marcos-paz-barrios"
-                ]
+                "targets": ["marcos-paz-barrios"]
               },
               {
                 "value": "san-vicente",
-                "targets": [
-                  "san-vicente-barrios"
-                ]
+                "targets": ["san-vicente-barrios"]
               },
               {
                 "value": "merlo",
-                "targets": [
-                  "merlo-barrios"
-                ]
+                "targets": ["merlo-barrios"]
               },
               {
                 "value": "moron",
-                "targets": [
-                  "moron-barrios"
-                ]
+                "targets": ["moron-barrios"]
               },
               {
                 "value": "otro",
-                "targets": [
-                  "otro-municipio",
-                  "otro-barrio"
-                ]
+                "targets": ["otro-municipio", "otro-barrio"]
               }
             ],
             "content": [
@@ -7419,9 +7104,7 @@
             "triggers": [
               {
                 "value": "situacion-relocalized",
-                "targets": [
-                  "before-municipality-relocation"
-                ]
+                "targets": ["before-municipality-relocation"]
               }
             ],
             "content": [
@@ -7458,106 +7141,71 @@
             "triggers": [
               {
                 "value": "ciudad-de-buenos-aires-before",
-                "targets": [
-                  "ciudad-de-buenos-aires-barrios-before"
-                ]
+                "targets": ["ciudad-de-buenos-aires-barrios-before"]
               },
               {
                 "value": "almirante-brown-before",
-                "targets": [
-                  "almirante-brown-barrios-before"
-                ]
+                "targets": ["almirante-brown-barrios-before"]
               },
               {
                 "value": "avellaneda-before",
-                "targets": [
-                  "avellaneda-barrios-before"
-                ]
+                "targets": ["avellaneda-barrios-before"]
               },
               {
                 "value": "canuelas-before",
-                "targets": [
-                  "canuelas-barrios-before"
-                ]
+                "targets": ["canuelas-barrios-before"]
               },
               {
                 "value": "esteban-echeverria-before",
-                "targets": [
-                  "esteban-echeverria-barrios-before"
-                ]
+                "targets": ["esteban-echeverria-barrios-before"]
               },
               {
                 "value": "la-matanza-before",
-                "targets": [
-                  "la-matanza-barrios-before"
-                ]
+                "targets": ["la-matanza-barrios-before"]
               },
               {
                 "value": "lanus-before",
-                "targets": [
-                  "lanus-barrios-before"
-                ]
+                "targets": ["lanus-barrios-before"]
               },
               {
                 "value": "las-heras-before",
-                "targets": [
-                  "las-heras-barrios-before"
-                ]
+                "targets": ["las-heras-barrios-before"]
               },
               {
                 "value": "peron-barrios",
-                "targets": [
-                  "peron-barrios-before"
-                ]
+                "targets": ["peron-barrios-before"]
               },
               {
                 "value": "ezeiza-before",
-                "targets": [
-                  "ezeiza-barrios-before"
-                ]
+                "targets": ["ezeiza-barrios-before"]
               },
               {
                 "value": "lomas-de-zamora-before",
-                "targets": [
-                  "lomas-de-zamora-barrios-before"
-                ]
+                "targets": ["lomas-de-zamora-barrios-before"]
               },
               {
                 "value": "marcos-paz-before",
-                "targets": [
-                  "marcos-paz-barrios-before"
-                ]
+                "targets": ["marcos-paz-barrios-before"]
               },
               {
                 "value": "merlo-before",
-                "targets": [
-                  "merlo-barrios-before"
-                ]
+                "targets": ["merlo-barrios-before"]
               },
               {
                 "value": "peron-before",
-                "targets": [
-                  "peron-barrios-before"
-                ]
+                "targets": ["peron-barrios-before"]
               },
               {
                 "value": "san-vicente-before",
-                "targets": [
-                  "san-vicente-barrios-before"
-                ]
+                "targets": ["san-vicente-barrios-before"]
               },
               {
                 "value": "moron-before",
-                "targets": [
-                  "moron-barrios-before"
-                ]
+                "targets": ["moron-barrios-before"]
               },
               {
                 "value": "otro-before",
-                "targets": [
-                  "otro-municipio",
-                  "otro-barrio-before"
-                ]
+                "targets": ["otro-municipio", "otro-barrio-before"]
               }
             ],
             "content": [
@@ -9188,7 +8836,7 @@
         "<p style='font-size:10px;'>QPR es una herramienta co-diseñada entre diversos actores impulsada por la Fundación Ambiente y Recursos Naturales (FARN) y el Centro de Investigaciones para la Transformación (CENIT) de la Universidad de San Martín (UNSAM) en el marco del proyecto “CoAct Ciencia Ciudadana Social para la Acción Colectiva” financiado por la Unión Europea.  El proyecto se propone usar el enfoque de ciencia ciudadana social para promover acciones de justicia ambiental en el cuenca Matanza-Riachuelo.  Si querés conocer más sobre el proyecto y sus resultados visitá <a href=\"//coactproject.eu\" target=\"_blank\">coactproject.eu.</a> </a>. Por dudas o sugerencias escribinos a <a href=\"//qpr@farn.org.ar\" target=\"_blank\">qpr@farn.org.ar.</a> </a></p>",
         "<div style='border-bottom: 0; display: flex; justify-content: space-between; align-items: center; width: 100%;'><img style='width: 13%; border-radius: 0; display: inline-block; margin-bottom: 0; margin-right: 2%;' src='/static/css/images/00-LOGO FARN.png'/><div style='margin-right: 2%; width: 1px; height: 40px; border-right: 1px solid #aeadb3; display: inline-block;'></div><img style='width: 13%; border-radius: 0; display: inline-block; margin-bottom: 0; margin-right: 2%;' src='/static/css/images/CENIT_UNSAM.png'/><div style='margin-right: 2%; width: 1px; height: 40px; border-right: 1px solid #aeadb3; display: inline-block;'></div><img style='width: 13%;border-radius: 0; display: inline-block; margin-bottom: 0; margin-right: 2%;' src='/static/css/images/coact.png'/><div style='margin-right: 2%; width: 1px; height: 40px; border-right: 1px solid #aeadb3; display: inline-block;'></div><img style='width: 13%;border-radius: 0; display: inline-block; margin-bottom: 0; margin-right: 2%;' src='/static/css/images/union-europea.png'/><span style='font-family: Montserrat, sans-serif; font-size: 7px;'>El proyecto CoAct ha recibido financiación del programa de investigación e innovación Horizon 2020 de la Unión Europea bajo el acuerdo de subvención número 873048.</span></div>"
       ]
-    }, 
+    },
     {
       "slug": "relocalizaciones",
       "content": [
@@ -9215,10 +8863,7 @@
         "renderIn": "FeaturedPlacesMenu",
         "placeId": 9041,
         "zoom": 12.18,
-        "pan_to": [
-          -58.40005,
-          -34.66138
-        ],
+        "pan_to": [-58.40005, -34.66138],
         "iconUrl": "/static/css/images/markers/marker-recorrido.svg",
         "spotlight": false
       }
