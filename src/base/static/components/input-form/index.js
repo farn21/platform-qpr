@@ -3,11 +3,6 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { List, Map, OrderedMap, fromJS } from "immutable";
 import { css, jsx } from "@emotion/core";
-import DialogTitle from "@material-ui/core/DialogTitle";
-import Dialog from "@material-ui/core/Dialog";
-import DialogContent from "@material-ui/core/DialogContent";
-import DialogContentText from "@material-ui/core/DialogContentText";
-import Button from '@material-ui/core/Button';
 import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 import eventEmitter from "../../utils/event-emitter";
@@ -34,7 +29,6 @@ import {
 import {
   createFeaturesInGeoJSONSource,
   updateLayerGroupVisibility,
-  mapViewportPropType,
   layerGroupsSelector,
   layerGroupsPropType,
 } from "../../state/ducks/map-style";
@@ -474,24 +468,25 @@ class InputForm extends Component {
     this.setState({
       messageSuccess: true,
     });
-    
-    setTimeout(async () => {
 
+    setTimeout(async () => {
       Util.log("USER", "new-place", "successfully-add-place");
 
       // Save attachments.
       if (this.attachments.length) {
         await Promise.all(
           this.attachments.map(async attachment => {
-            const attachmentResponse = await mapseedApiClient.attachments.create({
-              placeUrl: placeResponse.url,
-              attachment,
-              includePrivate: this.props.hasGroupAbilitiesInDatasets({
-                abilities: ["can_access_protected"],
-                datasetSlugs: [this.props.datasetSlug],
-                submissionSet: "places",
-              }),
-            });
+            const attachmentResponse = await mapseedApiClient.attachments.create(
+              {
+                placeUrl: placeResponse.url,
+                attachment,
+                includePrivate: this.props.hasGroupAbilitiesInDatasets({
+                  abilities: ["can_access_protected"],
+                  datasetSlugs: [this.props.datasetSlug],
+                  submissionSet: "places",
+                }),
+              },
+            );
             if (attachmentResponse) {
               placeResponse.attachments.push(attachmentResponse);
               Util.log("USER", "dataset", "successfully-add-attachment");
@@ -584,7 +579,7 @@ class InputForm extends Component {
         }
         this.defaultPostSave(placeResponse);
       }
-    }, 4000)
+    }, 4000);
   };
 
   defaultPostSave(placeResponse) {
@@ -626,7 +621,7 @@ class InputForm extends Component {
   }
 
   getFields() {
-    console.log('multistage', this.selectedCategoryConfig.multi_stage)
+    console.log("multistage", this.selectedCategoryConfig.multi_stage);
     return (this.selectedCategoryConfig.multi_stage
       ? this.getFieldsFromStage({
           fields: this.state.fields,
@@ -639,8 +634,8 @@ class InputForm extends Component {
   }
 
   getFieldsFromStage({ fields, stage }) {
-    console.log('fields', fields)
-    console.log('stage', stage)
+    console.log("fields", fields);
+    console.log("stage", stage);
     return fields.slice(stage.start_field_index - 1, stage.end_field_index);
   }
 
@@ -654,7 +649,6 @@ class InputForm extends Component {
   };
 
   render() {
-    
     return (
       <>
         <InfoModal
@@ -673,7 +667,7 @@ class InputForm extends Component {
               ? this.props.layout === "desktop"
                 ? "122px"
                 : "60px"
-              : "30px"};
+              : "0"};
           `}
         >
           {this.selectedCategoryConfig.multi_stage && (
@@ -767,17 +761,18 @@ class InputForm extends Component {
             />
           )}
         </div>
-        
+
         {this.state.messageSuccess && (
-          <div 
+          <div
             css={css`
               position: absolute;
               z-index: 10000;
               top: 13em;
               left: 4em;
-              background-color: #FFF;
-              font-family:Roboto;
-            `}> 
+              background-color: #fff;
+              font-family: Roboto;
+            `}
+          >
             <h1>Datos guardados con éxito</h1>
           </div>
         )}

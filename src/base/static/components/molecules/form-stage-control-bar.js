@@ -1,15 +1,13 @@
 /** @jsx jsx */
 import React from "react";
 import PropTypes from "prop-types";
-import { withTranslation, Trans } from "react-i18next";
+import { withTranslation } from "react-i18next";
 import { css, jsx } from "@emotion/core";
 
 import { Button } from "../atoms/buttons";
-import { ProgressBar } from "../atoms/imagery";
 import { RegularText } from "../atoms/typography";
 
 const FormStageControlBar = props => {
-  const { currentStage, numStages } = props;
   const advanceOpts = {};
   const retreatOpts = {};
   if (props.currentStage !== props.numStages) {
@@ -53,8 +51,7 @@ const FormStageControlBar = props => {
             margin-top: 0;
           `}
           weight="bold"
-        >
-        </RegularText>
+        ></RegularText>
       )}
       <div
         css={css`
@@ -62,28 +59,40 @@ const FormStageControlBar = props => {
           align-items: center;
         `}
       >
-        {props.currentStage !== props.numStages && !props.isSingleCategory && (<RegularText> Hacé click en "SIGUIENTE" para publicar tu experiencia</RegularText>)}
-        {props.currentStage > 1 && <Button
-          style={{ marginLeft: "8px" }}
-          disabled={props.isSingleCategory && props.currentStage === 1}
-          variant="flat"
-          color="primary"
-          size="regular"
-          {...retreatOpts}
-        >
-          <RegularText>{props.t("previousStageLinkLabel", "Atrás")}</RegularText>
-        </Button>}
-        {props.currentStage !== props.numStages && <Button
-          style={{ marginLeft: "8px" }}
-          disabled={props.currentStage === props.numStages}
-          variant="flat"
-          color="primary"
-          size="regular"
-          {...advanceOpts}
-          className="form-orange-button"
-        >
-          <RegularText>{props.t("nextStageLinkLabel", "Siguiente")}</RegularText>
-        </Button>}
+        {props.currentStage !== props.numStages && !props.isSingleCategory && (
+          <RegularText>
+            {'Hacé click en "SIGUIENTE" para publicar tu experiencia'}
+          </RegularText>
+        )}
+        {props.currentStage > 1 && (
+          <Button
+            style={{ marginLeft: "8px" }}
+            disabled={props.isSingleCategory && props.currentStage === 1}
+            variant="flat"
+            color="primary"
+            size="regular"
+            {...retreatOpts}
+          >
+            <RegularText>
+              {props.t("previousStageLinkLabel", "Atrás")}
+            </RegularText>
+          </Button>
+        )}
+        {props.currentStage !== props.numStages && (
+          <Button
+            style={{ marginLeft: "8px" }}
+            disabled={props.currentStage === props.numStages}
+            variant="flat"
+            color="primary"
+            size="regular"
+            {...advanceOpts}
+            className="form-orange-button"
+          >
+            <RegularText>
+              {props.t("nextStageLinkLabel", "Siguiente")}
+            </RegularText>
+          </Button>
+        )}
       </div>
     </div>
   );

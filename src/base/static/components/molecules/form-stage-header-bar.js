@@ -30,7 +30,6 @@ const FormStageHeaderBar = props => {
           justifyContent: "flex-start",
           margin: 0,
           padding: 0,
-          paddingBottom: "10px",
         }}
       >
         <img

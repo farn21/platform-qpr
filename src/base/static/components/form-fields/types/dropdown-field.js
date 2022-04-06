@@ -7,9 +7,6 @@ import "./dropdown-field.scss";
 const DropdownField = props => {
   const cn = classNames("dropdown-field", {
     "dropdown-field--has-autofill": props.hasAutofill,
-    "background-color-protected-area": props.qprFormType === "protected-area",
-    "background-color-water": props.qprFormType === "water",
-    "background-color-relocations": props.qprFormType === "relocations"
   });
 
   return (
@@ -48,7 +45,7 @@ DropdownField.propTypes = {
   ).isRequired,
   t: PropTypes.func.isRequired,
   value: PropTypes.string.isRequired,
-  qprFormType: PropTypes.string
+  qprFormType: PropTypes.string,
 };
 
 DropdownField.defaultProps = {

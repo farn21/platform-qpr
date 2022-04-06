@@ -318,18 +318,6 @@ body {
   color: transparent;
 }
 
-@media (min-width: 320px) {
-  #site-wrap > div > section {
-    padding-bottom: 140px !important;
-  }
-}
-
-@media (min-width: 1024px) {
-  #site-wrap > div > section {
-    padding-bottom: 92px !important;
-  }
-}
-
 @media (max-width: 960px) {
   #site-wrap > div > section > div {
     padding: 2rem 8px 8px 8px;
@@ -348,14 +336,19 @@ body {
   font-weight: 700;
   font-size: 0.75rem;
   border: none;
-  border-radius: 20px !important;
+  border-radius: 27px !important;
   background-color: #f0a300;
   padding: 8px 16px;
+  top: 78px;
+  left: 60px;
+  height: 48px;
 }
-@media (min-width: 960px) {
-  .css-1extdu3-Button-AddPlaceButtonContainer {
-    top: 78px !important;
-    left: 60px !important;
+@media (max-width: 960px) {
+  .mapseed-add-place-button-container {
+    width: 90vw;
+    top: unset;
+    bottom: 15px;
+    left: calc(50% - 45vw);
   }
 }
 /* END ADD PLACE BUTTON STYLES */
@@ -535,7 +528,7 @@ div[data-field-type="informational_html"][data-field-name*="intro-"] p {
 
 .big-radio-field__label:before {
   background-color: #ffffff !important;
-  border: 1px solid #000000 !important;
+  border: 1px solid #f0a300 !important;
   border-radius: 50% !important;
   height: 16px !important;
   width: 16px !important;
@@ -561,7 +554,7 @@ div[data-field-type="informational_html"][data-field-name*="intro-"] p {
 }
 
 .big-radio-field__label--toggled:before {
-  background-color: #000000 !important;
+  background-color: #f0a300 !important;
 }
 /* --- */
 
@@ -593,13 +586,13 @@ div[data-field-type="informational_html"][data-field-name*="intro-"] p {
 }
 .big-checkbox-field__label:before {
   background-color: #ffffff !important;
-  border: 1px solid #000000 !important;
+  border: 1px solid #f0a300 !important;
   height: 16px !important;
   width: 16px !important;
   margin-top: 6px !important;
 }
 .big-checkbox-field__label--toggled:before {
-  background-color: #000000 !important;
+  background-color: #f0a300 !important;
 }
 /* --- */
 
@@ -618,7 +611,7 @@ div[data-field-type="informational_html"][data-field-name*="intro-"] p {
   color: #000000 !important;
 }
 .big-toggle-field__label--toggled:before {
-  background-color: #ffab00 !important;
+  background-color: #f0a300 !important;
 }
 /* --- */
 
@@ -668,9 +661,9 @@ div[data-field-type="informational_html"][data-field-name*="intro-"] p {
 .text-field,
 .textarea-field {
   padding-left: 1em !important;
-  border-radius: 20px !important;
+  border-radius: 8px !important;
   border-width: 1px !important;
-  border-color: #f0a300 !important;
+  border-color: rgb(118, 118, 118) !important;
   font-size: 14px !important;
 }
 
@@ -694,8 +687,7 @@ div[data-field-type="informational_html"][data-field-name*="intro-"] p {
 
 /* Dropdown styles */
 .dropdown-field {
-  border-color: #f0a300 !important;
-  border-radius: 18px !important;
+  border-radius: 8px !important;
   border-width: 0.8px !important;
   color: #000000 !important;
   background-color: #ffffff;
@@ -813,28 +805,28 @@ option:hover {
 
 /*START SUBMIT PANEL STYLES*/
 .input-form-submit-card {
-  width: 300px;
-  height: 130px;
-  border: 1px solid #a1cde7;
   border-radius: 20px;
-  padding: 15px;
   font-size: 14px !important;
   margin: auto !important;
+}
+
+.input-form-submit-card > button {
+  background-color: #f0a300;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 20px;
+  width: 90vw;
+  max-width: 100%;
+  box-shadow: none;
+  text-transform: none;
+  height: 48px;
+  border-radius: 27px;
 }
 
 .css-1pjhrip-RegularText-InputFormCategoryButton {
   font-size: 0.9rem;
 }
 
-.css-13sk7ex-Button-InputFormSubmitCard {
-  border-radius: 20px !important;
-  background-color: #a1cde7 !important;
-  padding: 8px 16px !important;
-  font-size: 14px !important;
-  font-weight: 700 !important;
-  width: 75% !important;
-  box-shadow: none !important;
-}
 /*END SUBMIT PANEL STYLES*/
 
 /* START LEFT SIDEBAR STYLES */

@@ -1493,7 +1493,7 @@
           {
             "name": "submit",
             "type": "submit",
-            "label": "Publicar en el mapa",
+            "label": "Publicar experiencia",
             "qprFormType": "relocations"
           }
         ]
@@ -1517,22 +1517,6 @@
                 "name": "NOMBRE"
               }
             ]
-          }
-        ],
-        "multi_stage": [
-          {
-            "start_field_index": 1,
-            "end_field_index": 17,
-            "header": "Áreas Naturales: Visitas",
-            "qprFormType": "protected-area",
-            "description": ""
-          },
-          {
-            "start_field_index": 18,
-            "end_field_index": 19,
-            "header": "Áreas Naturales: Visitas",
-            "qprFormType": "protected-area",
-            "description": ""
           }
         ],
         "fields": [
@@ -1988,7 +1972,7 @@
           {
             "name": "submit",
             "type": "submit",
-            "label": "Publicar en el mapa",
+            "label": "Publicar experiencia",
             "qprFormType": "relocations"
           }
         ]
@@ -2012,22 +1996,6 @@
                 "name": "NOMBRE"
               }
             ]
-          }
-        ],
-        "multi_stage": [
-          {
-            "start_field_index": 1,
-            "end_field_index": 20,
-            "header": "ÁREAS NATURALES: SEGUIMIENTO",
-            "qprFormType": "protected-area",
-            "description": ""
-          },
-          {
-            "start_field_index": 21,
-            "end_field_index": 22,
-            "header": "ÁREAS NATURALES: SEGUIMIENTO",
-            "qprFormType": "protected-area",
-            "description": ""
           }
         ],
         "fields": [
@@ -2413,7 +2381,7 @@
           {
             "name": "submit",
             "type": "submit",
-            "label": "Publicar en el mapa",
+            "label": "Publicar experiencia",
             "qprFormType": "relocations"
           }
         ]
@@ -2440,22 +2408,6 @@
           }
         ],
         "visibleLayerGroupIds": ["riachuelo-subbasins"],
-        "multi_stage": [
-          {
-            "start_field_index": 1,
-            "end_field_index": 27,
-            "header": "Calidad del agua",
-            "description": "",
-            "qprFormType": "water"
-          },
-          {
-            "start_field_index": 28,
-            "end_field_index": 32,
-            "header": "Calidad del agua",
-            "description": "",
-            "qprFormType": "water"
-          }
-        ],
         "fields": [
           {
             "name": "lng-lat",
@@ -3104,7 +3056,7 @@
           {
             "name": "submit",
             "type": "submit",
-            "label": "Publicar en el mapa",
+            "label": "Publicar experiencia",
             "qprFormType": "relocations"
           }
         ]
@@ -3132,22 +3084,6 @@
           }
         ],
         "visibleLayerGroupIds": ["riachuelo-subbasins"],
-        "multi_stage": [
-          {
-            "start_field_index": 1,
-            "end_field_index": 37,
-            "header": "Calidad del agua: imágenes y descripciones",
-            "description": "",
-            "qprFormType": "water"
-          },
-          {
-            "start_field_index": 38,
-            "end_field_index": 39,
-            "header": "Calidad del agua: imágenes y descripciones",
-            "description": "",
-            "qprFormType": "water"
-          }
-        ],
         "fields": [
           {
             "name": "lng-lat",
@@ -3911,7 +3847,7 @@
           {
             "name": "submit",
             "type": "submit",
-            "label": "Publicar en el mapa",
+            "label": "Publicar experiencia",
             "qprFormType": "relocations"
           }
         ]
@@ -3936,22 +3872,6 @@
                 "name": "NOMBRE"
               }
             ]
-          }
-        ],
-        "multi_stage": [
-          {
-            "start_field_index": 1,
-            "end_field_index": 51,
-            "header": "Relocalización y reurbanización: Mesas de trabajo",
-            "qprFormType": "relocations",
-            "description": ""
-          },
-          {
-            "start_field_index": 52,
-            "end_field_index": 53,
-            "header": "Relocalización y reurbanización: Mesas de trabajo",
-            "qprFormType": "relocations",
-            "description": ""
           }
         ],
         "fields": [
@@ -5813,7 +5733,7 @@
           {
             "name": "submit",
             "type": "submit",
-            "label": "Publicar en el mapa",
+            "label": "Publicar experiencia",
             "qprFormType": "relocations"
           }
         ]
@@ -5838,22 +5758,6 @@
                 "name": "NOMBRE"
               }
             ]
-          }
-        ],
-        "multi_stage": [
-          {
-            "start_field_index": 1,
-            "end_field_index": 45,
-            "header": "RELOCALIZACIÓN Y REURBANIZACIÓN: SEGUIMIENTO",
-            "description": "",
-            "qprFormType": "relocations"
-          },
-          {
-            "start_field_index": 46,
-            "end_field_index": 47,
-            "header": "RELOCALIZACIÓN Y REURBANIZACIÓN: SEGUIMIENTO",
-            "description": "",
-            "qprFormType": "relocations"
           }
         ],
         "fields": [
@@ -8438,7 +8342,7 @@
           {
             "name": "submit",
             "type": "submit",
-            "label": "Publicar en el mapa",
+            "label": "Publicar experiencia",
             "qprFormType": "relocations"
           }
         ]
@@ -8453,7 +8357,7 @@
       },
       "submit": {
         "type": "submit",
-        "label": "Publicar en el mapa"
+        "label": "Publicar experiencia"
       },
       "barrio": {
         "type": "dropdown",
