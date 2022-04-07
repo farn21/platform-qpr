@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import React, { Component } from "react";
+import ReactDOM from "react-dom";
 import PropTypes from "prop-types";
 import { List, Map, OrderedMap, fromJS } from "immutable";
 import { css, jsx } from "@emotion/core";
@@ -465,6 +466,8 @@ class InputForm extends Component {
       });
     }
 
+    window.scrollTo(0, 0);
+
     this.setState({
       messageSuccess: true,
     });
@@ -649,7 +652,28 @@ class InputForm extends Component {
   };
 
   render() {
-    return (
+    return this.state.messageSuccess ? (
+      ReactDOM.createPortal(
+        <div
+          css={css`
+            position: fixed;
+            z-index: 10000;
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            background-color: #fff;
+            font-family: "Montserrat", sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          `}
+        >
+          <h1 className="success-title">¡Datos guardados con éxito!</h1>
+        </div>,
+        document.getElementById("site-wrap"),
+      )
+    ) : (
       <>
         <InfoModal
           isModalOpen={this.state.isInfoModalOpen}
@@ -761,21 +785,6 @@ class InputForm extends Component {
             />
           )}
         </div>
-
-        {this.state.messageSuccess && (
-          <div
-            css={css`
-              position: absolute;
-              z-index: 10000;
-              top: 13em;
-              left: 4em;
-              background-color: #fff;
-              font-family: Roboto;
-            `}
-          >
-            <h1>Datos guardados con éxito</h1>
-          </div>
-        )}
       </>
     );
   }

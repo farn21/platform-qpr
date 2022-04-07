@@ -114,6 +114,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.success-title {
+  font-size: 18px !important;
+  font-family: "Montserrat", sans-serif;
+}
+
 #mapseed-custom-page-container p,
 #mapseed-custom-page-container li {
   font-family: "Montserrat", sans-serif;
