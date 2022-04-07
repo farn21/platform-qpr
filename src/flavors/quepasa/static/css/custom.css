@@ -441,6 +441,7 @@ div[data-field-type="geocoding"] {
 }
 
 div[data-field-type="text"],
+div[data-field-type="time"],
 div[data-field-type="informational_html"],
 div[data-field-type="dropdown_autocomplete"],
 div[data-field-type="big_radio"],
@@ -657,9 +658,16 @@ div[data-field-type="informational_html"][data-field-name*="intro-"] p {
   outline: none;
 }
 
+.time-field {
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 1em;
+}
+
 .datetime-field__input,
 .text-field,
-.textarea-field {
+.textarea-field,
+.time-field {
   padding-left: 1em !important;
   border-radius: 8px !important;
   border-width: 1px !important;
@@ -680,7 +688,8 @@ div[data-field-type="informational_html"][data-field-name*="intro-"] p {
 }
 
 .datetime-field__input,
-.text-field {
+.text-field,
+.time-field {
   height: 40px !important;
 }
 /* --- */

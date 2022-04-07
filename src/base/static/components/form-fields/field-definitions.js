@@ -9,6 +9,7 @@ import {
   TextareaField,
   DropdownField,
   DatetimeField,
+  TimeField,
   GeocodingField,
   AddAttachmentButton,
   BigRadioField,
@@ -34,13 +35,11 @@ import {
   NumberFieldResponse,
   GeolocateField,
   LngLatField,
-
-
 } from "./types";
 import { isWithAnyValue, isNotEmpty } from "./validators";
 import { insertEmbeddedImages } from "../../utils/embedded-images";
 
-import Reaptcha from 'reaptcha';
+import Reaptcha from "reaptcha";
 
 const getDefaultValidator = isOptional => {
   return {
@@ -91,7 +90,10 @@ export default {
   [constants.TEXT_FIELD_TYPENAME]: {
     getValidator: getDefaultValidator,
     getComponent: (fieldConfig, context) => (
-      <TextField {...getSharedFieldProps(fieldConfig, context)} qprFormType={fieldConfig.qprFormType} />
+      <TextField
+        {...getSharedFieldProps(fieldConfig, context)}
+        qprFormType={fieldConfig.qprFormType}
+      />
     ),
     getInitialValue: ({ value }) => value,
     getResponseComponent: () => TextFieldResponse,
@@ -99,8 +101,10 @@ export default {
   [constants.TEXTAREA_FIELD_TYPENAME]: {
     getValidator: getDefaultValidator,
     getComponent: (fieldConfig, context) => (
-      <TextareaField {...getSharedFieldProps(fieldConfig, context)} 
-      qprFormType={fieldConfig.qprFormType} />
+      <TextareaField
+        {...getSharedFieldProps(fieldConfig, context)}
+        qprFormType={fieldConfig.qprFormType}
+      />
     ),
     getInitialValue: ({ value }) => value,
     getResponseComponent: () => TextareaFieldResponse,
@@ -231,6 +235,14 @@ export default {
     getInitialValue: ({ value }) => value,
     getResponseComponent: () => DatetimeFieldResponse,
   },
+  [constants.TIME_FIELD_TYPENAME]: {
+    getValidator: getDefaultValidator,
+    getComponent: (fieldConfig, context) => (
+      <TimeField {...getSharedFieldProps(fieldConfig, context)} />
+    ),
+    getInitialValue: ({ value }) => value,
+    getResponseComponent: () => TextFieldResponse,
+  },
   [constants.GEOCODING_FIELD_TYPENAME]: {
     getValidator: getPermissiveValidator,
     getComponent: (fieldConfig, context) => (
@@ -333,10 +345,10 @@ export default {
   [constants.RECAPTCHA_FIELD_TYPENAME]: {
     getValidator: getDefaultValidator,
     getComponent: (fieldConfig, context) => (
-      <Reaptcha 
-        sitekey="6LcfpPMcAAAAADlc5ygkBfzEP_UWuhhBqUpsMACH" 
-        onVerify={(rs)=>{
-          context.onChange(fieldConfig.name, rs)
+      <Reaptcha
+        sitekey="6LcfpPMcAAAAADlc5ygkBfzEP_UWuhhBqUpsMACH"
+        onVerify={rs => {
+          context.onChange(fieldConfig.name, rs);
         }}
       />
     ),

@@ -33,3 +33,4 @@ export { default as NumberField } from "../../molecules/form-field-types/number-
 export { default as NumberFieldResponse } from "../../molecules/place-detail-fields/number";
 export { default as GeolocateField } from "../../molecules/form-field-types/geolocate-field";
 export { default as LngLatField } from "../../molecules/form-field-types/lng-lat-field";
+export { default as TimeField } from "./time-field";

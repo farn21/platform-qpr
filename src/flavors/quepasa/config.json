@@ -2508,7 +2508,7 @@
           },
           {
             "name": "time-water",
-            "type": "text",
+            "type": "time",
             "prompt": "Ingresá la hora de la situación que estás compartiendo. Se trata de la hora del día en la que registraste la situación vinculada a la calidad de agua.",
             "display_prompt": "Hora",
             "placeholder": "Seleccioná una hora",
@@ -3184,7 +3184,7 @@
           },
           {
             "name": "time-water-registered-users",
-            "type": "text",
+            "type": "time",
             "prompt": "Ingresá la hora de la situación que estás compartiendo. Se trata de la hora del día en la que registraste la situación vinculada a la calidad de agua.",
             "display_prompt": "Hora",
             "placeholder": "Seleccioná una hora",
