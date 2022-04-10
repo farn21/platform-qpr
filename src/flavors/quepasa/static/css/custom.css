@@ -169,6 +169,9 @@ body {
   box-shadow: none;
   background-color: #ffffff;
   border-bottom: 1px solid #aeadb3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .mapseed-site-header h2 {
   letter-spacing: -0.5px;
@@ -223,22 +226,147 @@ body {
 .mapseed-site-header :nth-child(3) nav:hover {
   background-color: #718792;
 }
-.mapseed-site-header :nth-child(3) button {
-  background-color: #718792;
-  color: #fff;
-  padding: 0.3rem 1rem;
-}
+
 .mapseed-site-header :nth-child(3) button .MuiTypography-body1 {
   font-family: "Montserrat", sans-serif;
 }
-.mapseed-site-header :nth-child(3) button:hover {
-  background-color: #000000;
-  color: #fff;
-}
+
 @media (max-width: 960px) {
-  .mapseed-site-header > div {
-    margin-top: 7px;
+  .mapseed-site-header {
+    height: 40px;
   }
+
+  .mapseed-header-navigation {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 80vw;
+    max-width: 300px;
+    height: calc(100vh - 40px);
+    background-color: #fff;
+    margin: 0;
+    border-right: 1px solid #cfcfcf;
+  }
+
+  .mapseed-header-navigation > div > .mapseed-nav-item {
+    width: 80vw;
+    max-width: 300px;
+    height: 100%;
+    text-transform: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem !important;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .mapseed-header-navigation > div > .mapseed-nav-item > .fa-chevron-right {
+    color: #f0a300;
+  }
+
+  .mapseed-nav-item-container {
+    position: relative;
+    height: 60px;
+    padding: 0;
+  }
+
+  .mapseed-nav-item-container:not(:first-child)::after,
+  .mapseed-navbar-login-button::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    bottom: 0;
+    left: 0;
+  }
+
+  .mapseed-site-header > div > .fa-bars {
+    color: #f0a300;
+  }
+
+  .mapseed-header-navigation > div > .mapseed-navbar-login-button {
+    color: #f0a300;
+    width: 80vw;
+    height: 60px;
+    background-color: unset;
+    border: none;
+    margin: 0;
+    padding: 0 1rem;
+    max-width: 300px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .mapseed-navbar-login-button > span > p {
+    text-transform: none;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .header-logo-container {
+    display: none;
+  }
+
+  .mapseed-language-navigation {
+    position: fixed;
+    width: 80vw;
+    max-width: 300px;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mapseed-language-navigation,
+  .mapseed-language-navigation > ul,
+  .mapseed-language-navigation > ul > li,
+  .mapseed-language-navigation > ul > li > button {
+    background-color: #fff;
+  }
+
+  .mapseed-language-navigation > ul {
+    width: 80vw;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .mapseed-language-navigation > ul > li,
+  .mapseed-language-navigation > ul > li > button {
+    width: fit-content;
+  }
+
+  .mapseed-language-navigation > ul > li > button {
+    border: none;
+    box-shadow: none;
+    color: #333;
+  }
+
+  .mapseed-language-navigation > ul > li > button:hover {
+    background-color: unset;
+    color: #333;
+    text-decoration: underline;
+    font-weight: 900;
+  }
+
+  .selected-language {
+    font-weight: 900;
+    text-decoration: underline;
+  }
+
   .mapseed-site-header :nth-child(3) nav {
     text-indent: -9999px;
   }
@@ -262,7 +390,11 @@ body {
     background-color: transparent;
   }
 }
+
 @media (min-width: 960px) {
+  .mapseed-nav-item > .fa-chevron-right {
+    display: none;
+  }
   .mapseed-site-header :nth-child(3) nav::after {
     content: "";
     width: 0;
@@ -306,9 +438,9 @@ body {
 #site-wrap > div > section {
   padding: 18px;
   background-color: #ffffff;
-  border-left: 1px solid #aeadb3;
 }
-#site-wrap > div > section button[aria-label="close"] {
+#site-wrap > div > section button[aria-label="close"],
+#site-wrap > div > div button[aria-label="close"] {
   border-radius: 0;
   background-color: transparent;
   right: 12px;
@@ -316,16 +448,54 @@ body {
   top: 5px;
   box-shadow: none;
   color: #333;
-  margin-bottom: 5px;
+  top: 0;
   font-weight: 900;
+  font-size: 25px;
 }
-#site-wrap > div > section button[aria-label="close"]:hover {
-  color: transparent;
+#site-wrap > div > section button[aria-label="close"]:hover,
+#site-wrap > div > div button[aria-label="close"]:hover {
+  color: #f0a300;
+}
+
+#site-wrap > div > section button[aria-label="back"],
+#site-wrap > div > div button[aria-label="back"] {
+  border-radius: 0;
+  background-color: transparent;
+  right: auto;
+  left: 12px;
+  box-shadow: none;
+  color: #333;
+  top: 0;
+  font-weight: 900;
+  font-size: 25px;
+  position: absolute;
+  padding: 10px 16px 16px 16px;
+}
+#site-wrap > div > section button[aria-label="back"]:hover,
+#site-wrap > div > div button[aria-label="back"]:hover {
+  color: #f0a300;
+}
+
+@media (min-width: 960px) {
+  #site-wrap > div > section button[aria-label="close"],
+  #site-wrap > div > div button[aria-label="close"],
+  #site-wrap > div > section button[aria-label="back"],
+  #site-wrap > div > div button[aria-label="back"] {
+    top: 10px;
+  }
 }
 
 @media (max-width: 960px) {
   #site-wrap > div > section > div {
     padding: 2rem 8px 8px 8px;
+  }
+
+  .mapseed-content-panel {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    border: none;
+    overflow: hidden;
   }
 }
 @media (min-width: 960px) {
@@ -383,10 +553,165 @@ body {
 }
 /* END ADD NEWS BUTTON STYLES */
 
-/* START NEWS FEED HEADER STYLES */
+/* START NEWS FEED STYLES */
 .css-axz6ts-ListHeader {
   height: 100px;
 }
+
+.filter-title,
+.news-title {
+  font-family: "Montserrat", sans-serif;
+  color: #aeadb3;
+  padding: 0 1rem;
+}
+
+.filter-title {
+  font-size: 1rem;
+  text-align: left;
+  align-self: flex-start;
+  margin-bottom: 0;
+}
+
+.news-title {
+  font-size: 1.5rem;
+  margin-top: 4rem;
+}
+
+.news-search-input {
+  height: 100%;
+  width: 80%;
+  border-radius: 7px;
+  border: solid 1px #767676;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+.news-search-button {
+  height: 100%;
+  width: 20%;
+  background-color: #ffab00;
+  text-transform: none;
+  box-shadow: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.search-container,
+.filter-container {
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.search-container {
+  height: 40px;
+}
+
+.filter-container {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.filter-button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.filter-button {
+  text-transform: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter-checkbox {
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+  border: solid 2px #ffab00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-checkbox > i {
+  color: #fff;
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-checkbox:hover {
+  cursor: pointer;
+}
+
+.filter-checkbox.selected {
+  background-color: #ffab00;
+}
+
+.news-element-social-container {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.like-wrapper {
+  margin: 0;
+}
+
+.heart-icon {
+  color: #767676;
+  font-size: 1.5rem;
+}
+
+.avatar-container {
+  border-radius: 50%;
+  width: 32px;
+  min-width: 32px;
+  height: 32px;
+  box-sizing: border-box;
+  background-color: #767676;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-container > i {
+  color: #fff;
+}
+
+.place-info {
+  display: flex;
+}
+
+.view-on-map-link {
+  background-color: unset;
+  border: none;
+  box-shadow: none;
+  text-transform: unset;
+  padding: 0;
+  margin: 1rem 0 0 0;
+}
+
+.view-on-map-link > span {
+  color: #f0a300;
+  font-size: 1rem;
+}
+
+.shared-description {
+  font-size: 12px !important;
+  color: #767676;
+  font-weight: 100 !important;
+}
+
+@media (min-width: 960px) {
+  .list-view-container {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
 /* END NEWS FEED HEADER STYLES */
 
 /* START FORMS STYLES */
@@ -884,6 +1209,28 @@ option:hover {
   font-size: 0.875rem;
   display: inline-block;
   padding: 0.5rem 0.5rem 0.5rem 0;
+}
+.map-layer-status-spinner {
+  display: inline;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  margin: 0;
+}
+.map-layer-status-spinner:last-child {
+  display: inline;
+  padding: 0.25rem;
+  margin: 0;
+}
+.icon-container {
+  color: white;
+  border: solid;
+  border-color: #ffab00;
+  border-radius: 5px;
+}
+.icon-container:hover {
+  color: white;
+}
+.icon-container.checkbox-selected {
+  background-color: #ffab00;
   color: #000000;
 }
 .mapseed-map-layer-selector-container span span:last-child {
@@ -1104,3 +1451,17 @@ div[class*="-RichTextareaFieldResponseWrapper"] {
   background-color: #a2ba91 !important;
 }
 /* END DYNAMIC COLOR CLASSES */
+
+/* START PLACE DETAIL CLASSES  */
+
+.heart-icon {
+  color: #767676;
+  font-size: 1.5rem;
+}
+
+.heart-icon.supported {
+  color: #f0a300;
+  font-size: 1.5rem;
+}
+
+/* END PLACE DETAIL CLASSES  */

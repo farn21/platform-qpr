@@ -299,11 +299,31 @@ const CloseButton = styled(props => (
       },
     }}
   >
-    {"✕"}
+    <i className="fas fa-times"></i>
   </button>
 ))({
   color: "red",
   fontSize: "1.5em",
 });
 
-export { Button, EditorButton, IconButton, CloseButton };
+const BackButton = props => (
+  <button
+    aria-label="back"
+    className={props.className}
+    onClick={props.onClick}
+    css={{
+      border: "none",
+      backgroundColor: "transparent",
+      color: "#ff5e99",
+
+      "&:hover": {
+        cursor: "pointer",
+        color: "#cd2c67",
+      },
+    }}
+  >
+    <i className="fas fa-chevron-left"></i>
+  </button>
+);
+
+export { Button, EditorButton, IconButton, CloseButton, BackButton };

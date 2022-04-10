@@ -27,6 +27,7 @@ import { lighten } from "../../utils/color";
 const PlaceBodyContainer = styled("div")({
   display: "flex",
   width: "100%",
+  justifyContent: "space-between",
 });
 
 const PlaceInfo = styled("div")({
@@ -35,8 +36,6 @@ const PlaceInfo = styled("div")({
   marginRight: "16px",
 });
 const AvatarContainer = styled("div")({
-  flex: "0 30%",
-  minWidth: "48px",
   marginRight: "8px",
 });
 
@@ -45,9 +44,7 @@ const PlaceInfoContainer = styled("div")({
   flexDirection: "column",
 });
 const CommentsText = styled(props => (
-  <SmallText textTransform="uppercase" className={props.className}>
-    {props.children}
-  </SmallText>
+  <SmallText className={props.className}>{props.children}</SmallText>
 ))({
   marginTop: "4px",
 });
@@ -86,11 +83,12 @@ const SupportText = styled(props => (
 ))({
   color: "#333",
   display: "flex",
+  flexDirection: "column",
   alignItems: "center",
   marginTop: "auto",
   marginBottom: "auto",
 });
-const SupportHeartIcon = styled(HeartIcon)({
+const SupportHeartIcon = styled(props => <HeartIcon {...props} />)({
   marginRight: "4px",
 });
 const SocialMediaButton = styled(IconButton)({
@@ -213,50 +211,16 @@ const PlaceListItem = props => {
           flexDirection: "column",
         }}
       >
-        <div
-          role="rowheader"
-          css={{
-            display: "flex",
-            width: "100%",
-            flexDirection: "row",
-            justifyContent: "space-between",
-            alignItems: "center",
-            marginBottom: "4px",
-          }}
-        >
-          <SmallTitle>{props.place.title}</SmallTitle>
-          <PlaceSocialContainer>
-            <SupportText noWrap={true} textTransform="uppercase">
-              <SupportHeartIcon />
-              {numberOfSupports}
-            </SupportText>
-            <SocialMediaButton
-              icon="facebook"
-              size="small"
-              onClick={() => onSocialShare("facebook")}
-            />
-            <SocialMediaButton
-              icon="twitter"
-              size="small"
-              onClick={() => onSocialShare("twitter")}
-            />
-          </PlaceSocialContainer>
-        </div>
+        <SmallTitle>{props.place.title}</SmallTitle>
+
         <PlaceBodyContainer>
-          <PlaceInfo>
-            <AvatarContainer>
-              <UserAvatar
-                size="large"
-                src={
-                  props.place.submitter
-                    ? props.place.submitter.avatar_url
-                    : undefined
-                }
-              />
+          <div className="place-info">
+            <AvatarContainer className="avatar-container">
+              <i className="fas fa-user"></i>
             </AvatarContainer>
             <PlaceInfoContainer>
               <RegularText weight="bold">{submitterName}</RegularText>
-              <RegularText>
+              <RegularText className="shared-description">
                 {props.t(
                   "placeActionText",
                   `${props.placeConfig.action_text} esta experiencia en`,
@@ -269,10 +233,20 @@ const PlaceListItem = props => {
                   numberOfComments === 1
                     ? "commentsLabel"
                     : "commentsPluralLabel",
-                  `comment${numberOfComments === 1 ? "" : "s"}`,
+                  `Comentario${numberOfComments === 1 ? "" : "s"}`,
                 )}
               </CommentsText>
-               <PlaceInfoLink
+              <CommentsText>
+                {props.place.visitas}{" "}
+                {props.t(
+                  props.place.visitas === 1
+                    ? "commentsLabel"
+                    : "commentsPluralLabel",
+                  `Visita${props.place.visitas === 1 ? "" : "s"}`,
+                )}
+              </CommentsText>
+              <PlaceInfoLink
+                className="view-on-map-link"
                 href={`/${props.place.clientSlug}/${props.place.id}`}
               >
                 <SmallText
@@ -284,33 +258,29 @@ const PlaceListItem = props => {
                 </SmallText>
               </PlaceInfoLink>
             </PlaceInfoContainer>
-          </PlaceInfo>
-          <PlaceContent>
-            {!!props.place.attachments.length && (
-              <PlaceImage>
-                <img
-                  style={{ width: "100%" }}
-                  src={props.place.attachments[0].file}
-                  onLoad={props.onLoad}
-                />
-              </PlaceImage>
-            )}
-            <PlaceFieldsContainer>
-              {props.placeConfig.place_detail
-                .find(survey => survey.category === props.place.location_type)
-                .fields.filter(field => field.includeOnListItem)
-                .filter(field => props.place[field.name])
-                .map((field, index) => (
-                  <PlaceField
-                    placeFieldIndex={index}
-                    key={field.name}
-                    field={field}
-                    place={props.place}
-                    t={props.t}
-                  />
-                ))}
-            </PlaceFieldsContainer>
-          </PlaceContent>
+          </div>
+          <PlaceSocialContainer className="news-element-social-container">
+            <SupportText
+              noWrap={true}
+              textTransform="uppercase"
+              className="like-wrapper"
+            >
+              <i className="far fa-heart heart-icon"></i>
+              <small style={{ fontSize: "8px", color: "#767676" }}>
+                APOYAR
+              </small>
+            </SupportText>
+            <IconButton
+              icon="facebook"
+              size="small"
+              onClick={() => onSocialShare("facebook")}
+            />
+            <IconButton
+              icon="twitter"
+              size="small"
+              onClick={() => onSocialShare("twitter")}
+            />
+          </PlaceSocialContainer>
         </PlaceBodyContainer>
       </div>
       <HorizontalRule color="light" />
