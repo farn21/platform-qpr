@@ -4,7 +4,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 import SvgIcon from "@material-ui/core/SvgIcon";
-import LockIcon from "@material-ui/icons/Lock"
+import LockIcon from "@material-ui/icons/Lock";
 
 const TwitterIconPath = ({ fill = "#1da1f2" }) => (
   <path
@@ -25,12 +25,12 @@ const MuiTwitterIcon = ({ fill, ...props }) => (
 );
 
 const LockPath = ({ fill = "#fff" }) => (
-  <path d="M0 0h24v24H0z" fill="{fill}"/>
-)
+  <path d="M0 0h24v24H0z" fill="{fill}" />
+);
 
 const MuiLoginIcon = ({ fill, ...props }) => (
-  <LockIcon style={{ color: fill }} ></LockIcon>
-  );
+  <LockIcon style={{ color: fill }}></LockIcon>
+);
 
 const FacebookFPath = ({ fill = "#fff" }) => (
   <path
@@ -62,7 +62,6 @@ const MuiFacebookFIcon = ({ fill, ...props }) => (
 
 const HeartIcon = props => (
   <svg viewBox="0 0 133.8 133.8" width="1em" height="1em" {...props}>
-    <style>{`.st0{fill:#dd2424}`}</style>
     <g>
       <path
         className="st0"
