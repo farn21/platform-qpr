@@ -177,6 +177,13 @@ body {
   letter-spacing: -0.5px;
 }
 @media (max-width: 960px) {
+  .mapseed-site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+  }
+
   .mapseed-site-header h2 {
     font-size: 1.35rem;
   }
@@ -492,7 +499,7 @@ body {
 
   .mapseed-content-panel {
     position: absolute;
-    top: 40px;
+    top: 45%;
     left: 0;
     border: none;
     overflow: hidden;
@@ -653,7 +660,7 @@ body {
 .news-element-social-container {
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .like-wrapper {
