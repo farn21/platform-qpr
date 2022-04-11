@@ -937,7 +937,7 @@
             "source": "water-input",
             "layout": {
               "icon-image": "marker-question.png",
-              "icon-size": 1.1,
+              "icon-size": 14,
               "icon-anchor": "center"
             }
           }
@@ -1467,7 +1467,7 @@
           {
             "name": "info-attach-img-news",
             "type": "file",
-            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
+            "label": "Adjuntar archivo de imagen",
             "placeholder": "",
             "optional": true,
             "qprFormType": "relocations"
@@ -1475,7 +1475,7 @@
           {
             "name": "info-attach-pdf-news",
             "type": "pdf",
-            "label": "ADJUNTAR ARCHIVO PDF",
+            "label": "Adjuntar archivo PDF",
             "placeholder": "",
             "display_prompt": "Documento",
             "optional": true,
@@ -2356,7 +2356,7 @@
           {
             "name": "attach-image-adjuntos-registered-users",
             "type": "file",
-            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
+            "label": "Adjuntar archivo de imagen",
             "prompt": "",
             "optional": true,
             "qprFormType": "relocations"
@@ -2364,7 +2364,7 @@
           {
             "name": "attach-pdf-adjuntos-registered-users",
             "type": "pdf",
-            "label": "ADJUNTAR ARCHIVO PDF",
+            "label": "Adjuntar archivo PDF",
             "prompt": " ",
             "optional": true,
             "qprFormType": "relocations"
@@ -3822,7 +3822,7 @@
           {
             "name": "description-attach-img-water-registered-users",
             "type": "file",
-            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
+            "label": "Adjuntar archivo de imagen",
             "display_prompt": "Adjuntos sobre calidad del agua",
             "optional": true,
             "qprFormType": "relocations"
@@ -3830,7 +3830,7 @@
           {
             "name": "description-attach-pdf-water-registered-users",
             "type": "pdf",
-            "label": "ADJUNTAR ARCHIVO PDF",
+            "label": "Adjuntar archivo PDF",
             "display_prompt": "Adjuntos sobre calidad del agua",
             "optional": true,
             "qprFormType": "relocations"
@@ -5605,7 +5605,7 @@
           {
             "name": "attach-img-relocation-registered-users",
             "type": "file",
-            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
+            "label": "Adjuntar archivo de imagen",
             "optional": true,
             "hidden_default": true,
             "qprFormType": "water"
@@ -5613,7 +5613,7 @@
           {
             "name": "attach-pdf-relocation-registered-users",
             "type": "pdf",
-            "label": "ADJUNTAR ARCHIVO PDF",
+            "label": "Adjuntar archivo PDF",
             "optional": true,
             "hidden_default": true,
             "qprFormType": "water"
@@ -5708,7 +5708,7 @@
           {
             "name": "description-attach-img-relocation-registered-users",
             "type": "file",
-            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
+            "label": "Adjuntar archivo de imagen",
             "display_prompt": "Adjuntos",
             "optional": true,
             "qprFormType": "relocations"
@@ -5716,7 +5716,7 @@
           {
             "name": "description-attach-pfd-relocation-registered-users",
             "type": "file",
-            "label": "ADJUNTAR ARCHIVO PDF",
+            "label": "Adjuntar archivo PDF",
             "display_prompt": "Adjuntos",
             "optional": true,
             "qprFormType": "relocations"
