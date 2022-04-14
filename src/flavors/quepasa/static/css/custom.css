@@ -1228,24 +1228,25 @@ option:hover {
   margin: 0;
 }
 .icon-container {
-  color: white;
+  color: #fff;
   border: solid;
   border-color: #ffab00;
   border-radius: 5px;
+  background-color: #fff;
 }
 .icon-container:hover {
   color: white;
 }
 .icon-container.checkbox-selected {
   background-color: #ffab00;
-  color: #000000;
+  color: #fff;
 }
 .mapseed-map-layer-selector-container span span:last-child {
   margin: 0;
   padding: 0.25rem;
 }
 .mapseed-map-layer-selector-container span.fa-check {
-  color: #ffab00;
+  color: #fff;
 }
 .css-pigogt {
   right: 10px;
