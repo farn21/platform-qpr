@@ -1186,6 +1186,7 @@ option:hover {
   background-color: #ffffff;
   width: 350px;
   max-width: 90vw;
+  z-index: 405;
 }
 .mapseed-left-sidebar > div {
   padding: 1.5rem;
@@ -1473,3 +1474,14 @@ div[class*="-RichTextareaFieldResponseWrapper"] {
 }
 
 /* END PLACE DETAIL CLASSES  */
+
+/* START MAP CLASSES  */
+
+@media (max-width: 960px) {
+  .map-container > div {
+    position: fixed !important;
+    top: 40px;
+  }
+}
+
+/* END MAP CLASSES  */

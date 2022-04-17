@@ -92,5 +92,6 @@ export default {
   TRIGGER_GEOLOCATE_EVENT: "map:trigger-geolocate",
 
   HEADER_HEIGHT: 56,
+  MOBILE_HEADER_HEIGHT: 40,
   GEOCODE_ADDRESS_BAR_HEIGHT: 42,
 };
