@@ -61,6 +61,7 @@ type Props = StateProps & OwnProps & RouteComponentProps<{}>;
 interface State {
   fieldPassword: any;
   fieldUsername: any;
+  fieldEmail: any;
   anchorEl: any;
   dashboard: any;
 }
@@ -70,6 +71,7 @@ class Dashboard extends React.Component<Props, State> {
   state: State = {
     fieldUsername: OrderedMap(),
     fieldPassword: OrderedMap(),
+    fieldEmail: OrderedMap(),
     anchorEl: null,
     dashboard: null,
   };
@@ -324,6 +326,8 @@ class Dashboard extends React.Component<Props, State> {
 >
             <form id="userNewForm" onSubmit={this.onCreateUser} css={css`margin-bottom: 50px; width: 500px;`} className="place-form" >
               <FormField formId="userNewForm" fieldState={this.state.fieldUsername} fieldConfig={{placeholder: "Usuario", display_prompt: "Usuario", name:"username", type: "text", prompt: "Usuario"}} onFieldChange={()=>{}} showValidityStatus={true} >
+              </FormField>
+              <FormField formId="userNewForm" fieldState={this.state.fieldEmail} fieldConfig={{placeholder: "Correo", display_prompt: "Correo", name:"email", type: "text", prompt: "Correo"}} onFieldChange={()=>{}} showValidityStatus={true} >
               </FormField>
               <FormField formId="userNewForm" fieldState={this.state.fieldPassword} fieldConfig={{placeholder: "Contraseña", display_prompt: "Contraseña", name:"password1", type: "text", prompt: "Contraseña"}} onFieldChange={()=>{}} showValidityStatus={true} >
               </FormField>
