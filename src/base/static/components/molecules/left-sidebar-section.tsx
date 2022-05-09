@@ -114,19 +114,22 @@ const OptionSelector: React.FunctionComponent<MapLayerSelectorProps> = props => 
         >
           {props.t(`layerPanelOption${props.id}`, props.option.title)}
         </span>
-        <LayerGroupsStatusContainer>
-          {props.isLayerGroupVisible && props.loadStatus === "loading" && (
-            <SpinnerContainer className="map-layer-status-spinner">
-              <LoadingSpinner size={10} />
+        <LayerGroupsStatusContainer
+          className={`checkbox ${props.isSelected && "checkbox-selected"}`}
+        >
+          {props.isLayerGroupVisible && props.loadStatus === "loading" ? (
+            <SpinnerContainer className="map-layer-status-spinner icon-container">
+              <LoadingSpinner size={10} color="#f0a300" />
             </SpinnerContainer>
+          ) : (
+            <LayerGroupStatusIcon
+              className={`icon-container ${
+                props.isLayerGroupVisible && "checkbox-selected"
+              }`}
+              faClassname={statusIcons[props.loadStatus || "loading"]}
+              color={statusColors[props.loadStatus || "loading"]}
+            />
           )}
-          {props.isLayerGroupVisible &&
-            (props.loadStatus === "loaded" || props.loadStatus === "error") && (
-              <LayerGroupStatusIcon
-                faClassname={statusIcons[props.loadStatus]}
-                color={statusColors[props.loadStatus]}
-              />
-            )}
         </LayerGroupsStatusContainer>
       </span>
       {props.option.modal && (
