@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import * as React from "react";
 import { jsx } from "@emotion/core";
-import { CloseButton } from "../atoms/buttons";
+import { CloseButton, BackButton } from "../atoms/buttons";
 import { connect } from "react-redux";
 import { withRouter, RouteComponentProps } from "react-router-dom";
 
@@ -55,6 +55,7 @@ const ContentPanel = (props: Props) => {
 
   return (
     <section
+      className="mapseed-content-panel"
       css={{
         position: "absolute",
         top:
@@ -102,6 +103,13 @@ const ContentPanel = (props: Props) => {
             cursor: "pointer",
           },
         }}
+        layout={props.layout}
+        onClick={evt => {
+          evt.preventDefault();
+          props.history.push("/");
+        }}
+      />
+      <BackButton
         layout={props.layout}
         onClick={evt => {
           evt.preventDefault();

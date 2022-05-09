@@ -21,6 +21,7 @@ const LoginMenu: React.FunctionComponent<Props> = props => {
 
   const MobileButton = ({ openModal }) => (
     <Button
+      className="mapseed-navbar-login-button"
       css={{
         marginLeft: "auto",
         marginRight: "10px",
