@@ -4,6 +4,7 @@ import { jsx } from "@emotion/core";
 import Button from "@material-ui/core/Button";
 import { Button as LegacyButton } from "../atoms/buttons";
 import LoginModal from "./login-modal";
+import RegisterModal from "./register-modal";
 import { AppConfig } from "../../state/ducks/app-config";
 import { withTranslation, WithTranslation } from "react-i18next";
 import mq from "../../../../media-queries";
@@ -19,7 +20,7 @@ type Props = {
 const LoginMenu: React.FunctionComponent<Props> = props => {
   const theme = useTheme<MuiTheme>();
 
-  const MobileButton = ({ openModal }) => (
+  const MobileButton = ({ openModal, text }) => (
     <Button
       className="mapseed-navbar-login-button"
       css={{
@@ -53,7 +54,7 @@ const LoginMenu: React.FunctionComponent<Props> = props => {
       </Typography>
     </Button>
   );
-  const DesktopButton = ({ openModal }) => (
+  const DesktopButton = ({ openModal, text}) => (
     <LegacyButton
       color="primary"
       onClick={openModal}
@@ -83,7 +84,7 @@ const LoginMenu: React.FunctionComponent<Props> = props => {
         },
       })}
     >
-      {props.t("signInMsg", "Sign In")}
+      {text}
     </LegacyButton>
   );
   return (
@@ -91,9 +92,19 @@ const LoginMenu: React.FunctionComponent<Props> = props => {
       <LoginModal
         render={(openModal: () => void) => {
           return props.isMobileHeaderExpanded ? (
-            <MobileButton openModal={openModal} />
+            <MobileButton openModal={openModal} text="Iniciar sesión"/>
           ) : (
-            <DesktopButton openModal={openModal} />
+            <DesktopButton openModal={openModal} text="Iniciar sesión" />
+          );
+        }}
+        appConfig={props.appConfig}
+      />
+      <RegisterModal
+        render={(openModal: () => void) => {
+          return props.isMobileHeaderExpanded ? (
+            <MobileButton openModal={openModal} text="Registrate"/>
+          ) : (
+            <DesktopButton openModal={openModal} text="Registrate"/>
           );
         }}
         appConfig={props.appConfig}
