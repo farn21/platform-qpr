@@ -488,7 +488,7 @@ class MapTemplate extends React.Component<Props, State> {
             />
           </React.Suspense>
           {this.props.isSpotlightMaskVisible && (
-            <SpotlightMask layout={this.props.layout} />
+            <SpotlightMask />
           )}
         </div>
         {this.props.filtersConfig.enabled && (
