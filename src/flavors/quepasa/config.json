@@ -140,7 +140,7 @@
     },
     "sharingProviders": [],
     "privacyPolicy": {
-      "title": "",
+      "title": "Politica de privacidad",
       "content": "QPR recoge datos e imágenes compartidos por voluntarios y los pone a disposición de terceras partes y del público general.  Tené en cuenta que QPR utiliza cookies en su sitio web, para habilitar sus servicios y la funcionalidad y comprender tu interacción con el sitio, tal como se detalla en las condiciones de uso. Para continuar navegando el sitio es necesario que aceptes estas condiciones."
     }
   },
@@ -937,7 +937,7 @@
             "source": "water-input",
             "layout": {
               "icon-image": "marker-question.png",
-              "icon-size": 1.1,
+              "icon-size": 14,
               "icon-anchor": "center"
             }
           }
@@ -1467,7 +1467,7 @@
           {
             "name": "info-attach-img-news",
             "type": "file",
-            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
+            "label": "Adjuntar archivo de imagen",
             "placeholder": "",
             "optional": true,
             "qprFormType": "relocations"
@@ -1475,7 +1475,7 @@
           {
             "name": "info-attach-pdf-news",
             "type": "pdf",
-            "label": "ADJUNTAR ARCHIVO PDF",
+            "label": "Adjuntar archivo PDF",
             "placeholder": "",
             "display_prompt": "Documento",
             "optional": true,
@@ -1493,7 +1493,7 @@
           {
             "name": "submit",
             "type": "submit",
-            "label": "Publicar en el mapa",
+            "label": "Publicar experiencia",
             "qprFormType": "relocations"
           }
         ]
@@ -1506,7 +1506,7 @@
         "datasetSlug": "natural-areas-input",
         "icon_url": "/static/css/images/markers/marker-areas.svg",
         "value": "areas-protegidas-2",
-        "label": "ÁREAS NATURALES:VISITAS",
+        "label": "Áreas naturales: visitas",
         "geospatialAnalysis": [
           {
             "name": "subbasin_name",
@@ -1517,22 +1517,6 @@
                 "name": "NOMBRE"
               }
             ]
-          }
-        ],
-        "multi_stage": [
-          {
-            "start_field_index": 1,
-            "end_field_index": 17,
-            "header": "Áreas Naturales: Visitas",
-            "qprFormType": "protected-area",
-            "description": ""
-          },
-          {
-            "start_field_index": 18,
-            "end_field_index": 19,
-            "header": "Áreas Naturales: Visitas",
-            "qprFormType": "protected-area",
-            "description": ""
           }
         ],
         "fields": [
@@ -1988,7 +1972,7 @@
           {
             "name": "submit",
             "type": "submit",
-            "label": "Publicar en el mapa",
+            "label": "Publicar experiencia",
             "qprFormType": "relocations"
           }
         ]
@@ -2001,7 +1985,7 @@
         "datasetSlug": "natural-areas-input-register",
         "icon_url": "/static/css/images/markers/marker-areas.svg",
         "value": "areas-protegidas-2",
-        "label": "ÁREAS NATURALES: SEGUIMIENTO",
+        "label": "Áreas naturales: seguimiento",
         "geospatialAnalysis": [
           {
             "name": "subbasin_name",
@@ -2012,22 +1996,6 @@
                 "name": "NOMBRE"
               }
             ]
-          }
-        ],
-        "multi_stage": [
-          {
-            "start_field_index": 1,
-            "end_field_index": 20,
-            "header": "ÁREAS NATURALES: SEGUIMIENTO",
-            "qprFormType": "protected-area",
-            "description": ""
-          },
-          {
-            "start_field_index": 21,
-            "end_field_index": 22,
-            "header": "ÁREAS NATURALES: SEGUIMIENTO",
-            "qprFormType": "protected-area",
-            "description": ""
           }
         ],
         "fields": [
@@ -2388,7 +2356,7 @@
           {
             "name": "attach-image-adjuntos-registered-users",
             "type": "file",
-            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
+            "label": "Adjuntar archivo de imagen",
             "prompt": "",
             "optional": true,
             "qprFormType": "relocations"
@@ -2396,7 +2364,7 @@
           {
             "name": "attach-pdf-adjuntos-registered-users",
             "type": "pdf",
-            "label": "ADJUNTAR ARCHIVO PDF",
+            "label": "Adjuntar archivo PDF",
             "prompt": " ",
             "optional": true,
             "qprFormType": "relocations"
@@ -2413,7 +2381,7 @@
           {
             "name": "submit",
             "type": "submit",
-            "label": "Publicar en el mapa",
+            "label": "Publicar experiencia",
             "qprFormType": "relocations"
           }
         ]
@@ -2426,7 +2394,7 @@
         "datasetSlug": "water-input",
         "icon_url": "/static/css/images/markers/marker-agua.svg",
         "value": "agua-calidad-open",
-        "label": "CALIDAD DEL AGUA",
+        "label": "Calidad del agua",
         "geospatialAnalysis": [
           {
             "name": "subbasin_name",
@@ -2440,6 +2408,7 @@
           }
         ],
         "visibleLayerGroupIds": ["riachuelo-subbasins"],
+
         "multi_stage": [
           {
             "start_field_index": 1,
@@ -2556,7 +2525,7 @@
           },
           {
             "name": "time-water",
-            "type": "text",
+            "type": "time",
             "prompt": "Ingresá la hora de la situación que estás compartiendo. Se trata de la hora del día en la que registraste la situación vinculada a la calidad de agua.",
             "display_prompt": "Hora",
             "placeholder": "Seleccioná una hora",
@@ -3104,7 +3073,7 @@
           {
             "name": "submit",
             "type": "submit",
-            "label": "Publicar en el mapa",
+            "label": "Publicar experiencia",
             "qprFormType": "relocations"
           }
         ]
@@ -3118,7 +3087,7 @@
         "datasetSlug": "water-input-register",
         "icon_url": "/static/css/images/markers/marker-agua.svg",
         "value": "agua-calidad-open",
-        "label": "CALIDAD DEL AGUA: IMÁGENES Y DESCRIPCIONES",
+        "label": "Calidad del agua: imágenes y descripciones",
         "geospatialAnalysis": [
           {
             "name": "subbasin_name",
@@ -3132,6 +3101,7 @@
           }
         ],
         "visibleLayerGroupIds": ["riachuelo-subbasins"],
+
         "multi_stage": [
           {
             "start_field_index": 1,
@@ -3248,7 +3218,7 @@
           },
           {
             "name": "time-water-registered-users",
-            "type": "text",
+            "type": "time",
             "prompt": "Ingresá la hora de la situación que estás compartiendo. Se trata de la hora del día en la que registraste la situación vinculada a la calidad de agua.",
             "display_prompt": "Hora",
             "placeholder": "Seleccioná una hora",
@@ -3886,7 +3856,7 @@
           {
             "name": "description-attach-img-water-registered-users",
             "type": "file",
-            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
+            "label": "Adjuntar archivo de imagen",
             "display_prompt": "Adjuntos sobre calidad del agua",
             "optional": true,
             "qprFormType": "relocations"
@@ -3894,7 +3864,7 @@
           {
             "name": "description-attach-pdf-water-registered-users",
             "type": "pdf",
-            "label": "ADJUNTAR ARCHIVO PDF",
+            "label": "Adjuntar archivo PDF",
             "display_prompt": "Adjuntos sobre calidad del agua",
             "optional": true,
             "qprFormType": "relocations"
@@ -3911,7 +3881,7 @@
           {
             "name": "submit",
             "type": "submit",
-            "label": "Publicar en el mapa",
+            "label": "Publicar experiencia",
             "qprFormType": "relocations"
           }
         ]
@@ -3925,7 +3895,7 @@
         "datasetSlug": "relocations-input-register",
         "icon_url": "/static/css/images/markers/marker-relocalizaciones.svg",
         "value": "reporte-territorial",
-        "label": "RELOCALIZACIÓN Y REURBANIZACIÓN: MESAS DE TRABAJO",
+        "label": "Relocalización y reurbanización: mesas de trabajo",
         "geospatialAnalysis": [
           {
             "name": "subbasin_name",
@@ -3936,22 +3906,6 @@
                 "name": "NOMBRE"
               }
             ]
-          }
-        ],
-        "multi_stage": [
-          {
-            "start_field_index": 1,
-            "end_field_index": 51,
-            "header": "Relocalización y reurbanización: Mesas de trabajo",
-            "qprFormType": "relocations",
-            "description": ""
-          },
-          {
-            "start_field_index": 52,
-            "end_field_index": 53,
-            "header": "Relocalización y reurbanización: Mesas de trabajo",
-            "qprFormType": "relocations",
-            "description": ""
           }
         ],
         "fields": [
@@ -5685,7 +5639,7 @@
           {
             "name": "attach-img-relocation-registered-users",
             "type": "file",
-            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
+            "label": "Adjuntar archivo de imagen",
             "optional": true,
             "hidden_default": true,
             "qprFormType": "water"
@@ -5693,7 +5647,7 @@
           {
             "name": "attach-pdf-relocation-registered-users",
             "type": "pdf",
-            "label": "ADJUNTAR ARCHIVO PDF",
+            "label": "Adjuntar archivo PDF",
             "optional": true,
             "hidden_default": true,
             "qprFormType": "water"
@@ -5788,7 +5742,7 @@
           {
             "name": "description-attach-img-relocation-registered-users",
             "type": "file",
-            "label": "ADJUNTAR ARCHIVO DE IMAGEN",
+            "label": "Adjuntar archivo de imagen",
             "display_prompt": "Adjuntos",
             "optional": true,
             "qprFormType": "relocations"
@@ -5796,7 +5750,7 @@
           {
             "name": "description-attach-pfd-relocation-registered-users",
             "type": "file",
-            "label": "ADJUNTAR ARCHIVO PDF",
+            "label": "Adjuntar archivo PDF",
             "display_prompt": "Adjuntos",
             "optional": true,
             "qprFormType": "relocations"
@@ -5813,7 +5767,7 @@
           {
             "name": "submit",
             "type": "submit",
-            "label": "Publicar en el mapa",
+            "label": "Publicar experiencia",
             "qprFormType": "relocations"
           }
         ]
@@ -5827,7 +5781,7 @@
         "datasetSlug": "relocations-input",
         "icon_url": "/static/css/images/markers/marker-relocalizaciones.svg",
         "value": "reporte-territorial",
-        "label": "RELOCALIZACIÓN Y REURBANIZACIÓN: SEGUIMIENTO",
+        "label": "Relocalización y reurbanización: seguimiento",
         "geospatialAnalysis": [
           {
             "name": "subbasin_name",
@@ -5838,22 +5792,6 @@
                 "name": "NOMBRE"
               }
             ]
-          }
-        ],
-        "multi_stage": [
-          {
-            "start_field_index": 1,
-            "end_field_index": 45,
-            "header": "RELOCALIZACIÓN Y REURBANIZACIÓN: SEGUIMIENTO",
-            "description": "",
-            "qprFormType": "relocations"
-          },
-          {
-            "start_field_index": 46,
-            "end_field_index": 47,
-            "header": "RELOCALIZACIÓN Y REURBANIZACIÓN: SEGUIMIENTO",
-            "description": "",
-            "qprFormType": "relocations"
           }
         ],
         "fields": [
@@ -8438,7 +8376,7 @@
           {
             "name": "submit",
             "type": "submit",
-            "label": "Publicar en el mapa",
+            "label": "Publicar experiencia",
             "qprFormType": "relocations"
           }
         ]
@@ -8453,7 +8391,7 @@
       },
       "submit": {
         "type": "submit",
-        "label": "Publicar en el mapa"
+        "label": "Publicar experiencia"
       },
       "barrio": {
         "type": "dropdown",

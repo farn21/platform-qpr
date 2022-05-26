@@ -40,13 +40,17 @@ const InputFormCategoryButton = props => {
         onChange={props.onCategoryChange}
       />
       <label
+        className={`${
+          props.isSelected & props.isCategoryMenuCollapsed
+            ? "without-borders"
+            : ""
+        }`}
         css={css`
           display: flex;
           width: 100%;
           border: 2px solid #eee;
           border-radius: 6px;
           align-items: center;
-          text-transform: uppercase;
           height: 55px;
 
           &:hover {
@@ -67,9 +71,9 @@ const InputFormCategoryButton = props => {
             height: 100%;
             border-top-left-radius: 6px;
             border-bottom-left-radius: 6px;
-            background-color: ${props.isSelected
+            background-color: "${props.isSelected
               ? getReadableColor(props.theme.brand.primary)
-              : "unset"};
+              : "unset"}";
           `}
         >
           <img
@@ -79,6 +83,11 @@ const InputFormCategoryButton = props => {
           />
         </span>
         <RegularText
+          className={`${
+            props.isSelected & props.isCategoryMenuCollapsed
+              ? "no-text-transform"
+              : ""
+          }`}
           css={css`
             display: flex;
             align-items: center;
@@ -98,6 +107,16 @@ const InputFormCategoryButton = props => {
             categoryConfig.label,
           )}
         </RegularText>
+        {!(props.isSelected & props.isCategoryMenuCollapsed) && (
+          <i
+            className="fas fa-chevron-right"
+            css={{
+              fontSize: "10px",
+              margin: "0 10px",
+              color: "#f0a300",
+            }}
+          />
+        )}
       </label>
     </div>
   );

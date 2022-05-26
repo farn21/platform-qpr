@@ -50,43 +50,44 @@ const getMainContentAreaHeight = ({
         isGeocodeAddressBarEnabled &&
         !isAddPlaceButtonVisible
       ) {
-        return `calc(60% - ${constants.GEOCODE_ADDRESS_BAR_HEIGHT}px - ${constants.HEADER_HEIGHT}px)`;
+        return `calc(60% - ${constants.GEOCODE_ADDRESS_BAR_HEIGHT}px - ${constants.MOBILE_HEADER_HEIGHT}px)`;
       } else if (
         isContentPanelVisible &&
         !isGeocodeAddressBarEnabled &&
         !isAddPlaceButtonVisible
       ) {
-        return `calc(60% - ${constants.HEADER_HEIGHT}px)`;
+        return `calc(60% - ${constants.MOBILE_HEADER_HEIGHT}px)`;
       } else if (
         isContentPanelVisible &&
         !isGeocodeAddressBarEnabled &&
         isAddPlaceButtonVisible
       ) {
-        return `calc(60% - ${constants.HEADER_HEIGHT}px)`;
+        return `calc(60% - ${constants.MOBILE_HEADER_HEIGHT}px)`;
       } else if (
         !isContentPanelVisible &&
         isGeocodeAddressBarEnabled &&
         !isAddPlaceButtonVisible
       ) {
-        return `calc(100% - ${constants.GEOCODE_ADDRESS_BAR_HEIGHT}px - ${constants.HEADER_HEIGHT}px)`;
+        return `calc(100% - ${constants.GEOCODE_ADDRESS_BAR_HEIGHT}px - ${constants.MOBILE_HEADER_HEIGHT}px)`;
       } else if (
         !isContentPanelVisible &&
         !isGeocodeAddressBarEnabled &&
         !isAddPlaceButtonVisible
       ) {
-        return `calc(100% - ${constants.HEADER_HEIGHT}px)`;
+        return `calc(100% - ${constants.MOBILE_HEADER_HEIGHT}px)`;
       } else if (
         !isContentPanelVisible &&
         !isGeocodeAddressBarEnabled &&
         isAddPlaceButtonVisible
       ) {
-        return `calc(100%  - ${constants.HEADER_HEIGHT}px)`;
+        return `calc(100%  - ${constants.MOBILE_HEADER_HEIGHT}px)`;
+
       } else if (
         !isContentPanelVisible &&
         isGeocodeAddressBarEnabled &&
         isAddPlaceButtonVisible
       ) {
-        return `calc(100% - ${constants.GEOCODE_ADDRESS_BAR_HEIGHT}px - ${addPlaceButtonDims.height}px - ${constants.HEADER_HEIGHT}px)`;
+        return `calc(100% - ${constants.GEOCODE_ADDRESS_BAR_HEIGHT}px - ${addPlaceButtonDims.height}px - ${constants.MOBILE_HEADER_HEIGHT}px)`;
       } else {
         const msg =
           "Error: could not find appropriate height declaration for main content area.";
