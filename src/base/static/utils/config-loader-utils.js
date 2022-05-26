@@ -24,13 +24,13 @@ const setConfigDefaults = config => {
 
   // `show_timestamps`:
   // eslint-disable-next-line no-prototype-builtins
-  if (!config.app.hasOwnProperty("show_timestamps")) {
-    config.app.show_timestamps = true;
-  }
+  // if (!config.app.hasOwnProperty("show_timestamps")) {
+  //   config.app.show_timestamps = true;
+  // }
   // `time_zone`:
-  if (!config.app.time_zone) {
-    config.app.time_zone = "America/Los_Angeles";
-  }
+  // if (!config.app.time_zone) {
+  //   config.app.time_zone = "America/Los_Angeles";
+  // }
 };
 
 module.exports = {
