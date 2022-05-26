@@ -1,11 +1,18 @@
 /** @jsx jsx */
 import * as React from "react";
-import { jsx } from "@emotion/core";
+import mapseedApiClient from "../../client/mapseed-api-client";
+import { jsx, css } from "@emotion/core";
+import FormField from "../form-fields/form-field";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import Dialog from "@material-ui/core/Dialog";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import Divider from "@material-ui/core/Divider";
+import { Map, OrderedMap } from "immutable";
+
+// eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+// @ts-ignore
+import config from "config";
 import { LoginProvider, AppConfig } from "../../state/ducks/app-config";
 import {
   MuiDiscourseIcon,
@@ -13,7 +20,10 @@ import {
   MuiTwitterIcon,
   MuiLoginIcon,
   MuiGoogleIcon,
+  MuiRegisterIcon,
 } from "../atoms/icons";
+import { Button } from "../atoms/buttons";
+import { RegularText } from "../atoms/typography";
 
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
@@ -25,87 +35,6 @@ import Link from "@material-ui/core/Link";
 import IconButton from "@material-ui/core/IconButton";
 import { withTranslation, WithTranslation } from "react-i18next";
 import Typography from "@material-ui/core/Typography";
-
-const useSocialButtonStyles = makeStyles({
-  button: {
-    backgroundColor: (props: { backgroundColor: string }) =>
-      props.backgroundColor,
-    borderRadius: "8px",
-    margin: "0 auto 16px auto",
-    maxWidth: "180px",
-    display: "flex",
-    justifyContent: "center",
-  },
-});
-
-const getLoginProviderUrl = (apiRoot, loginProvider) => {
-  switch (loginProvider.name)  {
-    default:
-      return `${apiRoot}users/login/${loginProvider.provider}/`
-    } 
-}
-
-const SocialLoginButton = ({
-  loginProvider,
-  apiRoot,
-}: {
-  loginProvider: LoginProvider;
-  apiRoot: string;
-}) => {
-  let backgroundColor: string;
-  let SocialIcon: React.ReactType;
-  switch (loginProvider.name) {
-    case "twitter":
-      backgroundColor = "#4099ff";
-      SocialIcon = MuiTwitterIcon;
-      break;
-    case "iniciar sesión":
-      backgroundColor = "gray";
-      SocialIcon = MuiLoginIcon;
-      break;
-    case "facebook":
-      backgroundColor = "#3b5998";
-      SocialIcon = MuiFacebookFIcon;
-      break;
-    case "google":
-      backgroundColor = "#e8433a";
-      SocialIcon = MuiGoogleIcon;
-      break;
-    case "discourse":
-      backgroundColor = "green";
-      SocialIcon = MuiDiscourseIcon;
-      break;
-    default:
-      // eslint-disable-next-line no-console
-      console.error("unknown loginProvider.name:", loginProvider.name);
-      backgroundColor = "#4099ff";
-      SocialIcon = MuiTwitterIcon;
-  }
-
-  const classes = useSocialButtonStyles({ backgroundColor });
-
-  return (
-    <ListItem
-      button
-      component="a"
-      classes={{
-        button: classes.button,
-      }}
-      href={getLoginProviderUrl(apiRoot, loginProvider)}
-    >
-      <ListItemIcon css={{ minWidth: "32px" }}>
-        <SocialIcon fill={"#fff"} />
-      </ListItemIcon>
-      <ListItemText css={{ flex: "0 1 auto" }}>
-        <Typography css={{ textAlign: "center", color: "#fff" }}>
-          {/* capitalize the first letter of the provider name: */}
-          {loginProvider.name.charAt(0).toUpperCase() +
-            loginProvider.name.substring(1)}
-        </Typography>
-      </ListItemText>
-    </ListItem>
-  );
-};
 
 const useStyles = makeStyles(() =>
   createStyles({
@@ -121,7 +50,7 @@ type Props = {
   render: (openModal: () => void) => React.ReactNode;
 } & WithTranslation;
 
-const LoginModal = ({
+const RegisterModal = ({
   appConfig,
   disableRestoreFocus = false,
   render,
@@ -129,7 +58,40 @@ const LoginModal = ({
 }: Props) => {
   const [isOpen, setIsOpen] = React.useState<boolean>(false);
   const openModal = () => setIsOpen(true);
+  const registrateClick = () => {
+    setIsOpen(false)
+  }
+  const fieldUsername = OrderedMap() ;
+  const fieldPassword = OrderedMap();
+  const fieldEmail = OrderedMap();
+  const onCreateUser = async (event) => {
+    var f = document.querySelector("#userNewForm") as HTMLElement | null;
+    // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+    // @ts-ignore
+    var formData = new FormData(f)
+    var response = await mapseedApiClient.user.create(config.app.api_root, formData)
+    if (f != null) {
+      f.style.display = "none";
+    }
+    var thanks = document.querySelector("#thanksRegister") as HTMLElement | null;
+    if (thanks != null) {
+      thanks.style.display = "block"; 
+    }
+    setTimeout(function(){
+      setIsOpen(false);
+      setTimeout(function() {
+        if (thanks != null) {
+          thanks.style.display = "none";
+        }
+        if (f != null) {
+          f.style.display = "block";
+        }
+      }, 1000)
+    }, 2000)
+    event.preventDefault();
+  }
   const classes = useStyles();
+  const backgroundColor = "gray";
   return (
     <React.Fragment>
       {render(openModal)}
@@ -150,7 +112,7 @@ const LoginModal = ({
           disableTypography
         >
           <Typography css={{ textAlign: "center", width: "100%" }} variant="h5">
-            {t("signInMsg", "Sign In")}
+            {t("registerMsg", "Registrate")}
           </Typography>
           <IconButton
             css={{
@@ -174,16 +136,24 @@ const LoginModal = ({
             padding: "24px",
             minWidth: "240px",
           }}
-        >
-          <List>
-            {appConfig.loginProviders.map(loginProvider => (
-              <SocialLoginButton
-                key={loginProvider.provider}
-                loginProvider={loginProvider}
-                apiRoot={appConfig.api_root}
-              />
-            ))}
-          </List>
+        > 
+        <div id="thanksRegister" style={{display: 'none'}}>
+            GRACIAS POR REGISTRARTE
+        </div>
+                    <form id="userNewForm" onSubmit={onCreateUser} css={css`margin-bottom: 50px; width: 500px;`} className="place-form" >
+              <FormField formId="userNewForm" fieldState={fieldUsername} fieldConfig={{placeholder: "Usuario", display_prompt: "Usuario", name:"username", type: "text", prompt: "Usuario"}} onFieldChange={()=>{}} showValidityStatus={true} >
+              </FormField>
+              <FormField formId="userNewForm" fieldState={fieldEmail} fieldConfig={{placeholder: "Correo", display_prompt: "Correo", name:"email", type: "text", prompt: "Correo"}} onFieldChange={()=>{}} showValidityStatus={true} >
+              </FormField>
+              <FormField formId="userNewForm" fieldState={fieldPassword} fieldConfig={{placeholder: "Contraseña", display_prompt: "Contraseña", name:"password1", type: "password", prompt: "Contraseña"}} onFieldChange={()=>{}} showValidityStatus={true} >
+              </FormField>
+              <Button  variant="flat"
+              onClick={onCreateUser}
+              color="primary"
+              size="regular" >
+              <RegularText>{"Crear"}</RegularText>
+              </Button>
+            </form>
           <DialogContentText
             css={{ fontSize: ".8em" }}
             variant="body2"
@@ -204,4 +174,4 @@ const LoginModal = ({
   );
 };
 
-export default withTranslation("LoginModal")(LoginModal);
+export default withTranslation("RegisterModal")(RegisterModal);

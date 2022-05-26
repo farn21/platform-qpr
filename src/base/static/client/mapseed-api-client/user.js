@@ -28,7 +28,7 @@ const createNewUser = async(apiRoot, userData) => {
             body: json,
         },
     );
-    console.log(response)
+    return await response;
 }
 
 export default {
