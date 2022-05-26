@@ -4,7 +4,7 @@ import { jsx } from "@emotion/core";
 import { connect } from "react-redux";
 
 import styled from "@emotion/styled";
-import SupportButton from "../molecules/support-button";
+import { RegularText } from "../atoms/typography";
 import { IconButton } from "../atoms/buttons";
 import LoginModal from "../molecules/login-modal";
 
@@ -96,20 +96,35 @@ class PromotionBar extends React.Component<PromotionBarProps> {
         <LoginModal
           appConfig={this.props.appConfig}
           render={openModal => (
-            <SupportButton
-              isSupported={!!this.props.userSupport}
-              numSupports={this.props.numSupports}
-              onClickSupport={() => {
-                if (
-                  !this.props.currentUser.isAuthenticated &&
-                  this.props.datasets.some(dataset => dataset.auth_required)
-                ) {
-                  openModal();
-                } else {
-                  this.onClickSupport();
-                }
-              }}
-            />
+            <SupportText
+              noWrap={true}
+              textTransform="uppercase"
+              className="like-wrapper"
+            >
+              <i
+                className={`fa-heart heart-icon ${
+                  this.props.userSupport ? "fas supported" : "far"
+                }`}
+                onClick={() => {
+                  if (
+                    !this.props.currentUser.isAuthenticated &&
+                    this.props.datasets.some(dataset => dataset.auth_required)
+                  ) {
+                    openModal();
+                  } else {
+                    this.onClickSupport();
+                  }
+                }}
+              ></i>
+              <small
+                style={{
+                  fontSize: "8px",
+                  color: `${this.props.userSupport ? "#f0a300" : "#767676"}`,
+                }}
+              >
+                APOYAR
+              </small>
+            </SupportText>
           )}
         />
         <div>
@@ -138,6 +153,19 @@ const mapDispatchToProps = dispatch => ({
     dispatch(createPlaceSupport(placeId, supportData)),
   removePlaceSupport: (placeId, supportId) =>
     dispatch(removePlaceSupport(placeId, supportId)),
+});
+
+const SupportText = styled(props => (
+  <RegularText weight="bold" noWrap={true} className={props.className}>
+    {props.children}
+  </RegularText>
+))({
+  color: "#333",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  marginTop: "auto",
+  marginBottom: "auto",
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(PromotionBar);

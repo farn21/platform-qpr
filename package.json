@@ -36,7 +36,7 @@
         "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand",
         "build-js": "./node_modules/.bin/webpack -d",
         "build-js-production": "NODE_ENV=production ./node_modules/.bin/webpack -p --progress",
-        "simple-deploy": "rm -rf www/*  && NODE_ENV=production node scripts/static-build.js && npm run build-js && npm run deploy",
+        "simple-deploy": "rm -rf www/* && NODE_ENV=production node scripts/static-build.js && npm run build-js && npm run deploy",
         "watch-js": "webpack -d --watch",
         "build": "rm -rf www/* && NODE_ENV=production node scripts/static-build.js && npm run build-js-production",
         "prettier": "prettier --list-different \"{src,scripts}/**/*.{js,jsx,ts,tsx,json}\"",

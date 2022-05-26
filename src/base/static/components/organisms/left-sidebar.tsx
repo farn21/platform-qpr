@@ -47,8 +47,9 @@ const LeftSidebar: React.FunctionComponent<Props> = props => (
   <section
     className="mapseed-left-sidebar"
     css={{
-      position: "absolute",
+      position: "fixed",
       left: 0,
+      top: "40px",
       zIndex: 6,
       width: "250px",
       height: "100%",
@@ -96,7 +97,7 @@ const LeftSidebar: React.FunctionComponent<Props> = props => (
       className="mapseed-left-sidebar__close-button"
       onClick={() => props.setLeftSidebarExpanded(false)}
     >
-      &#10005;
+      <i className="fas fa-times"></i>
     </CloseButton>
   </section>
 );

@@ -59,9 +59,9 @@ const LayerGroupStatusIcon = styled(props => (
   textAlign: "center",
 });
 
-const statusIcons = {
-  loaded: "fas fa-check",
-  error: "fas fa-times",
+const getStatusIcon = status => {
+  if (status === "error") return "fas fa-times";
+  return "fas fa-check";
 };
 
 const statusColors = {
@@ -117,7 +117,7 @@ const OptionSelector: React.FunctionComponent<MapLayerSelectorProps> = props => 
         <LayerGroupsStatusContainer
           className={`checkbox ${props.isSelected && "checkbox-selected"}`}
         >
-          {props.isLayerGroupVisible && props.loadStatus === "loading" ? (
+          {props.loadStatus === "loading" ? (
             <SpinnerContainer className="map-layer-status-spinner icon-container">
               <LoadingSpinner size={10} color="#f0a300" />
             </SpinnerContainer>
@@ -126,8 +126,8 @@ const OptionSelector: React.FunctionComponent<MapLayerSelectorProps> = props => 
               className={`icon-container ${
                 props.isLayerGroupVisible && "checkbox-selected"
               }`}
-              faClassname={statusIcons[props.loadStatus || "loading"]}
-              color={statusColors[props.loadStatus || "loading"]}
+              faClassname={getStatusIcon(props.loadStatus)}
+              color={statusColors[props.loadStatus]}
             />
           )}
         </LayerGroupsStatusContainer>

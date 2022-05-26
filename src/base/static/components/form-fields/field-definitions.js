@@ -10,6 +10,7 @@ import {
     TextareaField,
     DropdownField,
     DatetimeField,
+    TimeField,
     GeocodingField,
     AddAttachmentButton,
     BigRadioField,
@@ -36,12 +37,11 @@ import {
     GeolocateField,
     LngLatField,
 
-
 } from "./types";
 import { isWithAnyValue, isNotEmpty } from "./validators";
 import { insertEmbeddedImages } from "../../utils/embedded-images";
 
-import Reaptcha from 'reaptcha';
+import Reaptcha from "reaptcha";
 
 const getDefaultValidator = isOptional => {
     return {
@@ -350,3 +350,4 @@ export default {
         getResponseComponent: () => TextFieldResponse,
     },
 };
+

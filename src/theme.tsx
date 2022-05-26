@@ -131,7 +131,7 @@ const theme: Theme = {
     highlighted: "#007fbf",
   },
   input: {
-    border: "0.25em solid #a3c7d9",
+    border: "1px solid rgb(118, 118, 118)",
     padding: "0.5em",
     autofillBgColor: "#ffffe0",
     defaultBgColor: "#ffffff",

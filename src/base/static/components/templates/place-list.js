@@ -59,7 +59,7 @@ const ListViewContainer = styled("div")({
 });
 
 const ListViewContent = styled("div")({
-  marginTop: "24px",
+  marginTop: "80px",
   height: "100%",
   width: "100%",
 });
