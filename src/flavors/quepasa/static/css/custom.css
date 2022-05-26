@@ -446,8 +446,10 @@ body {
   padding: 18px;
   background-color: #ffffff;
 }
+
 #site-wrap > div > section button[aria-label="close"],
 #site-wrap > div > div button[aria-label="close"] {
+
   border-radius: 0;
   background-color: transparent;
   right: 12px;
@@ -459,6 +461,7 @@ body {
   font-weight: 900;
   font-size: 25px;
 }
+
 #site-wrap > div > section button[aria-label="close"]:hover,
 #site-wrap > div > div button[aria-label="close"]:hover {
   color: #f0a300;
@@ -742,6 +745,7 @@ body {
   font-size: 0.9rem;
 }
 
+
 /* Form category buttons */
 .input-form-category-button {
   height: 48px !important;
@@ -785,6 +789,7 @@ div[data-field-type="geocoding"] {
 
 div[data-field-type="text"],
 div[data-field-type="time"],
+
 div[data-field-type="informational_html"],
 div[data-field-type="dropdown_autocomplete"],
 div[data-field-type="big_radio"],
@@ -1011,10 +1016,12 @@ div[data-field-type="informational_html"][data-field-name*="intro-"] p {
 .text-field,
 .textarea-field,
 .time-field {
+
   padding-left: 1em !important;
   border-radius: 8px !important;
   border-width: 1px !important;
   border-color: rgb(118, 118, 118) !important;
+
   font-size: 14px !important;
 }
 
@@ -1033,6 +1040,7 @@ div[data-field-type="informational_html"][data-field-name*="intro-"] p {
 .datetime-field__input,
 .text-field,
 .time-field {
+
   height: 40px !important;
 }
 /* --- */
@@ -1040,6 +1048,7 @@ div[data-field-type="informational_html"][data-field-name*="intro-"] p {
 /* Dropdown styles */
 .dropdown-field {
   border-radius: 8px !important;
+
   border-width: 0.8px !important;
   color: #000000 !important;
   background-color: #ffffff;
@@ -1179,6 +1188,7 @@ option:hover {
   font-size: 0.9rem;
 }
 
+
 /*END SUBMIT PANEL STYLES*/
 
 /* START LEFT SIDEBAR STYLES */
@@ -1187,6 +1197,7 @@ option:hover {
   width: 350px;
   max-width: 90vw;
   z-index: 405;
+
 }
 .mapseed-left-sidebar > div {
   padding: 1.5rem;
@@ -1218,6 +1229,7 @@ option:hover {
   display: inline-block;
   padding: 0.5rem 0.5rem 0.5rem 0;
 }
+
 .map-layer-status-spinner {
   display: inline;
   padding: 0.5rem 0.5rem 0.5rem 0;
@@ -1228,6 +1240,7 @@ option:hover {
   padding: 0.25rem;
   margin: 0;
 }
+
 .icon-container {
   color: #fff;
   border: solid;
@@ -1248,6 +1261,7 @@ option:hover {
 }
 .mapseed-map-layer-selector-container span.fa-check {
   color: #fff;
+
 }
 .css-pigogt {
   right: 10px;
@@ -1415,6 +1429,7 @@ div[class*="-RichTextareaFieldResponseWrapper"] {
     right: 20% !important;
     bottom: auto !important;
   }
+
   .css-wg8uo8-App:focus,
   .privacy-policy-container:focus {
     outline: none !important;
@@ -1485,3 +1500,4 @@ div[class*="-RichTextareaFieldResponseWrapper"] {
 }
 
 /* END MAP CLASSES  */
+

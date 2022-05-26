@@ -81,6 +81,7 @@ const getMainContentAreaHeight = ({
         isAddPlaceButtonVisible
       ) {
         return `calc(100%  - ${constants.MOBILE_HEADER_HEIGHT}px)`;
+
       } else if (
         !isContentPanelVisible &&
         isGeocodeAddressBarEnabled &&

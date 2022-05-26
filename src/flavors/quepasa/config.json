@@ -2408,6 +2408,23 @@
           }
         ],
         "visibleLayerGroupIds": ["riachuelo-subbasins"],
+
+        "multi_stage": [
+          {
+            "start_field_index": 1,
+            "end_field_index": 27,
+            "header": "Calidad del agua",
+            "description": "",
+            "qprFormType": "water"
+          },
+          {
+            "start_field_index": 28,
+            "end_field_index": 32,
+            "header": "Calidad del agua",
+            "description": "",
+            "qprFormType": "water"
+          }
+        ],
         "fields": [
           {
             "name": "lng-lat",
@@ -3084,6 +3101,23 @@
           }
         ],
         "visibleLayerGroupIds": ["riachuelo-subbasins"],
+
+        "multi_stage": [
+          {
+            "start_field_index": 1,
+            "end_field_index": 37,
+            "header": "Calidad del agua: imágenes y descripciones",
+            "description": "",
+            "qprFormType": "water"
+          },
+          {
+            "start_field_index": 38,
+            "end_field_index": 39,
+            "header": "Calidad del agua: imágenes y descripciones",
+            "description": "",
+            "qprFormType": "water"
+          }
+        ],
         "fields": [
           {
             "name": "lng-lat",
