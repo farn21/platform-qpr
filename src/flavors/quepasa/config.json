@@ -1506,7 +1506,7 @@
           "datasetSlug": "natural-areas-input",
           "icon_url": "/static/css/images/markers/marker-areas.svg",
           "value": "areas-protegidas-2",
-          "label": "Áreas naturales: visitas",
+          "label": "Áreas naturales",
           "geospatialAnalysis": [
             {
               "name": "subbasin_name",
@@ -1985,7 +1985,7 @@
           "datasetSlug": "natural-areas-input-register",
           "icon_url": "/static/css/images/markers/marker-areas.svg",
           "value": "areas-protegidas-2",
-          "label": "Áreas naturales: seguimiento",
+          "label": "Áreas naturales: imágenes y descripciones",
           "geospatialAnalysis": [
             {
               "name": "subbasin_name",
@@ -5781,7 +5781,7 @@
           "datasetSlug": "relocations-input",
           "icon_url": "/static/css/images/markers/marker-relocalizaciones.svg",
           "value": "reporte-territorial",
-          "label": "Relocalización y reurbanización: seguimiento",
+          "label": "Relocalización y reurbanización",
           "geospatialAnalysis": [
             {
               "name": "subbasin_name",
