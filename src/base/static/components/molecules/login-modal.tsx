@@ -56,8 +56,8 @@ const SocialLoginButton = ({
   let SocialIcon: React.ReactType;
   switch (loginProvider.name) {
     case "twitter":
-      backgroundColor = "#4099ff";
-      SocialIcon = MuiTwitterIcon;
+      backgroundColor = "gray";
+      SocialIcon = MuiLoginIcon;
       break;
     case "iniciar sesión":
       backgroundColor = "gray";
@@ -78,8 +78,8 @@ const SocialLoginButton = ({
     default:
       // eslint-disable-next-line no-console
       console.error("unknown loginProvider.name:", loginProvider.name);
-      backgroundColor = "#4099ff";
-      SocialIcon = MuiTwitterIcon;
+      backgroundColor = "gray";
+      SocialIcon = MuiLoginIcon;
   }
 
   const classes = useSocialButtonStyles({ backgroundColor });
@@ -189,13 +189,27 @@ const LoginModal = ({
             variant="body2"
             align="center"
           >
-            {"By signing up, you agree to our "}
+            {"By signing up, you confirm that you have read and agree with the "}
             <Link
               target="_blank"
-              href="https://mapseed.org/privacy"
+              href="https://drive.google.com/file/d/1vK9oYpbuxP5Wh09Na9wPFAWYBqfFxGI8/view"
               underline="always"
             >
-              {"Privacy Policy"}
+              {"QPR informed consent"}
+           </Link>
+          </DialogContentText>
+          <DialogContentText
+            css={{ fontSize: ".8em" }}
+            variant="body2"
+            align="center"
+          >
+            {"Al registrarte, confirmas que leiste y aceptás el "}
+            <Link
+              target="_blank"
+              href="https://drive.google.com/file/d/1vK9oYpbuxP5Wh09Na9wPFAWYBqfFxGI8/view"
+              underline="always"
+            >
+            {"consentimiento informado de QPR"}
             </Link>
           </DialogContentText>
         </DialogContent>

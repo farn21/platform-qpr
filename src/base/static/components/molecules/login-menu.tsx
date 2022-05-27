@@ -92,7 +92,7 @@ const LoginMenu: React.FunctionComponent<Props> = props => {
       <LoginModal
         render={(openModal: () => void) => {
           return props.isMobileHeaderExpanded ? (
-            <MobileButton openModal={openModal} text="Iniciar sesión"/>
+            <MobileButton openModal={openModal} text=""/>
           ) : (
             <DesktopButton openModal={openModal} text="Iniciar sesión" />
           );

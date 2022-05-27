@@ -162,10 +162,24 @@ const RegisterModal = ({
             {"By signing up, you agree to our "}
             <Link
               target="_blank"
-              href="https://mapseed.org/privacy"
+              href="https://drive.google.com/file/d/1vK9oYpbuxP5Wh09Na9wPFAWYBqfFxGI8/view"
               underline="always"
             >
               {"Privacy Policy"}
+            </Link>
+          </DialogContentText>
+          <DialogContentText
+            css={{ fontSize: ".8em" }}
+            variant="body2"
+            align="center"
+          >
+            {"Al registrarte, confirmas que leiste y aceptás el "}
+            <Link
+              target="_blank"
+              href="https://drive.google.com/file/d/1vK9oYpbuxP5Wh09Na9wPFAWYBqfFxGI8/view"
+              underline="always"
+            >
+              {"consentimiento informado de QPR"}
             </Link>
           </DialogContentText>
         </DialogContent>
