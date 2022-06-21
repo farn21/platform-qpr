@@ -27,10 +27,10 @@ const setConfigDefaults = config => {
   // if (!config.app.hasOwnProperty("show_timestamps")) {
   //   config.app.show_timestamps = true;
   // }
-  // `time_zone`:
-  // if (!config.app.time_zone) {
-  //   config.app.time_zone = "America/Los_Angeles";
-  // }
+ // `time_zone`:
+  if (!config.app.time_zone) {
+    config.app.time_zone = "America/Los_Angeles";
+  }
 };
 
 module.exports = {
