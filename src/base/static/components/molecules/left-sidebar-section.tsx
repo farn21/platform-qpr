@@ -59,9 +59,9 @@ const LayerGroupStatusIcon = styled(props => (
   textAlign: "center",
 });
 
-const statusIcons = {
-  loaded: "fas fa-check",
-  error: "fas fa-times",
+const getStatusIcon = status => {
+  if (status === "error") return "fas fa-times";
+  return "fas fa-check";
 };
 
 const statusColors = {
@@ -102,31 +102,34 @@ const OptionSelector: React.FunctionComponent<MapLayerSelectorProps> = props => 
         <span
           css={theme => ({
             flex: 6,
-            backgroundColor: props.isLayerGroupVisible ? "#ffff00" : "initial",
+            backgroundColor: props.isLayerGroupVisible ? "#f0a300" : "initial",
             fontFamily: theme.text.bodyFontFamily,
 
             "&:hover": {
               backgroundColor: props.isLayerGroupVisible
-                ? "#ffff00"
+                ? "#f0a300"
                 : "#ffffd4",
             },
           })}
         >
           {props.t(`layerPanelOption${props.id}`, props.option.title)}
         </span>
-        <LayerGroupsStatusContainer>
-          {props.isLayerGroupVisible && props.loadStatus === "loading" && (
-            <SpinnerContainer className="map-layer-status-spinner">
-              <LoadingSpinner size={10} />
+        <LayerGroupsStatusContainer
+          className={`checkbox ${props.isSelected && "checkbox-selected"}`}
+        >
+          {props.loadStatus === "loading" ? (
+            <SpinnerContainer className="map-layer-status-spinner icon-container">
+              <LoadingSpinner size={10} color="#f0a300" />
             </SpinnerContainer>
+          ) : (
+            <LayerGroupStatusIcon
+              className={`icon-container ${
+                props.isLayerGroupVisible && "checkbox-selected"
+              }`}
+              faClassname={getStatusIcon(props.loadStatus)}
+              color={statusColors[props.loadStatus]}
+            />
           )}
-          {props.isLayerGroupVisible &&
-            (props.loadStatus === "loaded" || props.loadStatus === "error") && (
-              <LayerGroupStatusIcon
-                faClassname={statusIcons[props.loadStatus]}
-                color={statusColors[props.loadStatus]}
-              />
-            )}
         </LayerGroupsStatusContainer>
       </span>
       {props.option.modal && (

@@ -131,8 +131,11 @@ class FormField extends Component {
       optionalMsg: classNames("input-form__optional-msg", {
         "input-form__optional-msg--visible": this.props.fieldConfig.optional,
       }),
-    };
-
+      requiredMsg: classNames("input-form__required-msg", {
+        "input-form__required-msg--visible": !this.props.fieldConfig.optional,
+      })
+    }
+    
     return (
       <div
         css={css`
@@ -164,7 +167,10 @@ class FormField extends Component {
                 this.props.fieldConfig.prompt,
               )}
               <span className={cn.optionalMsg}>
-                {this.props.t("optionalMsg", "optional")}
+                {this.props.t("optionalMsg")}
+              </span>
+              <span className={cn.requiredMsg}>
+               {this.props.t("requiredMsg")}
               </span>
             </RegularText>
             {this.props.fieldConfig.modal && (

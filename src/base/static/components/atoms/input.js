@@ -189,6 +189,27 @@ DatetimeInput.propTypes = {
   value: PropTypes.string,
 };
 
+const TimeInput = props => {
+  return (
+    <input
+      className={classNames("datetime-input", props.classes)}
+      type="time"
+      ref={props.childRef}
+      value={props.value}
+      placeholder={props.placeholder}
+      onFocus={props.onFocus}
+    />
+  );
+};
+
+TimeInput.propTypes = {
+  childRef: PropTypes.func,
+  classes: PropTypes.string,
+  onFocus: PropTypes.func,
+  placeholder: PropTypes.string,
+  value: PropTypes.string,
+};
+
 const RangeInput = props => {
   return (
     <input

@@ -2,14 +2,13 @@ import React from "react";
 import PropTypes from "prop-types";
 import styled from "@emotion/styled";
 import { connect } from "react-redux";
-
 import { Button } from "../atoms/buttons";
 import mq from "../../../../media-queries";
 import constants from "../../constants";
 
 import { geocodeAddressBarEnabledSelector } from "../../state/ducks/map";
 
-const AddPlaceButtonContainer = styled(props => (
+const AddNewsButtonContainer = styled(props => (
   <Button
     size="extra-large"
     variant="raised"
@@ -45,22 +44,22 @@ const AddPlaceButtonContainer = styled(props => (
   };
 });
 
-class AddPlaceButton extends React.Component {
+class AddNewsButton extends React.Component {
   render() {
     return (
-      <AddPlaceButtonContainer
-        className={`mapseed-add-place-button-container ${this.props.className}`}
+      <AddNewsButtonContainer
+        className={`mapseed-add-place-button-container add-news-button ${this.props.className}`}
         layout={this.props.layout}
         onClick={this.props.onClick}
         isGeocodeAddressBarEnabled={this.props.isGeocodeAddressBarEnabled}
       >
         {this.props.children}
-      </AddPlaceButtonContainer>
+      </AddNewsButtonContainer>
     );
   }
 }
 
-AddPlaceButton.propTypes = {
+AddNewsButton.propTypes = {
   children: PropTypes.node,
   className: PropTypes.string,
   isGeocodeAddressBarEnabled: PropTypes.bool.isRequired,
@@ -73,5 +72,5 @@ const mapStateToProps = state => ({
 });
 
 export default connect(mapStateToProps, null, null, { forwardRef: true })(
-  AddPlaceButton,
+  AddNewsButton,
 );

@@ -3,9 +3,7 @@ import * as React from "react";
 import { connect } from "react-redux";
 import { withTranslation, WithTranslation } from "react-i18next";
 import { css, jsx } from "@emotion/core";
-
 import eventEmitter from "../../../utils/event-emitter";
-
 import {
   isMapDraggingOrZooming,
   mapConfigSelector,
@@ -15,7 +13,6 @@ import {
 } from "../../../state/ducks/map";
 import { TextInput } from "../../atoms/input";
 import { Button } from "../../atoms/buttons";
-import { FontAwesomeIcon, LoadingBar } from "../../atoms/imagery";
 
 declare const MAP_PROVIDER_TOKEN: string;
 
@@ -100,11 +97,8 @@ const GeocodingField: React.FunctionComponent<Props> = ({
           setIsGeocoding(false);
           setIsWithGeocodingError(true);
         }
-
-        // eslint-disable-next-line no-console
-        console.error("There was an error while geocoding: ", err);
       });
-  }, [value, geocodeBoundingBox, geocodeHint]);
+  }, [value, geocodeHint, geocodeBoundingBox, geocodeCountry]);
 
   // Reverse geocode on map viewport change.
   React.useEffect(() => {
@@ -143,6 +137,7 @@ const GeocodingField: React.FunctionComponent<Props> = ({
         // eslint-disable-next-line no-console
         console.error("There was an error while reverse geocoding: ", err);
       });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mapViewport, isMapDraggingOrZooming]);
 
   React.useEffect(() => {
@@ -169,9 +164,8 @@ const GeocodingField: React.FunctionComponent<Props> = ({
     <div
       css={css`
         position: relative;
-      `}
+        `}
     >
-      {isGeocoding && <LoadingBar />}
       <Button
         css={css`
           position: absolute;
@@ -182,18 +176,13 @@ const GeocodingField: React.FunctionComponent<Props> = ({
           font-size: 20px;
           margin-top: 4px;
           background: none;
-
           &:hover {
             background: none;
           }
         `}
         onClick={doGeocode}
       >
-        <FontAwesomeIcon
-          color={isGeocoding ? "#ddd" : "#888"}
-          hoverColor="#aaa"
-          faClassname="fas fa-search"
-        />
+        
       </Button>
       <TextInput
         css={css`

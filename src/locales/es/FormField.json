@@ -1,3 +1,4 @@
 {
-  "optionalMsg": "(opcional)"
+  "optionalMsg": "(opcional)",
+  "requiredMsg": "*obligatorio"
 }

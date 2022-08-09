@@ -58,7 +58,11 @@ const NavLink = styled(props => {
   }
 
   return (
-    <NavButtonWrapper position={props.position}>
+    <NavButtonWrapper
+      position={props.position}
+      className={props.containerClassName}
+      onClick={props.onClick}
+    >
       <LinkType
         target={target}
         className={props.className}
@@ -116,6 +120,9 @@ const navItemMappings = {
       position={linkProps.position}
       href={linkProps.navBarItem.url}
       ariaLabel={`navigate to: ${linkProps.navBarItem.title}`}
+      className={linkProps.className}
+      containerClassName={linkProps.containerClassName}
+      onClick={linkProps.onClick}
     >
       {linkProps.children}
     </NavLink>
@@ -128,6 +135,9 @@ const navItemMappings = {
       position={linkProps.position}
       href={linkProps.navBarItem.url}
       ariaLabel={`navigate to: ${linkProps.navBarItem.title}`}
+      className={linkProps.className}
+      containerClassName={linkProps.containerClassName}
+      onClick={linkProps.onClick}
     >
       {linkProps.children}
     </NavLink>
@@ -254,6 +264,15 @@ const SiteHeader: React.FunctionComponent<Props> = props => {
   ] = React.useState<boolean>(false);
 
   const defaultMapViewport = props.mapConfig.defaultMapViewport;
+
+  const separatorStyle = {
+    [mq[1]]: {
+      width: "1px",
+      height: "20px",
+      borderRight: "1px solid #aeadb3",
+    },
+  };
+
   return (
     <header
       className="mapseed-site-header"
@@ -262,7 +281,7 @@ const SiteHeader: React.FunctionComponent<Props> = props => {
         zIndex: 25,
         backgroundColor: theme.bg.default,
         display: "flex",
-        height: isMobileHeaderExpanded ? "auto" : "56px",
+        height: isMobileHeaderExpanded ? "auto" : "70px",
         alignItems: "center",
         boxShadow: "0 2px 0 rgba(0,0,0,0.2)",
         boxSizing: "border-box",
@@ -334,6 +353,7 @@ const SiteHeader: React.FunctionComponent<Props> = props => {
       </div>
       <nav
         aria-label="navigation header"
+        className="mapseed-header-navigation"
         css={{
           [mq[0]]: {
             display: isMobileHeaderExpanded ? "flex" : "none",
@@ -350,159 +370,182 @@ const SiteHeader: React.FunctionComponent<Props> = props => {
           },
         }}
       >
+        <a href="#" className={"header-logo-container"}>
+          <img
+            className={"header-logo"}
+            style={{
+              width: "110px",
+              marginTop: "10px",
+              marginBottom: "10px",
+              marginRight: "30px",
+            }}
+            src={"/static/css/images/Logo_QPR_3.png"}
+            alt={"logo Qué Pasa Riachuelo"}
+          />
+        </a>
+
         {props.navBarConfig.map((navBarItem, i) => {
           const NavItemComponent = navItemMappings[navBarItem.type];
           return (
-            <NavItemComponent
-              key={i}
-              position={i}
-              navBarItem={navBarItem}
-              currentTemplate={props.currentTemplate}
-              setLeftSidebarExpanded={props.setLeftSidebarExpanded}
-              isLeftSidebarExpanded={props.isLeftSidebarExpanded}
-              pathname={props.history.location.pathname}
-              onClick={() => {
-                setIsMobileHeaderExpanded(false);
-              }}
-              t={props.t}
-            >
-              {props.t(`navBarItem${i}`, navBarItem.title)}
-            </NavItemComponent>
+            <React.Fragment key={i}>
+              <NavItemComponent
+                key={i}
+                className="mapseed-nav-item"
+                containerClassName="mapseed-nav-item-container"
+                position={i}
+                navBarItem={navBarItem}
+                currentTemplate={props.currentTemplate}
+                setLeftSidebarExpanded={props.setLeftSidebarExpanded}
+                isLeftSidebarExpanded={props.isLeftSidebarExpanded}
+                pathname={props.history.location.pathname}
+                onClick={() => {
+                  setIsMobileHeaderExpanded(false);
+                }}
+                t={props.t}
+              >
+                {props.t(`navBarItem${i}`, navBarItem.title)}
+                <i className="fas fa-chevron-right"></i>
+              </NavItemComponent>
+            </React.Fragment>
           );
         })}
-      </nav>
-      <div
-        css={{
-          alignItems: "center",
-
-          [mq[0]]: {
-            display: isMobileHeaderExpanded ? "flex" : "none",
-            marginLeft: 0,
-            width: "100%",
-            flexDirection: "column",
-          },
-          [mq[1]]: {
-            display: "flex",
-            marginLeft: "auto",
-          },
-        }}
-      >
-        {props.availableLanguages && (
-          <nav
-            onMouseOver={() => setIsLanguageMenuVisible(true)}
-            onMouseOut={() => setIsLanguageMenuVisible(false)}
-            css={theme => ({
-              color: theme.bg.light,
-              fontWeight: 600,
-              textTransform: "uppercase",
-              fontSize: "0.9rem",
-              fontFamily: theme.text.navBarFontFamily,
-              "&:hover": {
-                cursor: "pointer",
-              },
+        {
+          <div
+            css={{
+              alignItems: "center",
 
               [mq[0]]: {
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
+                display: isMobileHeaderExpanded ? "flex" : "none",
+                marginLeft: 0,
                 width: "100%",
-                marginTop: "16px",
-                marginRight: 0,
+                flexDirection: "column",
               },
               [mq[1]]: {
-                marginRight: "16px",
+                display: "flex",
+                marginLeft: "auto",
               },
-            })}
+            }}
           >
-            {
-              props.availableLanguages
-                .concat(props.defaultLanguage)
-                .find(lang => lang.code === props.currentLanguageCode)!.label
-            }{" "}
-            ⌄
-            <ul
-              css={theme => ({
-                zIndex: 100,
-                backgroundColor: theme.bg.default,
-                listStyle: "none",
-                padding: 0,
-                margin: 0,
+            {/** props.availableLanguages && (
+              <nav
+                className="mapseed-language-navigation"
+                onMouseOver={() => setIsLanguageMenuVisible(true)}
+                onMouseOut={() => setIsLanguageMenuVisible(false)}
+                css={theme => ({
+                  color: theme.bg.light,
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  fontSize: "0.9rem",
+                  fontFamily: theme.text.navBarFontFamily,
+                  "&:hover": {
+                    cursor: "pointer",
+                  },
 
-                [mq[0]]: {
-                  display: "flex",
-                  flexDirection: "column",
-                  alignItems: "center",
-                  width: "100%",
-                  marginTop: "8px",
-                },
-                [mq[1]]: {
-                  display: isLanguageMenuVisible ? "block" : "none",
-                  position: "fixed",
-                  border: `4px solid ${theme.brand.accent}`,
-                },
-              })}
-            >
-              {props.availableLanguages
-                .concat(props.defaultLanguage)
-                .map(lang => (
-                  <li
-                    key={lang.code}
-                    css={{
-                      [mq[0]]: {
-                        display: "flex",
-                        width: "100%",
-                      },
+                  [mq[0]]: {
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    width: "100%",
+                    marginTop: "16px",
+                    marginRight: 0,
+                  },
+                  [mq[1]]: {
+                    marginRight: "16px",
+                  },
+                })}
+              >
+                <ul
+                  css={theme => ({
+                    zIndex: 100,
+                    backgroundColor: theme.bg.default,
+                    listStyle: "none",
+                    padding: 0,
+                    margin: 0,
 
-                      [mq[1]]: {
-                        margin: "4px 0",
-                      },
-                    }}
-                  >
-                    <Button
-                      onClick={() => {
-                        props.onChangeLanguage(lang.code);
-                      }}
-                      css={theme => ({
-                        fontFamily: theme.text.headerBarFontFamily,
-                        fontSize: "1rem",
-                        textTransform: "none",
-                        textDecoration: "none",
-                        width: "100%",
-                        borderRadius: 0,
+                    [mq[0]]: {
+                      display: "flex",
+                      flexDirection: "column",
+                      alignItems: "center",
+                      width: "100%",
+                      marginTop: "8px",
+                    },
+                    [mq[1]]: {
+                      display: isLanguageMenuVisible ? "block" : "none",
+                      position: "fixed",
+                      border: `4px solid ${theme.brand.accent}`,
+                    },
+                  })}
+                >
+                  {props.availableLanguages
+                    .concat(props.defaultLanguage)
+                    .map((lang, index) => (
+                      <React.Fragment key={index}>
+                        {index !== 0 && <span>|</span>}
+                        <li
+                          key={lang.code}
+                          css={{
+                            [mq[0]]: {
+                              display: "flex",
+                              width: "100%",
+                            },
 
-                        "&:hover": {
-                          color: theme.text.secondary,
-                          backgroundColor: theme.bg.highlighted,
-                          cursor: "pointer",
-                        },
+                            [mq[1]]: {
+                              margin: "4px 0",
+                            },
+                          }}
+                        >
+                          <Button
+                            className={`${
+                              lang.code === props.currentLanguageCode &&
+                              "selected-language"
+                            }`}
+                            onClick={() => {
+                              props.onChangeLanguage(lang.code);
+                            }}
+                            css={theme => ({
+                              fontFamily: theme.text.headerBarFontFamily,
+                              fontSize: "1rem",
+                              textTransform: "none",
+                              textDecoration: "none",
+                              width: "100%",
+                              borderRadius: 0,
 
-                        [mq[0]]: {
-                          width: "100%",
-                        },
-                      })}
-                    >
-                      {lang.label}
-                    </Button>
-                  </li>
-                ))}
-            </ul>
-          </nav>
-        )}
-        {props.currentUser.isAuthenticated ? (
-          <UserMenu
-            appConfig={props.appConfig}
-            currentUser={props.currentUser}
-            isInMobileMode={isMobileHeaderExpanded}
-            isMobileEnabled={!!props.appConfig.isShowingMobileUserMenu}
-            pathname={props.history.location.pathname}
-          />
-        ) : (
-          <LoginMenu
-            appConfig={props.appConfig}
-            isMobileHeaderExpanded={isMobileHeaderExpanded}
-          />
-        )}
-      </div>
+                              "&:hover": {
+                                color: theme.text.secondary,
+                                backgroundColor: theme.bg.highlighted,
+                                cursor: "pointer",
+                              },
+
+                              [mq[0]]: {
+                                width: "100%",
+                              },
+                            })}
+                          >
+                            {lang.label}
+                          </Button>
+                        </li>
+                      </React.Fragment>
+                    ))}
+                </ul>
+              </nav>
+                          ) */}
+            {props.currentUser.isAuthenticated ? (
+              <UserMenu
+                appConfig={props.appConfig}
+                currentUser={props.currentUser}
+                isInMobileMode={isMobileHeaderExpanded}
+                isMobileEnabled={!!props.appConfig.isShowingMobileUserMenu}
+                pathname={props.history.location.pathname}
+              />
+            ) : (
+              <LoginMenu
+                appConfig={props.appConfig}
+                isMobileHeaderExpanded={isMobileHeaderExpanded}
+              />
+            )}
+          </div>
+        }
+      </nav>
     </header>
   );
 };

@@ -56,22 +56,31 @@ const MetadataBar = (props: MetadataBarProps) => (
     >
       <div>
         <RegularText weight="black">{props.submitterName}</RegularText>{" "}
-        <RegularText>
+        <RegularText
+          css={css`
+            line-height: 0.9rem;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+          `}
+        >
           {props.t("placeActionText", `${props.actionText}`)}{" "}
-          {props.t("this", "this")} {props.label}
+          {props.t("en", "en")} {props.label}
         </RegularText>
       </div>
       <div>
         <SmallText
           css={css`
             line-height: 0.9rem;
+            font-size: 1rem;
           `}
           display="block"
-          textTransform="uppercase"
         >
           {props.numComments}{" "}
           {props.numComments === 1
-            ? props.t("surveyResponseName", props.commentFormConfig.response_name)
+            ? props.t(
+                "surveyResponseName",
+                props.commentFormConfig.response_name,
+              )
             : props.t(
                 "surveyResponsePluralName",
                 props.commentFormConfig.response_plural_name,
@@ -82,22 +91,22 @@ const MetadataBar = (props: MetadataBarProps) => (
             line-height: 0.9rem;
           `}
           display="block"
-          textTransform="uppercase"
         >
           {props.visits} visitas
         </SmallText>
+        {props.appConfig.show_timestamps && (
+          <SmallText
+            css={css`
+              line-height: -0.9rem;
+              width: 100%;
+            `}
+            display="block"
+            textTransform="uppercase"
+          >
+            <time>{moment(props.createdDatetime).fromNow()}</time>
+          </SmallText>
+        )}
       </div>
-      {props.appConfig.show_timestamps && (
-        <SmallText
-          css={css`
-            line-height: -0.9rem;
-          `}
-          display="block"
-          textTransform="uppercase"
-        >
-          <time>{moment(props.createdDatetime).fromNow()}</time>
-        </SmallText>
-      )}
     </div>
   </div>
 );

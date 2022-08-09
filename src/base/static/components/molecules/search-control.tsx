@@ -5,8 +5,9 @@ import IconButton from '@material-ui/core/IconButton';
 import SearchIcon from '@material-ui/icons/Search';
 
 const SearchControl: React.FunctionComponent = props => {
-    return (
-        <div
+    return null
+      /**
+        (<div
           className="mapseed-search-control"
           style={{
             position: "absolute",
@@ -32,8 +33,7 @@ const SearchControl: React.FunctionComponent = props => {
               ),
             }}
           />
-        </div>
-    );
+        </div>) */
   };
 
   export default (SearchControl);

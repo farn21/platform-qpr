@@ -131,7 +131,6 @@ class PlaceDetail extends React.Component<Props, State> {
   };
 
   componentDidMount() {
-    
     this.updateMapViewport();
     this.updateEditability();
     jumpTo({
@@ -304,7 +303,6 @@ class PlaceDetail extends React.Component<Props, State> {
   }
 
   render() {
-    
     const isStoryChapter = !!this.props.focusedPlace.story; // Can we deprecate this?
     const supports = this.props.focusedPlace.submission_sets.support;
     const comments = this.props.focusedPlace.submission_sets.comments;
@@ -419,7 +417,7 @@ class PlaceDetail extends React.Component<Props, State> {
         >
           {this.props.focusedPlace.title}
         </LargeTitle>
-        <PromotionMetadataContainer>
+        <PromotionMetadataContainer style={{ paddingBottom: "24px" }}>
           <MetadataBar
             label={categoryConfig.label}
             createdDatetime={this.props.focusedPlace.created_datetime}

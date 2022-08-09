@@ -11,14 +11,6 @@ import { isTouchDevice } from "../../../utils/misc-utils";
 const BigRadioField = props => {
   return (
     <div className="big-radio-field">
-      <RadioField
-        className="big-radio-field__input"
-        id={props.id}
-        name={props.name}
-        checked={props.checked}
-        value={props.value}
-        onChange={e => props.onChange(e.target.name, e.target.value)}
-      />
       <label
         className={classNames("big-radio-field__label", {
           "big-radio-field__label--hoverable": !isTouchDevice,
@@ -28,6 +20,17 @@ const BigRadioField = props => {
         })}
         htmlFor={props.id}
       >
+      <div className="input-container">
+      <RadioField
+        className="big-radio-field__input"
+        id={props.id}
+        name={props.name}
+        checked={props.checked}
+        value={props.value}
+        onChange={e => props.onChange(e.target.name, e.target.value)}
+      />
+      </div>
+      
         {props.t(
           `radioFieldLabel${props.formId}${props.name}${props.id}`,
           props.label,

@@ -57,7 +57,14 @@ class AddAttachmentButton extends Component {
     return (
       <div className="add-attachment-container">
         <FileField
-          className="add-attachment-button__file-field-label"
+          className={classNames("add-attachment-button__file-field-label", {
+          "border-color-protected-area": this.props.qprFormType === "protected-area",
+          "border-color-water": this.props.qprFormType === "water",
+          "border-color-relocations": this.props.qprFormType === "relocations",
+          "background-color-protected-area": this.props.qprFormType === "protected-area",
+          "background-color-water": this.props.qprFormType === "water",
+          "background-color-relocations": this.props.qprFormType === "relocations" }
+          )} 
           formId={this.props.formId}
           onChange={this.onChange}
           name={this.props.name}

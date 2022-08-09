@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import classNames from "classnames";
-
 import { withTranslation } from "react-i18next";
 import "./dropdown-field.scss";
 
@@ -46,6 +45,7 @@ DropdownField.propTypes = {
   ).isRequired,
   t: PropTypes.func.isRequired,
   value: PropTypes.string.isRequired,
+  qprFormType: PropTypes.string,
 };
 
 DropdownField.defaultProps = {
