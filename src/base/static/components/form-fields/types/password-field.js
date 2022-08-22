@@ -18,6 +18,7 @@ const TextField = props => {
         name = { props.name }
         type = "password"
         value = { props.value }
+        required = { props.required }
         placeholder = {
             props.t(
                 `textFieldLabel${props.formId}${props.name}`,
@@ -32,6 +33,7 @@ const TextField = props => {
 TextField.propTypes = {
     formId: PropTypes.string.isRequired,
     hasAutofill: PropTypes.bool,
+    required: PropTypes.bool,
     name: PropTypes.string.isRequired,
     onChange: PropTypes.func.isRequired,
     placeholder: PropTypes.string,

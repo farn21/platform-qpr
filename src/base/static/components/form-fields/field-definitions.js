@@ -69,6 +69,7 @@ const getSharedFieldProps = (fieldConfig, context) => {
         formId: context.props.formId,
         name: fieldConfig.name,
         onChange: context.onChange.bind(context),
+        required: fieldConfig.required,
         placeholder: fieldConfig.placeholder,
         value: context.props.fieldState.get(constants.FIELD_VALUE_KEY),
         isAutoFocusing: !!context.props.fieldState.get(
@@ -239,6 +240,15 @@ export default {
         getInitialValue: ({ value }) => value,
         getResponseComponent: () => DatetimeFieldResponse,
     },
+    [constants.TIME_FIELD_TYPENAME]: {
+        getValidator: getDefaultValidator,
+        getComponent: (fieldConfig, context) => ( <
+            TimeField {...getSharedFieldProps(fieldConfig, context) }
+            />
+        ),
+        getInitialValue: ({ value }) => value,
+        getResponseComponent: () => TextFieldResponse,
+    },
     [constants.GEOCODING_FIELD_TYPENAME]: {
         getValidator: getPermissiveValidator,
         getComponent: (fieldConfig, context) => ( <
@@ -350,4 +360,3 @@ export default {
         getResponseComponent: () => TextFieldResponse,
     },
 };
-

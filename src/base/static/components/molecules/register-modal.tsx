@@ -63,9 +63,19 @@ const RegisterModal = ({
   }
   const fieldUsername = OrderedMap() ;
   const fieldPassword = OrderedMap();
+  const fieldCheckbox = OrderedMap();
   const fieldEmail = OrderedMap();
   const onCreateUser = async (event) => {
-    var f = document.querySelector("#userNewForm") as HTMLElement | null;
+    var f = document.querySelector("#userNewForm") as HTMLFormElement | null;
+    // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+    // @ts-ignore
+    var ret = f.checkValidity()
+    if (!ret) {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
+    // @ts-ignore
+      f.reportValidity()
+      return false;
+    }
     // eslint-disable-next-line @typescript-eslint/ban-ts-ignore
     // @ts-ignore
     var formData = new FormData(f)
@@ -141,35 +151,15 @@ const RegisterModal = ({
             GRACIAS POR REGISTRARTE
         </div>
                     <form id="userNewForm" onSubmit={onCreateUser} css={css`margin-bottom: 50px; width: 500px;`} className="place-form" >
-              <FormField formId="userNewForm" fieldState={fieldUsername} fieldConfig={{placeholder: "Usuario", display_prompt: "Usuario", name:"username", type: "text", prompt: "Usuario"}} onFieldChange={()=>{}} showValidityStatus={true} >
+              <FormField formId="userNewForm" fieldState={fieldUsername} fieldConfig={{required: true, placeholder: "Usuario", display_prompt: "Usuario", name:"username", type: "text", prompt: "Usuario"}} onFieldChange={()=>{}} showValidityStatus={true} >
               </FormField>
-              <FormField formId="userNewForm" fieldState={fieldEmail} fieldConfig={{placeholder: "Correo", display_prompt: "Correo", name:"email", type: "text", prompt: "Correo"}} onFieldChange={()=>{}} showValidityStatus={true} >
+              <FormField formId="userNewForm" fieldState={fieldEmail} fieldConfig={{required: true, placeholder: "Correo", display_prompt: "Correo", name:"email", type: "text", prompt: "Correo"}} onFieldChange={()=>{}} showValidityStatus={true} >
               </FormField>
-              <FormField formId="userNewForm" fieldState={fieldPassword} fieldConfig={{placeholder: "Contraseña", display_prompt: "Contraseña", name:"password1", type: "password", prompt: "Contraseña"}} onFieldChange={()=>{}} showValidityStatus={true} >
+              <FormField formId="userNewForm" fieldState={fieldPassword} fieldConfig={{required: true, placeholder: "Contraseña", display_prompt: "Contraseña", name:"password1", type: "password", prompt: "Contraseña"}} onFieldChange={()=>{}} showValidityStatus={true} >
               </FormField>
-              <Button  variant="flat"
-              onClick={onCreateUser}
-              color="primary"
-              size="regular" >
-              <RegularText>{"Crear"}</RegularText>
-              </Button>
-            </form>
-          <DialogContentText
-            css={{ fontSize: ".8em" }}
-            variant="body2"
-            align="center"
-          >
-            {"By signing up, you agree to our "}
-            <Link
-              target="_blank"
-              href="https://drive.google.com/file/d/1vK9oYpbuxP5Wh09Na9wPFAWYBqfFxGI8/view"
-              underline="always"
-            >
-              {"Privacy Policy"}
-            </Link>
-          </DialogContentText>
-          <DialogContentText
-            css={{ fontSize: ".8em" }}
+              <input type="checkbox" required />
+              <DialogContentText
+            css={{ paddingLeft: "20px", display: "inline", fontSize: ".8em" }}
             variant="body2"
             align="center"
           >
@@ -182,6 +172,15 @@ const RegisterModal = ({
               {"consentimiento informado de QPR"}
             </Link>
           </DialogContentText>
+          
+              <Button css={{marginTop: "20px"}} variant="flat"
+              onClick={onCreateUser}
+              color="primary"
+              size="regular" >
+              <RegularText>{"Crear"}</RegularText>
+              </Button>
+            </form>
+
         </DialogContent>
       </Dialog>
     </React.Fragment>

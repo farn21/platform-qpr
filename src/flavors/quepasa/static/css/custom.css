@@ -129,8 +129,8 @@ body {
 }
 
 .success-title {
-  font-size: 18px !important;
-  font-family: "Montserrat", sans-serif;
+    font-size: 18px !important;
+    font-family: "Montserrat", sans-serif;
 }
 
 #mapseed-custom-page-container p,
@@ -188,13 +188,12 @@ body {
 }
 
 .mapseed-site-header {
-
-  box-shadow: none;
-  background-color: #ffffff;
-  border-bottom: 1px solid #aeadb3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    box-shadow: none;
+    background-color: #ffffff;
+    border-bottom: 1px solid #aeadb3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .mapseed-site-header h2 {
@@ -202,17 +201,15 @@ body {
 }
 
 @media (max-width: 960px) {
-
-  .mapseed-site-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-  }
-
-  .mapseed-site-header h2 {
-    font-size: 1.35rem;
-  }
+    .mapseed-site-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+    }
+    .mapseed-site-header h2 {
+        font-size: 1.35rem;
+    }
 }
 
 .mapseed-site-header .mapseed-internal-link {
@@ -280,207 +277,189 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-
 @media (max-width: 960px) {
-  .mapseed-site-header {
-    height: 40px;
-  }
-
-  .mapseed-header-navigation {
-    position: fixed;
-    top: 40px;
-    left: 0;
-    width: 80vw;
-    max-width: 300px;
-    height: calc(100vh - 40px);
-    background-color: #fff;
-    margin: 0;
-    border-right: 1px solid #cfcfcf;
-  }
-
-  .mapseed-header-navigation > div > .mapseed-nav-item {
-    width: 80vw;
-    max-width: 300px;
-    height: 100%;
-    text-transform: none;
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-    color: #333;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1rem !important;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
-  .mapseed-header-navigation > div > .mapseed-nav-item > .fa-chevron-right {
-    color: #f0a300;
-  }
-
-  .mapseed-nav-item-container {
-    position: relative;
-    height: 60px;
-    padding: 0;
-  }
-
-  .mapseed-nav-item-container:not(:first-child)::after,
-  .mapseed-navbar-login-button::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    background-color: #ccc;
-    bottom: 0;
-    left: 0;
-  }
-
-  .mapseed-site-header > div > .fa-bars {
-    color: #f0a300;
-  }
-
-  .mapseed-header-navigation > div > .mapseed-navbar-login-button {
-    color: #f0a300;
-    width: 80vw;
-    height: 60px;
-    background-color: unset;
-    border: none;
-    margin: 0;
-    padding: 0 1rem;
-    max-width: 300px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    box-sizing: border-box;
-    position: relative;
-  }
-
-  .mapseed-navbar-login-button > span > p {
-    text-transform: none;
-    font-family: "Montserrat", sans-serif;
-    font-size: 14px;
-    font-weight: 700;
-  }
-
-  .header-logo-container {
-    display: none;
-  }
-
-  .mapseed-language-navigation {
-    position: fixed;
-    width: 80vw;
-    max-width: 300px;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .mapseed-language-navigation,
-  .mapseed-language-navigation > ul,
-  .mapseed-language-navigation > ul > li,
-  .mapseed-language-navigation > ul > li > button {
-    background-color: #fff;
-  }
-
-  .mapseed-language-navigation > ul {
-    width: 80vw;
-    max-width: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-  }
-
-  .mapseed-language-navigation > ul > li,
-  .mapseed-language-navigation > ul > li > button {
-    width: fit-content;
-  }
-
-  .mapseed-language-navigation > ul > li > button {
-    border: none;
-    box-shadow: none;
-    color: #333;
-  }
-
-  .mapseed-language-navigation > ul > li > button:hover {
-    background-color: unset;
-    color: #333;
-    text-decoration: underline;
-    font-weight: 900;
-  }
-
-  .selected-language {
-    font-weight: 900;
-    text-decoration: underline;
-  }
-
-  .mapseed-site-header :nth-child(3) nav {
-    text-indent: -9999px;
-  }
-  .mapseed-site-header :nth-child(3) button.MuiButtonBase-root {
-    border-radius: 4px;
-  }
-  .mapseed-site-header :nth-child(3) ul {
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    background-color: transparent;
-    justify-content: center;
-    border-top: 1px solid #718792;
-    border-bottom: 1px solid #718792;
-    padding: 0.5rem 0;
-  }
-  .mapseed-site-header :nth-child(3) ul li {
-    width: auto;
-  }
-  .mapseed-site-header :nth-child(3) ul li button {
-    background-color: transparent;
-  }
+    .mapseed-site-header {
+        height: 40px;
+    }
+    .mapseed-header-navigation {
+        position: fixed;
+        top: 40px;
+        left: 0;
+        width: 80vw;
+        max-width: 300px;
+        height: calc(100vh - 40px);
+        background-color: #fff;
+        margin: 0;
+        border-right: 1px solid #cfcfcf;
+    }
+    .mapseed-header-navigation>div>.mapseed-nav-item {
+        width: 80vw;
+        max-width: 300px;
+        height: 100%;
+        text-transform: none;
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        color: #333;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 1rem !important;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    .mapseed-header-navigation>div>.mapseed-nav-item>.fa-chevron-right {
+        color: #f0a300;
+    }
+    .mapseed-nav-item-container {
+        position: relative;
+        height: 60px;
+        padding: 0;
+    }
+    .mapseed-nav-item-container:not(:first-child)::after,
+    .mapseed-navbar-login-button::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: #ccc;
+        bottom: 0;
+        left: 0;
+    }
+    .mapseed-site-header>div>.fa-bars {
+        color: #f0a300;
+    }
+    .mapseed-header-navigation>div>.mapseed-navbar-login-button {
+        color: #f0a300;
+        width: 80vw;
+        height: 60px;
+        background-color: unset;
+        border: none;
+        margin: 0;
+        padding: 0 1rem;
+        max-width: 300px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .mapseed-navbar-login-button>span>p {
+        text-transform: none;
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .header-logo-container {
+        display: none;
+    }
+    .mapseed-language-navigation {
+        position: fixed;
+        width: 80vw;
+        max-width: 300px;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mapseed-language-navigation,
+    .mapseed-language-navigation>ul,
+    .mapseed-language-navigation>ul>li,
+    .mapseed-language-navigation>ul>li>button {
+        background-color: #fff;
+    }
+    .mapseed-language-navigation>ul {
+        width: 80vw;
+        max-width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .mapseed-language-navigation>ul>li,
+    .mapseed-language-navigation>ul>li>button {
+        width: fit-content;
+    }
+    .mapseed-language-navigation>ul>li>button {
+        border: none;
+        box-shadow: none;
+        color: #333;
+    }
+    .mapseed-language-navigation>ul>li>button:hover {
+        background-color: unset;
+        color: #333;
+        text-decoration: underline;
+        font-weight: 900;
+    }
+    .selected-language {
+        font-weight: 900;
+        text-decoration: underline;
+    }
+    .mapseed-site-header :nth-child(3) nav {
+        text-indent: -9999px;
+    }
+    .mapseed-site-header :nth-child(3) button.MuiButtonBase-root {
+        border-radius: 4px;
+    }
+    .mapseed-site-header :nth-child(3) ul {
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        background-color: transparent;
+        justify-content: center;
+        border-top: 1px solid #718792;
+        border-bottom: 1px solid #718792;
+        padding: 0.5rem 0;
+    }
+    .mapseed-site-header :nth-child(3) ul li {
+        width: auto;
+    }
+    .mapseed-site-header :nth-child(3) ul li button {
+        background-color: transparent;
+    }
 }
 
 @media (min-width: 960px) {
-  .mapseed-nav-item > .fa-chevron-right {
-    display: none;
-  }
-  .mapseed-site-header :nth-child(3) nav::after {
-    content: "";
-    width: 0;
-    height: 0;
-    border-left: 4px solid transparent;
-    border-right: 4px solid transparent;
-    border-top: 6px solid #000000;
-    position: absolute;
-    top: 50%;
-    margin-top: -4px;
-  }
-  .mapseed-site-header :nth-child(3) button {
-    margin-right: 2rem;
-  }
-  .mapseed-site-header :nth-child(3) nav ul {
-    border: none;
-    border-radius: 4px;
-    background-color: #fff;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
-    width: 100%;
-    position: absolute;
-    top: 34px;
-    left: 0;
-  }
-  .mapseed-site-header :nth-child(3) nav:hover ul {
-    position: absolute;
-  }
-  .mapseed-site-header :nth-child(3) nav ul li button {
-    background-color: transparent;
-    color: #000000;
-    margin-right: 0;
-  }
-  .mapseed-site-header :nth-child(3) nav ul li button:hover {
-    background-color: #f2f2f2;
-    color: #000000;
-  }
+    .mapseed-nav-item>.fa-chevron-right {
+        display: none;
+    }
+    .mapseed-site-header :nth-child(3) nav::after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 6px solid #000000;
+        position: absolute;
+        top: 50%;
+        margin-top: -4px;
+    }
+    .mapseed-site-header :nth-child(3) button {
+        margin-right: 2rem;
+    }
+    .mapseed-site-header :nth-child(3) nav ul {
+        border: none;
+        border-radius: 4px;
+        background-color: #fff;
+        box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        position: absolute;
+        top: 34px;
+        left: 0;
+    }
+    .mapseed-site-header :nth-child(3) nav:hover ul {
+        position: absolute;
+    }
+    .mapseed-site-header :nth-child(3) nav ul li button {
+        background-color: transparent;
+        color: #000000;
+        margin-right: 0;
+    }
+    .mapseed-site-header :nth-child(3) nav ul li button:hover {
+        background-color: #f2f2f2;
+        color: #000000;
+    }
 }
 
 
@@ -489,71 +468,70 @@ body {
 
 /* START SECTION PANEL STYLES */
 
-#site-wrap > div > section {
-  padding: 18px;
-  background-color: #ffffff;
+#site-wrap>div>section {
+    padding: 18px;
+    background-color: #ffffff;
 }
 
-#site-wrap > div > section button[aria-label="close"],
-#site-wrap > div > div button[aria-label="close"] {
-
-  border-radius: 0;
-  background-color: transparent;
-  right: 12px;
-  left: auto;
-  top: 5px;
-  box-shadow: none;
-  color: #333;
-  top: 0;
-  font-weight: 900;
-  font-size: 25px;
+#site-wrap>div>section button[aria-label="close"],
+#site-wrap>div>div button[aria-label="close"] {
+    border-radius: 0;
+    background-color: transparent;
+    right: 12px;
+    left: auto;
+    top: 5px;
+    box-shadow: none;
+    color: #333;
+    top: 0;
+    font-weight: 900;
+    font-size: 25px;
 }
 
-#site-wrap > div > section button[aria-label="close"]:hover,
-#site-wrap > div > div button[aria-label="close"]:hover {
-  color: #f0a300;
+#site-wrap>div>section button[aria-label="close"]:hover,
+#site-wrap>div>div button[aria-label="close"]:hover {
+    color: #f0a300;
 }
 
-#site-wrap > div > section button[aria-label="back"],
-#site-wrap > div > div button[aria-label="back"] {
-  border-radius: 0;
-  background-color: transparent;
-  right: auto;
-  left: 12px;
-  box-shadow: none;
-  color: #333;
-  top: 0;
-  font-weight: 900;
-  font-size: 25px;
-  position: absolute;
-  padding: 10px 16px 16px 16px;
+#site-wrap>div>section button[aria-label="back"],
+#site-wrap>div>div button[aria-label="back"] {
+    border-radius: 0;
+    background-color: transparent;
+    right: auto;
+    left: 12px;
+    box-shadow: none;
+    color: #333;
+    top: 0;
+    font-weight: 900;
+    font-size: 25px;
+    position: absolute;
+    padding: 10px 16px 16px 16px;
 }
-#site-wrap > div > section button[aria-label="back"]:hover,
-#site-wrap > div > div button[aria-label="back"]:hover {
-  color: #f0a300;
+
+#site-wrap>div>section button[aria-label="back"]:hover,
+#site-wrap>div>div button[aria-label="back"]:hover {
+    color: #f0a300;
 }
 
 @media (min-width: 960px) {
-  #site-wrap > div > section button[aria-label="close"],
-  #site-wrap > div > div button[aria-label="close"],
-  #site-wrap > div > section button[aria-label="back"],
-  #site-wrap > div > div button[aria-label="back"] {
-    top: 10px;
-  }
+    #site-wrap>div>section button[aria-label="close"],
+    #site-wrap>div>div button[aria-label="close"],
+    #site-wrap>div>section button[aria-label="back"],
+    #site-wrap>div>div button[aria-label="back"] {
+        top: 10px;
+    }
 }
 
 @media (max-width: 960px) {
-  #site-wrap > div > section > div {
-    padding: 2rem 8px 8px 8px;
-  }
-
-  .mapseed-content-panel {
-    position: absolute;
-    top: 45%;
-    left: 0;
-    border: none;
-    overflow: hidden;
-  }
+    #site-wrap>div>section>div {
+        padding: 2rem 8px 8px 8px;
+    }
+    .mapseed-content-panel {
+        position: absolute;
+        top: 45%;
+        left: 0;
+        border: none;
+        overflow: hidden;
+    }
 }
 
 @media (min-width: 960px) {
@@ -569,24 +547,25 @@ body {
 /* START ADD PLACE BUTTON STYLES */
 
 .mapseed-add-place-button-container {
-  box-shadow: none;
-  font-weight: 700;
-  font-size: 0.75rem;
-  border: none;
-  border-radius: 27px !important;
-  background-color: #f0a300;
-  padding: 8px 16px;
-  top: 78px;
-  left: 60px;
-  height: 48px;
+    box-shadow: none;
+    font-weight: 700;
+    font-size: 0.75rem;
+    border: none;
+    border-radius: 27px !important;
+    background-color: #f0a300;
+    padding: 8px 16px;
+    top: 78px;
+    left: 60px;
+    height: 48px;
 }
+
 @media (max-width: 960px) {
-  .mapseed-add-place-button-container {
-    width: 90vw;
-    top: unset;
-    bottom: 15px;
-    left: calc(50% - 45vw);
-  }
+    .mapseed-add-place-button-container {
+        width: 90vw;
+        top: unset;
+        bottom: 15px;
+        left: calc(50% - 45vw);
+    }
 }
 
 @media (min-width: 960px) {
@@ -622,165 +601,167 @@ body {
 
 /* END ADD NEWS BUTTON STYLES */
 
+
 /* START NEWS FEED STYLES */
+
 .css-axz6ts-ListHeader {
     height: 100px;
 }
 
-
 .filter-title,
 .news-title {
-  font-family: "Montserrat", sans-serif;
-  color: #aeadb3;
-  padding: 0 1rem;
+    font-family: "Montserrat", sans-serif;
+    color: #aeadb3;
+    padding: 0 1rem;
 }
 
 .filter-title {
-  font-size: 1rem;
-  text-align: left;
-  align-self: flex-start;
-  margin-bottom: 0;
+    font-size: 1rem;
+    text-align: left;
+    align-self: flex-start;
+    margin-bottom: 0;
 }
 
 .news-title {
-  font-size: 1.5rem;
-  margin-top: 4rem;
+    font-size: 1.5rem;
+    margin-top: 4rem;
 }
 
 .news-search-input {
-  height: 100%;
-  width: 80%;
-  border-radius: 7px;
-  border: solid 1px #767676;
-  font-family: "Montserrat", sans-serif;
-  box-sizing: border-box;
+    height: 100%;
+    width: 80%;
+    border-radius: 7px;
+    border: solid 1px #767676;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
 }
 
 .news-search-button {
-  height: 100%;
-  width: 20%;
-  background-color: #ffab00;
-  text-transform: none;
-  box-shadow: none;
-  font-family: "Montserrat", sans-serif;
+    height: 100%;
+    width: 20%;
+    background-color: #ffab00;
+    text-transform: none;
+    box-shadow: none;
+    font-family: "Montserrat", sans-serif;
 }
 
 .search-container,
 .filter-container {
-  width: 100%;
-  padding: 0 1rem;
-  box-sizing: border-box;
-  display: flex;
+    width: 100%;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    display: flex;
 }
 
 .search-container {
-  height: 40px;
+    height: 40px;
 }
 
 .filter-container {
-  flex-direction: column;
-  align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .filter-button-container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .filter-button {
-  text-transform: none;
-  padding: 0;
-  margin: 0;
+    text-transform: none;
+    padding: 0;
+    margin: 0;
 }
 
 .filter-checkbox {
-  width: 20px;
-  height: 20px;
-  box-sizing: border-box;
-  border: solid 2px #ffab00;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    border: solid 2px #ffab00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.filter-checkbox > i {
-  color: #fff;
-  font-size: 0.7rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.filter-checkbox>i {
+    color: #fff;
+    font-size: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .filter-checkbox:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .filter-checkbox.selected {
-  background-color: #ffab00;
+    background-color: #ffab00;
 }
 
 .news-element-social-container {
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-end;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .like-wrapper {
-  margin: 0;
+    margin: 0;
 }
 
 .heart-icon {
-  color: #767676;
-  font-size: 1.5rem;
+    color: #767676;
+    font-size: 1.5rem;
 }
 
 .avatar-container {
-  border-radius: 50%;
-  width: 32px;
-  min-width: 32px;
-  height: 32px;
-  box-sizing: border-box;
-  background-color: #767676;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    border-radius: 50%;
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+    box-sizing: border-box;
+    background-color: #767676;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.avatar-container > i {
-  color: #fff;
+.avatar-container>i {
+    color: #fff;
 }
 
 .place-info {
-  display: flex;
+    display: flex;
 }
 
 .view-on-map-link {
-  background-color: unset;
-  border: none;
-  box-shadow: none;
-  text-transform: unset;
-  padding: 0;
-  margin: 1rem 0 0 0;
+    background-color: unset;
+    border: none;
+    box-shadow: none;
+    text-transform: unset;
+    padding: 0;
+    margin: 1rem 0 0 0;
 }
 
-.view-on-map-link > span {
-  color: #f0a300;
-  font-size: 1rem;
+.view-on-map-link>span {
+    color: #f0a300;
+    font-size: 1rem;
 }
 
 .shared-description {
-  font-size: 12px !important;
-  color: #767676;
-  font-weight: 100 !important;
+    font-size: 12px !important;
+    color: #767676;
+    font-weight: 100 !important;
 }
 
 @media (min-width: 960px) {
-  .list-view-container {
-    width: 70%;
-    margin: 0 auto;
-  }
+    .list-view-container {
+        width: 70%;
+        margin: 0 auto;
+    }
 }
+
 
 /* END NEWS FEED HEADER STYLES */
 
@@ -788,7 +769,6 @@ body {
 /* START FORMS STYLES */
 
 .form-stage-header-bar__header {
-
     font-family: "Montserrat";
     text-transform: uppercase;
     color: #a1cde7;
@@ -805,11 +785,11 @@ body {
     font-weight: 400 !important;
 }
 
-
 .css-u8hsar-RegularText-InputFormCategoryButton {
-  background-color: unset;
-  font-size: 0.9rem;
+    background-color: unset;
+    font-size: 0.9rem;
 }
+
 
 /* Form category buttons */
 
@@ -823,26 +803,28 @@ body {
 }
 
 .input-form-category-button label {
-  border: 1px solid #ccc;
-  height: 48px;
-  border-radius: 4px;
-  background-color: transparent;
+    border: 1px solid #ccc;
+    height: 48px;
+    border-radius: 4px;
+    background-color: transparent;
 }
 
 .input-form-category-button label:hover {
+    border-color: #dadedf;
+}
 
-  border-color: #dadedf;
-}
 .without-borders {
-  border: none;
-  border-bottom: 2px solid #eee;
+    border: none;
+    border-bottom: 2px solid #eee;
 }
+
 .no-text-transform {
-  text-transform: none;
+    text-transform: none;
 }
+
 .input-form-category-button__image {
-  margin: 0 12px !important;
-  width: 27px !important;
+    margin: 0 12px !important;
+    width: 27px !important;
 }
 
 .input-form-category-button label span:nth-child(1) {
@@ -961,13 +943,12 @@ div[data-field-type="informational_html"][data-field-name*="intro-"] p {
 }
 
 .big-radio-field__label:before {
-
-  background-color: #ffffff !important;
-  border: 1px solid #f0a300 !important;
-  border-radius: 50% !important;
-  height: 16px !important;
-  width: 16px !important;
-  margin-top: 7px !important;
+    background-color: #ffffff !important;
+    border: 1px solid #f0a300 !important;
+    border-radius: 50% !important;
+    height: 16px !important;
+    width: 16px !important;
+    margin-top: 7px !important;
 }
 
 .big-radio-field__label--toggled {
@@ -989,7 +970,7 @@ div[data-field-type="informational_html"][data-field-name*="intro-"] p {
 }
 
 .big-radio-field__label--toggled:before {
-  background-color: #f0a300 !important;
+    background-color: #f0a300 !important;
 }
 
 
@@ -1029,16 +1010,15 @@ div[data-field-type="informational_html"][data-field-name*="intro-"] p {
 }
 
 .big-checkbox-field__label:before {
-
-  background-color: #ffffff !important;
-  border: 1px solid #f0a300 !important;
-  height: 16px !important;
-  width: 16px !important;
-  margin-top: 6px !important;
+    background-color: #ffffff !important;
+    border: 1px solid #f0a300 !important;
+    height: 16px !important;
+    width: 16px !important;
+    margin-top: 6px !important;
 }
 
 .big-checkbox-field__label--toggled:before {
-  background-color: #f0a300 !important;
+    background-color: #f0a300 !important;
 }
 
 
@@ -1064,7 +1044,7 @@ div[data-field-type="informational_html"][data-field-name*="intro-"] p {
 }
 
 .big-toggle-field__label--toggled:before {
-  background-color: #f0a300 !important;
+    background-color: #f0a300 !important;
 }
 
 
@@ -1120,9 +1100,9 @@ div[data-field-type="informational_html"][data-field-name*="intro-"] p {
 }
 
 .time-field {
-  box-sizing: border-box;
-  width: 100%;
-  padding-right: 1em;
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: 1em;
 }
 
 .datetime-field__input,
@@ -1133,16 +1113,14 @@ div[data-field-type="informational_html"][data-field-name*="intro-"] p {
     border-width: 1px !important;
     border-color: #f0a300 !important;
     font-size: 14px !important;
- }
+}
 
 .time-field {
-
-  padding-left: 1em !important;
-  border-radius: 8px !important;
-  border-width: 1px !important;
-  border-color: rgb(118, 118, 118) !important;
-
-  font-size: 14px !important;
+    padding-left: 1em !important;
+    border-radius: 8px !important;
+    border-width: 1px !important;
+    border-color: rgb(118, 118, 118) !important;
+    font-size: 14px !important;
 }
 
 .datetime-field__input:focus-visible {
@@ -1158,10 +1136,9 @@ div[data-field-type="informational_html"][data-field-name*="intro-"] p {
 }
 
 .datetime-field__input,
-
 .text-field,
 .time-field {
-  height: 40px !important;
+    height: 40px !important;
 }
 
 
@@ -1171,13 +1148,13 @@ div[data-field-type="informational_html"][data-field-name*="intro-"] p {
 /* Dropdown styles */
 
 .dropdown-field {
-  border-radius: 8px !important;
-  border-width: 0.8px !important;
-  color: #000000 !important;
-  background-color: #ffffff;
-  font-size: 14px !important;
-  height: 40px !important;
-  padding: 8px 16px !important;
+    border-radius: 8px !important;
+    border-width: 0.8px !important;
+    color: #000000 !important;
+    background-color: #ffffff;
+    font-size: 14px !important;
+    height: 40px !important;
+    padding: 8px 16px !important;
 }
 
 .dropdown-field:focus-visible {
@@ -1303,26 +1280,26 @@ option:hover {
 /*START SUBMIT PANEL STYLES*/
 
 .input-form-submit-card {
-  border-radius: 20px;
-  font-size: 14px !important;
-  margin: auto !important;
+    border-radius: 20px;
+    font-size: 14px !important;
+    margin: auto !important;
 }
 
-.input-form-submit-card > button {
-  background-color: #f0a300;
-  font-size: 14px;
-  font-weight: 700;
-  border-radius: 20px;
-  width: 90vw;
-  max-width: 100%;
-  box-shadow: none;
-  text-transform: none;
-  height: 48px;
-  border-radius: 27px;
+.input-form-submit-card>button {
+    background-color: #f0a300;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 20px;
+    width: 90vw;
+    max-width: 100%;
+    box-shadow: none;
+    text-transform: none;
+    height: 48px;
+    border-radius: 27px;
 }
 
 .css-1pjhrip-RegularText-InputFormCategoryButton {
-  font-size: 0.9rem;
+    font-size: 0.9rem;
 }
 
 
@@ -1332,10 +1309,10 @@ option:hover {
 /* START LEFT SIDEBAR STYLES */
 
 .mapseed-left-sidebar {
-  background-color: #ffffff;
-  width: 350px;
-  max-width: 90vw;
-  z-index: 405;
+    background-color: #ffffff;
+    width: 350px;
+    max-width: 90vw;
+    z-index: 405;
 }
 
 .mapseed-left-sidebar>div {
@@ -1393,11 +1370,11 @@ option:hover {
 }
 
 .icon-container {
-  color: #fff;
-  border: solid;
-  border-color: #ffab00;
-  border-radius: 5px;
-  background-color: #fff;
+    color: #fff;
+    border: solid;
+    border-color: #ffab00;
+    border-radius: 5px;
+    background-color: #fff;
 }
 
 .icon-container:hover {
@@ -1405,15 +1382,17 @@ option:hover {
 }
 
 .icon-container.checkbox-selected {
-  background-color: #ffab00;
-  color: #fff;
+    background-color: #ffab00;
+    color: #fff;
 }
+
 .mapseed-map-layer-selector-container span span:last-child {
-  margin: 0;
-  padding: 0.25rem;
+    margin: 0;
+    padding: 0.25rem;
 }
+
 .mapseed-map-layer-selector-container span.fa-check {
-  color: #fff;
+    color: #fff;
 }
 
 .css-pigogt {
@@ -1566,26 +1545,24 @@ div[class*="-RichTextareaFieldResponseWrapper"] {
 }
 
 .privacy-policy-button {
-  width: 100%;
+    width: 100%;
 }
 
 @media (min-width: 1024px) {
-  .privacy-policy-button {
-    width: 30%;
-  }
-
-  .css-wg8uo8-App,
-  .privacy-policy-container {
-    top: 20% !important;
-    left: 20% !important;
-    right: 20% !important;
-    bottom: auto !important;
-  }
-
-  .css-wg8uo8-App:focus,
-  .privacy-policy-container:focus {
-    outline: none !important;
-  }
+    .privacy-policy-button {
+        width: 30%;
+    }
+    .css-wg8uo8-App,
+    .privacy-policy-container {
+        top: 20% !important;
+        left: 20% !important;
+        right: 20% !important;
+        bottom: auto !important;
+    }
+    .css-wg8uo8-App:focus,
+    .privacy-policy-container:focus {
+        outline: none !important;
+    }
 }
 
 
@@ -1599,7 +1576,7 @@ div[class*="-RichTextareaFieldResponseWrapper"] {
 }
 
 .text-color-relocations {
-  color: #f0a300 !important;
+    color: #f0a300 !important;
 }
 
 .text-color-protected-area {
@@ -1611,7 +1588,7 @@ div[class*="-RichTextareaFieldResponseWrapper"] {
 }
 
 .border-color-relocations {
-  border-color: #f0a300 !important;
+    border-color: #f0a300 !important;
 }
 
 .border-color-protected-area {
@@ -1623,37 +1600,41 @@ div[class*="-RichTextareaFieldResponseWrapper"] {
 }
 
 .background-color-relocations {
-  background-color: #f0a300 !important;
+    background-color: #f0a300 !important;
 }
 
 .background-color-protected-area {
     background-color: #a2ba91 !important;
 }
 
+
 /* END DYNAMIC COLOR CLASSES */
+
 
 /* START PLACE DETAIL CLASSES  */
 
 .heart-icon {
-  color: #767676;
-  font-size: 1.5rem;
+    color: #767676;
+    font-size: 1.5rem;
 }
 
 .heart-icon.supported {
-  color: #f0a300;
-  font-size: 1.5rem;
+    color: #f0a300;
+    font-size: 1.5rem;
 }
 
+
 /* END PLACE DETAIL CLASSES  */
+
 
 /* START MAP CLASSES  */
 
 @media (max-width: 960px) {
-  .map-container > div {
-    position: fixed !important;
-    top: 40px;
-  }
+    .map-container>div {
+        position: fixed !important;
+        top: 40px;
+    }
 }
 
-/* END MAP CLASSES  */
 
+/* END MAP CLASSES  */

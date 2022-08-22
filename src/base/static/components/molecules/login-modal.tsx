@@ -189,20 +189,6 @@ const LoginModal = ({
             variant="body2"
             align="center"
           >
-            {"By signing up, you confirm that you have read and agree with the "}
-            <Link
-              target="_blank"
-              href="https://drive.google.com/file/d/1vK9oYpbuxP5Wh09Na9wPFAWYBqfFxGI8/view"
-              underline="always"
-            >
-              {"QPR informed consent"}
-           </Link>
-          </DialogContentText>
-          <DialogContentText
-            css={{ fontSize: ".8em" }}
-            variant="body2"
-            align="center"
-          >
             {"Al registrarte, confirmas que leiste y aceptás el "}
             <Link
               target="_blank"
