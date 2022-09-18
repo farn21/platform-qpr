@@ -1315,10 +1315,6 @@ option:hover {
     z-index: 405;
 }
 
-.mapseed-left-sidebar>div {
-    padding: 1.5rem;
-}
-
 .mapseed-left-sidebar h3 {
     color: #000000;
     font-size: 1.3125rem;
