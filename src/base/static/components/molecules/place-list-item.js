@@ -185,8 +185,17 @@ const PlaceListItem = props => {
     ? props.place.submission_sets.support.length
     : 0;
   const submitterName = props.place.submitter
-    ? props.place.submitter.name
+    ? props.place.submitter.username
     : props.place.submitter_name || props.placeConfig.anonymous_name;
+  const newsTitle = props.place["title-news"]
+    ?  props.place["title-news"] 
+    : props.placeConfig.no_title;
+  const newsDescription = props.place["description-news"] 
+    ?  props.place["description-news"]
+    : props.placeConfig.no_description;
+  const newsDate = props.place["datetime-news"] 
+    ?  props.place["datetime-news"] 
+    : props.placeConfig.no_date;
   const onSocialShare = service => {
     sharePlace({
       place: props.place,
@@ -211,7 +220,7 @@ const PlaceListItem = props => {
           flexDirection: "column",
         }}
       >
-        <SmallTitle>{props.place.title}</SmallTitle>
+        <SmallTitle>{newsTitle}</SmallTitle>
 
         <PlaceBodyContainer>
           <div className="place-info">
@@ -226,6 +235,16 @@ const PlaceListItem = props => {
                   `${props.placeConfig.action_text} esta experiencia en`,
                 )}{" "}
                 {placeDetailConfig.label}
+              </RegularText>
+              <RegularText>Descripción:</RegularText> 
+              <RegularText className="news-description">
+                {newsDescription}
+              </RegularText>
+              <RegularText>
+                Fecha:
+              </RegularText>
+              <RegularText className="news-date">
+                {newsDate}
               </RegularText>
               <CommentsText>
                 {numberOfComments}{" "}

@@ -878,6 +878,9 @@
     "title": "Cuentanos más...",
     "action_text": "creado este",
     "anonymous_name": "Alguien",
+    "no_description": "Sin descripción",
+    "no_title": "Sin título",
+    "no_date": "Sin fecha",
     "submit_button_label": "Enviar",
     "location_item_name": "location",
     "place_detail": [

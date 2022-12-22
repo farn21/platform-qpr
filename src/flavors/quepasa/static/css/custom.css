@@ -755,6 +755,18 @@ body {
     font-weight: 100 !important;
 }
 
+.news-description {
+    font-size: 13px !important;
+    color: #000000;
+    font-weight: 100 !important;
+}
+
+.news-date {
+    font-size: 12px !important;
+    color: #000000;
+    font-weight: 100 !important;
+}
+
 @media (min-width: 960px) {
     .list-view-container {
         width: 70%;
