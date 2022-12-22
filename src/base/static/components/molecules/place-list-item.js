@@ -189,13 +189,13 @@ const PlaceListItem = props => {
     : props.place.submitter_name || props.placeConfig.anonymous_name;
   const newsTitle = props.place["title-news"]
     ?  props.place["title-news"] 
-    : props.placeConfig.no_title;
+    : "Sin título";
   const newsDescription = props.place["description-news"] 
     ?  props.place["description-news"]
-    : props.placeConfig.no_description;
+    : "Sin descripción";
   const newsDate = props.place["datetime-news"] 
     ?  props.place["datetime-news"] 
-    : props.placeConfig.no_date;
+    :  "Sin fecha";
   const onSocialShare = service => {
     sharePlace({
       place: props.place,
