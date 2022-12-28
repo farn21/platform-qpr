@@ -1205,7 +1205,7 @@
                         "content": "<span><b>Compartí historias, novedades, eventos y actividades organizadas por y para la comunidad de la cuenca completando el siguiente formulario:</b></span>"
                     },
                     {
-                        "name": "municipality-news",
+                        "name": "municipio-novedades",
                         "type": "dropdown",
                         "prompt": "¿En qué municipio tiene lugar esta historia? Elegí una de estas opciones:",
                         "display_prompt": "Municipio donde sucede esta novedad",
@@ -1274,21 +1274,21 @@
                         ]
                     },
                     {
-                        "name": "address-news",
+                        "name": "coordenada-novedades",
                         "type": "informational_html",
                         "prompt": "Arrastrá el mapa para ubicar tu experiencia",
                         "content": "<span><b></b></span>",
                         "optional": false
                     },
                     {
-                        "name": "title-news-info",
+                        "name": "info-novedades",
                         "type": "informational_html",
                         "prompt": "Ponele un título a tu historia.",
                         "content": "<span><i>Recordá que este es un espacio sujeto a políticas de publicación  y no se permiten contenidos propagandísticos partidarios ni lenguaje discriminatorio como se detalla en las condiciones de uso de QPR.</i></span>",
                         "optional": false
                     },
                     {
-                        "name": "title-news",
+                        "name": "info-titulo-novedades",
                         "type": "text",
                         "prompt": "",
                         "display_prompt": "Título",
@@ -1297,7 +1297,7 @@
                         "optional": false
                     },
                     {
-                        "name": "datetime-news",
+                        "name": "fecha-registro-novedades",
                         "type": "datetime",
                         "time_format": false,
                         "prompt": "¿Cuándo? Elegí una fecha en el calendario.",
@@ -1307,7 +1307,7 @@
                         "qprFormType": "relocations"
                     },
                     {
-                        "name": "theme-news",
+                        "name": "tema-novedades",
                         "type": "big_checkbox",
                         "display_prompt": "Tema",
                         "prompt": "¿Con qué tema se relaciona tu historia? Elegí uno o más de estos temas:",
@@ -1332,7 +1332,7 @@
                         ]
                     },
                     {
-                        "name": "description-news",
+                        "name": "info-texto-novedades",
                         "type": "textarea",
                         "prompt": "Describí brevemente de qué se trata tu historia.",
                         "display_prompt": "Descripción",
@@ -1341,31 +1341,32 @@
                         "qprFormType": "relocations"
                     },
                     {
-                        "name": "intro-attach-news",
+                        "name": "info-adjuntos-novedades",
                         "type": "informational_html",
                         "prompt": "¿Querés agregar una imagen, enlace o documento?",
                         "optional": true,
                         "content": "<span> <i> Recordá que las fotografías y documentos que adjuntás deben ser de tu autoría o debés contar con permiso para poder publicarlos . No se pueden incluir imágenes en las que se pueda identificar rostros de personas.  </i> </span>"
                     },
                     {
-                        "name": "info-attach-img-news",
+                        "name": "info-imagen-novedades",
                         "type": "file",
                         "label": "Adjuntar archivo de imagen",
                         "placeholder": "",
+                        "display_prompt": "Adjuntos",
                         "optional": true,
                         "qprFormType": "relocations"
                     },
                     {
-                        "name": "info-attach-pdf-news",
-                        "type": "pdf",
+                        "name": "info-pdf-novedades",
+                        "type": "file",
                         "label": "Adjuntar archivo PDF",
                         "placeholder": "",
-                        "display_prompt": "Documento",
+                        "display_prompt": "Adjuntos",
                         "optional": true,
                         "qprFormType": "relocations"
                     },
                     {
-                        "name": "link-news",
+                        "name": "info-enlace-novedades",
                         "type": "text",
                         "display_prompt": "Enlace",
                         "prompt": " ",
@@ -1413,7 +1414,7 @@
                         "content": "<span><b>¿Tenés dudas? Consultá la guía de campo.</b></span>"
                     },
                     {
-                        "name": "municipality-areas",
+                        "name": "municipio-areas-no-registrados",
                         "type": "dropdown",
                         "prompt": "¿En qué municipio tiene lugar esta experiencia? Elegí una de estas opciones:",
                         "display_prompt": "Municipio donde tiene lugar la experiencia sobre Áreas Naturales",
@@ -1482,7 +1483,7 @@
                         ]
                     },
                     {
-                        "name": "reserve-areas",
+                        "name": "reserva-areas-no-registrados",
                         "type": "dropdown",
                         "prompt": "Elegí la reserva sobre la cual vas a compartir tu experiencia.",
                         "display_prompt": "Reserva donde tiene lugar la experiencia",
@@ -1520,8 +1521,12 @@
                                 "value": "reserva-natural-costanera-sur"
                             },
                             {
-                                "label": "Reserva Paleontológica Francisco P. Moreno Parque Natural Lago Lugano",
+                                "label": "Reserva Paleontológica Francisco P. Moreno",
                                 "value": "reserva-paleontologica-moreno"
+                            },
+                            {
+                                "label": "Parque Natural Lago Lugano",
+                                "value": "parque-natural-lago-lugano"
                             },
                             {
                                 "label": "Reserva Natural Integral y Mixta Laguna de Rocha",
@@ -1554,14 +1559,14 @@
                         ]
                     },
                     {
-                        "name": "address-areas",
+                        "name": "coordenada-areas-no-registrados",
                         "type": "informational_html",
                         "prompt": "Arrastrá el mapa para ubicar tu experiencia",
                         "content": "<span><b></b></span>",
                         "optional": false
                     },
                     {
-                        "name": "visit-areas",
+                        "name": "visita-areas-no-registrados",
                         "type": "big_radio",
                         "prompt": "¿Es la primera vez que visitás este espacio?",
                         "optional": false,
@@ -1569,7 +1574,7 @@
                         "qprFormType": "relocations",
                         "triggers": [{
                             "value": "no-visit",
-                            "targets": ["frequency-areas"]
+                            "targets": ["frecuencia-areas-no-registrados"]
                         }],
                         "content": [{
                                 "label": "Sí.",
@@ -1582,7 +1587,7 @@
                         ]
                     },
                     {
-                        "name": "frequency-areas",
+                        "name": "frecuencia-areas-no-registrados",
                         "type": "big_radio",
                         "prompt": "¿Con qué frecuencia visitás el espacio? Elegí una de estas opciones:",
                         "hidden_default": true,
@@ -1612,7 +1617,7 @@
                         ]
                     },
                     {
-                        "name": "last-visit-areas",
+                        "name": "fecha-areas-no-registrados",
                         "type": "datetime",
                         "time_format": false,
                         "prompt": "¿Cuándo fue tu última visita? Seleccioná una fecha en el calendario.",
@@ -1622,7 +1627,7 @@
                         "optional": false
                     },
                     {
-                        "name": "activities-last-visit-areas",
+                        "name": "actividades-areas-no-registrados",
                         "type": "big_checkbox",
                         "prompt": " ¿Qué actividades realizaste en tu última visita? Elegí una o más de estas opciones:",
                         "display_prompt": "Actividades realizadas en la visita",
@@ -1651,7 +1656,7 @@
                         ]
                     },
                     {
-                        "name": "fires-areas",
+                        "name": "incendio-areas-no-registrados",
                         "type": "big_radio",
                         "prompt": "En tu última visita, ¿observaste incendios en el área?",
                         "display_prompt": "Observación de incendios",
@@ -1672,7 +1677,7 @@
                         ]
                     },
                     {
-                        "name": "waste-areas",
+                        "name": "residuos-areas-no-registrados",
                         "type": "big_radio",
                         "prompt": "En tu última visita, ¿observaste residuos en alguna parte del área?",
                         "display_prompt": "Observación de residuos",
@@ -1693,7 +1698,7 @@
                         ]
                     },
                     {
-                        "name": "damage-areas",
+                        "name": "daño-areas-no-registrados",
                         "type": "big_radio",
                         "prompt": "En tu última visita, ¿observaste daño en la flora o fauna?",
                         "display_prompt": "Observación de daños en la flora o fauna",
@@ -1714,7 +1719,7 @@
                         ]
                     },
                     {
-                        "name": "cars-areas",
+                        "name": "vehiculos-areas-no-registrados",
                         "type": "big_radio",
                         "prompt": "En tu última visita, ¿observaste vehículos circulando en el área?",
                         "display_prompt": "Observación de vehículos circulando",
@@ -1735,7 +1740,7 @@
                         ]
                     },
                     {
-                        "name": "services-areas",
+                        "name": "servicios-areas-no-registrados",
                         "type": "big_checkbox",
                         "prompt": "En tu última visita, ¿observaste alguno de los siguientes servicios de atención al visitante? Elegí una o más de estas opciones:",
                         "display_prompt": "Servicios de atención al visitante",
@@ -1780,7 +1785,7 @@
                         ]
                     },
                     {
-                        "name": "bond_areas",
+                        "name": "vinculo-areas-no-registrados",
                         "type": "big_checkbox",
                         "prompt": "¿Cuál es tu vínculo con esta área? Elegí una o más de estas opciones:",
                         "display_prompt": "Vínculo con el área",
@@ -1809,7 +1814,7 @@
                         ]
                     },
                     {
-                        "name": "value-areas",
+                        "name": "valoracion-areas-no-registrados",
                         "type": "big_checkbox",
                         "prompt": "¿Qué valorás en esta área natural? Elegí una o más de estas opciones:",
                         "display_prompt": "Valoraciones del área",
@@ -1863,17 +1868,17 @@
                         "type": "lng_lat"
                     },
                     {
-                        "name": "intro-areas-registered-users",
+                        "name": "intro-areas-usuarios-registrados",
                         "type": "informational_html",
                         "content": "<span><b>Podés compartir experiencias sobre los usos, actividades y observaciones en las áreas naturales de la Cuenca Matanza-Riachuelo.</b></span>"
                     },
                     {
-                        "name": "intro-guide-areas-registered-users",
+                        "name": "intro-guia-areas-usuarios-registrados",
                         "type": "informational_html",
                         "content": "<span><b>¿Tenés dudas? Consultá la guía de campo.</b></span>"
                     },
                     {
-                        "name": "municipality-areas-registered-users",
+                        "name": "municipio-areas-registrados",
                         "type": "dropdown",
                         "prompt": "¿En qué municipio tiene lugar esta experiencia? Elegí una de estas opciones:",
                         "display_prompt": "Municipio donde tiene lugar la experiencia sobre Áreas Naturales",
@@ -1942,11 +1947,15 @@
                         ]
                     },
                     {
-                        "name": "reserva-areas-registered-users",
+                        "name": "reserva-areas-registrados",
                         "type": "dropdown",
                         "prompt": "Elegí la reserva sobre la cual vas a compartir tu experiencia.",
                         "display_prompt": "Reserva donde tiene lugar la experiencia",
                         "optional": false,
+                        "triggers": [{
+                            "value": "otra-area-natural",
+                            "targets": ["reserva-otro-areas-registrados"]
+                        }],
                         "content": [{
                                 "label": "Reserva Municipal Morón",
                                 "value": "reserva-municipal-moron"
@@ -1980,8 +1989,12 @@
                                 "value": "reserva-natural-costanera-sur"
                             },
                             {
-                                "label": "Reserva Paleontológica Francisco P. Moreno Parque Natural Lago Lugano",
+                                "label": "Reserva Paleontológica Francisco P. Moreno",
                                 "value": "reserva-paleontologica-moreno"
+                            },
+                            {
+                                "label": "Parque Natural Lago Lugano",
+                                "value": "parque-natural-lago-lugano"
                             },
                             {
                                 "label": "Reserva Natural Integral y Mixta Laguna de Rocha",
@@ -2014,14 +2027,24 @@
                         ]
                     },
                     {
-                        "name": "address-area-registered-users",
+                        "name": "reserva-otro-areas-registrados",
+                        "type": "text",
+                        "prompt": "¿Cuál?",
+                        "placeholder": "",
+                        "display_prompt": "Otra reserva",
+                        "qprFormType": "relocations",
+                        "hidden_default": true,
+                        "optional": true
+                    },
+                    {
+                        "name": "coordenada-areas-registrados",
                         "type": "informational_html",
                         "prompt": "Arrastrá el mapa para ubicar tu experiencia",
                         "content": "<span><b></b></span>",
                         "optional": false
                     },
                     {
-                        "name": "bond_areas-registered-users",
+                        "name": "vinculo-areas-registrados",
                         "type": "big_checkbox",
                         "prompt": "¿Cuál es tu vínculo con esta área? Elegí una o más opciones:",
                         "display_prompt": "Vínculo con el área",
@@ -2054,7 +2077,7 @@
                         ]
                     },
                     {
-                        "name": "bond-other-answer-area-registered-users",
+                        "name": "vinculo-otro-areas-registrados",
                         "type": "text",
                         "prompt": "¿Cuál?",
                         "placeholder": "",
@@ -2064,7 +2087,7 @@
                         "optional": true
                     },
                     {
-                        "name": "value-area-registered-users",
+                        "name": "valoracion-areas-no-registrados",
                         "type": "big_checkbox",
                         "prompt": "¿Qué valorás en esta área natural? Elegí una o más opciones:",
                         "display_prompt": "Valoraciones del área",
@@ -2093,7 +2116,7 @@
                         ]
                     },
                     {
-                        "name": "value-other-aspects-answer-area-registered-users",
+                        "name": "valoracion-otro-areas-registrados",
                         "type": "text",
                         "prompt": "¿Cuál?",
                         "placeholder": "",
@@ -2103,7 +2126,7 @@
                         "optional": true
                     },
                     {
-                        "name": "threat-area-registered-users",
+                        "name": "amenaza-areas-no-registrados",
                         "type": "big_checkbox",
                         "prompt": "De los siguientes aspectos que caracterizan a esta área natural, ¿considerás que alguno/s está/n amenazado/s?  Elegí una o más de estas opciones:",
                         "display_prompt": "Aspectos amenazados en el área",
@@ -2136,7 +2159,7 @@
                         ]
                     },
                     {
-                        "name": "threat-other-aspects-answer-area-registered-users",
+                        "name": "amenaza-otro-areas-registrados",
                         "type": "text",
                         "prompt": "¿Cuál?",
                         "placeholder": "",
@@ -2146,12 +2169,12 @@
                         "optional": true
                     },
                     {
-                        "name": "info-contributions-areas-registered-users",
+                        "name": "info-conocimiento-areas-registrados",
                         "type": "informational_html",
                         "content": "<span><b>En este espacio podés compartir tu conocimiento sobre el área natural y los procesos para garantizar su protección. Podés escribir un relato y adjuntar imágenes, documentos en pdf o enlaces. ¿Con qué tema se relaciona lo que vas a compartir? Elegí uno de estos temas:</span>"
                     },
                     {
-                        "name": "contributions-areas-registered-users",
+                        "name": "conocimiento-areas-registrados",
                         "type": "big_radio",
                         "prompt": " ",
                         "optional": false,
@@ -2176,7 +2199,7 @@
                         ]
                     },
                     {
-                        "name": "title-contributions-registered-users",
+                        "name": "info-titulo-areas-registrados",
                         "type": "text",
                         "prompt": "Elegí un título para presentar de qué se trata",
                         "display_prompt": "Título",
@@ -2185,7 +2208,7 @@
                         "qprFormType": "relocations"
                     },
                     {
-                        "name": "text-area-contributions-registered-users",
+                        "name": "info-texto-areas-registrados",
                         "type": "textarea",
                         "prompt": "Descripción",
                         "placeholder": "",
@@ -2194,38 +2217,32 @@
                         "qprFormType": "relocations"
                     },
                     {
-                        "name": "intro-attach-area-contributions-registered-users",
+                        "name": "info-areas-registrados",
                         "type": "informational_html",
                         "prompt": "¿Querés agregar un comentario, imagen, enlace o documento?",
                         "display_prompt": "Adjuntos",
+                        "optional": true,
                         "content": "<span> <i> Recordá que las fotografías y documentos que adjuntás deben ser de tu autoría o debés contar con permiso para poder publicarlos . No se pueden incluir imágenes en las que se pueda identificar rostros de personas.  </i> </span>"
                     },
                     {
-                        "name": "attach-image-adjuntos-registered-users",
+                        "name": "info-pdf-areas-registrados",
                         "type": "file",
-                        "label": "Adjuntar archivo de imagen",
-                        "prompt": "",
-                        "optional": true,
-                        "qprFormType": "relocations"
-                    },
-                    {
-                        "name": "attach-image-adjuntos-registered-users-2",
-                        "type": "file",
-                        "label": "Adjuntar archivo de imagen",
-                        "prompt": "",
-                        "optional": true,
-                        "qprFormType": "relocations"
-                    },
-                    {
-                        "name": "attach-pdf-adjuntos-registered-users",
-                        "type": "pdf",
                         "label": "Adjuntar archivo PDF",
-                        "prompt": " ",
+                        "prompt": "",
                         "optional": true,
                         "qprFormType": "relocations"
                     },
                     {
-                        "name": "link-area-adjuntos-registered-users",
+                        "name": "info-imagen-areas-registrados",
+                        "type": "file",
+                        "label": "Adjuntar archivo de imagen",
+                        "prompt": "",
+                        "optional": true,
+                        "qprFormType": "relocations"
+                    },
+                    
+                    {
+                        "name": "info-enlace-areas-registradas",
                         "type": "text",
                         "prompt": "Enlace",
                         "placeholder": "Enlace",
@@ -2280,12 +2297,12 @@
                         "type": "lng_lat"
                     },
                     {
-                        "name": "intro-water",
+                        "name": "intro-agua",
                         "type": "informational_html",
                         "content": "<span><b>Compartí una experiencia o una situación vinculada a la calidad del agua en la cuenca Matanza-Riachuelo. ¿Tenés dudas? Consultá la Guía para compartir experiencias en QPR: Calidad del agua.</b></span>"
                     },
                     {
-                        "name": "municipality-water",
+                        "name": "municipio-calidad-agua-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En qué municipio tiene lugar esta experiencia? Elegí una de estas opciones:",
@@ -2355,14 +2372,14 @@
                         ]
                     },
                     {
-                        "name": "address-water",
+                        "name": "coordenada-calidad-agua-no-registrados",
                         "type": "informational_html",
                         "prompt": "Arrastrá el mapa para ubicar tu experiencia",
                         "content": "<span><b></b></span>",
                         "optional": false
                     },
                     {
-                        "name": "date-field-water",
+                        "name": "fecha-calidad-agua-no-registrados",
                         "type": "datetime",
                         "time_format": false,
                         "prompt": "Ingresá la fecha de la situación que estás compartiendo. Se trata de la fecha del día en la que registraste la situación vinculada a la calidad de agua.",
@@ -2372,7 +2389,7 @@
                         "qprFormType": "relocations"
                     },
                     {
-                        "name": "time-water",
+                        "name": "hora-calidad-agua-no-registrados",
                         "type": "time",
                         "prompt": "Ingresá la hora de la situación que estás compartiendo. Se trata de la hora del día en la que registraste la situación vinculada a la calidad de agua.",
                         "display_prompt": "Hora",
@@ -2381,7 +2398,7 @@
                         "qprFormType": "relocations"
                     },
                     {
-                        "name": "body-water",
+                        "name": "cuerpo-calidad-agua-no-registrados",
                         "type": "big_radio",
                         "prompt": "¿En qué cuerpo de agua registraste la situación que estás compartiendo? Elegí una de estas opciones:",
                         "display_prompt": "Cuerpo de agua",
@@ -2410,7 +2427,7 @@
                         ]
                     },
                     {
-                        "name": "environment-water",
+                        "name": "entorno-calidad-agua-no-registrados",
                         "type": "big_radio",
                         "prompt": "¿En qué entorno se encuentra este cuerpo de agua? Elegí una de estas opciones:",
                         "display_prompt": "Entorno del cuerpo de agua",
@@ -2431,12 +2448,12 @@
                         ]
                     },
                     {
-                        "name": "info-quality-water",
+                        "name": "info-calidad-agua",
                         "type": "informational_html",
                         "content": "<b>Ahora vamos a ingresar información sobre algunos aspectos del cuerpo de agua sobre el que estás compartiendo que pueden ser importantes para registrar la calidad del agua.</b>"
                     },
                     {
-                        "name": "checkpoint-water",
+                        "name": "referencia-calidad-agua-no-registrados",
                         "type": "big_radio",
                         "includeOnListItem": true,
                         "prompt": "Indicá una referencia de un lugar cercano en donde tuvo lugar la situación que estás compartiendo. Elegí una de estas opciones:",
@@ -2466,7 +2483,7 @@
                         ]
                     },
                     {
-                        "name": "turbidity-water",
+                        "name": "turbidez-calidad-agua-no-registrados",
                         "type": "big_radio",
                         "includeOnListItem": true,
                         "prompt": "¿Cuál es el estado del agua en el lugar y el momento del registro? Elegí una de estas opciones:",
@@ -2496,7 +2513,7 @@
                         ]
                     },
                     {
-                        "name": "color-water",
+                        "name": "color-agua-calidad-agua-no-registrados",
                         "type": "big_radio",
                         "includeOnListItem": true,
                         "prompt": "¿Cuál es el color del agua en el lugar y el momento del registro? Elegí una de estas opciones:",
@@ -2534,7 +2551,7 @@
                         ]
                     },
                     {
-                        "name": "odor-water",
+                        "name": "olor-calidad-agua-no-registrados",
                         "type": "big_radio",
                         "prompt": "¿Se percibían olores del agua en el lugar y el momento del registro?",
                         "display_prompt": "Presencia de olor del agua",
@@ -2555,7 +2572,7 @@
                         ]
                     },
                     {
-                        "name": "floating-materials-water",
+                        "name": "flotantes-calidad-agua-no-registrados",
                         "type": "big_radio",
                         "prompt": "¿Observaste materiales flotantes en la superficie del curso del agua?",
                         "display_prompt": "Presencia de materiales flotantes",
@@ -2563,7 +2580,7 @@
                         "qprFormType": "relocations",
                         "triggers": [{
                             "value": "yes-floating-materials-water",
-                            "targets": ["type-floating-materials-water"]
+                            "targets": ["flotantes-cuales-calidad-agua-no-registrados"]
                         }],
                         "content": [{
                                 "label": "Sí.",
@@ -2580,7 +2597,7 @@
                         ]
                     },
                     {
-                        "name": "type-floating-materials-water",
+                        "name": "flotantes-cuales-calidad-agua-no-registrados",
                         "type": "big_checkbox",
                         "hidden_default": true,
                         "prompt": "¿Cuáles? Elegí una o más de estas opciones:",
@@ -2618,7 +2635,7 @@
                         ]
                     },
                     {
-                        "name": "pollution-source-water",
+                        "name": "fuente-contaminacion-agua-no-registrados",
                         "type": "big_radio",
                         "prompt": "¿Conocés una fuente de contaminación cercana?",
                         "display_prompt": "Conocimiento sobre fuente de contaminación",
@@ -2626,7 +2643,7 @@
                         "qprFormType": "relocations",
                         "triggers": [{
                             "value": "yes-pollution-source-water",
-                            "targets": ["type-pollution-source-water"]
+                            "targets": ["fuente-cuales-agua-no-registrados"]
                         }],
                         "content": [{
                                 "label": "Sí.",
@@ -2643,7 +2660,7 @@
                         ]
                     },
                     {
-                        "name": "type-pollution-source-water",
+                        "name": "fuente-cuales-agua-no-registrados",
                         "type": "big_checkbox",
                         "hidden_default": true,
                         "prompt": "¿Cuál? ",
@@ -2673,7 +2690,7 @@
                         ]
                     },
                     {
-                        "name": "margin-vegetation-water",
+                        "name": "vegetacion-margenes-calidad-agua-no-registrados",
                         "type": "big_radio",
                         "prompt": "¿Hay vegetación en los márgenes del cuerpo de agua?",
                         "display_prompt": "Presencia de vegetación en los márgenes del cuerpo de agua",
@@ -2681,7 +2698,7 @@
                         "qprFormType": "relocations",
                         "triggers": [{
                             "value": "yes-margin-vegetation-water",
-                            "targets": ["type-margin-vegetation-water"]
+                            "targets": ["vegetacion-margenes-cuales-calidad-agua-no-registrados"]
                         }],
                         "content": [{
                                 "label": "Sí.",
@@ -2698,7 +2715,7 @@
                         ]
                     },
                     {
-                        "name": "type-margin-vegetation-water",
+                        "name": "vegetacion-margenes-cuales-calidad-agua-no-registrados",
                         "type": "big_checkbox",
                         "hidden_default": true,
                         "prompt": "¿Cuál? Elegí una o más de las siguientes opciones:",
@@ -2724,7 +2741,7 @@
                         ]
                     },
                     {
-                        "name": "body-vegetation-water",
+                        "name": "vegetacion-cuerpo-calidad-agua-no-registrados",
                         "type": "big_radio",
                         "prompt": "¿Hay vegetación en el cuerpo de agua? ",
                         "display_prompt": "Presencia de vegetación en el cuerpo de agua",
@@ -2732,7 +2749,7 @@
                         "qprFormType": "relocations",
                         "triggers": [{
                             "value": "yes-body-vegetation-water",
-                            "targets": ["type-body-vegetation-water"]
+                            "targets": ["vegetacion-cuerpo-cuales-calidad-agua-no-registrados"]
                         }],
                         "content": [{
                                 "label": "Sí.",
@@ -2749,7 +2766,7 @@
                         ]
                     },
                     {
-                        "name": "type-body-vegetation-water",
+                        "name": "vegetacion-cuerpo-cuales-calidad-agua-no-registrados",
                         "type": "big_checkbox",
                         "hidden_default": true,
                         "prompt": "¿Cuál? Elegí una o más de estas opciones:",
@@ -2771,7 +2788,7 @@
                         ]
                     },
                     {
-                        "name": "fauna-water",
+                        "name": "fauna-calidad-agua-no-registrados",
                         "type": "big_radio",
                         "prompt": "¿Hay fauna en la zona?",
                         "display_prompt": "Presencia de fauna en la zona",
@@ -2797,7 +2814,7 @@
                         "content": "<b>Ahora vamos a registrar la situación hidrometeorológica del cuerpo de agua (río, arroyo, canal).</b>"
                     },
                     {
-                        "name": "water-level-water",
+                        "name": "nivel-calidad-agua-no-registrados",
                         "type": "big_radio",
                         "prompt": "¿Cuál es el nivel del agua del cuerpo del agua al momento de observar la situación? Elegí una de estas opciones:",
                         "display_prompt": "Nivel del agua",
@@ -2818,7 +2835,7 @@
                         ]
                     },
                     {
-                        "name": "wind-water",
+                        "name": "vientos-calidad-agua-no-registrados",
                         "type": "big_radio",
                         "prompt": "¿En los días previos o durante el momento de la observación existieron vientos fuertes (sudestada)? ",
                         "display_prompt": "Existencia de vientos fuertes en días previos o en el día de observación",
@@ -2839,7 +2856,7 @@
                         ]
                     },
                     {
-                        "name": "rain-water",
+                        "name": "lluvias-calidad-agua-no-registrados",
                         "type": "big_radio",
                         "prompt": "¿Llovió en los días previos o durante el momento de la observación?",
                         "display_prompt": "Existencia de lluvias en días previos o en el día de observación",
@@ -2847,7 +2864,7 @@
                         "qprFormType": "relocations",
                         "triggers": [{
                             "value": "yes-rain-water",
-                            "targets": ["type-rain-water"]
+                            "targets": ["lluvias-tipo-calidad-agua-no-registrados"]
                         }],
                         "content": [{
                                 "label": "Sí.",
@@ -2864,7 +2881,7 @@
                         ]
                     },
                     {
-                        "name": "type-rain-water",
+                        "name": "lluvias-tipo-calidad-agua-no-registrados",
                         "type": "big_radio",
                         "hidden_default": true,
                         "prompt": "¿Qué tipo de lluvia se produjo? Elegí una de estas opciones:",
@@ -2937,12 +2954,12 @@
                         "type": "lng_lat"
                     },
                     {
-                        "name": "intro-water-registered-users",
+                        "name": "intro-agua-usuarios-registrados",
                         "type": "informational_html",
                         "content": "<span><b>Compartí una experiencia o una situación vinculada a la calidad del agua en la cuenca Matanza-Riachuelo. ¿Tenés dudas? Consultá la guía de campo.</b></span>"
                     },
                     {
-                        "name": "municipality-water-registered-users",
+                        "name": "municipio-calidad-agua-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En qué municipio tiene lugar esta experiencia? Elegí una de estas opciones:",
@@ -3012,14 +3029,14 @@
                         ]
                     },
                     {
-                        "name": "address-water-registered-users",
+                        "name": "coordenada-calidad-agua-registrados",
                         "type": "informational_html",
                         "prompt": "Arrastrá el mapa para ubicar tu experiencia",
                         "content": "<span><b></b></span>",
                         "optional": false
                     },
                     {
-                        "name": "date-water-registered-users",
+                        "name": "fecha-calidad-agua-registrados",
                         "type": "datetime",
                         "time_format": false,
                         "prompt": "Ingresá la fecha de la situación que estás compartiendo. Se trata de la fecha del día en la que registraste la situación vinculada a la calidad de agua.",
@@ -3029,7 +3046,7 @@
                         "optional": false
                     },
                     {
-                        "name": "time-water-registered-users",
+                        "name": "hora-calidad-agua-registrados",
                         "type": "time",
                         "prompt": "Ingresá la hora de la situación que estás compartiendo. Se trata de la hora del día en la que registraste la situación vinculada a la calidad de agua.",
                         "display_prompt": "Hora",
@@ -3038,7 +3055,7 @@
                         "qprFormType": "relocations"
                     },
                     {
-                        "name": "body-water-registered-users",
+                        "name": "cuerpo-calidad-agua-registrados",
                         "type": "big_radio",
                         "prompt": "¿En qué cuerpo de agua registraste la situación que estás compartiendo? Elegí una de estas opciones:",
                         "display_prompt": "Cuerpo de agua",
@@ -3046,7 +3063,7 @@
                         "qprFormType": "relocations",
                         "triggers": [{
                             "value": "other-water-body",
-                            "targets": ["other-answer-body-water-registered-users"]
+                            "targets": ["cuerpo-otro-calidad-agua-registrados"]
                         }],
                         "content": [{
                                 "label": "río",
@@ -3071,7 +3088,7 @@
                         ]
                     },
                     {
-                        "name": "other-answer-body-water-registered-users",
+                        "name": "cuerpo-otro-calidad-agua-registrados",
                         "type": "text",
                         "prompt": "¿Cuál?",
                         "placeholder": "",
@@ -3081,7 +3098,7 @@
                         "optional": false
                     },
                     {
-                        "name": "environment-water-registered-users",
+                        "name": "entorno-calidad-agua-registrados",
                         "type": "big_radio",
                         "prompt": "¿En qué entorno se encuentra este cuerpo de agua? Elegí una de estas opciones:",
                         "display_prompt": "Entorno del cuerpo de agua",
@@ -3102,12 +3119,12 @@
                         ]
                     },
                     {
-                        "name": "info-quality-water-registered-users",
+                        "name": "info-calidad-agua-usuarios-registrados",
                         "type": "informational_html",
                         "content": "<b>Ahora vamos a ingresar información sobre algunos aspectos del cuerpo de agua sobre el que estás compartiendo que pueden ser importantes para registrar la calidad del agua.</b>"
                     },
                     {
-                        "name": "checkpoint-water-registered-users",
+                        "name": "referencia-calidad-agua-registrados",
                         "type": "big_radio",
                         "includeOnListItem": true,
                         "prompt": "Indicá una referencia de un lugar cercano en donde tuvo lugar la situación que estás compartiendo. Elegí una de estas opciones:",
@@ -3116,7 +3133,7 @@
                         "qprFormType": "relocations",
                         "triggers": [{
                             "value": "other-checkpoint",
-                            "targets": ["other-answer-checkpoint-water-registered-users"]
+                            "targets": ["referencia-otro-calidad-agua-registrados"]
                         }],
                         "content": [{
                                 "label": "puente",
@@ -3141,7 +3158,7 @@
                         ]
                     },
                     {
-                        "name": "other-answer-checkpoint-water-registered-users",
+                        "name": "referencia-otro-calidad-agua-registrados",
                         "type": "text",
                         "prompt": "¿Cuál?",
                         "placeholder": "",
@@ -3151,7 +3168,7 @@
                         "optional": true
                     },
                     {
-                        "name": "turbidity-water-registered-users",
+                        "name": "turbidez-calidad-agua-no-registrados",
                         "type": "big_radio",
                         "includeOnListItem": true,
                         "prompt": "¿Cuál es el estado del agua en el lugar y el momento del registro? Elegí una de estas opciones:",
@@ -3181,7 +3198,7 @@
                         ]
                     },
                     {
-                        "name": "color-water-registered-users",
+                        "name": "color-agua-calidad-agua-no-registrados",
                         "type": "big_radio",
                         "includeOnListItem": true,
                         "prompt": "¿Cuál es el color del agua en el lugar y el momento del registro? Elegí una de estas opciones:",
@@ -3219,7 +3236,7 @@
                         ]
                     },
                     {
-                        "name": "odor-water-registered-users",
+                        "name": "olor-calidad-agua-no-registrados",
                         "type": "big_radio",
                         "prompt": "¿Se percibían olores del agua en el lugar y el momento del registro?",
                         "display_prompt": "Presencia de olor del agua",
@@ -3240,7 +3257,7 @@
                         ]
                     },
                     {
-                        "name": "floating-materials-water-registered-users",
+                        "name": "flotantes-calidad-agua-no-registrados",
                         "type": "big_radio",
                         "prompt": "¿Observaste materiales flotantes en la superficie del curso del agua?",
                         "display_prompt": "Presencia de materiales flotantes",
@@ -3248,7 +3265,7 @@
                         "qprFormType": "relocations",
                         "triggers": [{
                             "value": "yes-floating-materials-water",
-                            "targets": ["type-floating-materials-water-registered-users"]
+                            "targets": ["flotantes-cuales-calidad-agua-registrados"]
                         }],
                         "content": [{
                                 "label": "Sí.",
@@ -3265,7 +3282,7 @@
                         ]
                     },
                     {
-                        "name": "type-floating-materials-water-registered-users",
+                        "name": "flotantes-cuales-calidad-agua-registrados",
                         "type": "big_checkbox",
                         "hidden_default": true,
                         "prompt": "¿Cuáles? Elegí una o más de estas opciones:",
@@ -3275,7 +3292,7 @@
                         "triggers": [{
                             "value": "other",
                             "targets": [
-                                "other-answer-type-floating-materials-water-registered-users"
+                                "flotantes-cuales-otro-calidad-agua-registrados"
                             ]
                         }],
                         "content": [{
@@ -3309,7 +3326,7 @@
                         ]
                     },
                     {
-                        "name": "other-answer-type-floating-materials-water-registered-users",
+                        "name": "flotantes-cuales-otro-calidad-agua-registrados",
                         "type": "text",
                         "prompt": "¿Cuál?",
                         "placeholder": "",
@@ -3319,7 +3336,7 @@
                         "optional": true
                     },
                     {
-                        "name": "pollution-source-water-registered-users",
+                        "name": "fuente-contaminacion-agua-registrados",
                         "type": "big_radio",
                         "prompt": "¿Conocés una fuente de contaminación cercana?",
                         "display_prompt": "Conocimiento sobre fuente de contaminación",
@@ -3327,7 +3344,7 @@
                         "qprFormType": "relocations",
                         "triggers": [{
                             "value": "yes-pollution-source-water",
-                            "targets": ["type-pollution-source-water-registered-users"]
+                            "targets": ["fuente-cuales-agua-registrados"]
                         }],
                         "content": [{
                                 "label": "Sí.",
@@ -3344,7 +3361,7 @@
                         ]
                     },
                     {
-                        "name": "type-pollution-source-water-registered-users",
+                        "name": "fuente-cuales-agua-registrados",
                         "type": "big_checkbox",
                         "hidden_default": true,
                         "prompt": "¿Cuál? ",
@@ -3374,7 +3391,7 @@
                         ]
                     },
                     {
-                        "name": "margin-vegetation-water-registered-users",
+                        "name": "vegetacion-margenes-calidad-agua-registrados",
                         "type": "big_radio",
                         "prompt": "¿Hay vegetación en los márgenes del cuerpo de agua?",
                         "display_prompt": "Presencia de vegetación en los márgenes del cuerpo de agua",
@@ -3382,7 +3399,7 @@
                         "qprFormType": "relocations",
                         "triggers": [{
                             "value": "yes-margin-vegetation-water",
-                            "targets": ["type-margin-vegetation-water-registered-users"]
+                            "targets": ["vegetacion-margenes-cuales-calidad-agua-registrados"]
                         }],
                         "content": [{
                                 "label": "Sí.",
@@ -3399,7 +3416,7 @@
                         ]
                     },
                     {
-                        "name": "type-margin-vegetation-water-registered-users",
+                        "name": "vegetacion-margenes-cuales-calidad-agua-registrados",
                         "type": "big_checkbox",
                         "hidden_default": true,
                         "prompt": "¿Cuál? Elegí una o más de las siguientes opciones:",
@@ -3425,7 +3442,7 @@
                         ]
                     },
                     {
-                        "name": "body-vegetation-water-registered-users",
+                        "name": "vegetacion-cuerpo-calidad-agua-registrados",
                         "type": "big_radio",
                         "prompt": "¿Hay vegetación en el cuerpo de agua? ",
                         "display_prompt": "Presencia de vegetación en el cuerpo de agua",
@@ -3433,7 +3450,7 @@
                         "qprFormType": "relocations",
                         "triggers": [{
                             "value": "yes-body-vegetation-water",
-                            "targets": ["type-body-vegetation-water-registered-users"]
+                            "targets": ["vegetacion-cuerpo-cuales-calidad-agua-registrados"]
                         }],
                         "content": [{
                                 "label": "Sí.",
@@ -3450,7 +3467,7 @@
                         ]
                     },
                     {
-                        "name": "type-body-vegetation-water-registered-users",
+                        "name": "vegetacion-cuerpo-cuales-calidad-agua-registrados",
                         "type": "big_checkbox",
                         "hidden_default": true,
                         "prompt": "¿Cuál? Elegí una o más de estas opciones:",
@@ -3472,7 +3489,7 @@
                         ]
                     },
                     {
-                        "name": "fauna-water-registered-users",
+                        "name": "fauna-calidad-agua-registrados",
                         "type": "big_radio",
                         "prompt": "¿Hay fauna en la zona?",
                         "display_prompt": "Presencia de fauna en la zona",
@@ -3480,7 +3497,7 @@
                         "qprFormType": "relocations",
                         "triggers": [{
                             "value": "yes-fauna",
-                            "targets": ["type-fauna-water-registered-users"]
+                            "targets": ["fauna-cual-calidad-agua-registrados"]
                         }],
                         "content": [{
                                 "label": "Sí.",
@@ -3497,7 +3514,7 @@
                         ]
                     },
                     {
-                        "name": "type-fauna-water-registered-users",
+                        "name": "fauna-cual-calidad-agua-registrados",
                         "type": "text",
                         "prompt": "¿Cuál?",
                         "placeholder": "",
@@ -3512,7 +3529,7 @@
                         "content": "<b>Ahora vamos a registrar la situación hidrometeorológica del cuerpo de agua (río, arroyo, canal).</b>"
                     },
                     {
-                        "name": "water-level-water-registered-users",
+                        "name": "nivel-calidad-agua-registrados",
                         "type": "big_radio",
                         "prompt": "¿Cuál es el nivel del agua del cuerpo del agua al momento de observar la situación? Elegí una de estas opciones:",
                         "display_prompt": "Nivel del agua",
@@ -3533,7 +3550,7 @@
                         ]
                     },
                     {
-                        "name": "wind-water-registered-users",
+                        "name": "vientos-calidad-agua-registrados",
                         "type": "big_radio",
                         "prompt": "¿En los días previos o durante el momento de la observación existieron vientos fuertes (sudestada)? ",
                         "display_prompt": "Existencia de vientos fuertes en días previos o en el día de observación",
@@ -3554,7 +3571,7 @@
                         ]
                     },
                     {
-                        "name": "rain-water-registered-users",
+                        "name": "lluvias-calidad-agua-registrados",
                         "type": "big_radio",
                         "prompt": "¿Llovió en los días previos o durante el momento de la observación?",
                         "display_prompt": "Existencia de lluvias en días previos o en el día de observación",
@@ -3562,7 +3579,7 @@
                         "qprFormType": "relocations",
                         "triggers": [{
                             "value": "yes-rain-water",
-                            "targets": ["type-rain-water-registered-users"]
+                            "targets": ["lluvias-tipo-calidad-agua-registrados"]
                         }],
                         "content": [{
                                 "label": "Sí.",
@@ -3579,7 +3596,7 @@
                         ]
                     },
                     {
-                        "name": "type-rain-water-registered-users",
+                        "name": "lluvias-tipo-calidad-agua-registrados",
                         "type": "big_radio",
                         "hidden_default": true,
                         "prompt": "¿Qué tipo de lluvia se produjo? Elegí una de estas opciones:",
@@ -3605,13 +3622,13 @@
                         ]
                     },
                     {
-                        "name": "intro-description-attach-water-registered-users",
+                        "name": "intro-descripcion-calidad-de-agua",
                         "type": "informational_html",
                         "prompt": "¿Querés agregar un comentario, imagen, enlace o documento?",
                         "content": "<span> <i> Recordá que las fotografías y documentos que adjuntás deben ser de tu autoría o debés contar con permiso para poder publicarlos . No se pueden incluir imágenes en las que se pueda identificar rostros de personas.  </i> </span>"
                     },
                     {
-                        "name": "title-description-water-registered-users",
+                        "name": "info-titulo-calidad-agua-registrados",
                         "type": "text",
                         "prompt": "Título",
                         "display_prompt": "Título de comentario sobre calidad del agua",
@@ -3620,7 +3637,7 @@
                         "optional": true
                     },
                     {
-                        "name": "description-water-registered-users",
+                        "name": "info-texto-calidad-agua-registrados",
                         "type": "textarea",
                         "prompt": "Comentario",
                         "display_prompt": "Comentario sobre calidad del agua",
@@ -3629,7 +3646,7 @@
                         "qprFormType": "relocations"
                     },
                     {
-                        "name": "description-attach-img-water-registered-users",
+                        "name": "info-imagen-calidad-agua-registrados",
                         "type": "file",
                         "label": "Adjuntar archivo de imagen",
                         "display_prompt": "Adjuntos sobre calidad del agua",
@@ -3637,15 +3654,15 @@
                         "qprFormType": "relocations"
                     },
                     {
-                        "name": "description-attach-pdf-water-registered-users",
-                        "type": "pdf",
+                        "name": "info-pdf-calidad-agua-registrados",
+                        "type": "file",
                         "label": "Adjuntar archivo PDF",
-                        "display_prompt": "Adjuntos sobre calidad del agua",
+                        "prompt": "",
                         "optional": true,
                         "qprFormType": "relocations"
                     },
                     {
-                        "name": "description-link-water-registered-users",
+                        "name": "info-enlace-calidad-agua-registrados",
                         "type": "text",
                         "display_prompt": "Adjuntos sobre calidad del agua",
                         "prompt": "Enlace",
@@ -3699,7 +3716,7 @@
                         "content": "<span><b>¿Tenés dudas? Consultá la Guía para compartir experiencias en QPR: Relocalización y reurbanización.</b></span>"
                     },
                     {
-                        "name": "municipality-relocation",
+                        "name": "municipio-experiencia-relocalizaciones-no-registrados",
                         "type": "dropdown",
                         "prompt": "¿En qué municipio tiene lugar esta experiencia? Elegí una de estas opciones:",
                         "display_prompt": "Municipio donde se ubica la experiencia de relocalización o reurbanización",
@@ -3768,153 +3785,153 @@
                         ]
                     },
                     {
-                        "name": "address-relocation",
+                        "name": "coordenada-relocalizaciones-no-registrados",
                         "type": "informational_html",
                         "prompt": "Arrastrá el mapa para ubicar tu experiencia",
                         "content": "<span><b></b></span>",
                         "optional": false
                     },
                     {
-                        "name": "current-municipality-relocation",
+                        "name": "municipio-actual-relocalizaciones-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En cuál de los siguientes municipio vivís actualmente?",
-                        "display_prompt": "Municipio de residencia actua",
+                        "display_prompt": "Municipio de residencia actual",
                         "placeholder": "Elegí una de estas opciones...",
                         "optional": false,
                         "triggers": [{
-                                "value": "ciudad-de-buenos-aires",
-                                "targets": ["ciudad-de-buenos-aires-barrios"]
+                                "value": "ciudad-de-buenos-aires-no-registrados",
+                                "targets": ["ciudad-de-buenos-aires-barrios-no-registrados"]
                             },
                             {
-                                "value": "almirante-brown",
-                                "targets": ["almirante-brown-barrios"]
+                                "value": "almirante-brown-no-registrados",
+                                "targets": ["almirante-brown-barrios-no-registrados"]
                             },
                             {
-                                "value": "avellaneda",
-                                "targets": ["avellaneda-barrios"]
+                                "value": "avellaneda-no-registrados",
+                                "targets": ["avellaneda-barrios-no-registrados"]
                             },
                             {
-                                "value": "canuelas",
-                                "targets": ["canuelas-barrios"]
+                                "value": "canuelas-no-registrados",
+                                "targets": ["canuelas-barrios-no-registrados"]
                             },
                             {
-                                "value": "esteban-echeverria",
-                                "targets": ["esteban-echeverria-barrios"]
+                                "value": "esteban-echeverria-no-registrados",
+                                "targets": ["esteban-echeverria-barrios-no-registrados"]
                             },
                             {
-                                "value": "ezeiza",
-                                "targets": ["ezeiza-barrios"]
+                                "value": "ezeiza-no-registrados",
+                                "targets": ["ezeiza-barrios-no-registrados"]
                             },
                             {
-                                "value": "la-matanza",
-                                "targets": ["la-matanza-barrios"]
+                                "value": "la-matanza-no-registrados",
+                                "targets": ["la-matanza-barrios-no-registrados"]
                             },
                             {
-                                "value": "lanus",
-                                "targets": ["lanus-barrios"]
+                                "value": "lanus-no-registrados",
+                                "targets": ["lanus-barrios-no-registrados"]
                             },
                             {
-                                "value": "peron",
-                                "targets": ["peron-barrios"]
+                                "value": "peron-no-registrados",
+                                "targets": ["peron-barrios-no-registrados"]
                             },
                             {
-                                "value": "las-heras",
-                                "targets": ["las-heras-barrios"]
+                                "value": "las-heras-no-registrados",
+                                "targets": ["las-heras-barrios-no-registrados"]
                             },
                             {
-                                "value": "lomas-de-zamora",
-                                "targets": ["lomas-de-zamora-barrios"]
+                                "value": "lomas-de-zamora-no-registrados",
+                                "targets": ["lomas-de-zamora-barrios-no-registrados"]
                             },
                             {
-                                "value": "marcos-paz",
-                                "targets": ["marcos-paz-barrios"]
+                                "value": "marcos-paz-no-registrados",
+                                "targets": ["marcos-paz-barrios-no-registrados"]
                             },
                             {
-                                "value": "san-vicente",
-                                "targets": ["san-vicente-barrios"]
+                                "value": "san-vicente-no-registrados",
+                                "targets": ["san-vicente-barrios-no-registrados"]
                             },
                             {
-                                "value": "merlo",
-                                "targets": ["merlo-barrios"]
+                                "value": "merlo-no-registrados",
+                                "targets": ["merlo-barrios-no-registrados"]
                             },
                             {
-                                "value": "moron",
-                                "targets": ["moron-barrios"]
+                                "value": "moron-no-registrados",
+                                "targets": ["moron-barrios-no-registrados"]
                             },
                             {
-                                "value": "otro",
+                                "value": "otro-no-registrados",
                                 "targets": ["otro-municipio", "otro-barrio"]
                             }
                         ],
                         "content": [{
                                 "label": "Almirante Brown",
-                                "value": "almirante-brown"
+                                "value": "almirante-brown-no-registrados"
                             },
                             {
                                 "label": "Avellaneda",
-                                "value": "avellaneda"
+                                "value": "avellaneda-no-registrados"
                             },
                             {
                                 "label": "Cañuelas",
-                                "value": "canuelas"
+                                "value": "canuelas-no-registrados"
                             },
                             {
                                 "label": "Esteban Echeverría",
-                                "value": "esteban-echeverria"
+                                "value": "esteban-echeverria-no-registrados"
                             },
                             {
                                 "label": "Ezeiza",
-                                "value": "ezeiza"
+                                "value": "ezeiza-no-registrados"
                             },
                             {
                                 "label": "La Matanza",
-                                "value": "la-matanza"
+                                "value": "la-matanza-no-registrados"
                             },
                             {
                                 "label": "Lanús",
-                                "value": "lanus"
+                                "value": "lanus-no-registrados"
                             },
                             {
                                 "label": "Las Heras",
-                                "value": "las-heras"
+                                "value": "las-heras-no-registrados"
                             },
                             {
                                 "label": "Lomas de Zamora",
-                                "value": "lomas-de-zamora"
+                                "value": "lomas-de-zamora-no-registrados"
                             },
                             {
                                 "label": "Marcos Paz",
-                                "value": "marcos-paz"
+                                "value": "marcos-paz-no-registrados"
                             },
                             {
                                 "label": "Merlo",
-                                "value": "merlo"
+                                "value": "merlo-no-registrados"
                             },
                             {
                                 "label": "Morón",
-                                "value": "moron"
+                                "value": "moron-no-registrados"
                             },
                             {
                                 "label": "Presidente Juan D. Perón",
-                                "value": "peron"
+                                "value": "peron-no-registrados"
                             },
                             {
                                 "label": "San Vicente",
-                                "value": "san-vicente"
+                                "value": "san-vicente-no-registrados"
                             },
                             {
                                 "label": "Ciudad de Buenos Aires",
-                                "value": "ciudad-de-buenos-aires"
+                                "value": "ciudad-de-buenos-aires-no-registrados"
                             },
                             {
                                 "label": "Otro",
-                                "value": "otro"
+                                "value": "otro-municipio-no-registrados"
                             }
                         ]
                     },
                     {
-                        "name": "ciudad-de-buenos-aires-barrios",
+                        "name": "ciudad-de-buenos-aires-barrios-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En qué barrio vivís actualmente? Elegí una de estas opciones:",
@@ -4005,7 +4022,7 @@
                         ]
                     },
                     {
-                        "name": "almirante-brown-barrios",
+                        "name": "almirante-brown-barrios-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
@@ -4072,7 +4089,7 @@
                         ]
                     },
                     {
-                        "name": "avellaneda-barrios",
+                        "name": "avellaneda-barrios-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
@@ -4199,7 +4216,7 @@
                         ]
                     },
                     {
-                        "name": "canuelas-barrios",
+                        "name": "canuelas-barrios-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
@@ -4242,7 +4259,7 @@
                         ]
                     },
                     {
-                        "name": "esteban-echeverria-barrios",
+                        "name": "esteban-echeverria-barrios-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
@@ -4281,7 +4298,7 @@
                         ]
                     },
                     {
-                        "name": "ezeiza-barrios",
+                        "name": "ezeiza-barrios-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
@@ -4348,7 +4365,7 @@
                         ]
                     },
                     {
-                        "name": "las-heras-barrios",
+                        "name": "las-heras-barrios-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
@@ -4391,7 +4408,7 @@
                         ]
                     },
                     {
-                        "name": "la-matanza-barrios",
+                        "name": "la-matanza-barrios-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
@@ -4498,7 +4515,7 @@
                         ]
                     },
                     {
-                        "name": "lanus-barrios",
+                        "name": "lanus-barrios-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
@@ -4561,7 +4578,7 @@
                         ]
                     },
                     {
-                        "name": "lomas-de-zamora-barrios",
+                        "name": "lomas-de-zamora-barrios-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
@@ -4624,7 +4641,7 @@
                         ]
                     },
                     {
-                        "name": "marcos-paz-barrios",
+                        "name": "marcos-paz-barrios-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
@@ -4663,7 +4680,7 @@
                         ]
                     },
                     {
-                        "name": "merlo-barrios",
+                        "name": "merlo-barrios-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
@@ -4686,7 +4703,7 @@
                         ]
                     },
                     {
-                        "name": "moron-barrios",
+                        "name": "moron-barrios-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
@@ -4741,7 +4758,7 @@
                         ]
                     },
                     {
-                        "name": "peron-barrios",
+                        "name": "peron-barrios-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
@@ -4808,7 +4825,7 @@
                         ]
                     },
                     {
-                        "name": "san-vicente-barrios",
+                        "name": "san-vicente-barrios-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
@@ -4899,7 +4916,7 @@
                         ]
                     },
                     {
-                        "name": "situation-relocation",
+                        "name": "situacion-relocalizaciones-no-registrados",
                         "type": "big_radio",
                         "prompt": "¿Cuál es tu situación con respecto al programa de relocalización y reurbanización de villas y asentamientos de la Cuenca Matanza Riachuelo? Elegí una de estas opciones:",
                         "optional": false,
@@ -4907,7 +4924,7 @@
                         "qprFormType": "relocations",
                         "triggers": [{
                             "value": "situacion-relocalized",
-                            "targets": ["before-municipality-relocation"]
+                            "targets": ["municipio-anterior-relocalizaciones-no-registrados"]
                         }],
                         "content": [{
                                 "label": "Me relocalizaron (antes vivía en otro sector, barrio o complejo habitacional).",
@@ -4932,7 +4949,7 @@
                         ]
                     },
                     {
-                        "name": "before-municipality-relocation",
+                        "name": "municipio-anterior-relocalizaciones-no-registrados",
                         "type": "dropdown",
                         "hidden_default": true,
                         "prompt": "¿En qué municipio vivías antes?",
@@ -4941,67 +4958,67 @@
                         "optional": false,
                         "triggers": [{
                                 "value": "ciudad-de-buenos-aires-before",
-                                "targets": ["ciudad-de-buenos-aires-barrios-before"]
+                                "targets": ["ciudad-de-buenos-aires-barrios-anterior-no-registrados"]
                             },
                             {
                                 "value": "almirante-brown-before",
-                                "targets": ["almirante-brown-barrios-before"]
+                                "targets": ["almirante-brown-barrios-anterior-no-registrados"]
                             },
                             {
                                 "value": "avellaneda-before",
-                                "targets": ["avellaneda-barrios-before"]
+                                "targets": ["avellaneda-barrios-anterior-no-registrados"]
                             },
                             {
                                 "value": "canuelas-before",
-                                "targets": ["canuelas-barrios-before"]
+                                "targets": ["canuelas-barrios-anterior-no-registrados"]
                             },
                             {
                                 "value": "esteban-echeverria-before",
-                                "targets": ["esteban-echeverria-barrios-before"]
+                                "targets": ["esteban-echeverria-barrios-anterior-no-registrados"]
                             },
                             {
                                 "value": "la-matanza-before",
-                                "targets": ["la-matanza-barrios-before"]
+                                "targets": ["la-matanza-barrios-anterior-no-registrados"]
                             },
                             {
                                 "value": "lanus-before",
-                                "targets": ["lanus-barrios-before"]
+                                "targets": ["lanus-barrios-anterior-no-registrados"]
                             },
                             {
                                 "value": "las-heras-before",
-                                "targets": ["las-heras-barrios-before"]
+                                "targets": ["las-heras-barrios-anterior-no-registrados"]
                             },
                             {
                                 "value": "peron-barrios",
-                                "targets": ["peron-barrios-before"]
+                                "targets": ["peron-barrios-anterior-no-registrados"]
                             },
                             {
                                 "value": "ezeiza-before",
-                                "targets": ["ezeiza-barrios-before"]
+                                "targets": ["ezeiza-barrios-anterior-no-registrados"]
                             },
                             {
                                 "value": "lomas-de-zamora-before",
-                                "targets": ["lomas-de-zamora-barrios-before"]
+                                "targets": ["lomas-de-zamora-barrios-anterior-no-registrados"]
                             },
                             {
                                 "value": "marcos-paz-before",
-                                "targets": ["marcos-paz-barrios-before"]
+                                "targets": ["marcos-paz-barrios-anterior-no-registrados"]
                             },
                             {
                                 "value": "merlo-before",
-                                "targets": ["merlo-barrios-before"]
+                                "targets": ["merlo-barrios-anterior-no-registrados"]
                             },
                             {
                                 "value": "peron-before",
-                                "targets": ["peron-barrios-before"]
+                                "targets": ["peron-barrios-anterior-no-registrados"]
                             },
                             {
                                 "value": "san-vicente-before",
-                                "targets": ["san-vicente-barrios-before"]
+                                "targets": ["san-vicente-barrios-anterior-no-registrados"]
                             },
                             {
                                 "value": "moron-before",
-                                "targets": ["moron-barrios-before"]
+                                "targets": ["moron-barrios-anterior-no-registrados"]
                             },
                             {
                                 "value": "otro-before",
@@ -5075,7 +5092,7 @@
                         ]
                     },
                     {
-                        "name": "ciudad-de-buenos-aires-barrios-before",
+                        "name": "ciudad-de-buenos-aires-barrios-anterior-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
@@ -5166,7 +5183,7 @@
                         ]
                     },
                     {
-                        "name": "almirante-brown-barrios-before",
+                        "name": "almirante-brown-barrios-anterior-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
@@ -5233,7 +5250,7 @@
                         ]
                     },
                     {
-                        "name": "avellaneda-barrios-before",
+                        "name": "avellaneda-barrios-anterior-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
@@ -5360,7 +5377,7 @@
                         ]
                     },
                     {
-                        "name": "canuelas-barrios-before",
+                        "name": "canuelas-barrios-anterior-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
@@ -5403,7 +5420,7 @@
                         ]
                     },
                     {
-                        "name": "esteban-echeverria-barrios-before",
+                        "name": "esteban-echeverria-barrios-anterior-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
@@ -5442,7 +5459,7 @@
                         ]
                     },
                     {
-                        "name": "ezeiza-barrios-before",
+                        "name": "ezeiza-barrios-anterior-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
@@ -5509,7 +5526,7 @@
                         ]
                     },
                     {
-                        "name": "las-heras-barrios-before",
+                        "name": "las-heras-barrios-anterior-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
@@ -5552,7 +5569,7 @@
                         ]
                     },
                     {
-                        "name": "la-matanza-barrios-before",
+                        "name": "la-matanza-barrios-anterior-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
@@ -5659,7 +5676,7 @@
                         ]
                     },
                     {
-                        "name": "lanus-barrios-before",
+                        "name": "lanus-barrios-anterior-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
@@ -5722,7 +5739,7 @@
                         ]
                     },
                     {
-                        "name": "lomas-de-zamora-barrios-before",
+                        "name": "lomas-de-zamora-barrios-anterior-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
@@ -5785,7 +5802,7 @@
                         ]
                     },
                     {
-                        "name": "marcos-paz-barrios-before",
+                        "name": "marcos-paz-barrios-anterior-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
@@ -5824,7 +5841,7 @@
                         ]
                     },
                     {
-                        "name": "merlo-barrios-before",
+                        "name": "merlo-barrios-anterior-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
@@ -5847,7 +5864,7 @@
                         ]
                     },
                     {
-                        "name": "moron-barrios-before",
+                        "name": "moron-barrios-anterior-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
@@ -5902,7 +5919,7 @@
                         ]
                     },
                     {
-                        "name": "peron-barrios-before",
+                        "name": "peron-barrios-anterior-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
@@ -5969,7 +5986,7 @@
                         ]
                     },
                     {
-                        "name": "san-vicente-barrios-before",
+                        "name": "san-vicente-barrios-anterior-no-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En qué barrio vivías antes? Elegí una de estas opciones:",
@@ -6060,7 +6077,7 @@
                         ]
                     },
                     {
-                        "name": "advancements-relocation",
+                        "name": "obras-relocalizaciones-no-registrados",
                         "type": "big_radio",
                         "prompt": "En el último mes, ¿hubo avances en obras de viviendas nuevas o de mejoramiento de viviendas ejecutadas por el gobierno en el barrio donde vivís? Elegí una de estas opciones:",
                         "optional": false,
@@ -6089,7 +6106,7 @@
                         ]
                     },
                     {
-                        "name": "new-houses-relocation",
+                        "name": "mudanzas-relocalizaciones-no-registrados",
                         "type": "big_radio",
                         "prompt": "En el último mes, ¿hubo mudanzas o se entregaron viviendas nuevas a familias del barrio donde vivís en el marco del programa de relocalización o reurbanización?",
                         "optional": false,
@@ -6110,7 +6127,7 @@
                         ]
                     },
                     {
-                        "name": "new-services-relocation",
+                        "name": "servicios-relocalizaciones-no-registrados",
                         "type": "big_radio",
                         "prompt": "En el último mes, ¿hubo avances en obras de servicios públicos en el barrio donde vivís, ya sea de la red de agua, cloacas o electricidad?",
                         "optional": false,
@@ -6131,7 +6148,7 @@
                         ]
                     },
                     {
-                        "name": "authoriship-relocation",
+                        "name": "autoridad-relocalizaciones-no-registrados",
                         "type": "big_radio",
                         "prompt": "En el último mes, ¿alguna autoridad hizo llegar alguna información relevante sobre el proceso de relocalización, reurbanización o sobre algún proyecto de obras públicas en el barrio?",
                         "optional": false,
@@ -6152,7 +6169,7 @@
                         ]
                     },
                     {
-                        "name": "working-table-relocation",
+                        "name": "mesa-relocalizaciones-no-registrados",
                         "type": "big_radio",
                         "prompt": "En el marco de los procesos de relocalización y reurbanización de villas y asentamientos de la cuenca es obligatorio celebrar mesas de trabajo para garantizar el derecho a la información y a la participación de la población. En el último mes, ¿se celebraron mesas de trabajo o reuniones relacionadas con el proceso de relocalización, reurbanización o con obras en el barrio donde vivís en las que hayan participado autoridades o funcionarios responsables?",
                         "optional": false,
@@ -6173,7 +6190,7 @@
                         ]
                     },
                     {
-                        "name": "topics-relocation",
+                        "name": "problemas-relocalizaciones-no-registrados",
                         "type": "big_checkbox",
                         "prompt": "Actualmente, en el marco del proceso de relocalización o reurbanización, ¿cuáles considerás que son las cuestiones más importantes que las autoridades responsables deberían atender en el  barrio en el que vivís? Elegí una o más de estas opciones:",
                         "optional": false,
@@ -6259,78 +6276,78 @@
                         "content": "<span><b>¿Tenés dudas? Consultá la Guía para compartir experiencias en QPR: Relocalización y reurbanización.</b></span>"
                     },
                     {
-                        "name": "address-relocation-registered-users-description",
+                        "name": "coordenada-relocalizaciones-no-registrados",
                         "type": "informational_html",
                         "prompt": "Arrastrá el mapa para ubicar tu experiencia",
                         "content": "<span><b></b></span>",
                         "optional": false
                     },
                     {
-                        "name": "current-municipality-relocation-registered-users",
+                        "name": "municipio-experiencia-relocalizaciones-registrados",
                         "type": "dropdown",
                         "prompt": "¿En qué municipio tiene lugar esta experiencia?",
-                        "display_prompt": "Municipio de residencia actual",
+                        "display_prompt": "Municipio donde se ubica la experiencia de relocalización o reurbanización ",
                         "placeholder": "Elegí una de estas opciones...",
                         "optional": false,
                         "triggers": [{
                                 "value": "almirante-brown-relocation-registered-users",
-                                "targets": ["almirante-brown-barrios"]
+                                "targets": ["almirante-brown-barrios-registrados"]
                             },
                             {
                                 "value": "avellaneda-relocation-registered-users",
-                                "targets": ["avellaneda-barrios"]
+                                "targets": ["avellaneda-barrios-registrados"]
                             },
                             {
                                 "value": "canuelas-relocation-registered-users",
-                                "targets": ["canuelas-barrios"]
+                                "targets": ["canuelas-barrios-registrados"]
                             },
                             {
                                 "value": "esteban-echeverria-relocation-registered-users",
-                                "targets": ["esteban-echeverria-barrios"]
+                                "targets": ["esteban-echeverria-barrios-registrados"]
                             },
                             {
                                 "value": "ezeiza-relocation-registered-users",
-                                "targets": ["ezeiza-barrios"]
+                                "targets": ["ezeiza-barrios-registrados"]
                             },
                             {
                                 "value": "la-matanza-relocation-registered-users",
-                                "targets": ["la-matanza-barrios"]
+                                "targets": ["la-matanza-barrios-registrados"]
                             },
                             {
                                 "value": "lanus-relocation-registered-users",
-                                "targets": ["lanus-barrios"]
+                                "targets": ["lanus-barrios-registrados"]
                             },
                             {
                                 "value": "peron-relocation-registered-users",
-                                "targets": ["peron-barrios"]
+                                "targets": ["peron-barrios-registrados"]
                             },
                             {
                                 "value": "las-heras-relocation-registered-users",
-                                "targets": ["las-heras-barrios"]
+                                "targets": ["las-heras-barrios-registrados"]
                             },
                             {
                                 "value": "lomas-de-zamora-relocation-registered-users",
-                                "targets": ["lomas-de-zamora-barrios"]
+                                "targets": ["lomas-de-zamora-barrios-registrados"]
                             },
                             {
                                 "value": "marcos-paz-relocation-registered-users",
-                                "targets": ["marcos-paz-barrios"]
+                                "targets": ["marcos-paz-barrios-registrados"]
                             },
                             {
                                 "value": "san-vicente-relocation-registered-users",
-                                "targets": ["san-vicente-barrios"]
+                                "targets": ["san-vicente-barrios-registrados"]
                             },
                             {
                                 "value": "merlo-relocation-registered-users",
-                                "targets": ["merlo-barrios"]
+                                "targets": ["merlo-barrios-registrados"]
                             },
                             {
                                 "value": "moron-relocation-registered-users",
-                                "targets": ["moron-barrios"]
+                                "targets": ["moron-barrios-registrados"]
                             },
                             {
                                 "value": "ciudad-de-buenos-aires-relocation-registered-users",
-                                "targets": ["ciudad-de-buenos-aires-barrios"]
+                                "targets": ["ciudad-de-buenos-aires-barrios-registrados"]
                             },
                             {
                                 "value": "other-relocation-registered-users",
@@ -6385,7 +6402,7 @@
                             },
                             {
                                 "label": "Morón",
-                                "value": "moron"
+                                "value": "moron-relocation-registered-users"
                             },
                             {
                                 "label": "Presidente Juan D. Perón",
@@ -6398,15 +6415,11 @@
                             {
                                 "label": "Ciudad de Buenos Aires",
                                 "value": "ciudad-de-buenos-aires-relocation-registered-users"
-                            },
-                            {
-                                "label": "Otro",
-                                "value": "other-relocation-registered-users"
                             }
                         ]
                     },
                     {
-                        "name": "answer-other-municipality-relocation-registered-users",
+                        "name": "municipio-experiencia-otro-relocalizaciones-registrados",
                         "type": "text",
                         "prompt": "¿Cuál?",
                         "placeholder": "Escribí el nombre de tu municipio...",
@@ -6415,11 +6428,11 @@
                         "optional": false
                     },
                     {
-                        "name": "ciudad-de-buenos-aires-barrios",
+                        "name": "ciudad-de-buenos-aires-barrios-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
                         "prompt": "¿En qué barrio  tiene lugar esta experiencia? Elegí una de estas opciones:",
-                        "display_prompt": "Barrio de residencia actual",
+                        "display_prompt": "Barrio de la mesa de trabajo ",
                         "placeholder": "Elegí una de estas opciones:",
                         "hidden_default": true,
                         "optional": false,
@@ -6505,16 +6518,16 @@
                             },
                             {
                                 "label": "Otro",
-                                "value": "other-barrio-relocation-registered-users"
+                                "value": "otro-barrio"
                             }
                         ]
                     },
                     {
-                        "name": "almirante-brown-barrios",
+                        "name": "almirante-brown-barrios-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
-                        "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-                        "display_prompt": "Barrio de residencia actual",
+                        "prompt": "¿En qué barrio  tiene lugar esta experiencia? Elegí una de estas opciones:",
+                        "display_prompt": "Barrio de la mesa de trabajo ",
                         "placeholder": "Elegí una de estas opciones...",
                         "hidden_default": true,
                         "optional": false,
@@ -6576,16 +6589,16 @@
                             },
                             {
                                 "label": "Otro",
-                                "value": "other-barrio-relocation-registered-users"
+                                "value": "otro-barrio"
                             }
                         ]
                     },
                     {
-                        "name": "avellaneda-barrios",
+                        "name": "avellaneda-barrios-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
-                        "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-                        "display_prompt": "Barrio de residencia actual",
+                        "prompt": "¿En qué barrio  tiene lugar esta experiencia? Elegí una de estas opciones:",
+                        "display_prompt": "Barrio de la mesa de trabajo ",
                         "placeholder": "Elegí una de estas opciones...",
                         "hidden_default": true,
                         "optional": false,
@@ -6707,16 +6720,16 @@
                             },
                             {
                                 "label": "Otro",
-                                "value": "other-barrio-relocation-registered-users"
+                                "value": "otro-barrio"
                             }
                         ]
                     },
                     {
-                        "name": "canuelas-barrios",
+                        "name": "canuelas-barrios-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
-                        "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-                        "display_prompt": "Barrio de residencia actual",
+                        "prompt": "¿En qué barrio  tiene lugar esta experiencia? Elegí una de estas opciones:",
+                        "display_prompt": "Barrio de la mesa de trabajo",
                         "placeholder": "Elegí una de estas opciones...",
                         "hidden_default": true,
                         "optional": false,
@@ -6754,16 +6767,16 @@
                             },
                             {
                                 "label": "Otro",
-                                "value": "other-barrio-relocation-registered-users"
+                                "value": "otro-barrio"
                             }
                         ]
                     },
                     {
-                        "name": "esteban-echeverria-barrios",
+                        "name": "esteban-echeverria-barrios-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
-                        "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-                        "display_prompt": "Barrio de residencia actual",
+                        "prompt": "¿En qué barrio  tiene lugar esta experiencia? Elegí una de estas opciones:",
+                        "display_prompt": "Barrio de la mesa de trabajo",
                         "placeholder": "Elegí una de estas opciones...",
                         "hidden_default": true,
                         "optional": false,
@@ -6797,16 +6810,16 @@
                             },
                             {
                                 "label": "Otro",
-                                "value": "other-barrio-relocation-registered-users"
+                                "value": "otro-barrio"
                             }
                         ]
                     },
                     {
-                        "name": "ezeiza-barrios",
+                        "name": "ezeiza-barrios-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
-                        "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-                        "display_prompt": "Barrio de residencia actual",
+                        "prompt": "¿En qué barrio  tiene lugar esta experiencia? Elegí una de estas opciones:",
+                        "display_prompt": "Barrio de la mesa de trabajo ",
                         "placeholder": "Elegí una de estas opciones...",
                         "hidden_default": true,
                         "optional": false,
@@ -6868,16 +6881,16 @@
                             },
                             {
                                 "label": "Otro",
-                                "value": "other-barrio-relocation-registered-users"
+                                "value": "otro-barrio"
                             }
                         ]
                     },
                     {
-                        "name": "las-heras-barrios",
+                        "name": "las-heras-barrios-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
-                        "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-                        "display_prompt": "Barrio de residencia actual",
+                        "prompt": "¿En qué barrio  tiene lugar esta experiencia? Elegí una de estas opciones:",
+                        "display_prompt": "Barrio de la mesa de trabajo",
                         "placeholder": "Elegí una de estas opciones...",
                         "hidden_default": true,
                         "optional": false,
@@ -6915,16 +6928,16 @@
                             },
                             {
                                 "label": "Otro",
-                                "value": "other-barrio-relocation-registered-users"
+                                "value": "otro-barrio"
                             }
                         ]
                     },
                     {
-                        "name": "la-matanza-barrios",
+                        "name": "la-matanza-barrios-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
-                        "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-                        "display_prompt": "Barrio de residencia actual",
+                        "prompt": "¿En qué barrio  tiene lugar esta experiencia? Elegí una de estas opciones:",
+                        "display_prompt": "Barrio de la mesa de trabajo",
                         "placeholder": "Elegí tu barrio...",
                         "hidden_default": true,
                         "optional": false,
@@ -7026,16 +7039,16 @@
                             },
                             {
                                 "label": "Otro",
-                                "value": "other-barrio-relocation-registered-users"
+                                "value": "otro-barrio"
                             }
                         ]
                     },
                     {
-                        "name": "lanus-barrios",
+                        "name": "lanus-barrios-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
-                        "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-                        "display_prompt": "Barrio de residencia actual",
+                        "prompt": "¿En qué barrio  tiene lugar esta experiencia? Elegí una de estas opciones:",
+                        "display_prompt": "Barrio de la mesa de trabajo",
                         "placeholder": "Elegí una de estas opciones...",
                         "hidden_default": true,
                         "optional": false,
@@ -7093,16 +7106,16 @@
                             },
                             {
                                 "label": "Otro",
-                                "value": "other-barrio-relocation-registered-users"
+                                "value": "otro-barrio"
                             }
                         ]
                     },
                     {
-                        "name": "lomas-de-zamora-barrios",
+                        "name": "lomas-de-zamora-barrios-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
-                        "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-                        "display_prompt": "Barrio de residencia actual",
+                        "prompt": "¿En qué barrio  tiene lugar esta experiencia? Elegí una de estas opciones:",
+                        "display_prompt": "Barrio de la mesa de trabajo",
                         "placeholder": "Elegí una de estas opciones...",
                         "hidden_default": true,
                         "optional": false,
@@ -7160,16 +7173,16 @@
                             },
                             {
                                 "label": "Otro",
-                                "value": "other-barrio-relocation-registered-users"
+                                "value": "otro-barrio"
                             }
                         ]
                     },
                     {
-                        "name": "marcos-paz-barrios",
+                        "name": "marcos-paz-barrios-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
-                        "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-                        "display_prompt": "Barrio de residencia actual",
+                        "prompt": "¿En qué barrio  tiene lugar esta experiencia? Elegí una de estas opciones:",
+                        "display_prompt": "Barrio de la mesa de trabajo",
                         "placeholder": "Elegí una de estas opciones...",
                         "hidden_default": true,
                         "optional": false,
@@ -7203,16 +7216,16 @@
                             },
                             {
                                 "label": "Otro",
-                                "value": "other-barrio-relocation-registered-users"
+                                "value": "otro-barrio"
                             }
                         ]
                     },
                     {
-                        "name": "merlo-barrios",
+                        "name": "merlo-barrios-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
-                        "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-                        "display_prompt": "Barrio de residencia actual",
+                        "prompt": "¿En qué barrio  tiene lugar esta experiencia? Elegí una de estas opciones:",
+                        "display_prompt": "Barrio de la mesa de trabajo ",
                         "placeholder": "Elegí una de estas opciones...",
                         "hidden_default": true,
                         "optional": false,
@@ -7230,16 +7243,16 @@
                             },
                             {
                                 "label": "Otro",
-                                "value": "other-barrio-relocation-registered-users"
+                                "value": "otro-barrio"
                             }
                         ]
                     },
                     {
-                        "name": "moron-barrios",
+                        "name": "moron-barrios-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
-                        "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-                        "display_prompt": "Barrio de residencia actual",
+                        "prompt": "¿En qué barrio  tiene lugar esta experiencia? Elegí una de estas opciones:",
+                        "display_prompt": "Barrio de la mesa de trabajo",
                         "placeholder": "Elegí una de estas opciones...",
                         "hidden_default": true,
                         "optional": false,
@@ -7289,16 +7302,16 @@
                             },
                             {
                                 "label": "Otro",
-                                "value": "other-barrio-relocation-registered-users"
+                                "value": "otro-barrio"
                             }
                         ]
                     },
                     {
-                        "name": "peron-barrios",
+                        "name": "peron-barrios-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
-                        "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-                        "display_prompt": "Barrio de residencia actual",
+                        "prompt": "¿En qué barrio  tiene lugar esta experiencia? Elegí una de estas opciones:",
+                        "display_prompt": "Barrio de la mesa de trabajo",
                         "placeholder": "Elegí una de estas opciones...",
                         "hidden_default": true,
                         "optional": false,
@@ -7360,16 +7373,16 @@
                             },
                             {
                                 "label": "Otro",
-                                "value": "other-barrio-relocation-registered-users"
+                                "value": "otro-barrio"
                             }
                         ]
                     },
                     {
-                        "name": "san-vicente-barrios",
+                        "name": "san-vicente-barrios-registrados",
                         "type": "dropdown",
                         "includeOnListItem": true,
-                        "prompt": "¿En cuál de los siguientes barrios vivís actualmente?",
-                        "display_prompt": "Barrio de residencia actual",
+                        "prompt": "¿En qué barrio  tiene lugar esta experiencia? Elegí una de estas opciones:",
+                        "display_prompt": "Barrio de la mesa de trabajo",
                         "placeholder": "Elegí una de estas opciones...",
                         "hidden_default": true,
                         "optional": false,
@@ -7455,21 +7468,21 @@
                             },
                             {
                                 "label": "Otro",
-                                "value": "other-barrio-relocation-registered-users"
+                                "value": "barrio-otro-relocalizaciones-registrados"
                             }
                         ]
                     },
                     {
-                        "name": "answer-other-barrio-relocation-registered-users",
+                        "name": "barrio-otro-relocalizaciones-registrados",
                         "type": "text",
                         "prompt": "¿Cuál?",
                         "placeholder": "Escribí el nombre de tu barrio...",
-                        "display_prompt": "Barrio de residencia actual",
+                        "display_prompt": "Barrio de la mesa de trabajo",
                         "hidden_default": true,
                         "optional": false
                     },
                     {
-                        "name": "share-information-relocation-registered-users",
+                        "name": "info-mesa-relocalizacion-registrados",
                         "type": "big_radio",
                         "prompt": "¿Querés compartir información sobre una mesa de trabajo o reunión barrial en la que hayas participado?",
                         "optional": false,
@@ -7478,21 +7491,20 @@
                         "triggers": [{
                             "value": "si-mesas-relocation",
                             "targets": [
-                                "datetime-relocation-registered-users",
-                                "place-relocation-registred-users",
-                                "place-relocation-registred-users",
-                                "host-relocation-registred-users",
-                                "meeting-attendees-relocation-registered-users",
-                                "authorities-attendees-relocation-registered-users",
-                                "speak-meeting-relocation-registered-users",
-                                "topics-relocation-registered-users",
-                                "register-relocation-registered-users",
-                                "next-meeting-relocation-registered-users",
-                                "comment-relocation-registered-users",
-                                "intro-attach-img-relocation-registered-users",
-                                "attach-img-relocation-registered-users",
-                                "attach-pdf-relocation-registered-users",
-                                "attach-link-relocation-registered-users"
+                                "fecha-reunion-relocalizaciones-registrados",
+                                "lugar-reunion-relocalizaciones-registrados",                    
+                                "convoca-reunion-relocalizaciones-registrados",
+                                "cantidad-personas-relocalizaciones-registrados",
+                                "autoridad-relocalizaciones-registrados",
+                                "participacion-relocalizaciones-registrados",
+                                "temas-relocalizaciones-registrados",
+                                "registro-relocalizaciones-registrados",
+                                "proxima-reunion-relocalizaciones-registrados",
+                                "comentarios-relocalizaciones-registrados",
+                                "info-reunion-relocalizaciones-registrados",
+                                "info-reunion-imagen-relocalizaciones-registrados",
+                                "info-reunion-pdf-relocalizaciones-registrados",
+                                "info-reunion-enlace-relocalizaciones-registrados"
                             ]
                         }],
                         "content": [{
@@ -7506,7 +7518,7 @@
                         ]
                     },
                     {
-                        "name": "datetime-relocation-registered-users",
+                        "name": "fecha-reunion-relocalizaciones-registrados",
                         "type": "datetime",
                         "time_format": false,
                         "hidden_default": true,
@@ -7517,7 +7529,7 @@
                         "qprFormType": "water"
                     },
                     {
-                        "name": "place-relocation-registred-users",
+                        "name": "lugar-reunion-relocalizaciones-registrados",
                         "type": "big_radio",
                         "hidden_default": true,
                         "display_prompt": "Lugar de la reunión",
@@ -7525,7 +7537,7 @@
                         "optional": false,
                         "triggers": [{
                             "value": "other-place-relocation-registred-users",
-                            "targets": ["other-place-answer-relocation-registred-users"]
+                            "targets": ["lugar-reunion-otro-relocalizaciones-registrados"]
                         }],
                         "content": [{
                                 "label": "centro barrial o espacio comunitario",
@@ -7566,7 +7578,7 @@
                         ]
                     },
                     {
-                        "name": "other-place-answer-relocation-registred-users",
+                        "name": "lugar-reunion-otro-relocalizaciones-registrados",
                         "type": "text",
                         "prompt": "¿Cuál?",
                         "placeholder": "",
@@ -7575,7 +7587,7 @@
                         "optional": true
                     },
                     {
-                        "name": "host-relocation-registred-users",
+                        "name": "convoca-reunion-relocalizaciones-registrados",
                         "type": "big_checkbox",
                         "hidden_default": true,
                         "display_prompt": "Personas, organismos y organizaciones que convocaron a la reunión",
@@ -7583,7 +7595,7 @@
                         "optional": false,
                         "triggers": [{
                             "value": "other-host-relocation-registred-users",
-                            "targets": ["other-host-answer-relocation-registered-users"]
+                            "targets": ["convoca-reunion-otro-relocalizaciones-registrados"]
                         }],
                         "content": [{
                                 "label": "la junta vecinal o una asamblea vecinal",
@@ -7628,7 +7640,7 @@
                         ]
                     },
                     {
-                        "name": "other-host-answer-relocation-registered-users",
+                        "name": "convoca-reunion-otro-relocalizaciones-registrados",
                         "type": "text",
                         "prompt": "¿Cuál?",
                         "placeholder": "",
@@ -7637,7 +7649,7 @@
                         "optional": true
                     },
                     {
-                        "name": "meeting-attendees-relocation-registered-users",
+                        "name": "cantidad-personas-relocalizaciones-registrados",
                         "type": "big_radio",
                         "hidden_default": true,
                         "display_prompt": "Cantidad de participantes",
@@ -7667,7 +7679,7 @@
                         ]
                     },
                     {
-                        "name": "authorities-attendees-relocation-registered-users",
+                        "name": "autoridad-relocalizaciones-registrados",
                         "type": "big_radio",
                         "display_prompt": "Presencia de funcionario o autoridad responsable",
                         "prompt": "¿Entre las personas que participaron había un/a funcionario/a o autoridad responsable?",
@@ -7676,7 +7688,7 @@
                         "qprFormType": "relocations",
                         "triggers": [{
                             "value": "yes-authorities-attendees-relocation-registered-users",
-                            "targets": ["authorities-relocation-registered-users"]
+                            "targets": ["organismo-relocalizaciones-registrados"]
                         }],
                         "content": [{
                                 "label": "Sí.",
@@ -7693,7 +7705,7 @@
                         ]
                     },
                     {
-                        "name": "authorities-relocation-registered-users",
+                        "name": "organismo-relocalizaciones-registrados",
                         "type": "big_checkbox",
                         "display_prompt": "Organismos a los que pertenecen los funcionarios que participaron",
                         "prompt": "¿En representación de qué organismos participaron los funcionarios o autoridades? Elegí una o más de estas opciones:",
@@ -7703,7 +7715,7 @@
                         "triggers": [{
                             "value": "others-relocation-registered-users",
                             "targets": [
-                                "authorities-other-answer-relocation-registered-users"
+                                "organismo-otro-relocalizaciones-registrados"
                             ]
                         }],
                         "content": [{
@@ -7733,7 +7745,7 @@
                         ]
                     },
                     {
-                        "name": "authorities-other-answer-relocation-registered-users",
+                        "name": "organismo-otro-relocalizaciones-registrados",
                         "type": "text",
                         "prompt": "¿Cuál?",
                         "placeholder": "",
@@ -7743,7 +7755,7 @@
                         "optional": true
                     },
                     {
-                        "name": "topics-relocation-registered-users",
+                        "name": "temas-relocalizaciones-registrados",
                         "type": "big_checkbox",
                         "display_prompt": "Temas tratados",
                         "prompt": "¿Qué temas se trataron? Elegí una o más de estas opciones:",
@@ -7751,7 +7763,7 @@
                         "optional": false,
                         "triggers": [{
                             "value": "other-topics-registered-users",
-                            "targets": ["other-topics-answer-registered-users"]
+                            "targets": ["temas-otro-relocalizaciones-registrados"]
                         }],
                         "content": [{
                                 "label": "relocalización",
@@ -7784,7 +7796,7 @@
                         ]
                     },
                     {
-                        "name": "other-topics-answer-registered-users",
+                        "name": "temas-otro-relocalizaciones-registrados",
                         "type": "text",
                         "prompt": "¿Cuál?",
                         "placeholder": "",
@@ -7793,7 +7805,7 @@
                         "optional": true
                     },
                     {
-                        "name": "speak-meeting-relocation-registered-users",
+                        "name": "participacion-relocalizaciones-registrados",
                         "type": "big_radio",
                         "prompt": "¿Todas las personas que pidieron la palabra pudieron participar de la mesa haciendo preguntas, comentarios o propuestas?",
                         "display_prompt": "Posibilidad de participación de todas las personas en la reunión con preguntas, comentarios o propuestas",
@@ -7815,7 +7827,7 @@
                         ]
                     },
                     {
-                        "name": "register-relocation-registered-users",
+                        "name": "registro-relocalizaciones-registrados",
                         "type": "big_radio",
                         "hidden_default": true,
                         "display_prompt": "Existencia de un registro de la reunión: apuntes, acta escrita, grabación o video",
@@ -7841,7 +7853,7 @@
                         ]
                     },
                     {
-                        "name": "next-meeting-relocation-registered-users",
+                        "name": "proxima-reunion-relocalizaciones-registrados",
                         "type": "big_radio",
                         "prompt": "¿Se definió una fecha para la próxima reunión?",
                         "display_prompt": "Definición de fecha de la próxima reunión o mesa de trabajo",
@@ -7867,7 +7879,7 @@
                         ]
                     },
                     {
-                        "name": "date-next-meeting-relocation-registered-users",
+                        "name": "fecha-proxima-relocalizaciones-registrados",
                         "type": "datetime",
                         "time_format": false,
                         "prompt": "¿Cuál? Elegí la  fecha del calendario.",
@@ -7878,7 +7890,7 @@
                         "qprFormType": "water"
                     },
                     {
-                        "name": "comment-relocation-registered-users",
+                        "name": "comentarios-relocalizaciones-registrados",
                         "type": "text",
                         "prompt": "¿Querés dejar un comentario y/o compartir algún material de la reunión? Podés escribir y/o subir documentos, enlaces, fotos.",
                         "placeholder": "",
@@ -7888,41 +7900,40 @@
                         "qprFormType": "relocations"
                     },
                     {
-                        "name": "intro-attach-img-relocation-registered-users",
+                        "name": "info-reunion-relocalizaciones-registrados",
                         "type": "informational_html",
-                        "hidden_default": true,
-                        "prompt": "",
+                        "hidden_default": false,
                         "optional": true,
                         "content": "<span> <i> Recordá que las fotografías y documentos que adjuntás deben ser de tu autoría o debés contar con permiso para poder publicarlos . No se pueden incluir imágenes en las que se pueda identificar rostros de personas.  </i> </span>"
                     },
                     {
-                        "name": "attach-img-relocation-registered-users",
+                        "name": "info-reunion-imagen-relocalizaciones-registrados",
                         "type": "file",
                         "label": "Adjuntar archivo de imagen",
+                        "display_prompt": "Adjuntos",
                         "optional": true,
-                        "hidden_default": true,
-                        "qprFormType": "water"
+                        "qprFormType": "relocations"
                     },
                     {
-                        "name": "attach-pdf-relocation-registered-users",
-                        "type": "pdf",
+                        "name": "info-reunion-pdf-relocalizaciones-registrados",
+                        "type": "file",
                         "label": "Adjuntar archivo PDF",
+                        "display_prompt": "Adjuntos",
                         "optional": true,
-                        "hidden_default": true,
-                        "qprFormType": "water"
+                        "qprFormType": "relocations"
                     },
                     {
-                        "name": "attach-link-relocation-registered-users",
+                        "name": "info-reunion-enlace-relocalizaciones-registrados",
                         "type": "text",
-                        "hidden_default": true,
-                        "display_prompt": "Enlace",
+                        "display_prompt": "Enlaces sobre mesas de trabajo barriales",
                         "prompt": "Enlace",
-                        "placeholder": "",
+                        "placeholder": "Enlace",
                         "optional": true,
-                        "qprFormType": "water"
+                        "qprFormType": "relocations"
                     },
+                  
                     {
-                        "name": "topic-interest-relocation-registered-users",
+                        "name": "temas-a-tratar-relocalizaciones-registrados",
                         "type": "big_checkbox",
                         "prompt": "¿Qué tema o problema relacionado con el proceso de relocalización y/o reurbanización sería importante tratar con las autoridades? Elegí una o más opciones que se relacionan con el tema que querés proponer:",
                         "display_prompt": "Problemas relacionados con la relocalización o reurbanización que es importante tratar con las autoridades en mesas de trabajo barriales",
@@ -7970,7 +7981,7 @@
                         ]
                     },
                     {
-                        "name": "other-topic-answered-relocation-registered-users",
+                        "name": "temas-a-tratar-otro-relocalizacion-registrados",
                         "type": "text",
                         "prompt": "¿Cuál? Escribí un título o palabra clave para el tema o problema.",
                         "placeholder": "",
@@ -7979,7 +7990,7 @@
                         "optional": false
                     },
                     {
-                        "name": "description-registered-users",
+                        "name": "info-texto-relocalizaciones-registrados",
                         "type": "text",
                         "prompt": "Describí el tema o problema que te parece relevante para tratar con las autoridades responsables en mesas de trabajo barriales. También podés compartir documentos, imágenes, enlaces",
                         "placeholder": "",
@@ -7989,7 +8000,7 @@
                         "qprFormType": "relocations"
                     },
                     {
-                        "name": "intro-descripcion-attach-img-relocation-registered-users",
+                        "name": "info-imagen-relocalizaciones-registrados",
                         "type": "informational_html",
                         "hidden_default": false,
                         "optional": true,
@@ -8004,7 +8015,7 @@
                         "qprFormType": "relocations"
                     },
                     {
-                        "name": "description-attach-pfd-relocation-registered-users",
+                        "name": "info-pdf-relocalizaciones-registrados",
                         "type": "file",
                         "label": "Adjuntar archivo PDF",
                         "display_prompt": "Adjuntos",
@@ -8012,7 +8023,7 @@
                         "qprFormType": "relocations"
                     },
                     {
-                        "name": "description-attach-link-relocation-registered-users",
+                        "name": "info-enlace-relocalizaciones-registrados",
                         "type": "text",
                         "display_prompt": "Enlaces sobre mesas de trabajo barriales",
                         "prompt": "Enlace",
