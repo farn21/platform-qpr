@@ -1315,19 +1315,19 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "áreas naturales",
-                                "value": "natural-areas"
+                                "value": "áreas naturales"
                             },
                             {
                                 "label": "calidad del agua",
-                                "value": "water-quality"
+                                "value": "calidad del agua"
                             },
                             {
                                 "label": "relocalizaciones y reurbanización",
-                                "value": "relocations"
+                                "value": "relocalizaciones y reurbanización"
                             },
                             {
                                 "label": "otros",
-                                "value": "other-theme"
+                                "value": "otros"
                             }
                         ]
                     },
@@ -1578,11 +1578,11 @@
                         }],
                         "content": [{
                                 "label": "Sí.",
-                                "value": "yes-visit"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
-                                "value": "no-visit"
+                                "value": "no"
                             }
                         ]
                     },
@@ -1612,7 +1612,7 @@
                             },
                             {
                                 "label": "No sé.",
-                                "value": "no_se"
+                                "value": "no sí"
                             }
                         ]
                     },
@@ -1651,7 +1651,7 @@
                             },
                             {
                                 "label": "otros",
-                                "value": "other-activities"
+                                "value": "otros"
                             }
                         ]
                     },
@@ -1664,15 +1664,15 @@
                         "qprFormType": "relocation",
                         "content": [{
                                 "label": "Sí.",
-                                "value": "yes-fires"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
-                                "value": "no-fires"
+                                "value": "no"
                             },
                             {
                                 "label": "No sé.",
-                                "value": "dont-know-fires"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -1685,15 +1685,15 @@
                         "qprFormType": "relocation",
                         "content": [{
                                 "label": "Sí.",
-                                "value": "yes-waste"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
-                                "value": "no-waste"
+                                "value": "no"
                             },
                             {
                                 "label": "No sé.",
-                                "value": "dont-know-waste"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -1706,15 +1706,15 @@
                         "qprFormType": "relocation",
                         "content": [{
                                 "label": "Sí.",
-                                "value": "yes-damage"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
-                                "value": "no-damage"
+                                "value": "no"
                             },
                             {
                                 "label": "No sé.",
-                                "value": "dont-know-damage"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -1727,15 +1727,15 @@
                         "qprFormType": "relocation",
                         "content": [{
                                 "label": "Sí.",
-                                "value": "yes-cars"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
-                                "value": "no-cars"
+                                "value": "no"
                             },
                             {
                                 "label": "No sé.",
-                                "value": "dont-know-cars"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -1822,19 +1822,19 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "Valoro su biodiversidad.",
-                                "value": "value-biodiversity"
+                                "value": "valor-diversidad"
                             },
                             {
                                 "label": "Valoro que sea un espacio recreativo y social frecuentado por la comunidad.",
-                                "value": "value-social"
+                                "value": "valor-social"
                             },
                             {
                                 "label": "Valoro su historia y su patrimonio cultural y arqueológico.",
-                                "value": "value-history"
+                                "value": "valor-historico"
                             },
                             {
                                 "label": "Valoro otros aspectos no mencionados.",
-                                "value": "value-others"
+                                "value": "otros"
                             }
                         ]
                     },
@@ -2051,28 +2051,28 @@
                         "optional": false,
                         "qprFormType": "relocations",
                         "triggers": [{
-                            "value": "bond-other",
-                            "targets": ["bond-other-answer-area-registered-users"]
+                            "value": "otro",
+                            "targets": ["vinculo-otro-areas-registrados"]
                         }],
                         "content": [{
                                 "label": "Vivo o trabajo en la zona.",
-                                "value": "bond-live-work"
+                                "value": "vivo trabajo zona"
                             },
                             {
                                 "label": "Formo parte de una organización que trabaja para proteger esta área.",
-                                "value": "bond-organization"
+                                "value": "formo parte organización"
                             },
                             {
                                 "label": "Formo parte de una organización relacionada con temas ambientales.",
-                                "value": "bond-environmental-organization"
+                                "value": "formo parte organización ambiental"
                             },
                             {
                                 "label": "Me interesa realizar actividades educativas en esta área.",
-                                "value": "bond-educational-activities"
+                                "value": "actividades educativas"
                             },
                             {
                                 "label": "Mantengo otro vínculo.",
-                                "value": "bond-other"
+                                "value": "otro"
                             }
                         ]
                     },
@@ -2094,24 +2094,24 @@
                         "optional": true,
                         "qprFormType": "relocations",
                         "triggers": [{
-                            "value": "value-other-aspects-registered-users",
-                            "targets": ["value-other-aspects-answer-area-registered-users"]
+                            "value": "otro",
+                            "targets": ["valoracion-otro-areas-registrados"]
                         }],
                         "content": [{
                                 "label": "Valoro su biodiversidad.",
-                                "value": "value-biodiversiy-registered-users"
+                                "value": "valor-diversidad"
                             },
                             {
                                 "label": "Valoro que sea un espacio recreativo y social frecuentado por la comunidad.",
-                                "value": "value-social-registered-users"
+                                "value": "valor-social"
                             },
                             {
                                 "label": "Valoro su historia y su patrimonio cultural y arqueológico.",
-                                "value": "value-history-registered-users"
+                                "value": "valor-historico"
                             },
                             {
                                 "label": "Valoro otros aspectos no mencionados.",
-                                "value": "value-other-aspects-registered-users"
+                                "value": "otro"
                             }
                         ]
                     },
@@ -2133,28 +2133,28 @@
                         "optional": true,
                         "qprFormType": "relocations",
                         "triggers": [{
-                            "value": "threat-other-aspects",
-                            "targets": ["threat-other-aspects-answer-area-registered-users"]
+                            "value": "otro",
+                            "targets": ["amenaza-otro-areas-registrados"]
                         }],
                         "content": [{
                                 "label": "Su flora y fauna.",
-                                "value": "threat-flora-fauna"
+                                "value": "flora-fauna"
                             },
                             {
                                 "label": "Su territorio, dimensiones, área, extensión.",
-                                "value": "threat-territory"
+                                "value": "territorio"
                             },
                             {
                                 "label": "Sus usos recreativos.",
-                                "value": "threat-recreational"
+                                "value": "recreativo"
                             },
                             {
                                 "label": "Su valor histórico, cultural y arqueológico.",
-                                "value": "threat-history"
+                                "value": "historia"
                             },
                             {
                                 "label": "Otro.",
-                                "value": "threat-other-aspects"
+                                "value": "otro"
                             }
                         ]
                     },
@@ -2182,19 +2182,19 @@
                         "qprFormType": "relocation",
                         "content": [{
                                 "label": "Estado del área: observaciones del área; pueden ser amenazas o condiciones de cuidado y mantenimiento.",
-                                "value": "area-state"
+                                "value": "estado"
                             },
                             {
                                 "label": "Patrimonio natural, cultural y arqueológico: apreciaciones sobre flora, fauna, restos arqueológicos y otros valores culturales del área.L",
-                                "value": "area-patrimony"
+                                "value": "patrimonio"
                             },
                             {
                                 "label": "Usos y memorias del área:  actividades que se realizan en el área actualmente  o que conozcas a través de relatos históricos.",
-                                "value": "area-memories"
+                                "value": "memorias"
                             },
                             {
                                 "label": "Protección del espacio: aspectos asociados a garantizar la protección legal del área, como acciones en curso o problemas que se enfrentan.",
-                                "value": "area-protection"
+                                "value": "protección"
                             }
                         ]
                     },
@@ -2406,15 +2406,15 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "río",
-                                "value": "river"
+                                "value": "río"
                             },
                             {
                                 "label": "arroyo",
-                                "value": "stream"
+                                "value": "arroyo"
                             },
                             {
                                 "label": "canal",
-                                "value": "channel"
+                                "value": "canal"
                             },
                             {
                                 "label": "laguna",
@@ -2422,7 +2422,7 @@
                             },
                             {
                                 "label": "otro",
-                                "value": "other"
+                                "value": "otro"
                             }
                         ]
                     },
@@ -2439,11 +2439,11 @@
                             },
                             {
                                 "label": "urbano",
-                                "value": "urban"
+                                "value": "urbano"
                             },
                             {
                                 "label": "no identificado",
-                                "value": "dont-know"
+                                "value": "no identificado"
                             }
                         ]
                     },
@@ -2462,23 +2462,23 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "puente",
-                                "value": "bridge"
+                                "value": "puente"
                             },
                             {
                                 "label": "pasarela",
-                                "value": "walkway"
+                                "value": "pasarela"
                             },
                             {
                                 "label": "baranda",
-                                "value": "rail"
+                                "value": "baranda"
                             },
                             {
                                 "label": "escala",
-                                "value": "scale"
+                                "value": "escala"
                             },
                             {
                                 "label": "otro",
-                                "value": "other"
+                                "value": "otro"
                             }
                         ]
                     },
@@ -2492,23 +2492,23 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "agua clara",
-                                "value": "clear"
+                                "value": "agua clara"
                             },
                             {
                                 "label": "poco clara",
-                                "value": "less-clear"
+                                "value": "poco clara"
                             },
                             {
                                 "label": "turbia",
-                                "value": "cloudy"
+                                "value": "turbia"
                             },
                             {
                                 "label": "muy turbia",
-                                "value": "very-cloudy"
+                                "value": "muy turbia"
                             },
                             {
                                 "label": "otro",
-                                "value": "other"
+                                "value": "otro"
                             }
                         ]
                     },
@@ -2522,31 +2522,31 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "transparente",
-                                "value": "transparent"
+                                "value": "transparente"
                             },
                             {
                                 "label": "verde",
-                                "value": "green"
+                                "value": "verde"
                             },
                             {
                                 "label": "marrón",
-                                "value": "brown"
+                                "value": "marrón"
                             },
                             {
                                 "label": "gris",
-                                "value": "grey"
+                                "value": "gris"
                             },
                             {
                                 "label": "negro",
-                                "value": "black"
+                                "value": "negro"
                             },
                             {
                                 "label": "rojo",
-                                "value": "red"
+                                "value": "rojo"
                             },
                             {
                                 "label": "otro",
-                                "value": "other"
+                                "value": "otro"
                             }
                         ]
                     },
@@ -2559,7 +2559,7 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "Sí.",
-                                "value": "yes"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
@@ -2567,7 +2567,7 @@
                             },
                             {
                                 "label": "No sé.",
-                                "value": "dont-know"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -2579,20 +2579,20 @@
                         "optional": false,
                         "qprFormType": "relocations",
                         "triggers": [{
-                            "value": "yes-floating-materials-water",
+                            "value": "sí",
                             "targets": ["flotantes-cuales-calidad-agua-no-registrados"]
                         }],
                         "content": [{
                                 "label": "Sí.",
-                                "value": "yes-floating-materials-water"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
-                                "value": "no-floating-materials-water"
+                                "value": "no"
                             },
                             {
                                 "label": "No sé.",
-                                "value": "dont-know-floating-materials-water"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -2606,31 +2606,31 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "plásticos",
-                                "value": "plastics"
+                                "value": "plásticos"
                             },
                             {
                                 "label": "restos de vegetación",
-                                "value": "vegetation-remains"
+                                "value": "restos de vegetación"
                             },
                             {
                                 "label": "pañales",
-                                "value": "diapers"
+                                "value": "pañales"
                             },
                             {
                                 "label": "madera",
-                                "value": "wood"
+                                "value": "madera"
                             },
                             {
                                 "label": "calzado y textiles",
-                                "value": "textiles-footware"
+                                "value": "calzado y textiles"
                             },
                             {
                                 "label": "voluminosos",
-                                "value": "bulky"
+                                "value": "voluminosos"
                             },
                             {
                                 "label": "otros",
-                                "value": "other"
+                                "value": "otros"
                             }
                         ]
                     },
@@ -2642,20 +2642,20 @@
                         "optional": false,
                         "qprFormType": "relocations",
                         "triggers": [{
-                            "value": "yes-pollution-source-water",
+                            "value": "sí",
                             "targets": ["fuente-cuales-agua-no-registrados"]
                         }],
                         "content": [{
                                 "label": "Sí.",
-                                "value": "yes-pollution-source-water"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
-                                "value": "no-pollution source-water"
+                                "value": "no"
                             },
                             {
                                 "label": "No sé.",
-                                "value": "no-dont-know-pollution source-water"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -2669,11 +2669,11 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "doméstica",
-                                "value": "domestic"
+                                "value": "doméstica"
                             },
                             {
                                 "label": "cloacal",
-                                "value": "sewer"
+                                "value": "cloacal"
                             },
                             {
                                 "label": "pluvial",
@@ -2685,7 +2685,7 @@
                             },
                             {
                                 "label": "no identificada",
-                                "value": "unidentified"
+                                "value": "no identificada"
                             }
                         ]
                     },
@@ -2697,20 +2697,20 @@
                         "optional": false,
                         "qprFormType": "relocations",
                         "triggers": [{
-                            "value": "yes-margin-vegetation-water",
+                            "value": "sí",
                             "targets": ["vegetacion-margenes-cuales-calidad-agua-no-registrados"]
                         }],
                         "content": [{
                                 "label": "Sí.",
-                                "value": "yes-margin-vegetation-water"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
-                                "value": "no-margin-vegetation-water"
+                                "value": "no"
                             },
                             {
                                 "label": "No sé.",
-                                "value": "dont-know-margin-vegetation-water"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -2724,19 +2724,19 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "césped mantenido",
-                                "value": "grass"
+                                "value": "césped mantenido"
                             },
                             {
                                 "label": "arbustos",
-                                "value": "shrubbery"
+                                "value": "arbustos"
                             },
                             {
                                 "label": "árboles",
-                                "value": "trees"
+                                "value": "árboles"
                             },
                             {
                                 "label": "otros",
-                                "value": "others"
+                                "value": "otros"
                             }
                         ]
                     },
@@ -2748,20 +2748,20 @@
                         "optional": false,
                         "qprFormType": "relocations",
                         "triggers": [{
-                            "value": "yes-body-vegetation-water",
+                            "value": "sí",
                             "targets": ["vegetacion-cuerpo-cuales-calidad-agua-no-registrados"]
                         }],
                         "content": [{
                                 "label": "Sí.",
-                                "value": "yes-body-vegetation-water"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
-                                "value": "no-body-vegetation-water"
+                                "value": "no"
                             },
                             {
                                 "label": "No sé.",
-                                "value": "dont-know-body-vegetation-water"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -2775,15 +2775,15 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "algas",
-                                "value": "algae"
+                                "value": "algas"
                             },
                             {
                                 "label": "plantas acuáticas",
-                                "value": "aquatic-plants"
+                                "value": "plantas acuáticas"
                             },
                             {
                                 "label": "otros",
-                                "value": "others"
+                                "value": "otros"
                             }
                         ]
                     },
@@ -2796,7 +2796,7 @@
                         "qprFormType": "relocation",
                         "content": [{
                                 "label": "Sí.",
-                                "value": "yes"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
@@ -2804,7 +2804,7 @@
                             },
                             {
                                 "label": "No sé.",
-                                "value": "dont-know"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -2822,15 +2822,15 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "alto",
-                                "value": "high"
+                                "value": "alto"
                             },
                             {
                                 "label": "medio",
-                                "value": "medium"
+                                "value": "medio"
                             },
                             {
                                 "label": "bajo",
-                                "value": "low"
+                                "value": "bajo"
                             }
                         ]
                     },
@@ -2843,7 +2843,7 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "Sí.",
-                                "value": "yes"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
@@ -2851,7 +2851,7 @@
                             },
                             {
                                 "label": "No sé.",
-                                "value": "dont-know"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -2863,20 +2863,20 @@
                         "optional": false,
                         "qprFormType": "relocations",
                         "triggers": [{
-                            "value": "yes-rain-water",
+                            "value": "sí",
                             "targets": ["lluvias-tipo-calidad-agua-no-registrados"]
                         }],
                         "content": [{
                                 "label": "Sí.",
-                                "value": "yes-rain-water"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
-                                "value": "no-rain-water"
+                                "value": "no"
                             },
                             {
                                 "label": "No sé.",
-                                "value": "dont-know-rain-water"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -2890,19 +2890,19 @@
                         "qprFormType": "relocation",
                         "content": [{
                                 "label": "llovizna",
-                                "value": "drizzle"
+                                "value": "llovizna"
                             },
                             {
                                 "label": "llovizna intensa breve",
-                                "value": "short-intense-drizzle"
+                                "value": "llovizna intensa breve"
                             },
                             {
                                 "label": "lluvia intensa extendida",
-                                "value": "long-intense-drizzle"
+                                "value": "lluvia intensa extendida"
                             },
                             {
                                 "label": "no identificada",
-                                "value": "unidentified"
+                                "value": "no identificada"
                             }
                         ]
                     },
@@ -3067,23 +3067,23 @@
                         }],
                         "content": [{
                                 "label": "río",
-                                "value": "river"
+                                "value": "río"
                             },
                             {
                                 "label": "arroyo",
-                                "value": "stream"
+                                "value": "arroyo"
                             },
                             {
                                 "label": "canal",
-                                "value": "channel"
+                                "value": "canal"
                             },
                             {
                                 "label": "laguna",
-                                "value": "lagoon"
+                                "value": "laguna"
                             },
                             {
                                 "label": "otro",
-                                "value": "other-water-body"
+                                "value": "otro"
                             }
                         ]
                     },
@@ -3110,11 +3110,11 @@
                             },
                             {
                                 "label": "urbano",
-                                "value": "urban"
+                                "value": "urbano"
                             },
                             {
                                 "label": "no identificado",
-                                "value": "dont-know"
+                                "value": "no identificado"
                             }
                         ]
                     },
@@ -3137,23 +3137,23 @@
                         }],
                         "content": [{
                                 "label": "puente",
-                                "value": "bridge"
+                                "value": "puente"
                             },
                             {
                                 "label": "pasarela",
-                                "value": "walkway"
+                                "value": "pasarela"
                             },
                             {
                                 "label": "baranda",
-                                "value": "rail"
+                                "value": "baranda"
                             },
                             {
                                 "label": "escala",
-                                "value": "scale"
+                                "value": "escala"
                             },
                             {
                                 "label": "otro",
-                                "value": "other-checkpoint"
+                                "value": "otro"
                             }
                         ]
                     },
@@ -3168,7 +3168,7 @@
                         "optional": true
                     },
                     {
-                        "name": "turbidez-calidad-agua-no-registrados",
+                        "name": "turbidez-calidad-agua-registrados",
                         "type": "big_radio",
                         "includeOnListItem": true,
                         "prompt": "¿Cuál es el estado del agua en el lugar y el momento del registro? Elegí una de estas opciones:",
@@ -3177,28 +3177,28 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "agua clara",
-                                "value": "clear"
+                                "value": "agua clara"
                             },
                             {
                                 "label": "poco clara",
-                                "value": "less-clear"
+                                "value": "poco clara"
                             },
                             {
                                 "label": "turbia",
-                                "value": "cloudy"
+                                "value": "turbia"
                             },
                             {
                                 "label": "muy turbia",
-                                "value": "very-cloudy"
+                                "value": "muy turbia"
                             },
                             {
                                 "label": "otro",
-                                "value": "other"
+                                "value": "otro"
                             }
                         ]
                     },
                     {
-                        "name": "color-agua-calidad-agua-no-registrados",
+                        "name": "color-agua-calidad-agua-registrados",
                         "type": "big_radio",
                         "includeOnListItem": true,
                         "prompt": "¿Cuál es el color del agua en el lugar y el momento del registro? Elegí una de estas opciones:",
@@ -3207,36 +3207,36 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "transparente",
-                                "value": "transparent"
+                                "value": "transparente"
                             },
                             {
                                 "label": "verde",
-                                "value": "green"
+                                "value": "verde"
                             },
                             {
                                 "label": "marrón",
-                                "value": "brown"
+                                "value": "marrón"
                             },
                             {
                                 "label": "gris",
-                                "value": "grey"
+                                "value": "gris"
                             },
                             {
                                 "label": "negro",
-                                "value": "black"
+                                "value": "negro"
                             },
                             {
                                 "label": "rojo",
-                                "value": "red"
+                                "value": "rojo"
                             },
                             {
                                 "label": "otro",
-                                "value": "other"
+                                "value": "otro"
                             }
                         ]
                     },
                     {
-                        "name": "olor-calidad-agua-no-registrados",
+                        "name": "olor-calidad-agua-registrados",
                         "type": "big_radio",
                         "prompt": "¿Se percibían olores del agua en el lugar y el momento del registro?",
                         "display_prompt": "Presencia de olor del agua",
@@ -3244,7 +3244,7 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "Sí.",
-                                "value": "yes"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
@@ -3252,12 +3252,12 @@
                             },
                             {
                                 "label": "No sé.",
-                                "value": "dont-know"
+                                "value": "no sé"
                             }
                         ]
                     },
                     {
-                        "name": "flotantes-calidad-agua-no-registrados",
+                        "name": "flotantes-calidad-agua-registrados",
                         "type": "big_radio",
                         "prompt": "¿Observaste materiales flotantes en la superficie del curso del agua?",
                         "display_prompt": "Presencia de materiales flotantes",
@@ -3269,15 +3269,15 @@
                         }],
                         "content": [{
                                 "label": "Sí.",
-                                "value": "yes-floating-materials-water"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
-                                "value": "no-floating-materials-water"
+                                "value": "no"
                             },
                             {
                                 "label": "No sé.",
-                                "value": "dont-know-floating-materials-water"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -3297,31 +3297,31 @@
                         }],
                         "content": [{
                                 "label": "plásticos",
-                                "value": "plastics"
+                                "value": "plásticos"
                             },
                             {
                                 "label": "restos de vegetación",
-                                "value": "vegetation-remains"
+                                "value": "restos de vegetación"
                             },
                             {
                                 "label": "pañales",
-                                "value": "diapers"
+                                "value": "pañales"
                             },
                             {
                                 "label": "madera",
-                                "value": "wood"
+                                "value": "madera"
                             },
                             {
                                 "label": "calzado y textiles",
-                                "value": "textiles-footware"
+                                "value": "calzado y textiles"
                             },
                             {
                                 "label": "voluminosos",
-                                "value": "bulky"
+                                "value": "voluminosos"
                             },
                             {
                                 "label": "otros",
-                                "value": "other"
+                                "value": "otros"
                             }
                         ]
                     },
@@ -3348,15 +3348,15 @@
                         }],
                         "content": [{
                                 "label": "Sí.",
-                                "value": "yes-pollution-source-water"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
-                                "value": "no-pollution-source-water"
+                                "value": "no"
                             },
                             {
                                 "label": "No sé.",
-                                "value": "no-dont-know-pollution source-water"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -3370,11 +3370,11 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "doméstica",
-                                "value": "domestic"
+                                "value": "doméstica"
                             },
                             {
                                 "label": "cloacal",
-                                "value": "sewer"
+                                "value": "cloacal"
                             },
                             {
                                 "label": "pluvial",
@@ -3386,7 +3386,7 @@
                             },
                             {
                                 "label": "no identificada",
-                                "value": "unidentified"
+                                "value": "no identificada"
                             }
                         ]
                     },
@@ -3403,15 +3403,15 @@
                         }],
                         "content": [{
                                 "label": "Sí.",
-                                "value": "yes-margin-vegetation-water"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
-                                "value": "no-margin-vegetation-water"
+                                "value": "no"
                             },
                             {
                                 "label": "No sé.",
-                                "value": "dont-know-margin-vegetation-water"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -3425,19 +3425,19 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "césped mantenido",
-                                "value": "grass"
+                                "value": "césped mantenido"
                             },
                             {
                                 "label": "arbustos",
-                                "value": "shrubbery"
+                                "value": "arbustos"
                             },
                             {
                                 "label": "árboles",
-                                "value": "trees"
+                                "value": "árboles"
                             },
                             {
                                 "label": "otros",
-                                "value": "others"
+                                "value": "otros"
                             }
                         ]
                     },
@@ -3454,15 +3454,15 @@
                         }],
                         "content": [{
                                 "label": "Sí.",
-                                "value": "yes-body-vegetation-water"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
-                                "value": "no-body-vegetation-water"
+                                "value": "no"
                             },
                             {
                                 "label": "No sé.",
-                                "value": "dont-know-body-vegetation-water"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -3476,15 +3476,15 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "algas",
-                                "value": "algae"
+                                "value": "algas"
                             },
                             {
                                 "label": "plantas acuáticas",
-                                "value": "aquatic-plants"
+                                "value": "plantas acuáticas"
                             },
                             {
                                 "label": "otros",
-                                "value": "others"
+                                "value": "otros"
                             }
                         ]
                     },
@@ -3501,15 +3501,15 @@
                         }],
                         "content": [{
                                 "label": "Sí.",
-                                "value": "yes-fauna"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
-                                "value": "no-fauna"
+                                "value": "no"
                             },
                             {
                                 "label": "No sé.",
-                                "value": "dont-know-fauna"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -3537,15 +3537,15 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "alto",
-                                "value": "high"
+                                "value": "alto"
                             },
                             {
                                 "label": "medio",
-                                "value": "medium"
+                                "value": "medio"
                             },
                             {
                                 "label": "bajo",
-                                "value": "low"
+                                "value": "bajo"
                             }
                         ]
                     },
@@ -3558,7 +3558,7 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "Sí.",
-                                "value": "yes"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
@@ -3566,7 +3566,7 @@
                             },
                             {
                                 "label": "No sé.",
-                                "value": "dont-know"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -3583,15 +3583,15 @@
                         }],
                         "content": [{
                                 "label": "Sí.",
-                                "value": "yes-rain-water"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
-                                "value": "no-rain-water"
+                                "value": "no"
                             },
                             {
                                 "label": "No sé",
-                                "value": "dont-know-rain-water"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -3605,19 +3605,19 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "llovizna",
-                                "value": "drizzle"
+                                "value": "llovizna"
                             },
                             {
                                 "label": "llovizna intensa breve",
-                                "value": "short-intense-drizzle"
+                                "value": "llovizna intensa breve"
                             },
                             {
                                 "label": "lluvia intensa extendida",
-                                "value": "long-intense-drizzle"
+                                "value": "lluvia intensa extendida"
                             },
                             {
                                 "label": "no identificada",
-                                "value": "unidentified"
+                                "value": "no identificada"
                             }
                         ]
                     },
@@ -6101,7 +6101,7 @@
                             },
                             {
                                 "label": "No sé.",
-                                "value": "no-se-advancement"
+                                "value": "no-sé"
                             }
                         ]
                     },
@@ -6114,15 +6114,15 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "Sí.",
-                                "value": "si-nuevas-viviendas-relocalizaciones"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
-                                "value": "no-nuevas-viviendas-relocalizacione"
+                                "value": "no"
                             },
                             {
                                 "label": "No sé.",
-                                "value": "no-se-nuevas-viviendas-relocalizaciones"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -6135,15 +6135,15 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "Sí.",
-                                "value": "si-servicios-relocalizaciones"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
-                                "value": "no-servicios-relocalizaciones"
+                                "value": "no"
                             },
                             {
                                 "label": "No sé.",
-                                "value": "no-se-servicios-relocalizaciones"
+                                "value": "no-sé"
                             }
                         ]
                     },
@@ -6156,15 +6156,15 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "Sí.",
-                                "value": "si-autoridad-relocalizaciones"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
-                                "value": "no-autoridad-relocalizaciones"
+                                "value": "no"
                             },
                             {
                                 "label": "No sé.",
-                                "value": "no-se-autoridad-relocalizaciones"
+                                "value": "no-sé"
                             }
                         ]
                     },
@@ -6177,15 +6177,15 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "Sí.",
-                                "value": "si-mesas-relocalizaciones"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
-                                "value": "no-mesas-relocalizaciones"
+                                "value": "no"
                             },
                             {
                                 "label": "No sé.",
-                                "value": "no-se-mesas-relocalizaciones"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -7509,11 +7509,11 @@
                         }],
                         "content": [{
                                 "label": "Sí.",
-                                "value": "si-mesas-relocation"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
-                                "value": "no-mesas-relocation"
+                                "value": "no"
                             }
                         ]
                     },
@@ -7536,44 +7536,44 @@
                         "prompt": "¿En qué lugar se llevó a cabo la reunión? Elegí una de estas opciones:",
                         "optional": false,
                         "triggers": [{
-                            "value": "other-place-relocation-registred-users",
+                            "value": "otros",
                             "targets": ["lugar-reunion-otro-relocalizaciones-registrados"]
                         }],
                         "content": [{
                                 "label": "centro barrial o espacio comunitario",
-                                "value": "community-center-relocation-registered-users"
+                                "value": "centro barrial"
                             },
                             {
                                 "label": "casa de un/a vecino/a",
-                                "value": "neighbours-houses-relocation-registered-users"
+                                "value": "casa de vecino"
                             },
                             {
                                 "label": "edificios o dependencias de la municipalidad",
-                                "value": "city-hall-buildings-relocation-registred-users"
+                                "value": "municipalidad"
                             },
                             {
                                 "label": "centro de salud",
-                                "value": "health-center-relocation-registred-users"
+                                "value": "centro de salud"
                             },
                             {
                                 "label": "escuela",
-                                "value": "school-relocation-registred-users"
+                                "value": "escuela"
                             },
                             {
                                 "label": "local de una organización social, barrial o comunitaria",
-                                "value": "community-organization-relocation-registred-users"
+                                "value": "organización social"
                             },
                             {
                                 "label": "local partidario",
-                                "value": "party-relocation-registred-users"
+                                "value": "local partidario"
                             },
                             {
                                 "label": "otros",
-                                "value": "other-place-relocation-registred-users"
+                                "value": "otros"
                             },
                             {
                                 "label": "No sé.",
-                                "value": "dont-know-place-relocation-registred-users"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -7594,48 +7594,48 @@
                         "prompt": "¿Quién convocó a la reunión? Elegí una o más de estas opciones:",
                         "optional": false,
                         "triggers": [{
-                            "value": "other-host-relocation-registred-users",
+                            "value": "otro",
                             "targets": ["convoca-reunion-otro-relocalizaciones-registrados"]
                         }],
                         "content": [{
                                 "label": "la junta vecinal o una asamblea vecinal",
-                                "value": "neighbours-meeting-relocation-registered-users"
+                                "value": "junta vecinal"
                             },
                             {
                                 "label": "referentes del barrio",
-                                "value": "community-leaders-relocation-registered-users"
+                                "value": "referentes"
                             },
                             {
                                 "label": "vecinos/as del barrio",
-                                "value": "neighbours-relocation-registred-users"
+                                "value": "vecinos"
                             },
                             {
                                 "label": "ACUMAR",
-                                "value": "acumar-relocation-registred-users"
+                                "value": "acumar"
                             },
                             {
                                 "label": "el municipio",
-                                "value": "municipality-relocation-registred-users"
+                                "value": "municipio"
                             },
                             {
                                 "label": "el Gobierno de la Ciudad",
-                                "value": "ba-government-relocation-registred-users"
+                                "value": "gobierno ciudad"
                             },
                             {
                                 "label": "el Ministerio Público de la Defensa",
-                                "value": "public-ministry-relocation-registred-users"
+                                "value": "ministerio público defensa"
                             },
                             {
                                 "label": "una organización de la sociedad civil, ONG, asociación civil, fundación o cooperativa.",
-                                "value": "social-organization-relocation-registred-users"
+                                "value": "ongs"
                             },
                             {
                                 "label": "otro",
-                                "value": "other-host-relocation-registred-users"
+                                "value": "otro"
                             },
                             {
                                 "label": "No sé.",
-                                "value": "dont-know-host-relocation-registred-users"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -7658,23 +7658,23 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "1 a 10 personas",
-                                "value": "ten-relocation-registered-users"
+                                "value": "1-10"
                             },
                             {
                                 "label": "11 a  20 personas",
-                                "value": "twenty-relocation-registered-users"
+                                "value": "11-20"
                             },
                             {
                                 "label": "21 a 30 personas",
-                                "value": "thirty-relocation-registered-users"
+                                "value": "21-30"
                             },
                             {
                                 "label": "más de 30 personas",
-                                "value": "more-than-thirty-relocation-registered-users"
+                                "value": "más de 30"
                             },
                             {
                                 "label": "No sé.",
-                                "value": "dont-know-number-relocation-registered-users"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -7687,20 +7687,20 @@
                         "hidden_default": true,
                         "qprFormType": "relocations",
                         "triggers": [{
-                            "value": "yes-authorities-attendees-relocation-registered-users",
+                            "value": "sí",
                             "targets": ["organismo-relocalizaciones-registrados"]
                         }],
                         "content": [{
                                 "label": "Sí.",
-                                "value": "yes-authorities-attendees-relocation-registered-users"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
-                                "value": "no-authorities-attendees-relocation-registered-users"
+                                "value": "no"
                             },
                             {
                                 "label": "No sé.",
-                                "value": "dont-know-authorities-attendees-relocation-registered-users"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -7713,30 +7713,30 @@
                         "hidden_default": true,
                         "qprFormType": "relocations",
                         "triggers": [{
-                            "value": "others-relocation-registered-users",
+                            "value": "otros",
                             "targets": [
                                 "organismo-otro-relocalizaciones-registrados"
                             ]
                         }],
                         "content": [{
                                 "label": "ACUMAR.",
-                                "value": "acumar-relocation-registered-users"
+                                "value": "acumar"
                             },
                             {
                                 "label": "el municipio",
-                                "value": "municipality-relocation-registered-users"
+                                "value": "municipio"
                             },
                             {
                                 "label": "el Gobierno de la Ciudad",
-                                "value": "ba-government-relocation-registered-users"
+                                "value": "gobierno ciudad"
                             },
                             {
                                 "label": "Ministerio Público de la Defensa",
-                                "value": "public-ministry-relocation-registered-users"
+                                "value": "ministerio público defensa"
                             },
                             {
                                 "label": "Otros",
-                                "value": "others-relocation-registered-users"
+                                "value": "otros"
                             },
                             {
                                 "label": "No sé.",
@@ -7762,36 +7762,36 @@
                         "hidden_default": true,
                         "optional": false,
                         "triggers": [{
-                            "value": "other-topics-registered-users",
+                            "value": "otro",
                             "targets": ["temas-otro-relocalizaciones-registrados"]
                         }],
                         "content": [{
                                 "label": "relocalización",
-                                "value": "relocation-topics-registered-users"
+                                "value": "relocalización"
                             },
                             {
                                 "label": "reurbanización",
-                                "value": "reurbanization-topics-registered-users"
+                                "value": "reurbanización"
                             },
                             {
                                 "label": "servicios públicos (agua, cloacas, electricidad)",
-                                "value": "public-services-topics-registered-users"
+                                "value": "servicios públicos"
                             },
                             {
                                 "label": "salud",
-                                "value": "health-registered-users"
+                                "value": "salud"
                             },
                             {
                                 "label": "ambiente, contaminación",
-                                "value": "environment-topics-registered-users"
+                                "value": "ambiente"
                             },
                             {
                                 "label": "otro",
-                                "value": "other-topics-registered-users"
+                                "value": "otro"
                             },
                             {
                                 "label": "No sé.",
-                                "value": "dont-know-topic-topics-registered-users"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -7814,15 +7814,15 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "Sí.",
-                                "value": "yes-speak-meeting-relocation-registered-users"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
-                                "value": "no-speak-meeting-relocation-registered-users"
+                                "value": "no"
                             },
                             {
                                 "label": "No sé.",
-                                "value": "dont-know-speak-meeting-relocation-registered-users"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -7836,19 +7836,19 @@
                         "qprFormType": "relocations",
                         "content": [{
                                 "label": "Sí.",
-                                "value": "yes-register-relocation-registered-users"
+                                "value": "sí"
                             },
                             {
                                 "label": "No, no hubo.",
-                                "value": "no-register-relocation-registered-users"
+                                "value": "no"
                             },
                             {
                                 "label": "No, no se permitió el registro de la reunión.",
-                                "value": "not-allowed-register-relocation-registered-users"
+                                "value": "no-permitido"
                             },
                             {
                                 "label": "No sé.",
-                                "value": "dont-know-register-relocation-registered-users"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -7861,20 +7861,20 @@
                         "optional": false,
                         "qprFormType": "relocations",
                         "triggers": [{
-                            "value": "yes-next-meeting-relocation-registered-users",
+                            "value": "sí",
                             "targets": ["date-next-meeting-relocation-registered-users"]
                         }],
                         "content": [{
                                 "label": "Sí.",
-                                "value": "yes-next-meeting-relocation-registered-users"
+                                "value": "sí"
                             },
                             {
                                 "label": "No.",
-                                "value": "no-next-meeting-relocation-registered-users"
+                                "value": "no"
                             },
                             {
                                 "label": "No sé.",
-                                "value": "dont-know-next-meeting-relocation-registered-users"
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -7939,44 +7939,44 @@
                         "display_prompt": "Problemas relacionados con la relocalización o reurbanización que es importante tratar con las autoridades en mesas de trabajo barriales",
                         "optional": false,
                         "triggers": [{
-                            "value": "other-topic-relocation-registered-users",
-                            "targets": ["other-topic-answered-relocation-registered-users"]
+                            "value": "otros",
+                            "targets": ["temas-a-tratar-otro-relocalizacion-registrados"]
                         }],
                         "content": [{
                                 "label": "información, participación y mesas de trabajo por la relocalización o reurbanización",
-                                "value": "information-topic-relocation-registered-users"
+                                "value": "information"
                             },
                             {
                                 "label": "salud",
-                                "value": "health-topic-relocation-registered-users"
+                                "value": "salud"
                             },
                             {
                                 "label": "vivienda",
-                                "value": "housing-topic-relocation-registered-users"
+                                "value": "vivienda"
                             },
                             {
                                 "label": "hábitat, servicios públicos, entorno barrial",
-                                "value": "habit-topic-relocation-registered-users"
+                                "value": "hábitat"
                             },
                             {
                                 "label": "riesgo ambiental, exposición a la contaminación",
-                                "value": "risk-topic-relocation-registered-users"
+                                "value": "riesgo"
                             },
                             {
                                 "label": "acceso y conexión con la ciudad y transporte",
-                                "value": "transport-topic-relocation-registered-users"
+                                "value": "transporte"
                             },
                             {
                                 "label": "situación económica y laboral",
-                                "value": "economy-topic-relocation-registered-users"
+                                "value": "economía"
                             },
                             {
                                 "label": "educación",
-                                "value": "education-topic-relocation-registered-users"
+                                "value": "educación"
                             },
                             {
                                 "label": "otros",
-                                "value": "other-topic-relocation-registered-users"
+                                "value": "otros"
                             }
                         ]
                     },
