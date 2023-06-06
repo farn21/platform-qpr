@@ -38,10 +38,13 @@ class AddAttachmentButton extends Component {
       Util.loadFile(
         file,
         result => {
+            // bl.name = this.result.name
+          var file_blob = new File([result], file.name)
+          console.log(file)
           this.props.onChange(evt.target.name, "");
           this.props.onAddAttachment({
             name: this.props.name,
-            file: result,
+            file: file_blob,
             type: MODES[this.props.mode].type
           })
         }

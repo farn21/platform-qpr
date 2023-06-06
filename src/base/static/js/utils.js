@@ -111,7 +111,9 @@ const loadFile = (file, callback, options) => {
   const fr = new FileReader();
 
   fr.onloadend = function () {
-    callback(new Blob([this.result]))
+    var bl = new Blob([this.result])
+  
+    callback(file)
   };
 
   fr.readAsArrayBuffer(file); // read the file
