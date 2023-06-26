@@ -20,18 +20,12 @@
         {
             "slug": "water-input-register",
             "clientSlug": "Calidad del Agua: Imágenes y descripciones",
-            "anonymous_permissions": [{
-                "abilities": ["create"],
-                "submission_set": "*"
-            }]
+            "anonymous_permissions": []
         },
         {
             "slug": "relocations-input-register",
             "clientSlug": "Relocalización y reurbanización: Mesas de trabajo",
-            "anonymous_permissions": [{
-                "abilities": ["create"],
-                "submission_set": "*"
-            }]
+            "anonymous_permissions": []
         },
         {
             "slug": "relocations-input",
@@ -44,10 +38,7 @@
         {
             "slug": "natural-areas-input-register",
             "clientSlug": "Áreas naturales: Seguimiento",
-            "anonymous_permissions": [{
-                "abilities": ["create"],
-                "submission_set": "*"
-            }]
+            "anonymous_permissions": []
         },
         {
             "slug": "natural-areas-input",
@@ -60,10 +51,7 @@
         {
             "slug": "news-input",
             "clientSlug": "Novedades",
-            "anonymous_permissions": [{
-                "abilities": ["create"],
-                "submission_set": "*"
-            }]
+            "anonymous_permissions": []
         },
         {
             "slug": "quepasa-input",
