@@ -7,7 +7,7 @@ export const placePropType = PropTypes.shape({
   created_datetime: PropTypes.string.isRequired,
   dataset: PropTypes.string.isRequired,
   visible: PropTypes.bool.isRequired,
-  visitas: PropTypes.string,
+  visitas: PropTypes.number,
   datasetSlug: PropTypes.string.isRequired,
   submitter_name: PropTypes.string,
   submission_sets: PropTypes.object.isRequired,
