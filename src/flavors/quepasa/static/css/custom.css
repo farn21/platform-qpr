@@ -133,8 +133,8 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
-#mapseed-custom-page-container p,
-#mapseed-custom-page-container li {
+#site-wrap #mapseed-custom-page-container p,
+#site-wrap #mapseed-custom-page-container li {
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
     padding-right: 10px;
@@ -187,7 +187,7 @@ body {
     }
 }
 
-.mapseed-site-header {
+header.mapseed-site-header {
     box-shadow: none;
     background-color: #ffffff;
     border-bottom: 1px solid #aeadb3;
@@ -546,7 +546,7 @@ body {
 
 /* START ADD PLACE BUTTON STYLES */
 
-.mapseed-add-place-button-container {
+#site-wrap .mapseed-add-place-button-container {
     box-shadow: none;
     font-weight: 700;
     font-size: 0.75rem;
