@@ -2430,8 +2430,8 @@
                                 "value": "urbano"
                             },
                             {
-                                "label": "no identificado",
-                                "value": "no identificado"
+                                "label": "no sé",
+                                "value": "no sé"
                             }
                         ]
                     },
@@ -3101,8 +3101,8 @@
                                 "value": "urbano"
                             },
                             {
-                                "label": "no identificado",
-                                "value": "no identificado"
+                                "label": "no sé",
+                                "value": "no sé"
                             }
                         ]
                     },
