@@ -560,7 +560,7 @@ header.mapseed-site-header {
 }
 
 @media (max-width: 960px) {
-    .mapseed-add-place-button-container {
+    #site-wrap .mapseed-add-place-button-container {
         width: 90vw;
         top: unset;
         bottom: 15px;
