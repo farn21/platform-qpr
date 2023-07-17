@@ -560,7 +560,7 @@ header.mapseed-site-header {
 }
 
 @media (max-width: 960px) {
-    .mapseed-add-place-button-container {
+    #site-wrap .mapseed-add-place-button-container {
         width: 90vw;
         top: unset;
         bottom: 15px;
@@ -700,13 +700,13 @@ header.mapseed-site-header {
     background-color: #ffab00;
 }
 
-.news-element-social-container {
+#site-wrap .news-element-social-container {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-.like-wrapper {
+#site-wrap .like-wrapper {
     margin: 0;
 }
 
@@ -735,7 +735,7 @@ header.mapseed-site-header {
     display: flex;
 }
 
-.view-on-map-link {
+#site-wrap .view-on-map-link {
     background-color: unset;
     border: none;
     box-shadow: none;
@@ -768,7 +768,7 @@ header.mapseed-site-header {
 }
 
 @media (min-width: 960px) {
-    .list-view-container {
+    #site-wrap .list-view-container {
         width: 70%;
         margin: 0 auto;
     }
@@ -797,10 +797,6 @@ header.mapseed-site-header {
     font-weight: 400 !important;
 }
 
-.css-u8hsar-RegularText-InputFormCategoryButton {
-    background-color: unset;
-    font-size: 0.9rem;
-}
 
 
 /* Form category buttons */
@@ -994,6 +990,11 @@ div[data-field-type="informational_html"][data-field-name*="intro-"] p {
 [class*="RegularText-FormField"] {
     font-size: 14px !important;
     font-weight: 700;
+}
+
+.input-form__field-prompt-container > span {
+    font-weight: 700;
+    font-size: 14px !important;
 }
 
 .input-form__field-prompt-container span {
@@ -1237,10 +1238,15 @@ option:hover {
 
 /* START FORM STAGE CONTROL BAR STYLES */
 
-.css-w1p6qw-RegularText {
+.place-info > div > span:not(.e1yd2ctl10) {
     font-size: 14px !important;
     font-weight: 700;
 }
+
+/* .css-w1p6qw-RegularText {
+    font-size: 14px !important;
+    font-weight: 700;
+} */
 
 .css-1cwt1ry-FormStageControlBar,
 .css-12t4dd3-FormStageControlBar {
@@ -1310,8 +1316,13 @@ option:hover {
     border-radius: 27px;
 }
 
-.css-1pjhrip-RegularText-InputFormCategoryButton {
+/* .css-1pjhrip-RegularText-InputFormCategoryButton {
     font-size: 0.9rem;
+} */
+
+.input-form-category-button > label > span {
+    font-size: 0.9rem;
+    background-color: unset;
 }
 
 
