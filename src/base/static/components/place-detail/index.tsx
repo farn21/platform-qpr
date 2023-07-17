@@ -311,7 +311,7 @@ class PlaceDetail extends React.Component<Props, State> {
       this.props.focusedPlace.location_type,
     );
     const submitterName = this.props.focusedPlace.submitter
-      ? this.props.focusedPlace.submitter.name
+      ? this.props.focusedPlace.submitter.username
       : this.props.focusedPlace.submitter_name ||
         this.props.placeConfig.anonymous_name;
     const isTagBarEditable = this.props.hasGroupAbilitiesInDatasets({
