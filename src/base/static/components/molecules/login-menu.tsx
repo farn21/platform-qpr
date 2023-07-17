@@ -50,7 +50,7 @@ const LoginMenu: React.FunctionComponent<Props> = props => {
           textTransform: "uppercase",
         }}
       >
-        {props.t("signInMsg", "Sign In")}
+        {text}
       </Typography>
     </Button>
   );
@@ -92,7 +92,7 @@ const LoginMenu: React.FunctionComponent<Props> = props => {
       <LoginModal
         render={(openModal: () => void) => {
           return props.isMobileHeaderExpanded ? (
-            <MobileButton openModal={openModal} text=""/>
+            <MobileButton openModal={openModal} text="Iniciar sesión"/>
           ) : (
             <DesktopButton openModal={openModal} text="Iniciar sesión" />
           );
