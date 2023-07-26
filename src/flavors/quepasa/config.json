@@ -2243,7 +2243,26 @@
                         "type": "submit",
                         "label": "Publicar experiencia",
                         "qprFormType": "relocations"
-                    }
+                    },
+                    {
+                        "name": "private",
+                        "type": "big_radio",
+                        "restrictToGroups": ["administrators"],
+                        "hidden_default": true,
+                        "prompt": "Publish or unpublish this project. Published projects will be visible to all users. Unpublished projects will be visible to administrators, delegates, and technical reviewers.",
+                        "forced_default_value": "yes",
+                        "content": [
+                          {
+                            "label": "Published",
+                            "value": "no"
+                          },
+                          {
+                            "label": "Unpublished",
+                            "value": "yes"
+                          }
+                        ],
+                        "optional": false
+                      }
                 ]
             },
             {
@@ -3663,7 +3682,26 @@
                         "type": "submit",
                         "label": "Publicar experiencia",
                         "qprFormType": "relocations"
-                    }
+                    },
+                    {
+                        "name": "private",
+                        "type": "big_radio",
+                        "restrictToGroups": ["administrators"],
+                        "hidden_default": true,
+                        "prompt": "Publish or unpublish this project. Published projects will be visible to all users. Unpublished projects will be visible to administrators, delegates, and technical reviewers.",
+                        "forced_default_value": "yes",
+                        "content": [
+                          {
+                            "label": "Published",
+                            "value": "no"
+                          },
+                          {
+                            "label": "Unpublished",
+                            "value": "yes"
+                          }
+                        ],
+                        "optional": false
+                      }
                 ]
             },
             {
@@ -8024,7 +8062,26 @@
                         "type": "submit",
                         "label": "Publicar experiencia",
                         "qprFormType": "relocations"
-                    }
+                    },
+                    {
+                        "name": "private",
+                        "type": "big_radio",
+                        "restrictToGroups": ["administrators"],
+                        "hidden_default": true,
+                        "prompt": "Publish or unpublish this project. Published projects will be visible to all users. Unpublished projects will be visible to administrators, delegates, and technical reviewers.",
+                        "forced_default_value": "yes",
+                        "content": [
+                          {
+                            "label": "Published",
+                            "value": "no"
+                          },
+                          {
+                            "label": "Unpublished",
+                            "value": "yes"
+                          }
+                        ],
+                        "optional": false
+                      }
                 ]
             }
         ],
