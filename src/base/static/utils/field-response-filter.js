@@ -19,7 +19,7 @@ export default (fieldConfigs, place) => {
           "name",
         ].includes(fieldConfig.name),
     )
-    .filter(fieldConfig => fieldConfig.name.indexOf("private-") !== 0)
+    .filter(fieldConfig => fieldConfig.name.indexOf("private") !== 0)
     .filter(fieldConfig => {
       if(
         place[fieldConfig.name] && 

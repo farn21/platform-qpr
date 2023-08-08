@@ -1367,7 +1367,25 @@
                         "type": "submit",
                         "label": "Publicar experiencia",
                         "qprFormType": "relocations"
-                    }
+                    },
+                    {
+                        "name": "private",
+                        "type": "big_radio",
+                        "hidden_default": true,
+                        "prompt": "Publish or unpublish this project. Published projects will be visible to all users. Unpublished projects will be visible to administrators, delegates, and technical reviewers.",
+                        "default_value": "yes",
+                        "content": [
+                          {
+                            "label": "Published",
+                            "value": "no"
+                          },
+                          {
+                            "label": "Unpublished",
+                            "value": "yes"
+                          }
+                        ],
+                        "optional": true
+                      }
                 ]
             },
             {
@@ -2247,21 +2265,20 @@
                     {
                         "name": "private",
                         "type": "big_radio",
-                        "restrictToGroups": ["administrators"],
                         "hidden_default": true,
-                        "prompt": "Publish or unpublish this project. Published projects will be visible to all users. Unpublished projects will be visible to administrators, delegates, and technical reviewers.",
-                        "forced_default_value": "yes",
+                        "prompt": "Quiere hacer pública la experiencia?",
+                        "default_value": "yes",
                         "content": [
                           {
-                            "label": "Published",
+                            "label": "Pública",
                             "value": "no"
                           },
                           {
-                            "label": "Unpublished",
+                            "label": "Privada",
                             "value": "yes"
                           }
                         ],
-                        "optional": false
+                        "optional": true
                       }
                 ]
             },
@@ -2299,7 +2316,8 @@
                         "qprFormType": "water"
                     }
                 ],
-                "fields": [{
+                "fields": [
+                    {
                         "name": "lng-lat",
                         "type": "lng_lat"
                     },
@@ -2956,10 +2974,7 @@
                         "qprFormType": "water"
                     }
                 ],
-                "fields": [{
-                        "name": "lng-lat",
-                        "type": "lng_lat"
-                    },
+                "fields": [
                     {
                         "name": "intro-agua-usuarios-registrados",
                         "type": "informational_html",
@@ -3686,10 +3701,9 @@
                     {
                         "name": "private",
                         "type": "big_radio",
-                        "restrictToGroups": ["administrators"],
                         "hidden_default": true,
                         "prompt": "Publish or unpublish this project. Published projects will be visible to all users. Unpublished projects will be visible to administrators, delegates, and technical reviewers.",
-                        "forced_default_value": "yes",
+                        "default_value": "yes",
                         "content": [
                           {
                             "label": "Published",
@@ -3700,7 +3714,7 @@
                             "value": "yes"
                           }
                         ],
-                        "optional": false
+                        "optional": true
                       }
                 ]
             },
@@ -8066,10 +8080,9 @@
                     {
                         "name": "private",
                         "type": "big_radio",
-                        "restrictToGroups": ["administrators"],
                         "hidden_default": true,
                         "prompt": "Publish or unpublish this project. Published projects will be visible to all users. Unpublished projects will be visible to administrators, delegates, and technical reviewers.",
-                        "forced_default_value": "yes",
+                        "default_value": "yes",
                         "content": [
                           {
                             "label": "Published",
@@ -8080,7 +8093,7 @@
                             "value": "yes"
                           }
                         ],
-                        "optional": false
+                        "optional": true
                       }
                 ]
             }
