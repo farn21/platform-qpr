@@ -22,6 +22,7 @@ import {
     PublishControlToolbar,
     RangeSliderWithLabel,
     TextFieldResponse,
+    LinkTextFieldResponse,
     TextareaFieldResponse,
     RichTextareaFieldResponse,
     RangeFieldResponse,
@@ -108,6 +109,16 @@ export default {
         ),
         getInitialValue: ({ value }) => value,
         getResponseComponent: () => TextFieldResponse,
+    },
+    [constants.LINK_TEXT_FIELD_TYPENAME]: {
+        getValidator: getDefaultValidator,
+        getComponent: (fieldConfig, context) => ( <
+            TextField {...getSharedFieldProps(fieldConfig, context) }
+            qprFormType = { fieldConfig.qprFormType }
+            />
+        ),
+        getInitialValue: ({ value }) => value,
+        getResponseComponent: () => LinkTextFieldResponse,
     },
     [constants.TEXTAREA_FIELD_TYPENAME]: {
         getValidator: getDefaultValidator,

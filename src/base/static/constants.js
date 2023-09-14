@@ -1,5 +1,6 @@
 export default {
   TEXT_FIELD_TYPENAME: "text",
+  LINK_TEXT_FIELD_TYPENAME: "link_text",
   TEXTAREA_FIELD_TYPENAME: "textarea",
   RICH_TEXTAREA_FIELD_TYPENAME: "rich_textarea",
   BIG_CHECKBOX_FIELD_TYPENAME: "big_checkbox",

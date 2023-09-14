@@ -1,5 +1,7 @@
 export { default as TextFieldResponse }
 from "./text-field-response";
+export { default as LinkTextFieldResponse }
+from "./link-text-field-response";
 export { default as TextareaFieldResponse }
 from "./textarea-field-response";
 export { default as RichTextareaFieldResponse }
