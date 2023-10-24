@@ -440,6 +440,18 @@
     },
     "mapStyle": {
         "mapboxSources": {
+            "CONSTRUCCION_DEL_CAMINO_SIRGA": {
+                "type": "geojson",
+                "data": "https://s3.us-west-2.amazonaws.com/mapaqpr.farn.org.ar/assets/CONSTRUCCION_DEL_CAMINO_SIRGA.geojson"
+              },
+              "RIESGO_AMBIENTAL_EN_CMR": {
+                "type": "geojson",
+                "data": "https://s3.us-west-2.amazonaws.com/mapaqpr.farn.org.ar/assets/RIESGO_AMBIENTAL_EN_CMR.geojson"
+              },
+              "MONITOREO_SUPERFICIAL": {
+                "type": "geojson",
+                "data": "https://s3.us-west-2.amazonaws.com/mapaqpr.farn.org.ar/assets/MONITOREO_SUPERFICIAL.geojson"
+              },
             "f4": {
                 "type": "raster",
                 "tiles": [
@@ -510,6 +522,58 @@
             }
         },
         "layerGroups": [{
+            "id": "MONITOREO_SUPERFICIAL",
+            "basemap": false,
+            "visibleDefault": false,
+            "interactive": true,
+            "popupContent": "<em><strong>Río:</strong></em> {{Rio}} <br><em><strong>Responsable:</strong></em>{{Responsabl}}<br><em><strong>Ubicación:</strong></em>{{Ubicacion}}",
+            "mapboxLayers": [
+              {
+                "id": "MONITOREO_SUPERFICIAL",
+                "type": "symbol",
+                "source": "MONITOREO_SUPERFICIAL",
+                "layout": {
+                    "icon-allow-overlap": true,
+                    "icon-size": ["step", ["zoom"], 0, 4, 0.3, 6, 0.5, 8, 0.7],
+                    "icon-anchor": "center",
+                    "icon-image": "Dot-intervention.png"
+                }
+              }
+            ]
+          },{
+            "id": "RIESGO_AMBIENTAL_EN_CMR",
+            "mapboxLayers": [
+              {
+                "id": "RIESGO_AMBIENTAL_EN_CMR",
+                "type": "fill",
+                "source": "RIESGO_AMBIENTAL_EN_CMR",
+                "paint": {
+                    "fill-color": "red",
+                    "fill-opacity": [
+                        "interpolate", ["linear"],
+                        ["zoom"],
+                        16,
+                        0.3,
+                        18,
+                        0
+                    ]
+                }
+              }
+            ]
+          },{
+            "id": "CONSTRUCCION_DEL_CAMINO_SIRGA",
+            "mapboxLayers": [
+              {
+                "id": "CONSTRUCCION_DEL_CAMINO_SIRGA",
+                "type": "line",
+                "source": "CONSTRUCCION_DEL_CAMINO_SIRGA",
+                "paint": {
+                    "line-color": "red",
+                    "line-width": 2
+                }
+              }
+            ]
+          },{
                 "id": "f4",
                 "basemap": true,
                 "visibleDefault": true,
@@ -1008,6 +1072,15 @@
             {
                 "title": "ACUMAR",
                 "options": [{
+                    "layerGroupId": "MONITOREO_SUPERFICIAL",
+                    "title": "Monitoreo Superficial"
+                },{
+                    "layerGroupId": "CONSTRUCCION_DEL_CAMINO_SIRGA",
+                    "title": "Camino Sirga"
+                },{
+                    "layerGroupId": "RIESGO_AMBIENTAL_EN_CMR",
+                    "title": "Riesgo Ambiental"
+                },{
                         "layerGroupId": "riachuelo-subbasins",
                         "title": "Sub-cuencas"
                     },
@@ -1349,7 +1422,7 @@
                     },
                     {
                         "name": "info-pdf-novedades",
-                        "type": "file",
+                        "type": "pdf",
                         "label": "Adjuntar archivo PDF",
                         "placeholder": "",
                         "display_prompt": "Adjuntos",
