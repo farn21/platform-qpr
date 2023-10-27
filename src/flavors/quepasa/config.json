@@ -452,6 +452,10 @@
                 "type": "geojson",
                 "data": "https://s3.us-west-2.amazonaws.com/mapaqpr.farn.org.ar/assets/MONITOREO_SUPERFICIAL.geojson"
               },
+              "LIMITE_POLITICO": {
+                "type": "geojson",
+                "data": "https://s3.us-west-2.amazonaws.com/mapaqpr.farn.org.ar/assets/LIMITE_POLITICO.geojson"
+              },
             "f4": {
                 "type": "raster",
                 "tiles": [
@@ -537,6 +541,26 @@
                     "icon-size": ["step", ["zoom"], 0, 4, 0.3, 6, 0.5, 8, 0.7],
                     "icon-anchor": "center",
                     "icon-image": "Dot-intervention.png"
+                }
+              }
+            ]
+          },{
+            "id": "LIMITE_POLITICO",
+            "mapboxLayers": [
+              {
+                "id": "LIMITE_POLITICO",
+                "type": "fill",
+                "source": "LIMITE_POLITICO",
+                "paint": {
+                    "fill-color": "red",
+                    "fill-opacity": [
+                        "interpolate", ["linear"],
+                        ["zoom"],
+                        16,
+                        0.3,
+                        18,
+                        0
+                    ]
                 }
               }
             ]
@@ -1080,6 +1104,9 @@
                 },{
                     "layerGroupId": "RIESGO_AMBIENTAL_EN_CMR",
                     "title": "Riesgo Ambiental"
+                },{
+                    "layerGroupId": "LIMITE_POLITICO",
+                    "title": "Limite jurisdiccional"
                 },{
                         "layerGroupId": "riachuelo-subbasins",
                         "title": "Sub-cuencas"
