@@ -1331,47 +1331,47 @@ option:hover {
 
 /* START LEFT SIDEBAR STYLES */
 
-.mapseed-left-sidebar {
+.map-container .mapseed-left-sidebar {
     background-color: #ffffff;
     width: 350px;
     max-width: 90vw;
     z-index: 405;
 }
 
-.mapseed-left-sidebar h3 {
+.map-container .mapseed-left-sidebar h3 {
     color: #000000;
     font-size: 1.3125rem;
     font-weight: 700;
     margin: 0 0 1rem 0;
 }
 
-.mapseed-left-sidebar h4 {
+.map-container .mapseed-left-sidebar h4 {
     font-size: 0.875rem;
     color: #718792;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-.mapseed-left-sidebar hr {
+.map-container .mapseed-left-sidebar hr {
     border-color: #ccc;
 }
 
-.mapseed-map-layer-selector-container {
+.map-container .mapseed-map-layer-selector-container {
     padding: 0;
     margin-bottom: 0;
 }
 
-.mapseed-map-layer-selector-container>span>span:first-child {
+.map-container .mapseed-map-layer-selector-container>span>span:first-child {
     background-color: transparent;
 }
 
-.mapseed-map-layer-selector-container span span {
+.map-container .mapseed-map-layer-selector-container span span {
     font-size: 0.875rem;
     display: inline-block;
     padding: 0.5rem 0.5rem 0.5rem 0;
 }
 
-.mapseed-map-layer-selector-container span span:last-child {
+.map-container .mapseed-map-layer-selector-container span span:last-child {
     margin: 0;
     padding: 0.25rem;
 }
@@ -1414,7 +1414,7 @@ option:hover {
     color: #fff;
 }
 
-.css-pigogt {
+.mapseed-left-sidebar .css-pigogt {
     right: 10px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -1427,12 +1427,12 @@ option:hover {
     background-color: transparent;
 }
 
-.css-pigogt:hover {
+.mapseed-left-sidebar .css-pigogt:hover {
     color: #c67c00;
 }
 
 @media (max-width: 960px) {
-    .css-pigogt {
+    .mapseed-left-sidebar .css-pigogt {
         font-size: 18px;
     }
 }
