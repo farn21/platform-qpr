@@ -1682,7 +1682,7 @@
                         "display_prompt": "Visita por primera vez",
                         "qprFormType": "relocations",
                         "triggers": [{
-                            "value": "no-visit",
+                            "value": "no",
                             "targets": ["frecuencia-areas-no-registrados"]
                         }],
                         "content": [{
@@ -3187,7 +3187,7 @@
                         "optional": false,
                         "qprFormType": "relocations",
                         "triggers": [{
-                            "value": "other-water-body",
+                            "value": "otro",
                             "targets": ["cuerpo-otro-calidad-agua-registrados"]
                         }],
                         "content": [{
@@ -3257,7 +3257,7 @@
                         "optional": false,
                         "qprFormType": "relocations",
                         "triggers": [{
-                            "value": "other-checkpoint",
+                            "value": "otro",
                             "targets": ["referencia-otro-calidad-agua-registrados"]
                         }],
                         "content": [{
@@ -3389,7 +3389,7 @@
                         "optional": false,
                         "qprFormType": "relocations",
                         "triggers": [{
-                            "value": "yes-floating-materials-water",
+                            "value": "sí",
                             "targets": ["flotantes-cuales-calidad-agua-registrados"]
                         }],
                         "content": [{
@@ -3415,7 +3415,7 @@
                         "optional": false,
                         "qprFormType": "relocations",
                         "triggers": [{
-                            "value": "other",
+                            "value": "otros",
                             "targets": [
                                 "flotantes-cuales-otro-calidad-agua-registrados"
                             ]
@@ -3468,7 +3468,7 @@
                         "optional": true,
                         "qprFormType": "relocations",
                         "triggers": [{
-                            "value": "yes-pollution-source-water",
+                            "value": "sí",
                             "targets": ["fuente-cuales-agua-registrados"]
                         }],
                         "content": [{
@@ -3523,7 +3523,7 @@
                         "optional": false,
                         "qprFormType": "relocations",
                         "triggers": [{
-                            "value": "yes-margin-vegetation-water",
+                            "value": "sí",
                             "targets": ["vegetacion-margenes-cuales-calidad-agua-registrados"]
                         }],
                         "content": [{
@@ -3574,7 +3574,7 @@
                         "optional": true,
                         "qprFormType": "relocations",
                         "triggers": [{
-                            "value": "yes-body-vegetation-water",
+                            "value": "sí",
                             "targets": ["vegetacion-cuerpo-cuales-calidad-agua-registrados"]
                         }],
                         "content": [{
@@ -3621,7 +3621,7 @@
                         "optional": true,
                         "qprFormType": "relocations",
                         "triggers": [{
-                            "value": "yes-fauna",
+                            "value": "sí",
                             "targets": ["fauna-cual-calidad-agua-registrados"]
                         }],
                         "content": [{
@@ -3703,7 +3703,7 @@
                         "optional": true,
                         "qprFormType": "relocations",
                         "triggers": [{
-                            "value": "yes-rain-water",
+                            "value": "sí",
                             "targets": ["lluvias-tipo-calidad-agua-registrados"]
                         }],
                         "content": [{
@@ -7632,7 +7632,7 @@
                         "display_prompt": "Experiencia en participación en una mesa de trabajo",
                         "qprFormType": "relocations",
                         "triggers": [{
-                            "value": "si-mesas-relocation",
+                            "value": "sí",
                             "targets": [
                                 "fecha-reunion-relocalizaciones-registrados",
                                 "lugar-reunion-relocalizaciones-registrados",                    
@@ -8005,7 +8005,7 @@
                         "qprFormType": "relocations",
                         "triggers": [{
                             "value": "sí",
-                            "targets": ["date-next-meeting-relocation-registered-users"]
+                            "targets": ["fecha-proxima-relocalizaciones-registrados"]
                         }],
                         "content": [{
                                 "label": "Sí.",
