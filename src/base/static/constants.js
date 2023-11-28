@@ -50,6 +50,7 @@ export default {
   ATTACHMENT_FILE_PROPERTY_NAME: "file",
   RICH_TEXT_IMAGE_CODE: "RT",
   COVER_IMAGE_CODE: "CO",
+  PDF_CODE: "PD",
 
   RICH_TEXT_IMAGE_MARKUP_PREFIX: "{{#rich-text-image ",
   RICH_TEXT_IMAGE_MARKUP_SUFFIX: "}}",

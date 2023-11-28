@@ -80,6 +80,7 @@
         "meta_description": "Track projects on the Riachuelo River",
         "meta_author": "farn.org.ar",
         "api_root": "https://apimapaqpr.farn.org.ar/admin",
+        "isShowingMobileUserMenu": true,
         "loginProviders": [{
             "name": "login",
             "provider": "django"
@@ -948,6 +949,25 @@
                         "icon-size": ["step", ["zoom"], 0.5, 11, 0.75, 14, 0.9],
                         "icon-anchor": "center"
                     }
+                },
+
+                {
+                    "id":"clusters",
+                    "type":"circle",
+                    "source":"water-input",
+                    "filter":["has","point_count"],
+                    "paint":{
+                        "circle-color":["step",["get","point_count"],"#A1CDE7",100,"#A1CDE7",750,"#A1CDE7"],
+                        "circle-radius":["step",["get","point_count"],20,100,30,750,40]}},
+                {"id":"cluster-count",
+                "type":"symbol",
+                "source":"water-input","filter":["has","point_count"],
+                "layout":{
+                    "text-field":"{point_count}",
+                    "text-size":24},
+                "paint": {
+                    "text-color": "#ffffff"
+                }
                 }]
             },
             {
@@ -976,6 +996,24 @@
                         "icon-size": ["step", ["zoom"], 0.5, 11, 0.75, 14, 0.9],
                         "icon-anchor": "center"
                     }
+                },
+                {
+                    "id":"clusters-2",
+                    "type":"circle",
+                    "source":"water-input-register",
+                    "filter":["has","point_count"],
+                    "paint":{
+                        "circle-color":["step",["get","point_count"],"#429bce",100,"#429bce",750,"#429bce"],
+                        "circle-radius":["step",["get","point_count"],20,100,30,750,40]}},
+                {"id":"cluster-count-2",
+                "type":"symbol",
+                "source":"water-input-register","filter":["has","point_count"],
+                "layout":{
+                    "text-field":"{point_count}",
+                    "text-size":24},
+                "paint": {
+                    "text-color": "#ffffff"
+                }
                 }]
             },
             {
@@ -1004,6 +1042,24 @@
                         "icon-size": ["step", ["zoom"], 0.5, 11, 0.75, 14, 0.9],
                         "icon-anchor": "center"
                     }
+                },
+                {
+                    "id":"clusters-3",
+                    "type":"circle",
+                    "source":"relocations-input",
+                    "filter":["has","point_count"],
+                    "paint":{
+                        "circle-color":["step",["get","point_count"],"#EFCC5A",100,"#EFCC5A",750,"#EFCC5A"],
+                        "circle-radius":["step",["get","point_count"],20,100,30,750,40]}},
+                {"id":"cluster-count-3",
+                "type":"symbol",
+                "source":"relocations-input","filter":["has","point_count"],
+                "layout":{
+                    "text-field":"{point_count}",
+                    "text-size":24},
+                "paint": {
+                    "text-color": "#ffffff"
+                }
                 }]
             },
             {
@@ -1032,6 +1088,24 @@
                         "icon-size": ["step", ["zoom"], 0.5, 11, 0.75, 14, 0.9],
                         "icon-anchor": "center"
                     }
+                },
+                {
+                    "id":"clusters-4",
+                    "type":"circle",
+                    "source":"relocations-input-register",
+                    "filter":["has","point_count"],
+                    "paint":{
+                        "circle-color":["step",["get","point_count"],"#ceae4e",100,"#ceae4e",750,"#ceae4e"],
+                        "circle-radius":["step",["get","point_count"],20,100,30,750,40]}},
+                {"id":"cluster-count-4",
+                "type":"symbol",
+                "source":"relocations-input-register","filter":["has","point_count"],
+                "layout":{
+                    "text-field":"{point_count}",
+                    "text-size":24},
+                "paint": {
+                    "text-color": "#ffffff"
+                }
                 }]
             }
         ]
@@ -2335,7 +2409,7 @@
                     },
                     {
                         "name": "info-pdf-areas-registrados",
-                        "type": "file",
+                        "type": "pdf",
                         "label": "Adjuntar archivo PDF",
                         "prompt": "",
                         "optional": true,
@@ -3780,7 +3854,7 @@
                     },
                     {
                         "name": "info-pdf-calidad-agua-registrados",
-                        "type": "file",
+                        "type": "pdf",
                         "label": "Adjuntar archivo PDF",
                         "prompt": "",
                         "optional": true,
@@ -8059,7 +8133,7 @@
                     },
                     {
                         "name": "info-reunion-pdf-relocalizaciones-registrados",
-                        "type": "file",
+                        "type": "pdf",
                         "label": "Adjuntar archivo PDF",
                         "display_prompt": "Adjuntos",
                         "optional": true,
@@ -8159,7 +8233,7 @@
                     },
                     {
                         "name": "info-pdf-relocalizaciones-registrados",
-                        "type": "file",
+                        "type": "pdf",
                         "label": "Adjuntar archivo PDF",
                         "display_prompt": "Adjuntos",
                         "optional": true,
