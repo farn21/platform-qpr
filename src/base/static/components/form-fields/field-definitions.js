@@ -23,6 +23,7 @@ import {
     RangeSliderWithLabel,
     TextFieldResponse,
     LinkTextFieldResponse,
+    ColorFieldResponse,
     TextareaFieldResponse,
     RichTextareaFieldResponse,
     RangeFieldResponse,
@@ -37,6 +38,7 @@ import {
     NumberFieldResponse,
     GeolocateField,
     LngLatField,
+    ColorField,
 
 } from "./types";
 import { isWithAnyValue, isNotEmpty } from "./validators";
@@ -182,6 +184,15 @@ export default {
             )),
         getInitialValue: ({ value }) => fromJS(value) || List(),
         getResponseComponent: () => BigCheckboxFieldResponse,
+    },
+    [constants.COLOR_FIELD_TYPENAME]: {
+        getValidator: getDefaultValidator,
+        getComponent: (fieldConfig, context) => ( <
+            ColorField {...getSharedFieldProps(fieldConfig, context) }
+            />
+        ),
+        getInitialValue: ({ value }) => value,
+        getResponseComponent: () => ColorFieldResponse
     },
     [constants.BIG_RADIO_FIELD_TYPENAME]: {
         getValidator: getDefaultValidator,

@@ -1,3 +1,5 @@
+export { default as ColorFieldResponse }
+from "./color-field-response";
 export { default as TextFieldResponse }
 from "./text-field-response";
 export { default as LinkTextFieldResponse }
@@ -74,3 +76,5 @@ export { default as LngLatField }
 from "../../molecules/form-field-types/lng-lat-field";
 export { default as TimeField }
 from "./time-field";
+export { default as ColorField }
+from "./color-field";

@@ -5,6 +5,7 @@ export default {
   RICH_TEXTAREA_FIELD_TYPENAME: "rich_textarea",
   BIG_CHECKBOX_FIELD_TYPENAME: "big_checkbox",
   BIG_RADIO_FIELD_TYPENAME: "big_radio",
+  COLOR_FIELD_TYPENAME: "color",
   DROPDOWN_FIELD_TYPENAME: "dropdown",
   DROPDOWN_AUTOCOMPLETE_FIELD_TYPENAME: "dropdown_autocomplete",
   PUBLISH_CONTROL_TOOLBAR_TYPENAME: "publish_control_toolbar",

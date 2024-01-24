@@ -441,6 +441,16 @@
     },
     "mapStyle": {
         "mapboxSources": {
+            
+            "satellite": {
+                "type": "raster",
+                "tiles": [
+                    "https://ecn.t0.tiles.virtualearth.net/tiles/a{quadkey}.jpeg?g=587&mkt=en-gb&n=z",
+                    "https://ecn.t1.tiles.virtualearth.net/tiles/a{quadkey}.jpeg?g=587&mkt=en-gb&n=z",
+                    "https://ecn.t2.tiles.virtualearth.net/tiles/a{quadkey}.jpeg?g=587&mkt=en-gb&n=z",
+                    "https://ecn.t3.tiles.virtualearth.net/tiles/a{quadkey}.jpeg?g=587&mkt=en-gb&n=z"
+                ]
+            },
             "CONSTRUCCION_DEL_CAMINO_SIRGA": {
                 "type": "geojson",
                 "data": "https://s3.us-west-2.amazonaws.com/mapaqpr.farn.org.ar/assets/CONSTRUCCION_DEL_CAMINO_SIRGA.geojson"
@@ -464,15 +474,6 @@
                 ],
                 "tileSize": 256,
                 "attribution": "<a href=\"/page/terms\">Terms and conditions</a> &copy; OpenStreetMap contributors, CC-BY-SA. <a href=\"//mapbox.com/about/maps\" target=\"_blank\">Mapbox</a>. Geocoding Courtesy of <a href=\"//www.mapquest.com/\" target=\"_blank\">MapQuest</a> <img src=\"//developer.mapquest.com/content/osm/mq_logo.png\">.'"
-            },
-            "satellite": {
-                "type": "raster",
-                "tiles": [
-                    "https://ecn.t0.tiles.virtualearth.net/tiles/a{quadkey}.jpeg?g=587&mkt=en-gb&n=z",
-                    "https://ecn.t1.tiles.virtualearth.net/tiles/a{quadkey}.jpeg?g=587&mkt=en-gb&n=z",
-                    "https://ecn.t2.tiles.virtualearth.net/tiles/a{quadkey}.jpeg?g=587&mkt=en-gb&n=z",
-                    "https://ecn.t3.tiles.virtualearth.net/tiles/a{quadkey}.jpeg?g=587&mkt=en-gb&n=z"
-                ]
             },
             "renabap": {
                 "type": "vector",
@@ -526,7 +527,17 @@
                 "maxzoom": 16
             }
         },
-        "layerGroups": [{
+        "layerGroups": [
+        {
+            "id": "satellite",
+            "basemap": true,
+            "visibleDefault": false,
+            "mapboxLayers": [{
+                "id": "satellite-basemap",
+                "type": "raster",
+                "source": "satellite"
+            }]
+        },{
             "id": "MONITOREO_SUPERFICIAL",
             "basemap": false,
             "visibleDefault": false,
@@ -609,16 +620,6 @@
                     "paint": {
                         "raster-opacity": 0.6
                     }
-                }]
-            },
-            {
-                "id": "satellite",
-                "basemap": true,
-                "visibleDefault": false,
-                "mapboxLayers": [{
-                    "id": "satellite-basemap",
-                    "type": "raster",
-                    "source": "satellite"
                 }]
             },
             {
@@ -2716,41 +2717,12 @@
                     },
                     {
                         "name": "color-agua-calidad-agua-no-registrados",
-                        "type": "big_radio",
+                        "type": "color",
                         "includeOnListItem": true,
                         "prompt": "¿Cuál es el color del agua en el lugar y el momento del registro? Elegí una de estas opciones:",
                         "display_prompt": "Color del agua",
                         "optional": true,
-                        "qprFormType": "relocations",
-                        "content": [{
-                                "label": "transparente",
-                                "value": "transparente"
-                            },
-                            {
-                                "label": "verde",
-                                "value": "verde"
-                            },
-                            {
-                                "label": "marrón",
-                                "value": "marrón"
-                            },
-                            {
-                                "label": "gris",
-                                "value": "gris"
-                            },
-                            {
-                                "label": "negro",
-                                "value": "negro"
-                            },
-                            {
-                                "label": "rojo",
-                                "value": "rojo"
-                            },
-                            {
-                                "label": "otro",
-                                "value": "otro"
-                            }
-                        ]
+                        "qprFormType": "relocations"
                     },
                     {
                         "name": "olor-calidad-agua-no-registrados",
@@ -3398,41 +3370,12 @@
                     },
                     {
                         "name": "color-agua-calidad-agua-registrados",
-                        "type": "big_radio",
+                        "type": "color",
                         "includeOnListItem": true,
                         "prompt": "¿Cuál es el color del agua en el lugar y el momento del registro? Elegí una de estas opciones:",
                         "display_prompt": "Color del agua",
                         "optional": true,
-                        "qprFormType": "relocations",
-                        "content": [{
-                                "label": "transparente",
-                                "value": "transparente"
-                            },
-                            {
-                                "label": "verde",
-                                "value": "verde"
-                            },
-                            {
-                                "label": "marrón",
-                                "value": "marrón"
-                            },
-                            {
-                                "label": "gris",
-                                "value": "gris"
-                            },
-                            {
-                                "label": "negro",
-                                "value": "negro"
-                            },
-                            {
-                                "label": "rojo",
-                                "value": "rojo"
-                            },
-                            {
-                                "label": "otro",
-                                "value": "otro"
-                            }
-                        ]
+                        "qprFormType": "relocations"
                     },
                     {
                         "name": "olor-calidad-agua-registrados",
@@ -6569,7 +6512,7 @@
                             {
                                 "value": "other-relocation-registered-users",
                                 "targets": [
-                                    "answer-other-municipality-relocation-registered-users"
+                                    "municipio-experiencia-otro-relocalizaciones-registrados"
                                 ]
                             }
                         ],
@@ -6632,6 +6575,9 @@
                             {
                                 "label": "Ciudad de Buenos Aires",
                                 "value": "ciudad-de-buenos-aires-relocation-registered-users"
+                            },{
+                                "label": "Otro",
+                                "value": "other-relocation-registered-users"
                             }
                         ]
                     },
@@ -6654,8 +6600,8 @@
                         "hidden_default": true,
                         "optional": false,
                         "triggers": [{
-                            "value": "other-barrio-relocation-registered-users",
-                            "targets": ["answer-other-barrio-relocation-registered-users"]
+                            "value": "otro-barrio",
+                            "targets": ["barrio-otro"]
                         }],
                         "content": [{
                                 "label": "Asentamiento Lamadrid",
@@ -6749,8 +6695,8 @@
                         "hidden_default": true,
                         "optional": false,
                         "triggers": [{
-                            "value": "other-barrio-relocation-registered-users",
-                            "targets": ["answer-other-barrio-relocation-registered-users"]
+                            "value": "otro-barrio",
+                            "targets": ["barrio-otro"]
                         }],
                         "content": [{
                                 "label": "2 de Abril",
@@ -6820,8 +6766,8 @@
                         "hidden_default": true,
                         "optional": false,
                         "triggers": [{
-                            "value": "other-barrio-relocation-registered-users",
-                            "targets": ["answer-other-barrio-relocation-registered-users"]
+                            "value": "otro-barrio",
+                            "targets": ["barrio-otro"]
                         }],
                         "content": [{
                                 "label": "7 de enero",
@@ -6951,8 +6897,8 @@
                         "hidden_default": true,
                         "optional": false,
                         "triggers": [{
-                            "value": "other-barrio-relocation-registered-users",
-                            "targets": ["answer-other-barrio-relocation-registered-users"]
+                            "value": "otro-barrio",
+                            "targets": ["barrio-otro"]
                         }],
                         "content": [{
                                 "label": "Barrio Libertad",
@@ -6998,8 +6944,8 @@
                         "hidden_default": true,
                         "optional": false,
                         "triggers": [{
-                            "value": "other-barrio-relocation-registered-users",
-                            "targets": ["answer-other-barrio-relocation-registered-users"]
+                            "value": "otro-barrio",
+                            "targets": ["barrio-otro"]
                         }],
                         "content": [{
                                 "label": "9 de enero",
@@ -7041,8 +6987,8 @@
                         "hidden_default": true,
                         "optional": false,
                         "triggers": [{
-                            "value": "other-barrio-relocation-registered-users",
-                            "targets": ["answer-other-barrio-relocation-registered-users"]
+                            "value": "otro-barrio",
+                            "targets": ["barrio-otro"]
                         }],
                         "content": [{
                                 "label": "El Ombú",
@@ -7112,8 +7058,8 @@
                         "hidden_default": true,
                         "optional": false,
                         "triggers": [{
-                            "value": "other-barrio-relocation-registered-users",
-                            "targets": ["answer-other-barrio-relocation-registered-users"]
+                            "value": "otro-barrio",
+                            "targets": ["barrio-otro"]
                         }],
                         "content": [{
                                 "label": "Enrique Flynn",
@@ -7159,8 +7105,8 @@
                         "hidden_default": true,
                         "optional": false,
                         "triggers": [{
-                            "value": "other-barrio-relocation-registered-users",
-                            "targets": ["answer-other-barrio-relocation-registered-users"]
+                            "value": "otro-barrio",
+                            "targets": ["barrio-otro"]
                         }],
                         "content": [{
                                 "label": "22 de enero",
@@ -7270,8 +7216,8 @@
                         "hidden_default": true,
                         "optional": false,
                         "triggers": [{
-                            "value": "other-barrio-relocation-registered-users",
-                            "targets": ["answer-other-barrio-relocation-registered-users"]
+                            "value": "otro-barrio",
+                            "targets": ["barrio-otro"]
                         }],
                         "content": [{
                                 "label": "10 de enero",
@@ -7337,8 +7283,8 @@
                         "hidden_default": true,
                         "optional": false,
                         "triggers": [{
-                            "value": "other-barrio-relocation-registered-users",
-                            "targets": ["answer-other-barrio-relocation-registered-users"]
+                            "value": "otro-barrio",
+                            "targets": ["barrio-otro"]
                         }],
                         "content": [{
                                 "label": "Asentamiento 3 de enero",
@@ -7404,8 +7350,8 @@
                         "hidden_default": true,
                         "optional": false,
                         "triggers": [{
-                            "value": "other-barrio-relocation-registered-users",
-                            "targets": ["answer-other-barrio-relocation-registered-users"]
+                            "value": "otro-barrio",
+                            "targets": ["barrio-otro"]
                         }],
                         "content": [{
                                 "label": "El Palenque",
@@ -7447,8 +7393,8 @@
                         "hidden_default": true,
                         "optional": false,
                         "triggers": [{
-                            "value": "other-barrio-relocation-registered-users",
-                            "targets": ["answer-other-barrio-relocation-registered-users"]
+                            "value": "otro-barrio",
+                            "targets": ["barrio-otro"]
                         }],
                         "content": [{
                                 "label": "El Juancito",
@@ -7474,8 +7420,8 @@
                         "hidden_default": true,
                         "optional": false,
                         "triggers": [{
-                            "value": "other-barrio-relocation-registered-users",
-                            "targets": ["answer-other-barrio-relocation-registered-users"]
+                            "value": "otro-barrio",
+                            "targets": ["barrio-otro"]
                         }],
                         "content": [{
                                 "label": "20 de junio",
@@ -7533,8 +7479,8 @@
                         "hidden_default": true,
                         "optional": false,
                         "triggers": [{
-                            "value": "other-barrio-relocation-registered-users",
-                            "targets": ["answer-other-barrio-relocation-registered-users"]
+                            "value": "otro-barrio",
+                            "targets": ["barrio-otro"]
                         }],
                         "content": [{
                                 "label": "Agrocolonias",
@@ -7604,8 +7550,8 @@
                         "hidden_default": true,
                         "optional": false,
                         "triggers": [{
-                            "value": "other-barrio-relocation-registered-users",
-                            "targets": ["answer-other-barrio-relocation-registered-users"]
+                            "value": "otro-barrio",
+                            "targets": ["barrio-otro"]
                         }],
                         "content": [{
                                 "label": "8 de octubre",
@@ -7685,12 +7631,12 @@
                             },
                             {
                                 "label": "Otro",
-                                "value": "barrio-otro-relocalizaciones-registrados"
+                                "value": "otro-barrio"
                             }
                         ]
                     },
                     {
-                        "name": "barrio-otro-relocalizaciones-registrados",
+                        "name": "barrio-otro",
                         "type": "text",
                         "prompt": "¿Cuál?",
                         "placeholder": "Escribí el nombre de tu barrio...",
@@ -7718,10 +7664,13 @@
                                 "registro-relocalizaciones-registrados",
                                 "proxima-reunion-relocalizaciones-registrados",
                                 "comentarios-relocalizaciones-registrados",
-                                "info-reunion-relocalizaciones-registrados",
-                                "info-reunion-imagen-relocalizaciones-registrados",
-                                "info-reunion-pdf-relocalizaciones-registrados",
-                                "info-reunion-enlace-relocalizaciones-registrados"
+                                "info-reunion-relocalizaciones-registrados"
+                            ]
+                        },{
+                            "value": "no",
+                            "targets": [
+                                "temas-a-tratar-relocalizaciones-registrados",
+                                "info-texto-relocalizaciones-registrados"
                             ]
                         }],
                         "content": [{
@@ -8115,46 +8064,14 @@
                         "hidden_default": true,
                         "optional": true,
                         "qprFormType": "relocations"
-                    },
-                    {
-                        "name": "info-reunion-relocalizaciones-registrados",
-                        "type": "informational_html",
-                        "hidden_default": false,
-                        "optional": true,
-                        "content": "<span> <i> Recordá que las fotografías y documentos que adjuntás deben ser de tu autoría o debés contar con permiso para poder publicarlos . No se pueden incluir imágenes en las que se pueda identificar rostros de personas.  </i> </span>"
-                    },
-                    {
-                        "name": "info-reunion-imagen-relocalizaciones-registrados",
-                        "type": "file",
-                        "label": "Adjuntar archivo de imagen",
-                        "display_prompt": "Adjuntos",
-                        "optional": true,
-                        "qprFormType": "relocations"
-                    },
-                    {
-                        "name": "info-reunion-pdf-relocalizaciones-registrados",
-                        "type": "pdf",
-                        "label": "Adjuntar archivo PDF",
-                        "display_prompt": "Adjuntos",
-                        "optional": true,
-                        "qprFormType": "relocations"
-                    },
-                    {
-                        "name": "info-reunion-enlace-relocalizaciones-registrados",
-                        "type": "text",
-                        "display_prompt": "Enlaces sobre mesas de trabajo barriales",
-                        "prompt": "Enlace",
-                        "placeholder": "Enlace",
-                        "optional": true,
-                        "qprFormType": "relocations"
-                    },
-                  
+                    },                  
                     {
                         "name": "temas-a-tratar-relocalizaciones-registrados",
                         "type": "big_checkbox",
                         "prompt": "¿Qué tema o problema relacionado con el proceso de relocalización y/o reurbanización sería importante tratar con las autoridades? Elegí una o más opciones que se relacionan con el tema que querés proponer:",
                         "display_prompt": "Problemas relacionados con la relocalización o reurbanización que es importante tratar con las autoridades en mesas de trabajo barriales",
                         "optional": false,
+                        "hidden_default": true,
                         "triggers": [{
                             "value": "otros",
                             "targets": ["temas-a-tratar-otro-relocalizacion-registrados"]
@@ -8212,7 +8129,7 @@
                         "prompt": "Describí el tema o problema que te parece relevante para tratar con las autoridades responsables en mesas de trabajo barriales. También podés compartir documentos, imágenes, enlaces",
                         "placeholder": "",
                         "display_prompt": "Descripción del problema a tratar con autoridades en mesas de trabajo barriales",
-                        "hidden_default": false,
+                        "hidden_default": true,
                         "optional": true,
                         "qprFormType": "relocations"
                     },
