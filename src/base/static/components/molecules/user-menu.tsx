@@ -161,21 +161,10 @@ const UserMenu: React.FunctionComponent<Props> = props => {
         )}
         <MenuItem>
           <div>
-            <SmallText>{t("signedInAs", "Signed in as")}</SmallText>{" "}
+            <SmallText>{t("signedInAs", "Registrado como")}</SmallText>{" "}
             {props.currentUser.name}
           </div>
-          <ExternalLink
-            css={{
-              fontSize: "0.875em",
-              fontWeight: "normal",
-              textDecoration: "none",
-              textTransform: "uppercase",
-              width: "100%",
-            }}
-            href={`${props.appConfig.api_root}users/logout/`}
-          >
-            {t("logOut", "Log out")}
-          </ExternalLink>
+          
         </MenuItem>
       </ul>
     </MenuContainer>

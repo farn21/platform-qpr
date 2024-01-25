@@ -13,6 +13,7 @@ import { Button } from "../atoms/buttons";
 import UserMenu from "../molecules/user-menu";
 import LoginMenu from "../molecules/login-menu";
 import { RegularTitle, InternalLink, ExternalLink } from "../atoms/typography";
+import { Button as LegacyButton } from "../atoms/buttons";
 
 import {
   NavBarConfig,
@@ -41,7 +42,43 @@ const NavButtonWrapper = styled("div")<NavButtonProps>(props => ({
       props.position > 0 ? `solid 1px ${props.theme.text.tertiary}` : "none",
   },
 }));
+const DesktopButton = ({appConfig, text}) => (
+  <LegacyButton
+    color="primary"
+    onClick={ () => { 
+      var href = `${appConfig.api_root}users/logout/`;
+      window.location.href = href;
+    }
+    }
+    css={theme => ({
+      fontFamily: theme.text.navBarFontFamily,
+      fontSize: "0.75em",
+      textAlign: "center",
+      textDecoration: "none",
+      lineHeight: "3.25",
+      display: "block",
+      padding: "0 0.5em",
+      marginRight: "8px",
+      height: "100%",
+      cursor: "pointer",
 
+      [mq[0]]: {
+        display: "none",
+      },
+
+      [mq[1]]: {
+        fontSize: "1em",
+        textDecoration: "none",
+        lineHeight: "1.5",
+        padding: "0.5em",
+        position: "relative",
+        zIndex: 3,
+      },
+    })}
+  >
+    {text}
+  </LegacyButton>
+);
 const NavLink = styled(props => {
   let LinkType;
   let target;
@@ -530,13 +567,17 @@ const SiteHeader: React.FunctionComponent<Props> = props => {
               </nav>
                           ) */}
             {props.currentUser.isAuthenticated ? (
-              <UserMenu
-                appConfig={props.appConfig}
-                currentUser={props.currentUser}
-                isInMobileMode={isMobileHeaderExpanded}
-                isMobileEnabled={!!props.appConfig.isShowingMobileUserMenu}
-                pathname={props.history.location.pathname}
-              />
+               <React.Fragment>
+                 <UserMenu
+                   appConfig={props.appConfig}
+                   currentUser={props.currentUser}
+                   isInMobileMode={isMobileHeaderExpanded}
+                   isMobileEnabled={!!props.appConfig.isShowingMobileUserMenu}
+                   pathname={props.history.location.pathname}
+                 />
+                                        <DesktopButton appConfig={props.appConfig} text="Cerrar Sesión" />
+
+               </React.Fragment>
             ) : (
               <LoginMenu
                 appConfig={props.appConfig}
@@ -545,6 +586,7 @@ const SiteHeader: React.FunctionComponent<Props> = props => {
             )}
           </div>
         }
+
       </nav>
     </header>
   );
