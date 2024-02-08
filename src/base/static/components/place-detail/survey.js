@@ -119,7 +119,7 @@ class Survey extends Component {
         .toJS();
       Util.log("USER", "place", "submit-comment-btn-click");
       attrs[constants.USER_TOKEN_PROPERTY_NAME] = this.props.currentUser.token;
-
+      attrs["visible"] = false;
       const response = await mapseedApiClient.comments.create(
         this.props.placeUrl,
         attrs,

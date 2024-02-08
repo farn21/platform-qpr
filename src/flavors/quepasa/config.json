@@ -2435,14 +2435,10 @@
                         "qprFormType": "relocations"
                     },
                     {
-                        "name": "submit",
-                        "type": "submit",
-                        "label": "Publicar experiencia",
-                        "qprFormType": "relocations"
-                    },
-                    {
                         "name": "private",
+                        "qprFormType": "relocations",
                         "type": "big_radio",
+                        "forced_default_value": "yes",
                         "hidden_default": true,
                         "prompt": "Quiere hacer pública la experiencia?",
                         "default_value": "yes",
@@ -2457,7 +2453,13 @@
                           }
                         ],
                         "optional": true
-                      }
+                      },
+                    {
+                        "name": "submit",
+                        "type": "submit",
+                        "label": "Publicar experiencia",
+                        "qprFormType": "relocations"
+                    }
                 ]
             },
             {
@@ -3821,6 +3823,7 @@
                     {
                         "name": "private",
                         "type": "big_radio",
+                        "forced_default_value": "yes",
                         "hidden_default": true,
                         "prompt": "Publish or unpublish this project. Published projects will be visible to all users. Unpublished projects will be visible to administrators, delegates, and technical reviewers.",
                         "default_value": "yes",
@@ -8174,6 +8177,7 @@
                     {
                         "name": "private",
                         "type": "big_radio",
+                        "forced_default_value": "yes",
                         "hidden_default": true,
                         "prompt": "Publish or unpublish this project. Published projects will be visible to all users. Unpublished projects will be visible to administrators, delegates, and technical reviewers.",
                         "default_value": "yes",
