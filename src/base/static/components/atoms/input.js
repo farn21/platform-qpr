@@ -175,6 +175,7 @@ const DatetimeInput = props => {
       type="text"
       ref={props.childRef}
       value={props.value}
+      readonly="readonly"
       placeholder={props.placeholder}
       onFocus={props.onFocus}
     />
