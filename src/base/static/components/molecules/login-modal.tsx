@@ -183,6 +183,12 @@ const LoginModal = ({
                 apiRoot={appConfig.api_root}
               />
             ))}
+            <Link
+            css={{ display: "flex", justifyContent: "center"}}
+            target="_blank"
+            href="https://apimapaqpr.farn.org.ar/accounts/password_reset/"
+            underline="always"
+            >Recuperar contraseña</Link>
           </List>
           <DialogContentText
             css={{ fontSize: ".8em" }}
