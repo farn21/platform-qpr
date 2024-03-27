@@ -39,7 +39,6 @@ const EditorBar: React.FunctionComponent<Props> = props => {
         ${mq[1]} {
           z-index: 100;
           background-color: #fff;
-          position: fixed;
           padding-bottom: 15px;
           padding-top: 15px;
           border-bottom: 2px solid #ddd;

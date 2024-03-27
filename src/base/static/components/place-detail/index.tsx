@@ -380,7 +380,7 @@ class PlaceDetail extends React.Component<Props, State> {
           marginTop:
             (this.state.isPlaceDetailEditable || isTagBarEditable) &&
             this.props.layout === "desktop"
-              ? "58px"
+              ? "0"
               : 0,
         }}
       >
