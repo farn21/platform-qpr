@@ -29,7 +29,7 @@
         },
         {
             "slug": "relocations-input",
-            "clientSlug": "Relocalización y reurbanización: Seguimiento",
+            "clientSlug": "Relocalización y reurbanización",
             "anonymous_permissions": [{
                 "abilities": ["create"],
                 "submission_set": "*"
@@ -37,12 +37,12 @@
         },
         {
             "slug": "natural-areas-input-register",
-            "clientSlug": "Áreas naturales: Seguimiento",
+            "clientSlug": "Áreas naturales: imágenes y descripciones",
             "anonymous_permissions": []
         },
         {
             "slug": "natural-areas-input",
-            "clientSlug": "Áreas naturales: Visitas",
+            "clientSlug": "Áreas naturales",
             "anonymous_permissions": [{
                 "abilities": ["create"],
                 "submission_set": "*"
@@ -1150,7 +1150,7 @@
                     },
                     {
                         "layerGroupId": "natural-areas-input",
-                        "title": "Áreas Naturales: Visitas"
+                        "title": "Áreas Naturales"
                     },
                     {
                         "layerGroupId": "water-input",
@@ -1162,7 +1162,7 @@
                     },
                     {
                         "layerGroupId": "relocations-input",
-                        "title": "Relocalización y reurbanización: Seguimiento"
+                        "title": "Relocalización y reurbanización"
                     },
                     {
                         "layerGroupId": "relocations-input-register",
