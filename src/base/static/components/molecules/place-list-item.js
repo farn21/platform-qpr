@@ -273,7 +273,7 @@ const PlaceListItem = props => {
                     color: #fff;
                   `}
                 >
-                  {props.t("viewOnMap", "View on map")}
+                  {props.t("viewOnMap", "Ver en mapa")}
                 </SmallText>
               </PlaceInfoLink>
             </PlaceInfoContainer>
@@ -289,16 +289,7 @@ const PlaceListItem = props => {
                 APOYAR
               </small>
             </SupportText>
-            <IconButton
-              icon="facebook"
-              size="small"
-              onClick={() => onSocialShare("facebook")}
-            />
-            <IconButton
-              icon="twitter"
-              size="small"
-              onClick={() => onSocialShare("twitter")}
-            />
+           
           </PlaceSocialContainer>
         </PlaceBodyContainer>
       </div>
