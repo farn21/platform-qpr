@@ -103,7 +103,7 @@ const MetadataBar = (props: MetadataBarProps) => (
             display="block"
             textTransform="uppercase"
           >
-            <time>{moment(props.createdDatetime).fromNow()}</time>
+            <time>{moment(props.createdDatetime).format('LLL')}</time>
           </SmallText>
         )}
       </div>

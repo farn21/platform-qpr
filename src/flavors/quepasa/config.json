@@ -80,6 +80,7 @@
         "meta_description": "Track projects on the Riachuelo River",
         "meta_author": "farn.org.ar",
         "api_root": "https://apimapaqpr.farn.org.ar/admin",
+        "show_timestamps": true,
         "isShowingMobileUserMenu": true,
         "loginProviders": [{
             "name": "login",
@@ -875,6 +876,24 @@
                         "icon-size": ["step", ["zoom"], 0.5, 11, 0.75, 14, 0.9],
                         "icon-anchor": "center"
                     }
+                },
+                {
+                    "id":"clusters-9",
+                    "type":"circle",
+                    "source":"news-input",
+                    "filter":["has","point_count"],
+                    "paint":{
+                        "circle-color":["step",["get","point_count"],"#F59A2B",100,"#F59A2B",750,"#F59A2B"],
+                        "circle-radius":["step",["get","point_count"],20,100,30,750,40]}},
+                {"id":"cluster-count-9",
+                "type":"symbol",
+                "source":"news-input","filter":["has","point_count"],
+                "layout":{
+                    "text-field":"{point_count}",
+                    "text-size":24},
+                "paint": {
+                    "text-color": "#ffffff"
+                }
                 }]
             },
             {
@@ -902,6 +921,24 @@
                         "icon-size": ["step", ["zoom"], 0.5, 11, 0.75, 14, 0.9],
                         "icon-anchor": "center"
                     }
+                },
+                {
+                    "id":"clusters-8",
+                    "type":"circle",
+                    "source":"natural-areas-input",
+                    "filter":["has","point_count"],
+                    "paint":{
+                        "circle-color":["step",["get","point_count"],"#A2BA91",100,"#A2BA91",750,"#A2BA91"],
+                        "circle-radius":["step",["get","point_count"],20,100,30,750,40]}},
+                {"id":"cluster-count-8",
+                "type":"symbol",
+                "source":"natural-areas-input","filter":["has","point_count"],
+                "layout":{
+                    "text-field":"{point_count}",
+                    "text-size":24},
+                "paint": {
+                    "text-color": "#ffffff"
+                }
                 }]
             },
             {
@@ -930,6 +967,24 @@
                         "icon-size": ["step", ["zoom"], 0.5, 11, 0.75, 14, 0.9],
                         "icon-anchor": "center"
                     }
+                },
+                {
+                    "id":"clusters-7",
+                    "type":"circle",
+                    "source":"natural-areas-input-register",
+                    "filter":["has","point_count"],
+                    "paint":{
+                        "circle-color":["step",["get","point_count"],"#ceae4e",100,"#ceae4e",750,"#ceae4e"],
+                        "circle-radius":["step",["get","point_count"],20,100,30,750,40]}},
+                {"id":"cluster-count-7",
+                "type":"symbol",
+                "source":"natural-areas-input-register","filter":["has","point_count"],
+                "layout":{
+                    "text-field":"{point_count}",
+                    "text-size":24},
+                "paint": {
+                    "text-color": "#ffffff"
+                }
                 }]
             },
             {
