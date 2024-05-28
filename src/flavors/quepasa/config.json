@@ -538,8 +538,27 @@
                 "source": "satellite"
             }]
         },{
+            "id": "f4",
+            "basemap": true,
+            "visibleDefault": true,
+            "mapboxLayers": [{
+                "id": "f4-basemap",
+                "type": "raster",
+                "source": "f4",
+                "paint": {
+                    "raster-opacity": [
+                        "interpolate",
+                        ["linear"],
+                        ["zoom"],
+                        7,
+                        0,
+                        8,
+                        1
+                      ]
+                }
+            }]
+        },{
             "id": "MONITOREO_SUPERFICIAL",
-            "basemap": false,
             "visibleDefault": false,
             "interactive": true,
             "popupContent": "<em><strong>Río:</strong></em> {{Rio}} <br><em><strong>Responsable:</strong></em>{{Responsabl}}<br><em><strong>Ubicación:</strong></em>{{Ubicacion}}",
@@ -550,7 +569,7 @@
                 "source": "MONITOREO_SUPERFICIAL",
                 "layout": {
                     "icon-allow-overlap": true,
-                    "icon-size": ["step", ["zoom"], 0, 4, 0.3, 6, 0.5, 8, 0.7],
+                    "icon-size": 1.1,
                     "icon-anchor": "center",
                     "icon-image": "Dot-intervention.png"
                 }
@@ -609,27 +628,7 @@
                 }
               }
             ]
-          },{
-                "id": "f4",
-                "basemap": true,
-                "visibleDefault": true,
-                "mapboxLayers": [{
-                    "id": "f4-basemap",
-                    "type": "raster",
-                    "source": "f4",
-                    "paint": {
-                        "raster-opacity": [
-                            "interpolate",
-                            ["linear"],
-                            ["zoom"],
-                            7,
-                            0,
-                            8,
-                            1
-                          ]
-                    }
-                }]
-            },
+          },
             {
                 "id": "protected-natural-areas",
                 "visibleDefault": false,

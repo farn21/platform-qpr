@@ -59,7 +59,7 @@ const ListViewContainer = styled("div")({
 });
 
 const ListViewContent = styled("div")({
-  marginTop: "80px",
+  marginTop: "0px",
   height: "100%",
   width: "100%",
 });
@@ -213,47 +213,6 @@ class PlaceList extends React.Component {
     return (
       <ListViewContainer className="list-view-container">
         <ListViewContent>
-          <CloseButton
-            css={{
-              position: "absolute",
-              top: this.props.layout === "desktop" ? "10px" : "-33px",
-              left: this.props.layout === "desktop" ? "-33px" : "10px",
-              borderTopLeftRadius: "8px",
-              borderTopRightRadius: this.props.layout === "desktop" ? 0 : "8px",
-              borderBottomLeftRadius:
-                this.props.layout === "desktop" ? "8px" : 0,
-              backgroundColor: "#fff",
-              outline: "none",
-              border: "none",
-              fontSize: this.props.layout === "desktop" ? "24px" : "16px",
-              color: "#ff5e99",
-              boxShadow:
-                this.props.layout === "desktop"
-                  ? "-4px 4px 3px rgba(0,0,0,0.1)"
-                  : "4px -4px 3px rgba(0,0,0,0.1)",
-              padding:
-                this.props.layout === "desktop"
-                  ? "9px 10px 8px 10px"
-                  : "10px 16px 10px 16px",
-
-              "&:hover": {
-                color: "#cd2c67",
-                cursor: "pointer",
-              },
-            }}
-            layout={this.props.layout}
-            onClick={evt => {
-              evt.preventDefault();
-              this.props.history.push("/");
-            }}
-          />
-          <BackButton
-            layout={this.props.layout}
-            onClick={evt => {
-              evt.preventDefault();
-              this.props.history.push("/");
-            }}
-          />
           <h1 className="news-title">Novedades</h1>
           <ListHeader>
             <SearchContainer className="search-container">

@@ -624,7 +624,6 @@ header.mapseed-site-header {
 
 .news-title {
     font-size: 1.5rem;
-    margin-top: 4rem;
 }
 
 .news-search-input {
@@ -658,13 +657,13 @@ header.mapseed-site-header {
 }
 
 .filter-container {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
 }
 
 .filter-button-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
 }
 
