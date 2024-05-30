@@ -51,10 +51,7 @@
         {
             "slug": "news-input",
             "clientSlug": "Novedades",
-            "anonymous_permissions": [{
-                "abilities": ["create"],
-                "submission_set": "*"
-            }]
+            "anonymous_permissions": []
         },
         {
             "slug": "quepasa-input",
